@@ -1,0 +1,13 @@
+{
+  "interfaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 14,
+  "baseFontSizeAction": false,
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "Colored Sidebar Items"
+  ],
+  "nativeMenus": false,
+  "cssTheme": "Solarized"
+}

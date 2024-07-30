@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "dd93803b5628e4c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "35b2c63d0752d715",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b955e799efbf4207",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - Journal/Daily/30-07-2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d2f454b49928dfbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b074d6c10115fb7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5dc1bb52566cf7e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a7fcf6e5c27ce404",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7a43254c0f14ff44",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 249.50260543823242
+  },
+  "right": {
+    "id": "ee1094a92f1594cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ce69429fa90a963",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d00270d6a451ddc6",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "c6d5e91640b32e16",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "ad6910aa0dc24166",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "04 - Journal/Daily/30-07-2024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d1ea6ba67561efb1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "04 - Journal/Daily/30-07-2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c2939b0a31fa103a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "828d2e5aba513b2e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "04 - Journal/Daily/30-07-2024.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 313.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-spaced-repetition:Review flashcards": false
+    }
+  },
+  "active": "b955e799efbf4207",
+  "lastOpenFiles": [
+    "01 - ESGeo/Meetings/Engine Review - DTO Update.md",
+    "03 - Progetti/Programmazione/NPM FS Manager/README.md",
+    "03 - Progetti/Programmazione/NPM FS Manager",
+    "04 - Journal/Daily/30-07-2024.md",
+    "01 - ESGeo/Meetings",
+    "06 - Resources/Obsidian utils/Docs.md",
+    "04 - Journal/Daily",
+    "04 - Journal/2024-07-30.md",
+    "2024-07-30.md",
+    "2024-W31.md",
+    "00 - Università/Algoritmi 2/FlashCards/Flash Card Algoritmi 2.md",
+    "06 - Resources/Obsidian utils",
+    "Excalidraw/Drawing 2024-07-30 14.14.32.excalidraw.md",
+    "00 - Università/Algoritmi 2/Resources",
+    "00 - Università/Algoritmi 2/FlashCards",
+    "00 - Università/Algoritmi 2/prova domande.md",
+    "00 - Università/Algoritmi 2/LCS.md",
+    "Excalidraw",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
+    "03 - Progetti/Programmazione",
+    "00 - Università/Algoritmi 2/02",
+    "00 - Università/Algoritmi 2/01",
+    "Welcome.md"
+  ]
+}
