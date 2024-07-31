@@ -6,6 +6,7 @@
       {
         "id": "35b2c63d0752d715",
         "type": "tabs",
+        "dimension": 58.118899733806565,
         "children": [
           {
             "id": "b955e799efbf4207",
@@ -13,10 +14,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Journal/Daily/30-07-2024.md",
+                "file": "04 - Journal/Daily/31-07-2024.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "fa3b3ea3e3af182c",
+        "type": "tabs",
+        "dimension": 41.881100266193435,
+        "children": [
+          {
+            "id": "01bc1536cd77d139",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {}
             }
           }
         ]
@@ -80,14 +96,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d00270d6a451ddc6",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "c6d5e91640b32e16",
             "type": "leaf",
             "state": {
@@ -101,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Journal/Daily/30-07-2024.md",
+                "file": "04 - Journal/Daily/31-07-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,12 +121,20 @@
             }
           },
           {
+            "id": "d00270d6a451ddc6",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
             "id": "d1ea6ba67561efb1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Journal/Daily/30-07-2024.md",
+                "file": "04 - Journal/Daily/31-07-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,15 +157,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Journal/Daily/30-07-2024.md"
+                "file": "04 - Journal/Daily/31-07-2024.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 499.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,22 +177,27 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "pomodoro-timer:Toggle timer panel": false
     }
   },
-  "active": "b955e799efbf4207",
+  "active": "01bc1536cd77d139",
   "lastOpenFiles": [
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
+    "04 - Journal/Pomodoro",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
+    "00 - Università/Algoritmi 2/FlashCards/Flash Card Algoritmi 2.md",
     "01 - ESGeo/Meetings/Engine Review - DTO Update.md",
+    "04 - Journal/Daily/31-07-2024.md",
+    "04 - Journal/Daily/30-07-2024.md",
     "03 - Progetti/Programmazione/NPM FS Manager/README.md",
     "03 - Progetti/Programmazione/NPM FS Manager",
-    "04 - Journal/Daily/30-07-2024.md",
     "01 - ESGeo/Meetings",
     "06 - Resources/Obsidian utils/Docs.md",
     "04 - Journal/Daily",
     "04 - Journal/2024-07-30.md",
     "2024-07-30.md",
     "2024-W31.md",
-    "00 - Università/Algoritmi 2/FlashCards/Flash Card Algoritmi 2.md",
     "06 - Resources/Obsidian utils",
     "Excalidraw/Drawing 2024-07-30 14.14.32.excalidraw.md",
     "00 - Università/Algoritmi 2/Resources",
@@ -183,11 +205,8 @@
     "00 - Università/Algoritmi 2/prova domande.md",
     "00 - Università/Algoritmi 2/LCS.md",
     "Excalidraw",
-    "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
-    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
     "03 - Progetti/Programmazione",
     "00 - Università/Algoritmi 2/02",
-    "00 - Università/Algoritmi 2/01",
     "Welcome.md"
   ]
 }
