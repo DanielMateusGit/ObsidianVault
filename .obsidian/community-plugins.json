@@ -6,5 +6,7 @@
   "obsidian-spaced-repetition",
   "calendar",
   "obsidian-git",
-  "pomodoro-timer"
+  "pomodoro-timer",
+  "obsidian-linter",
+  "callout-manager"
 ]
