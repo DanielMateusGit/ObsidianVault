@@ -3,6 +3,7 @@ tags:
   - "#Algoritmi"
   - "#LCS"
   - "#Programmazione_dinamica"
+  - "#Algoritmi/LCS_Concetti_propedeutici"
 ---
 - [[#Cosa si intende per sequenza?|Cosa si intende per sequenza?]]
 - [[#Cosa si intende per sotto sequenza?|Cosa si intende per sotto sequenza?]]

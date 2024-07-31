@@ -4,10 +4,11 @@ tags:
   - LCS
   - Algoritmi/LCS
   - Programmazione_dinamica
-aliases: []
+  - Algoritmi/LCS_Concetti_propedeutici
+aliases:
 ---
 
-#Algoritmi/LCS_Concetti_propedeutici
+#Algoritmi/LCS/Concetti_propedeutici
 
 Cosa si intende per sequenza? Fai un esempio semplice
 ;
