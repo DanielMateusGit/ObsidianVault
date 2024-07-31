@@ -9,5 +9,7 @@
   "pomodoro-timer",
   "obsidian-linter",
   "callout-manager",
-  "obsidian-plugin-toc"
+  "obsidian-plugin-toc",
+  "templater-obsidian",
+  "obsidian-rollover-daily-todos"
 ]
