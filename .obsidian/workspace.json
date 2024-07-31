@@ -4,35 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "35b2c63d0752d715",
+        "id": "b49159a0b27dfd78",
         "type": "tabs",
-        "dimension": 58.118899733806565,
         "children": [
           {
-            "id": "b955e799efbf4207",
+            "id": "2a827a87c87917c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Journal/Daily/31-07-2024.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/LCS/Concetti propedeutici.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          }
-        ]
-      },
-      {
-        "id": "fa3b3ea3e3af182c",
-        "type": "tabs",
-        "dimension": 41.881100266193435,
-        "children": [
-          {
-            "id": "01bc1536cd77d139",
-            "type": "leaf",
-            "state": {
-              "type": "timer-view",
-              "state": {}
             }
           }
         ]
@@ -64,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:algo2",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.50260543823242
+    "width": 365.5
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -95,6 +79,18 @@
         "id": "2ce69429fa90a963",
         "type": "tabs",
         "children": [
+          {
+            "id": "799b69e1dd39dd92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Università/Algoritmi 2/FlashCards/LCS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
           {
             "id": "c6d5e91640b32e16",
             "type": "leaf",
@@ -109,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Journal/Daily/31-07-2024.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/LCS/Concetti propedeutici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,12 +125,24 @@
             }
           },
           {
+            "id": "36c6137326947691",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Università/Algoritmi 2/FlashCards/LCS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d1ea6ba67561efb1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Journal/Daily/31-07-2024.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/LCS/Concetti propedeutici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,16 +165,35 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Journal/Daily/31-07-2024.md"
+                "file": "00 - Università/Algoritmi 2/Appunti/LCS/Concetti propedeutici.md"
+              }
+            }
+          },
+          {
+            "id": "9ee7fc2dfafaa89f",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "078a15c5b0b21a92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Università/Algoritmi 2/FlashCards/LCS.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 457.5
+    "width": 616.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,35 +205,38 @@
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "pomodoro-timer:Toggle timer panel": false
+      "pomodoro-timer:Toggle timer panel": false,
+      "callout-manager:Insert Callout": false
     }
   },
-  "active": "01bc1536cd77d139",
+  "active": "2a827a87c87917c9",
   "lastOpenFiles": [
-    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
-    "04 - Journal/Pomodoro",
-    "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
-    "00 - Università/Algoritmi 2/FlashCards/Flash Card Algoritmi 2.md",
-    "01 - ESGeo/Meetings/Engine Review - DTO Update.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS.md",
+    "00 - Università/Algoritmi 2/Appunti/LCS/Concetti propedeutici.md",
+    "00 - Università/Algoritmi 2/Appunti/LCS",
+    "[.md",
+    "06 - Resources/Obsidian utils/Docs.md",
     "04 - Journal/Daily/31-07-2024.md",
+    "00 - Università/Algoritmi 2/Appunti",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024/LCS.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024/LCS.pdf.crdownload",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/1 algo.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/2 algo.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Visita grafi.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Teoria esame.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Simulazioni primo parziale.pdf",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
+    "01 - ESGeo/Meetings/Engine Review - DTO Update.md",
     "04 - Journal/Daily/30-07-2024.md",
     "03 - Progetti/Programmazione/NPM FS Manager/README.md",
-    "03 - Progetti/Programmazione/NPM FS Manager",
-    "01 - ESGeo/Meetings",
-    "06 - Resources/Obsidian utils/Docs.md",
-    "04 - Journal/Daily",
     "04 - Journal/2024-07-30.md",
     "2024-07-30.md",
     "2024-W31.md",
-    "06 - Resources/Obsidian utils",
     "Excalidraw/Drawing 2024-07-30 14.14.32.excalidraw.md",
-    "00 - Università/Algoritmi 2/Resources",
-    "00 - Università/Algoritmi 2/FlashCards",
     "00 - Università/Algoritmi 2/prova domande.md",
     "00 - Università/Algoritmi 2/LCS.md",
-    "Excalidraw",
-    "03 - Progetti/Programmazione",
-    "00 - Università/Algoritmi 2/02",
     "Welcome.md"
   ]
 }

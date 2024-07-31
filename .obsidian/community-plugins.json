@@ -8,5 +8,6 @@
   "obsidian-git",
   "pomodoro-timer",
   "obsidian-linter",
-  "callout-manager"
+  "callout-manager",
+  "obsidian-plugin-toc"
 ]

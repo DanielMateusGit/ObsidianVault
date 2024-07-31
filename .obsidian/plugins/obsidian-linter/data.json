@@ -266,11 +266,17 @@
   "lintOnSave": false,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
-  "lintOnFileChange": true,
+  "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [],
-  "filesToIgnore": [],
+  "filesToIgnore": [
+    {
+      "label": "",
+      "match": "",
+      "flags": "i"
+    }
+  ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
   "lintCommands": [],
