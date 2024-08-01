@@ -26,7 +26,8 @@ Trovando la sotto-sequenza comune a due sequenze di DNA posso determinare quanto
 
 Nel caso della LCS sono le sequenze da confrontare. Possiamo dire che l'istanza di una LCS è:
 
-Almeno due sequenze: $X=<x_1,x_2, ... , x_m>$ e $Y=<y_1, y_2, ... , y_n>$
+> [!Summary] In Breve:
+> Almeno due sequenze: $X=<x_1,x_2, ... , x_m>$ e $Y=<y_1, y_2, ... , y_n>$
 
 ***
 
@@ -34,6 +35,7 @@ Almeno due sequenze: $X=<x_1,x_2, ... , x_m>$ e $Y=<y_1, y_2, ... , y_n>$
 
 La soluzione è $Z$ sotto-sequenza di $X$ ed $Y$ (sequenze) tale che:
 
-$|Z| = max\{ |W| \text{ t.c W è sotto-sequenza di X ed Y } \}$
+> [!Summary] In Breve:
+> $|Z| = max\{ |W| \text{ t.c W è sotto-sequenza di X ed Y } \}$
 
 ***

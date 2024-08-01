@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Journal/Daily/01-08-2024.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Journal/Daily/01-08-2024.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Journal/Daily/01-08-2024.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Journal/Daily/01-08-2024.md"
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md"
               }
             }
           },
@@ -190,11 +190,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 402.5
+    "width": 402.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,20 +214,23 @@
   },
   "active": "2a827a87c87917c9",
   "lastOpenFiles": [
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
+    "04 - Journal/Daily/01-08-2024.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/01 - Introduzione al problema.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
+    "03 - Progetti/Programmazione/NPM FS Manager/README.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
     "04 - Journal/Daily/31-07-2024.md",
     "04 - Journal/Daily/30-07-2024.md",
-    "04 - Journal/Daily/01-08-2024.md",
     "06 - Resources/Obsidian utils/Templates/DailyTemplate.md",
     "06 - Resources/Obsidian utils/Templates",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/01 - Introduzione al problema.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS",
     "[.md",
     "06 - Resources/Obsidian utils/Docs.md",
@@ -237,10 +241,7 @@
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/1 algo.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/2 algo.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Visita grafi.pdf",
-    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
-    "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
     "01 - ESGeo/Meetings/Engine Review - DTO Update.md",
-    "03 - Progetti/Programmazione/NPM FS Manager/README.md",
     "04 - Journal/2024-07-30.md",
     "2024-07-30.md",
     "2024-W31.md",
