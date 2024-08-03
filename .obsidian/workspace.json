@@ -6,7 +6,7 @@
       {
         "id": "29dcbcbef2a31d04",
         "type": "tabs",
-        "dimension": 58.53221957040573,
+        "dimension": 68.35443037974683,
         "children": [
           {
             "id": "85a9d4dc98e4d1de",
@@ -25,7 +25,7 @@
       {
         "id": "9884ea509b8a7be3",
         "type": "tabs",
-        "dimension": 41.46778042959427,
+        "dimension": 31.64556962025317,
         "children": [
           {
             "id": "116e83975998e16e",
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 424.5,
-    "collapsed": true
+    "width": 424.5
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -209,13 +208,21 @@
               "type": "timer-view",
               "state": {}
             }
+          },
+          {
+            "id": "1fa8fe6e03796bc2",
+            "type": "leaf",
+            "state": {
+              "type": "code-execute-manage-executors",
+              "state": {}
+            }
           }
         ],
         "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 467.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,12 +239,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "85a9d4dc98e4d1de",
+  "active": "0112f8d74371e2ce",
   "lastOpenFiles": [
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
-    "04 - Journal/Daily/03-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+    "04 - Journal/Daily/03-08-2024.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Caratterizzazione della soluzione.md",

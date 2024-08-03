@@ -79,3 +79,35 @@ In più le variabili dei problemi di programmazione dinamica, già definibili du
 ---
 
 ## Qual è l' algoritmo ricorsivo? (con calcolo tempi ed albero ricorsivo)
+
+```
+LCS_R(X,Y,i,j)
+	if( i = 0 or j = 0)
+		return 0;
+	else if( X_i = X_j )
+		return LCS_R(X, Y, i-1, j-1) concat X_i;
+	else
+		L = LCS_R(X, Y, i-1, j);
+		R = LCS_R(X, Y, i, j-1);
+	if(|L| > |R|)
+		return L;
+	else
+		return R;
+```
+
+**Tempo di esecuzione**: $O(2min⁡(n,m))$, dove n e m sono le lunghezze delle due stringhe. Il tempo è esponenziale. L' albero delle chiamate ricorsive risulta:
+
+```
+LCS_R(X, Y, 3, 2)     // 'C' != 'C'
+   ├── LCS_R(X, Y, 2, 2)    // 'B' != 'C'
+   |    ├── LCS_R(X, Y, 1, 2)  // 'A' == 'C'
+   |    |    ├── LCS_R(X, Y, 0, 1) = 0
+   |    |    └── LCS_R(X, Y, 1, 1)  // 'A' == 'A'
+   |    |         └── LCS_R(X, Y, 0, 0) = 0
+   |    └── LCS_R(X, Y, 2, 1)   // 'B' != 'A'
+   |         ├── LCS_R(X, Y, 1, 1)  // già risolto sopra
+   |         └── LCS_R(X, Y, 2, 0) = 0
+   └── LCS_R(X, Y, 3, 1)    // 'C' != 'A'
+        ├── LCS_R(X, Y, 2, 1)  // già risolto sopra
+        └── LCS_R(X, Y, 3, 0) = 0
+```

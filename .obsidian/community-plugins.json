@@ -11,5 +11,7 @@
   "callout-manager",
   "obsidian-plugin-toc",
   "templater-obsidian",
-  "obsidian-rollover-daily-todos"
+  "obsidian-rollover-daily-todos",
+  "execute-code",
+  "code-styler"
 ]
