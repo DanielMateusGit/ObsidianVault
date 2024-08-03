@@ -21,6 +21,12 @@ Si applica (per esempio) per confrontare sequenze di DNA.
 Trovando la sotto-sequenza comune a due sequenze di DNA posso determinare quanto due organismi siano simili o meno.
 
 ---
+## Quale è il tempo di esecuzione della LCS e lo spazio occupato nella sua versione dinamica?
+
+$O(n×m)$ per il tempo di esecuzione e $O(n×m)$ per lo spazio di memoria.
+Nella versione ottimizzata, lo spazio si riduce a $O(min(n,m))$.
+
+---
 
 ## Esempio di calcolo della LCS tra due sequenze
 
