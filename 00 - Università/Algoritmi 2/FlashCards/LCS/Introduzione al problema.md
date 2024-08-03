@@ -15,7 +15,6 @@ Qual è l' istanza della LCS?
 Nel caso della LCS sono le sequenze da confrontare. Possiamo dire che l'istanza di una LCS è:
 ***
 Almeno due sequenze: $X=<x_1,x_2, ... , x_m>$ e $Y=<y_1, y_2, ... , y_n>$
-<!--SR:!2024-08-04,4,270-->
 
 Qual è la soluzione della LCS?
 ;

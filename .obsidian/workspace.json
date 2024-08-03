@@ -6,6 +6,7 @@
       {
         "id": "b49159a0b27dfd78",
         "type": "tabs",
+        "dimension": 45.57823129251701,
         "children": [
           {
             "id": "2a827a87c87917c9",
@@ -13,7 +14,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
+                "file": "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7ceb68a021bc64a6",
+        "type": "tabs",
+        "dimension": 54.421768707483,
+        "children": [
+          {
+            "id": "eae095bc6757320c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Università/Algoritmi 2/Appunti/00 - Elementi di programmazione dinamica/01 - Processo di sviluppo di un algoritmo dinamico.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "26858e2fe115a019",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 365.5
+    "width": 424.5
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -105,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
+                "file": "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
+                "file": "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +197,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md"
+                "file": "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md"
               }
             }
           },
@@ -182,7 +214,7 @@
             }
           },
           {
-            "id": "2a478d144f90bf4f",
+            "id": "1b0169231c9d26a0",
             "type": "leaf",
             "state": {
               "type": "timer-view",
@@ -190,12 +222,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 402.5,
-    "collapsed": true
+    "width": 258.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,22 +245,31 @@
   },
   "active": "2a827a87c87917c9",
   "lastOpenFiles": [
+    "00 - Università/Algoritmi 2/Appunti/00 - Elementi di programmazione dinamica/01 - Processo di sviluppo di un algoritmo dinamico.md",
+    "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
+    "00 - Università/Algoritmi 2/Appunti/00 - Elementi di programmazione dinamica/00 - Sotto-struttura ottima.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/01 - Introduzione al problema LCS.md",
+    "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica",
+    "00 - Università/Algoritmi 2/FlashCards/Untitled.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
+    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
+    "00 - Università/Algoritmi 2/Appunti/00 - Elementi di programmazione dinamica",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/4 Algo _ Problema della LCS ( spiegazione completa ).pdf",
+    "04 - Journal/Daily/03-08-2024.md",
+    "04 - Journal/Daily/02-08-2024.md",
+    "04 - Journal/Daily/01-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
     "00 - Università/Algoritmi 2/Roadmap/Roadmap 1.md",
-    "00 - Università/Algoritmi 2/Roadmap/Roadmap 2.md",
-    "04 - Journal/Daily/01-08-2024.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/01 - Introduzione al problema.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
     "03 - Progetti/Programmazione/NPM FS Manager/README.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
     "04 - Journal/Daily/31-07-2024.md",
     "04 - Journal/Daily/30-07-2024.md",
     "06 - Resources/Obsidian utils/Templates/DailyTemplate.md",
     "06 - Resources/Obsidian utils/Templates",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS",
     "[.md",
@@ -238,16 +278,8 @@
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024/LCS.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024/LCS.pdf.crdownload",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024",
-    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/1 algo.pdf",
-    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/2 algo.pdf",
-    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Visita grafi.pdf",
     "01 - ESGeo/Meetings/Engine Review - DTO Update.md",
     "04 - Journal/2024-07-30.md",
-    "2024-07-30.md",
-    "2024-W31.md",
-    "Excalidraw/Drawing 2024-07-30 14.14.32.excalidraw.md",
-    "00 - Università/Algoritmi 2/prova domande.md",
-    "00 - Università/Algoritmi 2/LCS.md",
-    "Welcome.md"
+    "2024-07-30.md"
   ]
 }
