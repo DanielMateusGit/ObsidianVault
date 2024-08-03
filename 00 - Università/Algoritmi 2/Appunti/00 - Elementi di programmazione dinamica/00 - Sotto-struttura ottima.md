@@ -11,13 +11,14 @@ tags:
 - [[#Esempi|Esempi]]
 
 # Sotto-struttura ottima
+
 ## Quando un problema soddisfa la proprietà di sotto-struttura ottima?
 
 Un problema soddisfa la proprietà di sotto-struttura ottima se una sua soluzione ottimale può essere ottenuta combinando soluzioni ottimali dei suoi sotto-problemi.
 
 > La soluzione ottima del problema contiene al suo interno le soluzione ottime dei sotto problemi.
 
-> [!Hint] Cosa si intende per sotto problemi>?
+> [!Hint] Cosa si intende per sotto problemi?
 > Un sotto problema si ottiene riducendo l' input e considerando tutte le condizioni che portano un problema complesso a diventare il più semplice possibile.
 > 
 > Ad esempio: 
@@ -28,6 +29,22 @@ Un problema soddisfa la proprietà di sotto-struttura ottima se una sua soluzion
 > - Un mix tra i due.
 
 ---
+
 ## Come trovare la proprietà di sotto struttura ottima di un problema?
+
+La proprietà di sotto-struttura ottima sarà un insieme "di regoline" che descriveranno come, dato un sotto-problema del problema originale, risolvere tale sotto-problema e generare l' insieme di sotto-problemi successivi.
+
+Per trovarla, bisogna seguire uno schema:
+
+- Dimostrare che una soluzione del problema consiste nel fare una scelta. Questa scelta genera porta ad uno o più sotto-problemi da risolvere.
+- Per un dato problema, supporre di conoscere la scelta che porta alla soluzione ottima.
+- Fatta la scelta, determinare quali sono i sotto problemi che ne derivano e caratterizzare lo spazio dei sotto problemi risultante dall'effettuare tale scelta.
+- Dimostrare che le soluzioni dei sotto-problemi devono essere necessariamente soluzioni ottime. In genere si fa per assurdo.
+
+La soluzione ottima sarà una composizione di tutti questi sotto problemi.
+
 ---
-## Esempi
+
+## Esempi:
+
+[[02 - Caratterizzazione della soluzione ottima]]

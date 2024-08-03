@@ -20,7 +20,7 @@ tags:
 
 ## Cosa si intende per caratterizzazione della soluzione ottima?
 
-La descrizione dell' insieme di proprietà che una soluzione ottimale deve soddisfare per essere ritenuta tale.
+La descrizione dell' insieme di proprietà che una soluzione ottimale deve soddisfare per essere ritenuta tale. 
 
 > [!Hint] In soldoni:
-> A livello pratico, consiste nel trovare una sotto-struttura ottima per il problema e poi utilizzare questa sotto-struttura per costruire una soluzione del problema, partendo dalle soluzioni ottime dei sotto problemi.
+> A livello pratico, consiste nel trovare una [[00 - Sotto-struttura ottima | sotto-struttura ottima ]] per il problema e poi utilizzare questa sotto-struttura per costruire una soluzione del problema, partendo dalle soluzioni ottime dei sotto problemi.

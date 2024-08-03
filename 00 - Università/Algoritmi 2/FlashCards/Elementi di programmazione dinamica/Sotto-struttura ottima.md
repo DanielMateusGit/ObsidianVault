@@ -5,19 +5,19 @@ tags:
 ---
 #Algoritmi/Programmazione_dinamica/sotto_stuttura_ottima
 
-Quali sono le 4 fasi da affrontare per sviluppare un algoritmo dinamico?
+Quando un problema soddisfa la proprietà di sotto-struttura ottima?
 ;
-- Caratterizzare la struttura di una soluzione ottima.
-- Definizione in modo ricorsivo il valore di una soluzione ottima.
-- Calcolare il valore di una soluzione ottima, di solito con uno schema bottom-up
-- Costruire la soluzione ottima delle informazioni calcolate.
-<!--SR:!2024-08-06,3,250-->
+Un problema soddisfa la proprietà di sotto-struttura ottima se una sua soluzione ottimale può essere ottenuta combinando soluzioni ottimali dei suoi sotto-problemi.
 
-Cosa si intende per caratterizzazione della soluzione ottima?
+Come trovare la proprietà di sotto struttura ottima di un problema?
 ;
-La descrizione dell' insieme di proprietà che una soluzione ottimale deve soddisfare per essere ritenuta tale.
+La proprietà di sotto-struttura ottima sarà un insieme "di regoline" che descriveranno come, dato un sotto-problema del problema originale, risolvere tale sotto-problema e generare l' insieme di sotto-problemi successivi.
 ***
-A livello pratico, consiste nel trovare una sotto-struttura ottima per il problema e poi utilizzare questa sotto-struttura per costruire una soluzione del problema, partendo dalle soluzioni ottime dei sotto problemi.
-***
-<!--SR:!2024-08-06,3,250-->
+Per trovarla, bisogna seguire uno schema:
+- Dimostrare che una soluzione del problema consiste nel fare una scelta. Questa scelta genera porta ad uno o più sotto-problemi da risolvere.
+- Per un dato problema, supporre di conoscere la scelta che porta alla soluzione ottima.
+- Fatta la scelta, determinare quali sono i sotto problemi che ne derivano e caratterizzare lo spazio dei sotto problemi risultante dall'effettuare tale scelta.
+- Dimostrare che le soluzioni dei sotto-problemi devono essere necessariamente soluzioni ottime. In genere si fa per assurdo.
+
+
 
