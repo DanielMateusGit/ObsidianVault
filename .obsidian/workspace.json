@@ -6,6 +6,7 @@
       {
         "id": "29dcbcbef2a31d04",
         "type": "tabs",
+        "dimension": 58.53221957040573,
         "children": [
           {
             "id": "85a9d4dc98e4d1de",
@@ -13,7 +14,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "9884ea509b8a7be3",
+        "type": "tabs",
+        "dimension": 41.46778042959427,
+        "children": [
+          {
+            "id": "116e83975998e16e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 424.5
+    "width": 424.5,
+    "collapsed": true
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -105,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md"
+                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md"
               }
             }
           },
@@ -194,7 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 515.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,17 +234,17 @@
   },
   "active": "85a9d4dc98e4d1de",
   "lastOpenFiles": [
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
+    "04 - Journal/Daily/03-08-2024.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Caratterizzazione della soluzione.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/01 - Introduzione al problema LCS.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/00 - Concetti propedeutici.md",
     "04 - Journal/Daily/01-08-2024.md",
     "04 - Journal/Daily/02-08-2024.md",
-    "04 - Journal/Daily/03-08-2024.md",
     "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Sotto-struttura ottima.md",
     "00 - Università/Algoritmi 2/Appunti/00 - Elementi di programmazione dinamica/00 - Sotto-struttura ottima.md",
     "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
