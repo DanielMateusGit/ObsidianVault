@@ -2,6 +2,7 @@
 tags:
   - Algoritmi
   - Programmazione_dinamica
+  - Algoritmi/Programmazione_dinamica
 ---
 - [[#Quali sono le 4 fasi per lo sviluppo di un algoritmo dinamico?|Quali sono le 4 fasi per lo sviluppo di un algoritmo dinamico?]]
 - [[#Cosa si intende per caratterizzazione della soluzione ottima?|Cosa si intende per caratterizzazione della soluzione ottima?]]

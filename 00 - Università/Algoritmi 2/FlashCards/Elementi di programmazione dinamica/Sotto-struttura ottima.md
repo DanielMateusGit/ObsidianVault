@@ -3,7 +3,7 @@ tags:
   - Algoritmi
   - Programmazione_dinamica
 ---
-#Algoritmi/Programmazione_dinamica/processo_di_sviluppo
+#Algoritmi/Programmazione_dinamica/sotto_stuttura_ottima
 
 Quali sono le 4 fasi da affrontare per sviluppare un algoritmo dinamico?
 ;
