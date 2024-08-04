@@ -14,7 +14,7 @@ tags:
 
 ## Soluzione ricorsiva
 
-## Come passo dalla proprietà di sotto-struttura ottima alla definizione ricorsiva?
+## Come passare dalla proprietà di sotto-struttura ottima alla definizione ricorsiva?
 
 La [[Sotto-struttura ottima]] della LCS funziona **==supponendo di aver già trovato la soluzione==**.
 
