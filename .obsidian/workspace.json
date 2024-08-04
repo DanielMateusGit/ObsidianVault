@@ -4,34 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "29dcbcbef2a31d04",
+        "id": "a3738726483c1b9e",
         "type": "tabs",
         "children": [
           {
-            "id": "85a9d4dc98e4d1de",
+            "id": "6db80352d9440509",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "b3c5511420c05f87",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "66e8d75b65a77305",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione bottom-up.md",
+                "file": "04 - Journal/Daily/04-08-2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+                "file": "04 - Journal/Daily/04-08-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+                "file": "04 - Journal/Daily/04-08-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md"
+                "file": "04 - Journal/Daily/04-08-2024.md"
               }
             }
           },
@@ -216,11 +198,11 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 686.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,17 +219,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "85a9d4dc98e4d1de",
+  "active": "6db80352d9440509",
   "lastOpenFiles": [
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione bottom-up.md",
+    "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione bottom-up.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione ricorsiva.md",
     "Pasted image 20240804105550.png",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/03 - Soluzione ricorsiva.md",
     "Excalidraw/Drawing 2024-08-04 09.23.43.excalidraw.md",
     "Pasted image 20240804095254.png",
     "Excalidraw",
-    "00 - Università/Algoritmi 2/Appunti/01 - LCS/05 - Costruzione della soluzione.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
     "00 - Università/Algoritmi 2/Appunti/01 - LCS/01 - Introduzione al problema LCS.md",
     "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
