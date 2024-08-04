@@ -110,7 +110,7 @@ Il seguente, è un disegno esplicativo del calcolo della singola cella:
 
 ----
 
-## Come risulta l'algoritmo della LCS dinamico? Quali sono i suoi consumi in termine di tempo e spazio?
+## Come risulta l'algoritmo della LCS dinamico? Quali sono i suoi consumi in termini di tempo e spazio?
 
 **Tempo di esecuzione**: $O(n×m)$
     - Per ogni coppia di indici $(i,j)$, l'algoritmo esegue un'operazione costante (confronto e assegnazione).
