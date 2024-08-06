@@ -20,7 +20,7 @@ Alla terza delle [[Processo di sviluppo di un algoritmo dinamico | quattro fasi 
 - È stata trovata la "variabile" che descrive i dati importanti per il calcolo del problema.
 - Sono nati eventuali problemi ausiliari.
 
-Il passaggio successivo è quello di salvare i risultati parziali prodotti dalla soluzione ricorsiva in una struttura dati, in modo da ==riciclare tutte le informazioni già calcolate==.
+Il passaggio successivo è quello di salvare i risultati parziali prodotti dalla [[Soluzione ricorsiva]] in una struttura dati, in modo da ==riciclare tutte le informazioni già calcolate==.
 
 Nella LCS, abbiamo trovato come variabile: 
 

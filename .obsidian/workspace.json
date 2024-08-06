@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md"
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -219,14 +219,24 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5dc1bb52566cf7e2",
+  "active": "6db80352d9440509",
   "lastOpenFiles": [
-    "00 - Università/Algoritmi 2/Appunti (Esercitazioni)",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/05 - Costruzione della soluzione.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
-    "04 - Journal/Daily/04-08-2024.md",
+    "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
+    "00 - Università/Algoritmi 2/Roadmap/Studio sul libro.md",
+    "04 - Journal/Daily/06-08-2024.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Costruzione_Soluzione.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Caratterizzazione della soluzione.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
+    "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione bottom-up.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione ricorsiva.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/05 - Costruzione della soluzione.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
+    "04 - Journal/Daily/05-08-2024.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/00 - Elementi di programmazione dinamica/01 - Processo di sviluppo di un algoritmo dinamico.md",
+    "04 - Journal/Daily/04-08-2024.md",
+    "00 - Università/Algoritmi 2/Appunti (Esercitazioni)",
     "Pasted image 20240804105550.png",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva.md",
     "Excalidraw/Drawing 2024-08-04 09.23.43.excalidraw.md",
@@ -235,29 +245,19 @@
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
     "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024/LCS.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/ese_pd_grafi_importante.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/knap_01_colorato.pdf",
     "04 - Journal/Daily/03-08-2024.md",
     "04 - Journal/Daily/02-08-2024.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Caratterizzazione della soluzione.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
     "04 - Journal/Daily/01-08-2024.md",
     "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Sotto-struttura ottima.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/00 - Elementi di programmazione dinamica/00 - Sotto-struttura ottima.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/00 - Elementi di programmazione dinamica/01 - Processo di sviluppo di un algoritmo dinamico.md",
-    "06 - Resources/Obsidian utils/Useful tips/Obsidian.md",
-    "06 - Resources/Obsidian utils/Docs.md",
     "06 - Resources/Obsidian utils/Useful tips",
-    "04 - Journal/Daily/30-07-2024.md",
-    "04 - Journal/Daily/31-07-2024.md",
     "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/00 - Elementi di programmazione dinamica",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/4 Algo _ Problema della LCS ( spiegazione completa ).pdf",
-    "06 - Resources/Obsidian utils/Templates",
-    "00 - Università/Algoritmi 2/FlashCards/LCS"
+    "06 - Resources/Obsidian utils/Templates"
   ]
 }
