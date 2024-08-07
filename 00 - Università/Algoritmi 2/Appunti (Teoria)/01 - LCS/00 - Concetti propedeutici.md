@@ -13,7 +13,7 @@ tags:
 
 ## Cosa si intende per sequenza?
 
-Dato un alfabeto $\Sigma$, una **sequenza su $\Sigma$** è una tupla di simboli $X = \langle x_1, x_2, \ldots, x_n \rangle$ dove per ogni $\forall i \in[1,n]$ si ha che $x_i$ appartiene a $\Sigma$.
+Dato un alfabeto $\Sigma$, una **sequenza su $\Sigma$** è una tupla di simboli $X = \langle x_1, x_2, \ldots, x_n \rangle$ dove $\forall i \in[1,n]$ si ha che $x_i$ appartiene a $\Sigma$.
 
 Esempio: $\Sigma$ = "Lettere dell' alfabeto" e $X = \{c, i ,a, o\}$
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Introduzione al problema WIS.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 522.5
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Introduzione al problema WIS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Introduzione al problema WIS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md"
+                "file": "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Introduzione al problema WIS.md"
               }
             }
           },
@@ -182,27 +182,27 @@
             }
           },
           {
-            "id": "0112f8d74371e2ce",
-            "type": "leaf",
-            "state": {
-              "type": "timer-view",
-              "state": {}
-            }
-          },
-          {
             "id": "1fa8fe6e03796bc2",
             "type": "leaf",
             "state": {
               "type": "code-execute-manage-executors",
               "state": {}
             }
+          },
+          {
+            "id": "ec691dbbbccf052e",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 686.5
+    "width": 425.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,42 +219,42 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5dc1bb52566cf7e2",
+  "active": "6db80352d9440509",
   "lastOpenFiles": [
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Introduzione al problema WIS.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/06 - Algoritmo WIS.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/05 - Costruzione della soluzione.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/04 - Soluzione bottom-up.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/03 - Soluzione ricorsiva.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/01 - Caratterizzazione della soluzione ottima.md",
+    "04 - Journal/Daily/07-08-2024.md",
+    "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
+    "04 - Journal/Daily/06-08-2024.md",
+    "04 - Journal/Daily/05-08-2024.md",
+    "04 - Journal/Daily/04-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/05 - Costruzione della soluzione.md",
-    "04 - Journal/Daily/06-08-2024.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/concat.md",
     "06 - Resources/Obsidian utils/Useful tips/Obsidian.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - HCS",
-    "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS",
     "00 - Università/Algoritmi 2/Roadmap/Studio sul libro.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Costruzione_Soluzione.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Caratterizzazione della soluzione.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Introduzione al problema.md",
     "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione bottom-up.md",
-    "00 - Università/Algoritmi 2/FlashCards/LCS/Soluzione ricorsiva.md",
-    "04 - Journal/Daily/05-08-2024.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/00 - Elementi di programmazione dinamica/01 - Processo di sviluppo di un algoritmo dinamico.md",
-    "04 - Journal/Daily/04-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti (Esercitazioni)",
     "Pasted image 20240804105550.png",
-    "Excalidraw/Drawing 2024-08-04 09.23.43.excalidraw.md",
     "Pasted image 20240804095254.png",
     "Excalidraw",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
-    "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica/Processo di sviluppo di un algoritmo dinamico.md",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2024/LCS.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/ese_pd_grafi_importante.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/knap_01_colorato.pdf",
-    "04 - Journal/Daily/03-08-2024.md",
-    "04 - Journal/Daily/02-08-2024.md",
     "06 - Resources/Obsidian utils/Useful tips",
     "00 - Università/Algoritmi 2/FlashCards/Elementi di programmazione dinamica",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/00 - Elementi di programmazione dinamica",

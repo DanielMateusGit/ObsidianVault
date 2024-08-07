@@ -14,7 +14,7 @@ tags:
 
 ## Motivazione dell' algoritmo LCS
 
-LCS sta per Longest-Common-SubSequence. Serve per trovare le sotto-sequenze comuni (a n sequenze) più lunga possibile.
+LCS sta per Longest-Common-SubSequence. Serve per trovare la sotto-sequenza comune (a n sequenze) più lunga possibile.
 
 Si applica (per esempio) per confrontare sequenze di DNA.
 

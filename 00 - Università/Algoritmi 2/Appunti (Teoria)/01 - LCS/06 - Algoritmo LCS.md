@@ -527,11 +527,11 @@ Questa soluzione impiega $O(m+n)$.
 
  [[02 - Caratterizzazione della soluzione ottima]]
 
- [[03 - Soluzione ricorsiva]]
+ [[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva]]
 
  [[04 - Soluzione bottom-up (top - down)]]
 
- [[05 - Costruzione della soluzione]]
+ [[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/05 - Costruzione della soluzione]]
 
 ***
 
