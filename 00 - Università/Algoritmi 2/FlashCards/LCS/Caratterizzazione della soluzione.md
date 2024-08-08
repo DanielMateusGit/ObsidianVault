@@ -20,7 +20,7 @@ Quali sono i sotto-problemi della LCS?
 ;
 "Lunghezza della più lunga sotto-sequenza ricorsiva", tra $X_{m-1}$ ed $Y_{n-1}$.
 ***
-Ossia: LCS computata prendendo in input i [[Concetti propedeutici | prefissi]] delle sequenze iniziali.
+Ossia: LCS computata prendendo in input i [[00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici| prefissi]] delle sequenze iniziali.
 
 Che forma ha la proprietà della sotto-struttura ottima di una LCS?
 ;

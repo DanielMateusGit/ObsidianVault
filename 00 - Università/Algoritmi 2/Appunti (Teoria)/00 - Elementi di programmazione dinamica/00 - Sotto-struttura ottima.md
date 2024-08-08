@@ -47,4 +47,4 @@ La soluzione ottima sarà una composizione di tutti questi sotto problemi.
 
 ## Esempi:
 
-[[02 - Caratterizzazione della soluzione ottima]]
+[[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima]]

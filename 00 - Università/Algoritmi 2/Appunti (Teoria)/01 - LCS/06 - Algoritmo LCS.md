@@ -157,7 +157,7 @@ Proviamo quindi a seguire gli step necessari per [[00 - Sotto-struttura ottima |
 Considerando quali sono le [[01 - Introduzione al problema LCS | istanze della LCS]], un sotto-problema è definibile come:
 
 > "Lunghezza della più lunga sotto-sequenza ricorsiva", tra $X_{m-1}$ ed $Y_{n-1}$.
-> Ossia: LCS computata prendendo in input i[[Concetti propedeutici | prefissi]] delle sequenze iniziali.
+> Ossia: LCS computata prendendo in input i[[00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici| prefissi]] delle sequenze iniziali.
 
 Date $X$ ed $Y$, i sotto-problemi sono:
 
@@ -194,7 +194,7 @@ Questa definizione segue esattamente gli step, dato che :
 
 ==*Spiegazione primo punto:*==
 
-In questo punto stiamo confrontando il carattere finale delle sequenze (più precisamente del [[Concetti propedeutici | prefisso]] delle sotto-sequenze, dato che siamo in un sotto-problema). 
+In questo punto stiamo confrontando il carattere finale delle sequenze (più precisamente del [[00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici| prefisso]] delle sotto-sequenze, dato che siamo in un sotto-problema). 
 
 > Se il carattere finale di $X$ ed $Y$ è uguale, giustamente lo sarà anche in $Z$ (che, ricordiamo, sto supponendo di avere già).
 
@@ -521,11 +521,11 @@ Questa soluzione impiega $O(m+n)$.
 
 ## Teoria
 
- [[00 - Concetti propedeutici]]
+ [[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici]]
 
  [[01 - Introduzione al problema LCS]]
 
- [[02 - Caratterizzazione della soluzione ottima]]
+ [[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima]]
 
  [[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva]]
 
@@ -537,7 +537,7 @@ Questa soluzione impiega $O(m+n)$.
 
 ## Flash Cards
 
-[[Concetti propedeutici]]
+[[00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici]]
 
 [[Introduzione al problema]]
 

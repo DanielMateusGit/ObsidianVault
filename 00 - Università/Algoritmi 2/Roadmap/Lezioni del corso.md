@@ -12,7 +12,7 @@
   - Calcolo della lunghezza di una LCS, algoritmo bottom-up.
   - Esercizio su LCS (riempimento matrice per il calcolo della lunghezza di una LCS).
 
-- [ ] **Lezione 2/10**
+- [x] **Lezione 2/10**
   - Il problema del Weighted Interval Scheduling (WIS). Risoluzione mediante programmazione dinamica inclusa la ricostruzione di una soluzione mediante stampa.
   - Dimostrazione della proprietà della sottostruttura ottima.
 
