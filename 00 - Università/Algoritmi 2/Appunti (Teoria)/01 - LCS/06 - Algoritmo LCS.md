@@ -303,11 +303,21 @@ Nella soluzione ricorsiva delle LCS si introduce la variabile c, che non rappres
 
 Perchè si introduce questa variabile? 
 
-Semplicemente perchè la lunghezza della LCS è il dato che "da direzione" alla ricorsione doppia. Nel caso passo della formulazione ricorsiva si sta utilizzando un confronto tra lunghezze.
+> Semplicemente perchè la lunghezza della LCS è il dato che "da direzione" alla ricorsione doppia. Nel caso passo della formulazione ricorsiva si sta utilizzando un confronto tra lunghezze.
 
 I simboli della LCS sono invece secondari, perchè ricavabili a fine esecuzione ([[Processo di sviluppo di un algoritmo dinamico | durante la fase di ricostruzione della soluzione.]])
 
 In più le variabili dei problemi di programmazione dinamica, già definibili durante la ricerca della soluzione ricorsiva, ==determinano quale sarà la struttura dati da utilizzare nel momento dell'applicazione dell' algoritmo dinamico.==
+
+Il procedimento con l' introduzione del "problema ridotto":
+
+- Prevede una "riduzione del problema" (da sequenze di simboli mi occupo di lunghezze di sequenze si simboli)
+- Il problema ridotto viene risolto, salvando le informazioni necessarie per ricostruire il problema originale
+- La soluzione del problema originale viene ricostruita
+
+In genere questo step in più si fa quando nella soluzione ricorsiva risulta necessario confrontare "altre dimensioni o dati" oltre a quelli del problema.
+
+Il problema originale e quello "ridotto", sono comunque lo stesso problema, e "lavorano insieme" per raggiungere lo stesso fine.
 
 ---
 
@@ -527,7 +537,7 @@ Questa soluzione impiega $O(m+n)$.
 
  [[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima]]
 
- [[00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva]]
+ [[03 - Soluzione ricorsiva e problema ridotto]]
 
  [[04 - Soluzione bottom-up (top - down)]]
 

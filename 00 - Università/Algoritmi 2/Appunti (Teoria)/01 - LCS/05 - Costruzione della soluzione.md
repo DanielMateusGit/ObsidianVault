@@ -13,7 +13,7 @@ tags:
 
 ## Cosa si intende per costruzione della soluzione LCS?
 
-Per trovare una soluzione al problema della LCS abbiamo risolto un sotto-problema di lunghezze.
+Per trovare una soluzione al problema della LCS abbiamo ==risolto un problema di lunghezze.==
 
 Una volta trovata la soluzione a questo problema di lunghezze, bisogna ricostruire una soluzione per il problema originale.
 
@@ -42,3 +42,4 @@ PRINT_LCS (b, X, i, j)
 ````
 
 Questa soluzione impiega $O(m+n)$.
+

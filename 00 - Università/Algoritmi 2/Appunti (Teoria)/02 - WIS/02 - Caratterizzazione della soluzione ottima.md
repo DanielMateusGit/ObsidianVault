@@ -13,16 +13,42 @@ tags:
 
 # Caratterizzazione della soluzione ottima
 
-***
-
 ## Quali sono i sotto-problemi dell' algoritmo WIS?
+
+Essendo in un problema simile alla [[06 - Algoritmo LCS| LCS]], i sotto-problemi si trovano in maniera praticamente identica: riducendo l' istanza.
+
+Considerando l' insieme $X_n = \{1, \dots, n\}$ di attività iniziali, ed $S \subseteq \{1, \dots, n\}$, allora i sotto-problemi sono:
+
+$S_i \subseteq X_i$ tale che: $V(S_i) = \underset{\text{Comp}(A) = \text{true}}{\overset{\text{max}}{A \subseteq X_n}}$ $\{A\}$
+
+> [!Summary] In breve
+> Come in LCS, i sotto-problemi sono tutte le riduzioni possibili dell' istanza.
 
 *** 
 
 ## Che forma ha la proprietà della sotto-struttura ottima di WIS?
+
+Assumendo di conoscere già le soluzioni di WIS $S_0, S_1 \dots S_n$:
+
+$$
+\begin{aligned}
+&  \text{ Se } i \in S_i \rightarrow i = OPT_{p(i)} + v_i \text{ AND } Si = S_{p(i)} \cup \{i\} \\
+&  \text{ Se } i \not\in S_i \rightarrow OPT_i = OPT_{i-1} \text{ AND } Si = S_{i-1}
+\end{aligned}
+$$
+
+> [!Hint] Cosa è $p(i)$?
+> $p(i)$ è un' abbreviazione che sta per "Attività compatibile con la corrente, di peso maggiore".
+
+> [!Hint] Cosa è OPT?
+> $OPT_i=V(S_i)$ è il valore della soluzione del sotto-problem i-esimo.
+
+Ricordiamo dal [[Processo di sviluppo di un algoritmo dinamico]] che stiamo supponendo già risolti i sotto-problemi, e stiamo semplicemente spiegando come è stata calcolata una soluzione ==già trovata==.
 
 ***
 
 ## Come si dimostra la proprietà di sotto-struttura ottima di WIS? 
 
 ***
+
+// PDF di john ha una buona spiegazione 

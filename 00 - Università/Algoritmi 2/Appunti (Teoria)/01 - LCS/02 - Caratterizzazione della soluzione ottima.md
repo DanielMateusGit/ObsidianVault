@@ -43,7 +43,7 @@ Proviamo quindi a seguire gli step necessari per [[00 - Sotto-struttura ottima |
 
 Considerando quali sono le [[01 - Introduzione al problema LCS | istanze della LCS]], un sotto-problema è definibile come:
 
-> "Lunghezza della più lunga sotto-sequenza ricorsiva", tra $X_{m-1}$ ed $Y_{n-1}$.
+> "Più lunga sotto-sequenza", tra $X_{m-1}$ ed $Y_{n-1}$.
 > Ossia: LCS computata prendendo in input i[[00 - Università/Algoritmi 2/FlashCards/LCS/Concetti propedeutici| prefissi]] delle sequenze iniziali.
 
 Date $X$ ed $Y$, i sotto-problemi sono:

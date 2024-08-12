@@ -12,14 +12,13 @@ tags:
 
 # Concetti propedeutici
 
-***
-
 ## Cosa si intende per intervallo pesato ai fini dell' algoritmo WIS?
 
 Un "intervallo pesato" è: 
 
-- Un intervallo di tempo associato all'esecuzione di un' attività
-- Più il "peso" o "valore" associato all'esecuzione di tale attività
+- Un intervallo di tempo associato all'esecuzione di un' attività.
+  
+- Più il "peso" o "valore" associato all'esecuzione di tale attività.
 
 Quindi, ad intervallo $i$ è associato:
 
@@ -34,7 +33,9 @@ Quindi, ad intervallo $i$ è associato:
 
 ## Come è definita la funzione COMP ai fini dell' algoritmo WIS?
 
-È una funzione che controlla che tutte le attività contenute in un insieme siano compatibili temporalmente tra di loro .
+È una funzione che controlla che tutte le attività contenute in un insieme siano compatibili temporalmente tra di loro. 
+
+Valuta l' insieme della parti dell' insieme iniziali.
 
 Dato un insieme di attività $X = \{ 1 ... n \}$, si definisce funzione COMP:
 
@@ -50,6 +51,8 @@ $$
 \end{align*}
 $$
 
+Esempio:
+
 ***
 
 ## Come è definita la funzione VAL ai fini dell' algoritmo WIS?
@@ -63,5 +66,7 @@ $VAL$: $\rho(X)\longrightarrow R_+$
 $$
 v(A) = \begin{cases} \sum_{i \in A} v_i & \quad \text{se } A \ne \emptyset \\ 0 & \quad \text{se } A = \emptyset \end{cases}
 $$
+
+Esempio:
 
 ***

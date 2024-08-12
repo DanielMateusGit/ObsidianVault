@@ -18,19 +18,19 @@ Alla terza delle [[Processo di sviluppo di un algoritmo dinamico | quattro fasi 
 
 - È stata trovata una soluzione ricorsiva per l' algoritmo.
 - È stata trovata la "variabile" che descrive i dati importanti per il calcolo del problema.
-- Sono nati eventuali problemi ausiliari.
+- Sono nati eventuali problemi ridotti.
 
 Il passaggio successivo è quello di salvare i risultati parziali prodotti dalla [[Soluzione ricorsiva]] in una struttura dati, in modo da ==riciclare tutte le informazioni già calcolate==.
 
-Nella LCS, abbiamo trovato come variabile: 
+Nella LCS (problema ridotto), abbiamo trovato come variabile: 
 
 $C_{i,j}$ come la "lunghezza della sotto-sequenza comune più lunga tra i prefissi $X_i$ di $X$ ed $Y_j$ di $Y$."
 
-Che sposta il focus dal problema della LCS ad un suo sotto-problema ausiliare:
+Che sposta il focus dal problema della LCS ad un suo problema ridotto:
 
 ==Ora stiamo cercando e confrontando lunghezze di sequenze e sotto-sequenze.==
 
-La struttura che useremo per la LCS, dato che dobbiamo salvare un dato bi-dimensionale ($C_{i,j}$) sarà una Matrice $m*n$.
+La struttura che useremo, dato che dobbiamo salvare un dato bi-dimensionale ($C_{i,j}$), sarà una Matrice $m*n$.
 
 > [!Summary] In breve:
 > La risposta alla domanda originale sarebbe : introduciamo una struttura dati di supporto per salvare i risultati dei sotto-problemi dell' algoritmo.
@@ -47,6 +47,7 @@ Date le sequenze $X$ ed $Y$, la matrice:
 - Ogni cella $C_{i,j}$ corrisponderà alla "Lunghezza della LCS più comune più lunga prendendo i primi $i$ simboli da $X$ ed i primi $j$ simboli da $Y$".
 - Il valore di ogni cella $C_{i,j}$ sarà calcolato a partire da un caso base della formulazione ricorsiva, o dalle celle calcolate in precedenza.
 - Il Calcolo delle celle procede in ordine di lettura della matrice.
+  
 ---
 
 ## Come si calcola il valore di ogni cella?

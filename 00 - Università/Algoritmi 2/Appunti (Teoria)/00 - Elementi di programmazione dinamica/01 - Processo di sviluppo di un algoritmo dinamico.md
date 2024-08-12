@@ -20,6 +20,8 @@ tags:
 
 ## Cosa si intende per caratterizzazione della soluzione ottima?
 
+
+DESCRIVI MEGLIO QUESTA PARTE, COSì è troppo teorica e non si capisce l' applicaizone
 La descrizione dell' insieme di proprietà che una soluzione ottimale deve soddisfare per essere ritenuta tale. 
 
 > [!Hint] In soldoni:
