@@ -8,28 +8,20 @@ tags:
 # Soluzione ricorsiva
 
 ***
-- [[#Introduzione di OPT e p(i)|Introduzione di OPT e p(i)]]
+- [[#Introduzione di p(i)|Introduzione di p(i)]]
 - [[#Quale è la soluzione ricorsiva di WIS?|Quale è la soluzione ricorsiva di WIS?]]
-- [[#Vengono introdotte nuove variabili per la soluzione ricorsiva di WIS? Perchè?|Vengono introdotte nuove variabili per la soluzione ricorsiva di WIS? Perchè?]]
 - [[#Qual è l' algoritmo ricorsivo? Come si comporta in termini di tempi?|Qual è l' algoritmo ricorsivo? Come si comporta in termini di tempi?]]
 ***
 
-## Introduzione di OPT e p(i)
-
-==OPT==
-
-Per parlare della soluzione ricorsiva di WIS, dobbiamo prima definire una variabile-soluzione $OPT$ associata ad ogni soluzione $S_i$.
-
-Dato un qualsiasi problema di WIS, la sua soluzione sarà un sotto-insieme di intervalli $S_i$ ed $OPT(S_i)$ sarà il valore associato a tale insieme. 
-
-$OPT$ è fondamentale perchè sposta il focus del problema al confronto di valori numerici, anche se la soluzione finale sarà un sotto-insieme di tutti gli intervalli iniziali.
+## Introduzione di p(i)
 
 ==p(i)==
 
-$p(i)$ è invece un' abbreviazione per qualcosa che abbiamo già definito. Dato il sotto-problema $S_i$, definiamo $p(i)$ come l' attività di indice minore ad $i$, compatibile a quella corrente e di peso maggiore.
+$p(i)$ è un' abbreviazione per qualcosa che abbiamo già definito.
+
+Dato il sotto-problema $S_i$, definiamo $p(i)$ come l' attività di indice minore ad $i$, compatibile e di peso maggiore.
 
 > [!Hint] In breve:
-> $OPT_i = V(S_i)$
 > $p_i$ = {max j | j < i è compatibile con i}
 
 ***
@@ -38,14 +30,14 @@ $p(i)$ è invece un' abbreviazione per qualcosa che abbiamo già definito. Dato 
 
 ==Caso base:==
 
-$OPT_0 = 0$
+$S_0 = \emptyset$
 
 ==Caso passo:==
 
 $$
 S_i = 
 \begin{cases} 
-S_{i-1} & \text{se } OPT_{i-1} \geq OPT_{p_i} + v_i \\
+S_{i-1} & \text{se } V(S_{i-1}) \geq V(S{p_i}) + v_i \\
 S_{p_i} \cup \{i\} & \text{altrimenti}
 \end{cases}
 $$
