@@ -19,24 +19,24 @@
 - [x] **Lezione 3/10**
   - Ricostruzione di una LCS mediante algoritmo ricorsivo di stampa.
 
-- [ ] **Lezione 4/10**
+- [x] **Lezione 4/10**
   - Dimostrazione della proprietà della sottostruttura ottima della LCS.
   - Esercizi proposti: Heaviest Common Subsequence (HCS) tra due sequenze e LCS tra tre sequenze.
   - Il problema della Longest Increasing Subsequence (LIS). Risoluzione mediante programmazione dinamica attraverso l'introduzione di un problema ausiliario/vincolato.
 
-- [ ] **Lezione 9/10**
+- [x] **Lezione 9/10**
   - Il problema "Hateville". Risoluzione mediante programmazione dinamica inclusa la ricostruzione di una soluzione mediante stampa. 
   - Dimostrazione della proprietà della sottostruttura ottima.
   - Il problema "Interleaving". Risoluzione mediante programmazione dinamica.
   - Problema del calcolo del numero minimo di caratteri da aggiungere ad una stringa per renderla palindroma. Risoluzione mediante programmazione dinamica (parte 1).
 
-- [ ] **Lezione 10/10**
+- [x] **Lezione 10/10**
   - Proprietà della sottostruttura ottima del problema vincolato di LIS.
   - Calcolo della lunghezza di una LIS. Algoritmo bottom-up.
   - Ricostruzione di una soluzione mediante stampa. Esempio.
   - Dimostrazione della proprietà della sottostruttura ottima della LIS (nel problema vincolato).
 
-- [ ] **Lezione 11/10**
+- [x] **Lezione 11/10**
   - Il problema della Longest Increasing Common Subsequence (LICS). Risoluzione mediante programmazione dinamica attraverso l'introduzione di un problema ausiliario/vincolato.
   - Proprietà della sottostruttura ottima della LICS (nel problema vincolato).
   - Calcolo della lunghezza di una LICS. Algoritmo bottom-up.
@@ -44,21 +44,21 @@
   - Esercizio: determinare una più lunga sottosequenza comune di X e Y con simboli rossi <= R.
   - Calcolo della distanza di EDIT tra due sequenze.
 
-- [ ] **Lezione 16/10**
+- [x] **Lezione 16/10**
   - Problema del calcolo del numero minimo di caratteri da aggiungere ad una stringa per renderla palindroma. Risoluzione mediante programmazione dinamica (parte 2).
   - Problema del calcolo di un sottovettore di valore massimo di un vettore con componenti intere. Risoluzione mediante programmazione dinamica. Ricostruzione di un sottovettore di valore massimo lasciata come esercizio.
   - Problema del calcolo del costo di un percorso di costo minimo dalla posizione (1,1) alla posizione (m,n) in una griglia di m righe e n colonne con 3 possibili spostamenti da una cella alla successiva.
   - Esercizio (solo impostato): calcolo del numero dei percorsi possibili dalla posizione (1,1) alla posizione (m,n) in una griglia di m righe e n colonne con 3 possibili spostamenti da una cella alla successiva.
 
-- [ ] **Lezione 17/10**
+- [x] **Lezione 17/10**
   - ==Il problema dello Zaino (Knapsack 0-1)==. Risoluzione completa mediante programmazione dinamica.
 
-- [ ] **Lezione 18/10**
+- [x] **Lezione 18/10**
   - Esercizio: determinare se la lunghezza di una LCS di X e Y è >= L.
   - Problema di decisione del Subsetsum. Risoluzione mediante programmazione dinamica.
   - Esercizio: Knapsack 0-1 con oggetti colorati.
 
-- [ ] **Lezione 23/10**
+- [x] **Lezione 23/10**
   - Esercizio (risoluzione): calcolo del numero di tutti percorsi possibili dalla posizione (1,1) alla posizione (m,n) in una griglia di m righe e n colonne con 3 possibili spostamenti da una cella alla successiva.
   - Knapsack a coppie: dato un numero naturale C>0 e dati due insiemi disgiunti X e Y rispettivamente di m e n oggetti, a ciascuno dei quali è associato un valore ed un ingombro, si vuole calcolare un sottoinsieme di XxY di valore massimo composto da coppie di oggetti di ingombro complessivo <= C.
   - LCS pesata [esercizio assegnato nella prima prova parziale A.A. 22/23]: dato un numero naturale C>0 e date due sequenze X e Y rispettivamente di lunghezza m e n  di simboli a ciascuno dei quali è associato un ingombro, si vuole calcolare una più lunga sottosequenza comune a X e Y di ingombro complessivo <= C.

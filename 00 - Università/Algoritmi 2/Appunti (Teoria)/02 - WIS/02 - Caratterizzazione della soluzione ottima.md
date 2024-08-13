@@ -32,18 +32,28 @@ Assumendo di conoscere già le soluzioni di WIS $S_0, S_1 \dots S_n$:
 
 $$
 \begin{aligned}
-&  \text{ Se } i \in S_i \rightarrow i = OPT_{p(i)} + v_i \text{ AND } Si = S_{p(i)} \cup \{i\} \\
-&  \text{ Se } i \not\in S_i \rightarrow OPT_i = OPT_{i-1} \text{ AND } Si = S_{i-1}
+&  \text{ Se } i \in S_i \rightarrow  Si = S_{p(i)} \cup \{i\} \\
+&  \text{ Se } i \not\in S_i \rightarrow Si = S_{i-1}
 \end{aligned}
 $$
 
 > [!Hint] Cosa è $p(i)$?
 > $p(i)$ è un' abbreviazione che sta per "Attività compatibile con la corrente, di peso maggiore".
 
-> [!Hint] Cosa è OPT?
-> $OPT_i=V(S_i)$ è il valore della soluzione del sotto-problem i-esimo.
-
 Ricordiamo dal [[Processo di sviluppo di un algoritmo dinamico]] che stiamo supponendo già risolti i sotto-problemi, e stiamo semplicemente spiegando come è stata calcolata una soluzione ==già trovata==.
+
+Spiegazione:
+
+Quando prendo in considerazione il problema $S_i$ sto in realtà:
+
+Considerando la migliore soluzioni presi i primi $i$ intervalli.
+
+Dato che io conosco già la soluzione, guardandola e guardando il mio $i$-esimo intervallo mi posso trovare solo in due situazioni:
+
+- L' intervallo che sto valutando si trova nella soluzione
+- L' intervallo che sto valutano non si trova nella soluzione
+
+E posso anche dire come è stato trovato, rispetto alle altra soluzioni di indice $j<i$ .
 
 ***
 

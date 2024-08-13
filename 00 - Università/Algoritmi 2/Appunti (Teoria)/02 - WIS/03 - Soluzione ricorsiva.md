@@ -4,7 +4,6 @@ tags:
   - Algoritmi/WIS
   - Algoritmi/WIS/Soluzione_ricorsiva
 ---
-
 # Soluzione ricorsiva
 
 ***
@@ -41,6 +40,19 @@ S_{i-1} & \text{se } V(S_{i-1}) \geq V(S{p_i}) + v_i \\
 S_{p_i} \cup \{i\} & \text{altrimenti}
 \end{cases}
 $$
+
+Spiegazione:
+
+Sto valutando se inserire oppure meno l' intervallo di indice $i$ all'interno della mia soluzione.
+
+Se sono nel caso passo possono avvenire solo due cose:
+
+- La soluzione trovata fino ad ora (insieme di intervalli) è migliore della nuova soluzione che l' intervallo in analisi costituisce (intervallo corrente + sotto-insieme di intervalli compatibile).
+- La nuova soluzione è migliore di qualsiasi trovata fino ad ora.
+
+Nel primo caso sto "portando avanti" un ottimo trovato in precedenza e migliore di quello realizzabile attualmente.
+
+Nel secondo caso invece ho trovato un intervallo migliore di quello trovato fino ad ora e che costituirà il nuovo ottimo.
 
 ***
 
