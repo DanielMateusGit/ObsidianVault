@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Journal/Daily/15-08-2024.md",
+                "file": "04 - Journal/Daily/19-08-2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 522.5
+    "width": 522.5,
+    "collapsed": true
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Journal/Daily/15-08-2024.md",
+                "file": "04 - Journal/Daily/19-08-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Journal/Daily/15-08-2024.md",
+                "file": "04 - Journal/Daily/19-08-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Journal/Daily/15-08-2024.md"
+                "file": "04 - Journal/Daily/19-08-2024.md"
               }
             }
           },
@@ -190,7 +191,7 @@
             }
           },
           {
-            "id": "75f0e07e9c3f89a8",
+            "id": "0ef1994e2a9cc14b",
             "type": "leaf",
             "state": {
               "type": "timer-view",
@@ -202,7 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5
+    "width": 634.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,9 +222,12 @@
   },
   "active": "30e527a9ef3d9410",
   "lastOpenFiles": [
-    "04 - Journal/Daily/13-08-2024.md",
-    "04 - Journal/Daily/15-08-2024.md",
+    "04 - Journal/Daily/17-08-2024.md",
+    "04 - Journal/Daily/19-08-2024.md",
+    "04 - Journal/Daily/16-08-2024.md",
     "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
+    "04 - Journal/Daily/15-08-2024.md",
+    "04 - Journal/Daily/13-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/06 - Algoritmo WIS.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/04 - Soluzione bottom-up.md",
@@ -251,9 +255,6 @@
     "00 - Università/Algoritmi 2/Appunti (Teoria)/04 - LICS",
     "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto_completo_prima_parte.pdf",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/06 - Knapsack",
-    "04 - Journal/Daily/09-08-2024.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/03 - LIS/01 - Caratterizzazione della soluzione ottima.md",
-    "04 - Journal/Daily/10-08-2024.md",
     "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto_completo_seconda_parte.pdf",
     "00 - Università/Algoritmi 2/Resources/Risorse Esterne",
     "00 - Università/Algoritmi 2/Resources/New folder",

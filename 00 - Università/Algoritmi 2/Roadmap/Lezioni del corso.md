@@ -64,7 +64,7 @@
   - LCS pesata [esercizio assegnato nella prima prova parziale A.A. 22/23]: dato un numero naturale C>0 e date due sequenze X e Y rispettivamente di lunghezza m e n  di simboli a ciascuno dei quali è associato un ingombro, si vuole calcolare una più lunga sottosequenza comune a X e Y di ingombro complessivo <= C.
   - Variante di WIS (weighed interval scheduling) con ingombri: dato un numero naturale C>0 e dato un insieme X di n attività, a ciascuna delle quali è associato un tempo di inizio, un tempo di fine, un valore ed un ingombro, si vuole calcolare un sottoinsieme di X di valore massimo composto da attività mutualmente compatibili e di ingombro complessivo <= C.
 
-- [ ] **Lezione 24/10**
+- [x] **Lezione 24/10**
   - Calcolo dei cammini minimi tra tutte le coppie di vertici di un grafo orientato e pesato. ==Algoritmo di Floyd-Warshall.==
 ***
 ==Questa è la metà del corso
