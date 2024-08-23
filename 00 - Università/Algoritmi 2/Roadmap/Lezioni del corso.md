@@ -74,7 +74,7 @@
   - ==Algoritmo di Floyd-Warshall== (continuazione). Calcolo dei predecessori e ricostruzione di un cammino minimo.
   - Esercizi su varianti di Floyd-Warshall.
 
-- [ ] **Lezione 30/10**
+- [x] **Lezione 30/10**
   - ==Strutture Dati per Insiemi Disgiunti.== Definizioni. Calcolo delle componenti connesse di un grafo non orientato. Rappresentazione mediante liste concatenate e costi delle operazioni. Questioni inerenti la complessità di un algoritmo che sfrutta le Strutture Dati per Insiemi Disgiunti.
   - Esercizi di Programmazione Dinamica.
 
@@ -92,8 +92,8 @@
   - Esercizio: cammino minimo con archi rossi e blu.
   - Esercizio proposto: calcolare la più lunga sottostringa comune di due sequenze X e Y.
 
-- [ ] **Lezione 15/11**
-  - ==Euristica dell'unione pesata.== Teorema (con dimostrazione): utilizzando l'euristica dell'unione pesata,  una sequenza di m operazioni di cui n sono make-set e al più n-1 delle quali sono union, per essere eseguita impiega un tempo O(m + n log n ).
+- [x] **Lezione 15/11**
+  - ==Euristica dell'unione pesata.== ==Teorema (con dimostrazione)==: utilizzando l'euristica dell'unione pesata,  una sequenza di m operazioni di cui n sono make-set e al più n-1 delle quali sono union, per essere eseguita impiega un tempo O(m + n log n ).
   - ==Strutture dati per insiemi disgiunti: rappresentazione mediante foreste di alberi.== Unione per rango e compressione dei cammini. Relativa implementazione di make-set, find-set e union. Tempi di calcolo di una sequenza di m operazioni  (di cui n sono make-set e al più n-1 delle quali sono union) mediante unione per rango + compressione dei cammini (senza dimostrazione).
   - Esercizio. Dato un grafo pesato sugli archi e nel quale ad ogni arco, oltre al peso, è associato un numero naturale tramite una data funzione f, calcolare, per ogni coppia di vertici, il peso di un cammino minimo nel quale la sequenza dei valori associati agli archi tramite f è strettamente crescente.
   - Esercizio. Dato un naturale H e dato un grafo pesato sugli archi e nel quale ad ogni vertice è associato un numero naturale tramite una data funzione f, calcolare, per ogni coppia di vertici, il peso di un cammino minimo nel quale la somma dei valori associati ai vertici è minore o uguale ad H.
@@ -108,7 +108,7 @@
 
 - [ ] **Lezione 5/12**
   - Perché ==greedy-min== risolve un problema di minimo associato ad un matroide pesato (trasformazione di un problema di minimo in un problema di massimo definendo una nuova opportuna funzione peso a partire da quella data + applicazione del teorema di Rado).
-  - ==Nozione di arco sicuro e algoritmo Generic-MST== per il calcolo di un albero di copertura minimo. Rilettura dell'algoritmo di Kruskal come specializzazione di Generic-MST.
+  - ==Nozione di arco sicuro e algoritmo Generic-MST== per il calcolo di un albero di copertura minimo. Rilettura dell'==algoritmo di Kruskal== come specializzazione di Generic-MST.
   - Nozioni di taglio, arco che attraversa un taglio, taglio che rispetta un sottoinsieme di archi e arco leggero.
 
 - [ ] **Lezione 11/12**

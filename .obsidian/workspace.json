@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0a40707b783ee590",
+        "id": "2192f4c5ae3291da",
         "type": "tabs",
         "children": [
           {
-            "id": "30e527a9ef3d9410",
+            "id": "6994e48779e54409",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "04 - Journal/Daily/19-08-2024.md",
-                "mode": "source",
-                "source": false
+                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png"
               }
             }
           }
@@ -69,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 522.5,
-    "collapsed": true
+    "width": 522.5
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -106,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Journal/Daily/19-08-2024.md",
+                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Journal/Daily/19-08-2024.md",
+                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Journal/Daily/19-08-2024.md"
+                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png"
               }
             }
           },
@@ -220,17 +217,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "30e527a9ef3d9410",
+  "active": "5dc1bb52566cf7e2",
   "lastOpenFiles": [
-    "04 - Journal/Daily/17-08-2024.md",
+    "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",
+    "06 - Resources/Obsidian utils/Images",
+    "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
+    "06 - Resources/Obsidian utils/Images/Pasted image 20240804105550.png",
+    "04 - Journal/Daily/23-08-2024.md",
     "04 - Journal/Daily/19-08-2024.md",
-    "04 - Journal/Daily/16-08-2024.md",
     "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
+    "00 - Università/Algoritmi 2/FlashCards/WIS/Concetti propedeutici.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/04 - Soluzione bottom-up.md",
+    "04 - Journal/Daily/17-08-2024.md",
+    "04 - Journal/Daily/16-08-2024.md",
     "04 - Journal/Daily/15-08-2024.md",
     "04 - Journal/Daily/13-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/06 - Algoritmo WIS.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Concetti propedeutici.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/04 - Soluzione bottom-up.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/05 - Costruzione della soluzione.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/03 - Soluzione ricorsiva.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/02 - Caratterizzazione della soluzione ottima.md",
@@ -243,23 +246,16 @@
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva e problema ridotto.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
-    "00 - Università/Algoritmi 2/FlashCards/WIS/Concetti propedeutici.md",
-    "Pasted image 20240812134117.png",
     "04 - Journal/Daily/11-08-2024.md",
     "00 - Università/Algoritmi 2/Resources/Risorse Esterne/riassunto_algoritmi_principali_formalizzati.pdf",
     "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Algo 13 _ problema di knapsack.pdf",
     "04 - Journal/Daily/30-07-2024.md",
-    "04 - Journal/Daily/31-07-2024.md",
-    "04 - Journal/Daily/01-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/07 - Algoritmo Floyd-Warshall",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/04 - LICS",
     "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto_completo_prima_parte.pdf",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/06 - Knapsack",
     "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto_completo_seconda_parte.pdf",
     "00 - Università/Algoritmi 2/Resources/Risorse Esterne",
-    "00 - Università/Algoritmi 2/Resources/New folder",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/07 - Stringhe Palindrome",
-    "Pasted image 20240804105550.png",
-    "Pasted image 20240804095254.png"
+    "00 - Università/Algoritmi 2/Resources/New folder"
   ]
 }
