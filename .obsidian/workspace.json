@@ -198,12 +198,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 634.5,
-    "collapsed": true
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,16 +219,25 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6994e48779e54409",
+  "active": "5dc1bb52566cf7e2",
   "lastOpenFiles": [
-    "04 - Journal/Daily/19-08-2024.md",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio/2 - PD Grafi (Floyd-Warhsall).pdf",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio/3 - Esercizi visita Grafi (DFS-BFS).pdf",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio/1 - PD Sequenze.pdf",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Esercizi BFS-DFS.pdf",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Floyd Warshall esercizi.pdf",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Greedy & Matroidi.pdf",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Visita grafi teoria.pdf",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto insiemi disgiunti.pdf",
+    "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
     "04 - Journal/Daily/24-08-2024.md",
+    "04 - Journal/Daily/19-08-2024.md",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",
     "06 - Resources/Obsidian utils/Images",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804105550.png",
     "04 - Journal/Daily/23-08-2024.md",
-    "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
     "00 - Università/Algoritmi 2/FlashCards/WIS/Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/04 - Soluzione bottom-up.md",
     "04 - Journal/Daily/17-08-2024.md",
@@ -251,15 +259,6 @@
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
     "04 - Journal/Daily/11-08-2024.md",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/riassunto_algoritmi_principali_formalizzati.pdf",
-    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Algo 13 _ problema di knapsack.pdf",
-    "04 - Journal/Daily/30-07-2024.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/07 - Algoritmo Floyd-Warshall",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/04 - LICS",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto_completo_prima_parte.pdf",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/06 - Knapsack",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto_completo_seconda_parte.pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne",
-    "00 - Università/Algoritmi 2/Resources/New folder"
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/riassunto_algoritmi_principali_formalizzati.pdf"
   ]
 }

@@ -111,7 +111,7 @@
   - ==Nozione di arco sicuro e algoritmo Generic-MST== per il calcolo di un albero di copertura minimo. Rilettura dell'==algoritmo di Kruskal== come specializzazione di Generic-MST.
   - Nozioni di taglio, arco che attraversa un taglio, taglio che rispetta un sottoinsieme di archi e arco leggero.
 
-- [ ] **Lezione 11/12**
+- [x] **Lezione 11/12**
   - Rappresentazione di una grafo tramite liste di adiacenza. ==Algoritmo di Prim come specializzazione di Generic-MST== e sua complessità.
   - Teorema dell'arco sicuro (con dimostrazione, illustrata il 12/12). Tale teorema assicura la correttezza dell'algoritmo di PRIM.
   - Corollario (con dimostrazione): se (u,v) è un arco di peso minimo che collega una componente connessa ad un'altra componente connessa in una foresta (V,S), allora (u,v) è un arco sicuro per S. Tale corollario assicura la correttezza dell'==algoritmo di Kruskal== come specializzazione Generic-MST. Nota bene: sappiamo già che l'algoritmo di Kruskal funziona correttamente indipendentemente da questo risultato. Infatti l'algoritmo di Kruskal è anche un'istanza di greedy-min associato ad un problema di minimo definito su un matroide (il matroide grafico) e quindi l'algoritmo di Kruskal funziona correttamente.
@@ -119,8 +119,8 @@
   - Visita in ampiezza di un grafo (BFS).
 
 - [ ] **Lezione 12/12**
-  - Dimostrazione del teorema dell'arco sicuro.
-  - Dimostrazione della correttezza dell'algoritmo di Dijkstra.
+  - ==Dimostrazione del teorema dell'arco sicuro.==
+  - ==Dimostrazione della correttezza dell'algoritmo di Dijkstra.==
 
 - [ ] **Lezione 13/12**
   - Complessità della visita in ampiezza di un grafo (==BFS==).
