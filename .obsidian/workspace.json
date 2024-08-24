@@ -11,9 +11,11 @@
             "id": "6994e48779e54409",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png"
+                "file": "04 - Journal/Daily/24-08-2024.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -103,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
+                "file": "04 - Journal/Daily/24-08-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
+                "file": "04 - Journal/Daily/24-08-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png"
+                "file": "04 - Journal/Daily/24-08-2024.md"
               }
             }
           },
@@ -200,7 +202,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 634.5
+    "width": 634.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,14 +220,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5dc1bb52566cf7e2",
+  "active": "6994e48779e54409",
   "lastOpenFiles": [
+    "04 - Journal/Daily/19-08-2024.md",
+    "04 - Journal/Daily/24-08-2024.md",
+    "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",
     "06 - Resources/Obsidian utils/Images",
-    "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804105550.png",
     "04 - Journal/Daily/23-08-2024.md",
-    "04 - Journal/Daily/19-08-2024.md",
     "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
     "00 - Università/Algoritmi 2/FlashCards/WIS/Concetti propedeutici.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/04 - Soluzione bottom-up.md",
