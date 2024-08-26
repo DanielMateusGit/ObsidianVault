@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Udemy/Understanding Typescript/Appunti/01 - TypeScript Basics/Using Types.md",
+                "file": "04 - Journal/Daily/26-08-2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Udemy/Understanding Typescript/Appunti/01 - TypeScript Basics/Using Types.md",
+                "file": "04 - Journal/Daily/26-08-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 - Udemy/Understanding Typescript/Appunti/01 - TypeScript Basics/Using Types.md",
+                "file": "04 - Journal/Daily/26-08-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Udemy/Understanding Typescript/Appunti/01 - TypeScript Basics/Using Types.md"
+                "file": "04 - Journal/Daily/26-08-2024.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -221,14 +221,18 @@
   },
   "active": "37bd550d36740680",
   "lastOpenFiles": [
-    "02 - Udemy/Understanding Typescript/Appunti/00 - Getting Started/Introduzione a TypeScript.md",
+    "04 - Journal/Daily/06-08-2024.md",
+    "04 - Journal/Daily/03-08-2024.md",
+    "04 - Journal/Daily/11-08-2024.md",
+    "04 - Journal/Daily/13-08-2024.md",
+    "04 - Journal/Daily/26-08-2024.md",
     "02 - Udemy/Understanding Typescript/Appunti/01 - TypeScript Basics/Using Types.md",
+    "02 - Udemy/Understanding Typescript/Appunti/00 - Getting Started/Introduzione a TypeScript.md",
     "02 - Udemy/Understanding Typescript/Appunti/01 - TypeScript Basics",
     "02 - Udemy/Understanding Typescript/Appunti/01",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
     "Pasted image 20240826094715.png",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
-    "04 - Journal/Daily/26-08-2024.md",
     "04 - Journal/Daily/09-08-2024.md",
     "02 - Udemy/Understanding Typescript/Appunti/00 - Getting Started",
     "02 - Udemy/Understanding Typescript/Journal",
@@ -237,7 +241,6 @@
     "02 - Udemy/Understanding Typescript",
     "04 - Journal/Daily/10-08-2024.md",
     "04 - Journal/Daily/12-08-2024.md",
-    "04 - Journal/Daily/11-08-2024.md",
     "04 - Journal/Daily/08-08-2024.md",
     "04 - Journal/Daily/07-08-2024.md",
     "04 - Journal/Daily/16-08-2024.md",
@@ -255,9 +258,6 @@
     "04 - Journal/Daily/24-08-2024.md",
     "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
     "00 - Università/Algoritmi 2/Roadmap/Studio sul libro.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva e problema ridotto.md",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804105550.png"
