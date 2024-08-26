@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2192f4c5ae3291da",
+        "id": "939773ed9a893eef",
         "type": "tabs",
         "children": [
           {
-            "id": "6994e48779e54409",
+            "id": "37bd550d36740680",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Journal/Daily/24-08-2024.md",
+                "file": "04 - Journal/Daily/26-08-2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 - Journal/Daily/24-08-2024.md",
+                "file": "04 - Journal/Daily/26-08-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 - Journal/Daily/24-08-2024.md",
+                "file": "04 - Journal/Daily/26-08-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Journal/Daily/24-08-2024.md"
+                "file": "04 - Journal/Daily/26-08-2024.md"
               }
             }
           },
@@ -190,7 +190,7 @@
             }
           },
           {
-            "id": "0ef1994e2a9cc14b",
+            "id": "600db17c0a205c7b",
             "type": "leaf",
             "state": {
               "type": "timer-view",
@@ -198,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -219,23 +219,39 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5dc1bb52566cf7e2",
+  "active": "37bd550d36740680",
   "lastOpenFiles": [
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio/2 - PD Grafi (Floyd-Warhsall).pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio/3 - Esercizi visita Grafi (DFS-BFS).pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio/1 - PD Sequenze.pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/PDF Dennunzio",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Esercizi BFS-DFS.pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Floyd Warshall esercizi.pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Greedy & Matroidi.pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Visita grafi teoria.pdf",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Riassunto insiemi disgiunti.pdf",
-    "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
+    "06 - Resources/Obsidian utils/Templates/DailyLearning.md",
+    "06 - Resources/Obsidian utils/Templates/DailyHeader.md",
+    "04 - Journal/Daily/26-08-2024.md",
+    "06 - Resources/Obsidian utils/Templates/DailyUniversity.md",
+    "06 - Resources/Obsidian utils/Templates/DailyWork.md",
+    "04 - Journal/Daily/25-08-2024.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/03 - Soluzione ricorsiva.md",
+    "06 - Resources/Obsidian utils/Templates/{{date}}.md",
     "04 - Journal/Daily/24-08-2024.md",
+    "00 - Università/Algoritmi 2/Roadmap/Lezioni del corso.md",
+    "00 - Università/Algoritmi 2/Roadmap/Studio sul libro.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva e problema ridotto.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/05 - Costruzione della soluzione.md",
+    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
+    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Esercizi BFS-DFS.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Visita grafi.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Teoria esame.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Simulazioni primo parziale.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Riassunto_teoria_algo_2.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Nota 31-10-2022, 4_08_12 PM.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Nota 25-11-2022, 11_27_02 PM.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Nota 21-11-2022, 3_06_51 PM.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Nota 16-01-2023, 11_11_33 PM.pdf",
+    "00 - Università/Algoritmi 2/Resources/APPUNTI_DAN_2023/Nota 14-01-2023, 12_30_28 AM.pdf",
     "04 - Journal/Daily/19-08-2024.md",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",
-    "06 - Resources/Obsidian utils/Images",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804105550.png",
     "04 - Journal/Daily/23-08-2024.md",
     "00 - Università/Algoritmi 2/FlashCards/WIS/Concetti propedeutici.md",
@@ -243,22 +259,6 @@
     "04 - Journal/Daily/17-08-2024.md",
     "04 - Journal/Daily/16-08-2024.md",
     "04 - Journal/Daily/15-08-2024.md",
-    "04 - Journal/Daily/13-08-2024.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/06 - Algoritmo WIS.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/00 - Concetti propedeutici.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/05 - Costruzione della soluzione.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/03 - Soluzione ricorsiva.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/02 - Caratterizzazione della soluzione ottima.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/02 - WIS/01 - Introduzione al problema WIS.md",
-    "04 - Journal/Daily/12-08-2024.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/05 - Costruzione della soluzione.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/04 - Soluzione bottom-up (top - down).md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/02 - Caratterizzazione della soluzione ottima.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/03 - Soluzione ricorsiva e problema ridotto.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
-    "04 - Journal/Daily/11-08-2024.md",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/riassunto_algoritmi_principali_formalizzati.pdf"
+    "04 - Journal/Daily/13-08-2024.md"
   ]
 }

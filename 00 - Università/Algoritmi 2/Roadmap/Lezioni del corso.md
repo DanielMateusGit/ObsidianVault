@@ -106,7 +106,7 @@
   - Risoluzione esercizio proposto. Esercizio Hateville (con anche un numero di alberi associato ad ogni casa) con il vincolo che il numero totale di alberi è pari.
   - Esercizio. Esercizio Hateville (con anche un colore associato ad ogni casa) con il vincolo che nell'insieme ricercato non vi siano due case consecutive rosse.
 
-- [ ] **Lezione 5/12**
+- [x] **Lezione 5/12**
   - Perché ==greedy-min== risolve un problema di minimo associato ad un matroide pesato (trasformazione di un problema di minimo in un problema di massimo definendo una nuova opportuna funzione peso a partire da quella data + applicazione del teorema di Rado).
   - ==Nozione di arco sicuro e algoritmo Generic-MST== per il calcolo di un albero di copertura minimo. Rilettura dell'==algoritmo di Kruskal== come specializzazione di Generic-MST.
   - Nozioni di taglio, arco che attraversa un taglio, taglio che rispetta un sottoinsieme di archi e arco leggero.
