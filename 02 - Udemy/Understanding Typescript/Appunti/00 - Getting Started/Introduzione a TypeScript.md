@@ -36,7 +36,7 @@ Aggiunge altre features che portano Javascript ad essere più simile ai linguagg
 - Meta-programmazione (come i decoratori)
 - Tooling 
 
-```
+```typescript
 function addIntegers(a, b) {
 	return a + b;
 }
@@ -58,7 +58,7 @@ console.log(addIntegers('2', '3'));
 
 Per installare e compilare TypeScript:
 
-```
+```bash
 npm install -g typescript
 tsc helloworld.tsc
 ```

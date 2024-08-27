@@ -33,4 +33,46 @@ Questi sono:
 
 ***
 
-prossimo argomento: Casting di tipi (guardalo, interessante, è il numero 15)
+## Objects
+
+Con TypeScript possiamo definire una "linea guida" custom che un oggetto deve seguire per passare un nostro type check.
+
+Per definire "tipi diversi dai primitivi", i creatori di TypeScript hanno inventato un tipo specifico: ==object==.
+
+Dichiarando un dato ==object==, stiamo dicendo che questo sarà un oggetto custom e non primitivo.
+
+Non abbiamo però alcuna informazione sull'oggetto: 
+
+ - Non abbiamo informazioni sui metodi che dovrebbe contenere
+ - Non abbiamo informazioni sugli attributi che dovrebbe contenere
+
+L' accesso a qualsiasi dato membro di questo oggetto genererà un errore TypeScript.
+
+Il tutto però è risolvibile, specificando in maniera esplicita quali sono gli attributi di questo object:
+
+```typescript
+const person : object = {
+	name: 'Maximilian',
+	age: 30
+}
+
+// Questo genera un errore, perchè ci manca informazione sull' object correte
+console.log(person.name);
+
+const anotherPerson : {name: string; age :number;} = {
+	name : 'Eliot',
+	age : 30
+}
+
+// Qui invece abbiamo informazioni a sufficienza 
+console.log(anotherPerson.name);
+```
+
+> [!Hint] In Breve
+> Un dato diverso dai tipi primitivi, in TypeScript è un dato ==object==.
+> 
+> Se si vuole avere accesso al contenuto di oggetto custom, bisogna definirne la struttura.
+
+***
+
+## Arrays Types
