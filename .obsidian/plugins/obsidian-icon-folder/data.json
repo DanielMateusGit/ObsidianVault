@@ -35,9 +35,9 @@
   },
   "00 - Università": "LiGraduationCap",
   "01 - ESGeo": "LiBadgeDollarSign",
-  "02 - Udemy": "LiSparkles",
   "03 - Progetti": "LiAtom",
   "04 - Journal": "LiAlbum",
   "05 - Fast Notes": "LiPenTool",
-  "06 - Resources": "LiActivitySquare"
+  "06 - Resources": "LiActivitySquare",
+  "02 - Learning": "LiSparkles"
 }

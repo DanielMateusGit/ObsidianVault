@@ -76,3 +76,64 @@ console.log(anotherPerson.name);
 ***
 
 ## Arrays Types
+
+Quando vogliamo specificare un array di dati primitivi in TypeScript, basta utilizzare la sintassi:
+
+```typescript
+ let hobbies : string[] = [ 'Sports', 'Cooking' ];
+
+ for( const hobby of hobbies ){
+	 console.log(hobby.toUpperCase());
+ }
+```
+
+Oltre ad avere un controllo sul tipo, quando ==itero sugli array tipizzati== ho un check automatico sui metodi che posso oppure non posso utilizzare.
+
+Ad esempio, se ho un array di string => ogni oggetto potrà invocare il metodo toUpperCase().
+
+Invece avendo un array di interi, la chiamata .toUpperCase() genererà un errore.
+
+***
+
+## Tuples
+
+Le tuple sono array con una dimensione e tipo fissati (durante la dichiarazione).
+
+
+> [!Warning] Cosa si intende per tipo fissato
+> In TypeScript si intende che ogni elemento dell' array ha un tipo specifico, deciso durante la dichiarazione della tupla.
+> 
+> Questo vuol dire che i tipi dei singoli dati possono anche non essere omogenei.
+> 
+> Posso decidere di creare una tupla di 3 stringhe, così come una tupla di un booleano, una stringa ed un intero.
+> 
+
+Javascript non supporta nativamente le Tuple, sono consentiti da TypeScript.
+
+```typescript
+	const role : [number, string] = [1, 'Captain'];
+
+	// Questo genera un errore in compilazione
+	role[0] = 'AnotherRole';
+	// Questo invece è corretto
+	role[0] = 1;
+	
+```
+
+
+*** 
+
+## Enum
+
+Gli Enum, come le Tuple, non esistono in Javascript.
+
+Possiamo utilizzarle solamente grazie a TypeScript ed il suo step di compilazione intermedio.
+
+```typescript
+ enum Role {ADMIN, READ_ONLY, AUTHOR};
+
+ // Utilizzabile in qualsiasi altro punto del codice:
+ if( person.role = Role.AUTHOR) {
+	 console.log( 'is author');
+ }
+```
