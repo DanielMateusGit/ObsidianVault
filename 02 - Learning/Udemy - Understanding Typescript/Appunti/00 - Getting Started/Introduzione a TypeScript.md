@@ -7,6 +7,12 @@ tags:
 
 # Introduzione a TypeScript
 
+- [[#Cosa è TypeScript?|Cosa è TypeScript?]]
+- [[#Perchè si utilizza? Semplice esempio.|Perchè si utilizza? Semplice esempio.]]
+- [[#Come si installa Typescript?|Come si installa Typescript?]]
+ 
+***
+
 ## Cosa è TypeScript?
 
 TypeScript è un **==_superset_==** di JavaScript che aggiunge tipizzazione statica e caratteristiche avanzate come classi e interfacce, migliorando la manutenzione del codice Javascript.
@@ -25,7 +31,7 @@ TypeScript è un **==_superset_==** di JavaScript che aggiunge tipizzazione stat
 
 ***
 
-## Perchè si utilizza? 
+## Perchè si utilizza? Semplice esempio.
 
 Permette di prevenire tutti i comportamenti indesiderati generati dalla mancanza di tipizzazione in Javascript.
 
@@ -50,11 +56,19 @@ console.log(addIntegers('2', '3'));
 // eccezione in caso di tipo errato etc...
 // MA TYPESCRIPT permette di rilevare questo errore in maniera più intelligente 
 
+// IL codice TypeScript corrispondente alla funzione sopra sarebbe il seguente:
+function addInteger( a : number, b : number ) : number {
+	return a + b;
+}
+
+// In questo modo, quando si compilerà il codice da ts => js
+console.log(addIntegers('2', '3'));  // => questo lancerà un errore 
+
 ```
 
 *** 
 
-## Installazione
+## Come si installa Typescript?
 
 Per installare e compilare TypeScript:
 

@@ -7,11 +7,11 @@ tags:
 
 # Types
 
-## Core Types 
+***
 
-I "Core Type" sono quelli supportati da Javascript e compatibili con TypeScript. 
+## Quali sono i tipi primitivi?
 
-Questi sono:
+I tipi primitivi sono:
 
 - number
 - string
@@ -33,22 +33,18 @@ Questi sono:
 
 ***
 
-## Objects
+## Come definisco oggetti?
 
-Con TypeScript possiamo definire una "linea guida" custom che un oggetto deve seguire per passare un nostro type check.
+I creatori di TypeScript hanno inventato un tipo specifico: ==object==.
 
-Per definire "tipi diversi dai primitivi", i creatori di TypeScript hanno inventato un tipo specifico: ==object==.
-
-Dichiarando un dato ==object==, stiamo dicendo che questo sarà un oggetto custom e non primitivo.
-
-Non abbiamo però alcuna informazione sull'oggetto: 
+Il solo tipo object non è però sufficiente! Non abbiamo le seguenti informazioni:
 
  - Non abbiamo informazioni sui metodi che dovrebbe contenere
  - Non abbiamo informazioni sugli attributi che dovrebbe contenere
 
-L' accesso a qualsiasi dato membro di questo oggetto genererà un errore TypeScript.
+L' accesso a qualsiasi dato membro di un oggetto di tipo ==object== genererà un errore TypeScript.
 
-Il tutto però è risolvibile, specificando in maniera esplicita quali sono gli attributi di questo object:
+È possibile specificare la "forma" del tipo di dato, per poter specializzare un tipo object generico in un oggetto più specifico:
 
 ```typescript
 const person : object = {
@@ -59,6 +55,8 @@ const person : object = {
 // Questo genera un errore, perchè ci manca informazione sull' object correte
 console.log(person.name);
 
+// Notare che stiamo specializzando il tipo object con informazioni sui suoi 
+// dati membro
 const anotherPerson : {name: string; age :number;} = {
 	name : 'Eliot',
 	age : 30
@@ -69,13 +67,13 @@ console.log(anotherPerson.name);
 ```
 
 > [!Hint] In Breve
-> Un dato diverso dai tipi primitivi, in TypeScript è un dato ==object==.
+> Il tipo di dato per oggetti, in TypeScript è ==object==.
 > 
-> Se si vuole avere accesso al contenuto di oggetto custom, bisogna definirne la struttura.
+> Se si vuole avere accesso al contenuto di oggetti custom, bisogna specificarne la struttura.
 
 ***
 
-## Arrays Types
+## Come definisco un array?
 
 Quando vogliamo specificare un array di dati primitivi in TypeScript, basta utilizzare la sintassi:
 
@@ -95,15 +93,14 @@ Invece avendo un array di interi, la chiamata .toUpperCase() genererà un errore
 
 ***
 
-## Tuples
+## Come definisco delle Tuple?
 
 Le tuple sono array con una dimensione e tipo fissati (durante la dichiarazione).
 
-
 > [!Warning] Cosa si intende per tipo fissato
-> In TypeScript si intende che ogni elemento dell' array ha un tipo specifico, deciso durante la dichiarazione della tupla.
+> Ogni elemento dell' array ha un tipo specifico, deciso durante la dichiarazione della tupla.
 > 
-> Questo vuol dire che i tipi dei singoli dati possono anche non essere omogenei.
+> Però => i tipi dei singoli dati possono anche non essere omogenei.
 > 
 > Posso decidere di creare una tupla di 3 stringhe, così come una tupla di un booleano, una stringa ed un intero.
 > 
@@ -120,10 +117,9 @@ Javascript non supporta nativamente le Tuple, sono consentiti da TypeScript.
 	
 ```
 
-
 *** 
 
-## Enum
+## Come definisco degli enum?
 
 Gli Enum, come le Tuple, non esistono in Javascript.
 
@@ -137,3 +133,178 @@ Possiamo utilizzarle solamente grazie a TypeScript ed il suo step di compilazion
 	 console.log( 'is author');
  }
 ```
+
+***
+
+## Come attivo il comportamento di default? 
+
+È possibile "disattivare" il type check di Typescript, per alcuni dati.
+
+Per poterlo fare, basta utilizzare il data type "any".
+
+Questo data type, riattiva il comportamento di default di Javascript.
+
+Un dato può quindi contenere qualsiasi cosa, senza produrre errori in compilazione.
+
+È solamente possibile specificare se un dato conterrà un dato singolo (any) oppure un array (any[])
+
+```
+const arrayWithoutTypeCheck = ["Hello", 10, true];
+```
+
+***
+
+## Union Types
+
+Possiamo dare ad un dato più di un tipo alla volta.
+
+```typescript
+
+function combine ( a : number | string, b : number | string ) {
+	return a + b;
+}
+
+```
+
+***
+
+## Literal Types 
+
+In questo caso non si deve dare il tipo => ma proprio il valore esatto che un dato deve contenere.
+
+Ad esempio:
+
+```typescript
+const tempMeasure : 'fahrenheit' | 'celsius' = 'celsius';
+
+// In questo caso stiamo dicendo che la variabile tempMeasure deve contener uno
+// tra i valori specificati
+```
+
+I literals sono particolarmente utili quando ci si aspetta un determinato input a funzione. Ad esempio: 
+
+```typescript
+function printTemperature
+(
+	value : number,
+	conversionFactor : 'celsius' | 'fahrenheit'
+) 
+{
+	// Qui dentro sono sicuro che il fattore di conversione passato
+	// che è una stringa, conterrà o il valore celsius, o il valore fahrenheit
+	// qualsiasi altro valore passato erroneamente, genererà un errore 
+}
+```
+
+***
+
+## Aliases 
+
+Possiamo creare un type alias, così come possiamo farlo in C++.
+
+Basta utilizzare la keyword ==type== .
+
+```typescript
+type conversionFactor = 'celsius' | 'fahrenheit';
+
+// ora, la funzione di prima diventa: 
+function printTemperatur (value: number, conversionFactor : conversionFactor ) {} 
+
+```
+
+Ancora più utile per creare Alias di tipi complessi.
+
+```typescript
+1. type User = { name: string; age: number };
+2. const u1: User = { name: 'Max', age: 30 }; // Funziona!
+```
+
+***
+
+## Return delle funzioni
+
+(:type) occhio a void => non ritorna nulla.
+
+*** 
+
+## Funzioni e Callbacks
+
+Possso specificare che una variabile conterrà una funzione nel seguente modo:
+
+```typescript
+let variableContainingFunction : () => void ;
+let variableContainingFunction : (input : string) => boolean ;
+```
+
+Possiamo passare una funzione come argomento, seguendo questa stessa logica:
+
+```typescript
+function AddAndHandler (n1: number, n2: number, cb : (num : number) => void);
+```
+
+***
+
+## Unknown Type
+
+È un segnaposto. Possiamo inserire qualsiasi valore dentro una variabile dichiarata unknown.
+
+È più restrittivo di any. Per andare a riassegnare un valore unknow con un' altra variabile, siamo forzati a fare un controllo sul tipo.
+
+```typescript
+let userInput : unknown;
+let userName : string;
+
+if(typeof userInput === 'string') {
+	userName = userInput;
+}
+```
+
+È preferibile ad any perchè forza il type check.
+
+***
+
+## Never 
+
+```typescript
+function infiniteLoop(): never {
+    while (true) {
+        // Loop infinito
+    }
+}
+
+function throwError(message: string): never {
+    throw new Error(message);
+}
+```
+
+Viene utilizzato in situazioni specifiche:
+
+- loop infiniti
+- eccezioni
+- casi "trappola" negli switch
+
+I dati o le funzioni dichiarate con never non vengono mai raggiunte (o non dovrebbero mai essere raggiunte).
+
+```typescript
+type Animal = 
+    | { type: 'dog'; bark: () => void }
+    | { type: 'cat'; meow: () => void };
+
+function handleAnimal(animal: Animal) {
+    switch (animal.type) {
+        case 'dog':
+            animal.bark();
+            break;
+        case 'cat':
+            animal.meow();
+            break;
+        default:
+            // Qui il tipo di animal dovrebbe essere never
+            // poiché abbiamo già coperto tutti i casi
+            const _exhaustiveCheck: never = animal;
+            throw new Error(`Tipo non supportato: ${_exhaustiveCheck}`);
+    }
+}
+```
+
+***
