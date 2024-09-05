@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
+                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 522.5
+    "width": 453.5
   },
   "right": {
     "id": "ee1094a92f1594cc",
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
+                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
+                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md"
+                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md"
               }
             }
           },
@@ -190,7 +190,7 @@
             }
           },
           {
-            "id": "2b656385661b9405",
+            "id": "30f159913e9fa22c",
             "type": "leaf",
             "state": {
               "type": "timer-view",
@@ -219,16 +219,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2b656385661b9405",
+  "active": "37bd550d36740680",
   "lastOpenFiles": [
+    "00 - Università/Ricerca Operativa/Roadmap/Programma del corso.md",
+    "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
+    "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa",
+    "04 - Journal/Daily/05-09-2024.md",
+    "00 - Università/Ricerca Operativa/Roadmap",
+    "00 - Università/Ricerca Operativa/FlashCards",
+    "00 - Università/Ricerca Operativa/Risorse Esterne",
+    "00 - Università/Ricerca Operativa/Esercitazioni",
+    "00 - Università/Ricerca Operativa/Teoria",
+    "00 - Università/Ricerca Operativa",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Untitled.md",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/04 - Next-generation JavaScript & TypeScript/Next Generation Javascript & TypeScript.md",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces",
+    "04 - Journal/Daily/04-09-2024.md",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/04 - Next-generation JavaScript & TypeScript",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/03 - TypeScript Compiler/TypeScript Compiler.md",
+    "06 - Resources/Obsidian utils/Templates/Daily Importants.md",
+    "06 - Resources/Obsidian utils/Templates/DailyLearning.md",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
+    "04 - Journal/Daily/02-09-2024.md",
+    "04 - Journal/Daily/31-08-2024.md",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/03 - TypeScript Compiler",
     "04 - Journal/Daily/30-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/07 - Algoritmo Floyd-Warshall/01 - Introduzione/Introduzione a Floyd Warshall.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
     "04 - Journal/Daily/29-08-2024.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/07 - Algoritmo Floyd-Warshall/01 - Introduzione",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/07 - Algoritmo Floyd-Warshall/00 - Concetti propedeutici",
-    "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/00 - Getting Started/Introduzione a TypeScript.md",
     "04 - Journal/Daily/28-08-2024.md",
     "04 - Journal/Daily/27-08-2024.md",
@@ -237,27 +256,8 @@
     "04 - Journal/Daily/03-08-2024.md",
     "04 - Journal/Daily/11-08-2024.md",
     "04 - Journal/Daily/13-08-2024.md",
-    "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics",
-    "02 - Udemy/Understanding Typescript/Appunti/01",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/06 - Algoritmo LCS.md",
     "Pasted image 20240826094715.png",
-    "04 - Journal/Daily/09-08-2024.md",
-    "02 - Learning/Udemy - Understanding Typescript/Appunti/00 - Getting Started",
-    "02 - Learning/Udemy - Understanding Typescript/Journal",
-    "02 - Learning/Udemy - Understanding Typescript/Resources",
-    "02 - Learning/Udemy - Understanding Typescript/Appunti",
-    "02 - Learning/Udemy - Understanding Typescript",
-    "04 - Journal/Daily/10-08-2024.md",
-    "04 - Journal/Daily/12-08-2024.md",
-    "04 - Journal/Daily/08-08-2024.md",
-    "04 - Journal/Daily/07-08-2024.md",
-    "04 - Journal/Daily/16-08-2024.md",
-    "04 - Journal/Daily/15-08-2024.md",
-    "00 - Università/Algoritmi 2/Resources/Risorse Esterne/Visita grafi teoria.pdf",
-    "06 - Resources/Obsidian utils/Templates/DailyLearning.md",
-    "06 - Resources/Obsidian utils/Templates/DailyHeader.md",
-    "06 - Resources/Obsidian utils/Templates/DailyUniversity.md",
-    "06 - Resources/Obsidian utils/Templates/DailyWork.md",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804105550.png"
