@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
+                "file": "04 - Journal/Daily/07-09-2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
+                "file": "04 - Journal/Daily/07-09-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
+                "file": "04 - Journal/Daily/07-09-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md"
+                "file": "04 - Journal/Daily/07-09-2024.md"
               }
             }
           },
@@ -190,7 +190,7 @@
             }
           },
           {
-            "id": "9e63bbc9f415c4b2",
+            "id": "f38e4e3fbcf3d566",
             "type": "leaf",
             "state": {
               "type": "timer-view",
@@ -198,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -221,9 +221,12 @@
   },
   "active": "37bd550d36740680",
   "lastOpenFiles": [
-    "04 - Journal/Daily/05-09-2024.md",
-    "01 - ESGeo/Meetings/Test API.md",
     "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa/Untitled.md",
+    "04 - Journal/Daily/07-09-2024.md",
+    "04 - Journal/Daily/06-09-2024.md",
+    "04 - Journal/Daily/05-09-2024.md",
+    "04 - Journal/Daily/04-09-2024.md",
+    "01 - ESGeo/Meetings/Test API.md",
     "00 - Università/Ricerca Operativa/Roadmap/Programma del corso.md",
     "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa",
     "00 - Università/Ricerca Operativa/Roadmap",
@@ -235,7 +238,6 @@
     "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Untitled.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/04 - Next-generation JavaScript & TypeScript/Next Generation Javascript & TypeScript.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces",
-    "04 - Journal/Daily/04-09-2024.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/04 - Next-generation JavaScript & TypeScript",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/03 - TypeScript Compiler/TypeScript Compiler.md",
     "06 - Resources/Obsidian utils/Templates/Daily Importants.md",
@@ -255,8 +257,6 @@
     "04 - Journal/Daily/26-08-2024.md",
     "04 - Journal/Daily/06-08-2024.md",
     "04 - Journal/Daily/03-08-2024.md",
-    "04 - Journal/Daily/11-08-2024.md",
-    "04 - Journal/Daily/13-08-2024.md",
     "Pasted image 20240826094715.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",

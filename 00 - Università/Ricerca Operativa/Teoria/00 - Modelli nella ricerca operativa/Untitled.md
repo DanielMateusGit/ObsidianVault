@@ -2,18 +2,18 @@
 
 ## Che cosa è un problema di ottimizzazione?
 
-È, molto semplicemente, un problema che cerca di trovare la massima o la minima resa ad un problema.
+È un problema che cerca di trovare => la massima o ( minima ) resa ad un problema.
 
 > [!Esempio stupido:]
 > Luca deve decidere quante casse di mele e di arance acquistare per massimizzare il profitto. Il profitto per cassa di mele è 5 euro e per cassa di arance è 7 euro. Ha un budget di 300 euro e può immagazzinare al massimo 15 casse. Ogni cassa di mele costa 20 euro e ogni cassa di arance costa 30 euro.
 
-Questa parte del corso si occupa di modellare matematicamente situazioni (ovviamente più complesse) di questo tipo.
+Questa parte del corso si occupa di modellare matematicamente situazioni di questo tipo (ovviamente più complesse).
 
 ***
 
 ## Quali sono le parti importanti di un problema di ottimizzazione? 
 
-La modellazione matematica di un problema di ottimizzazione comprende:
+Sono solo 3 "ingredienti":
 
 - Una funzione obiettivo: $opt f(x)$ 
 - Una regione ammissibile di soluzioni: $X \subseteq R^n$
@@ -22,10 +22,10 @@ La modellazione matematica di un problema di ottimizzazione comprende:
  Che si traduce in: $opt(f(x))$ $\text{"soggetto a": } x \in X$, con $X \subseteq R^n$
 
 > [!Hint] Spiegazione
-> La funzione obiettivo è quella che vogliamo ottimizzare.
+> La funzione obiettivo è quella che rappresenta il problema.
 > Siamo interessati all'ottimizzazione (opt) della funzione obbiettivo.
 > 
-> Ciò che determina una "miglioria" dell' output della funzione, sono gli input che io le do in pasto. Questi input si prendono il nome di variabili decisionali. 
+> Ciò che determina una "miglioria" dell' output della funzione, è la SCELTA DEGLI INPUT CHE IO LE DO IN PASTO. Questi input prendono il nome di variabili decisionali. 
 > 
 > L' insieme da cui posso pescare queste variabili decisionali si chiama regione ammissibile.
 
@@ -44,11 +44,12 @@ La modellazione matematica di un problema di ottimizzazione comprende:
 
 ## Cosa è un problema di programmazione matematica?
 
+***
 - [ ] Obiettivi del corso: ottimizzazione. 
-- [ ] Come si definisce un problema di ottimizzazione?
-	- [ ] Funzione OB
-	- [ ] Regione ammissible
-	- [ ] Variabili decisionali
+- [x] Come si definisce un problema di ottimizzazione?
+	- [x] Funzione OB
+	- [x] Regione ammissible
+	- [x] Variabili decisionali
 - [ ] Quale è la soluzione di un problema di ottimizzazione? 
 - [ ] max f(x) = -min - f(x):
 	- [ ] Trova un esempio nelle slide ( due coniche una simmetrica all' altra)
@@ -67,3 +68,27 @@ LEZIONE:
 https://elearning.unimib.it/mod/book/view.php?id=738961
 
 MINUTO 27:00
+***\
+*** 
+
+- [ ] Primo esempio di programmazione matematica (riportarlo)
+- [ ] Possibili esiti
+	- [ ] Problema non ammissibile. La regione ammissibile = insieme vuoto
+	- [ ] Problema illimitato (non ho un minimo/massimo)
+	- [ ] Esempi di programmazione matematica (riportare)
+- [ ] Ottimo globale vs ottimo Locale (ricordiamo le osservazioni)
+	- [ ] Esempio (riportare, fob convessa)
+- [ ] Categorizzazione dei problemi di programmazione matematica
+	- [ ] Programmazione lineare 
+	- [ ] Programmazione lineare intera
+	- [ ] Programmazione non lineare 
+	- [ ] Alcuni esempi (riportarli => caso particolare di $x^2 -1$)
+- [ ] Esempio "Buca Libre" => molto importante, sicuramente da riportare.
+- [ ] Esempio "Videogiochi" con variabili decisionali binarie
+- [ ] Esempio "Problema dello zaino" => variabili intere 
+- [ ] Esempio FantaCalcio
+
+
+
+
+***
