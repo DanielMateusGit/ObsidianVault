@@ -6,6 +6,9 @@
 	- [ ] FlashCards
 	- [ ] Esercitazioni
 - [ ] Introduzione alla programmazione lineare
+	- [x] Teoria
+	- [ ] FlashCards
+	- [ ] Esercitazioni
 - [ ] Metodo del simplesso
 - [ ] Teoria del simplesso 
 - [ ] Teoria della dualità ed analisi di sensitività 

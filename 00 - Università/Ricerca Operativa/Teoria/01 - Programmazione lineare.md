@@ -25,5 +25,19 @@ https://elearning.unimib.it/mod/book/view.php?id=738964&chapterid=4358
 
 MINUTO 4:00
 
+- [ ] Visualizzazione grafica dei problemi con:
+	- [ ] Soluzione univoca => spigolo del politopo
+	- [ ] Più soluzioni => lato del politopo 
+	- [ ] Nessuna soluzione => la regione ammissibile è illimitata
+	- [ ] Nessuna soluzione => la regione ammissibile è vuota
+	      
+- [ ] Assunzioni programmazione lineare
+	- [ ] Proporzionalità 
+	- [ ] Additività
+	- [ ] Continuità
+	- [ ] Certezza
+	- [ ] Queste sono interessanti => utili per un orale 
+
+
 
 
