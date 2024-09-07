@@ -1,7 +1,10 @@
 ## Prima parte: 
 
-- [ ] Introduzione
+- [x] Introduzione
 - [ ] Modelli nella ricerca operativa 
+	- [x] Teoria
+	- [ ] FlashCards
+	- [ ] Esercitazioni
 - [ ] Introduzione alla programmazione lineare
 - [ ] Metodo del simplesso
 - [ ] Teoria del simplesso 

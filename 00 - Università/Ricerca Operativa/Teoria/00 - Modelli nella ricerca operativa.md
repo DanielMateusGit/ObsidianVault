@@ -2,7 +2,7 @@
 
 ## Che cosa è un problema di ottimizzazione?
 
-È un problema che cerca di trovare => la massima o ( minima ) resa ad un problema.
+È un problema che cerca di trovare => la massima o ( minima ) resa di una funzione.
 
 > [!Esempio stupido:]
 > Luca deve decidere quante casse di mele e di arance acquistare per massimizzare il profitto. Il profitto per cassa di mele è 5 euro e per cassa di arance è 7 euro. Ha un budget di 300 euro e può immagazzinare al massimo 15 casse. Ogni cassa di mele costa 20 euro e ogni cassa di arance costa 30 euro.
@@ -19,20 +19,19 @@ Sono solo 3 "ingredienti":
 - Una regione ammissibile di soluzioni: $X \subseteq R^n$
 - Delle variabili decisionali:  $x \in X$
 
- Che si traduce in: $opt(f(x))$ $\text{"soggetto a": } x \in X$, con $X \subseteq R^n$
+La definizione risulta: $opt(f(x))$ $\text{"soggetto a": } x \in X$, con $X \subseteq R^n$
 
-> [!Hint] Spiegazione
-> La funzione obiettivo è quella che rappresenta il problema.
-> Siamo interessati all'ottimizzazione (opt) della funzione obbiettivo.
-> 
-> Ciò che determina una "miglioria" dell' output della funzione, è la SCELTA DEGLI INPUT CHE IO LE DO IN PASTO. Questi input prendono il nome di variabili decisionali. 
-> 
-> L' insieme da cui posso pescare queste variabili decisionali si chiama regione ammissibile.
-
-> [!Spiegazione]
+> [!Summary] Cosa significa?
 > $opt(f(x))$ $\text{"soggetto a": } x \in X$, con $X \subseteq R^n$ si traduce in :
 > 
 > "Ottimizzazione del problema descritto dalla funzione $f(x)$, il cui valore (e miglioramento) dipendono dalle variabili decisionali $x$, prese da una regione di ammissibilità $X \subseteq R^n$."
+
+> [!Hint] Spiegazione delle singole parti
+> - La funzione obiettivo rappresenta il problema. Siamo interessati ad ottimizzarla (opt).
+>   
+> - La funzione migliora d'accordo all'input che le viene dato in pasto. Questi input prendono il nome di variabili decisionali. 
+> 
+> - L' insieme da cui posso pescare queste variabili decisionali si chiama regione ammissibile.
 
 ***
 
@@ -83,12 +82,15 @@ MINUTO 27:00
 	- [ ] Programmazione lineare intera
 	- [ ] Programmazione non lineare 
 	- [ ] Alcuni esempi (riportarli => caso particolare di $x^2 -1$)
-- [ ] Esempio "Buca Libre" => molto importante, sicuramente da riportare.
+- [ ] Esempio "Cuba Libre" => molto importante, sicuramente da riportare.
 - [ ] Esempio "Videogiochi" con variabili decisionali binarie
 - [ ] Esempio "Problema dello zaino" => variabili intere 
 - [ ] Esempio FantaCalcio
 
-
-
-
 ***
+
+- [ ] Esempio "valore di un' abitazione"
+- [ ] Esempio "Pokemon go"
+- [ ] Attenzione => forse è meglio non spiegare tutti gli esempi, ma lasciarli in allegato "sintetizzati"
+
+La lezione finisce con l' introduzione alla programmazione lineare intera => lasciata in un pdf a parte.
