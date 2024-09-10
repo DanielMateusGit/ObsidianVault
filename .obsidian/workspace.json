@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Proxy.md",
+                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Proxy.md",
+                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Proxy.md",
+                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Proxy.md"
+                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md"
               }
             }
           },
@@ -202,7 +202,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 397.5
+    "width": 397.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,9 +222,10 @@
   },
   "active": "37bd550d36740680",
   "lastOpenFiles": [
+    "02 - Learning/Design Patterns/Appunti/Proxy.md",
+    "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
     "Pasted image 20240910100421.png",
     "04 - Journal/Daily/10-09-2024.md",
-    "02 - Learning/Design Patterns/Appunti/Proxy.md",
     "02 - Learning/Design Patterns/Resources/design-patterns-en.pdf",
     "02 - Learning/Design Patterns/Resources",
     "02 - Learning/Design Patterns/Appunti",

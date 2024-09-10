@@ -1,8 +1,18 @@
+---
+tags:
+  - "#Patterns"
+  - "#Proxy"
+---
+- [[#Cosa fa?|Cosa fa?]]
+- [[#Quando si utilizza?|Quando si utilizza?]]
+- [[#Esempio UML:|Esempio UML:]]
+- [[#Esempio in pseudo-codice:|Esempio in pseudo-codice:]]
 
 # Proxy
+
 ## Cosa fa?
 
-Aggiunge un livello di astrazione tra CLIENT ed un Servizio Server
+Aggiunge un livello di astrazione tra CLIENT ed un Servizio Server.
 
 Praticamente è un wrapper di un servizio che il CLIENT vuole utilizzare.
 
@@ -10,33 +20,29 @@ Praticamente è un wrapper di un servizio che il CLIENT vuole utilizzare.
 
 ## Quando si utilizza? 
 
-Quando la classe wrapper (proxy) deve fare le STESSE COSE che fa il servizio, ma vuole aggiungere delle feature in più, come :
+Quando abbiamo un servizio, ma si vogliono aggiungere degli "step preliminari" in più come :
 
-- controlli
+- controlli di sicurezza
 - logging
 - caching
-- access control
 
 
 > [!Warning] Attenzione!
-> Ci sono altri pattern che fanno praticamente la stessa cosa, ma con una sottile differenza:
+Nel pattern proxy l' interfaccia implementata dalla classe proxy è la stessa implementata dal Servizio contenuto.
 > 
-> Aggiungono più metodi all' interfaccia wrappata.
-> 
-> Nel pattern proxy l' interfaccia implementata dalla classe proxy è la stessa implementata dal Servizio contenuto.
-> 
-> Sto solo separando le responsabilità: il servizio fa quello che deve fare, il proxy "aggiunge uno step prima".
+> Sto solo separando le responsabilità: il servizio fa quello che deve fare, il proxy "aggiunge uno/più step prima".
 
 > [!Hint] Importante
-> Implementando la stessa interfaccia del servizio che sta wrappando. Questo rende le classi intercambiabili. 
+> Implementando la stessa interfaccia del servizio wrappato, le classi diventano intercambiabili. 
 
 > [!Warning] Differenze con altri pattern simili:
 > - Adapter: wrappa un servizio e fornisce in uscita un' interfaccia DIVERSA da quella del servizio wrappato
+> - 
 > - Facade: implementa un' interfaccia diversa da quella del servizio wrappato
+> - 
 > - Decorator: prende l' interfaccia del servizio wrappato ed "aggiunge più features."
 >   
 >   Invece, ricordiamo, il proxy fa la STESSA COSA della classe wrappata, ma lascia al servizio fare "il lavoro bruto", e tutto ciò che sta attorno ed è di contorno se lo prende in carico lui.
-
 
 ## Esempio UML:
 
@@ -98,4 +104,3 @@ Print(serviceProxy.GetData("example"))   // Output: Returning cached data for: e
                                          //         Data from API for example
 
 ```
-
