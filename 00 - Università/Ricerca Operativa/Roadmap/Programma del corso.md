@@ -10,6 +10,9 @@
 	- [ ] FlashCards
 	- [ ] Esercitazioni
 - [ ] Metodo del simplesso
+	- [ ] Teoria
+	- [ ] FlashCards
+	- [ ] Esercitazioni
 - [ ] Teoria del simplesso 
 - [ ] Teoria della dualità ed analisi di sensitività 
 
