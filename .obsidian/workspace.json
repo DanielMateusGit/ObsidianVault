@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
+                "file": "04 - Journal/Daily/16-09-2024.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
+                "file": "04 - Journal/Daily/16-09-2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
+                "file": "04 - Journal/Daily/16-09-2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md"
+                "file": "04 - Journal/Daily/16-09-2024.md"
               }
             }
           },
@@ -190,7 +190,7 @@
             }
           },
           {
-            "id": "503cb73f441ee265",
+            "id": "3a0f0dccebed99fb",
             "type": "leaf",
             "state": {
               "type": "timer-view",
@@ -198,12 +198,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 397.5,
-    "collapsed": true
+    "width": 397.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,6 +221,12 @@
   },
   "active": "37bd550d36740680",
   "lastOpenFiles": [
+    "00 - Università/Ricerca Operativa/Teoria/02 - Metodo del simplesso.md",
+    "01 - ESGeo/Meetings/Test API.md",
+    "01 - ESGeo/Meetings/Engine Review - DTO Update.md",
+    "00 - Università/Ricerca Operativa/Teoria/01 - Programmazione lineare.md",
+    "04 - Journal/Daily/16-09-2024.md",
+    "00 - Università/Ricerca Operativa/Roadmap/Programma del corso.md",
     "02 - Learning/Design Patterns/Appunti/Proxy.md",
     "02 - Learning/Design Patterns/Appunti/Design Patterns (Index).md",
     "Pasted image 20240910100421.png",
@@ -235,13 +240,10 @@
     "02 - Learning/Udemy - Understanding Typescript/Appunti/03 - TypeScript Compiler/TypeScript Compiler.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/04 - Next-generation JavaScript & TypeScript/Next Generation Javascript & TypeScript.md",
-    "00 - Università/Ricerca Operativa/Roadmap/Programma del corso.md",
     "04 - Journal/Daily/08-09-2024.md",
-    "00 - Università/Ricerca Operativa/Teoria/01 - Programmazione lineare.md",
     "04 - Journal/Daily/07-09-2024.md",
     "04 - Journal/Daily/06-09-2024.md",
     "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa.md",
-    "01 - ESGeo/Meetings/Test API.md",
     "04 - Journal/Daily/05-09-2024.md",
     "04 - Journal/Daily/04-09-2024.md",
     "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa",
@@ -256,9 +258,6 @@
     "04 - Journal/Daily/31-08-2024.md",
     "04 - Journal/Daily/30-08-2024.md",
     "00 - Università/Algoritmi 2/Appunti (Teoria)/07 - Algoritmo Floyd-Warshall/01 - Introduzione/Introduzione a Floyd Warshall.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/01 - Introduzione al problema LCS.md",
-    "00 - Università/Algoritmi 2/Appunti (Teoria)/01 - LCS/00 - Concetti propedeutici.md",
-    "04 - Journal/Daily/29-08-2024.md",
     "Pasted image 20240826094715.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",

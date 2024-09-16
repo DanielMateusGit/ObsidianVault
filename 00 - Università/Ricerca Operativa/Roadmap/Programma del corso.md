@@ -10,7 +10,7 @@
 	- [ ] FlashCards
 	- [ ] Esercitazioni
 - [ ] Metodo del simplesso
-	- [ ] Teoria
+	- [x] Teoria
 	- [ ] FlashCards
 	- [ ] Esercitazioni
 - [ ] Teoria del simplesso 
