@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Classes and interfaces.md",
+                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/06 - Advanced Types/Advanced Types.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Classes and interfaces.md",
+                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/06 - Advanced Types/Advanced Types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Classes and interfaces.md",
+                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/06 - Advanced Types/Advanced Types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Classes and interfaces.md"
+                "file": "02 - Learning/Udemy - Understanding Typescript/Appunti/06 - Advanced Types/Advanced Types.md"
               }
             }
           },
@@ -221,8 +221,11 @@
   },
   "active": "37bd550d36740680",
   "lastOpenFiles": [
-    "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Classes and interfaces.md",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/06 - Advanced Types/Advanced Types.md",
+    "04 - Journal/Daily/21-09-2024.md",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/06 - Advanced Types",
+    "02 - Learning/Udemy - Understanding Typescript/Appunti/01 - TypeScript Basics/Basic Types.md",
     "04 - Journal/Daily/20-09-2024.md",
     "00 - Università/Ricerca Operativa/Teoria/02 - Metodo del simplesso.md",
     "01 - ESGeo/Meetings/OneStream Preview.md",
@@ -255,9 +258,6 @@
     "00 - Università/Ricerca Operativa/FlashCards",
     "00 - Università/Ricerca Operativa/Risorse Esterne",
     "00 - Università/Ricerca Operativa/Esercitazioni",
-    "00 - Università/Ricerca Operativa/Teoria",
-    "06 - Resources/Obsidian utils/Templates/Daily Importants.md",
-    "06 - Resources/Obsidian utils/Templates/DailyLearning.md",
     "Pasted image 20240826094715.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240812134117.png",
     "06 - Resources/Obsidian utils/Images/Pasted image 20240804095254.png",
