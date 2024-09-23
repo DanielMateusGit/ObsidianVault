@@ -110,3 +110,50 @@ function useVehicle( Vehicle : Vehicle ){
 ```
 
 L' ultimo metodo, dato il type Checking che sta facendo, è sicuro per l' utilizzo di un tipo di dato Vehicle.
+
+*** 
+
+## Discriminated Unions 
+
+Se invece volessimo discriminare il tipo in una maniera più precisa, potremmo creare un dato type:
+
+```typescript
+interface Bird = {
+	type : 'bird';
+	flyingSeed : number;
+}
+
+interface Horse = {
+	type : 'horse';
+	runningSpeed : number;
+}
+
+type Animal = Bird | Horse;
+
+// Nel momento in cui vogliamo eseguire un' operazione sul tipo
+// Animal, ci basta controllare il type (che esiste per tutti)
+
+function moveAnimal(animal : Animal) {
+	let speed;
+	switch(animal.type){
+	
+		case 'bird':
+			console.log(animal.flyingSpeed);
+		break;
+		
+		case 'horse':
+			console.log(animal.runningSpeed);
+		break;
+	}
+}
+```
+
+Questo lo abbiamo già visto in C#. Magari in un' ottica più da Dependency Injection. Tante classi che implementano la stessa interfaccia, discriminate grazie ad un type. 
+
+Non è proprio la stessa cosa, ma è un rimando.
+
+***
+
+## Type Casting
+
+

@@ -78,5 +78,6 @@
 	* [ ] Prezzo ombra 
 
 * Parametri sensibili, terminare nel pome:
-
-https://elearning.unimib.it/mod/book/view.php?id=952591&chapterid=5478
+	* [ ] Assunzione di certezza => sbagliato assumere che i parametri del problema siano giusti.
+	* [ ] Analisi di sensitività => quali parametri non devono essere cambiati.
+	* [ ] 
