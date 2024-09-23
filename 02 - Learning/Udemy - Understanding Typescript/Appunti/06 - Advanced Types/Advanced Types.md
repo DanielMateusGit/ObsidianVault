@@ -156,4 +156,56 @@ Non è proprio la stessa cosa, ma è un rimando.
 
 ## Type Casting
 
+Esiste il type casting esplicito in TypeScript.
 
+Caso d' uso: 
+
+```html
+<input type="text" id="user-input"/> 
+```
+
+```typescript
+const userInputElement = document.getElementById('user-input');
+// La seguente linea di codice produrrà un warning di typescript:
+userInputElement.value = 'Hello, friend!'; 
+```
+
+Il warning verrà prodotto perchè TypeScript non conosce esattamente il tipo di elemento che si sta cercando di reperire dal DOM.
+
+Lui sa solo che è un elemento di tipo html. Nient' altro.
+Non sa se questo elemento html ha dentro un value. 
+Non sa nemmeno se è possibile reperire correttamente questo elemento (protrebbe essere null).
+
+
+Come faccio a dire a typescript che questo elemento esiste e che ha un valore (dato che è un input text)?
+
+```typescript
+// Con il punto esclamativo ne correggo l'esistenza!
+// In questo modo sto dicendo a typescript che questo elemento
+// sicuramente esiste e non è null.
+const userInputElement = document.getElementById('user-input')!;
+
+// Questa riga mi genera ancora un warning però
+// E questo accade perchè comunque io non so di che tipo di 
+// elemento html stiamo parlando (non so se ha un value).
+userInputElement.value = 'Hello, friend!'; 
+```
+
+Ora, per riuscire a far capire a TypeScript che tipo di elemento stiamo selezionando dal DOM, posso fare un casting.
+
+Il casting mi permette di trasformare l' oggetto generico del DOM in un oggetto specializzato HTMLInputElement.
+
+```typescript
+const userInputElement = <HTMLInputElement>document.getElementById('user-input')!;
+```
+
+Possiamo utilizzare anche un sintactic sugar: 
+
+```typescript
+const userInputElement = document.getElementById('user-input')! as HTMLInputElement;
+```
+
+Questa scritta è equivalente, e forse un po' più parlante.
+
+> [!Warning] Potrebbe non bastare!
+> 	Nel caso ci fossero ancora errori da parte di TypeScript => bisogna inserire in tsconfig.json in lib => la libreria dom
