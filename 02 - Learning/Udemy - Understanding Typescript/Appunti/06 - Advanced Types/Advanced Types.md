@@ -375,3 +375,11 @@ console.log( Person.job?.title);
 
 ## Null Coalescing
 
+```typescript
+// Posso specificare un valore di default per quelle situazioni in cui ho un dato
+// NULL, dopo un controllo:
+
+const storedDate = dataFromServer ?? 'DEFAULT_VALUE';
+```
+
+***
