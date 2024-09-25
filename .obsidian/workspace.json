@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/04 - Teoria della dualità ed analisi di sensitività.md",
+                "file": "00 - Università/Ricerca Operativa/Teoria/05 - Analisi di sensitività.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/04 - Teoria della dualità ed analisi di sensitività.md",
+                "file": "00 - Università/Ricerca Operativa/Teoria/05 - Analisi di sensitività.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/04 - Teoria della dualità ed analisi di sensitività.md",
+                "file": "00 - Università/Ricerca Operativa/Teoria/05 - Analisi di sensitività.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Università/Ricerca Operativa/Teoria/04 - Teoria della dualità ed analisi di sensitività.md"
+                "file": "00 - Università/Ricerca Operativa/Teoria/05 - Analisi di sensitività.md"
               }
             }
           },
@@ -202,8 +202,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 397.5,
-    "collapsed": true
+    "width": 397.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,11 +221,13 @@
   },
   "active": "37bd550d36740680",
   "lastOpenFiles": [
+    "00 - Università/Ricerca Operativa/Teoria/04 - Teoria della dualità ed analisi di sensitività.md",
+    "00 - Università/Ricerca Operativa/Teoria/05 - Analisi di sensitività.md",
+    "04 - Journal/Daily/25-09-2024.md",
     "04 - Journal/Daily/24-09-2024.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/06 - Advanced Types/Advanced Types.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/05 - Classes & Interfaces/Classes and interfaces.md",
     "04 - Journal/Daily/23-09-2024.md",
-    "00 - Università/Ricerca Operativa/Teoria/04 - Teoria della dualità ed analisi di sensitività.md",
     "00 - Università/Ricerca Operativa/Teoria/03 - Teoria del simplesso.md",
     "Pasted image 20240923085122.png",
     "00 - Università/Ricerca Operativa/Teoria/02 - Metodo del simplesso.md",
@@ -253,8 +254,6 @@
     "02 - Learning/Design Patterns",
     "04 - Journal/Daily/09-09-2024.md",
     "02 - Learning/Udemy - Understanding Typescript/Appunti/04 - Next-generation JavaScript & TypeScript/Next Generation Javascript & TypeScript.md",
-    "04 - Journal/Daily/08-09-2024.md",
-    "04 - Journal/Daily/07-09-2024.md",
     "00 - Università/Ricerca Operativa/Teoria/00 - Modelli nella ricerca operativa",
     "00 - Università/Ricerca Operativa/Roadmap",
     "00 - Università/Ricerca Operativa/FlashCards",
