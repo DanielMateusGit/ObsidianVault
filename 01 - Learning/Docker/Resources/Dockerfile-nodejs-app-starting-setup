@@ -1,0 +1,36 @@
+# Questa serve per selezionare un' immagine Docker di partenza
+# In questo caso partiamo dall' immagine officiale Docker
+
+FROM node
+
+# Questo dice a Docker che tutti i comandi da ora in avanti saranno eseguiti
+# dentro questa cartella (nel container)
+
+WORKDIR /app
+
+# Il primo punto -> specifica l' inidirizzo dell' host
+# Il secondo indirizzo -> specifica un indirizzo dentro il container
+# In questo caso stiamo dicendo "copia tutto il contenuto" del primo indirizzo (host)
+# Dentro il percorso del secondo indirizzo (che sta nel container)
+
+# Occhio! Se ho settato prima una WORKDIR -> tutti gli indirizzi che andrò a specificare
+# saranno relativi alla WORKDIR (qui quindi in realtà gli sto dicendo di copiare dentro
+# /app )
+
+COPY . /
+
+# Come step successivo dobbiamo eseguire "npm install" per installare le dipendenze
+# del progetto NodeJS (come faremmo nella nostra macchina normale)
+
+RUN npm install 
+
+# Questo comando espone una porta del container all' host
+# Questo lo stiamo facendo perchè questa applicazione ascolta richiesta su questa porta
+EXPOSE 80
+
+# Una volta preparato tutto l' ambiente 
+# facciamo partire l' applicazione 
+# ATTENZIONE! cmd è diverso da RUN perchè esegue un comando alla fine 
+# della creazione del container. Quindi -> con il container già in esecuzione
+# RUN invece, durante la creazione del container.
+CMD ["node", "server.js"]
