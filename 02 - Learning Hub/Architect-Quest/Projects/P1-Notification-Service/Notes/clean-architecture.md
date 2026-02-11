@@ -1,14 +1,27 @@
-o# Clean Architecture - Appunti
+---
+tags:
+  - p1
+  - architecture
+  - clean-architecture
+  - from/week-01
+  - status/learned
+aliases:
+  - Clean Architecture
+  - Architettura Pulita
+  - Uncle Bob Architecture
+created: 2026-02-02
+source: "Sessione Week 1 - P1 Notification Service"
+---
 
-> **Data:** 2026-02-02
-> **Sessione:** Week 1 - Setup
-> **XP guadagnati:** +100 (Repo + Docker Compose)
+# Clean Architecture
+
+> **One-liner:** Pattern architetturale che organizza il codice in cerchi concentrici con dipendenze che puntano verso il centro (Domain), rendendo il sistema testabile, manutenibile e indipendente da framework.
 
 ---
 
-## Cos'è Clean Architecture?
+## Cos'è
 
-Pattern architetturale creato da **Robert C. Martin (Uncle Bob)** che organizza il codice in cerchi concentrici con dipendenze che puntano verso il centro.
+**Clean Architecture** è un pattern architetturale creato da **Robert C. Martin (Uncle Bob)** che organizza il codice in **4 layer concentrici** con una regola fondamentale: le dipendenze puntano SOLO verso il centro.
 
 ### Il Problema che Risolve
 
@@ -35,12 +48,9 @@ Senza una struttura chiara:
         └─────────────────────────────────────┘
 ```
 
----
+### La Regola d'Oro: Dependency Rule
 
-## La Regola d'Oro: Dependency Rule
-
-> **Le dipendenze puntano SOLO verso il centro (Domain).**
-> I layer interni NON conoscono i layer esterni.
+> **Le dipendenze puntano SOLO verso il centro (Domain). I layer interni NON conoscono i layer esterni.**
 
 ```
 Api ──────► Application ──────► Domain
@@ -50,20 +60,46 @@ Infrastructure─┘
 
 ---
 
-## I 4 Layer
+## Quando Usarlo
 
-### 1. Domain (Il Cuore)
+| Scenario | Adatto? |
+|----------|---------|
+| Progetti enterprise con logica business complessa | ✅ Sì |
+| Sistemi che devono durare anni | ✅ Sì |
+| Team multipli che lavorano su parti diverse | ✅ Sì |
+| Progetti dove prevedi cambi di tecnologia | ✅ Sì |
+| Microservizi con bounded context chiari | ✅ Sì |
+| API con business rules importanti | ✅ Sì |
+
+---
+
+## Quando NON Usarlo
+
+| Scenario | Perché |
+|----------|--------|
+| Script one-off o tool CLI semplici | Overkill, troppa struttura |
+| Prototipi/MVP veloci | Rallenta lo sviluppo iniziale |
+| CRUD semplice senza logica business | I 4 layer sono ridondanti |
+| Progetti personali piccoli | Complessità non giustificata |
+| Deadline strettissime | Setup iniziale richiede tempo |
+
+**Regola pratica:** Se non hai business logic significativa, Clean Architecture è probabilmente overkill.
+
+---
+
+## Esempio
+
+### I 4 Layer nel Dettaglio
+
+#### 1. Domain (Il Cuore)
 
 **Cosa contiene:** Entità business pure, value objects, regole di dominio.
-
 **Dipendenze:** ZERO - non referenzia nulla.
 
-**Esempio:**
 ```csharp
 public class Notification
 {
     public Guid Id { get; private set; }
-    public string Recipient { get; private set; }
     public NotificationStatus Status { get; private set; }
 
     // Solo logica business pura
@@ -72,17 +108,11 @@ public class Notification
 }
 ```
 
-**QUANDO lo usi:** Sempre. Se cambi database, framework, o API - questo layer NON cambia.
-
----
-
-### 2. Application (I Casi d'Uso)
+#### 2. Application (I Casi d'Uso)
 
 **Cosa contiene:** Use cases, comandi, query, interfacce (porte).
-
 **Dipendenze:** Solo Domain.
 
-**Esempio:**
 ```csharp
 // Definisce l'INTERFACCIA (porta)
 public interface IEmailSender
@@ -106,17 +136,11 @@ public class SendNotificationUseCase
 }
 ```
 
-**QUANDO lo usi:** Un use case = un'azione utente. Orchestrazione senza dettagli implementativi.
-
----
-
-### 3. Infrastructure (I Dettagli Tecnici)
+#### 3. Infrastructure (I Dettagli Tecnici)
 
 **Cosa contiene:** Implementazioni concrete di DB, cache, servizi esterni.
-
 **Dipendenze:** Application (implementa le interfacce).
 
-**Esempio:**
 ```csharp
 // IMPLEMENTA l'interfaccia definita in Application
 public class SendGridEmailSender : IEmailSender
@@ -127,30 +151,13 @@ public class SendGridEmailSender : IEmailSender
         // Codice specifico SendGrid
     }
 }
-
-public class PostgresNotificationRepository : INotificationRepository
-{
-    private readonly DbContext _db;
-
-    public async Task Save(Notification notification)
-    {
-        await _db.Notifications.AddAsync(notification);
-        await _db.SaveChangesAsync();
-    }
-}
 ```
 
-**QUANDO lo usi:** Per tutto ciò che è "dettaglio tecnico". Se cambi provider, modifichi SOLO qui.
-
----
-
-### 4. Api (Entry Point)
+#### 4. Api (Entry Point)
 
 **Cosa contiene:** Controller, middleware, configurazione DI.
-
 **Dipendenze:** Application + Infrastructure.
 
-**Esempio:**
 ```csharp
 [ApiController]
 [Route("api/notifications")]
@@ -167,7 +174,14 @@ public class NotificationsController : ControllerBase
 }
 ```
 
-**QUANDO lo usi:** Solo per HTTP/API. Il controller non contiene logica business.
+### Schema Chi Conosce Chi
+
+| Layer | Può Conoscere |
+|-------|--------------|
+| **Domain** | Nessuno |
+| **Application** | Domain |
+| **Infrastructure** | Application (e Domain transitivo) |
+| **Api** | Application, Infrastructure |
 
 ---
 
@@ -186,10 +200,6 @@ public class Notification
 }
 ```
 
-**Problema:** Domain deve essere puro. Se conosce EF Core, non puoi testarlo senza DB.
-
----
-
 ### 2. Application che chiama servizi esterni direttamente
 
 ```csharp
@@ -201,14 +211,9 @@ public class SendNotificationUseCase
     public async Task Execute(...)
     {
         var client = new SendGridClient("KEY");  // Accoppiato!
-        await client.SendEmailAsync(...);
     }
 }
 ```
-
-**Problema:** Application deve usare interfacce, non implementazioni concrete.
-
----
 
 ### 3. Controller con logica business
 
@@ -217,152 +222,133 @@ public class SendNotificationUseCase
 [HttpPost]
 public async Task<IActionResult> Send(SendRequest request)
 {
-    // Validazione, creazione entità, salvataggio, invio email
-    // TUTTO nel controller!
-    if (notification.RetryCount > 3) { ... }
+    if (notification.RetryCount > 3) { ... }  // Business logic qui!
     await _dbContext.SaveChangesAsync();
-    await _sendGrid.SendEmailAsync(...);
 }
 ```
 
-**Problema:** Logica duplicata se aggiungi altri entry point (worker, CLI).
+---
+
+## Collegamenti
+
+- [[entities-and-clean-architecture]] - Approfondimento su Entities in Clean Architecture
+- [[domain-model-patterns]] - Entity vs Value Object
+- [[adr-architecture-decision-records]] - Come documentare decisioni architetturali
+- [[domain-events]] - Come comunicare tra layer senza accoppiamento
 
 ---
 
-### 4. Bypass di Application
+## Domande dalla Sessione
 
-```csharp
-// ❌ SBAGLIATO - Controller chiama diretto il DB
-[HttpGet("{id}")]
-public async Task<IActionResult> Get(Guid id)
-{
-    var notif = await _dbContext.Notifications.FindAsync(id);
-    return Ok(notif);
-}
-```
+### D: Dove metteresti un'interfaccia `IEmailSender`? In quale layer e perché?
 
-**Problema:** Perdi il punto centrale per authorization, logging, caching.
-
----
-
-## Schema Chi Conosce Chi
-
-| Layer | Può Conoscere |
-|-------|--------------|
-| **Domain** | Nessuno |
-| **Application** | Domain |
-| **Infrastructure** | Application (e Domain transitivo) |
-| **Api** | Application, Infrastructure |
-
----
-
-## Vantaggi
-
-| Vantaggio | Spiegazione |
-|-----------|-------------|
-| **Testabilità** | Domain e Application testabili senza DB/servizi |
-| **Sostituibilità** | Cambi SendGrid con Mailgun modificando 1 classe |
-| **Manutenibilità** | Sai sempre dove trovare/mettere il codice |
-| **Indipendenza** | Il business non dipende da framework |
-
----
-
-## Risorse
-
-- [The Clean Architecture - Uncle Bob (Originale)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-- [Breaking Down Clean Architecture - Medium](https://medium.com/@tales.of.di.official/breaking-down-clean-architecture-by-uncle-bob-part-i-d1fc54add73f)
-- [Summary of Clean Architecture - GitHub Gist](https://gist.github.com/ygrenzinger/14812a56b9221c9feca0b3621518635b)
-- Libro: "Clean Architecture" di Robert C. Martin
-
----
-
-## Struttura del Nostro Progetto
+**R:** Nel layer Application: definisce "cosa deve fare il sistema" (porta). Infrastructure fornisce "come lo fa" (adattatore).
 
 ```
-notification-service/
-├── NotificationService.sln
-├── docker-compose.yml
-└── src/
-    ├── NotificationService.Domain/           ← Zero dipendenze
-    ├── NotificationService.Application/      ← → Domain
-    ├── NotificationService.Infrastructure/   ← → Application
-    └── NotificationService.Api/              ← → Application + Infrastructure
-```
-
-**Repo GitHub:** https://github.com/DanielMateusGit/notification-service
-
----
-
-## Quiz di Verifica (2026-02-02)
-
-### Q1: Dove metteresti un'interfaccia `IEmailSender`? In quale layer e perché?
-
-**Mia risposta:** Nel layer Application: perché si decide cosa deve fare il sistema e si progetta per interfacce. Application mi dice cosa fa il sistema o "chi fa cosa" tramite un'interfaccia. In questo caso sto dicendo "il sistema deve mandare delle Email e sarà IEmailSender a farlo".
-
-✅ **Perfetto!** Application definisce le **porte** (interfacce). Infrastructure fornisce gli **adattatori** (implementazioni).
-
-```
-Application/
-└── Interfaces/
-    └── IEmailSender.cs    ← "Il sistema deve poter inviare email"
-
-Infrastructure/
-└── Email/
-    └── SendGridEmailSender.cs : IEmailSender  ← "Ecco COME lo fa"
+Application/Interfaces/IEmailSender.cs    ← "Il sistema deve poter inviare email"
+Infrastructure/Email/SendGridEmailSender.cs : IEmailSender  ← "Ecco COME lo fa"
 ```
 
 ---
 
-### Q2: Un junior vuole aggiungere `using Microsoft.EntityFrameworkCore;` nel Domain. Cosa gli dici?
+### D: Un junior vuole aggiungere `using Microsoft.EntityFrameworkCore;` nel Domain. Cosa gli dici?
 
-**Mia risposta:** Che il layer Domain è quello che contiene le regole di business pure, le entità scambiate e basta. Qui non abbiamo logiche, ed ogni entità registrata è agnostica al resto dell'applicazione. Domain potrebbe vivere per conto suo. Potrei usare Domain per costruire l'applicazione A e l'applicazione B → tutto ciò che si costruisce attorno a Domain è dipendente da Domain, ma Domain stesso "il core" rimane agnostico.
+**R:** Il Domain è il core riutilizzabile. Potrei usarlo per costruire l'applicazione A e l'applicazione B. Se dipende da EF Core, ogni progetto che usa questo Domain sarà costretto a portarsi dietro EF Core, anche se usa MongoDB o Dapper.
 
-✅ **Eccellente!** L'analogia è perfetta:
-- Domain = il "cuore" riutilizzabile
-- Potrei usare lo stesso Domain per: API REST, CLI tool, Worker service, App mobile
-- Se Domain dipende da EF Core, questa flessibilità si perde
+---
 
-**Cosa dire al junior:** "Se aggiungi EF Core al Domain, ogni progetto che usa questo Domain sarà costretto a portarsi dietro EF Core, anche se usa MongoDB o Dapper."
+### D: Devi cambiare da SendGrid a Mailgun. Quali layer modifichi?
+
+**R:** Solo Infrastructure (creo `MailgunEmailSender : IEmailSender`) + 1 riga nel DI. Domain e Application = zero modifiche. **Questo è il potere della Clean Architecture.**
+
+---
+
+### D: Differenza tra Application e Infrastructure in 30 secondi?
+
+**R:** Application = cosa deve fare il sistema. Infrastructure = come lo fa.
+
+> "Application definisce le regole del gioco. Infrastructure gioca la partita."
+
+---
+
+## Quiz
+
+### Q1: Dove metteresti un'interfaccia `INotificationRepository`?
+
+A) Domain
+B) Application
+C) Infrastructure
+D) Api
+
+<details>
+<summary>Risposta</summary>
+
+**A) Domain** (o B) Application - entrambi accettabili)
+
+L'interfaccia è un'astrazione che il Domain/Application possiede. Infrastructure la implementa. Questo è il Dependency Inversion Principle.
+
+</details>
+
+---
+
+### Q2: Un junior vuole aggiungere EF Core attributes nel Domain. È corretto?
+
+<details>
+<summary>Risposta</summary>
+
+**No!** Il Domain deve essere puro, senza dipendenze da framework. Se aggiungi EF Core al Domain, perdi la possibilità di cambiare ORM senza toccare il Domain.
+
+</details>
 
 ---
 
 ### Q3: Devi cambiare da SendGrid a Mailgun. Quali layer modifichi?
 
-**Mia risposta:** Infrastructure: questo è quello che implementa quanto specificato in Application. Se Application dice "cosa deve fare l'applicazione" Infrastructure mi dice "come lo fa". Quindi dovrei cambiare Infrastructure.
-
-✅ **Corretto!**
+<details>
+<summary>Risposta</summary>
 
 | Layer | Modifiche |
 |-------|-----------|
 | Domain | ❌ Nessuna |
-| Application | ❌ Nessuna (l'interfaccia `IEmailSender` resta uguale) |
+| Application | ❌ Nessuna (l'interfaccia resta uguale) |
 | Infrastructure | ✅ Creo `MailgunEmailSender : IEmailSender` |
 | Api | ✅ Cambio 1 riga nel DI |
 
-**Questo è il potere della Clean Architecture:** cambi provider modificando 1 classe + 1 riga di configurazione.
+</details>
 
 ---
 
-### Q4: Differenza tra Application e Infrastructure in 30 secondi?
+### Q4: Quale dipendenza è CORRETTA?
 
-**Mia risposta:** Application = cosa deve fare l'applicazione. Infrastructure = come lo fa.
+A) Domain dipende da Infrastructure
+B) Application dipende da Domain
+C) Domain dipende da Application
+D) Infrastructure dipende da Api
 
-✅ **Perfetto!** Risposta da senior.
+<details>
+<summary>Risposta</summary>
 
-**Versione ancora più concisa:**
-> "Application definisce le regole del gioco. Infrastructure gioca la partita."
+**B) Application dipende da Domain**
 
----
+Le dipendenze puntano verso il centro. Application può usare Domain, ma non viceversa.
 
-## Principio Fondamentale
-
-> **Le dipendenze puntano VERSO IL CENTRO (Domain). Mai il contrario.**
-
-Questo garantisce:
-- **Testabilità** - Domain e Application testabili senza DB/servizi esterni
-- **Sostituibilità** - Cambi provider modificando solo Infrastructure
-- **Manutenibilità** - Chiaro dove mettere ogni tipo di codice
+</details>
 
 ---
 
-*Ultimo aggiornamento: 2026-02-02*
+## Risorse per Approfondire
+
+- **[The Clean Architecture - Uncle Bob (Originale)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)** - L'articolo che ha definito il pattern. Breve e fondamentale.
+
+- **[Clean Architecture with ASP.NET Core - Jason Taylor](https://jasontaylor.dev/clean-architecture-getting-started/)** - Template pratico per .NET con esempi reali.
+
+- **Libro: "Clean Architecture" - Robert C. Martin** - Cap. 20-22 in particolare. Il testo completo con tutti i dettagli.
+
+- **[Summary of Clean Architecture - GitHub Gist](https://gist.github.com/ygrenzinger/14812a56b9221c9feca0b3621518635b)** - Riassunto visivo eccellente.
+
+- **[Clean Architecture Solution Template](https://github.com/jasontaylordev/CleanArchitecture)** - Template GitHub pronto all'uso per .NET.
+
+---
+
+*Creata: 2026-02-02*
+*Argomenti: Clean Architecture, Dependency Rule, 4 Layer, Uncle Bob*

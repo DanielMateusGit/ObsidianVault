@@ -159,6 +159,114 @@ Trasformare Dan da mid-level developer italiano a **Senior/Staff Engineer** + **
 
 ---
 
+## 📝 CREAZIONE NOTE - QUANDO E COME
+
+### 🕐 QUANDO Creare le Note
+
+> **REGOLA:** Crea la nota **PRIMA** di scrivere codice, **DOPO** la spiegazione teorica.
+
+```
+WORKFLOW CORRETTO:
+──────────────────────────────────────────────────────────────────────────
+
+1. Spiega IL PROBLEMA
+2. Spiega LA TEORIA
+3. Spiega QUANDO usare (e quando NO)
+4. Mostra ESEMPI
+5. Fai DOMANDE DI VERIFICA
+6. Dan risponde
+7. ══════════════════════════════════════════════════════════════════════
+   ║  📝 CREA LA NOTA (automaticamente, senza chiedere)                 ║
+   ║     - Include tutto quello spiegato                                ║
+   ║     - Include le domande e risposte di Dan                         ║
+   ║     - Include quiz                                                 ║
+   ║     - Include risorse per approfondire                             ║
+   ══════════════════════════════════════════════════════════════════════
+8. Chiedi conferma: "Possiamo procedere con l'implementazione?"
+9. SOLO POI scrivi codice
+```
+
+### 📋 FORMATO Note (OBBLIGATORIO)
+
+> **USA LO STESSO TEMPLATE PER TUTTE LE NOTE** (sia `Notes/` che `Knowledge/`)
+> Template completo in: `Knowledge/CLAUDE.md`
+
+```markdown
+---
+tags:
+  - [categoria]         # p1, architecture, solid, patterns, etc.
+  - from/[origine]      # from/week-01, from/week-02, from/book, etc.
+  - status/[stato]      # status/learning, status/learned, status/mastered
+aliases:
+  - [nome alternativo]
+created: YYYY-MM-DD
+source: "[Sessione Week X / Libro / Articolo]"
+---
+
+# [Titolo Concetto]
+
+> **One-liner:** [Spiegazione in UNA frase]
+
+## Cos'è
+[Spiegazione dettagliata del concetto]
+
+## Quando usarlo
+[Situazioni in cui applicare - con esempi concreti]
+
+## Quando NON usarlo
+[Anti-pattern, situazioni da evitare]
+
+## Esempio
+[Codice o diagramma principale]
+
+## Collegamenti
+- [[Nota correlata 1]]
+- [[Nota correlata 2]]
+
+## Domande dalla Sessione
+> Domande che Dan ha fatto durante la spiegazione + risposte
+
+### D: [Domanda di Dan]
+**R:** [Risposta di Claude]
+
+## Quiz
+
+### Q1: [Titolo domanda]
+[Domanda]
+
+<details>
+<summary>Risposta</summary>
+[Risposta con spiegazione]
+</details>
+
+---
+
+## Risorse per Approfondire
+
+> ⚠️ **OBBLIGATORIO** - Aggiungi SEMPRE almeno 2-3 risorse di qualità
+
+- **[Titolo Risorsa 1](link)** - Perché è utile
+- **[Titolo Risorsa 2](link)** - Cosa aggiunge
+- **[Libro/Capitolo]** - Se applicabile
+```
+
+### ✅ Checklist Nota Completa
+
+Prima di considerare una nota "fatta", verifica:
+
+- [ ] Ha frontmatter con tags, aliases, created, source
+- [ ] Ha one-liner
+- [ ] Ha sezione "Cos'è"
+- [ ] Ha sezione "Quando usarlo"
+- [ ] Ha sezione "Quando NON usarlo"
+- [ ] Ha esempio con codice/diagramma
+- [ ] Ha collegamenti ad altre note
+- [ ] Ha sezione "Domande dalla Sessione" (se Dan ha fatto domande)
+- [ ] Ha almeno 3 quiz
+- [ ] Ha sezione "Risorse per Approfondire" con link reali
+
+---
+
 ## 📚 FASE 2: SEDIMENTAZIONE - Dettagli
 
 ### Quando si attiva

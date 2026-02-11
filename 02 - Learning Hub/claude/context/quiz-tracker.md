@@ -14,12 +14,12 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 16 |
-| **Risposte corrette** | 9 |
+| **Quiz totali** | 22 |
+| **Risposte corrette** | 10 |
 | **Risposte sbagliate** | 0 |
-| **Non risposti** | 7 |
-| **Challenge completate** | 4 |
-| **Streak challenge** | 4 |
+| **Non risposti** | 12 |
+| **Challenge completate** | 5 |
+| **Streak challenge** | 5 |
 
 ---
 
@@ -74,7 +74,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦3 | 2026-02-10 | 2026-02-17 | ✅ Corretto |
 | OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦3 | 2026-02-11 | 2026-02-18 | ✅ Corretto |
-| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
+| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦3 | 2026-02-11 | 2026-02-18 | ✅ Corretto |
 
 #### Single Responsibility Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -104,6 +104,18 @@ updated: 2026-02-05
 
 ---
 
+### Domain Events
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+
+---
+
 ### Design
 _Nessun quiz ancora_
 
@@ -124,6 +136,7 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-02-09 | DIP-03 | ✅ | +15 | Streak 2! Box 2→3 |
 | 2026-02-10 | OCP-01 | ✅ | +15 | Streak 3! Box 2→3 |
 | 2026-02-11 | OCP-02 | ✅ | +15 | Streak 4! Box 2→3 |
+| 2026-02-11 | OCP-03 | ✅ | +40 | Streak 5! Box 2→3, +25 bonus! |
 
 ---
 

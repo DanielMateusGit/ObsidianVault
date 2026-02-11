@@ -1,17 +1,18 @@
 ---
 tags:
-  - architect-quest
   - p1
-  - week-01
   - documentation
   - c4-model
+  - architecture
+  - from/week-01
+  - status/learned
 aliases:
   - C4
   - C4 Diagrams
   - Context Diagram
+  - Container Diagram
 created: 2026-02-03
-updated: 2026-02-03
-source: "Sessione Week 1 - 2026-02-03"
+source: "Sessione Week 1 - P1 Notification Service"
 ---
 
 # C4 Model
@@ -239,6 +240,22 @@ Il livello Code (~5% dei progetti) è quasi mai utile perché:
 Entrambi sono "diagrams as code" - il diagramma È un file di testo che puoi committare, diffanziare, e revieware come codice.
 
 </details>
+
+---
+
+## Risorse per Approfondire
+
+- **[C4 Model Official Site - Simon Brown](https://c4model.com/)** - Il sito ufficiale con documentazione completa, esempi, e FAQ. Fondamentale.
+
+- **[Structurizr](https://structurizr.com/)** - Tool di Simon Brown per creare diagrammi C4 come codice. Include versione gratuita.
+
+- **[C4-PlantUML](https://github.com/plantuml-stdlib/C4-PlantUML)** - Libreria PlantUML per creare diagrammi C4. Gratuita e Git-friendly.
+
+- **[Visualising Software Architecture - Simon Brown (YouTube)](https://www.youtube.com/watch?v=GAFZcYlO5S0)** - Talk di 45 min dove Simon Brown spiega il modello. Eccellente per visual learners.
+
+- **Libro: "Software Architecture for Developers" - Simon Brown** - Il libro completo sul C4 Model con esempi pratici.
+
+- **[Mermaid C4 Support](https://mermaid.js.org/syntax/c4c.html)** - Diagrammi C4 con Mermaid, nativo in GitHub/GitLab.
 
 ---
 

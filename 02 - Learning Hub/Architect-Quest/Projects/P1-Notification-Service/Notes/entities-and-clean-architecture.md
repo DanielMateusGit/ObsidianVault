@@ -1,11 +1,22 @@
 ---
-tags: [p1, clean-architecture, entities, domain, week-02]
+tags:
+  - p1
+  - clean-architecture
+  - entities
+  - domain
+  - from/week-02
+  - status/learned
+aliases:
+  - Entities Clean Architecture
+  - Business Rules
+  - Screaming Architecture
 created: 2026-02-09
+source: "Clean Architecture - Uncle Bob, Cap. 20-22"
 ---
 
-# 🏛️ Entities e Clean Architecture
+# Entities e Clean Architecture
 
-> Sintesi dei capitoli 20-22 di "Clean Architecture" (Uncle Bob)
+> **One-liner:** Le Entities sono oggetti software che incapsulano business rules pure, indipendenti da framework, database e UI, formando il cuore immutabile del sistema.
 
 ---
 
@@ -1240,10 +1251,25 @@ d) I framework sono nel Domain layer
 
 ---
 
-## 📚 Risorse
+## Collegamenti
 
-- "Clean Architecture" - Robert C. Martin (Uncle Bob) - Cap. 20-22
-- [The Clean Architecture - Blog Post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [[clean-architecture]] - Overview completa dei 4 layer
+- [[domain-model-patterns]] - Entity vs Value Object in dettaglio
+- [[domain-events]] - Come le Entities comunicano cambiamenti
+
+---
+
+## Risorse per Approfondire
+
+- **Libro: "Clean Architecture" - Robert C. Martin, Cap. 20-22** - La fonte primaria. Spiega Entities, Screaming Architecture, e i 4 layer in dettaglio.
+
+- **[The Clean Architecture - Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)** - L'articolo originale che ha definito il pattern.
+
+- **[Entities in DDD - Martin Fowler](https://martinfowler.com/bliki/EvansClassification.html)** - Come le Entities si collegano al Domain-Driven Design.
+
+- **[Clean Architecture Solution Template](https://github.com/jasontaylordev/CleanArchitecture)** - Esempio pratico .NET di come strutturare le Entities.
+
+- **Libro: "Domain-Driven Design" - Eric Evans, Cap. 5** - Trattazione originale delle Entities nel contesto DDD.
 
 ---
 

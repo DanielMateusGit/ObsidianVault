@@ -1,11 +1,23 @@
 ---
-tags: [p1, domain, entities, value-objects, patterns, week-02]
+tags:
+  - p1
+  - domain
+  - entities
+  - value-objects
+  - patterns
+  - from/week-02
+  - status/learned
+aliases:
+  - Domain Model Patterns
+  - Entity vs Value Object
+  - Rich Domain Model
 created: 2026-02-10
+source: "Sessione Week 2 - P1 Notification Service"
 ---
 
-# 🧱 Domain Model Patterns
+# Domain Model Patterns
 
-> Patterns fondamentali per modellare il Domain Layer: Entities, Value Objects, e pattern comuni.
+> **One-liner:** Patterns fondamentali per modellare il Domain Layer distinguendo tra Entities (hanno identità) e Value Objects (definiti solo dai loro valori), mantenendo il dominio ricco di comportamento.
 
 ---
 
@@ -361,6 +373,30 @@ var recipient = Recipient.ForEmail("invalid-email");
 Questo è il vantaggio dei Value Objects: stato invalido = impossibile.
 
 </details>
+
+---
+
+## Collegamenti
+
+- [[clean-architecture]] - Dove si posiziona il Domain Model nell'architettura
+- [[entities-and-clean-architecture]] - Approfondimento su Entities e Business Rules
+- [[domain-events]] - Come le Entities comunicano cambiamenti di stato
+
+---
+
+## Risorse per Approfondire
+
+- **Libro: "Domain-Driven Design" - Eric Evans, Cap. 5-6** - La fonte originale per Entities e Value Objects. Fondamentale.
+
+- **[Martin Fowler - Value Object](https://martinfowler.com/bliki/ValueObject.html)** - Spiegazione concisa e pratica dei Value Objects.
+
+- **[Martin Fowler - Domain Model](https://martinfowler.com/eaaCatalog/domainModel.html)** - Pattern catalog entry sul Domain Model.
+
+- **Libro: "Implementing Domain-Driven Design" - Vaughn Vernon, Cap. 5-6** - Implementazione pratica con esempi .NET/Java.
+
+- **[Effective Aggregate Design - Vaughn Vernon](https://www.dddcommunity.org/library/vernon_2011/)** - Serie di articoli su come progettare Aggregates (il prossimo step dopo Entities).
+
+- **Libro: "Domain-Driven Design Distilled" - Vaughn Vernon** - Versione condensata per chi vuole i concetti chiave rapidamente.
 
 ---
 
