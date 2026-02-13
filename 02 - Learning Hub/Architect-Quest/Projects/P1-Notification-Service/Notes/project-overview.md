@@ -1,4 +1,4 @@
-# Notification Service - Panoramica Progetto
+o# Notification Service - Panoramica Progetto
 
 > **Data:** 2026-02-02
 > **Progetto:** P1 - Architect Quest

@@ -80,9 +80,17 @@ Mese 15-18: P4 - FamilyBudget + AI Integration
 
 ---
 
-## 🤖 PROGETTO 2.5: AI-Native Calendar System (Mesi 5-6)
+## 🤖 PROGETTO 2.5: AI Gateway + Calendar System (Mesi 5-6) 🔧 SHARED SERVICE
 
+> **Tipo:** Shared Service - L'AI Gateway sarà riutilizzato da P3 BookingHub e P4 FamilyBudget
+>
 > **Filosofia:** Impara principi **universali** applicabili a qualsiasi LLM, poi specializzati su Claude per il vantaggio competitivo.
+
+### Ruolo nell'Ecosystem
+```
+P2.5 AI Gateway → P3 BookingHub (assistente prenotazioni)
+                → P4 FamilyBudget (categorizzazione, consigli)
+```
 
 ### Obiettivo
 Sistema calendario intelligente **provider-agnostic** che combina:
@@ -101,8 +109,40 @@ Sistema calendario intelligente **provider-agnostic** che combina:
 - **Backend:** .NET 8 Minimal API
 - **Data:** PostgreSQL, Redis
 - **Integrations:** Google Calendar, Microsoft Graph API
-- **Frontend:** React + TypeScript
-- **Optional:** Web Speech API (voice)
+- **Frontend:** Flutter (iOS + Android) 📱
+- **Optional:** Native voice input (Flutter speech_to_text)
+
+### 📱 Decisione: Flutter Mobile App (2026-02-11)
+
+**Scelta:** Flutter invece di React web
+
+**Perché:**
+- App mobile nativa (iOS + Android) da un solo codebase
+- Esperienza utente migliore su telefono (notifiche push, voice input nativo)
+- Skill Flutter riutilizzabile in altri progetti
+- Offline-first possibile (calendar sync)
+
+**Trade-offs:**
+- Refresh Flutter necessario (Dan ha esperienza 2021, basi solide ma da rispolverare)
+- Backend deve esporre API REST/gRPC pulite (no server-side rendering)
+
+**Nota:** Dan ha già le basi Flutter (2021) → refresh veloce, non da zero
+
+**Architettura:**
+```
+┌─────────────────────────────┐
+│   Flutter App (iOS/Android) │
+│   ├─ Chat UI                │
+│   ├─ Voice input (optional) │
+│   └─ Local cache (Hive/SQLite)
+└──────────────┬──────────────┘
+               │ REST API / WebSocket
+               ▼
+┌─────────────────────────────┐
+│   .NET 8 Backend            │
+│   (AI Router + Orchestrator)│
+└─────────────────────────────┘
+```
 
 ---
 
@@ -467,7 +507,7 @@ public class CalendarService
 - Context window management
 - Multi-turn conversations
 - Redis caching per risposte comuni
-- Frontend React MVP
+- Flutter app MVP (chat interface)
 
 **Deliverable Phase 1:** Calendar assistant che usa solo Ollama ✅
 
@@ -535,7 +575,7 @@ public class CalendarService
   - Observability (Logs, metrics, traces)
   - Rate limiting
   - Graceful degradation
-  - Voice interface (opzionale)
+  - Voice interface Flutter (speech_to_text, opzionale)
 
 **Deliverable Phase 3:** Autonomous AI agent production-ready ✅
 
@@ -1192,7 +1232,7 @@ Ogni settimana indica esplicitamente cosa è **universale** vs **specifico**.
 - ✅ Natural language date parsing → Tecnica universale
 - ✅ Conversation history management → Pattern universale
 - ✅ Multi-turn conversations → Concetto universale
-- ✅ Frontend integration (React) → Non dipende da AI provider
+- ✅ Frontend integration (Flutter mobile) → Non dipende da AI provider
 
 **Deliverable:** Calendar integration → Zero dipendenza da provider AI specifico
 
@@ -1300,7 +1340,7 @@ Ogni settimana indica esplicitamente cosa è **universale** vs **specifico**.
 - ✅ Graceful degradation → Resilience pattern
 - ✅ Error recovery strategies → Software engineering fundamentals
 - ✅ Documentation (C4, ADR) → Universal practices
-- ✅ Voice interface → Web API (universale)
+- ✅ Voice interface → Flutter speech_to_text (cross-platform)
 
 **Zero dipendenze specifiche da provider.**
 
@@ -1344,7 +1384,7 @@ Dopo questo percorso, in **1 settimana** puoi:
 - [ ] **Agentic Workflows** - Multi-step autonomous reasoning
 - [ ] Google Calendar + Outlook integration
 - [ ] RAG per context-aware responses
-- [ ] React frontend completo
+- [ ] Flutter app (iOS + Android) con chat interface
 - [ ] 80%+ test coverage
 - [ ] **Documentation:** C4, ADR, MCP Server docs, Prompt engineering guide
 
@@ -1842,4 +1882,4 @@ Con questo percorso, avrai:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-02*
+*Ultimo aggiornamento: 2026-02-11*

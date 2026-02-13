@@ -8,9 +8,9 @@
 |-------|--------|
 | **Percorso attivo** | Entrambi in parallelo (focus primario: Architect Quest) |
 | **Progetto** | Architect Quest → P1 Notification Service |
-| **Settimana** | Week 2 |
+| **Settimana** | Week 2 ✅ → Ready for Week 3 |
 | **FASE** | 🎯 **FASE 1 - WEEK (Apprendimento Guidato)** |
-| **Task corrente** | Domain Model - Preparazione teorica |
+| **Task corrente** | Week 2 completata! Pronto per Week 3 (Application Layer) |
 
 ## 📋 Decisione Strategica: Percorsi in Parallelo (2026-02-02)
 
@@ -32,17 +32,17 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 1125 |
-| **Livello** | 2 - Code Crafter (prossimo: 1200 XP) |
-| **Streak** | 6 giorni 🔥 |
+| **XP Totali** | 1577 |
+| **Livello** | 3 - Pattern Seeker 🎉 (prossimo: 2000 XP) |
+| **Streak** | 9 giorni 🔥🔥 |
 | **Data inizio** | 2025-01-29 |
-| **Achievement sbloccati** | 5 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker) |
+| **Achievement sbloccati** | 6 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire) |
 
 ## 🏛️ Architect Quest - Status
 
 | Progetto | Status | Settimana |
 |----------|--------|-----------|
-| P1 - Notification Service | 🟢 In corso | W1 |
+| P1 - Notification Service | 🟢 In corso | W2 |
 | P2 - NutriPlan | 🔒 Locked | - |
 | P3 - BookingHub | 🔒 Locked | - |
 | P4 - FamilyBudget | 🔒 Locked | - |
@@ -51,14 +51,105 @@
 
 | Progetto | Status | Settimana |
 |----------|--------|-----------|
-| P1 - Task Manager | 🟡 Non iniziato | W1 |
-| P2 - Chat App | 🔒 Locked | - |
-| P3 - E-commerce | 🔒 Locked | - |
-| P4 - Notifications | 🔒 Locked | - |
-| P5 - URL Shortener | 🔒 Locked | - |
-| P6 - Capstone | 🔒 Locked | - |
+| P1 - Task Manager | 🟡 Non iniziato | W1-2 |
+| P1.5 - Auth & Security 🔐 | 🔒 Locked | W3 |
+| P2 - Chat App | 🔒 Locked | W4-6 |
+| P3 - E-commerce | 🔒 Locked | W7-10 |
+| P4 - Alert Gateway | 🔒 Locked | W11-13 |
+| P5 - URL Shortener | 🔒 Locked | W14-16 |
+| P6 - Capstone | 🔒 Locked | M6-16 |
 
 ## ✅ Ultima Sessione
+
+**Data:** 2026-02-12
+**Tipo:** MAJOR Roadmap Update - AI-First Track + AI Features
+
+**Cosa fatto:**
+
+### 🧠 AI-First Track (Architect Quest) - 3 NUOVI PROGETTI!
+- **P5 AI Second Brain** (Mesi 7-8) - RAG sul tuo Obsidian vault
+- **P6 AI Interview Coach** (Mesi 15-16) - Prep per colloqui €90k-130k
+- **P7 Personal Copilot** (Mesi 19-20) - Il TUO assistente coding
+
+### 🤖 AI Features (Senior Engineer) - Feature AI per ogni progetto!
+- P1 Task Manager → Smart Prioritization
+- P2 Chat → Message Summarization
+- P3 E-commerce → Product Recommendations
+- P4 Alert Gateway → Alert Triage & Grouping
+- P5 URL Shortener → Link Preview Generator
+- P6 Capstone → Full AI Study Assistant
+
+### 🏆 Boss Battle System
+- Architect: 7 Boss Battle (inclusi P5, P6, P7)
+- Senior: 6 Boss Battle + AI features
+
+### 📊 Numeri Finali
+- **Architect Quest:** 8 progetti, 20 mesi (era 5 progetti, 18 mesi)
+- **Senior Engineer:** 7 progetti con AI features
+- **Progetti con AI:** 9 su 15 totali!
+
+**XP guadagnati:** +0 (sessione di planning/roadmap)
+
+**File modificati:**
+- `roadmaps/architect-quest.md` → v3.0 (AI-First Track)
+- `roadmaps/senior-engineer.md` → v3.0 (AI Features)
+- `context/gamification.md` (Boss Battle)
+- `Achievements.md` (Boss Battle section)
+- `current-state.md` (questo file)
+
+---
+
+## ✅ Sessione Precedente (2026-02-12 mattina)
+
+**Data:** 2026-02-12
+**Tipo:** Week 2 - Documentation + Project Decision
+
+**Cosa fatto:**
+- Decisione progetto P2.5: Flutter mobile app
+- ADR-002: Rich vs Anemic Domain Model (+30 XP)
+- C4 Container Diagram (+20 XP)
+
+---
+
+## ✅ Sessione Pre-Precedente (2026-02-11)
+
+**Data:** 2026-02-11
+**Durata:** ~2h
+**Tipo:** Week 2 - Domain Events Implementation
+
+**Cosa fatto:**
+- **Domain Events** implementati completamente! (+40 XP)
+  - `IDomainEvent` interface
+  - `Entity` base class con domain events collection
+  - `NotificationScheduledEvent`, `NotificationSentEvent`, `NotificationFailedEvent`
+  - Notification entity aggiornata per generare eventi
+- **13 nuovi unit test** per Domain Events (tutti verdi ✅)
+- **178 test totali** nel progetto
+- Nota `domain-events.md` completamente riscritta con teoria Registry/MediatR
+- 6 note corrette per seguire template uniforme
+- **🔥 Achievement: On Fire (7 giorni streak)** (+100 XP)
+- **🎉 LEVEL UP → Pattern Seeker (Lv.3)!**
+
+**XP guadagnati:** +140
+- Domain Events implementation: +40
+- On Fire achievement (7-day streak): +100
+
+**Commit:**
+- `d7eb134` - feat: Add domain events for Notification entity
+
+**File creati/modificati:**
+- `src/Domain/Events/IDomainEvent.cs` (NEW)
+- `src/Domain/Events/NotificationScheduledEvent.cs` (NEW)
+- `src/Domain/Events/NotificationSentEvent.cs` (NEW)
+- `src/Domain/Events/NotificationFailedEvent.cs` (NEW)
+- `src/Domain/Entities/Entity.cs` (NEW - base class)
+- `src/Domain/Entities/Notification.cs` (MODIFIED - inherits Entity, raises events)
+- `tests/Events/DomainEventsTests.cs` (NEW - 13 tests)
+- `Notes/domain-events.md` (REWRITTEN)
+
+---
+
+## ✅ Sessione Precedente (2026-02-10)
 
 **Data:** 2026-02-10
 **Durata:** ~2.5h
@@ -74,30 +165,17 @@
 - 3 commit pushati su GitHub
 
 **XP guadagnati:** +215
-- Challenge OCP-01: +15
-- Template entity + tests: +70
-- DeliveryAttempt entity + tests: +60
-- Value Objects + tests: +50
-- Nota Domain Model Patterns: +20
 
 **Commit:**
 - `6c955a0` - Template entity
 - `38da468` - DeliveryAttempt entity
 - `b4b6eda` - Value Objects
 
-**File creati:**
-- `src/Domain/Entities/Template.cs`
-- `src/Domain/Entities/DeliveryAttempt.cs`
-- `src/Domain/Enums/DeliveryStatus.cs`
-- `src/Domain/ValueObjects/` (4 file: TemplateData, EmailAddress, PhoneNumber, Recipient)
-- `tests/` (6 nuovi file test)
-- `Notes/domain-model-patterns.md`
-
 ---
 
-## ✅ Sessione Precedente (2026-02-09)
+## ✅ Sessione Pre-Precedente (2026-02-09)
 
-**Data:** 2026-02-03
+**Data:** 2026-02-09
 **Durata:** ~2h 30min (2 sessioni)
 **Tipo:** Week 1 Completion + Sistema Sedimentazione
 
@@ -158,48 +236,56 @@
 ## 🎯 Prossima Sessione
 
 **Fase attuale:** 🎯 FASE 1 - WEEK 2
-**Task corrente:** Domain Events
+**Task corrente:** Letture Domain Events
 
-**Prossimi task Week 2:**
-1. Domain Events (+40 XP) → arrivi a 1165 XP
-2. ADR-002 + C4 Container Diagram (+50 XP) → **LEVEL UP a 1215 XP! 🎉**
+**Task rimanenti Week 2:**
+1. ~~Domain Events (+40 XP)~~ ✅ FATTO!
+2. ~~ADR-002: "Rich Domain Model vs Anemic" (+30 XP)~~ ✅ FATTO!
+3. ~~C4 Container Diagram (+20 XP)~~ ✅ FATTO!
+4. ⬜ Teoria: Domain Events (lettura articoli)
 
-**Achievement prossimi:**
-- 🔥 On Fire (7 giorni streak - 6/7) → **DOMANI!**
-- 🎯 Pattern Seeker (Level 3) → mancano solo 75 XP!
+**Letture da completare:**
+- [ ] Domain Events - Martin Fowler
+- [ ] Domain Events Design - Microsoft Docs
+- [ ] A Better Domain Events Pattern - Jimmy Bogard
+- [ ] How To Use Domain Events - Milan Jovanović
 
-## 🤖 NOVITÀ: AI Skills Track Aggiunto!
+**Prossimi achievement:**
+- 📐 **Module Builder** (Level 4) → mancano 685 XP
+- 🔥 **Inferno** (30 giorni streak) → 22 giorni rimanenti
 
-**Cosa:** Percorso completo per diventare Claude-Native & AI-Native Architect
+## 🤖 AI Skills - Overview Completa
 
-**Componenti:**
+### Architect Quest - AI Integration
+| Progetto | AI Focus |
+|----------|----------|
+| P2.5 AI Gateway | Provider abstraction, routing, MCP |
+| P2 NutriPlan | Usa Notification Service |
+| P3 BookingHub | Usa Notification + AI Gateway |
+| P4 FamilyBudget | Usa entrambi + AI categorization |
 
-### 1. **AI Projects Integration** (Mesi 5-18)
-- P2.5 - AI Calendar System (mesi 5-6) - Progetto dedicato
-  - Ollama (local AI) + Claude API + MCP Servers
-  - Provider-agnostic architecture
-- P3 - BookingHub + AI (mesi 10-14) - AI patient assistant
-- P4 - FamilyBudget + AI (mesi 15-18) - Budget advisor
+### Architect Quest - AI-First Track (NEW!)
+| Progetto | AI Skills |
+|----------|-----------|
+| P5 Second Brain | RAG, Vector DB, Embeddings, Semantic Search |
+| P6 Interview Coach | AI Evaluation, Structured Output, Voice AI |
+| P7 Personal Copilot | MCP avanzato, Code Analysis, GitHub integration |
 
-**Skill:**
-- 90% generiche (Ollama, prompt engineering, RAG, agentic workflows)
-- 10% Claude-specific (MCP, extended thinking) → vantaggio competitivo
-- Provider abstraction → puoi migrare ad OpenAI/Gemini in 2-3 giorni
+### Senior Engineer - AI Features
+| Progetto | AI Feature |
+|----------|------------|
+| P1 | Smart Prioritization (Ollama base) |
+| P2 | Message Summarization (Streaming) |
+| P3 | Product Recommendations (Embeddings) |
+| P4 | Alert Triage (Classification) |
+| P5 | Link Preview (Structured Output) |
+| P6 | Full AI Assistant (tutto insieme!) |
 
-### 2. **AI Frontier Exploration Lab** 🔬 (NEW!)
-- **Cartella separata:** `AI-Frontier/`
-- **Cosa:** Esplorare nuove AI tech man mano escono (indipendente dai progetti)
-- **Cadenza:** Quarterly (1 weekend/quarter, 4-6 ore)
-- **Q1 2026:** o3-mini, Gemini 2.0 Flash, LangGraph
-- **Metodologia:** 3-phase evaluation (Quick → Hands-on → Decision)
+### AI Frontier Lab 🔬
+- **Cadenza:** Quarterly (1 weekend)
+- **Scopo:** Stay current senza bloccare progetti
 
-**Vantaggio:** Stay current senza bloccare progetti principali
-
----
-
-**Documentazione completa:**
-- [[roadmaps/ai-skills.md]] - Roadmap AI completa
-- [[../AI-Frontier/README.md]] - Frontier Lab guide
+**Documentazione:** [[roadmaps/ai-skills.md]] | [[roadmaps/architect-quest]]
 
 ## ❓ Domande Aperte
 
@@ -258,6 +344,42 @@ Quella casa per te e Federica è più vicina di quanto pensi. 🏡"
 - Connetti sempre lo studio tecnico agli obiettivi personali
 - Usa numeri concreti (casa €40-60k, +€2k/mese, 18 mesi → 40 anni)
 
+## 🧠 NOVITÀ: AI-First Track + AI Features (2026-02-12)
+
+### Architect Quest - AI-First Track (3 nuovi progetti!)
+| Progetto | Mesi | Cosa Fa | Uso Personale |
+|----------|------|---------|---------------|
+| **P5 AI Second Brain** | 7-8 | RAG sul tuo vault | Query tue note con AI |
+| **P6 AI Interview Coach** | 15-16 | Simula interview | Prep colloqui €90k+ |
+| **P7 Personal Copilot** | 19-20 | Code assistant | Il TUO Copilot |
+
+### Senior Engineer - AI Features
+Ogni progetto ora ha una **AI Feature bonus**:
+- P1 → Smart Prioritization
+- P2 → Message Summarization
+- P3 → Product Recommendations
+- P4 → Alert Triage
+- P5 → Link Preview Generator
+- P6 → Full AI Study Assistant
+
+### 📊 Risultato Finale
+- **15 progetti totali** (8 Architect + 7 Senior)
+- **9 progetti con AI** (4 AI-first + 5 con AI feature)
+- **Timeline:** 20 mesi Architect, parallelo Senior
+
 ---
 
-*Ultimo aggiornamento: 2026-02-03*
+## 🏆 Boss Battle System
+
+**Cos'è:** Verifica autonoma alla fine di ogni progetto.
+
+**XP:**
+- ≥24/30: +300 XP | ≥28/30: +500 XP
+
+**Achievement:**
+- 🏆 Architect Champion (7/7) → +1000 XP
+- 🏆 Senior Champion (6/6) → +1500 XP
+
+---
+
+*Ultimo aggiornamento: 2026-02-12*

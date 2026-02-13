@@ -1,8 +1,8 @@
 ---
 tags: [architect-quest, p1, week-02]
-status: in-progress
+status: completed
 xp_available: 350
-xp_earned: 365
+xp_earned: 470
 ---
 
 # 📅 Week 2: Domain Model
@@ -14,7 +14,7 @@ Creare le core entities del Domain layer (Notification, Template, DeliveryAttemp
 
 ### Preparazione Teorica (Day 1)
 - [x] Teoria: Entities vs Value Objects ✅ 2026-02-09
-- [ ] Teoria: Domain Events
+- [x] Teoria: Domain Events ✅ 2026-02-13 (4 articoli letti)
 - [x] Teoria: Rich Domain Model vs Anemic Domain Model ✅ 2026-02-09
 - [x] Quiz: Domain Model Fundamentals (nella nota) ✅ 2026-02-09
 
@@ -48,21 +48,24 @@ Creare le core entities del Domain layer (Notification, Template, DeliveryAttemp
 - [x] Scrivi unit test per Value Objects ✅ 2026-02-10 (71 tests)
 
 ### Domain Events (Day 6-7)
-- [ ] Crea `NotificationScheduledEvent`
-- [ ] Crea `NotificationSentEvent`
-- [ ] Crea `NotificationFailedEvent`
-- [ ] Aggiungi meccanismo domain events alle entities
+- [x] Crea `NotificationScheduledEvent` ✅ 2026-02-11
+- [x] Crea `NotificationSentEvent` ✅ 2026-02-11
+- [x] Crea `NotificationFailedEvent` ✅ 2026-02-11
+- [x] Aggiungi meccanismo domain events alle entities ✅ 2026-02-11
 
 ### Documentation (Day 7)
-- [ ] Scrivi ADR-002: "Rich Domain Model vs Anemic"
-- [ ] Aggiungi C4 Container Diagram
-- [ ] Aggiorna README con Domain Model overview
+- [x] Scrivi ADR-002: "Rich Domain Model vs Anemic" ✅ 2026-02-12
+- [x] Aggiungi C4 Container Diagram ✅ 2026-02-12
+- [x] Aggiorna README con Domain Model overview ✅ 2026-02-13
 
 ## 📖 Letture Obbligatorie
 
 **Durante la settimana:**
-- [ ] "Clean Architecture" Cap. 20-22 (Entities)
-- [ ] Martin Fowler: Domain Model Pattern
+- [x] "Clean Architecture" Cap. 20-22 (Entities) ✅ 2026-02-09
+- [x] Martin Fowler: Domain Events Pattern ✅ 2026-02-13
+- [x] Microsoft Docs: Domain Events Design ✅ 2026-02-13
+- [x] Jimmy Bogard: Better Domain Events Pattern ✅ 2026-02-13
+- [x] Milan Jovanović: How To Use Domain Events ✅ 2026-02-13
 
 **Opzionali:**
 - "Domain-Driven Design Distilled" Cap. 5 (Entities)
@@ -99,9 +102,9 @@ Creare le core entities del Domain layer (Notification, Template, DeliveryAttemp
 | Template entity + tests | +70 | ✅ 2026-02-10 |
 | DeliveryAttempt entity + tests | +60 | ✅ 2026-02-10 |
 | Value Objects + tests | +50 | ✅ 2026-02-10 |
-| Domain Events | +40 | ⬜ |
-| ADR-002 | +30 | ⬜ |
-| C4 Container Diagram | +20 | ⬜ |
+| Domain Events | +40 | ✅ 2026-02-11 |
+| ADR-002 | +30 | ✅ 2026-02-12 |
+| C4 Container Diagram | +20 | ✅ 2026-02-12 |
 
 **Totale disponibile:** 350 XP
 

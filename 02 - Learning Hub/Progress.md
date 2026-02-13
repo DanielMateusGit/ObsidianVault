@@ -1,10 +1,10 @@
 ---
 tags: [learning, progress, gamification]
-xp: 1125
-level: 2
-title: "Code Crafter"
-streak: 6
-longest_streak: 6
+xp: 1577
+level: 3
+title: "Pattern Seeker"
+streak: 9
+longest_streak: 9
 architect_quest_week: "P1-W2"
 senior_engineer_week: "P1-W1"
 ---
@@ -117,6 +117,16 @@ dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-02-13 | 🎉 **Week 2 Completata!** | P1-W2 | +150 | 1577 |
+| 2026-02-13 | 📄 README Domain Model overview (8f3a9f4) | P1-W2 | +25 | 1427 |
+| 2026-02-13 | 📝 Nota Knowledge: Domain Events Theory | Sedimentazione | +20 | 1402 |
+| 2026-02-13 | 📚 4 articoli Domain Events (Fowler, MS, Bogard, Jovanović) | P1-W2 | +60 | 1382 |
+| 2026-02-13 | 🎯 Challenge EVT-01 (parziale) | Spaced Repetition | +7 | 1322 |
+| 2026-02-12 | C4 Container Diagram ✅ (31e0abd) | P1-W2 | +20 | 1315 |
+| 2026-02-12 | ADR-002: Rich vs Anemic Domain Model ✅ (804d8de) | P1-W2 | +30 | 1295 |
+| 2026-02-11 | 🎉 LEVEL UP → Pattern Seeker (Lv.3) | - | - | 1265 |
+| 2026-02-11 | 🔥 Achievement: On Fire (7 giorni streak) | - | +100 | 1265 |
+| 2026-02-11 | Domain Events + 13 tests ✅ (d7eb134) | P1-W2 | +40 | 1165 |
 | 2026-02-10 | Nota Domain Model Patterns (6 quiz) | P1-W2 | +20 | 1125 |
 | 2026-02-10 | Value Objects (Email, Phone, Recipient) + 71 tests ✅ | P1-W2 | +50 | 1105 |
 | 2026-02-10 | DeliveryAttempt entity + 24 tests ✅ | P1-W2 | +60 | 1055 |

@@ -9,9 +9,10 @@ tags: [learning, achievements, gamification]
 | Tier | Sbloccati |
 |------|-----------|
 | 🥉 Bronze | 5/8 |
-| 🥈 Silver | 0/8 |
+| 🥈 Silver | 1/8 |
 | 🥇 Gold | 0/8 |
 | 💎 Diamond | 0/6 |
+| 🏆 Boss Battle | 0/6 |
 | 🌈 Secret | 0/8 |
 
 ---
@@ -53,11 +54,40 @@ tags: [learning, achievements, gamification]
 
 ---
 
+## 🎓 Esami & Certificazioni
+
+| | Badge | Nome | Requisito | XP | Data |
+|-|-------|------|-----------|-----|------|
+| 🔒 | 📝 | **First Exam** | Primo esame completato | +50 | |
+| 🔒 | 🎯 | **Dean's List** | 3 esami ≥27/30 | +150 | |
+| 🔒 | 📚 | **Exam Veteran** | 10 esami completati | +200 | |
+| 🔒 | 🏅 | **Certification Ready** | Esame certificazione ≥24/30 | +300 | |
+
+---
+
+## 🏆 Boss Battle - Verifica Autonoma
+
+### Architect Quest
+| | Badge | Nome | Requisito | XP | Data |
+|-|-------|------|-----------|-----|------|
+| 🔒 | 🎖️ | **Battle Won** | Prima Boss Battle ≥24/30 | +300 | |
+| 🔒 | 👑 | **Battle Master** | Boss Battle ≥28/30 | +500 | |
+| 🔒 | 🏆 | **Architect Champion** | 4/4 Boss Battle superate | +1000 | |
+
+### Senior Engineer
+| | Badge | Nome | Requisito | XP | Data |
+|-|-------|------|-----------|-----|------|
+| 🔒 | ⚔️ | **Code Warrior** | Prima Boss Battle ≥24/30 | +300 | |
+| 🔒 | 🗡️ | **Code Master** | Boss Battle ≥28/30 | +500 | |
+| 🔒 | 🏆 | **Senior Champion** | 6/6 Boss Battle superate | +1500 | |
+
+---
+
 ## 🥈 Silver - Competenze Solide
 
 | | Badge | Nome | Requisito | XP | Data |
 |-|-------|------|-----------|-----|------|
-| 🔒 | 🔥 | **On Fire** | 7 giorni di streak | +100 | |
+| 🔓 | 🔥 | **On Fire** | 7 giorni di streak | +100 | 2026-02-11 |
 | 🔒 | 📚 | **Scholar** | 3 libri completati | +100 | |
 | 🔒 | 🔴 | **Redis Apprentice** | Redis usato in un progetto | +100 | |
 | 🔒 | 🔌 | **API Craftsman** | OpenAPI spec completa | +100 | |
@@ -131,6 +161,7 @@ tags: [learning, achievements, gamification]
 
 | Data | Achievement | XP |
 |------|-------------|-----|
+| 2026-02-11 | 🔥 On Fire | +100 |
 | 2026-02-05 | 🧠 Knowledge Seeker | +50 |
 | 2026-02-03 | 🔥 Spark | +50 |
 | 2026-02-03 | 📐 Architect Apprentice | +50 |
@@ -142,9 +173,10 @@ tags: [learning, achievements, gamification]
 ## 🎯 Prossimi da Sbloccare
 
 Basato sul tuo progresso:
-1. 📚 **Deep Diver** - 5 risorse obbligatorie completate (1/5)
-2. 🔥 **On Fire** - 7 giorni di streak (4/7)
+1. ~~🔥 **On Fire** - 7 giorni di streak~~ ✅ SBLOCCATO!
+2. 📚 **Deep Diver** - 5 risorse obbligatorie completate (1/5)
 3. 🎓 **Sedimentazione Master** - Completa la fase Sedimentazione
+4. 🔥 **Inferno** - 30 giorni di streak (7/30)
 
 ---
 

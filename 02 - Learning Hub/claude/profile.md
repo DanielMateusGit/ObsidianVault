@@ -44,6 +44,9 @@
 - Cloud: Azure, Azure AD B2C
 - Architetture enterprise
 
+### Da Rispolverare
+- **Flutter** (esperienza 2021, basi solide) → per P2.5 AI Calendar App
+
 ### Da Sviluppare
 - Redis (focus importante in tutti i progetti)
 - Docker, Kubernetes
@@ -137,4 +140,4 @@ Quando Dan è stanco o demotivato, ricordagli:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-02*
+*Ultimo aggiornamento: 2026-02-11*

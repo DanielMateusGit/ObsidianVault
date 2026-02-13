@@ -125,5 +125,70 @@ Esempi di domande da fare:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-02*
-*Nota: Aggiornato dopo feedback sessione - Claude stava correndo troppo senza spiegare*
+## 🎓 ESAMI - VERIFICA CONOSCENZE
+
+> Sistema per verificare che Dan abbia REALMENTE acquisito le conoscenze
+
+### Workflow Completo con Esami
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│   FASE 1: WEEK (Apprendimento)                                     │
+│   └─> Teoria → Quiz → Implementazione → Note                       │
+│                                                                     │
+│   FASE 2: SEDIMENTAZIONE (Approfondimento)                         │
+│   └─> Letture → Dan racconta → Note Knowledge/                      │
+│                                                                     │
+│   FASE 3: ESAME (Verifica) ← NUOVO!                                │
+│   └─> Fine milestone/progetto → Esame stile universitario          │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Quando Claude Propone l'Esame
+| Momento | Azione |
+|---------|--------|
+| **Fine progetto/milestone** | OBBLIGATORIO - Claude crea esame |
+| **Weekend/Lunedì** | Claude chiede "Sei pronto per una verifica?" |
+| **Su richiesta** | Dan dice "voglio ripassare X" |
+| **Pre-certificazione** | Simulazione esame reale |
+
+### Struttura Esame (30 punti)
+| Parte | Punti | Tipo |
+|-------|-------|------|
+| A | 10 | Domande aperte (spiegazioni) |
+| B | 6 | Domande chiuse (multiple choice) |
+| C | 8 | Codice (correggere/refactoring/scrivere) |
+| D | 6 | Design/Architettura (progettare) |
+
+### Processo
+1. Claude crea `Exams/esame_YYYY-MM-DD.md`
+2. Dan compila le risposte nel file
+3. Dan dice "Ho finito l'esame"
+4. Claude corregge e dà voto in trentesimi
+5. XP assegnati in base al voto
+
+### Vedi anche
+- `claude/CLAUDE.md` → Sezione completa sistema esami
+- `context/gamification.md` → XP per voto
+- `Exams/README.md` → Guida esami
+
+---
+
+## 📚 LETTURE - TRACKING
+
+> Claude aggiorna `context/reading-list.md` OGNI VOLTA che consiglia una lettura
+
+### Regola
+- **Dopo ogni nota** → Aggiungi risorse alla reading list
+- **Durante spiegazioni** → Se citi un libro/articolo, aggiungilo
+- **Decidi** → Obbligatorio vs Opzionale
+
+### File
+`context/reading-list.md` → Tutte le letture tracciate
+
+---
+
+*Ultimo aggiornamento: 2026-02-11*
+*Nota: Aggiunto sistema esami e tracking letture*

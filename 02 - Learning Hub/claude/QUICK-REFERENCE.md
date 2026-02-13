@@ -18,8 +18,10 @@
 │   │   └── ai-skills.md        ← Roadmap AI (Claude-Native + Agnostic)
 │   ├── context/
 │   │   ├── tech-stack.md       ← Stack tecnologico
-│   │   ├── learning-style.md   ← Come Dan impara
-│   │   ├── gamification.md     ← XP system
+│   │   ├── learning-style.md   ← Come Dan impara + workflow esami
+│   │   ├── gamification.md     ← XP system + esami + letture
+│   │   ├── reading-list.md     ← 🆕 Tutte le letture tracciate
+│   │   ├── quiz-tracker.md     ← Spaced repetition (Leitner boxes)
 │   │   └── files.md            ← Context files consolidati
 │   └── sessions/
 │       └── YYYY-MM-DD.md       ← Log sessioni
@@ -50,6 +52,10 @@
 │   │       ├── exploration-queue.md  ← Tech da esplorare Q1
 │   │       └── example-*.md          ← Esempi esperimenti
 │   └── Archive/
+│
+├── Exams/                      ← 🆕 Esami e verifiche conoscenze
+│   ├── README.md              ← Guida sistema esami
+│   └── esame_YYYY-MM-DD.md    ← Esami (voto in trentesimi)
 │
 ├── Dashboard.md                ← Vista Obsidian principale
 ├── Progress.md                 ← XP, livello, streak
@@ -147,15 +153,15 @@
 ## 📊 **Current Status (Snapshot - Check current-state.md for latest)**
 
 **Focus Corrente:** P1 Notification Service (Architect Quest)
-**Fase:** SEDIMENTAZIONE Week 1
-**XP:** 655
-**Level:** 2 - Code Crafter
-**Streak:** 4 giorni
+**Fase:** FASE 1 - Week 2 (Domain Model)
+**XP:** 1265
+**Level:** 3 - Pattern Seeker 🎉
+**Streak:** 7 giorni 🔥🔥
 
 **Prossimi Passi:**
-1. Continuare Sedimentazione W01 (Clean Architecture, SOLID)
-2. Completare risorse obbligatorie (0/4)
-3. Creare note in Knowledge/
+1. ADR-002: Rich vs Anemic Domain Model (+30 XP)
+2. C4 Container Diagram (+20 XP)
+3. Completare letture Domain Events
 
 ---
 
@@ -168,6 +174,21 @@
 | Settimana completata | +150 |
 | Progetto completato | +500 |
 | Boss Battle | +300-500 |
+
+### **🎓 Esami (NUOVO!)**
+| Voto | XP |
+|------|-----|
+| ≥27/30 (Lode) | +200 |
+| ≥24/30 (Merito) | +150 |
+| ≥18/30 (Superato) | +100 |
+| <18/30 (Tentativo) | +30 |
+
+### **📚 Letture**
+| Tipo | XP |
+|------|-----|
+| Articolo breve | +15 |
+| Capitolo libro | +30 |
+| Video | +15 |
 
 ### **AI Frontier**
 | Activity | XP |
@@ -187,6 +208,7 @@
 **SEMPRE:**
 - [ ] `claude/current-state.md` → Stato, progressi, prossimi passi
 - [ ] `Progress.md` → XP totali, streak, XP History
+- [ ] `claude/context/reading-list.md` → 🆕 Letture consigliate/completate
 - [ ] `claude/sessions/YYYY-MM-DD.md` → Log sessione Claude (dettagliato)
 - [ ] `Daily/YYYY-MM-DD.md` → Tracker giornaliero (per streak)
 
@@ -194,6 +216,10 @@
 - [ ] `Tasks/Week-XX.md` del progetto → Task completati
 - [ ] `Achievements.md` → Sblocca achievement guadagnati
 - [ ] `Notes/*.md` del progetto → Appunti con quiz
+- [ ] `Exams/*.md` → 🆕 Se esame proposto/completato
+
+**A FINE PROGETTO/MILESTONE:**
+- [ ] 🎓 **ESAME OBBLIGATORIO** → `Exams/esame_YYYY-MM-DD.md`
 
 **A FINE SETTIMANA (Domenica o ultima sessione):**
 - [ ] `Weekly/YYYY-WXX.md` → Retrospettiva settimanale
@@ -201,6 +227,7 @@
 **VERIFICA FINALE:**
 - [ ] Commit pushati su GitHub?
 - [ ] XP coerenti tra Progress.md e XP History?
+- [ ] Letture aggiornate in reading-list.md?
 - [ ] Prossimi task chiari?
 
 ---
@@ -224,6 +251,8 @@
 - ❌ Don't use Visual Studio (Dan uses VS Code)
 - ❌ Don't assume - ask if unclear
 - ❌ Don't skip TDD in Senior Engineer projects
+- ❌ Don't skip exam at end of milestone/project
+- ❌ Don't forget to update reading-list.md when suggesting readings
 
 ### **AI-Specific**
 - ✅ Emphasize provider-agnostic patterns
@@ -242,7 +271,37 @@
 4. Execute work (explain → code → test → review)
 5. Update current-state.md
 6. Update Progress.md if XP earned
+7. Update reading-list.md if readings suggested
 ```
+
+---
+
+## 🎓 **Exam Workflow (NUOVO!)**
+
+### Quando Proporre Esami
+| Trigger | Azione |
+|---------|--------|
+| **Fine milestone/progetto** | OBBLIGATORIO - Crea esame |
+| **Weekend/Lunedì** | Chiedi "Sei pronto per una verifica?" |
+| **Dan chiede ripasso** | Crea esame su argomenti richiesti |
+| **Pre-certificazione** | Simula esame reale |
+
+### Processo
+```
+1. Claude: "Sei pronto per una verifica? Argomenti: [X, Y, Z]"
+2. Dan: "Sì"
+3. Claude: Crea Exams/esame_YYYY-MM-DD.md
+4. Dan: Compila risposte nel file
+5. Dan: "Ho finito l'esame"
+6. Claude: Legge, corregge, voto /30, feedback
+7. Claude: Assegna XP in base al voto
+```
+
+### Struttura Esame (30 punti)
+- **A** (10pt): Domande aperte
+- **B** (6pt): Multiple choice
+- **C** (8pt): Codice (fix/refactor/write)
+- **D** (6pt): Design/Architettura
 
 ---
 
@@ -282,5 +341,5 @@ Questo farà:
 
 ---
 
-*Last updated: 2026-02-06*
-*Structure version: 2.0 (with AI Frontier Lab)*
+*Last updated: 2026-02-11*
+*Structure version: 3.0 (with Exams System + Reading Tracker)*

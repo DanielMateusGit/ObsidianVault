@@ -30,6 +30,10 @@ Knowledge/                  ← KNOWLEDGE BASE GLOBALE
 ├── solid/                 ← Note su SOLID
 ├── design/                ← Note su design principles
 └── ...
+
+Exams/                      ← ESAMI E VERIFICHE
+├── esame_YYYY-MM-DD.md    ← Esami per verifica conoscenze
+└── ...                    ← Orientati anche a certificazioni reali
 ```
 
 ---
@@ -305,6 +309,254 @@ Claude deve:
 
 ---
 
+## 🎓🎓🎓 SISTEMA ESAMI - VERIFICA CONOSCENZE 🎓🎓🎓
+
+> ⚠️ **MOLTO IMPORTANTE** - Sistema per verificare che Dan abbia REALMENTE acquisito le conoscenze
+
+### 📍 Dove Salvare gli Esami
+```
+Exams/
+├── esame_2026-02-15.md       ← Formato: esame_YYYY-MM-DD.md
+├── esame_2026-03-01.md
+└── ...
+```
+
+### 🕐 QUANDO Proporre un Esame
+
+| Momento | Tipo | Punti | Obbligatorio |
+|---------|------|-------|--------------|
+| **Fine Week importante** | Mini-verifica | 15 | ⬜ Opzionale |
+| **Fine Mese** | Esame medio | 30 | ✅ Sì |
+| **Fine Progetto** | Esame completo | 30 | ✅ **OBBLIGATORIO** |
+| **Pre-Certificazione** | Simulazione | 30+ | Su richiesta |
+| **Su richiesta** | Variabile | 15-30 | Su richiesta |
+
+### Calendario Esami P1 (Notification Service)
+```
+Mese 1: Mini-verifica W2 (Domain Model) + Esame Mese 1
+Mese 2: Mini-verifica W6 (Channels) + Esame Mese 2
+Mese 3: Mini-verifica W10 (Docker) + Esame Mese 3
+Mese 4: ESAME FINALE PROGETTO (Boss Battle teorico)
+```
+
+### Struttura per Tipo di Esame
+
+**Mini-verifica (15 punti) - Fine Week importante**
+| Parte | Punti | Contenuto |
+|-------|-------|-----------|
+| A | 6 | 3 domande aperte brevi |
+| B | 4 | 4 multiple choice |
+| C | 5 | 1-2 esercizi codice brevi |
+| | | *~15 minuti* |
+
+**Esame Mensile/Progetto (30 punti) - Più corposo**
+| Parte | Punti | Contenuto |
+|-------|-------|-----------|
+| A | 10 | 4-5 domande aperte approfondite |
+| B | 6 | 6 multiple choice |
+| C | 8 | 3+ esercizi codice (fix/refactor/write) |
+| D | 6 | 1 esercizio design/architettura |
+| | | *~30-45 minuti*
+
+### 📋 FORMATO ESAME
+
+```markdown
+---
+tags: [exam, p1, week-02]
+date: YYYY-MM-DD
+argomenti:
+  - "[Argomento 1]"
+  - "[Argomento 2]"
+  - "[Argomento 3]"  # MAX 3 argomenti per esame!
+voto: null          # Dan compila dopo la correzione
+status: pending     # pending | submitted | graded
+certificazione: "[Se orientato a certificazione specifica]"
+---
+
+# 🎓 Esame - [Data]
+
+## 📚 Argomenti Trattati
+- [Argomento 1] - da [[nota1]]
+- [Argomento 2] - da [[nota2]]
+- [Argomento 3] - da [[nota3]]
+
+---
+
+## 📝 PARTE A: Domande Aperte (10 punti)
+
+### A1. [Titolo domanda] (3 punti)
+[Domanda che richiede spiegazione approfondita]
+
+**Risposta:**
+> _[Dan compila qui]_
+
+### A2. [Titolo domanda] (4 punti)
+[Domanda più complessa]
+
+**Risposta:**
+> _[Dan compila qui]_
+
+### A3. [Titolo domanda] (3 punti)
+[Domanda]
+
+**Risposta:**
+> _[Dan compila qui]_
+
+---
+
+## ✅ PARTE B: Domande Chiuse (6 punti)
+
+### B1. [Domanda] (2 punti)
+- [ ] A) [Opzione]
+- [ ] B) [Opzione]
+- [ ] C) [Opzione]
+- [ ] D) [Opzione]
+
+### B2. [Domanda] (2 punti)
+- [ ] A) [Opzione]
+- [ ] B) [Opzione]
+- [ ] C) [Opzione]
+- [ ] D) [Opzione]
+
+### B3. [Domanda] (2 punti)
+- [ ] A) [Opzione]
+- [ ] B) [Opzione]
+- [ ] C) [Opzione]
+- [ ] D) [Opzione]
+
+---
+
+## 💻 PARTE C: Codice (8 punti)
+
+### C1. Correggi questo codice (3 punti)
+\`\`\`csharp
+// Questo codice ha problemi. Trova e correggi.
+[codice con errori/smell]
+\`\`\`
+
+**Correzione:**
+\`\`\`csharp
+// Dan compila qui
+\`\`\`
+
+### C2. Refactoring (3 punti)
+\`\`\`csharp
+// Migliora questo codice applicando [principio/pattern]
+[codice da migliorare]
+\`\`\`
+
+**Refactoring:**
+\`\`\`csharp
+// Dan compila qui
+\`\`\`
+
+### C3. Scrivi da zero (2 punti)
+[Descrizione di cosa scrivere]
+
+**Soluzione:**
+\`\`\`csharp
+// Dan compila qui
+\`\`\`
+
+---
+
+## 🏗️ PARTE D: Design/Architettura (6 punti)
+
+### D1. Progetta questa feature (6 punti)
+[Scenario realistico che richiede decisioni architetturali]
+
+**Requisiti:**
+- [Requisito 1]
+- [Requisito 2]
+- [Requisito 3]
+
+**La tua soluzione:**
+> _[Dan compila qui - può includere diagrammi ASCII, descrizione componenti, trade-off]_
+
+---
+
+## 📊 VALUTAZIONE (da compilare dopo correzione)
+
+| Parte | Punti Max | Punti Ottenuti |
+|-------|-----------|----------------|
+| A - Domande Aperte | 10 | |
+| B - Domande Chiuse | 6 | |
+| C - Codice | 8 | |
+| D - Design | 6 | |
+| **TOTALE** | **30** | |
+
+### Voto Finale: __/30
+
+### Feedback:
+> _[Claude compila dopo la correzione]_
+
+### Aree da Ripassare:
+- [ ] [Area 1]
+- [ ] [Area 2]
+```
+
+### 🎯 WORKFLOW ESAME
+
+```
+1. PROPOSTA ESAME
+   └─> Claude: "Sei pronto per una verifica? Argomenti: [X, Y, Z]"
+   └─> Dan: "Sì" / "No, preferisco [altri argomenti]"
+
+2. CREAZIONE ESAME
+   └─> Claude crea `Exams/esame_YYYY-MM-DD.md`
+   └─> Include tutti i tipi di domande
+   └─> Salva con status: pending
+
+3. COMPILAZIONE
+   └─> Dan apre il file e compila le risposte
+   └─> Dan dice: "Ho finito l'esame"
+
+4. CORREZIONE
+   └─> Claude legge il file compilato
+   └─> Valuta ogni risposta (parziale OK)
+   └─> Assegna punti per sezione
+   └─> Calcola voto in trentesimi
+   └─> Scrive feedback dettagliato
+   └─> Aggiorna status: graded
+
+5. XP & ACHIEVEMENT
+   **Esami completi (30 punti):**
+   └─> ≥27/30: +200 XP (Superato con lode)
+   └─> ≥24/30: +150 XP (Superato con merito)
+   └─> ≥18/30: +100 XP (Superato)
+   └─> <18/30: +30 XP (Tentativo) + Piano di ripasso
+
+   **Mini-verifiche (15 punti):**
+   └─> ≥13/15: +75 XP (Eccellente)
+   └─> ≥11/15: +50 XP (Buono)
+   └─> ≥9/15: +30 XP (Sufficiente)
+   └─> <9/15: +15 XP (Ripasso consigliato)
+```
+
+### 🏆 Achievement Esami
+| Badge | Nome | Requisito | XP |
+|-------|------|-----------|-----|
+| 📝 | **First Exam** | Primo esame completato | +50 |
+| 🎯 | **Dean's List** | 3 esami ≥27/30 | +150 |
+| 📚 | **Exam Veteran** | 10 esami completati | +200 |
+| 🏅 | **Certification Ready** | Esame certificazione ≥24/30 | +300 |
+
+### 🎓 ESAMI ORIENTATI ALLE CERTIFICAZIONI
+
+Quando Dan si prepara per certificazioni reali, gli esami devono:
+1. **Simulare il formato reale** della certificazione
+2. **Coprire gli argomenti** del syllabus ufficiale
+3. **Avere difficoltà comparabile** all'esame reale
+4. **Includere domande scenario-based** come nelle certificazioni
+
+| Certificazione | Focus | Note |
+|----------------|-------|------|
+| AZ-305 | Azure Solutions Architect | Scenari architetturali complessi |
+| CKA | Kubernetes Admin | Comandi kubectl, troubleshooting |
+| Terraform Associate | IaC | HCL, state management, modules |
+
+---
+
 ## 🎮 GAMIFICATION - XP PER FASE
 
 ### FASE 1: WEEK (già esistente)
@@ -333,6 +585,16 @@ Claude deve:
 | 🔗 | **Connector** | 10 note collegate tra loro | +100 |
 | 🎓 | **Sedimentazione Master** | Prima fase Sedimentazione completata | +100 |
 
+### 🏆 BOSS BATTLE (Verifica Autonoma)
+> Fine progetto: Dan lavora in autonomia su mini-progetto simile. Claude solo per domande bloccanti.
+
+| Path | Focus | XP (≥24/30) | XP (≥28/30) |
+|------|-------|-------------|-------------|
+| **Architect** | 70% Design, 30% Code | +300 | +500 |
+| **Senior** | 30% Design, 70% Code | +300 | +500 |
+
+**Achievement:** 🏆 Architect Champion (4/4) +1000 | 🏆 Senior Champion (6/6) +1500
+
 ---
 
 ## ⚡ Regole di Interazione
@@ -342,6 +604,35 @@ Claude deve:
 3. **Focus:** Insegna QUANDO usare le cose, non solo COME
 4. **Velocità:** Cruise speed - meglio capire che correre
 5. **Errori:** Dan può sbagliare, correggi costruttivamente
+
+---
+
+## 📚 LETTURE - AGGIORNA SEMPRE!
+
+> ⚠️ **OBBLIGATORIO:** Ogni volta che consigli una lettura, aggiorna `context/reading-list.md`
+
+### Quando Aggiornare
+- **Dopo ogni nota creata** → Aggiungi risorse consigliate alla reading list
+- **Durante spiegazioni** → Se citi un libro/articolo, aggiungilo
+- **Fine sessione** → Verifica che tutte le letture siano tracciate
+
+### Formato
+```markdown
+| Risorsa | Link/Capitoli | XP | Status |
+|---------|---------------|-----|--------|
+| [Nome] | [link] o Cap. X-Y | +15/+30 | ⬜ / ✅ data |
+```
+
+### XP Letture
+| Tipo | XP |
+|------|-----|
+| Articolo breve | +15 |
+| Articolo lungo / Capitolo libro | +30 |
+| Video | +15 |
+
+### Obbligatorio vs Opzionale
+- **Obbligatorio:** Concetti core per il progetto corrente
+- **Opzionale:** Approfondimenti, alternative, curiosità
 
 ---
 
@@ -370,6 +661,7 @@ Claude deve:
 ### Sempre:
 - [ ] **`current-state.md`** - Fase corrente, ultima sessione
 - [ ] **`Progress.md`** - XP totali, streak, XP History
+- [ ] **`context/reading-list.md`** - Letture consigliate/completate
 - [ ] **`sessions/YYYY-MM-DD.md`** - Log sessione
 
 ### Se in FASE 1 (Week):
@@ -383,6 +675,30 @@ Claude deve:
 
 ### Se applicabile:
 - [ ] **`Achievements.md`** - Achievement sbloccati
+- [ ] **`Exams/*.md`** - Se esame proposto/completato
+
+---
+
+## 💰 FINE PROGETTO - Monetization Reminder
+
+**Trigger:** Quando Dan completa un progetto (tutti i deliverables + Boss Battle)
+
+**Claude DEVE:**
+1. Leggere `context/monetization-potential.md`
+2. Mostrare il potenziale di monetizzazione del progetto
+3. Chiedere se vuole esplorare o continuare
+
+```
+🎉 Progetto [X] completato!
+
+💰 MONETIZATION POTENTIAL: ⭐⭐⭐⭐
+[Info dal file monetization-potential.md]
+
+🤔 Vuoi:
+1. Continuare con prossimo progetto
+2. Esplorare monetizzazione di questo
+3. Parcheggiare l'idea per dopo
+```
 
 ---
 
@@ -448,4 +764,4 @@ Se Dan chiede di passare a Week successiva durante Sedimentazione:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-03*
+*Ultimo aggiornamento: 2026-02-12*

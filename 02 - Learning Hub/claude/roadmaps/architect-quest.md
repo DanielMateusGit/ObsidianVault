@@ -9,27 +9,132 @@ Essere capace di:
 - Produrre documentazione (C4, ADR, OpenAPI) così precisa che AI agents possono implementare
 - Deployare su cloud enterprise (Azure, Kubernetes)
 - Prendere decisioni architetturali e giustificarle
+- **Costruire un ecosystem di microservizi riutilizzabili**
 
 ---
 
-## 📅 Timeline Overview
+## 🔗 ARCHITETTURA ECOSYSTEM
+
+> **Filosofia:** Costruisci servizi generici riutilizzabili, poi usali nei progetti di dominio.
 
 ```
-Mesi 1-4:   P1 - Notification Service (Clean Arch, Event-driven)
-Mesi 5-9:   P2 - NutriPlan (DDD, CQRS, Event Sourcing)
-            P2.5 - AI Calendar Assistant 🤖 (Ollama, AI-Native Skills)
-Mesi 10-14: P3 - BookingHub (Saga, Kubernetes, Observability + AI Integration 🤖)
-Mesi 15-18: P4 - FamilyBudget (Flutter, Offline-first, Sync + AI Integration 🤖)
+┌─────────────────────────────────────────────────────────────────┐
+│                    🔧 SHARED SERVICES                            │
+│              (Costruiti una volta, riusati ovunque)              │
+│                                                                  │
+│  ┌────────────────────┐       ┌────────────────────┐            │
+│  │ 📧 NOTIFICATION    │       │ 🤖 AI GATEWAY      │            │
+│  │    SERVICE         │       │                    │            │
+│  │    (P1)            │       │    (P2.5)          │            │
+│  │                    │       │                    │            │
+│  │ • Multi-channel    │       │ • Provider abstraction          │
+│  │ • Templates        │       │ • Ollama/Claude/OpenAI          │
+│  │ • Retry/DLQ        │       │ • Cost tracking    │            │
+│  │ • Delivery tracking│       │ • Rate limiting    │            │
+│  └─────────┬──────────┘       └─────────┬──────────┘            │
+│            │                            │                        │
+└────────────┼────────────────────────────┼────────────────────────┘
+             │                            │
+             ▼                            ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    📦 DOMAIN PROJECTS                            │
+│           (Imparano concetti nuovi + usano shared services)      │
+│                                                                  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
+│  │ 🥗 NutriPlan │  │ 📅 BookingHub│  │ 💰 Family    │           │
+│  │    (P2)      │  │    (P3)      │  │    Budget    │           │
+│  │              │  │              │  │    (P4)      │           │
+│  │ IMPARA:      │  │ IMPARA:      │  │ IMPARA:      │           │
+│  │ • DDD        │  │ • Saga       │  │ • Flutter    │           │
+│  │ • CQRS       │  │ • Kubernetes │  │ • Offline    │           │
+│  │ • Event Src  │  │ • Observabil.│  │ • Sync       │           │
+│  │              │  │              │  │              │           │
+│  │ USA:         │  │ USA:         │  │ USA:         │           │
+│  │ 📧 Notif.    │  │ 📧 Notif.    │  │ 📧 Notif.    │           │
+│  │              │  │ 🤖 AI GW     │  │ 🤖 AI GW     │           │
+│  └──────────────┘  └──────────────┘  └──────────────┘           │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-**🤖 = Include AI locale con Ollama** | [[roadmaps/ai-skills|→ AI Skills Roadmap]]
+### Vantaggi dell'Ecosystem
+- **Portfolio reale**: "Ho costruito un ecosystem di microservizi che comunicano"
+- **Esperienza integration**: Non solo costruisci, ma INTEGRI servizi
+- **Pensiero da architect**: Progetti servizi per essere riusati
+- **Complessità progressiva**: Ogni progetto aggiunge servizi all'ecosystem
 
 ---
 
-## 🔔 PROGETTO 1: Notification Service (Mesi 1-4)
+## 📅 Timeline Overview (20 Mesi)
+
+```
+SHARED SERVICES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mesi 1-4:   P1 - Notification Service 📧 [SHARED SERVICE]
+Mesi 5-6:   P2.5 - AI Gateway 🤖 [SHARED SERVICE]
+
+DOMAIN PROJECTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mesi 5-9:   P2 - NutriPlan (DDD, CQRS) ← USA: Notification
+Mesi 10-14: P3 - BookingHub (Saga, K8s) ← USA: Notification + AI Gateway
+Mesi 15-18: P4 - FamilyBudget (Flutter) ← USA: Notification + AI Gateway
+
+AI-FIRST TRACK 🧠 ← NEW!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mesi 7-8:   P5 - AI Second Brain 🧠 (parallelo a P2)
+Mesi 15-16: P6 - AI Interview Coach 🎤 (pre-job search)
+Mesi 19-20: P7 - Personal Copilot 🤖 (post-FamilyBudget)
+```
+
+**📧 = Shared Service** | **🤖 = AI Integration** | **🧠 = AI-First (uso personale)**
+
+---
+
+## 🏆 SISTEMA BOSS BATTLE
+
+> **Filosofia:** Dopo ogni progetto, verifica autonoma per dimostrare che sai fare le cose DA SOLO.
+
+### Cos'è
+Una "prova finale" dove Dan lavora in **autonomia** su un mini-progetto simile a quello appena completato. Claude è disponibile solo per domande "bloccanti", non per guida passo-passo.
+
+### Struttura (Focus: 70% Design, 30% Code)
+
+| Parte | Peso | Cosa Produci |
+|-------|------|--------------|
+| **A. Design** | 40% | ADR, C4 Diagrams (Context + Container) |
+| **B. Domain Model** | 30% | Entities, Value Objects, Domain Events |
+| **C. API Spec** | 15% | OpenAPI spec delle API principali |
+| **D. Implementazione** | 15% | Feature/estensione sul progetto esistente |
+
+### Criteri Valutazione (30 punti)
+
+| Criterio | Punti | Cosa Valuto |
+|----------|-------|-------------|
+| **Architettura** | 10 | ADR sensati, C4 corretti, layer separation |
+| **Domain Model** | 8 | Entities, Value Objects, aggregates corretti |
+| **Trade-off Awareness** | 6 | Sa spiegare PERCHÉ ha scelto X invece di Y |
+| **API Design** | 4 | RESTful, naming, error handling |
+| **Completezza** | 2 | Tutti i deliverable richiesti |
+
+### Durata
+1-2 settimane (più leggero del progetto principale)
+
+### XP & Achievement
+
+| Risultato | XP | Achievement |
+|-----------|-----|-------------|
+| ≥24/30 (Superata) | +300 | 🎖️ **Battle Won** |
+| ≥28/30 (Con lode) | +500 | 👑 **Battle Master** |
+| Tutte e 4 superate | +1000 | 🏆 **Architect Champion** |
+
+---
+
+## 🔔 PROGETTO 1: Notification Service (Mesi 1-4) 📧 SHARED SERVICE
+
+> **Tipo:** Shared Service - Sarà riutilizzato da P2, P3, P4
 
 ### Obiettivo
 Sistema notifiche multi-canale (email, SMS, push, webhook) con retry, template, tracking.
+**Progettato per essere consumato come servizio esterno dagli altri progetti.**
 
 ### Stack
 - .NET 8, PostgreSQL, Redis
@@ -44,6 +149,14 @@ Sistema notifiche multi-canale (email, SMS, push, webhook) con retry, template, 
 - CI/CD pipeline
 - Terraform basics
 - Azure deployment
+- **Progettare API per riusabilità** (SDK client, OpenAPI)
+
+### Come Sarà Riusato
+```
+P2 NutriPlan   → Reminder piani alimentari, notifiche dietista
+P3 BookingHub  → Conferme prenotazioni, SMS reminder, email receipt
+P4 FamilyBudget → Alert budget superato, reminder spese ricorrenti
+```
 
 ### Settimane
 
@@ -69,13 +182,24 @@ Sistema notifiche multi-canale (email, SMS, push, webhook) con retry, template, 
 - W13-14: Terraform per Azure
 - W15-16: Deployment, monitoring, Boss Battle
 
-### Boss Battle
-10,000 notifiche in 5 min senza perdite. **Reward: +500 XP**
+### 🏆 Boss Battle: "Reminder Service"
+
+**Scenario:** Progetta un servizio di reminder per appuntamenti (diverso da notifiche, focus su scheduling).
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (stack), ADR-002 (storage strategy), C4 Context + Container |
+| **B. Domain Model** | Reminder entity, RecurrenceRule VO, ReminderTriggeredEvent |
+| **C. API Spec** | OpenAPI per CRUD reminder + trigger endpoint |
+| **D. Implementazione** | Aggiungi "Webhook" channel al Notification Service esistente |
+
+**Performance Goal:** 10,000 notifiche in 5 min senza perdite (test sul progetto esistente)
 
 ### Deliverables
 - [ ] Codebase Clean Architecture
 - [ ] Message queue con retry/dead letter
 - [ ] API REST con OpenAPI spec
+- [ ] **Client SDK (.NET) per consumare il servizio**
 - [ ] Docker Compose + Dockerfile
 - [ ] CI/CD pipeline
 - [ ] Terraform modules
@@ -85,7 +209,81 @@ Sistema notifiche multi-canale (email, SMS, push, webhook) con retry, template, 
 
 ---
 
-## 🥗 PROGETTO 2: NutriPlan (Mesi 5-9)
+## 🤖 PROGETTO 2.5: AI Gateway (Mesi 5-6) 🤖 SHARED SERVICE
+
+> **Tipo:** Shared Service - Sarà riutilizzato da P3, P4
+> **Dettagli completi:** [[roadmaps/ai-skills|AI Skills Roadmap]]
+
+### Obiettivo
+Gateway AI provider-agnostic che astrae Ollama, Claude, OpenAI.
+**Progettato per essere consumato come servizio dagli altri progetti.**
+
+### Stack
+- .NET 8 Minimal API (backend)
+- Flutter (mobile app) 📱
+- Ollama (locale), Claude API, OpenAI API
+- PostgreSQL, Redis
+- MCP Server (TypeScript)
+
+### Cosa Impari
+- AI Provider Abstraction (`IAIProvider`)
+- AI Router (decide quale provider usare)
+- Prompt Engineering
+- Function Calling / Tool Use
+- MCP Protocol
+- Cost tracking & optimization
+- RAG (Retrieval-Augmented Generation)
+
+### Come Sarà Riusato
+```
+P3 BookingHub  → Assistente prenotazioni, query naturali staff
+P4 FamilyBudget → Categorizzazione spese, consigli budget
+```
+
+### Core Architecture
+```csharp
+// Interface universale (funziona con qualsiasi provider)
+public interface IAIGateway
+{
+    Task<AIResponse> ChatAsync(AIRequest request);
+    Task<string> ClassifyAsync(ClassifyRequest request);
+    Task<AIResponse> ChatWithToolsAsync(AIRequest request, List<Tool> tools);
+}
+
+// Router decide automaticamente il provider
+public class AIRouter : IAIGateway
+{
+    public async Task<AIResponse> ChatAsync(AIRequest request)
+    {
+        if (request.RequiresComplexReasoning)
+            return await _claudeProvider.ChatAsync(request);
+
+        if (request.RequiresPrivacy || request.Budget == Budget.Low)
+            return await _ollamaProvider.ChatAsync(request);
+
+        return await _defaultProvider.ChatAsync(request);
+    }
+}
+```
+
+### 🏆 Boss Battle: "Document Q&A Service"
+
+**Scenario:** Progetta un servizio RAG per fare domande su documenti PDF/Word.
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (embedding strategy), ADR-002 (vector DB choice), C4 Context + Container |
+| **B. Domain Model** | Document entity, Chunk VO, QueryResult, EmbeddingGeneratedEvent |
+| **C. API Spec** | OpenAPI per upload document, query, list documents |
+| **D. Implementazione** | Aggiungi "conversation memory" all'AI Gateway esistente |
+
+**Performance Goal:** Query con risposta in < 3 secondi su documento 50 pagine
+
+---
+
+## 🥗 PROGETTO 2: NutriPlan (Mesi 5-9) ← USA: 📧 Notification
+
+> **Tipo:** Domain Project - Impara DDD/CQRS + integra Notification Service
 
 ### Obiettivo
 Piattaforma SaaS per dietisti e pazienti. Piani alimentari, tracking, analytics.
@@ -96,6 +294,7 @@ Piattaforma SaaS per dietisti e pazienti. Piani alimentari, tracking, analytics.
 - Meilisearch per search
 - Azure AD B2C
 - Blazor o React frontend
+- **📧 Notification Service (P1)** per reminder e comunicazioni
 
 ### Cosa Impari
 - Event Storming
@@ -105,6 +304,28 @@ Piattaforma SaaS per dietisti e pazienti. Piani alimentari, tracking, analytics.
 - CQRS (Command Query Responsibility Segregation)
 - Multi-tenancy (schema-per-tenant)
 - GraphQL API
+- **Integrazione con servizi esterni (consume Notification API)**
+
+### Integrazione Notification Service
+```csharp
+// Quando un dietista assegna un piano, notifica il paziente
+await _notificationClient.SendAsync(new NotificationRequest
+{
+    Channel = NotificationChannel.Email,
+    Recipient = patient.Email,
+    Template = "new-meal-plan",
+    Data = new { PatientName = patient.Name, PlanName = plan.Name }
+});
+
+// Reminder giornaliero pasti
+await _notificationClient.ScheduleAsync(new ScheduledNotification
+{
+    Channel = NotificationChannel.Push,
+    Recipient = patient.DeviceToken,
+    Template = "meal-reminder",
+    ScheduledFor = DateTime.Today.AddHours(12) // Pranzo
+});
+```
 
 ### Settimane
 
@@ -128,12 +349,24 @@ Piattaforma SaaS per dietisti e pazienti. Piani alimentari, tracking, analytics.
 - W17-18: Food database integration (ACL)
 - W19-20: Deployment, Boss Battle
 
-### Boss Battle
-50 pazienti attivi, piani complessi, tracking giornaliero. **Reward: +500 XP**
+### 🏆 Boss Battle: "Fitness Tracker"
+
+**Scenario:** Progetta un sistema per tracking workout con Event Sourcing (dominio diverso, stessi pattern DDD/CQRS).
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (Event Sourcing vs CRUD), ADR-002 (aggregate boundaries), C4 Context + Container |
+| **B. Domain Model** | Workout aggregate, Exercise VO, WorkoutCompletedEvent, read models |
+| **C. API Spec** | GraphQL schema per query workout history + mutations |
+| **D. Implementazione** | Aggiungi "Meal Photo Recognition" a NutriPlan (integration con AI Gateway) |
+
+**Performance Goal:** 50 utenti attivi, tracking giornaliero, query < 100ms
 
 ---
 
-## 📅 PROGETTO 3: BookingHub (Mesi 10-14)
+## 📅 PROGETTO 3: BookingHub (Mesi 10-14) ← USA: 📧 Notification + 🤖 AI Gateway
+
+> **Tipo:** Domain Project - Impara Saga/K8s + integra ENTRAMBI i servizi shared
 
 ### Obiettivo
 Sistema prenotazioni per studi professionali. Calendar sync, pagamenti, notifiche.
@@ -144,6 +377,8 @@ Sistema prenotazioni per studi professionali. Calendar sync, pagamenti, notifich
 - MassTransit (Saga)
 - Azure Kubernetes Service (AKS)
 - Stripe, Google Calendar, Microsoft Graph
+- **📧 Notification Service (P1)** per conferme e reminder
+- **🤖 AI Gateway (P2.5)** per assistente prenotazioni
 
 ### Cosa Impari
 - Saga Pattern (Orchestration)
@@ -152,6 +387,50 @@ Sistema prenotazioni per studi professionali. Calendar sync, pagamenti, notifich
 - Kubernetes deployment
 - Full observability (OpenTelemetry, Grafana)
 - Production operations
+- **Orchestrazione di più servizi shared**
+
+### Integrazione Notification Service
+```csharp
+// Saga: dopo pagamento confermato, invia notifiche
+public class BookingSaga : MassTransitStateMachine<BookingState>
+{
+    // Step 3: Pagamento OK → Notifica cliente + professionista
+    During(PaymentConfirmed,
+        When(PaymentSucceeded)
+            .Then(ctx => _notificationClient.SendAsync(new NotificationRequest
+            {
+                Channel = NotificationChannel.Email,
+                Recipient = ctx.Data.CustomerEmail,
+                Template = "booking-confirmed",
+                Data = new { ... }
+            }))
+            .TransitionTo(Confirmed));
+}
+
+// SMS reminder 24h prima
+await _notificationClient.ScheduleAsync(new ScheduledNotification
+{
+    Channel = NotificationChannel.SMS,
+    Recipient = booking.CustomerPhone,
+    Template = "appointment-reminder-24h",
+    ScheduledFor = booking.DateTime.AddHours(-24)
+});
+```
+
+### Integrazione AI Gateway
+```csharp
+// Assistente AI per prenotazioni (usa AI Gateway)
+var response = await _aiGateway.ChatAsync(new AIRequest
+{
+    Provider = AIProvider.Auto, // Router decide Ollama vs Claude
+    Messages = conversation,
+    Tools = new[] { "find_available_slots", "create_booking", "cancel_booking" }
+});
+
+// Query naturale staff
+// "Chi ha cancellato negli ultimi 7 giorni?"
+var answer = await _aiGateway.QueryAsync(userQuestion, context: bookingData);
+```
 
 ### Settimane
 
@@ -176,12 +455,24 @@ Sistema prenotazioni per studi professionali. Calendar sync, pagamenti, notifich
 - W18: Smart scheduling con AI
 - W19-20: Load testing, security audit, Boss Battle
 
-### Boss Battle
-100 prenotazioni simultanee con failure scenarios. **Reward: +500 XP**
+### 🏆 Boss Battle: "Event Ticketing System"
+
+**Scenario:** Progetta un sistema di prenotazione biglietti eventi con Saga pattern (dominio diverso, stessi pattern).
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (Saga orchestration vs choreography), ADR-002 (payment failure handling), C4 Context + Container |
+| **B. Domain Model** | Ticket aggregate, Seat VO, BookingSaga state machine, compensating transactions |
+| **C. API Spec** | OpenAPI per book ticket, cancel, refund |
+| **D. Implementazione** | Aggiungi "Waitlist con notifica automatica" a BookingHub |
+
+**Performance Goal:** 100 prenotazioni simultanee con failure scenarios gestiti correttamente
 
 ---
 
-## 💰 PROGETTO 4: FamilyBudget (Mesi 15-18)
+## 💰 PROGETTO 4: FamilyBudget (Mesi 15-18) ← USA: 📧 Notification + 🤖 AI Gateway
+
+> **Tipo:** Domain Project - Impara Flutter/Offline + integra ENTRAMBI i servizi shared
 
 ### Obiettivo
 App mobile per budget familiare. Offline-first, sync, real-time.
@@ -191,7 +482,8 @@ App mobile per budget familiare. Offline-first, sync, real-time.
 - .NET 8 (backend)
 - PostgreSQL, Redis
 - SignalR (real-time)
-- Notification Service (riuso P1!)
+- **📧 Notification Service (P1)** per alert e reminder
+- **🤖 AI Gateway (P2.5)** per categorizzazione e consigli
 
 ### Cosa Impari
 - Flutter development
@@ -200,6 +492,53 @@ App mobile per budget familiare. Offline-first, sync, real-time.
 - Conflict resolution
 - Real-time con SignalR
 - Mobile deployment (App Store, Play Store)
+- **Integrazione servizi in app mobile**
+
+### Integrazione Notification Service
+```csharp
+// Alert quando budget superato
+await _notificationClient.SendAsync(new NotificationRequest
+{
+    Channel = NotificationChannel.Push,
+    Recipient = user.DeviceToken,
+    Template = "budget-exceeded",
+    Data = new {
+        Category = "Ristoranti",
+        Spent = 320,
+        Budget = 300
+    }
+});
+
+// Reminder spese ricorrenti (affitto, bollette)
+await _notificationClient.ScheduleAsync(new ScheduledNotification
+{
+    Channel = NotificationChannel.Push,
+    Template = "recurring-expense-reminder",
+    ScheduledFor = expense.DueDate.AddDays(-3)
+});
+```
+
+### Integrazione AI Gateway
+```csharp
+// Categorizzazione automatica spese (Ollama - veloce, locale)
+var category = await _aiGateway.ClassifyAsync(new ClassifyRequest
+{
+    Provider = AIProvider.Ollama, // Sempre locale per privacy
+    Text = "Pagamento POS Esselunga Milano",
+    Categories = new[] { "Supermercato", "Ristoranti", "Trasporti", ... }
+});
+
+// Consigli budget (Claude - reasoning complesso)
+var advice = await _aiGateway.ChatAsync(new AIRequest
+{
+    Provider = AIProvider.Claude, // Reasoning avanzato
+    SystemPrompt = "Sei un consulente finanziario familiare...",
+    Messages = new[] {
+        new Message("Posso permettermi un MacBook da 2000€?")
+    },
+    Context = userBudgetData
+});
+```
 
 ### Settimane
 
@@ -220,8 +559,323 @@ App mobile per budget familiare. Offline-first, sync, real-time.
 - W13-14: UI polish, testing
 - W15-16: Store preparation, Boss Battle
 
-### Boss Battle
-4 persone offline, modifiche concorrenti, sync corretto. **Reward: +500 XP**
+### 🏆 Boss Battle: "Shared Shopping List"
+
+**Scenario:** Progetta un'app per lista della spesa condivisa con offline-first e sync (dominio semplice, stessi pattern).
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (conflict resolution strategy), ADR-002 (sync protocol), C4 Context + Container |
+| **B. Domain Model** | ShoppingList aggregate, Item VO, sync events, conflict resolution rules |
+| **C. API Spec** | OpenAPI per sync endpoint + WebSocket spec per real-time |
+| **D. Implementazione** | Aggiungi "Receipt scanning con OCR" a FamilyBudget (AI-powered) |
+
+**Performance Goal:** 4 utenti offline, modifiche concorrenti, sync senza perdita dati
+
+---
+
+## 🧠 PROGETTO 5: AI Second Brain (Mesi 7-8) 🧠 AI-FIRST
+
+> **Tipo:** AI-First Project - Lo userai OGNI GIORNO!
+> **Parallelo a:** P2 NutriPlan
+
+### Obiettivo
+Il tuo Obsidian vault diventa queryabile con AI. Semantic search sulle TUE note.
+
+### Stack
+- .NET 8 Minimal API (backend)
+- Qdrant o ChromaDB (vector DB)
+- Ollama embeddings (locale) + Claude per query complesse
+- Obsidian plugin o CLI
+
+### Cosa Impari
+- **RAG completo** (chunking, embeddings, retrieval, generation)
+- **Vector databases** (similarity search, indexing)
+- **Embedding models** (sentence transformers, dimensionality)
+- **Prompt engineering avanzato** (context injection, few-shot)
+- **Semantic search** vs keyword search
+
+### Come Funziona
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    TUO OBSIDIAN VAULT                       │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐           │
+│  │ CQRS.md │ │ DDD.md  │ │Redis.md │ │ ...     │           │
+│  └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘           │
+└───────┼───────────┼───────────┼───────────┼─────────────────┘
+        │           │           │           │
+        ▼           ▼           ▼           ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    CHUNKING + EMBEDDING                     │
+│         Ogni nota → chunks → vectors (1536 dim)             │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    VECTOR DATABASE                          │
+│                    (Qdrant/ChromaDB)                        │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│  TUA QUERY: "Cosa ho imparato su Event Sourcing?"           │
+│                              │                              │
+│                              ▼                              │
+│  1. Query → embedding                                       │
+│  2. Similarity search → top 5 chunks                        │
+│  3. Chunks + query → LLM                                    │
+│  4. Risposta basata sulle TUE note!                         │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Settimane
+
+**Mese 7: RAG Foundation**
+- W1: Vector DB setup (Qdrant), embedding pipeline
+- W2: Chunking strategies, Obsidian vault indexing
+- W3: Retrieval + basic Q&A
+- W4: Prompt optimization, context window management
+
+**Mese 8: Features + Polish**
+- W5: Quiz generation dalle note
+- W6: "Related notes" suggestions
+- W7: CLI o Obsidian plugin
+- W8: Boss Battle
+
+### 🏆 Boss Battle: "Documentation Q&A"
+
+**Scenario:** Estendi Second Brain per queryare documentazione tecnica esterna (Microsoft Docs, MDN, etc.)
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (chunking strategy per docs tecniche), C4 Container |
+| **B. Domain Model** | Document, Chunk, QueryResult, Source tracking |
+| **C. API Spec** | OpenAPI per index URL, query, list sources |
+| **D. Implementazione** | Web scraper + indexer per docs esterne |
+
+### Deliverables
+- [ ] Vector DB con tue note indicizzate
+- [ ] Q&A funzionante sulle tue note
+- [ ] Quiz auto-generation
+- [ ] CLI o plugin Obsidian
+- [ ] < 3 sec response time
+
+---
+
+## 🎤 PROGETTO 6: AI Interview Coach (Mesi 15-16) 🎤 AI-FIRST
+
+> **Tipo:** AI-First Project - Ti prepara per i colloqui €90k-130k!
+> **Parallelo a:** P4 FamilyBudget
+
+### Obiettivo
+Il tuo personal coach per superare technical interviews. System design, coding, behavioral.
+
+### Stack
+- .NET 8 + Blazor (web UI)
+- Claude API (complex reasoning per evaluation)
+- Whisper + TTS (voice, opzionale)
+- PostgreSQL (progress tracking)
+
+### Cosa Impari
+- **AI Evaluation** (grading risposte, feedback strutturato)
+- **Structured Output** (JSON mode, schema validation)
+- **Multi-turn conversations** (context management)
+- **Voice AI** (speech-to-text, text-to-speech)
+- **Prompt engineering per assessment**
+
+### Features
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 AI INTERVIEW COACH                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  🎯 SYSTEM DESIGN MODE                                      │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ "Design a URL shortener like bit.ly"                │   │
+│  │                                                      │   │
+│  │ [Your answer...]                                     │   │
+│  │                                                      │   │
+│  │ 📊 Evaluation:                                       │   │
+│  │ • Requirements gathering: 8/10                       │   │
+│  │ • High-level design: 7/10                           │   │
+│  │ • Deep dive: 6/10                                   │   │
+│  │ • Trade-offs: 9/10                                  │   │
+│  │                                                      │   │
+│  │ 💡 Feedback: "Consider discussing database          │   │
+│  │    sharding strategy for scale..."                  │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  🗣️ BEHAVIORAL MODE (STAR)                                 │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ "Tell me about a time you disagreed with your team" │   │
+│  │                                                      │   │
+│  │ 📊 STAR Analysis:                                    │   │
+│  │ • Situation: ✅ Clear                               │   │
+│  │ • Task: ✅ Defined                                  │   │
+│  │ • Action: ⚠️ Could be more specific                 │   │
+│  │ • Result: ❌ Missing metrics                        │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  💻 TECHNICAL MODE                                          │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ "Explain the difference between CQRS and CRUD"      │   │
+│  │                                                      │   │
+│  │ [Your answer...]                                     │   │
+│  │                                                      │   │
+│  │ 📊 Score: 8/10                                       │   │
+│  │ 💡 "Good! Also mention read/write model separation" │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  📈 PROGRESS TRACKING                                       │
+│  System Design: ████████░░ 80%                             │
+│  Behavioral:    ██████░░░░ 60%                             │
+│  Technical:     █████████░ 90%                             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Settimane
+
+**Mese 15: Core Features**
+- W1: System design interview simulator
+- W2: Evaluation prompts + scoring
+- W3: Behavioral (STAR) mode
+- W4: Technical questions bank
+
+**Mese 16: Polish + Voice**
+- W5: Progress tracking, weak areas identification
+- W6: Voice input/output (Whisper + TTS)
+- W7: Mock interview mode (full simulation)
+- W8: Boss Battle
+
+### 🏆 Boss Battle: "Peer Interview Platform"
+
+**Scenario:** Estendi per permettere mock interviews tra utenti (peer-to-peer).
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (matching algorithm), C4 Container per multi-user |
+| **B. Domain Model** | Interview, Participant, Feedback, MatchingRequest |
+| **C. API Spec** | OpenAPI per schedule interview, submit feedback |
+| **D. Implementazione** | Video call integration (Daily.co o simile) |
+
+### Deliverables
+- [ ] System design simulator con evaluation
+- [ ] Behavioral STAR analyzer
+- [ ] Technical questions con feedback
+- [ ] Progress tracking dashboard
+- [ ] Voice mode (opzionale ma figo)
+
+---
+
+## 🤖 PROGETTO 7: Personal Copilot (Mesi 19-20) 🤖 AI-FIRST
+
+> **Tipo:** AI-First Project - Il TUO assistente coding!
+> **Dopo:** P4 FamilyBudget completato
+
+### Obiettivo
+Un Copilot personalizzato che conosce il TUO stile di codice e i TUOI progetti.
+
+### Stack
+- MCP Server (TypeScript) - già conosci da P2.5
+- GitHub API
+- AST parsing (Roslyn per C#)
+- Claude API con tool use
+- VS Code extension
+
+### Cosa Impari
+- **MCP avanzato** (complex tools, multi-step workflows)
+- **Code analysis** (AST parsing, static analysis)
+- **GitHub integrations** (PR review, commit analysis)
+- **Personalization** (learning user patterns)
+- **VS Code extension development**
+
+### Features
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                   PERSONAL COPILOT                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  🔍 CODE REVIEW                                             │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ PR #42: "Add notification retry logic"              │   │
+│  │                                                      │   │
+│  │ 🤖 Review:                                           │   │
+│  │ • ✅ Good: Follows your retry pattern from P1       │   │
+│  │ • ⚠️ Suggestion: Consider exponential backoff       │   │
+│  │ • ❌ Issue: Missing null check line 45              │   │
+│  │ • 💡 Style: You usually use guard clauses here      │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  🧪 TEST GENERATION                                         │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ Selected: NotificationService.SendAsync()           │   │
+│  │                                                      │   │
+│  │ 🤖 Generated tests:                                  │   │
+│  │ • SendAsync_ValidNotification_ReturnsSuccess        │   │
+│  │ • SendAsync_NullRecipient_ThrowsArgumentException   │   │
+│  │ • SendAsync_ChannelUnavailable_RetriesThreeTimes    │   │
+│  │                                                      │   │
+│  │ [Apply to project] [Edit] [Regenerate]              │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  📝 REFACTORING SUGGESTIONS                                 │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ File: NotificationHandler.cs                        │   │
+│  │                                                      │   │
+│  │ 🤖 Suggestions based on YOUR patterns:              │   │
+│  │ • Extract method: lines 45-67 → ValidateRequest()   │   │
+│  │ • This class has 8 methods, you usually keep < 6    │   │
+│  │ • Consider splitting into Handler + Validator       │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  💬 CHAT (Context-aware)                                    │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ You: "How did I implement retry in P1?"             │   │
+│  │                                                      │   │
+│  │ 🤖: "In P1 Notification Service, you used Polly    │   │
+│  │     with exponential backoff. Here's the code:      │   │
+│  │     [code from your actual project]                 │   │
+│  │     Want me to apply the same pattern here?"        │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Settimane
+
+**Mese 19: Core Features**
+- W1: MCP server con GitHub integration
+- W2: Code review automation
+- W3: Test generation con AST parsing
+- W4: Refactoring suggestions
+
+**Mese 20: Personalization + VS Code**
+- W5: Learn user patterns (analyze past commits)
+- W6: VS Code extension
+- W7: Chat mode con project context
+- W8: Boss Battle
+
+### 🏆 Boss Battle: "Team Copilot"
+
+**Scenario:** Estendi per supportare team (shared patterns, team style guide enforcement).
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (team patterns storage), C4 Container |
+| **B. Domain Model** | Team, StyleGuide, Pattern, Violation |
+| **C. API Spec** | OpenAPI per team management, pattern CRUD |
+| **D. Implementazione** | Style guide enforcement in PR review |
+
+### Deliverables
+- [ ] MCP server con tool use avanzato
+- [ ] GitHub PR review automation
+- [ ] Test generation
+- [ ] Refactoring suggestions
+- [ ] VS Code extension
+- [ ] Chat con context dei tuoi progetti
 
 ---
 
@@ -240,24 +894,56 @@ App mobile per budget familiare. Offline-first, sync, real-time.
 
 ## 🎯 Competenze Finali
 
-Alla fine dei 18 mesi:
+Alla fine dei 20 mesi:
 
+### Architecture & Design
 - [ ] Clean Architecture
 - [ ] Event-driven design
 - [ ] DDD (Strategic + Tactical)
 - [ ] CQRS + Event Sourcing
 - [ ] Saga Pattern
+- [ ] **Microservices ecosystem design** 🔗
+- [ ] **API design for reusability** (SDK, OpenAPI) 🔗
+
+### Infrastructure & DevOps
 - [ ] Kubernetes deployment
 - [ ] Full observability
 - [ ] Infrastructure as Code (Terraform)
+- [ ] CI/CD pipelines
+
+### Documentation
 - [ ] C4 documentation
 - [ ] ADR writing
-- [ ] API design (REST, GraphQL)
-- [ ] Mobile (Flutter basics)
+
+### API & Integration
+- [ ] REST API design
+- [ ] GraphQL API
+- [ ] **Service integration patterns** 🔗
+- [ ] **Consuming external services** 🔗
+
+### Mobile & Frontend
+- [ ] Mobile (Flutter)
 - [ ] Offline-first architecture
-- [ ] **AI Integration (Ollama, RAG, function calling)** 🤖
-- [ ] **AI-Native system design** 🤖
+
+### AI Skills 🤖
+- [ ] AI Provider Abstraction
+- [ ] AI Integration (Ollama, Claude, OpenAI)
+- [ ] RAG, function calling, prompt engineering
+- [ ] AI-Native system design
+
+### AI-First Skills 🧠 (NEW!)
+- [ ] **RAG completo** (chunking, embeddings, retrieval)
+- [ ] **Vector databases** (Qdrant, ChromaDB)
+- [ ] **Semantic search** vs keyword search
+- [ ] **AI Evaluation** (grading, structured feedback)
+- [ ] **Voice AI** (Whisper, TTS)
+- [ ] **MCP avanzato** (complex tools, multi-step)
+- [ ] **Code analysis con AI** (AST + LLM)
+- [ ] **VS Code extension development**
+
+### 🔗 = Skill dall'ecosystem | 🧠 = Skill da AI-First Track
 
 ---
 
-*Ultimo aggiornamento: 2025-01-29*
+*Ultimo aggiornamento: 2026-02-12*
+*Versione: 3.0 - AI-First Track (P5, P6, P7) + Boss Battle + Ecosystem*

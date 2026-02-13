@@ -193,6 +193,7 @@ source: "[Libro/Articolo/Video/Sessione]"
 | Nota | Status | Created |
 |------|--------|---------|
 | [[architecture/programming-paradigms\|Programming Paradigms]] | learned | 2026-02-05 |
+| [[architecture/domain-events-theory\|Domain Events - Teoria e Pattern]] | learned | 2026-02-13 |
 
 ### SOLID
 | Nota | Status | Created |
@@ -222,10 +223,10 @@ source: "[Libro/Articolo/Video/Sessione]"
 
 | Metrica | Valore |
 |---------|--------|
-| **Note totali** | 5 |
+| **Note totali** | 6 |
 | **Note mastered** | 0 |
 | **Note to-review** | 0 |
-| **Ultima nota** | 2026-02-05 |
+| **Ultima nota** | 2026-02-13 |
 
 ---
 
