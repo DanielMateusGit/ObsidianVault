@@ -19,6 +19,32 @@ updated: 2026-02-11
 
 ---
 
+## 📋 Da Leggere - Week 3 (Application Layer)
+
+### Articoli (Obbligatori)
+| Articolo | Link | XP | Status |
+|----------|------|-----|--------|
+| CQRS - Martin Fowler | [link](https://martinfowler.com/bliki/CQRS.html) | +15 | ⬜ |
+| MediatR Wiki | [link](https://github.com/jbogard/MediatR/wiki) | +15 | ⬜ |
+| MediatR Behaviors - Jimmy Bogard | [link](https://jimmybogard.com/behaviors-in-mediatr/) | +15 | ⬜ |
+| FluentValidation Docs | [link](https://docs.fluentvalidation.net/) | +15 | ⬜ |
+| Validation in DDD - Vladimir Khorikov | [link](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | +15 | ⬜ |
+
+### Libri (Obbligatori)
+| Libro | Capitoli | XP | Status |
+|-------|----------|-----|--------|
+| **Clean Architecture** | Cap. 21-22 (Use Cases) | +30 | ⬜ |
+
+### Articoli (Opzionali)
+| Articolo | Link | XP | Status |
+|----------|------|-----|--------|
+| Vertical Slice Architecture - Jimmy Bogard | [link](https://jimmybogard.com/vertical-slice-architecture/) | +15 | ⬜ |
+| CQRS in .NET - Microsoft Docs | [link](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs) | +15 | ⬜ |
+| Hexagonal Architecture - Alistair Cockburn | [link](https://alistair.cockburn.us/hexagonal-architecture/) | +15 | ⬜ |
+| Ports and Adapters - Mark Seemann | [link](https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all-the-same/) | +15 | ⬜ |
+
+---
+
 ## 📋 Da Leggere - Week 2 (Domain Model)
 
 ### Libri (Obbligatori)
@@ -113,4 +139,4 @@ updated: 2026-02-11
 
 ---
 
-*Aggiornato: 2026-02-12*
+*Aggiornato: 2026-02-13*

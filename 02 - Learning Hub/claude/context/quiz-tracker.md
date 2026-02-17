@@ -14,13 +14,13 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 22 |
-| **Risposte corrette** | 10 |
-| **Risposte parziali** | 1 |
+| **Quiz totali** | 53 |
+| **Risposte corrette** | 20 |
+| **Risposte parziali** | 2 |
 | **Risposte sbagliate** | 0 |
-| **Non risposti** | 11 |
-| **Challenge completate** | 6 |
-| **Streak challenge** | 6 |
+| **Non risposti** | 32 |
+| **Challenge completate** | 8 |
+| **Streak challenge** | 2 |
 
 ---
 
@@ -73,7 +73,7 @@ updated: 2026-02-05
 #### Open/Closed Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦3 | 2026-02-10 | 2026-02-17 | ✅ Corretto |
+| OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦4 | 2026-02-17 | 2026-03-03 | ✅ Corretto |
 | OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦3 | 2026-02-11 | 2026-02-18 | ✅ Corretto |
 | OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦3 | 2026-02-11 | 2026-02-18 | ✅ Corretto |
 
@@ -90,7 +90,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | DIP-01 | OrderService usa direttamente SqlServerRepository. Cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
 | DIP-02 | Differenza tra Dependency Inversion e Dependency Injection? | 📦1 | - | Ora | ⬜ Non risposto |
-| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦3 | 2026-02-09 | 2026-02-16 | ✅ Corretto |
+| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦2 | 2026-02-16 | 2026-02-19 | 🟡 Parziale |
 
 ---
 
@@ -109,11 +109,82 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦1 | 2026-02-13 | 2026-02-13 | 🟡 Parziale |
-| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦2 | 2026-02-16 | 2026-02-19 | ✅ Corretto |
 | EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
-| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### CQRS & MediatR
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
+| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦1 | - | Ora | ⬜ Non risposto |
+| CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### FluentValidation
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| FV-01 | MustAsync con HasPermissionAsync nel Validator - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+| FV-02 | Come validi PhoneNumber solo se Channel == Sms? | 📦1 | - | Ora | ⬜ Non risposto |
+| FV-03 | In quale layer vive ScheduleNotificationCommandValidator? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Ports & Adapters
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+
+### CQRS Queries
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+
+### Application Layer
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| APP-01 | Cosa NON fa l'Application Layer? | 📦1 | - | Ora | ⬜ Non risposto |
+| APP-02 | Handler dipende da AppDbContext - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+| APP-03 | Come ristrutturi un NotificationService con 15 metodi? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### CQRS Commands
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CMD-01 | Return type corretto per CreateProductCommand? | 📦1 | - | Ora | ⬜ Non risposto |
+| CMD-02 | Command che legge prima di cancellare viola CQS? | 📦1 | - | Ora | ⬜ Non risposto |
+| CMD-03 | Query + Command separati nel Controller - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Unit of Work
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| UOW-01 | Collega mette SaveChanges in ogni repository - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+| UOW-02 | Serve UpdateAsync prima di SaveChanges con EF Core? | 📦1 | - | Ora | ⬜ Non risposto |
+| UOW-03 | Perché DbContext deve essere Scoped nel DI? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Testing Seams
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| SEAM-01 | Perché DateTime.UtcNow è problematico nei test? | 📦1 | - | Ora | ⬜ Non risposto |
+| SEAM-02 | Dove va l'interfaccia IRandomGenerator? | 📦1 | - | Ora | ⬜ Non risposto |
+| SEAM-03 | IMathProvider per Add(a,b) - buona idea? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Composition Root
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| DI-01 | Chi può avere riferimenti a tutti i layer? | 📦1 | - | Ora | ⬜ Non risposto |
+| DI-02 | DbContext Singleton con richieste concorrenti? | 📦1 | - | Ora | ⬜ Non risposto |
+| DI-03 | Perché AddApplication() invece di tutto in Program.cs? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Testing con Mocks
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| MOCK-01 | Perché Arg.Any invece di valore specifico nel Received()? | 📦1 | - | Ora | ⬜ Non risposto |
+| MOCK-02 | Verificare SaveChangesAsync - utile o testing il mock? | 📦1 | - | Ora | ⬜ Non risposto |
+| MOCK-03 | Quando usare Fake invece di Mock? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ---
 
@@ -139,6 +210,10 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-02-11 | OCP-02 | ✅ | +15 | Streak 4! Box 2→3 |
 | 2026-02-11 | OCP-03 | ✅ | +40 | Streak 5! Box 2→3, +25 bonus! |
 | 2026-02-13 | EVT-01 | 🟡 | +7 | Parziale - mancava consistenza DB |
+| 2026-02-16 | DIP-03 | 🟡 | +7 | Parziale - posizione OK, motivazione imprecisa |
+| 2026-02-17 | OCP-01 | ✅ | +15 | Streak 2! Box 3→4 |
+| 2026-02-17 | CQRS-01 | ✅ | +10 | Nuovo quiz! Box 1→2 |
+| 2026-02-17 | EVT-04 | ✅ | +10 | Nuovo quiz! Box 1→2 |
 
 ---
 
@@ -186,4 +261,4 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 
 ---
 
-*Ultimo aggiornamento: 2026-02-11*
+*Ultimo aggiornamento: 2026-02-17*

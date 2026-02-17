@@ -1,11 +1,11 @@
 ---
 tags: [learning, progress, gamification]
-xp: 1577
+xp: 1934
 level: 3
 title: "Pattern Seeker"
-streak: 9
+streak: 2
 longest_streak: 9
-architect_quest_week: "P1-W2"
+architect_quest_week: "P1-W3"
 senior_engineer_week: "P1-W1"
 ---
 
@@ -117,6 +117,16 @@ dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-02-17 | 28 Validator Tests ✅ (9d237b2) | P1-W3 | +30 | 1934 |
+| 2026-02-17 | FluentValidation + ValidationBehavior ✅ | P1-W3 | +50 | 1904 |
+| 2026-02-17 | 📝 Nota FluentValidation | P1-W3 | +40 | 1854 |
+| 2026-02-17 | 🧠 Spaced Repetition (3/3 correct) | Ripasso | +35 | 1814 |
+| 2026-02-16 | Queries: GetByStatus + GetPending ✅ | P1-W3 | +30 | 1779 |
+| 2026-02-16 | RetryNotificationCommand + Domain + 7 tests ✅ | P1-W3 | +50 | 1749 |
+| 2026-02-16 | MediatR Setup + Commands/Queries ✅ | P1-W3 | +40 | 1699 |
+| 2026-02-16 | 📝 Nota CQRS & MediatR | P1-W3 | +40 | 1659 |
+| 2026-02-16 | 🧠 Spaced Repetition (3/4 correct) | Ripasso | +35 | 1619 |
+| 2026-02-16 | 🎯 Challenge DIP-03 (parziale) | Spaced Repetition | +7 | 1584 |
 | 2026-02-13 | 🎉 **Week 2 Completata!** | P1-W2 | +150 | 1577 |
 | 2026-02-13 | 📄 README Domain Model overview (8f3a9f4) | P1-W2 | +25 | 1427 |
 | 2026-02-13 | 📝 Nota Knowledge: Domain Events Theory | Sedimentazione | +20 | 1402 |

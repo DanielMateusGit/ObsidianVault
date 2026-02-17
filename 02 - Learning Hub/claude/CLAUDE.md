@@ -55,26 +55,100 @@ Exams/                      ← ESAMI E VERIFICHE
 ### **Ogni Inizio Sessione (Morning Startup):**
 1. **Leggi `WHY.md`** per ricordare il perché (casa, Federica, famiglia)
 2. **Leggi `context/quiz-tracker.md`** per la spaced repetition
-3. **Dai motivazione** usando i numeri concreti
-4. **🎯 Challenge del giorno!** (OBBLIGATORIO)
-   - Proponi UN quiz dalla coda review o non risposti
-   - Aspetta risposta di Dan
-   - Feedback + aggiorna tracker + assegna XP
+3. **Dai motivazione** breve usando i numeri concreti
+4. **🧠 Spaced Repetition Session** (OBBLIGATORIO - vedi sotto)
 5. **Verifica la fase**: Siamo in Week o in Sedimentazione?
 
-### **Challenge del Giorno - Formato:**
+---
+
+## 🧠 SPACED REPETITION SESSION - Inizio Sessione
+
+> **Obiettivo:** Rinfrescare la memoria sui concetti appresi. Zero pressione, è per NON dimenticare.
+
+### Quando farla
+**SEMPRE** all'inizio di ogni sessione, PRIMA di iniziare nuovo materiale.
+
+### Quante domande
+| Situazione | Domande |
+|------------|---------|
+| Quiz in scadenza (da quiz-tracker) | Tutti quelli in scadenza |
+| Nessun quiz in scadenza | 3-5 domande di ripasso generale |
+| Dan chiede di più/meno | Adatta al suo tempo disponibile |
+
+### Come selezionare le domande
+**Priorità:**
+1. Quiz in scadenza (spaced repetition dal tracker)
+2. Quiz Box 1 non ancora risposti
+3. Concetti delle ultime 2 settimane (ripasso generale)
+4. Mix di argomenti diversi (non solo SOLID, non solo Domain, etc.)
+
+### Formato Sessione
 ```
-🎯 **Challenge del giorno!** Ti ricordi questo?
+🧠 **Spaced Repetition** - Rinfreschiamo la memoria!
 
-[Quiz dalla nota, con opzioni se multiple choice]
+Nessuna pressione, è per consolidare. Rispondi come preferisci.
 
-Cosa rispondi?
+---
+
+**1. [Argomento]**
+[Domanda]
+
+**2. [Argomento]**
+[Domanda]
+
+**3. [Argomento]**
+[Domanda]
+
+---
+
+Quando hai finito, dimmi le tue risposte!
 ```
 
-**Dopo la risposta:**
-- ✅ Corretto: "Esatto! Infatti: {riassunto dalla nota originale}"
-- ❌ Sbagliato: "Non preoccuparti se non ti ricordi! Ripasso veloce: {riassunto dalla nota}"
-- Aggiorna `quiz-tracker.md` (box, data, XP)
+### Dopo le risposte - WORKFLOW
+1. **Valuta ogni risposta** (✅ Corretto / 🟡 Parziale / ❌ Sbagliato)
+2. **Aggiorna `quiz-tracker.md`** per ogni quiz
+3. **Calcola XP totali** della sessione
+4. **Se ci sono errori:**
+   - Spiega brevemente dove ha sbagliato
+   - **Indica le note da rileggere** (path esatto)
+   - NON rispiegare tutto - basta il link alla nota
+5. **Mostra riepilogo** (vedi sotto)
+
+### Riepilogo Finale Spaced Repetition
+```
+📊 **Risultato Spaced Repetition**
+
+| # | Argomento | Risultato | XP |
+|---|-----------|-----------|-----|
+| 1 | [Topic] | ✅ | +10 |
+| 2 | [Topic] | 🟡 | +5 |
+| 3 | [Topic] | ❌ | +2 |
+
+**Totale XP:** +XX
+**Streak:** X risposte corrette consecutive
+
+📖 **Da ripassare:**
+- `Notes/xxx.md` → [concetto sbagliato]
+- `Notes/yyy.md` → [altro concetto]
+
+---
+Pronti per iniziare [Week X / Sedimentazione]?
+```
+
+### XP Spaced Repetition
+| Risultato | XP |
+|-----------|-----|
+| ✅ Corretto | +10 |
+| 🟡 Parziale | +5 |
+| ❌ Sbagliato | +2 (per aver provato!) |
+| 🔥 5 corrette consecutive | +25 bonus |
+| 🔥 10 corrette consecutive | +50 bonus |
+
+### Regole Importanti
+- **MAI giudicare** - è per imparare, non per valutare
+- **MAI saltare** - anche se Dan ha fretta, almeno 2-3 domande
+- **Se Dan non ricorda** - va benissimo! È il punto della spaced repetition
+- **Focus su comprensione** - non su memorizzazione meccanica
 
 ---
 

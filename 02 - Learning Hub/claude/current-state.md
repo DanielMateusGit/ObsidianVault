@@ -8,9 +8,47 @@
 |-------|--------|
 | **Percorso attivo** | Entrambi in parallelo (focus primario: Architect Quest) |
 | **Progetto** | Architect Quest → P1 Notification Service |
-| **Settimana** | Week 2 ✅ → Ready for Week 3 |
-| **FASE** | 🎯 **FASE 1 - WEEK (Apprendimento Guidato)** |
-| **Task corrente** | Week 2 completata! Pronto per Week 3 (Application Layer) |
+| **Settimana** | Week 3 (in corso) |
+| **FASE** | 🎯 **FASE 1 - WEEK 3 (Application Layer)** |
+| **Task corrente** | ✅ Teoria completata - pronto per commit o prossimo step |
+
+---
+
+## ✅ TEORIA RECUPERATA (2026-02-17)
+
+> **CONTEXT PER CLAUDE:** Durante la sessione precedente avevo scritto codice SENZA insegnare la teoria. Dan mi ha corretto e abbiamo recuperato TUTTO seguendo il workflow corretto.
+
+### ✅ Argomenti con TEORIA COMPLETA (workflow corretto)
+| Argomento | Nota | Quiz |
+|-----------|------|------|
+| FluentValidation | `Notes/fluentvalidation.md` | ✅ 3 quiz |
+| Ports & Adapters | `Notes/ports-and-adapters.md` | ✅ 3 quiz |
+| CQRS Queries | `Notes/cqrs-queries.md` | ✅ 3 quiz |
+
+### ✅ Argomenti RECUPERATI (prima avevano solo codice)
+| Argomento | Nota Creata |
+|-----------|-------------|
+| Application Layer | `Notes/application-layer.md` |
+| CQRS Commands | `Notes/cqrs-commands.md` |
+| Unit of Work | `Notes/unit-of-work.md` |
+| Testing Seams (IDateTimeProvider) | `Notes/testing-seams.md` |
+| Composition Root / DI | `Notes/composition-root.md` |
+| Testing con Mocks | `Notes/testing-with-mocks.md` |
+
+### ✅ Piano di Recupero COMPLETATO
+
+**6 note create con workflow corretto (TEORIA → DOMANDE → NOTA):**
+1. ✅ `Notes/application-layer.md`
+2. ✅ `Notes/cqrs-commands.md`
+3. ✅ `Notes/unit-of-work.md`
+4. ✅ `Notes/testing-seams.md`
+5. ✅ `Notes/composition-root.md`
+6. ✅ `Notes/testing-with-mocks.md`
+
+**Prossimi step possibili:**
+- Commit del codice esistente
+- Continuare con Week 3 (letture obbligatorie)
+- Quiz: Application Layer Fundamentals
 
 ## 📋 Decisione Strategica: Percorsi in Parallelo (2026-02-02)
 
@@ -32,9 +70,9 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 1577 |
-| **Livello** | 3 - Pattern Seeker 🎉 (prossimo: 2000 XP) |
-| **Streak** | 9 giorni 🔥🔥 |
+| **XP Totali** | 1934 |
+| **Livello** | 3 - Pattern Seeker (prossimo: 2000 XP → 66 XP mancanti) |
+| **Streak** | 2 giorni |
 | **Data inizio** | 2025-01-29 |
 | **Achievement sbloccati** | 6 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire) |
 
@@ -61,53 +99,75 @@
 
 ## ✅ Ultima Sessione
 
+**Data:** 2026-02-17
+**Tipo:** Week 3 - Correzione Workflow + Teoria
+
+**Cosa fatto:**
+
+### 🧠 Spaced Repetition
+- 3 domande: OCP-01 (in scadenza), CQRS-01, EVT-04
+- Tutte corrette! OCP-01 passa a Box 4
+
+### 📝 Teoria Insegnata Correttamente
+| Argomento | Nota Creata | Quiz |
+|-----------|-------------|------|
+| FluentValidation | `Notes/fluentvalidation.md` | ✅ 3 |
+| Ports & Adapters | `Notes/ports-and-adapters.md` | ✅ 3 |
+| CQRS Queries | `Notes/cqrs-queries.md` | ✅ 3 |
+
+### 🔴 ERRORE RICONOSCIUTO
+Claude ha scritto molto codice SENZA spiegare la teoria prima:
+- ITemplateRepository, IUnitOfWork, IDateTimeProvider
+- DI configuration (DependencyInjection.cs, Program.cs)
+- 72 unit test per handlers
+- Commands (ScheduleNotification, Cancel, Retry)
+
+**Dan ha corretto:** "Non ho imparato niente"
+
+**Decisione:** Tornare indietro e insegnare TUTTA la teoria che manca.
+
+### 🛠️ Codice Scritto (da collegare alla teoria)
+- FluentValidation: 3 Validators + ValidationBehavior
+- 72 test totali nel progetto Application.Tests
+- ITemplateRepository, IUnitOfWork, IDateTimeProvider
+- DependencyInjection.cs + Program.cs aggiornato
+
+**XP guadagnati:** Da calcolare dopo recupero teoria
+- Spaced Repetition: +35
+- (Teoria non completata - XP in sospeso)
+
+**Nessun commit oggi** - prima completiamo la teoria
+
+---
+
+## ✅ Sessione Precedente (2026-02-16)
+
+**Data:** 2026-02-16
+**Tipo:** Week 3 Start - CQRS & MediatR
+
+**XP guadagnati:** +202
+
+---
+
+## ✅ Sessione Precedente (2026-02-13)
+
+**Data:** 2026-02-13
+**Tipo:** Week 2 Completion + Letture Domain Events
+
+**XP guadagnati:** +262
+
+---
+
+## ✅ Sessione Precedente (2026-02-12)
+
 **Data:** 2026-02-12
 **Tipo:** MAJOR Roadmap Update - AI-First Track + AI Features
 
 **Cosa fatto:**
-
-### 🧠 AI-First Track (Architect Quest) - 3 NUOVI PROGETTI!
-- **P5 AI Second Brain** (Mesi 7-8) - RAG sul tuo Obsidian vault
-- **P6 AI Interview Coach** (Mesi 15-16) - Prep per colloqui €90k-130k
-- **P7 Personal Copilot** (Mesi 19-20) - Il TUO assistente coding
-
-### 🤖 AI Features (Senior Engineer) - Feature AI per ogni progetto!
-- P1 Task Manager → Smart Prioritization
-- P2 Chat → Message Summarization
-- P3 E-commerce → Product Recommendations
-- P4 Alert Gateway → Alert Triage & Grouping
-- P5 URL Shortener → Link Preview Generator
-- P6 Capstone → Full AI Study Assistant
-
-### 🏆 Boss Battle System
-- Architect: 7 Boss Battle (inclusi P5, P6, P7)
-- Senior: 6 Boss Battle + AI features
-
-### 📊 Numeri Finali
-- **Architect Quest:** 8 progetti, 20 mesi (era 5 progetti, 18 mesi)
-- **Senior Engineer:** 7 progetti con AI features
-- **Progetti con AI:** 9 su 15 totali!
-
-**XP guadagnati:** +0 (sessione di planning/roadmap)
-
-**File modificati:**
-- `roadmaps/architect-quest.md` → v3.0 (AI-First Track)
-- `roadmaps/senior-engineer.md` → v3.0 (AI Features)
-- `context/gamification.md` (Boss Battle)
-- `Achievements.md` (Boss Battle section)
-- `current-state.md` (questo file)
-
----
-
-## ✅ Sessione Precedente (2026-02-12 mattina)
-
-**Data:** 2026-02-12
-**Tipo:** Week 2 - Documentation + Project Decision
-
-**Cosa fatto:**
-- Decisione progetto P2.5: Flutter mobile app
-- ADR-002: Rich vs Anemic Domain Model (+30 XP)
-- C4 Container Diagram (+20 XP)
+- AI-First Track (3 nuovi progetti: P5, P6, P7)
+- AI Features per Senior Engineer
+- Boss Battle System
+- ADR-002 + C4 Container Diagram
 
 ---
 
@@ -235,24 +295,20 @@
 
 ## 🎯 Prossima Sessione
 
-**Fase attuale:** 🎯 FASE 1 - WEEK 2
-**Task corrente:** Letture Domain Events
+**Fase attuale:** 🎯 FASE 1 - WEEK 3 (Application Layer)
+**Task corrente:** Iniziare Week 3
 
-**Task rimanenti Week 2:**
-1. ~~Domain Events (+40 XP)~~ ✅ FATTO!
-2. ~~ADR-002: "Rich Domain Model vs Anemic" (+30 XP)~~ ✅ FATTO!
-3. ~~C4 Container Diagram (+20 XP)~~ ✅ FATTO!
-4. ⬜ Teoria: Domain Events (lettura articoli)
-
-**Letture da completare:**
-- [ ] Domain Events - Martin Fowler
-- [ ] Domain Events Design - Microsoft Docs
-- [ ] A Better Domain Events Pattern - Jimmy Bogard
-- [ ] How To Use Domain Events - Milan Jovanović
+**Week 3 - Application Layer (W3-W4):**
+- Use Cases / Commands & Queries
+- Ports & Adapters (interfaces)
+- CQRS pattern introduction
+- Unit of Work
+- Validation (FluentValidation)
+- MediatR setup
 
 **Prossimi achievement:**
-- 📐 **Module Builder** (Level 4) → mancano 685 XP
-- 🔥 **Inferno** (30 giorni streak) → 22 giorni rimanenti
+- 📐 **Module Builder** (Level 4) → mancano 423 XP
+- 🔥 **Inferno** (30 giorni streak) → 21 giorni rimanenti
 
 ## 🤖 AI Skills - Overview Completa
 
@@ -382,4 +438,4 @@ Ogni progetto ora ha una **AI Feature bonus**:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-12*
+*Ultimo aggiornamento: 2026-02-13*
