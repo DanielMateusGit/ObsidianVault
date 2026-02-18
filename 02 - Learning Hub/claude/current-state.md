@@ -100,43 +100,43 @@
 ## ✅ Ultima Sessione
 
 **Data:** 2026-02-17
-**Tipo:** Week 3 - Correzione Workflow + Teoria
+**Tipo:** Week 3 - Recupero Teoria Completo
 
 **Cosa fatto:**
 
 ### 🧠 Spaced Repetition
-- 3 domande: OCP-01 (in scadenza), CQRS-01, EVT-04
+- 3 domande: OCP-01, CQRS-01, EVT-04
 - Tutte corrette! OCP-01 passa a Box 4
 
-### 📝 Teoria Insegnata Correttamente
+### 📝 Teoria RECUPERATA (6 argomenti)
 | Argomento | Nota Creata | Quiz |
 |-----------|-------------|------|
-| FluentValidation | `Notes/fluentvalidation.md` | ✅ 3 |
-| Ports & Adapters | `Notes/ports-and-adapters.md` | ✅ 3 |
-| CQRS Queries | `Notes/cqrs-queries.md` | ✅ 3 |
+| Application Layer | `application-layer.md` | 3 |
+| CQRS Commands | `cqrs-commands.md` | 3 |
+| Unit of Work | `unit-of-work.md` | 3 |
+| Testing Seams | `testing-seams.md` | 3 |
+| Composition Root | `composition-root.md` | 3 |
+| Testing con Mocks | `testing-with-mocks.md` | 3 |
 
-### 🔴 ERRORE RICONOSCIUTO
-Claude ha scritto molto codice SENZA spiegare la teoria prima:
-- ITemplateRepository, IUnitOfWork, IDateTimeProvider
-- DI configuration (DependencyInjection.cs, Program.cs)
-- 72 unit test per handlers
-- Commands (ScheduleNotification, Cancel, Retry)
+**Totale:** 6 note, 18 nuovi quiz
 
-**Dan ha corretto:** "Non ho imparato niente"
+### 🛠️ Sistema /init Creato
+- `PROMPT.md` - Istruzioni dettagliate per inizializzazione
+- `CLAUDE.md` aggiornato con comando `/init`
+- Documentati errori da non ripetere
 
-**Decisione:** Tornare indietro e insegnare TUTTA la teoria che manca.
+### 📦 Commit
+- `83084cd` - docs: Add Week 3 Application Layer notes
 
-### 🛠️ Codice Scritto (da collegare alla teoria)
-- FluentValidation: 3 Validators + ValidationBehavior
-- 72 test totali nel progetto Application.Tests
-- ITemplateRepository, IUnitOfWork, IDateTimeProvider
-- DependencyInjection.cs + Program.cs aggiornato
-
-**XP guadagnati:** Da calcolare dopo recupero teoria
+**XP guadagnati:** ~200 XP (teoria + note + quiz)
 - Spaced Repetition: +35
-- (Teoria non completata - XP in sospeso)
+- 6 note create: +120 (20 x 6)
+- 18 quiz aggiunti: +45
 
-**Nessun commit oggi** - prima completiamo la teoria
+**Prossima sessione:**
+- Quiz finale Week 3 (opzionale)
+- Letture obbligatorie
+- Oppure iniziare Week 4
 
 ---
 

@@ -4,6 +4,51 @@
 
 ---
 
+## 🚀 COMANDO /init - USALO SEMPRE!
+
+> **Quando Dan scrive `/init` o "esegui /init":**
+>
+> **DEVI** leggere e seguire `/claude/PROMPT.md` **PRIMA di fare qualsiasi altra cosa.**
+
+### Come Funziona
+
+```
+Dan: "/init"
+
+Claude:
+1. Legge PROMPT.md
+2. Legge CLAUDE.md (questo file)
+3. Legge current-state.md
+4. Legge quiz-tracker.md
+5. Legge WHY.md
+6. Mostra output di conferma (vedi PROMPT.md)
+7. Propone Spaced Repetition
+8. Aspetta conferma prima di procedere
+```
+
+### Output Atteso dopo /init
+
+```
+✅ INIZIALIZZAZIONE COMPLETATA
+
+📍 Stato:
+- Progetto: [da current-state.md]
+- Week: [da current-state.md]
+- Fase: [1 o 2]
+- Task corrente: [da current-state.md]
+
+📋 Workflow CONFERMATO:
+TEORIA → DOMANDE → NOTA → CONFERMA → CODICE
+(Mai scrivere codice senza completare questi step!)
+
+🧠 Spaced Repetition (X quiz in scadenza):
+[Lista quiz]
+
+Pronto! Iniziamo con la spaced repetition?
+```
+
+---
+
 ## 📁 Struttura Memoria
 
 ```
@@ -707,6 +752,34 @@ Quando Dan si prepara per certificazioni reali, gli esami devono:
 ### Obbligatorio vs Opzionale
 - **Obbligatorio:** Concetti core per il progetto corrente
 - **Opzionale:** Approfondimenti, alternative, curiosità
+
+---
+
+## 💡 GESTIONE IDEE - Idea Backlog
+
+> **Trigger:** Quando Dan dice "ho un'idea", "mi è venuta un'idea", "potremmo fare..."
+
+**File:** `context/idea-backlog.md`
+
+### Processo
+
+1. **Cattura immediata** - Scrivi l'idea nel backlog
+2. **Valutazione** - Rispondi a 3 domande:
+   - Cosa imparo? (allineamento roadmap)
+   - Lo userei davvero? (motivazione personale)
+   - Quanto è grande? (side project vs progetto completo)
+3. **Decisione:**
+   | Risultato | Azione |
+   |-----------|--------|
+   | Fit perfetto | Integra/sostituisce progetto esistente |
+   | Buona, timing sbagliato | Parcheggia per dopo |
+   | Side project veloce | Settimana libera tra progetti |
+   | Non allineata | Backlog personale post-percorso |
+
+### Regole
+- **MAI scartare** un'idea senza valutarla
+- **MAI iniziare** un progetto idea senza completare quello corrente (a meno che non sia un merge)
+- **SEMPRE** verificare overlap con roadmap esistente
 
 ---
 

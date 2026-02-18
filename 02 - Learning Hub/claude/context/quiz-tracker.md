@@ -226,6 +226,29 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 
 ---
 
+## 🚨 TODO: Quiz da Knowledge/ (IMPORTANTE!)
+
+> **Gap identificato da Dan (2026-02-18):** La spaced repetition attualmente copre solo i quiz dai `Notes/` del progetto, ma NON quelli dalla Knowledge base.
+
+### Quiz Knowledge da Aggiungere
+Le seguenti note in `Knowledge/` hanno quiz che devono essere tracciati:
+
+| Nota | Quiz | Status |
+|------|------|--------|
+| `solid/single-responsibility-principle.md` | 4 quiz (SRP-01 to SRP-04) | ⚠️ Da verificare duplicati |
+| `solid/open-closed-principle.md` | 3 quiz (OCP) | ⚠️ Da verificare duplicati |
+| `solid/dependency-inversion-principle.md` | 3 quiz (DIP) | ⚠️ Da verificare duplicati |
+| `patterns/facade-pattern.md` | 3 quiz (FAC) | ⚠️ Da verificare duplicati |
+| `architecture/programming-paradigms.md` | 3 quiz (PARA) | ⚠️ Da verificare duplicati |
+| `architecture/domain-events-theory.md` | ? quiz | ⬜ Da aggiungere |
+
+### Prossimi Step
+1. [ ] Verificare quali quiz sono già nel tracker (evitare duplicati)
+2. [ ] Aggiungere quiz mancanti da Knowledge/
+3. [ ] Unificare tracking: Notes/ e Knowledge/ nello stesso sistema
+
+---
+
 ## 📝 Note per Claude
 
 ### All'inizio di ogni sessione:
