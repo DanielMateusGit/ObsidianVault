@@ -1,7 +1,7 @@
 ---
 tags: [context, reading, books]
 created: 2026-02-06
-updated: 2026-02-11
+updated: 2026-02-18
 ---
 
 # 📚 Reading List
@@ -10,30 +10,74 @@ updated: 2026-02-11
 
 ---
 
+## 🚨🚨🚨 BLOCCO ATTIVO - WEEK 4 COMPLETATA 🚨🚨🚨
+
+> **Week 4 completata!** Prima di procedere a Week 5:
+>
+> 1. ⬜ **Completare TUTTE le letture** (0/9)
+> 2. ⬜ **Sostenere Esame Mese 1** (30 punti)
+>
+> **Timeline:**
+> - 📅 **Deadline:** Fine Febbraio 2026
+> - ⏰ **Giorni rimasti:** ~9-10 giorni
+> - 📚 **Tempo letture:** ~7-8 ore totali
+
+---
+
 ## 📖 In Corso
 
 | Libro | Capitoli | Progress | Progetto | Obbligatorio |
 |-------|----------|----------|----------|--------------|
-| **Clean Architecture** (Uncle Bob) | 1-22 | Cap. 22/35 | P1-W2 | ✅ |
+| **Clean Architecture** (Uncle Bob) | 1-22 | Cap. 6/22 | P1-W2 | ✅ |
 | **Dive into Design Patterns** (Shvets) | - | Facade completato | P1 | ⬜ Opzionale |
 
 ---
 
-## 📋 Da Leggere - Week 3 (Application Layer)
+## 🎯 CHECKLIST PRE-ESAME (Fine Febbraio 2026)
+
+> **Tutte queste letture DEVONO essere completate PRIMA dell'esame di fine mese.**
+
+### Arretrati (Priorità ALTA)
+| # | Risorsa | Capitoli/Link | Status |
+|---|---------|---------------|--------|
+| 1 | Clean Architecture | Cap. 7-14 | ⬜ Arretrato |
+| 2 | A Philosophy of Software Design | Cap. 1-5 | ⬜ Arretrato |
+| 3 | Domain Model Pattern - Fowler | [link](https://martinfowler.com/eaaCatalog/domainModel.html) | ⬜ Arretrato |
+
+### Week 3 (In corso)
+| # | Risorsa | Link | Status |
+|---|---------|------|--------|
+| 4 | CQRS - Martin Fowler | [link](https://martinfowler.com/bliki/CQRS.html) | 🟡 |
+| 5 | MediatR Wiki | [link](https://github.com/jbogard/MediatR/wiki) | 🟡 |
+| 6 | MediatR Behaviors | [link](https://jimmybogard.com/behaviors-in-mediatr/) | 🟡 |
+| 7 | FluentValidation Docs | [link](https://docs.fluentvalidation.net/) | 🟡 |
+| 8 | Validation in DDD | [link](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | 🟡 |
+| 9 | Clean Architecture Cap. 21-22 | Libro | 🟡 |
+
+### Progress
+- **Completate:** 0/9
+- **XP Disponibili:** +195 XP
+- **Deadline:** Fine Febbraio 2026
+
+---
+
+## 📋 Da Leggere - Week 3 (Application Layer) 🔴 IN CORSO
+
+> **Assegnate:** 2026-02-18 | **Da completare in concorrenza con Week 4**
 
 ### Articoli (Obbligatori)
 | Articolo | Link | XP | Status |
 |----------|------|-----|--------|
-| CQRS - Martin Fowler | [link](https://martinfowler.com/bliki/CQRS.html) | +15 | ⬜ |
-| MediatR Wiki | [link](https://github.com/jbogard/MediatR/wiki) | +15 | ⬜ |
-| MediatR Behaviors - Jimmy Bogard | [link](https://jimmybogard.com/behaviors-in-mediatr/) | +15 | ⬜ |
-| FluentValidation Docs | [link](https://docs.fluentvalidation.net/) | +15 | ⬜ |
-| Validation in DDD - Vladimir Khorikov | [link](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | +15 | ⬜ |
+| CQRS - Martin Fowler | [link](https://martinfowler.com/bliki/CQRS.html) | +15 | 🟡 Assegnato 2026-02-18 |
+| MediatR Wiki | [link](https://github.com/jbogard/MediatR/wiki) | +15 | 🟡 Assegnato 2026-02-18 |
+| MediatR Behaviors - Jimmy Bogard | [link](https://jimmybogard.com/behaviors-in-mediatr/) | +15 | 🟡 Assegnato 2026-02-18 |
+| FluentValidation Docs | [link](https://docs.fluentvalidation.net/) | +15 | 🟡 Assegnato 2026-02-18 |
+| Validation in DDD - Vladimir Khorikov | [link](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | +15 | 🟡 Assegnato 2026-02-18 |
 
 ### Libri (Obbligatori)
 | Libro | Capitoli | XP | Status |
 |-------|----------|-----|--------|
-| **Clean Architecture** | Cap. 21-22 (Use Cases) | +30 | ⬜ |
+| **Clean Architecture** | Cap. 21-22 (Use Cases) | +30 | 🟡 Assegnato 2026-02-18 |
 
 ### Articoli (Opzionali)
 | Articolo | Link | XP | Status |
@@ -139,4 +183,4 @@ updated: 2026-02-11
 
 ---
 
-*Aggiornato: 2026-02-13*
+*Aggiornato: 2026-02-19*
