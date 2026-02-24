@@ -10,7 +10,7 @@ aliases:
   - Dependency Inversion
   - inversione delle dipendenze
 created: 2026-02-05
-updated: 2026-02-05
+updated: 2026-02-20
 source: "Clean Architecture (Robert C. Martin) - Capitolo 11"
 ---
 
@@ -390,8 +390,36 @@ var upper = myString.ToUpper();
 
 ---
 
+## Factory: Il Ponte per la Creazione
+
+DIP dice "dipendi da astrazioni", ma **qualcuno** deve pur creare l'oggetto concreto. Qui entra la **Factory**:
+
+```csharp
+// ❌ Il problema: per fare new devo conoscere il concreto
+_repository = new SqlOrderRepository(); // Viola DIP!
+
+// ✅ La soluzione: Factory isola la creazione
+public interface IRepositoryFactory
+{
+    IOrderRepository Create();
+}
+
+// Il codice di alto livello non sa mai quale concreto viene creato
+public OrderService(IRepositoryFactory factory)
+{
+    _repository = factory.Create();
+}
+```
+
+> **In pratica:** I DI Container moderni fanno da Factory automatica, ma Factory esplicite servono per logica di creazione condizionale.
+
+Vedi: [[factory-pattern]]
+
+---
+
 ## Collegamenti
 
+- [[factory-pattern]] - Abilita DIP isolando la creazione di oggetti concreti
 - [[programming-paradigms]] - Come OOP ha reso DIP pratico
 - [[clean-architecture]] - DIP abilita la Dependency Rule
 - [[interface-segregation-principle]] - ISP complementa DIP

@@ -88,15 +88,36 @@ Motivo: L'idea ha overlap alto con P5+P6. Meglio arrivarci con skill solide.
 
 ---
 
+### IDEA-002: Focus Tube (YouTube Learning Client)
+
+**Data:** 2026-02-24
+**Status:** ✅ INTEGRATA → Senior Frontend P1
+
+**Descrizione:**
+Client alternativo per YouTube che elimina distrazioni (Shorts, raccomandazioni algoritmiche, infinite scroll) e trasforma la piattaforma in uno strumento di apprendimento. Community-driven curation: utenti valutano contenuti, creano playlist curate, si iscrivono a playlist altrui.
+
+**Il problema:**
+YouTube è progettato per massimizzare tempo speso, non valore ottenuto. Dan (e molti altri) perdono ore in scrolling invece di apprendimento mirato.
+
+#### Decisione (2026-02-24)
+
+**→ INTEGRATA** in nuovo percorso **Senior Frontend** come P1.
+
+Vedi: `roadmaps/senior-frontend.md`
+
+**Potenziale monetizzazione:** ⭐⭐⭐⭐⭐
+
+---
+
 ## 📊 Statistiche
 
 | Metrica | Valore |
 |---------|--------|
-| Idee totali | 1 |
-| Integrate in roadmap | 0 |
+| Idee totali | 2 |
+| Integrate in roadmap | 1 |
 | Parcheggiate | 1 |
 | Scartate | 0 |
 
 ---
 
-*Ultimo aggiornamento: 2026-02-17*
+*Ultimo aggiornamento: 2026-02-24*

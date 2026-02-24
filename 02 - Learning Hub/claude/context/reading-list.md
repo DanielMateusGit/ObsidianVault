@@ -1,7 +1,7 @@
 ---
 tags: [context, reading, books]
 created: 2026-02-06
-updated: 2026-02-18
+updated: 2026-02-20
 ---
 
 # 📚 Reading List
@@ -10,17 +10,19 @@ updated: 2026-02-18
 
 ---
 
-## 🚨🚨🚨 BLOCCO ATTIVO - WEEK 4 COMPLETATA 🚨🚨🚨
+## 🚨🚨🚨 BLOCCO ATTIVO - PROSSIMO TODO 🚨🚨🚨
 
 > **Week 4 completata!** Prima di procedere a Week 5:
 >
-> 1. ⬜ **Completare TUTTE le letture** (0/9)
+> 1. ⬜ **Completare TUTTE le risorse** (0/11) - Lista RIVISTA
 > 2. ⬜ **Sostenere Esame Mese 1** (30 punti)
 >
 > **Timeline:**
 > - 📅 **Deadline:** Fine Febbraio 2026
-> - ⏰ **Giorni rimasti:** ~9-10 giorni
-> - 📚 **Tempo letture:** ~7-8 ore totali
+> - ⏰ **Giorni rimasti:** ~8-9 giorni
+> - 📚 **Tempo totale:** ~6-7 ore (5 video + 6 letture)
+>
+> **QUESTO È IL PROSSIMO TODO DI DAN!**
 
 ---
 
@@ -35,56 +37,54 @@ updated: 2026-02-18
 
 ## 🎯 CHECKLIST PRE-ESAME (Fine Febbraio 2026)
 
-> **Tutte queste letture DEVONO essere completate PRIMA dell'esame di fine mese.**
+> **Tutte queste risorse DEVONO essere completate PRIMA dell'esame di fine mese.**
+>
+> ✅ Lista RIVISTA 2026-02-20: Aggiunta copertura Week 4, video al posto di articoli dove più efficaci
 
-### Arretrati (Priorità ALTA)
-| # | Risorsa | Capitoli/Link | Status |
-|---|---------|---------------|--------|
-| 1 | Clean Architecture | Cap. 7-14 | ⬜ Arretrato |
-| 2 | A Philosophy of Software Design | Cap. 1-5 | ⬜ Arretrato |
-| 3 | Domain Model Pattern - Fowler | [link](https://martinfowler.com/eaaCatalog/domainModel.html) | ⬜ Arretrato |
+### 🔴 OBBLIGATORI - Copertura Completa Week 1-4
 
-### Week 3 (In corso)
-| # | Risorsa | Link | Status |
-|---|---------|------|--------|
-| 4 | CQRS - Martin Fowler | [link](https://martinfowler.com/bliki/CQRS.html) | 🟡 |
-| 5 | MediatR Wiki | [link](https://github.com/jbogard/MediatR/wiki) | 🟡 |
-| 6 | MediatR Behaviors | [link](https://jimmybogard.com/behaviors-in-mediatr/) | 🟡 |
-| 7 | FluentValidation Docs | [link](https://docs.fluentvalidation.net/) | 🟡 |
-| 8 | Validation in DDD | [link](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | 🟡 |
-| 9 | Clean Architecture Cap. 21-22 | Libro | 🟡 |
+| # | Argomento | Risorsa | Tipo | Tempo | XP | Status |
+|---|-----------|---------|------|-------|-----|--------|
+| 1 | Clean Architecture | Cap. 7-14 (libro) | 📖 | - | +30 | ✅ COMPLETATO |
+| 2 | Clean Architecture | Cap. 21-22 (Use Cases) | 📖 | - | +30 | ✅ COMPLETATO |
+| 3 | Deep Modules | A Philosophy of Software Design Cap. 1-5 | 📖 | ~2h | +30 | ⬜ |
+| 4 | CQRS + MediatR | [Milan Jovanovic - CQRS](https://www.youtube.com/watch?v=vdi-p9StmG8) | 🎬 | ~25m | +15 | ⬜ |
+| 5 | MediatR Behaviors | [Milan - Pipeline Behaviors](https://www.youtube.com/watch?v=2JzQuIvxIqk) | 🎬 | ~15m | +15 | ⬜ |
+| 6 | FluentValidation | [Docs - Getting Started](https://docs.fluentvalidation.net/en/latest/start.html) | 📖 | ~20m | +15 | ⬜ |
+| 7 | Validation in DDD | [Vladimir Khorikov](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | 📖 | ~20m | +15 | ⬜ |
+| 8 | Repository Pattern | [Milan - Repository Pattern](https://www.youtube.com/watch?v=h4KIngWVpfU) | 🎬 | ~20m | +15 | ⬜ |
+| 9 | Unit of Work | [Milan - Unit of Work](https://www.youtube.com/watch?v=E3gFNvH1W1k) | 🎬 | ~15m | +15 | ⬜ |
+| 10 | Integration Tests | [Nick Chapsas - Testcontainers](https://www.youtube.com/watch?v=tj5ZCtvgXKY) | 🎬 | ~20m | +15 | ⬜ |
+| 11 | Domain Model | [Fowler - Domain Model](https://martinfowler.com/eaaCatalog/domainModel.html) | 📖 | ~15m | +15 | ⬜ |
+
+**Totale:** ~6-7 ore | **XP Disponibili:** +210
+
+### 🟡 CONSIGLIATI (Alto valore, se hai tempo)
+
+| # | Argomento | Risorsa | Tipo | Tempo | XP | Status |
+|---|-----------|---------|------|-------|-----|--------|
+| 12 | Clean Architecture .NET | [Amichai Mantinband - Full Series](https://www.youtube.com/playlist?list=PLzYkqgWkHPKBcDIP5gzLfASkQyTdy0t4k) | 🎬 | ~2h | +30 | ⬜ |
+| 13 | Hexagonal Architecture | [Alistair Cockburn](https://alistair.cockburn.us/hexagonal-architecture/) | 📖 | ~20m | +15 | ⬜ |
+| 14 | EF Core Basics | [Microsoft - Getting Started](https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app) | 📖 | ~30m | +15 | ⬜ |
+| 15 | Domain Events Deep | [Udi Dahan - Video](https://www.youtube.com/watch?v=1h3_6ATvpKU) | 🎬 | ~45m | +15 | ⬜ |
 
 ### Progress
-- **Completate:** 0/9
-- **XP Disponibili:** +195 XP
+- **Completate:** 0/11 obbligatorie
+- **XP Disponibili:** +210 XP (obbligatorie) + 75 XP (consigliate)
 - **Deadline:** Fine Febbraio 2026
 
 ---
 
-## 📋 Da Leggere - Week 3 (Application Layer) 🔴 IN CORSO
+## 📋 Week 3-4 Resources (CONSOLIDATE IN CHECKLIST SOPRA)
 
-> **Assegnate:** 2026-02-18 | **Da completare in concorrenza con Week 4**
+> ⚠️ **NOTA:** Tutte le risorse Week 3-4 sono state consolidate nella CHECKLIST PRE-ESAME sopra.
+> Video di Milan Jovanovic sostituiscono articoli meno pratici dove appropriato.
 
-### Articoli (Obbligatori)
-| Articolo | Link | XP | Status |
-|----------|------|-----|--------|
-| CQRS - Martin Fowler | [link](https://martinfowler.com/bliki/CQRS.html) | +15 | 🟡 Assegnato 2026-02-18 |
-| MediatR Wiki | [link](https://github.com/jbogard/MediatR/wiki) | +15 | 🟡 Assegnato 2026-02-18 |
-| MediatR Behaviors - Jimmy Bogard | [link](https://jimmybogard.com/behaviors-in-mediatr/) | +15 | 🟡 Assegnato 2026-02-18 |
-| FluentValidation Docs | [link](https://docs.fluentvalidation.net/) | +15 | 🟡 Assegnato 2026-02-18 |
-| Validation in DDD - Vladimir Khorikov | [link](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | +15 | 🟡 Assegnato 2026-02-18 |
-
-### Libri (Obbligatori)
-| Libro | Capitoli | XP | Status |
-|-------|----------|-----|--------|
-| **Clean Architecture** | Cap. 21-22 (Use Cases) | +30 | 🟡 Assegnato 2026-02-18 |
-
-### Articoli (Opzionali)
+### Articoli Opzionali (Non in checklist)
 | Articolo | Link | XP | Status |
 |----------|------|-----|--------|
 | Vertical Slice Architecture - Jimmy Bogard | [link](https://jimmybogard.com/vertical-slice-architecture/) | +15 | ⬜ |
 | CQRS in .NET - Microsoft Docs | [link](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs) | +15 | ⬜ |
-| Hexagonal Architecture - Alistair Cockburn | [link](https://alistair.cockburn.us/hexagonal-architecture/) | +15 | ⬜ |
 | Ports and Adapters - Mark Seemann | [link](https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all-the-same/) | +15 | ⬜ |
 
 ---
@@ -183,4 +183,4 @@ updated: 2026-02-18
 
 ---
 
-*Aggiornato: 2026-02-19*
+*Aggiornato: 2026-02-20*

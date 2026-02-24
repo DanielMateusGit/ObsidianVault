@@ -12,7 +12,7 @@ aliases:
 created: 2026-02-17
 source: "Sessione Week 3 - Application Layer"
 ---
-
+ƒ
 # Unit of Work Pattern
 
 > **One-liner:** Pattern che raggruppa tutte le modifiche in una singola transazione - o tutto viene salvato, o niente.

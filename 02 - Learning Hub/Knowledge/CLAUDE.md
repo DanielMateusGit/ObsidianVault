@@ -192,12 +192,18 @@ source: "[Libro/Articolo/Video/Sessione]"
 ### Architecture
 | Nota | Status | Created |
 |------|--------|---------|
+| [[architecture/clean-architecture-principles\|Clean Architecture Principles]] | learned | 2026-02-20 |
+| [[architecture/component-coupling\|Component Coupling (ADP, SDP, SAP)]] | learned | 2026-02-20 |
+| [[architecture/component-cohesion\|Component Cohesion (REP, CCP, CRP)]] | learned | 2026-02-20 |
+| [[architecture/components\|Components]] | learned | 2026-02-20 |
 | [[architecture/programming-paradigms\|Programming Paradigms]] | learned | 2026-02-05 |
 | [[architecture/domain-events-theory\|Domain Events - Teoria e Pattern]] | learned | 2026-02-13 |
 
 ### SOLID
 | Nota | Status | Created |
 |------|--------|---------|
+| [[solid/interface-segregation-principle\|Interface Segregation Principle]] | learned | 2026-02-20 |
+| [[solid/liskov-substitution-principle\|Liskov Substitution Principle]] | learned | 2026-02-20 |
 | [[solid/open-closed-principle\|Open/Closed Principle]] | learned | 2026-02-06 |
 | [[solid/single-responsibility-principle\|Single Responsibility Principle]] | learned | 2026-02-06 |
 | [[solid/dependency-inversion-principle\|Dependency Inversion Principle]] | learned | 2026-02-05 |
@@ -215,6 +221,7 @@ source: "[Libro/Articolo/Video/Sessione]"
 ### Patterns
 | Nota | Status | Created |
 |------|--------|---------|
+| [[patterns/factory-pattern\|Factory Pattern]] | learned | 2026-02-20 |
 | [[patterns/facade-pattern\|Facade Pattern]] | learned | 2026-02-06 |
 
 ---
@@ -223,10 +230,10 @@ source: "[Libro/Articolo/Video/Sessione]"
 
 | Metrica | Valore |
 |---------|--------|
-| **Note totali** | 6 |
+| **Note totali** | 13 |
 | **Note mastered** | 0 |
 | **Note to-review** | 0 |
-| **Ultima nota** | 2026-02-13 |
+| **Ultima nota** | 2026-02-20 |
 
 ---
 
@@ -244,4 +251,4 @@ Questa settimana abbiamo esplorato:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-06*
+*Ultimo aggiornamento: 2026-02-20*

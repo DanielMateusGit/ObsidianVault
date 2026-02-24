@@ -14,11 +14,11 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 53 |
-| **Risposte corrette** | 20 |
-| **Risposte parziali** | 2 |
-| **Risposte sbagliate** | 0 |
-| **Non risposti** | 32 |
+| **Quiz totali** | 90 |
+| **Risposte corrette** | 39 |
+| **Risposte parziali** | 3 |
+| **Risposte sbagliate** | 1 |
+| **Non risposti** | 23 |
 | **Challenge completate** | 8 |
 | **Streak challenge** | 2 |
 
@@ -59,6 +59,31 @@ updated: 2026-02-05
 
 ### Architecture
 
+#### Clean Architecture Principles
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CLEAN-01 | Struttura con controllers/services/repositories - cosa "urla"? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLEAN-02 | Caratteristica comune a TUTTE le clean architectures? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### Components
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| COMP-01 | Cos'è un componente? | 📦1 | - | Ora | ⬜ Non risposto |
+| COMP-02 | Perché la Legge di Moore ha influenzato l'architettura dei componenti? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### Component Cohesion
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| COH-01 | REP, CCP, o CRP? OrderValidator + OrderRepository + OrderPdfExporter insieme | 📦1 | - | Ora | ⬜ Non risposto |
+| COH-02 | All'inizio progetto, quale principio favorire (REP/CCP/CRP)? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### Component Coupling
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| COUP-01 | Ciclo A → B → C → A - come lo rompi con DIP? | 📦1 | - | Ora | ⬜ Non risposto |
+| COUP-02 | Domain dipende da Infrastructure - perché è sbagliato (SDP)? | 📦1 | - | Ora | ⬜ Non risposto |
+| COUP-03 | Componente stabile ma concreto - perché è un problema (SAP)? | 📦1 | - | Ora | ⬜ Non risposto |
+
 #### Programming Paradigms
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
@@ -74,8 +99,8 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦4 | 2026-02-17 | 2026-03-03 | ✅ Corretto |
-| OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦3 | 2026-02-11 | 2026-02-18 | ✅ Corretto |
-| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦3 | 2026-02-11 | 2026-02-18 | ✅ Corretto |
+| OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦4 | 2026-02-19 | 2026-03-05 | ✅ Corretto |
+| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦4 | 2026-02-19 | 2026-03-05 | ✅ Corretto |
 
 #### Single Responsibility Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -85,16 +110,36 @@ updated: 2026-02-05
 | SRP-03 | Un collega dice che EmployeeFacade viola SRP. Come rispondi? | 📦1 | - | Ora | ⬜ Non risposto |
 | SRP-04 | CalculateDiscount() per Sales e Finance - duplicazione vera o accidentale? | 📦1 | - | Ora | ⬜ Non risposto |
 
+#### Liskov Substitution Principle
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| LSP-01 | Perché Square extends Rectangle viola LSP, anche se matematicamente un quadrato È un rettangolo? | 📦1 | - | Ora | ⬜ Non risposto |
+| LSP-02 | Nel sistema taxi, cosa succede se arriva un terzo provider con API diversa? | 📦1 | - | Ora | ⬜ Non risposto |
+| LSP-03 | Come si applica LSP nel pattern Ports & Adapters? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### Interface Segregation Principle
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| ISP-01 | IWorker con Work(), Eat(), Sleep() per un Robot - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+| ISP-02 | Perché ISP architetturale riduce tempi di ricompilazione? | 📦1 | - | Ora | ⬜ Non risposto |
+| ISP-03 | PaymentGateway implementa 3 interfacce piccole - viola SRP? | 📦1 | - | Ora | ⬜ Non risposto |
+
 #### Dependency Inversion Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | DIP-01 | OrderService usa direttamente SqlServerRepository. Cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
 | DIP-02 | Differenza tra Dependency Inversion e Dependency Injection? | 📦1 | - | Ora | ⬜ Non risposto |
-| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦2 | 2026-02-16 | 2026-02-19 | 🟡 Parziale |
+| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦3 | 2026-02-19 | 2026-02-26 | ✅ Corretto |
 
 ---
 
 ### Patterns
+
+#### Factory Pattern
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| FACT-01 | Perché serve una Factory se ho già DIP? | 📦1 | - | Ora | ⬜ Non risposto |
+| FACT-02 | Factory vs DI Container - quando preferire Factory? | 📦1 | - | Ora | ⬜ Non risposto |
 
 #### Facade Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -109,16 +154,16 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦1 | 2026-02-13 | 2026-02-13 | 🟡 Parziale |
-| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦2 | 2026-02-16 | 2026-02-19 | ✅ Corretto |
+| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦3 | 2026-02-19 | 2026-02-26 | ✅ Corretto |
 | EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
-| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-02-20 | 2026-02-23 | 🟡 Parziale |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### CQRS & MediatR
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
 | CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
 | CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦1 | - | Ora | ⬜ Non risposto |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -133,16 +178,16 @@ updated: 2026-02-05
 ### Ports & Adapters
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
-| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
-| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
+| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦2 | 2026-02-17 | 2026-02-23 | ✅ Corretto |
+| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
 
 ### CQRS Queries
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
-| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
-| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦2 | 2026-02-17 | 2026-02-20 | ✅ Corretto |
+| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦2 | 2026-02-17 | 2026-02-23 | ✅ Corretto |
+| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
+| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦2 | 2026-02-17 | 2026-02-23 | ✅ Corretto |
 
 ### Application Layer
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -186,6 +231,43 @@ updated: 2026-02-05
 | MOCK-02 | Verificare SaveChangesAsync - utile o testing il mock? | 📦1 | - | Ora | ⬜ Non risposto |
 | MOCK-03 | Quando usare Fake invece di Mock? | 📦1 | - | Ora | ⬜ Non risposto |
 
+### Infrastructure Layer
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| INFRA-01 | Direzione dipendenze: Application può dipendere da Infrastructure? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
+| INFRA-02 | Cosa NON appartiene a Infrastructure: Repository, DbContext, o IRepository? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
+| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
+| INFRA-04 | EF Core o Dapper per report su milioni di record? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
+| INFRA-05 | PostgreSQL vs MongoDB: quali domande fare per decidere? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
+
+### Repository Pattern
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| REPO-02 | Cos'è il problema N+1 e come lo risolvi? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| REPO-03 | Quando ha senso usare RepositoryBase<T>? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+
+### EF Core Migrations
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| MIG-01 | Quali sono 3 vantaggi delle migrations rispetto a SQL manuale? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| MIG-02 | Cosa deve contenere Down() se Up() fa CreateTable? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| MIG-03 | Cosa succede se aggiungi una proprietà senza creare migration? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+
+### Value Object Persistence
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| OWN-01 | Owned Type vs Entity: perché non creare tabella separata per VO? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| OWN-02 | Perché EF Core richiede costruttore privato senza parametri? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| OWN-03 | Perché Ignore() su Email/Phone nella configurazione? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+
+### Integration Tests
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| INT-01 | Perché non usare InMemory provider di EF Core? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| INT-02 | Unit test vs Integration test: bastano solo gli unit test? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| INT-03 | Cosa trova un integration test che un unit test non trova? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+
 ---
 
 ### Design
@@ -214,6 +296,15 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-02-17 | OCP-01 | ✅ | +15 | Streak 2! Box 3→4 |
 | 2026-02-17 | CQRS-01 | ✅ | +10 | Nuovo quiz! Box 1→2 |
 | 2026-02-17 | EVT-04 | ✅ | +10 | Nuovo quiz! Box 1→2 |
+| 2026-02-19 | OCP-02 | ✅ | +10 | Box 3→4 |
+| 2026-02-19 | OCP-03 | ✅ | +10 | Box 3→4 |
+| 2026-02-19 | DIP-03 | ✅ | +10 | Box 2→3 (era parziale, ora corretto!) |
+| 2026-02-19 | EVT-02 | ✅ | +10 | Box 2→3 |
+| 2026-02-20 | EVT-04 | 🟡 | +5 | Parziale - deferred OK, mancava "no dipendenze" |
+| 2026-02-20 | CQRS-01 | ✅ | +10 | Box 2→3 |
+| 2026-02-20 | PORT-01 | ✅ | +10 | Box 2→3 |
+| 2026-02-20 | QRY-02 | ✅ | +10 | Box 2→3 |
+| 2026-02-20 | PORT-03 | ✅ | +10 | Box 2→3 |
 
 ---
 

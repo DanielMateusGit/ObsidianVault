@@ -10,7 +10,7 @@
 | **Progetto** | Architect Quest → P1 Notification Service |
 | **Settimana** | Week 4 ✅ COMPLETATA |
 | **FASE** | 🚨 **BLOCCO PRE-WEEK 5: Letture + Esame Mese 1** |
-| **Task corrente** | Completare 9 letture obbligatorie → Esame Mese 1 (30 punti) |
+| **Task corrente** | 🎯 Completare 11 risorse obbligatorie (5🎬 + 6📖) → Esame Mese 1 |
 
 ---
 
@@ -43,20 +43,22 @@
 
 > **Week 4 COMPLETATA!** Ma prima di procedere a Week 5:
 
-### Step 1: Letture Obbligatorie (0/9)
-| # | Risorsa | Tempo | Status |
-|---|---------|-------|--------|
-| 1 | Clean Architecture Cap. 7-14 | ~2-3h | ⬜ |
-| 2 | A Philosophy of Software Design Cap. 1-5 | ~2h | ⬜ |
-| 3 | Domain Model Pattern - Fowler | ~20min | ⬜ |
-| 4 | CQRS - Martin Fowler | ~15min | ⬜ |
-| 5 | MediatR Wiki | ~30min | ⬜ |
-| 6 | MediatR Behaviors - Jimmy Bogard | ~20min | ⬜ |
-| 7 | FluentValidation Docs | ~30min | ⬜ |
-| 8 | Validation in DDD - Vladimir Khorikov | ~20min | ⬜ |
-| 9 | Clean Architecture Cap. 21-22 | ~1h | ⬜ |
+### Step 1: Letture/Video Obbligatori (0/11) - RIVISTA 2026-02-20
+| # | Argomento | Risorsa | Tipo | Tempo | Status |
+|---|-----------|---------|------|-------|--------|
+| 1 | Clean Architecture | Cap. 7-14 | 📖 | ~2h | ⬜ |
+| 2 | Clean Architecture | Cap. 21-22 | 📖 | ~45m | ⬜ |
+| 3 | Deep Modules | A Philosophy of Software Design Cap. 1-5 | 📖 | ~2h | ⬜ |
+| 4 | CQRS + MediatR | Milan Jovanovic 🎬 | 🎬 | ~25m | ⬜ |
+| 5 | MediatR Behaviors | Milan Jovanovic 🎬 | 🎬 | ~15m | ⬜ |
+| 6 | FluentValidation | Docs | 📖 | ~20m | ⬜ |
+| 7 | Validation in DDD | Vladimir Khorikov | 📖 | ~20m | ⬜ |
+| 8 | Repository Pattern | Milan Jovanovic 🎬 | 🎬 | ~20m | ⬜ |
+| 9 | Unit of Work | Milan Jovanovic 🎬 | 🎬 | ~15m | ⬜ |
+| 10 | Integration Tests | Nick Chapsas 🎬 | 🎬 | ~20m | ⬜ |
+| 11 | Domain Model | Fowler | 📖 | ~15m | ⬜ |
 
-**Totale:** ~7-8 ore | **XP disponibili:** +195
+**Totale:** ~6-7 ore | **XP disponibili:** +210
 
 ### Step 2: Esame Mese 1 (30 punti)
 - **Argomenti:** Week 1-4 (Clean Architecture, Domain Model, CQRS, Infrastructure)
@@ -187,6 +189,7 @@
 1. ⬜ **Letture obbligatorie** (9 risorse, ~7-8h totali)
 2. ⬜ **Esame Mese 1** (30 punti, Week 1-4)
 3. ⬜ **Week 5** - Message Queue (Azure Service Bus / RabbitMQ)
+4. 🚨 **PARALLELO: Senior Engineer P1** - Task Manager CLI (inizia con Week 5!)
 
 **Timeline:**
 - Deadline letture + esame: Fine Febbraio 2026
@@ -248,6 +251,21 @@ _Nessuna_
 ## 🚧 Blocchi / Problemi
 
 **BLOCCO ATTIVO:** Completare 9 letture + Esame Mese 1 prima di Week 5
+
+---
+
+## 🚨🚨🚨 REMINDER CRITICO - NON DIMENTICARE 🚨🚨🚨
+
+> **QUANDO INIZIA WEEK 5 → INIZIA ANCHE SENIOR ENGINEER P1 (Task Manager)!**
+>
+> Decisione strategica: Parallelo Sfalsato (2026-02-02)
+> - 70% Architect Quest (Week 5+)
+> - 30% Senior Engineer P1
+> - Ritmo: 2 sessioni Architect + 1 sessione Senior
+>
+> **NON RIMANDARE** - I due percorsi si complementano:
+> - Architect = Design, teoria, "perché"
+> - Senior = Coding hands-on, "come implementare"
 
 ## 📝 Note
 
