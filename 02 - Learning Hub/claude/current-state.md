@@ -9,8 +9,8 @@
 | **Percorso attivo** | Entrambi in parallelo (focus primario: Architect Quest) |
 | **Progetto** | Architect Quest → P1 Notification Service |
 | **Settimana** | Week 4 ✅ COMPLETATA |
-| **FASE** | 🚨 **BLOCCO PRE-WEEK 5: Letture + Esame Mese 1** |
-| **Task corrente** | 🎯 **ESAME MESE 1** (30 punti) |
+| **FASE** | ✅ **BLOCCO SUPERATO - Pronto per Week 5!** |
+| **Task corrente** | 🎯 **Week 5** - Message Queue (Azure Service Bus / RabbitMQ) |
 
 ---
 
@@ -39,33 +39,23 @@
 
 ---
 
-## 🚨🚨🚨 BLOCCO PRE-WEEK 5 🚨🚨🚨
+## ✅✅✅ BLOCCO PRE-WEEK 5 - SUPERATO! ✅✅✅
 
-> **Week 4 COMPLETATA!** Ma prima di procedere a Week 5:
+### Step 1: Letture/Video Obbligatori ✅
+**11/11 completate** (+30 XP)
 
-### Step 1: Letture/Video Obbligatori (11/11) ✅✅✅ COMPLETATE!
-| # | Argomento | Risorsa | Tipo | Status |
-|---|-----------|---------|------|--------|
-| 1 | Clean Architecture | Cap. 7-14 | 📖 | ✅ |
-| 2 | Clean Architecture | Cap. 21-22 | 📖 | ✅ |
-| 3 | Deep Modules | A Philosophy of Software Design Cap. 1-5 | 📖 | ✅ 2026-02-25 |
-| 4 | CQRS + MediatR | Milan Jovanovic 🎬 | 🎬 | ✅ |
-| 5 | MediatR Behaviors | Milan Jovanovic 🎬 | 🎬 | ✅ 2026-02-25 |
-| 6 | FluentValidation | Docs | 📖 | ✅ |
-| 7 | Validation in DDD | Vladimir Khorikov | 📖 | ✅ 2026-02-28 |
-| 8 | Repository Pattern | Milan Jovanovic 🎬 | 🎬 | ✅ |
-| 9 | Unit of Work | Milan Jovanovic 🎬 | 🎬 | ✅ |
-| 10 | Integration Tests | Nick Chapsas 🎬 | 🎬 | ✅ |
-| 11 | Domain Model | Fowler | 📖 | ✅ 2026-02-28 |
+### Step 2: Esame Mese 1 ✅
+| Campo | Valore |
+|-------|--------|
+| **Voto** | 25/30 - Superato con merito |
+| **XP Esame** | +150 |
+| **Achievement** | First Exam (+50 XP) |
+| **Data** | 2026-02-28 |
 
-**✅ TUTTE LE RISORSE COMPLETATE!** | **XP guadagnati:** +30
+**Punti di forza:** Clean Architecture, Domain Events, Multiple choice perfette
+**Da ripassare:** CanExecute = precondizioni domain (non input validation)
 
-### Step 2: Esame Mese 1 (30 punti)
-- **Argomenti:** Week 1-4 (Clean Architecture, Domain Model, CQRS, Infrastructure)
-- **Formato:** Domande aperte + Multiple choice + Codice + Design
-- **XP:** +100-200 (in base al voto)
-
-### Solo dopo → Week 5 (Message Queue)
+### ✅ Pronto per Week 5 (Message Queue)
 
 ---
 
@@ -73,11 +63,11 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 2179 |
-| **Livello** | 4 - Module Builder (prossimo: 2500 XP → 321 XP mancanti) |
-| **Streak** | 3 giorni |
+| **XP Totali** | 2409 |
+| **Livello** | 4 - Module Builder (prossimo: 2500 XP → 91 XP mancanti!) |
+| **Streak** | 4 giorni |
 | **Data inizio** | 2025-01-29 |
-| **Achievement sbloccati** | 6 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire) |
+| **Achievement sbloccati** | 7 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire, **First Exam**) |
 
 ## 🏛️ Architect Quest - Status
 
@@ -111,33 +101,37 @@
 
 ## ✅ Ultima Sessione
 
-**Data:** 2026-02-26
-**Tipo:** Verifica Stato + Aggiornamento Contesto
+**Data:** 2026-02-28
+**Tipo:** Completamento Mese 1 + Esame
 
 **Cosa fatto:**
 
-### ✅ Verifica Completa Risorse Pre-Esame
-- Verificato note esistenti in P1/Notes/
-- Scoperto che 9/11 risorse sono già completate!
-- Rimangono solo 2 risorse (~35 min totali)
+### ✅ Risorse Finali Completate
+- Validation in DDD (Khorikov) → Nota aggiornata con Execute/CanExecute
+- Domain Model (Fowler) → Saltata (niente di nuovo)
+- **+30 XP** per risorse
 
-### 📝 Aggiornamenti Contesto
+### ✅ Esame Mese 1 Superato!
+| Campo | Valore |
+|-------|--------|
+| Voto | **25/30** - Superato con merito |
+| Parte A (aperte) | 9/10 |
+| Parte B (chiuse) | 6/6 ✅ |
+| Parte C (codice) | 5/8 |
+| Parte D (design) | 5/6 |
+
+### 🏆 Achievement Sbloccato
+- **First Exam** (+50 XP)
+
+### 📝 Aggiornamenti
 | File | Modifica |
 |------|----------|
-| `reading-list.md` | Aggiornato stato risorse (9/11 completate) |
-| `current-state.md` | Aggiornato blocco pre-Week 5 (2 risorse invece di 11) |
+| `Exams/esame_2026-02-28.md` | Esame completato e corretto |
+| `Knowledge/architecture/validation-vs-invariants.md` | Aggiunto Execute/CanExecute |
+| `reading-list.md` | 11/11 completate |
+| `quiz-tracker.md` | +2 quiz (VAL-01, VAL-02) |
 
-### 🎯 Stato Reale Blocco Pre-Week 5
-- ✅ 9/11 risorse completate (note create)
-- ⬜ 2 risorse finali da fare:
-  - Validation in DDD (Khorikov) ~20m
-  - Domain Model (Fowler) ~15m
-- ⬜ Esame Mese 1 (30 punti)
-
-**Prossima sessione:**
-1. ⬜ Completare 2 risorse finali (~35 min)
-2. ⬜ Esame Mese 1 (30 punti)
-3. ⬜ Week 5 (Message Queue)
+**XP guadagnati sessione:** +230 (30 risorse + 150 esame + 50 achievement)
 
 ---
 
@@ -193,22 +187,18 @@
 
 ## 🎯 Prossima Sessione
 
-**Fase attuale:** 🚨 **BLOCCO PRE-WEEK 5** - Letture + Esame Mese 1
+**Fase attuale:** ✅ **MESE 1 COMPLETATO** - Pronto per Week 5!
 
 **TODO (in ordine):**
-1. ⬜ **Letture obbligatorie** (2 risorse, ~35 minuti totali)
-2. ⬜ **Esame Mese 1** (30 punti, Week 1-4)
+1. ✅ ~~Letture obbligatorie~~ (11/11)
+2. ✅ ~~Esame Mese 1~~ (25/30)
 3. ⬜ **Week 5** - Message Queue (Azure Service Bus / RabbitMQ)
 4. 🚨 **PARALLELO: Senior Engineer P1** - Task Manager CLI (inizia con Week 5!)
 
-**Timeline:**
-- Deadline letture + esame: Fine Febbraio 2026
-- Giorni rimasti: ~4-5 giorni
-
 **Prossimi achievement:**
-- 📐 **System Architect** (Level 5) → mancano 321 XP
-- 🔥 **Inferno** (30 giorni streak) → 20 giorni rimanenti
-- 📝 **First Exam** → completare Esame Mese 1
+- 📐 **System Architect** (Level 5) → mancano solo 91 XP!
+- 🔥 **Inferno** (30 giorni streak) → continua streak
+- ✅ ~~First Exam~~ → SBLOCCATO!
 
 ---
 
@@ -266,7 +256,24 @@ _Nessuna_
 
 ## 🚧 Blocchi / Problemi
 
-**BLOCCO ATTIVO:** Completare 9 letture + Esame Mese 1 prima di Week 5
+**Nessun blocco!** Pronto per Week 5 + Senior Engineer P1 in parallelo.
+
+---
+
+## 🚨🚨🚨 REMINDER PROSSIMA SESSIONE 🚨🚨🚨
+
+> **DAN HA CHIESTO ESPLICITAMENTE:**
+>
+> Iniziare **Senior Engineer P1 (Task Manager CLI)** in parallelo!
+>
+> **Piano:**
+> 1. Week 5 Architect Quest (Message Queue) - teoria
+> 2. Senior Engineer P1 Setup - **Dan scrive codice da zero**
+>    - Entities: `Task`, `Project`, `Tag`
+>    - Value Objects: `Priority`, `DueDate`
+>    - Domain Events: `TaskCreatedEvent`
+>
+> **Focus Senior:** 70% coding, 30% design - Dan pratica scrittura codice!
 
 ---
 
@@ -292,4 +299,4 @@ _Nessuna_
 
 ---
 
-*Ultimo aggiornamento: 2026-02-25 (Completato Philosophy of Software Design Cap. 1-5)*
+*Ultimo aggiornamento: 2026-02-28 (Esame Mese 1 superato 25/30 - Mese 1 completato!)*

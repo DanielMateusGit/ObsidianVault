@@ -405,4 +405,4 @@ Le seguenti note in `Knowledge/` hanno quiz che devono essere tracciati:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-25*
+*Ultimo aggiornamento: 2026-02-28*

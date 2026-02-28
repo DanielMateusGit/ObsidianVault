@@ -14,7 +14,7 @@ created: 2026-02-26
 updated: 2026-02-28
 source: "Vladimir Khorikov - Validation and DDD, Validations vs Invariants"
 ---
-V
+
 # Validation vs Invariants in DDD
 
 > **One-liner:** Validation protegge il Domain da input esterni (Application Layer), Invariants proteggono il Domain da uso scorretto interno (Domain Layer).

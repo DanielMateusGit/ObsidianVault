@@ -10,14 +10,14 @@ updated: 2026-02-20
 
 ---
 
-## 🚨🚨🚨 BLOCCO ATTIVO - PROSSIMO TODO 🚨🚨🚨
+## ✅✅✅ MESE 1 COMPLETATO! ✅✅✅
 
-> **Week 4 completata!** Prima di procedere a Week 5:
+> **Blocco superato!**
 >
-> 1. ✅ **Risorse completate** (11/11 completate!)
-> 2. ⬜ **Sostenere Esame Mese 1** (30 punti)
+> 1. ✅ **Risorse completate** (11/11)
+> 2. ✅ **Esame Mese 1** (25/30 - Superato con merito!)
 >
-> **PROSSIMO STEP: ESAME MESE 1!**
+> **Pronto per Week 5!**
 
 ---
 
@@ -158,6 +158,8 @@ updated: 2026-02-20
 
 | Libro/Risorsa | Capitoli | Data | Progetto | XP |
 |---------------|----------|------|----------|-----|
+| Validation in DDD - Khorikov | Articolo | 2026-02-28 | P1-W4 | +15 |
+| Domain Model - Fowler | Articolo | 2026-02-28 | P1-W4 | +15 |
 | MediatR Pipeline Behaviors - Milan | Video | 2026-02-25 | P1-W3 | +15 |
 | A Philosophy of Software Design | Cap. 1-5 | 2026-02-25 | P1-W4 | +30 |
 | Domain Events - Martin Fowler | - | 2026-02-13 | P1-W2 | +15 |
