@@ -109,12 +109,74 @@ Vedi: `roadmaps/senior-frontend.md`
 
 ---
 
+---
+
+### IDEA-003: FitHub (App Fitness Multi-tenant con AI)
+
+**Data:** 2026-02-24
+**Status:** ✅ INTEGRATA → Architect Quest P5 + Senior Frontend PX
+
+**Descrizione:**
+Applicazione fitness multi-versione (Stretching/Yoga, CrossFit, Palestra) con AI per assistenza allenamento. Supporta:
+- **B2B:** Palestre/box come clienti (gestione turni allenatori, abbonamenti, programmazione)
+- **B2C:** Utenti singoli (allenamento a casa, tracking progressi)
+- **White-label:** Stessa codebase, diverse skin per mercati verticali
+
+**Il problema:**
+Le app fitness esistenti sono o troppo generiche o troppo costose per piccole palestre. L'AI può personalizzare gli allenamenti ma poche app lo fanno bene.
+
+**Use case reale:**
+Dan può proporlo alla palestra dove lavora come servizio extra a pagamento.
+
+#### Valutazione
+
+| Domanda | Risposta |
+|---------|----------|
+| **Cosa imparo?** | Multi-tenant architecture, AI workout planning, Flutter (rispolverare), White-label patterns, Subscription billing |
+| **Lo userei davvero?** | ✅ SÌ - Lavoro in palestra, posso proporlo come servizio! |
+| **Quanto è grande?** | Progetto GRANDE (4-6 mesi backend + 2-3 mesi Flutter) |
+
+#### Allineamento Roadmap
+
+| Progetto Esistente | Overlap | Come si Integra |
+|--------------------|---------|-----------------|
+| **P2 NutriPlan** | 🟡 40% | Nutrition AI → riutilizzabile in FitHub |
+| **P3 BookingHub** | 🔴 70% | Multi-tenant, scheduling, subscriptions → base per FitHub |
+| **P2.5 AI Gateway** | 🟢 30% | AI provider abstraction → usato in FitHub |
+| **P4 FamilyBudget** | 🟡 50% | Flutter, offline-first → competenze per FitHub mobile |
+
+#### Architettura Cross-Progetto
+
+```
+P1 Notification  →→→→→→→→→→→→→→→→→→→→┐
+P2 NutriPlan (patterns AI nutrition) →→→┼→→→ P5 FitHub (REALE)
+P2.5 AI Gateway →→→→→→→→→→→→→→→→→→→→┤
+P3 BookingHub (multi-tenant, subs) →→→→→┤
+P4 FamilyBudget (Flutter intro) →→→→→→→┘
+                                         ↓
+                               Senior Frontend PX: FitHub Mobile
+```
+
+#### Decisione (2026-02-24)
+
+**→ INTEGRATA** come:
+1. **Architect Quest P5** - Backend multi-tenant + AI (dopo P4)
+2. **Senior Frontend PX** - App Flutter (dopo P5 backend completato)
+
+**Potenziale monetizzazione:** ⭐⭐⭐⭐⭐
+- SaaS per palestre (€50-200/mese)
+- Commissione su abbonamenti gestiti
+- White-label licensing
+- **Già un cliente potenziale: la palestra dove lavora Dan!**
+
+---
+
 ## 📊 Statistiche
 
 | Metrica | Valore |
 |---------|--------|
-| Idee totali | 2 |
-| Integrate in roadmap | 1 |
+| Idee totali | 3 |
+| Integrate in roadmap | 2 |
 | Parcheggiate | 1 |
 | Scartate | 0 |
 

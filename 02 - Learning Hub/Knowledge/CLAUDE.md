@@ -211,7 +211,7 @@ source: "[Libro/Articolo/Video/Sessione]"
 ### Design
 | Nota | Status | Created |
 |------|--------|---------|
-| *Nessuna nota ancora* | | |
+| [[design/deep-modules\|Deep Modules (A Philosophy of Software Design)]] | learning | 2026-02-25 |
 
 ### Documentation
 | Nota | Status | Created |
@@ -221,6 +221,7 @@ source: "[Libro/Articolo/Video/Sessione]"
 ### Patterns
 | Nota | Status | Created |
 |------|--------|---------|
+| [[patterns/mediatr-pipeline-behaviors\|MediatR Pipeline Behaviors]] | learning | 2026-02-25 |
 | [[patterns/factory-pattern\|Factory Pattern]] | learned | 2026-02-20 |
 | [[patterns/facade-pattern\|Facade Pattern]] | learned | 2026-02-06 |
 
@@ -230,10 +231,10 @@ source: "[Libro/Articolo/Video/Sessione]"
 
 | Metrica | Valore |
 |---------|--------|
-| **Note totali** | 13 |
+| **Note totali** | 15 |
 | **Note mastered** | 0 |
 | **Note to-review** | 0 |
-| **Ultima nota** | 2026-02-20 |
+| **Ultima nota** | 2026-02-25 |
 
 ---
 
@@ -251,4 +252,4 @@ Questa settimana abbiamo esplorato:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-20*
+*Ultimo aggiornamento: 2026-02-25*

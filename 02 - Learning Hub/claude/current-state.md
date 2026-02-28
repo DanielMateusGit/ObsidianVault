@@ -10,7 +10,7 @@
 | **Progetto** | Architect Quest → P1 Notification Service |
 | **Settimana** | Week 4 ✅ COMPLETATA |
 | **FASE** | 🚨 **BLOCCO PRE-WEEK 5: Letture + Esame Mese 1** |
-| **Task corrente** | 🎯 Completare 11 risorse obbligatorie (5🎬 + 6📖) → Esame Mese 1 |
+| **Task corrente** | 🎯 **ESAME MESE 1** (30 punti) |
 
 ---
 
@@ -43,22 +43,22 @@
 
 > **Week 4 COMPLETATA!** Ma prima di procedere a Week 5:
 
-### Step 1: Letture/Video Obbligatori (0/11) - RIVISTA 2026-02-20
-| # | Argomento | Risorsa | Tipo | Tempo | Status |
-|---|-----------|---------|------|-------|--------|
-| 1 | Clean Architecture | Cap. 7-14 | 📖 | ~2h | ⬜ |
-| 2 | Clean Architecture | Cap. 21-22 | 📖 | ~45m | ⬜ |
-| 3 | Deep Modules | A Philosophy of Software Design Cap. 1-5 | 📖 | ~2h | ⬜ |
-| 4 | CQRS + MediatR | Milan Jovanovic 🎬 | 🎬 | ~25m | ⬜ |
-| 5 | MediatR Behaviors | Milan Jovanovic 🎬 | 🎬 | ~15m | ⬜ |
-| 6 | FluentValidation | Docs | 📖 | ~20m | ⬜ |
-| 7 | Validation in DDD | Vladimir Khorikov | 📖 | ~20m | ⬜ |
-| 8 | Repository Pattern | Milan Jovanovic 🎬 | 🎬 | ~20m | ⬜ |
-| 9 | Unit of Work | Milan Jovanovic 🎬 | 🎬 | ~15m | ⬜ |
-| 10 | Integration Tests | Nick Chapsas 🎬 | 🎬 | ~20m | ⬜ |
-| 11 | Domain Model | Fowler | 📖 | ~15m | ⬜ |
+### Step 1: Letture/Video Obbligatori (11/11) ✅✅✅ COMPLETATE!
+| # | Argomento | Risorsa | Tipo | Status |
+|---|-----------|---------|------|--------|
+| 1 | Clean Architecture | Cap. 7-14 | 📖 | ✅ |
+| 2 | Clean Architecture | Cap. 21-22 | 📖 | ✅ |
+| 3 | Deep Modules | A Philosophy of Software Design Cap. 1-5 | 📖 | ✅ 2026-02-25 |
+| 4 | CQRS + MediatR | Milan Jovanovic 🎬 | 🎬 | ✅ |
+| 5 | MediatR Behaviors | Milan Jovanovic 🎬 | 🎬 | ✅ 2026-02-25 |
+| 6 | FluentValidation | Docs | 📖 | ✅ |
+| 7 | Validation in DDD | Vladimir Khorikov | 📖 | ✅ 2026-02-28 |
+| 8 | Repository Pattern | Milan Jovanovic 🎬 | 🎬 | ✅ |
+| 9 | Unit of Work | Milan Jovanovic 🎬 | 🎬 | ✅ |
+| 10 | Integration Tests | Nick Chapsas 🎬 | 🎬 | ✅ |
+| 11 | Domain Model | Fowler | 📖 | ✅ 2026-02-28 |
 
-**Totale:** ~6-7 ore | **XP disponibili:** +210
+**✅ TUTTE LE RISORSE COMPLETATE!** | **XP guadagnati:** +30
 
 ### Step 2: Esame Mese 1 (30 punti)
 - **Argomenti:** Week 1-4 (Clean Architecture, Domain Model, CQRS, Infrastructure)
@@ -84,9 +84,18 @@
 | Progetto | Status | Settimana |
 |----------|--------|-----------|
 | P1 - Notification Service | 🟢 In corso | W4 ✅ → Letture + Esame → W5 |
-| P2 - NutriPlan | 🔒 Locked | - |
-| P3 - BookingHub | 🔒 Locked | - |
-| P4 - FamilyBudget | 🔒 Locked | - |
+| P2 - NutriPlan | 🔒 Locked | M5-9 |
+| P2.5 - AI Gateway | 🔒 Locked | M5-6 |
+| P3 - BookingHub | 🔒 Locked | M10-14 |
+| P4 - FamilyBudget | 🔒 Locked | M15-18 |
+| **P5 - FitHub** 🏋️ | 🔒 Locked | M19-22 ← **NUOVO! Capstone Reale** |
+
+### AI Track (Parallelo)
+| Progetto | Status | Periodo |
+|----------|--------|---------|
+| AI-1 - Second Brain | 🔒 Locked | M7-8 |
+| AI-2 - Interview Coach | 🔒 Locked | M15-16 |
+| AI-3 - Personal Copilot | 🔒 Locked | M23-24 |
 
 ## 💻 Senior Engineer - Status
 
@@ -102,46 +111,47 @@
 
 ## ✅ Ultima Sessione
 
+**Data:** 2026-02-26
+**Tipo:** Verifica Stato + Aggiornamento Contesto
+
+**Cosa fatto:**
+
+### ✅ Verifica Completa Risorse Pre-Esame
+- Verificato note esistenti in P1/Notes/
+- Scoperto che 9/11 risorse sono già completate!
+- Rimangono solo 2 risorse (~35 min totali)
+
+### 📝 Aggiornamenti Contesto
+| File | Modifica |
+|------|----------|
+| `reading-list.md` | Aggiornato stato risorse (9/11 completate) |
+| `current-state.md` | Aggiornato blocco pre-Week 5 (2 risorse invece di 11) |
+
+### 🎯 Stato Reale Blocco Pre-Week 5
+- ✅ 9/11 risorse completate (note create)
+- ⬜ 2 risorse finali da fare:
+  - Validation in DDD (Khorikov) ~20m
+  - Domain Model (Fowler) ~15m
+- ⬜ Esame Mese 1 (30 punti)
+
+**Prossima sessione:**
+1. ⬜ Completare 2 risorse finali (~35 min)
+2. ⬜ Esame Mese 1 (30 punti)
+3. ⬜ Week 5 (Message Queue)
+
+---
+
+## ✅ Sessione Precedente (2026-02-19)
+
 **Data:** 2026-02-19
 **Tipo:** Week 4 COMPLETATA - Infrastructure Layer
 
 **Cosa fatto:**
-
-### 🧠 Spaced Repetition
-- 4 quiz: OCP-02, OCP-03, DIP-03, EVT-02
-- Tutte corrette!
-
-### 📝 Teoria + Note
-| Argomento | Nota Creata | Quiz |
-|-----------|-------------|------|
-| Repository Pattern | `repository-pattern.md` | 3 |
-| EF Core Migrations | `ef-core-migrations.md` | 3 |
-| Value Object Persistence | `value-object-persistence.md` | 3 |
-| Integration Tests | `integration-tests.md` | 2 |
-
-### 🛠️ Implementazione
-- EF Core + PostgreSQL setup completo
-- Entity Configurations con Owned Types (Recipient VO)
-- Repository implementations
-- UnitOfWork pattern
-- Integration tests con Testcontainers (11 test)
+- Spaced Repetition: 4 quiz corretti
+- Note: Repository, Migrations, VO Persistence, Integration Tests
+- Implementazione completa Infrastructure Layer
 - 268 test totali passati
-
-### 📦 Commit
-- `0a8efb2` - feat: Add Infrastructure Layer with EF Core and PostgreSQL
-- `887198e` - refactor: Use Recipient Value Object with EF Core Owned Types
-- `6feff35` - test: Add integration tests with Testcontainers
-- `f4fd2d9` - docs: Add ADR-003 Database Strategy and update README
-
-### 📊 Week 4 Summary
 - **XP guadagnati:** 400/400 ✅
-- **Test totali:** 268 (185 Domain + 72 Application + 11 Infrastructure)
-- **Status:** COMPLETATA
-
-**Prossima sessione:**
-1. ⬜ Letture obbligatorie (9 risorse)
-2. ⬜ Esame Mese 1 (30 punti)
-3. ⬜ Week 5 (Message Queue)
 
 ---
 
@@ -186,14 +196,14 @@
 **Fase attuale:** 🚨 **BLOCCO PRE-WEEK 5** - Letture + Esame Mese 1
 
 **TODO (in ordine):**
-1. ⬜ **Letture obbligatorie** (9 risorse, ~7-8h totali)
+1. ⬜ **Letture obbligatorie** (2 risorse, ~35 minuti totali)
 2. ⬜ **Esame Mese 1** (30 punti, Week 1-4)
 3. ⬜ **Week 5** - Message Queue (Azure Service Bus / RabbitMQ)
 4. 🚨 **PARALLELO: Senior Engineer P1** - Task Manager CLI (inizia con Week 5!)
 
 **Timeline:**
 - Deadline letture + esame: Fine Febbraio 2026
-- Giorni rimasti: ~9-10 giorni
+- Giorni rimasti: ~4-5 giorni
 
 **Prossimi achievement:**
 - 📐 **System Architect** (Level 5) → mancano 321 XP
@@ -217,20 +227,21 @@
 
 ## 🤖 AI Skills - Overview Completa
 
-### Architect Quest - AI Integration
+### Architect Quest - Domain Projects con AI
 | Progetto | AI Focus |
 |----------|----------|
 | P2.5 AI Gateway | Provider abstraction, routing, MCP |
 | P2 NutriPlan | Usa Notification Service |
 | P3 BookingHub | Usa Notification + AI Gateway |
 | P4 FamilyBudget | Usa entrambi + AI categorization |
+| **P5 FitHub** 🏋️ | **AI workout planning, nutrition AI** ← NUOVO! |
 
-### Architect Quest - AI-First Track
+### AI Track (Parallelo) - Progetti AI-First
 | Progetto | AI Skills |
 |----------|-----------|
-| P5 Second Brain | RAG, Vector DB, Embeddings, Semantic Search |
-| P6 Interview Coach | AI Evaluation, Structured Output, Voice AI |
-| P7 Personal Copilot | MCP avanzato, Code Analysis, GitHub integration |
+| AI-1 Second Brain | RAG, Vector DB, Embeddings, Semantic Search |
+| AI-2 Interview Coach | AI Evaluation, Structured Output, Voice AI |
+| AI-3 Personal Copilot | MCP avanzato, Code Analysis, GitHub integration |
 
 ### Senior Engineer - AI Features
 | Progetto | AI Feature |
@@ -241,6 +252,11 @@
 | P4 | Alert Triage (Classification) |
 | P5 | Link Preview (Structured Output) |
 | P6 | Full AI Assistant (tutto insieme!) |
+
+### Senior Frontend - FitHub Mobile
+| Progetto | Note |
+|----------|------|
+| **P5 FitHub Mobile** 📱 | Flutter app, collegata a Architect P5 |
 
 ---
 
@@ -276,4 +292,4 @@ _Nessuna_
 
 ---
 
-*Ultimo aggiornamento: 2026-02-19 (Week 4 completata, BLOCCO pre-Week 5 attivo)*
+*Ultimo aggiornamento: 2026-02-25 (Completato Philosophy of Software Design Cap. 1-5)*

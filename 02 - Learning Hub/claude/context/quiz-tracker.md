@@ -14,9 +14,9 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 90 |
-| **Risposte corrette** | 39 |
-| **Risposte parziali** | 3 |
+| **Quiz totali** | 99 |
+| **Risposte corrette** | 53 |
+| **Risposte parziali** | 4 |
 | **Risposte sbagliate** | 1 |
 | **Non risposti** | 23 |
 | **Challenge completate** | 8 |
@@ -129,7 +129,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | DIP-01 | OrderService usa direttamente SqlServerRepository. Cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
 | DIP-02 | Differenza tra Dependency Inversion e Dependency Injection? | 📦1 | - | Ora | ⬜ Non risposto |
-| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦3 | 2026-02-19 | 2026-02-26 | ✅ Corretto |
+| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦4 | 2026-02-28 | 2026-03-14 | ✅ Corretto |
 
 ---
 
@@ -144,7 +144,7 @@ updated: 2026-02-05
 #### Facade Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| FAC-01 | Stripe payment: Facade o Factory? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
+| FAC-01 | Stripe payment: Facade o Factory? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
 | FAC-02 | PaymentFacade God Object - cosa faresti? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
 | FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
 
@@ -156,7 +156,7 @@ updated: 2026-02-05
 | EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦1 | 2026-02-13 | 2026-02-13 | 🟡 Parziale |
 | EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦3 | 2026-02-19 | 2026-02-26 | ✅ Corretto |
 | EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
-| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-02-20 | 2026-02-23 | 🟡 Parziale |
+| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -165,8 +165,11 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
 | CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
-| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦1 | - | Ora | ⬜ Non risposto |
+| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
+| BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
+| BEHAV-02 | Perché next() solo se validazione passa? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
+| BEHAV-03 | Come creare behavior solo per alcuni command? (marker interface) | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### FluentValidation
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -179,15 +182,15 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
-| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦2 | 2026-02-17 | 2026-02-23 | ✅ Corretto |
+| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
 | PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
 
 ### CQRS Queries
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦2 | 2026-02-17 | 2026-02-23 | ✅ Corretto |
+| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦1 | 2026-02-24 | Ora | 🟡 Parziale |
 | QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
-| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦2 | 2026-02-17 | 2026-02-23 | ✅ Corretto |
+| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
 
 ### Application Layer
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -236,14 +239,14 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | INFRA-01 | Direzione dipendenze: Application può dipendere da Infrastructure? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 | INFRA-02 | Cosa NON appartiene a Infrastructure: Repository, DbContext, o IRepository? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
-| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
+| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
 | INFRA-04 | EF Core o Dapper per report su milioni di record? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 | INFRA-05 | PostgreSQL vs MongoDB: quali domande fare per decidere? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 
 ### Repository Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦2 | 2026-02-28 | 2026-03-03 | ✅ Corretto |
 | REPO-02 | Cos'è il problema N+1 e come lo risolvi? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 | REPO-03 | Quando ha senso usare RepositoryBase<T>? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 
@@ -251,7 +254,7 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | MIG-01 | Quali sono 3 vantaggi delle migrations rispetto a SQL manuale? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
-| MIG-02 | Cosa deve contenere Down() se Up() fa CreateTable? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| MIG-02 | Cosa deve contenere Down() se Up() fa CreateTable? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
 | MIG-03 | Cosa succede se aggiungi una proprietà senza creare migration? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 
 ### Value Object Persistence
@@ -264,14 +267,25 @@ updated: 2026-02-05
 ### Integration Tests
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| INT-01 | Perché non usare InMemory provider di EF Core? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| INT-01 | Perché non usare InMemory provider di EF Core? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
 | INT-02 | Unit test vs Integration test: bastano solo gli unit test? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 | INT-03 | Cosa trova un integration test che un unit test non trova? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 
 ---
 
-### Design
-_Nessun quiz ancora_
+### Design (A Philosophy of Software Design)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| DEEP-01 | FileProcessor con OpenFile/ReadHeader/ReadBody/ReadFooter/CloseFile - deep o shallow? | 📦1 | - | Ora | ⬜ Non risposto |
+| DEEP-02 | INotificationSender con SmtpSettings, retryCount, timeout - qual è il problema? | 📦1 | - | Ora | ⬜ Non risposto |
+| DEEP-03 | "Ho modificato il formato data e ho cambiato 12 file" - quale sintomo di complessità? | 📦1 | - | Ora | ⬜ Non risposto |
+| DEEP-04 | PM chiede feature per domani, sai che il modo veloce crea debito tecnico - cosa fai? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Validation in DDD
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| VAL-01 | Perché TryExecute viola CQS mentre CanExecute/Execute no? | 📦1 | - | Ora | ⬜ Non risposto |
+| VAL-02 | Form CRUD 10 campi: quale approccio per validazione Domain? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ---
 
@@ -305,6 +319,22 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-02-20 | PORT-01 | ✅ | +10 | Box 2→3 |
 | 2026-02-20 | QRY-02 | ✅ | +10 | Box 2→3 |
 | 2026-02-20 | PORT-03 | ✅ | +10 | Box 2→3 |
+| 2026-02-24 | EVT-04 | ✅ | +10 | Box 2→3 |
+| 2026-02-24 | PORT-02 | ✅ | +10 | Box 2→3 |
+| 2026-02-24 | QRY-01 | 🟡 | +5 | Box 2→1 (Query con side effects) |
+| 2026-02-24 | QRY-03 | ✅ | +10 | Box 2→3 |
+| 2026-02-25 | FAC-01 | ✅ | +10 | Box 2→3 |
+| 2026-02-25 | INFRA-03 | ✅ | +10 | Box 2→3 |
+| 2026-02-25 | REPO-01 | ❌ | +2 | Box 2→1 (non ricordava) |
+| 2026-02-25 | MIG-02 | ✅ | +10 | Box 2→3 |
+| 2026-02-25 | INT-01 | ✅ | +10 | Box 2→3 |
+| 2026-02-25 | BEHAV-01 | ✅ | +10 | Nuovo - ordine behaviors |
+| 2026-02-25 | BEHAV-02 | ✅ | +10 | Nuovo - next() e validazione |
+| 2026-02-28 | CQRS-03 | ✅ | +10 | Box 2→3 |
+| 2026-02-28 | BEHAV-01 | ✅ | +10 | Box 2→3 |
+| 2026-02-28 | BEHAV-02 | ✅ | +10 | Box 2→3 |
+| 2026-02-28 | REPO-01 | ✅ | +10 | Box 1→2 RECUPERATO! |
+| 2026-02-28 | DIP-03 | ✅ | +35 | Box 3→4, 5 streak bonus! |
 
 ---
 
@@ -375,4 +405,4 @@ Le seguenti note in `Knowledge/` hanno quiz che devono essere tracciati:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-17*
+*Ultimo aggiornamento: 2026-02-25*

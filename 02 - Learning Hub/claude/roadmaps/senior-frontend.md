@@ -10,10 +10,10 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Durata stimata** | 4-6 mesi (ritmo rilassato) |
-| **Progetti** | 4 |
-| **Focus** | React avanzato, performance, architettura FE |
-| **Output** | Portfolio FE + 1 SaaS monetizzabile |
+| **Durata stimata** | 6-8 mesi (ritmo rilassato) |
+| **Progetti** | 5 |
+| **Focus** | React avanzato, performance, architettura FE, **Flutter** |
+| **Output** | Portfolio FE + 2 SaaS monetizzabili (Focus Tube + FitHub) |
 
 ---
 
@@ -127,6 +127,53 @@
 
 ---
 
+### P5: FitHub Mobile (Flutter) 📱🏋️
+**App mobile per FitHub - collegata al backend Architect Quest P5.**
+
+| Campo | Valore |
+|-------|--------|
+| **Durata** | 8-10 settimane |
+| **Tipo** | Mobile (Flutter) |
+| **Monetizzazione** | ⭐⭐⭐⭐⭐ Parte del prodotto FitHub! |
+| **Prerequisito** | Architect Quest P5 (FitHub Backend) |
+
+**Stack:**
+- Flutter 3.x
+- Riverpod (state management)
+- Drift (local DB)
+- go_router (navigation)
+- Consuma API FitHub backend (.NET)
+
+**Impari:**
+- Flutter da zero (rispolverare dal 2021!)
+- State management moderno (Riverpod)
+- Offline-first mobile
+- Push notifications
+- App Store / Play Store deployment
+- White-label mobile (3 skin: Yoga, CrossFit, Gym)
+
+**Collegamento Architect Quest:**
+```
+Architect Quest P5 (Backend)     Senior Frontend P5 (Mobile)
+┌─────────────────────────┐     ┌─────────────────────────┐
+│ .NET 8 API              │◄───►│ Flutter App             │
+│ Multi-tenant            │     │ 3 skin white-label      │
+│ AI Gateway integration  │     │ Offline-first           │
+│ Notification Service    │     │ Push notifications      │
+└─────────────────────────┘     └─────────────────────────┘
+```
+
+**Screens principali:**
+- 🏠 Home (workout del giorno, AI suggestions)
+- 📅 Calendar (schedule, prenotazioni)
+- 💪 Workout (esercizi, timer, tracking)
+- 📊 Progress (grafici, PR, statistiche)
+- 👤 Profile (settings, subscription)
+- 👨‍🏫 Coach Dashboard (solo per coach)
+- 📈 Owner Analytics (solo per owner)
+
+---
+
 ## 🛠️ Tecnologie Chiave
 
 ### Must Learn (Nuove per Dan)
@@ -150,15 +197,19 @@
 ## 📅 Timeline (Indicativa)
 
 ```
-P1: Focus Tube        ████████████████░░░░░░░░  6-8 weeks
-P2: Dashboard         ░░░░░░░░████████░░░░░░░░  4-5 weeks
-P3: Component Lib     ░░░░░░░░░░░░░░░░████████  4-5 weeks
-P4: Next.js Store     ░░░░░░░░░░░░░░░░░░░░████  5-6 weeks
-                      ─────────────────────────
-                      ~20-24 weeks (5-6 mesi)
+P1: Focus Tube        ████████████████░░░░░░░░░░░░░░░░  6-8 weeks
+P2: Dashboard         ░░░░░░░░████████░░░░░░░░░░░░░░░░  4-5 weeks
+P3: Component Lib     ░░░░░░░░░░░░░░░░████████░░░░░░░░  4-5 weeks
+P4: Next.js Store     ░░░░░░░░░░░░░░░░░░░░░░░░████████  5-6 weeks
+P5: FitHub Mobile 📱  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░████  8-10 weeks
+                      ──────────────────────────────────
+                      ~28-34 weeks (7-8 mesi)
 ```
 
-**Nota:** Timeline rilassata, side project senza pressione.
+**Note:**
+- Timeline rilassata, side project senza pressione
+- P5 FitHub Mobile richiede Architect Quest P5 (FitHub Backend) completato
+- P5 è il progetto più importante: prodotto reale + Flutter skill!
 
 ---
 
@@ -170,7 +221,10 @@ P4: Next.js Store     ░░░░░░░░░░░░░░░░░░░�
 | ⚡ **Performance Guru** | Core Web Vitals tutti verdi | +150 |
 | 📦 **Package Publisher** | Prima libreria su npm | +200 |
 | 💰 **FE Monetizer** | Primo pagamento da Focus Tube | +500 |
-| 🏆 **Senior Frontend** | Tutti i progetti completati | +1000 |
+| 📱 **Flutter Reborn** | FitHub Mobile MVP completato | +300 |
+| 🏪 **App Store Ready** | Prima app pubblicata su store | +400 |
+| 🏋️ **FitHub Launcher** | FitHub proposto alla palestra | +500 |
+| 🏆 **Senior Frontend** | Tutti i progetti completati | +1500 |
 
 ---
 
@@ -179,9 +233,12 @@ P4: Next.js Store     ░░░░░░░░░░░░░░░░░░░�
 - **Nessuna deadline rigida** - è un side track
 - **Inizia quando vuoi** - dopo aver consolidato BE basics
 - **Flessibile** - progetti possono cambiare in base a nuove idee
-- **P1 è il core** - gli altri sono "nice to have"
+- **P1 Focus Tube è il core React** - gli altri React sono "nice to have"
+- **P5 FitHub Mobile è il core Flutter** - progetto reale monetizzabile!
+- **Flutter skill nuova** - rispolverare dal 2021, ottimo per portfolio
 
 ---
 
 *Creato: 2026-02-24*
+*Aggiornato: 2026-02-24 (aggiunto P5 FitHub Mobile)*
 *Status: 🟢 Pianificato - Da iniziare*

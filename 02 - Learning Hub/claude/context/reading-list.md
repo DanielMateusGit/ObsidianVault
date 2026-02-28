@@ -14,15 +14,10 @@ updated: 2026-02-20
 
 > **Week 4 completata!** Prima di procedere a Week 5:
 >
-> 1. ⬜ **Completare TUTTE le risorse** (0/11) - Lista RIVISTA
+> 1. ✅ **Risorse completate** (11/11 completate!)
 > 2. ⬜ **Sostenere Esame Mese 1** (30 punti)
 >
-> **Timeline:**
-> - 📅 **Deadline:** Fine Febbraio 2026
-> - ⏰ **Giorni rimasti:** ~8-9 giorni
-> - 📚 **Tempo totale:** ~6-7 ore (5 video + 6 letture)
->
-> **QUESTO È IL PROSSIMO TODO DI DAN!**
+> **PROSSIMO STEP: ESAME MESE 1!**
 
 ---
 
@@ -47,17 +42,17 @@ updated: 2026-02-20
 |---|-----------|---------|------|-------|-----|--------|
 | 1 | Clean Architecture | Cap. 7-14 (libro) | 📖 | - | +30 | ✅ COMPLETATO |
 | 2 | Clean Architecture | Cap. 21-22 (Use Cases) | 📖 | - | +30 | ✅ COMPLETATO |
-| 3 | Deep Modules | A Philosophy of Software Design Cap. 1-5 | 📖 | ~2h | +30 | ⬜ |
-| 4 | CQRS + MediatR | [Milan Jovanovic - CQRS](https://www.youtube.com/watch?v=vdi-p9StmG8) | 🎬 | ~25m | +15 | ⬜ |
-| 5 | MediatR Behaviors | [Milan - Pipeline Behaviors](https://www.youtube.com/watch?v=2JzQuIvxIqk) | 🎬 | ~15m | +15 | ⬜ |
-| 6 | FluentValidation | [Docs - Getting Started](https://docs.fluentvalidation.net/en/latest/start.html) | 📖 | ~20m | +15 | ⬜ |
-| 7 | Validation in DDD | [Vladimir Khorikov](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | 📖 | ~20m | +15 | ⬜ |
-| 8 | Repository Pattern | [Milan - Repository Pattern](https://www.youtube.com/watch?v=h4KIngWVpfU) | 🎬 | ~20m | +15 | ⬜ |
-| 9 | Unit of Work | [Milan - Unit of Work](https://www.youtube.com/watch?v=E3gFNvH1W1k) | 🎬 | ~15m | +15 | ⬜ |
-| 10 | Integration Tests | [Nick Chapsas - Testcontainers](https://www.youtube.com/watch?v=tj5ZCtvgXKY) | 🎬 | ~20m | +15 | ⬜ |
-| 11 | Domain Model | [Fowler - Domain Model](https://martinfowler.com/eaaCatalog/domainModel.html) | 📖 | ~15m | +15 | ⬜ |
+| 3 | Deep Modules | A Philosophy of Software Design Cap. 1-5 | 📖 | ~2h | +30 | ✅ 2026-02-25 |
+| 4 | CQRS + MediatR | [Milan Jovanovic - CQRS](https://www.youtube.com/watch?v=vdi-p9StmG8) | 🎬 | ~25m | +15 | ✅ COMPLETATO (nota creata) |
+| 5 | MediatR Behaviors | [Milan - Pipeline Behaviors](https://www.youtube.com/watch?v=2JzQuIvxIqk) | 🎬 | ~15m | +15 | ✅ 2026-02-25 |
+| 6 | FluentValidation | [Docs - Getting Started](https://docs.fluentvalidation.net/en/latest/start.html) | 📖 | ~20m | +15 | ✅ COMPLETATO (nota creata) |
+| 7 | Validation in DDD | [Vladimir Khorikov](https://enterprisecraftsmanship.com/posts/validation-and-ddd/) | 📖 | ~20m | +15 | ✅ 2026-02-28 |
+| 8 | Repository Pattern | [Milan - Repository Pattern](https://www.youtube.com/watch?v=h4KIngWVpfU) | 🎬 | ~20m | +15 | ✅ COMPLETATO (nota creata) |
+| 9 | Unit of Work | [Milan - Unit of Work](https://www.youtube.com/watch?v=E3gFNvH1W1k) | 🎬 | ~15m | +15 | ✅ COMPLETATO (nota creata) |
+| 10 | Integration Tests | [Nick Chapsas - Testcontainers](https://www.youtube.com/watch?v=tj5ZCtvgXKY) | 🎬 | ~20m | +15 | ✅ COMPLETATO (nota creata) |
+| 11 | Domain Model | [Fowler - Domain Model](https://martinfowler.com/eaaCatalog/domainModel.html) | 📖 | ~15m | +15 | ✅ 2026-02-28 |
 
-**Totale:** ~6-7 ore | **XP Disponibili:** +210
+**✅ TUTTE LE RISORSE COMPLETATE!** | **XP guadagnati:** +30
 
 ### 🟡 CONSIGLIATI (Alto valore, se hai tempo)
 
@@ -69,9 +64,10 @@ updated: 2026-02-20
 | 15 | Domain Events Deep | [Udi Dahan - Video](https://www.youtube.com/watch?v=1h3_6ATvpKU) | 🎬 | ~45m | +15 | ⬜ |
 
 ### Progress
-- **Completate:** 0/11 obbligatorie
-- **XP Disponibili:** +210 XP (obbligatorie) + 75 XP (consigliate)
-- **Deadline:** Fine Febbraio 2026
+- **Completate:** 11/11 obbligatorie ✅✅✅
+- **Rimanenti:** 0 - TUTTE COMPLETATE!
+- **XP Disponibili:** 75 XP (consigliate opzionali)
+- **PRONTO PER ESAME MESE 1!**
 
 ---
 
@@ -132,7 +128,7 @@ updated: 2026-02-20
 
 | Libro | Capitoli | XP | Priorità | Status |
 |-------|----------|-----|----------|--------|
-| **A Philosophy of Software Design** (Ousterhout) | 1-5 | +30 | Alta | ⬜ |
+| **A Philosophy of Software Design** (Ousterhout) | 1-5 | +30 | Alta | ✅ 2026-02-25 |
 
 ---
 
@@ -162,6 +158,8 @@ updated: 2026-02-20
 
 | Libro/Risorsa | Capitoli | Data | Progetto | XP |
 |---------------|----------|------|----------|-----|
+| MediatR Pipeline Behaviors - Milan | Video | 2026-02-25 | P1-W3 | +15 |
+| A Philosophy of Software Design | Cap. 1-5 | 2026-02-25 | P1-W4 | +30 |
 | Domain Events - Martin Fowler | - | 2026-02-13 | P1-W2 | +15 |
 | Domain Events - Microsoft Docs | - | 2026-02-13 | P1-W2 | +15 |
 | Domain Events - Jimmy Bogard | - | 2026-02-13 | P1-W2 | +15 |
@@ -183,4 +181,4 @@ updated: 2026-02-20
 
 ---
 
-*Aggiornato: 2026-02-20*
+*Aggiornato: 2026-02-28*

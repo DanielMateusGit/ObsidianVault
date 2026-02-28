@@ -12,7 +12,7 @@ aliases:
 created: 2026-02-02
 source: "Sessione Week 1 - P1 Notification Service"
 ---
-
+x
 # Clean Architecture
 
 > **One-liner:** Pattern architetturale che organizza il codice in cerchi concentrici con dipendenze che puntano verso il centro (Domain), rendendo il sistema testabile, manutenibile e indipendente da framework.

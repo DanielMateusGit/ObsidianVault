@@ -64,7 +64,7 @@ Essere capace di:
 
 ---
 
-## 📅 Timeline Overview (20 Mesi)
+## 📅 Timeline Overview (24 Mesi)
 
 ```
 SHARED SERVICES
@@ -72,20 +72,27 @@ SHARED SERVICES
 Mesi 1-4:   P1 - Notification Service 📧 [SHARED SERVICE]
 Mesi 5-6:   P2.5 - AI Gateway 🤖 [SHARED SERVICE]
 
-DOMAIN PROJECTS
+DOMAIN PROJECTS (Didattici)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Mesi 5-9:   P2 - NutriPlan (DDD, CQRS) ← USA: Notification
 Mesi 10-14: P3 - BookingHub (Saga, K8s) ← USA: Notification + AI Gateway
 Mesi 15-18: P4 - FamilyBudget (Flutter) ← USA: Notification + AI Gateway
 
-AI-FIRST TRACK 🧠 ← NEW!
+CAPSTONE REALE 🏆
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 7-8:   P5 - AI Second Brain 🧠 (parallelo a P2)
-Mesi 15-16: P6 - AI Interview Coach 🎤 (pre-job search)
-Mesi 19-20: P7 - Personal Copilot 🤖 (post-FamilyBudget)
+Mesi 19-22: P5 - FitHub 🏋️ (REALE!) ← UNISCE TUTTO + Monetizzabile!
+            └── Backend: Multi-tenant + AI + Subscriptions
+            └── Usa patterns da P1, P2, P2.5, P3, P4
+            └── Flutter app: Senior Frontend Track
+
+AI-FIRST TRACK 🧠 (Parallelo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mesi 7-8:   AI-1 - AI Second Brain 🧠 (parallelo a P2)
+Mesi 15-16: AI-2 - AI Interview Coach 🎤 (pre-job search)
+Mesi 23-24: AI-3 - Personal Copilot 🤖 (post-FitHub)
 ```
 
-**📧 = Shared Service** | **🤖 = AI Integration** | **🧠 = AI-First (uso personale)**
+**📧 = Shared Service** | **🤖 = AI Integration** | **🧠 = AI-First** | **🏋️ = Progetto REALE**
 
 ---
 
@@ -574,10 +581,184 @@ var advice = await _aiGateway.ChatAsync(new AIRequest
 
 ---
 
-## 🧠 PROGETTO 5: AI Second Brain (Mesi 7-8) 🧠 AI-FIRST
+## 🏋️ PROGETTO 5: FitHub (Mesi 19-22) 🏋️ CAPSTONE REALE
+
+> **Tipo:** Capstone Project - UNISCE TUTTO! Progetto reale monetizzabile.
+> **Cross-progetto:** Usa patterns e servizi da P1, P2, P2.5, P3, P4
+> **Monetizzazione:** ⭐⭐⭐⭐⭐ - Dan può proporlo alla palestra dove lavora!
+
+### Obiettivo
+App fitness multi-versione (Yoga/Stretching, CrossFit, Palestra) con:
+- **B2B:** Palestre come clienti (gestione allenatori, turni, abbonamenti)
+- **B2C:** Utenti singoli (allenamento casa, tracking progressi)
+- **White-label:** Una codebase, multiple skin per mercati verticali
+- **AI:** Assistenza personalizzata per allenamenti e nutrizione
+
+### Stack
+- .NET 8 + Aspire (backend)
+- PostgreSQL + Redis
+- Azure Service Bus (events)
+- **📧 Notification Service (P1)** per reminder e comunicazioni
+- **🤖 AI Gateway (P2.5)** per workout planning e consigli
+- Multi-tenant architecture (da P3)
+- Subscription billing (da P3)
+
+### Cosa Impari (Consolidamento)
+- **Multi-tenant Architecture** avanzata (schema-per-tenant)
+- **White-label Patterns** (stessa codebase, diverse UI/branding)
+- **AI Workout Planning** (usa AI Gateway)
+- **Subscription Management** (Stripe, piani diversi per palestre/utenti)
+- **Role-based Access** complesso (owner, coach, member)
+- **Real-world Product Development** (da progetto didattico a prodotto reale)
+
+### Architettura Cross-Progetto
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    🏋️ FITHUB                                    │
+│              (Unisce TUTTO quello che hai imparato)             │
+│                                                                  │
+│  DA P1 NOTIFICATION SERVICE:                                    │
+│  └── Reminder allenamenti, notifiche coach, alert abbonamenti   │
+│                                                                  │
+│  DA P2 NUTRIPLAN:                                               │
+│  └── AI meal suggestions per atleti, tracking nutrition         │
+│                                                                  │
+│  DA P2.5 AI GATEWAY:                                            │
+│  └── Workout generation, form analysis, progress insights       │
+│                                                                  │
+│  DA P3 BOOKINGHUB:                                              │
+│  └── Multi-tenant, subscription billing, scheduling             │
+│                                                                  │
+│  DA P4 FAMILYBUDGET:                                            │
+│  └── Flutter basics, offline-first patterns                     │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Versioni App (White-label)
+```
+┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
+│ 🧘 YOGA/STRETCH  │  │ 🏋️ CROSSFIT      │  │ 💪 GYM           │
+│                  │  │                  │  │                  │
+│ - Routine yoga   │  │ - WOD generator  │  │ - Schede workout │
+│ - Flexibility    │  │ - Box management │  │ - Nutrition AI   │
+│ - Meditation     │  │ - Leaderboards   │  │ - Progress track │
+│ - Breathing      │  │ - PR tracking    │  │ - Personal trainer│
+└──────────────────┘  └──────────────────┘  └──────────────────┘
+         │                    │                    │
+         └────────────────────┴────────────────────┘
+                              │
+                    ┌─────────┴─────────┐
+                    │  SHARED CODEBASE  │
+                    │  (90% common)     │
+                    └───────────────────┘
+```
+
+### Settimane
+
+**Mese 19: Architecture & Core**
+- W1-2: Multi-tenant setup, tenant isolation
+- W3-4: Core domain (Workout, Exercise, Member, Coach, Subscription)
+
+**Mese 20: Features & AI**
+- W5-6: AI workout generation (usa AI Gateway)
+- W7-8: Subscription management, billing (Stripe)
+
+**Mese 21: White-label & Roles**
+- W9-10: White-label infrastructure (theming, feature flags)
+- W11-12: Coach dashboard, member app, owner analytics
+
+**Mese 22: Polish & Launch**
+- W13-14: Integration tests, load testing
+- W15: Documentation, deployment
+- W16: Boss Battle + **PROPONI ALLA TUA PALESTRA!** 💰
+
+### Integrazione Notification Service
+```csharp
+// Reminder allenamento
+await _notificationClient.ScheduleAsync(new ScheduledNotification
+{
+    Channel = NotificationChannel.Push,
+    Recipient = member.DeviceToken,
+    Template = "workout-reminder",
+    Data = new { WorkoutName = "Upper Body", Time = "18:00" },
+    ScheduledFor = workout.ScheduledTime.AddMinutes(-30)
+});
+
+// Notifica coach su nuovo iscritto
+await _notificationClient.SendAsync(new NotificationRequest
+{
+    Channel = NotificationChannel.Email,
+    Recipient = coach.Email,
+    Template = "new-member-assigned",
+    Data = new { MemberName = member.Name, Plan = subscription.Plan }
+});
+```
+
+### Integrazione AI Gateway
+```csharp
+// AI genera workout personalizzato
+var workout = await _aiGateway.ChatAsync(new AIRequest
+{
+    Provider = AIProvider.Auto, // Ollama per velocità, Claude per complessità
+    SystemPrompt = "Sei un personal trainer esperto...",
+    Messages = new[] {
+        new Message($"Genera un allenamento {workoutType} per {member.FitnessLevel}")
+    },
+    Tools = new[] { "get_member_history", "get_exercise_database" }
+});
+
+// AI analizza form da video (futuro)
+var formFeedback = await _aiGateway.AnalyzeAsync(new AnalyzeRequest
+{
+    Type = AnalysisType.Video,
+    Content = videoFrame,
+    Prompt = "Analizza la forma dello squat e suggerisci correzioni"
+});
+```
+
+### 🏆 Boss Battle: "Gym Chain Platform"
+
+**Scenario:** Estendi FitHub per supportare catene di palestre (multi-location).
+
+| Parte | Deliverable |
+|-------|-------------|
+| **A. Design** | ADR-001 (tenant hierarchy: chain → location → member), C4 Context + Container |
+| **B. Domain Model** | Chain aggregate, Location VO, cross-location membership |
+| **C. API Spec** | OpenAPI per chain management, location analytics |
+| **D. Implementazione** | Cross-location member transfer feature |
+
+**Performance Goal:** 5 locations, 100 members each, real-time sync
+
+### Deliverables
+- [ ] Multi-tenant backend completo
+- [ ] AI workout generation funzionante
+- [ ] Subscription billing con Stripe
+- [ ] 3 skin white-label (Yoga, CrossFit, Gym)
+- [ ] Coach + Member + Owner dashboards
+- [ ] Integration con Notification Service
+- [ ] Integration con AI Gateway
+- [ ] **PROPOSTA COMMERCIALE per la tua palestra!** 💰
+
+### 💰 Piano Monetizzazione
+
+| Modello | Prezzo Indicativo | Target |
+|---------|-------------------|--------|
+| **Palestra singola** | €50-100/mese | Box CrossFit, studi yoga |
+| **Multi-location** | €200-500/mese | Catene palestre |
+| **Enterprise** | Custom | Grandi franchising |
+| **Utente singolo** | €5-10/mese o freemium | Home fitness |
+
+**Revenue potenziale anno 1:** Se 5 palestre × €100/mese = €6.000/anno
+**Revenue potenziale anno 3:** Se 50 palestre × €150/mese = €90.000/anno
+
+---
+
+## 🧠 AI-1: AI Second Brain (Mesi 7-8) 🧠 AI-FIRST
 
 > **Tipo:** AI-First Project - Lo userai OGNI GIORNO!
 > **Parallelo a:** P2 NutriPlan
+> **Nota:** Questo è il track AI parallelo, numerazione separata dai Domain Projects
 
 ### Obiettivo
 Il tuo Obsidian vault diventa queryabile con AI. Semantic search sulle TUE note.
@@ -662,7 +843,7 @@ Il tuo Obsidian vault diventa queryabile con AI. Semantic search sulle TUE note.
 
 ---
 
-## 🎤 PROGETTO 6: AI Interview Coach (Mesi 15-16) 🎤 AI-FIRST
+## 🎤 AI-2: AI Interview Coach (Mesi 15-16) 🎤 AI-FIRST
 
 > **Tipo:** AI-First Project - Ti prepara per i colloqui €90k-130k!
 > **Parallelo a:** P4 FamilyBudget
@@ -769,7 +950,7 @@ Il tuo personal coach per superare technical interviews. System design, coding, 
 
 ---
 
-## 🤖 PROGETTO 7: Personal Copilot (Mesi 19-20) 🤖 AI-FIRST
+## 🤖 AI-3: Personal Copilot (Mesi 23-24) 🤖 AI-FIRST
 
 > **Tipo:** AI-First Project - Il TUO assistente coding!
 > **Dopo:** P4 FamilyBudget completato
@@ -945,5 +1126,5 @@ Alla fine dei 20 mesi:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-12*
-*Versione: 3.0 - AI-First Track (P5, P6, P7) + Boss Battle + Ecosystem*
+*Ultimo aggiornamento: 2026-02-24*
+*Versione: 4.0 - Aggiunto P5 FitHub (Capstone Reale) + AI Track rinumerato (AI-1, AI-2, AI-3)*
