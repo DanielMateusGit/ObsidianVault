@@ -1,0 +1,12 @@
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/bin/Debug/net8.0/TaskManager.Domain.deps.json
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/bin/Debug/net8.0/TaskManager.Domain.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/bin/Debug/net8.0/TaskManager.Domain.pdb
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.AssemblyInfoInputs.cache
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.AssemblyInfo.cs
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.csproj.CoreCompileInputs.cache
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.sourcelink.json
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/refint/TaskManager.Domain.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.pdb
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/ref/TaskManager.Domain.dll

@@ -91,7 +91,7 @@
 
 | Progetto | Status | Settimana |
 |----------|--------|-----------|
-| P1 - Task Manager | 🟡 Non iniziato | W1-2 |
+| P1 - Task Manager | 🟢 **In corso** | W1 (iniziato 2026-03-02) |
 | P1.5 - Auth & Security 🔐 | 🔒 Locked | W3 |
 | P2 - Chat App | 🔒 Locked | W4-6 |
 | P3 - E-commerce | 🔒 Locked | W7-10 |

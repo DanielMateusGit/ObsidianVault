@@ -14,9 +14,9 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 99 |
-| **Risposte corrette** | 53 |
-| **Risposte parziali** | 4 |
+| **Quiz totali** | 102 |
+| **Risposte corrette** | 58 |
+| **Risposte parziali** | 5 |
 | **Risposte sbagliate** | 1 |
 | **Non risposti** | 23 |
 | **Challenge completate** | 8 |
@@ -153,8 +153,8 @@ updated: 2026-02-05
 ### Domain Events
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦1 | 2026-02-13 | 2026-02-13 | 🟡 Parziale |
-| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦3 | 2026-02-19 | 2026-02-26 | ✅ Corretto |
+| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦2 | 2026-03-02 | 2026-03-05 | ✅ Corretto |
+| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
 | EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -163,7 +163,7 @@ updated: 2026-02-05
 ### CQRS & MediatR
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
+| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
 | CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
 | CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -181,15 +181,15 @@ updated: 2026-02-05
 ### Ports & Adapters
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
+| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
 | PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
-| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
+| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
 
 ### CQRS Queries
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦1 | 2026-02-24 | Ora | 🟡 Parziale |
-| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦3 | 2026-02-20 | 2026-02-27 | ✅ Corretto |
+| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦2 | 2026-03-02 | 2026-03-05 | 🟡 Parziale |
 | QRY-03 | Query senza parametri ha bisogno di validazione? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
 
 ### Application Layer
@@ -287,6 +287,13 @@ updated: 2026-02-05
 | VAL-01 | Perché TryExecute viola CQS mentre CanExecute/Execute no? | 📦1 | - | Ora | ⬜ Non risposto |
 | VAL-02 | Form CRUD 10 campi: quale approccio per validazione Domain? | 📦1 | - | Ora | ⬜ Non risposto |
 
+### Smart Enum (Senior P1)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| SENUM-01 | Perché il costruttore di uno Smart Enum deve essere privato? | 📦1 | - | Ora | ⬜ Non risposto |
+| SENUM-02 | Quando vengono costruite le istanze static readonly dal CLR? | 📦1 | - | Ora | ⬜ Non risposto |
+| SENUM-03 | Quando useresti enum normale invece di Smart Enum? | 📦1 | - | Ora | ⬜ Non risposto |
+
 ---
 
 ### Documentation
@@ -335,6 +342,12 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-02-28 | BEHAV-02 | ✅ | +10 | Box 2→3 |
 | 2026-02-28 | REPO-01 | ✅ | +10 | Box 1→2 RECUPERATO! |
 | 2026-02-28 | DIP-03 | ✅ | +35 | Box 3→4, 5 streak bonus! |
+| 2026-03-02 | EVT-01 | ✅ | +10 | Box 1→2 (recuperato!) |
+| 2026-03-02 | EVT-02 | ✅ | +10 | Box 3→4 |
+| 2026-03-02 | CQRS-01 | ✅ | +10 | Box 3→4 |
+| 2026-03-02 | PORT-01 | ✅ | +10 | Box 3→4 |
+| 2026-03-02 | PORT-03 | ✅ | +10 | Box 3→4 |
+| 2026-03-02 | QRY-02 | 🟡 | +5 | Box 3→2 (parziale - encapsulation) |
 
 ---
 

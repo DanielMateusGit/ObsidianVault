@@ -13,7 +13,7 @@ aliases:
 created: 2026-02-02
 source: "Sessione Week 1 - P1 Notification Service"
 ---
-
+Ï
 # ADR - Architecture Decision Records
 
 > **One-liner:** Documento breve e strutturato che cattura una decisione architetturale importante con il suo contesto, alternative considerate, e conseguenze.

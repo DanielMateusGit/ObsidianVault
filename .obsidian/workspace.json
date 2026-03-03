@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Learning Hub/Exams/esame_2026-02-28.md",
+                "file": "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/cqrs-commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "esame_2026-02-28"
+              "title": "cqrs-commands"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CanExecute",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +74,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 466.5026054382324
+    "width": 405.5026054382324
   },
   "right": {
     "id": "7dc3bbc021db8981",
@@ -183,8 +182,23 @@
   },
   "active": "4db151c50ccb5d8a",
   "lastOpenFiles": [
-    "02 - Learning Hub/Knowledge/architecture/validation-vs-invariants.md",
+    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/smart-enum.md",
+    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes",
+    "Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/TaskManager.Api.csproj.FileListAbsolute.txt",
+    "Projects/TaskManager/src/TaskManager.Api/bin/Debug/net8.0/TaskManager.Api.pdb",
+    "Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/ref/TaskManager.Api.dll",
+    "Projects/TaskManager/src/TaskManager.Api/bin/Debug/net8.0/TaskManager.Api.dll",
+    "Projects/TaskManager/src/TaskManager.Api/bin/Debug/net8.0/TaskManager.Api.runtimeconfig.json",
+    "Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/TaskManager.Api.genruntimeconfig.cache",
+    "Projects/TaskManager/src/TaskManager.Api/bin/Debug/net8.0/TaskManager.Api.deps.json",
+    "Projects/TaskManager/src/TaskManager.Api/bin/Debug/net8.0/TaskManager.Api",
+    "Projects/TaskManager/src/TaskManager.Api/bin/Debug/net8.0/appsettings.json",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/application-layer.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/adr-architecture-decision-records.md",
+    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/00-Overview.md",
     "02 - Learning Hub/Exams/esame_2026-02-28.md",
+    "02 - Learning Hub/Exams/esame_2026-02-11_esempio.md",
+    "02 - Learning Hub/Knowledge/architecture/validation-vs-invariants.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/domain-events-complete-guide.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Sedimentazione-W01.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/00-Overview.md",
@@ -192,14 +206,10 @@
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/cqrs-and-mediatr.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/cqrs-commands.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/unit-of-work.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/application-layer.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/c4-model.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/clean-architecture.md",
     "02 - Learning Hub/Knowledge/CLAUDE.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/domain-events.md",
-    "Untitled 7.base",
-    "Untitled 5.base",
-    "Untitled 6.base",
     "02 - Learning Hub/Knowledge/solid/dependency-inversion-principle.md",
     "02 - Learning Hub/Knowledge/solid/interface-segregation-principle.md",
     "02 - Learning Hub/Knowledge/solid/open-closed-principle.md",
@@ -207,18 +217,7 @@
     "02 - Learning Hub/Knowledge/patterns/unit-of-work-pattern.md",
     "02 - Learning Hub/Knowledge/patterns/repository-pattern.md",
     "02 - Learning Hub/Knowledge/architecture/cqrs-pattern.md",
-    "02 - Learning Hub/c:azuritedebug.log",
-    "02 - Learning Hub/c:azurite/__queuestorage__",
-    "02 - Learning Hub/c:azurite/__blobstorage__",
-    "02 - Learning Hub/c:azurite/__azurite_db_table__.json",
-    "02 - Learning Hub/c:azurite/__azurite_db_queue_extent__.json",
-    "02 - Learning Hub/c:azurite/__azurite_db_queue__.json",
-    "02 - Learning Hub/c:azurite/__azurite_db_blob_extent__.json",
     "02 - Learning Hub/Knowledge/design/deep-modules.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/repository-pattern.md",
-    "02 - Learning Hub/Knowledge/architecture/clean-architecture-principles.md",
-    "02 - Learning Hub/Knowledge/patterns/factory-pattern.md",
-    "02 - Learning Hub/Knowledge/patterns/facade-pattern.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Pasted image 20250908100643.png",

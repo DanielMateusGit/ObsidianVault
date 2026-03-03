@@ -1,6 +1,7 @@
 ---
 tags: [senior-engineer, project, p1]
-status: not-started
+status: in-progress
+started: 2026-03-02
 ---
 
 # ✅ Progetto 1: Task Manager API
@@ -9,6 +10,21 @@ status: not-started
 REST API per task con TDD, caching Redis, design patterns.
 
 **Durata:** 2 settimane | **Focus:** Clean Arch, TDD, Patterns
+
+## 🔴🟢🔵 APPROCCIO: TDD RIGOROSO
+
+> **IMPORTANTE:** Questo progetto segue TDD rigoroso.
+>
+> 1. **🔴 RED** - Dan scrive il TEST prima
+> 2. **🔴 RED** - Verifica che fallisce
+> 3. **🟢 GREEN** - Dan scrive il CODICE minimo
+> 4. **🟢 GREEN** - Verifica che passa
+> 5. **🔵 REFACTOR** - Migliora insieme
+>
+> **MAI scrivere codice senza test che fallisce prima!**
+
+## 📍 Percorso Codice
+`/Projects/TaskManager/` (separato dalle note)
 
 ## 🎯 Cosa Imparerai
 - Clean Architecture
