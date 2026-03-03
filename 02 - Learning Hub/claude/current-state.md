@@ -99,6 +99,31 @@
 | P5 - URL Shortener | 🔒 Locked | W14-16 |
 | P6 - Capstone | 🔒 Locked | M6-16 |
 
+### 🎯 REGOLE SENIOR ENGINEER (2026-03-03)
+
+> **Focus:** 70% coding, 30% teoria. Dan scrive, Claude guida.
+
+**Workflow per Argomento:**
+```
+1. Claude spiega brevemente
+2. Domande di verifica (2-3)
+3. Nota creata
+4. TDD: Dan scrive test → rosso → codice → verde
+5. 🎯 ESERCIZIO RECAP (Compartimento Stagno)
+   - Claude dà specifica simile
+   - Dan fa TUTTO da solo (zero aiuto)
+   - Claude valuta solo il risultato finale
+```
+
+**Git & Pubblicazione:**
+- Commit frequenti con messaggi chiari
+- README aggiornato per portfolio
+- `.gitignore` per escludere bin/obj
+
+**Esercizi Recap:** Vedi `Senior-Engineer/Projects/P1-Task-Manager/recap-exercises.md`
+
+---
+
 ## ✅ Ultima Sessione
 
 **Data:** 2026-02-28
@@ -299,4 +324,4 @@ _Nessuna_
 
 ---
 
-*Ultimo aggiornamento: 2026-02-28 (Esame Mese 1 superato 25/30 - Mese 1 completato!)*
+*Ultimo aggiornamento: 2026-03-03 (Senior Engineer P1 iniziato - TaskItem entity TDD)*

@@ -11,7 +11,7 @@ aliases:
 created: 2026-03-02
 source: "Sessione Senior P1 Week 1"
 ---
-
+1
 # Smart Enum (Enumeration Class)
 
 > **One-liner:** Un pattern che combina la type-safety degli enum con la flessibilità delle classi (metodi, validazione, comportamento).

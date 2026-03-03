@@ -31,4 +31,98 @@ current_week: W1
 ## 🛠️ Stack
 .NET 8, React, TypeScript, Redux Toolkit, SQL Server, Redis
 
+---
+
+## 🎯 APPROCCIO SENIOR ENGINEER
+
+> **Focus:** 70% coding, 30% teoria. Dan scrive, Claude guida.
+
+### Workflow per Argomento
+
+```
+1. Claude spiega brevemente il concetto
+2. Domande di verifica (2-3)
+3. Nota creata
+4. TDD: Dan scrive test → rosso → codice → verde → refactor
+5. ═══════════════════════════════════════════════════════
+   ║  🎯 ESERCIZIO RECAP (Compartimento Stagno)          ║
+   ║  - Claude dà specifica simile                       ║
+   ║  - Dan fa TUTTO da solo (zero aiuto)                ║
+   ║  - Claude valuta solo il risultato finale           ║
+   ═══════════════════════════════════════════════════════
+```
+
+### 🏋️ Esercizi Recap - Regole
+
+| Regola | Descrizione |
+|--------|-------------|
+| **Zero aiuto** | Claude non risponde a domande durante l'esercizio |
+| **Isolato** | Può essere in cartella separata o nel progetto |
+| **Tempo libero** | Nessun limite, ma tracciamo quanto ci metti |
+| **Valutazione** | Claude corregge solo alla fine |
+
+### 🎮 Gamification Esercizi
+
+| Risultato | XP |
+|-----------|-----|
+| ✅ Esercizio completato correttamente | +50 |
+| 🟡 Parzialmente corretto (fix minori) | +25 |
+| ❌ Da rifare (errori concettuali) | +10 (per aver provato) |
+| 🚀 Completato al primo tentativo | +25 bonus |
+| ⚡ Completato in < 15 min | +15 bonus |
+
+### Achievement Esercizi
+
+| Badge | Nome | Requisito | XP |
+|-------|------|-----------|-----|
+| 🏋️ | **First Solo** | Primo esercizio completato | +30 |
+| 💪 | **Solo Streak** | 5 esercizi corretti consecutivi | +75 |
+| 🎯 | **Perfect Form** | 10 esercizi al primo tentativo | +150 |
+| 🏆 | **Independent Dev** | Tutti gli esercizi di un progetto | +200 |
+
+---
+
+## 📦 GIT & PUBBLICAZIONE
+
+> Ogni progetto è pubblicato su GitHub come portfolio.
+
+### Per ogni sessione
+
+```bash
+# Commit frequenti con messaggi chiari
+git add .
+git commit -m "feat(domain): add TaskItem entity with TDD"
+```
+
+### Struttura README (ogni progetto)
+
+```markdown
+# Project Name
+
+## What I Learned
+- [Concetto 1]
+- [Concetto 2]
+
+## Tech Stack
+- .NET 8, xUnit, FluentAssertions, etc.
+
+## How to Run
+dotnet run --project src/ProjectName.Api
+
+## Tests
+dotnet test
+```
+
+### Commit Convention
+
+| Prefisso | Uso |
+|----------|-----|
+| `feat` | Nuova feature |
+| `test` | Aggiunta test |
+| `refactor` | Refactoring |
+| `docs` | Documentazione |
+| `fix` | Bug fix |
+
+---
+
 [[Projects/P1-Task-Manager/00-Overview|▶️ Inizia Progetto 1]]

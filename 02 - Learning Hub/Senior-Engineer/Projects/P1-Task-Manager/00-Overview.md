@@ -46,4 +46,30 @@ REST API per task con TDD, caching Redis, design patterns.
 | Factory | Crea task diversi |
 | Strategy | Prioritizzazione |
 
+---
+
+## 🎯 ESERCIZI RECAP
+
+> Dopo ogni argomento TDD, Dan fa un esercizio simile **da solo**.
+
+| # | Argomento | Esercizio | Status | XP |
+|---|-----------|-----------|--------|-----|
+| 1 | Entity (TaskItem) | Creare `Project` entity | ⬜ | - |
+| 2 | Value Object (Priority) | Creare `DueDate` VO | ⬜ | - |
+| 3 | Domain Events | Creare `TaskCompletedEvent` | ⬜ | - |
+| 4 | Repository Pattern | Creare `IProjectRepository` | ⬜ | - |
+
+---
+
+## 📦 GIT
+
+**Repository:** `/Projects/TaskManager/`
+
+### Commit effettuati
+| Data | Commit | Descrizione |
+|------|--------|-------------|
+| - | - | - |
+
+---
+
 [[Tasks/Week-01|▶️ Inizia Week 1]]
