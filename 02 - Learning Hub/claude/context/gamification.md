@@ -1,123 +1,73 @@
-# 🎮 Gamification
+# Sistema Gamification
 
-## XP - Attività Quotidiane
-| Attività | XP |
+---
+
+## XP - Attivita Quotidiane
+
+| Attivita | XP |
 |----------|-----|
 | Daily log | +10 |
 | 30min studio | +20 |
 | 1h studio | +40 |
+| 2h+ studio | +60 |
 | Commit con progressi | +15 |
 
-## XP - Progressi Progetti
-| Attività | XP |
+## XP - Progetti
+
+| Attivita | XP |
 |----------|-----|
 | Task completato | +50 |
 | Deliverable completato | +100 |
 | Settimana completata | +150 |
 | Progetto completato | +500 |
-| Boss Battle superata (≥24/30) | +300 |
-| Boss Battle con lode (≥28/30) | +500 |
 
-## 🏆 BOSS BATTLE SYSTEM (NUOVO!)
+## XP - Studio e Note
 
-> Verifica autonoma alla fine di ogni progetto
-
-### Struttura
-| Path | Focus |
-|------|-------|
-| **Architect Quest** | 70% Design, 30% Code |
-| **Senior Engineer** | 30% Design, 70% Code |
-
-### XP Boss Battle
-| Risultato | XP |
-|-----------|-----|
-| ≥24/30 (Superata) | +300 |
-| ≥28/30 (Con lode) | +500 |
-
-### Achievement Boss Battle - Architect
-| Badge | Nome | Requisito | XP |
-|-------|------|-----------|-----|
-| 🎖️ | **Battle Won** | Boss Battle ≥24/30 | +300 |
-| 👑 | **Battle Master** | Boss Battle ≥28/30 | +500 |
-| 🏆 | **Architect Champion** | 4/4 Boss Battle superate | +1000 |
-
-### Achievement Boss Battle - Senior
-| Badge | Nome | Requisito | XP |
-|-------|------|-----------|-----|
-| ⚔️ | **Code Warrior** | Boss Battle ≥24/30 | +300 |
-| 🗡️ | **Code Master** | Boss Battle ≥28/30 | +500 |
-| 🏆 | **Senior Champion** | 6/6 Boss Battle superate | +1500 |
-
-## XP - Studio e Documentazione
-| Attività | XP |
+| Attivita | XP |
 |----------|-----|
+| Nota atomica creata | +20 |
 | Capitolo libro letto | +30 |
-| Articolo completato | +15 |
-| Video visto | +15 |
-| Nota creata | +20 |
+| Capitolo + appunti | +45 |
+| Articolo breve | +15 |
+| Video | +15 |
 | ADR scritto | +75 |
 | Diagramma C4 | +60 |
+| Approfondimento extra | +25 |
 
-## 🧠 Challenge del Giorno (Spaced Repetition)
-| Attività | XP |
-|----------|-----|
-| Challenge completata | +5 |
-| Risposta corretta | +10 |
-| Risposta sbagliata | +2 (per aver provato!) |
-| 5 challenge streak | +25 bonus |
-| 10 challenge streak | +50 bonus |
+## XP - Spaced Repetition
+
+| Risultato | XP |
+|-----------|-----|
+| Corretto | +10 |
+| Parziale | +5 |
+| Sbagliato | +2 |
+| 5 corrette consecutive | +25 bonus |
+| 10 corrette consecutive | +50 bonus |
 | Quiz padroneggiato (Box 5) | +30 |
-
-**Tracker:** `context/quiz-tracker.md`
 
 ---
 
-## 🎓 ESAMI (NUOVO!)
+## Esami
 
-> Sistema di verifica conoscenze stile universitario
+### Quando Proporre
 
-### Quando Fare Esami
 | Momento | Tipo | Punti | Obbligatorio |
 |---------|------|-------|--------------|
-| **Fine Week importante** | Mini-verifica | 15 | ⬜ Opzionale |
-| **Fine Mese** | Esame medio | 30 | ✅ Sì |
-| **Fine Progetto** | Esame completo | 30 | ✅ **OBBLIGATORIO** |
-| **Pre-Certificazione** | Simulazione | 30+ | Su richiesta |
+| Fine Week importante | Mini-verifica | 15 | Opzionale |
+| Fine Mese | Esame medio | 30 | Si |
+| Fine Progetto | Esame completo | 30 | **OBBLIGATORIO** |
+| Pre-Certificazione | Simulazione | 30+ | Su richiesta |
 
-### Calendario Esami P1
-```
-Mese 1: Mini-verifica W2 + Esame Mese 1
-Mese 2: Mini-verifica W6 + Esame Mese 2
-Mese 3: Mini-verifica W10 + Esame Mese 3
-Mese 4: ESAME FINALE PROGETTO
-```
+### Struttura Mini-verifica (15 punti, ~15 min)
 
-### XP per Voto - Esami Completi (30 punti)
-| Voto | XP | Descrizione |
-|------|-----|-------------|
-| ≥27/30 | +200 | Superato con lode |
-| ≥24/30 | +150 | Superato con merito |
-| ≥18/30 | +100 | Superato |
-| <18/30 | +30 | Tentativo + ripasso |
-
-### XP per Voto - Mini-verifiche (15 punti)
-| Voto | XP | Descrizione |
-|------|-----|-------------|
-| ≥13/15 | +75 | Eccellente |
-| ≥11/15 | +50 | Buono |
-| ≥9/15 | +30 | Sufficiente |
-| <9/15 | +15 | Ripasso consigliato |
-
-### Struttura per Tipo di Esame
-
-**Mini-verifica (15 punti)** - ~15 min
 | Parte | Punti | Contenuto |
 |-------|-------|-----------|
 | A | 6 | 3 domande aperte |
 | B | 4 | 4 multiple choice |
 | C | 5 | 1-2 esercizi codice |
 
-**Esame Mensile/Progetto (30 punti)** - ~30-45 min
+### Struttura Esame Completo (30 punti, ~30-45 min)
+
 | Parte | Punti | Contenuto |
 |-------|-------|-----------|
 | A | 10 | 4-5 domande aperte |
@@ -125,34 +75,57 @@ Mese 4: ESAME FINALE PROGETTO
 | C | 8 | 3+ esercizi codice |
 | D | 6 | Design/Architettura |
 
+### XP Esami
+
+**Esami completi (30 punti):**
+
+| Voto | XP |
+|------|-----|
+| >=27/30 | +200 (Lode) |
+| >=24/30 | +150 (Merito) |
+| >=18/30 | +100 (Superato) |
+| <18/30 | +30 (Tentativo + ripasso) |
+
+**Mini-verifiche (15 punti):**
+
+| Voto | XP |
+|------|-----|
+| >=13/15 | +75 |
+| >=11/15 | +50 |
+| >=9/15 | +30 |
+| <9/15 | +15 |
+
 ### Achievement Esami
+
 | Badge | Nome | Requisito | XP |
 |-------|------|-----------|-----|
-| 📝 | First Exam | Primo esame completato | +50 |
-| 🎯 | Dean's List | 3 esami ≥27/30 | +150 |
-| 📚 | Exam Veteran | 10 esami completati | +200 |
-| 🏅 | Certification Ready | Esame certificazione ≥24/30 | +300 |
-
-**Cartella esami:** `Exams/esame_YYYY-MM-DD.md`
+| First Exam | Primo esame completato | +50 |
+| Dean's List | 3 esami >=27/30 | +150 |
+| Exam Veteran | 10 esami completati | +200 |
+| Certification Ready | Esame certificazione >=24/30 | +300 |
 
 ---
 
-## 📚 LETTURE (NUOVO!)
+## Boss Battle
 
-> Claude aggiorna `context/reading-list.md` ogni volta che consiglia una lettura
+Verifica autonoma alla fine di ogni progetto.
 
-### XP Letture
-| Tipo | XP |
-|------|-----|
-| Articolo breve | +15 |
-| Articolo lungo / Capitolo | +30 |
-| Video | +15 |
+| Path | Focus |
+|------|-------|
+| Architect Quest | 70% Design, 30% Code |
+| Senior Engineer | 30% Design, 70% Code |
 
-**Tracker:** `context/reading-list.md`
+| Risultato | XP |
+|-----------|-----|
+| >=24/30 | +300 |
+| >=28/30 | +500 |
+
+**Achievement finali:** Architect Champion (4/4) +1000 | Senior Champion (6/6) +1500
 
 ---
 
 ## Livelli
+
 | Lv | XP | Titolo |
 |----|-----|--------|
 | 1 | 0 | Apprentice Developer |
@@ -168,15 +141,44 @@ Mese 4: ESAME FINALE PROGETTO
 | 11 | 15,000 | Senior Architect |
 | 12 | 20,000 | AI-Native Architect |
 
+---
+
 ## Streak
-- **Mantenimento:** 30+ min/giorno
-- **Bonus:** 7d = +100, 14d = +200, 30d = +500, 60d = +1000
+
+**Per mantenere:** uno di questi ogni giorno:
+- 30+ min di studio
+- 1 commit con progressi
+- 1 task completato
+
+**Bonus:**
+
+| Streak | Bonus |
+|--------|-------|
+| 7 giorni | +100 |
+| 14 giorni | +200 |
+| 30 giorni | +500 |
+| 60 giorni | +1000 |
+
+---
+
+## Sedimentazione XP
+
+| Attivita | XP |
+|----------|-----|
+| Nota atomica creata | +20 |
+| Risorsa obbligatoria completata | +30 |
+| Video visto | +15 |
+| Approfondimento extra | +25 |
+| Fase Sedimentazione completata | +100 |
+
+---
 
 ## Coach CLI
+
 ```bash
 python3 coach.py briefing|status|suggest|quiz|add-xp|streak|motivation
 ```
 
 ---
 
-*Aggiornato: 2026-02-12*
+*Aggiornato: 2026-03-13*

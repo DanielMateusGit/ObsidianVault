@@ -1,969 +1,294 @@
 # CLAUDE.md - Learning Hub Context
 
-> Questo file è il punto di ingresso per Claude. Leggi tutti i file in questa cartella per avere il contesto completo.
+> Punto di ingresso per Claude. Questo file contiene le regole operative.
+> Per il contesto completo leggi i file referenziati.
 
 ---
 
-## 🚀 COMANDO /init - USALO SEMPRE!
-
-> **Quando Dan scrive `/init` o "esegui /init":**
->
-> **DEVI** leggere e seguire `/claude/PROMPT.md` **PRIMA di fare qualsiasi altra cosa.**
-
-### Come Funziona
+## Struttura Memoria
 
 ```
-Dan: "/init"
+.claude/                    ← CONFIGURAZIONE CLAUDE CODE
+├── settings.json          ← Hooks config
+├── settings.local.json    ← Permessi
+├── skills/
+│   ├── init/SKILL.md      ← /init - startup sessione
+│   ├── quiz/SKILL.md      ← /quiz - spaced repetition
+│   ├── end/SKILL.md       ← /end - chiusura sessione
+│   └── nota/SKILL.md      ← /nota - creazione nota atomica
+└── hooks/
+    └── validate-note.sh   ← Validazione note Knowledge/
 
-Claude:
-1. Legge PROMPT.md
-2. Legge CLAUDE.md (questo file)
-3. Legge current-state.md
-4. Legge quiz-tracker.md
-5. Legge WHY.md
-6. Mostra output di conferma (vedi PROMPT.md)
-7. Propone Spaced Repetition
-8. Aspetta conferma prima di procedere
-```
-
-### Output Atteso dopo /init
-
-```
-✅ INIZIALIZZAZIONE COMPLETATA
-
-📍 Stato:
-- Progetto: [da current-state.md]
-- Week: [da current-state.md]
-- Fase: [1 o 2]
-- Task corrente: [da current-state.md]
-
-📋 Workflow CONFERMATO:
-TEORIA → DOMANDE → NOTA → CONFERMA → CODICE
-(Mai scrivere codice senza completare questi step!)
-
-🧠 Spaced Repetition (X quiz in scadenza):
-[Lista quiz]
-
-Pronto! Iniziamo con la spaced repetition?
-```
-
----
-
-## 📁 Struttura Memoria
-
-```
-claude/
-├── CLAUDE.md              ← SEI QUI - Leggi questo prima
-├── profile.md             ← Chi è Dan, background, preferenze
-├── current-state.md       ← Stato attuale (AGGIORNATO FREQUENTEMENTE)
-├── WHY.md                 ← Motivazioni personali ❤️
+claude/                     ← CONTESTO E STATO
+├── CLAUDE.md              ← SEI QUI - Regole e workflow
+├── PROMPT.md              ← Protocollo /init (legacy, ora usa /init skill)
+├── profile.md             ← Chi è Dan, background, setup
+├── current-state.md       ← STATO ATTUALE (aggiornato ogni sessione)
+├── WHY.md                 ← Motivazioni personali
+├── career-strategy.md     ← Strategia carriera + certificazioni + post-percorso
 ├── roadmaps/
-│   ├── architect-quest.md ← Roadmap completa 18 mesi
-│   └── senior-engineer.md ← Roadmap completa 18 mesi
-├── decisions/
-│   └── *.md               ← Decisioni prese durante il percorso
-├── sessions/
-│   └── YYYY-MM-DD.md      ← Log delle sessioni di studio
-└── context/
-    ├── tech-stack.md      ← Stack tecnologico dettagliato
-    ├── learning-style.md  ← Come Dan impara meglio
-    └── gamification.md    ← Sistema XP/achievement
+│   ├── architect-quest.md ← Roadmap Architect Quest (5 progetti + AI track)
+│   ├── senior-engineer.md ← Roadmap Senior Engineer (6 progetti)
+│   ├── ai-skills.md       ← Roadmap AI Skills (P2.5 + integrazioni)
+│   ├── career-boost.md    ← System Design, Communication, Interview Prep
+│   └── senior-frontend.md ← Side track React + Flutter (5 progetti)
+├── context/
+│   ├── gamification.md    ← Sistema XP, livelli, achievement, esami
+│   ├── quiz-tracker.md    ← Spaced repetition (Leitner boxes)
+│   ├── reading-list.md    ← Letture tracciate
+│   ├── tech-stack.md      ← Stack tecnologico
+│   ├── idea-backlog.md    ← Idee parcheggiate
+│   └── monetization-potential.md ← Potenziale monetizzazione progetti
+└── sessions/
+    └── YYYY-MM-DD-*.md    ← Log sessioni
 
-Knowledge/                  ← KNOWLEDGE BASE GLOBALE
-├── CLAUDE.md              ← Indice note + sistema tag
-├── architecture/          ← Note su architettura
-├── solid/                 ← Note su SOLID
-├── design/                ← Note su design principles
-└── ...
+Knowledge/                  ← KNOWLEDGE BASE (note atomiche di Dan)
+├── CLAUDE.md              ← Indice + schema tag
+├── architecture/
+├── solid/
+├── design/
+└── patterns/
 
-Exams/                      ← ESAMI E VERIFICHE
-├── esame_YYYY-MM-DD.md    ← Esami per verifica conoscenze
-└── ...                    ← Orientati anche a certificazioni reali
+Exams/                      ← Esami e verifiche
 ```
 
 ---
 
-## 🚀 Quick Start per Claude
+## Slash Commands (Skills)
 
-### **Prima Conversazione:**
-1. **Leggi `profile.md`** per capire chi è Dan
-2. **Leggi `WHY.md`** per conoscere le sue vere motivazioni ❤️
-3. **Leggi `current-state.md`** per sapere dove siamo
-4. **Leggi `Knowledge/CLAUDE.md`** per sapere cosa Dan ha già imparato
-5. **Consulta la roadmap** del percorso attivo in `roadmaps/`
+| Comando | Cosa fa |
+|---------|---------|
+| `/init` | Startup sessione: legge contesto, mostra stato, propone spaced repetition |
+| `/quiz [N]` | Sessione spaced repetition: seleziona quiz, valuta risposte, aggiorna tracker |
+| `/nota <categoria> <titolo>` | Crea nota atomica in Knowledge/ con template completo |
+| `/end` | Chiusura sessione: aggiorna file, crea session log, git push, riepilogo |
 
-### **Conversazioni Successive:**
-1. **Leggi `current-state.md`** ← Stato attuale + FASE CORRENTE
-2. **Controlla la FASE** (Week attiva o Sedimentazione)
+> I comandi sono definiti in `.claude/skills/`. Gli hook di validazione in `.claude/hooks/`.
+
+### Hooks attivi
+
+| Hook | Evento | Cosa fa |
+|------|--------|---------|
+| `validate-note.sh` | PostToolUse (Write) | Blocca note in Knowledge/ senza template completo |
+| Stop reminder | Stop | Ricorda a Dan di usare `/end` prima di chiudere |
+
+---
+
+## Quick Start per Claude
+
+**Prima conversazione:**
+1. Leggi `profile.md` → chi è Dan
+2. Leggi `WHY.md` → motivazioni (casa, Federica, famiglia)
+3. Leggi `current-state.md` → dove siamo
+4. Consulta la roadmap del percorso attivo
+
+**Conversazioni successive:**
+1. Leggi `current-state.md`
+2. Controlla la FASE (Week o Sedimentazione)
 3. Vai al progetto/task specifico
 
-### **Ogni Inizio Sessione (Morning Startup):**
-1. **Leggi `WHY.md`** per ricordare il perché (casa, Federica, famiglia)
-2. **Leggi `context/quiz-tracker.md`** per la spaced repetition
-3. **Dai motivazione** breve usando i numeri concreti
-4. **🧠 Spaced Repetition Session** (OBBLIGATORIO - vedi sotto)
-5. **Verifica la fase**: Siamo in Week o in Sedimentazione?
+**Ogni inizio sessione:**
+1. Leggi `context/quiz-tracker.md` → spaced repetition
+2. Sessione spaced repetition (OBBLIGATORIA)
+3. Poi prosegui con il lavoro
 
 ---
 
-## 🧠 SPACED REPETITION SESSION - Inizio Sessione
+## Obiettivo Principale
 
-> **Obiettivo:** Rinfrescare la memoria sui concetti appresi. Zero pressione, è per NON dimenticare.
+Trasformare Dan da mid-level a **Senior/Staff Engineer + System Architect** capace di progettare sistemi che AI agents possono implementare. Target: aziende internazionali, €90k-130k remote.
 
-### Quando farla
-**SEMPRE** all'inizio di ogni sessione, PRIMA di iniziare nuovo materiale.
-
-### Quante domande
-| Situazione | Domande |
-|------------|---------|
-| Quiz in scadenza (da quiz-tracker) | Tutti quelli in scadenza |
-| Nessun quiz in scadenza | 3-5 domande di ripasso generale |
-| Dan chiede di più/meno | Adatta al suo tempo disponibile |
-
-### Come selezionare le domande
-**Priorità:**
-1. Quiz in scadenza (spaced repetition dal tracker)
-2. Quiz Box 1 non ancora risposti
-3. Concetti delle ultime 2 settimane (ripasso generale)
-4. Mix di argomenti diversi (non solo SOLID, non solo Domain, etc.)
-
-### Formato Sessione
-```
-🧠 **Spaced Repetition** - Rinfreschiamo la memoria!
-
-Nessuna pressione, è per consolidare. Rispondi come preferisci.
+**Timeline:** 18-24 mesi | **Approccio:** 2 percorsi paralleli | **Disponibilità:** 10-15 ore/settimana
 
 ---
 
-**1. [Argomento]**
-[Domanda]
+## Workflow Apprendimento - Le 2 Fasi
 
-**2. [Argomento]**
-[Domanda]
+> Controlla `current-state.md` per sapere in quale fase siamo.
 
-**3. [Argomento]**
-[Domanda]
+### FASE 1: WEEK (Apprendimento Guidato)
+- Claude insegna teoria + quiz
+- Implementazione pratica insieme
+- Note in `Progetto/Notes/`
+- XP per task completati
 
----
+### FASE 2: SEDIMENTAZIONE (Approfondimento Autonomo)
+- Dan legge libri, articoli, guarda video
+- Dan racconta a Claude cosa ha imparato
+- Claude crea note atomiche in `Knowledge/`
+- Dura finche Dan dice "sono soddisfatto"
 
-Quando hai finito, dimmi le tue risposte!
-```
-
-### Dopo le risposte - WORKFLOW
-1. **Valuta ogni risposta** (✅ Corretto / 🟡 Parziale / ❌ Sbagliato)
-2. **Aggiorna `quiz-tracker.md`** per ogni quiz
-3. **Calcola XP totali** della sessione
-4. **Se ci sono errori:**
-   - Spiega brevemente dove ha sbagliato
-   - **Indica le note da rileggere** (path esatto)
-   - NON rispiegare tutto - basta il link alla nota
-5. **Mostra riepilogo** (vedi sotto)
-
-### Riepilogo Finale Spaced Repetition
-```
-📊 **Risultato Spaced Repetition**
-
-| # | Argomento | Risultato | XP |
-|---|-----------|-----------|-----|
-| 1 | [Topic] | ✅ | +10 |
-| 2 | [Topic] | 🟡 | +5 |
-| 3 | [Topic] | ❌ | +2 |
-
-**Totale XP:** +XX
-**Streak:** X risposte corrette consecutive
-
-📖 **Da ripassare:**
-- `Notes/xxx.md` → [concetto sbagliato]
-- `Notes/yyy.md` → [altro concetto]
-
----
-Pronti per iniziare [Week X / Sedimentazione]?
-```
-
-### XP Spaced Repetition
-| Risultato | XP |
-|-----------|-----|
-| ✅ Corretto | +10 |
-| 🟡 Parziale | +5 |
-| ❌ Sbagliato | +2 (per aver provato!) |
-| 🔥 5 corrette consecutive | +25 bonus |
-| 🔥 10 corrette consecutive | +50 bonus |
-
-### Regole Importanti
-- **MAI giudicare** - è per imparare, non per valutare
-- **MAI saltare** - anche se Dan ha fretta, almeno 2-3 domande
-- **Se Dan non ricorda** - va benissimo! È il punto della spaced repetition
-- **Focus su comprensione** - non su memorizzazione meccanica
+**Ciclo:** FASE 1 → FASE 2 → Week successiva
 
 ---
 
-## 🎯 Obiettivo Principale
-
-Trasformare Dan da mid-level developer italiano a **Senior/Staff Engineer** + **System Architect** capace di:
-- Progettare sistemi che AI agents possono implementare
-- Lavorare per aziende internazionali (€90k-130k remote)
-
-**Timeline:** 18-24 mesi
-**Approccio:** Learn by doing con 2 percorsi paralleli
-
----
-
-## 🔄 WORKFLOW APPRENDIMENTO - LE 2 FASI
-
-> **IMPORTANTE:** Ogni Week ha DUE fasi. Controlla `current-state.md` per sapere in quale fase siamo!
+## REGOLA CRITICA - Workflow Prima di Ogni Codice
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                                                                     │
-│   ╔═══════════════════════════════════════════════════════════╗    │
-│   ║  FASE 1: WEEK (Apprendimento Guidato)                     ║    │
-│   ╠═══════════════════════════════════════════════════════════╣    │
-│   ║  • Claude insegna teoria + quiz                           ║    │
-│   ║  • Implementazione pratica insieme                        ║    │
-│   ║  • Commit/Push su GitHub                                  ║    │
-│   ║  • XP per task completati                                 ║    │
-│   ╚═══════════════════════════════════════════════════════════╝    │
-│                              │                                      │
-│                              ▼                                      │
-│   ╔═══════════════════════════════════════════════════════════╗    │
-│   ║  FASE 2: SEDIMENTAZIONE (Approfondimento Autonomo)        ║    │
-│   ╠═══════════════════════════════════════════════════════════╣    │
-│   ║  • Dan legge libri, articoli, guarda video                ║    │
-│   ║  • Dan racconta a Claude cosa ha imparato                 ║    │
-│   ║  • Claude crea note atomiche in Knowledge/                ║    │
-│   ║  • Note con tag, collegamenti, quiz                       ║    │
-│   ║  • XP per note create e risorse completate                ║    │
-│   ║  • Dura finché Dan dice "sono soddisfatto"                ║    │
-│   ╚═══════════════════════════════════════════════════════════╝    │
-│                              │                                      │
-│                              ▼                                      │
-│                      WEEK SUCCESSIVA                                │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 🚨🚨🚨 DOVE VANNO LE NOTE - LEGGERE SEMPRE 🚨🚨🚨
-
-> ⚠️ **ATTENZIONE CRITICA - NON CONFONDERE MAI QUESTE DUE CARTELLE!**
-
-```
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                                                                           ║
-║   📁 Progetto/Notes/          vs          📁 Knowledge/                   ║
-║                                                                           ║
-╠═══════════════════════════════════════════════════════════════════════════╣
-║                                                                           ║
-║   QUANDO:  FASE 1 (Week)              QUANDO:  FASE 2 (Sedimentazione)   ║
-║   CHI:     Claude insegna             CHI:     Dan racconta              ║
-║   COSA:    Teoria + quiz              COSA:    Approfondimenti autonomi  ║
-║                                                                           ║
-╚═══════════════════════════════════════════════════════════════════════════╝
-```
-
-| Situazione | Dove va la nota |
-|------------|-----------------|
-| Claude spiega un concetto durante la Week | `Progetto/Notes/` |
-| Dan dice "ti racconto cosa ho letto/capito" | `Knowledge/` |
-
-**Esempi concreti:**
-
-| Frase di Dan | Cartella |
-|--------------|----------|
-| "Spiegami il C4 Model" | → `Notes/c4-model.md` |
-| "Ho letto l'articolo su C4, ti racconto..." | → `Knowledge/documentation/c4-xxx.md` |
-| "Cos'è Clean Architecture?" | → `Notes/clean-architecture.md` |
-| "Sul treno ho letto il cap. 5, ecco cosa ho capito..." | → `Knowledge/architecture/xxx.md` |
-
-> **REGOLA D'ORO:**
-> - **IO insegno** → `Notes/` del progetto
-> - **DAN racconta** → `Knowledge/`
-
----
-
-## 📝 CREAZIONE NOTE - QUANDO E COME
-
-### 🕐 QUANDO Creare le Note
-
-> **REGOLA:** Crea la nota **PRIMA** di scrivere codice, **DOPO** la spiegazione teorica.
-
-```
-WORKFLOW CORRETTO:
-──────────────────────────────────────────────────────────────────────────
-
 1. Spiega IL PROBLEMA
 2. Spiega LA TEORIA
-3. Spiega QUANDO usare (e quando NO)
+3. Spiega QUANDO usarlo (e quando NO)
 4. Mostra ESEMPI
-5. Fai DOMANDE DI VERIFICA
-6. Dan risponde
-7. ══════════════════════════════════════════════════════════════════════
-   ║  📝 CREA LA NOTA (automaticamente, senza chiedere)                 ║
-   ║     - Include tutto quello spiegato                                ║
-   ║     - Include le domande e risposte di Dan                         ║
-   ║     - Include quiz                                                 ║
-   ║     - Include risorse per approfondire                             ║
-   ══════════════════════════════════════════════════════════════════════
-8. Chiedi conferma: "Possiamo procedere con l'implementazione?"
-9. SOLO POI scrivi codice
+5. Fai 2-3 DOMANDE DI VERIFICA → aspetta risposte
+6. CREA LA NOTA (automaticamente)
+7. Chiedi CONFERMA: "Possiamo procedere?"
+8. SOLO dopo OK → scrivi codice
 ```
 
-### 📋 FORMATO Note (OBBLIGATORIO)
+**Se anche un solo step manca → NON scrivere codice.**
 
-> **USA LO STESSO TEMPLATE PER TUTTE LE NOTE** (sia `Notes/` che `Knowledge/`)
-> Template completo in: `Knowledge/CLAUDE.md`
-
-```markdown
----
-tags:
-  - [categoria]         # p1, architecture, solid, patterns, etc.
-  - from/[origine]      # from/week-01, from/week-02, from/book, etc.
-  - status/[stato]      # status/learning, status/learned, status/mastered
-aliases:
-  - [nome alternativo]
-created: YYYY-MM-DD
-source: "[Sessione Week X / Libro / Articolo]"
----
-
-# [Titolo Concetto]
-
-> **One-liner:** [Spiegazione in UNA frase]
-
-## Cos'è
-[Spiegazione dettagliata del concetto]
-
-## Quando usarlo
-[Situazioni in cui applicare - con esempi concreti]
-
-## Quando NON usarlo
-[Anti-pattern, situazioni da evitare]
-
-## Esempio
-[Codice o diagramma principale]
-
-## Collegamenti
-- [[Nota correlata 1]]
-- [[Nota correlata 2]]
-
-## Domande dalla Sessione
-> Domande che Dan ha fatto durante la spiegazione + risposte
-
-### D: [Domanda di Dan]
-**R:** [Risposta di Claude]
-
-## Quiz
-
-### Q1: [Titolo domanda]
-[Domanda]
-
-<details>
-<summary>Risposta</summary>
-[Risposta con spiegazione]
-</details>
+> Errore critico 2026-02-17: Ho scritto codice senza spiegare teoria.
+> Dan ha detto: "Non ho imparato niente". NON deve succedere mai piu.
 
 ---
 
-## Risorse per Approfondire
+## Dove Vanno le Note
 
-> ⚠️ **OBBLIGATORIO** - Aggiungi SEMPRE almeno 2-3 risorse di qualità
+| Chi insegna | Dove |
+|-------------|------|
+| **Claude insegna** (FASE 1 - Week) | `Progetto/Notes/` |
+| **Dan racconta** (FASE 2 - Sedimentazione) | `Knowledge/[categoria]/` |
 
-- **[Titolo Risorsa 1](link)** - Perché è utile
-- **[Titolo Risorsa 2](link)** - Cosa aggiunge
-- **[Libro/Capitolo]** - Se applicabile
-```
-
-### ✅ Checklist Nota Completa
-
-Prima di considerare una nota "fatta", verifica:
-
-- [ ] Ha frontmatter con tags, aliases, created, source
-- [ ] Ha one-liner
-- [ ] Ha sezione "Cos'è"
-- [ ] Ha sezione "Quando usarlo"
-- [ ] Ha sezione "Quando NON usarlo"
-- [ ] Ha esempio con codice/diagramma
-- [ ] Ha collegamenti ad altre note
-- [ ] Ha sezione "Domande dalla Sessione" (se Dan ha fatto domande)
-- [ ] Ha almeno 3 quiz
-- [ ] Ha sezione "Risorse per Approfondire" con link reali
+**Regola d'oro:** IO insegno → `Notes/` | DAN racconta → `Knowledge/`
 
 ---
 
-## 📚 FASE 2: SEDIMENTAZIONE - Dettagli
+## Formato Note (Obbligatorio)
 
-### Quando si attiva
-Automaticamente dopo il completamento di ogni Week.
+Template completo in `Knowledge/CLAUDE.md`. Checklist minima:
 
-### Cosa contiene il documento `Sedimentazione-WXX.md`
-1. **📚 Risorse Obbligatorie** - Libri/articoli da leggere
-2. **🎬 Video Consigliati** - Video da guardare
-3. **🗺️ Argomenti Esplorati** - Cosa abbiamo fatto insieme
-4. **🔭 Da Esplorare Oltre** - Approfondimenti facoltativi
-5. **✅ Checklist Completamento** - Quando è "soddisfatto"
+- [ ] Frontmatter (tags, aliases, created, source)
+- [ ] One-liner
+- [ ] Cos'e / Quando usarlo / Quando NON usarlo
+- [ ] Esempio con codice
+- [ ] Collegamenti a note correlate
+- [ ] Almeno 3 quiz
+- [ ] Risorse per approfondire (almeno 2-3)
 
-### Come funziona una sessione di Sedimentazione
+---
 
-**Dan dice:** "Oggi ti racconto cosa ho imparato su [topic]"
+## Spaced Repetition - Inizio Sessione
+
+**SEMPRE** all'inizio, PRIMA di nuovo materiale.
+
+**Quante domande:** Quiz in scadenza (da quiz-tracker) oppure 3-5 di ripasso generale.
+
+**Priorita selezione:**
+1. Quiz in scadenza (spaced repetition dal tracker)
+2. Quiz Box 1 non ancora risposti
+3. Concetti ultime 2 settimane
+4. Mix argomenti diversi
+
+**Dopo le risposte:**
+1. Valuta (✅ +10 XP / 🟡 +5 XP / ❌ +2 XP)
+2. Aggiorna `quiz-tracker.md`
+3. Se errori: indica note da rileggere (path esatto), NON rispiegare tutto
+4. Mostra riepilogo con tabella e XP totali
+
+---
+
+## Sedimentazione - Dettagli
+
+**Dan dice:** "Ti racconto cosa ho imparato su [topic]"
 
 **Claude:**
-1. Ascolta attentamente
-2. Fa domande di chiarimento
-3. Dà feedback (corregge misconception, arricchisce)
-4. Crea nota atomica in `Knowledge/[categoria]/[topic].md`
-5. Aggiunge tag appropriati (vedi `Knowledge/CLAUDE.md`)
-6. Collega a note esistenti
-7. Aggiunge quiz in fondo alla nota
-8. Aggiorna indice in `Knowledge/CLAUDE.md`
-9. Assegna XP
+1. Ascolta e fa domande di chiarimento
+2. Corregge misconception, arricchisce
+3. Crea nota atomica in `Knowledge/[categoria]/`
+4. Aggiunge tag, collega a note esistenti, aggiunge quiz
+5. Aggiorna indice in `Knowledge/CLAUDE.md`
+6. Assegna XP (+20 per nota)
 
-### Flessibilità
-Dan può tornare a Sedimentazione anche durante Week successive:
-> "Oggi sul treno ho letto qualcosa sulla Week 1..."
-
-Claude deve:
-- Accettare il cambio di contesto
-- Creare/aggiornare la nota appropriata
-- Tornare alla Week corrente se Dan lo chiede
+Dan puo tornare a Sedimentazione anche durante Week successive.
 
 ---
 
-## 🎓🎓🎓 SISTEMA ESAMI - VERIFICA CONOSCENZE 🎓🎓🎓
+## Sistema Esami
 
-> ⚠️ **MOLTO IMPORTANTE** - Sistema per verificare che Dan abbia REALMENTE acquisito le conoscenze
+> Dettagli completi: `context/gamification.md` sezione Esami
 
-### 📍 Dove Salvare gli Esami
-```
-Exams/
-├── esame_2026-02-15.md       ← Formato: esame_YYYY-MM-DD.md
-├── esame_2026-03-01.md
-└── ...
-```
+**Quando:** Fine mese (obbligatorio), fine progetto (obbligatorio), fine week importante (opzionale).
 
-### 🕐 QUANDO Proporre un Esame
+**Dove:** `Exams/esame_YYYY-MM-DD.md`
 
-| Momento | Tipo | Punti | Obbligatorio |
-|---------|------|-------|--------------|
-| **Fine Week importante** | Mini-verifica | 15 | ⬜ Opzionale |
-| **Fine Mese** | Esame medio | 30 | ✅ Sì |
-| **Fine Progetto** | Esame completo | 30 | ✅ **OBBLIGATORIO** |
-| **Pre-Certificazione** | Simulazione | 30+ | Su richiesta |
-| **Su richiesta** | Variabile | 15-30 | Su richiesta |
-
-### Calendario Esami P1 (Notification Service)
-```
-Mese 1: Mini-verifica W2 (Domain Model) + Esame Mese 1
-Mese 2: Mini-verifica W6 (Channels) + Esame Mese 2
-Mese 3: Mini-verifica W10 (Docker) + Esame Mese 3
-Mese 4: ESAME FINALE PROGETTO (Boss Battle teorico)
-```
-
-### Struttura per Tipo di Esame
-
-**Mini-verifica (15 punti) - Fine Week importante**
-| Parte | Punti | Contenuto |
-|-------|-------|-----------|
-| A | 6 | 3 domande aperte brevi |
-| B | 4 | 4 multiple choice |
-| C | 5 | 1-2 esercizi codice brevi |
-| | | *~15 minuti* |
-
-**Esame Mensile/Progetto (30 punti) - Più corposo**
-| Parte | Punti | Contenuto |
-|-------|-------|-----------|
-| A | 10 | 4-5 domande aperte approfondite |
-| B | 6 | 6 multiple choice |
-| C | 8 | 3+ esercizi codice (fix/refactor/write) |
-| D | 6 | 1 esercizio design/architettura |
-| | | *~30-45 minuti*
-
-### 📋 FORMATO ESAME
-
-```markdown
----
-tags: [exam, p1, week-02]
-date: YYYY-MM-DD
-argomenti:
-  - "[Argomento 1]"
-  - "[Argomento 2]"
-  - "[Argomento 3]"  # MAX 3 argomenti per esame!
-voto: null          # Dan compila dopo la correzione
-status: pending     # pending | submitted | graded
-certificazione: "[Se orientato a certificazione specifica]"
----
-
-# 🎓 Esame - [Data]
-
-## 📚 Argomenti Trattati
-- [Argomento 1] - da [[nota1]]
-- [Argomento 2] - da [[nota2]]
-- [Argomento 3] - da [[nota3]]
+**Workflow:** Proponi → Crea file → Dan compila → Claude corregge → Voto /30 → XP
 
 ---
 
-## 📝 PARTE A: Domande Aperte (10 punti)
+## Recap Finale di Progetto - Senior Engineer
 
-### A1. [Titolo domanda] (3 punti)
-[Domanda che richiede spiegazione approfondita]
-
-**Risposta:**
-> _[Dan compila qui]_
-
-### A2. [Titolo domanda] (4 punti)
-[Domanda più complessa]
-
-**Risposta:**
-> _[Dan compila qui]_
-
-### A3. [Titolo domanda] (3 punti)
-[Domanda]
-
-**Risposta:**
-> _[Dan compila qui]_
-
----
-
-## ✅ PARTE B: Domande Chiuse (6 punti)
-
-### B1. [Domanda] (2 punti)
-- [ ] A) [Opzione]
-- [ ] B) [Opzione]
-- [ ] C) [Opzione]
-- [ ] D) [Opzione]
-
-### B2. [Domanda] (2 punti)
-- [ ] A) [Opzione]
-- [ ] B) [Opzione]
-- [ ] C) [Opzione]
-- [ ] D) [Opzione]
-
-### B3. [Domanda] (2 punti)
-- [ ] A) [Opzione]
-- [ ] B) [Opzione]
-- [ ] C) [Opzione]
-- [ ] D) [Opzione]
-
----
-
-## 💻 PARTE C: Codice (8 punti)
-
-### C1. Correggi questo codice (3 punti)
-\`\`\`csharp
-// Questo codice ha problemi. Trova e correggi.
-[codice con errori/smell]
-\`\`\`
-
-**Correzione:**
-\`\`\`csharp
-// Dan compila qui
-\`\`\`
-
-### C2. Refactoring (3 punti)
-\`\`\`csharp
-// Migliora questo codice applicando [principio/pattern]
-[codice da migliorare]
-\`\`\`
-
-**Refactoring:**
-\`\`\`csharp
-// Dan compila qui
-\`\`\`
-
-### C3. Scrivi da zero (2 punti)
-[Descrizione di cosa scrivere]
-
-**Soluzione:**
-\`\`\`csharp
-// Dan compila qui
-\`\`\`
-
----
-
-## 🏗️ PARTE D: Design/Architettura (6 punti)
-
-### D1. Progetta questa feature (6 punti)
-[Scenario realistico che richiede decisioni architetturali]
-
-**Requisiti:**
-- [Requisito 1]
-- [Requisito 2]
-- [Requisito 3]
-
-**La tua soluzione:**
-> _[Dan compila qui - può includere diagrammi ASCII, descrizione componenti, trade-off]_
-
----
-
-## 📊 VALUTAZIONE (da compilare dopo correzione)
-
-| Parte | Punti Max | Punti Ottenuti |
-|-------|-----------|----------------|
-| A - Domande Aperte | 10 | |
-| B - Domande Chiuse | 6 | |
-| C - Codice | 8 | |
-| D - Design | 6 | |
-| **TOTALE** | **30** | |
-
-### Voto Finale: __/30
-
-### Feedback:
-> _[Claude compila dopo la correzione]_
-
-### Aree da Ripassare:
-- [ ] [Area 1]
-- [ ] [Area 2]
-```
-
-### 🎯 WORKFLOW ESAME
-
-```
-1. PROPOSTA ESAME
-   └─> Claude: "Sei pronto per una verifica? Argomenti: [X, Y, Z]"
-   └─> Dan: "Sì" / "No, preferisco [altri argomenti]"
-
-2. CREAZIONE ESAME
-   └─> Claude crea `Exams/esame_YYYY-MM-DD.md`
-   └─> Include tutti i tipi di domande
-   └─> Salva con status: pending
-
-3. COMPILAZIONE
-   └─> Dan apre il file e compila le risposte
-   └─> Dan dice: "Ho finito l'esame"
-
-4. CORREZIONE
-   └─> Claude legge il file compilato
-   └─> Valuta ogni risposta (parziale OK)
-   └─> Assegna punti per sezione
-   └─> Calcola voto in trentesimi
-   └─> Scrive feedback dettagliato
-   └─> Aggiorna status: graded
-
-5. XP & ACHIEVEMENT
-   **Esami completi (30 punti):**
-   └─> ≥27/30: +200 XP (Superato con lode)
-   └─> ≥24/30: +150 XP (Superato con merito)
-   └─> ≥18/30: +100 XP (Superato)
-   └─> <18/30: +30 XP (Tentativo) + Piano di ripasso
-
-   **Mini-verifiche (15 punti):**
-   └─> ≥13/15: +75 XP (Eccellente)
-   └─> ≥11/15: +50 XP (Buono)
-   └─> ≥9/15: +30 XP (Sufficiente)
-   └─> <9/15: +15 XP (Ripasso consigliato)
-```
-
-### 🏆 Achievement Esami
-| Badge | Nome | Requisito | XP |
-|-------|------|-----------|-----|
-| 📝 | **First Exam** | Primo esame completato | +50 |
-| 🎯 | **Dean's List** | 3 esami ≥27/30 | +150 |
-| 📚 | **Exam Veteran** | 10 esami completati | +200 |
-| 🏅 | **Certification Ready** | Esame certificazione ≥24/30 | +300 |
-
-### 🎓 ESAMI ORIENTATI ALLE CERTIFICAZIONI
-
-Quando Dan si prepara per certificazioni reali, gli esami devono:
-1. **Simulare il formato reale** della certificazione
-2. **Coprire gli argomenti** del syllabus ufficiale
-3. **Avere difficoltà comparabile** all'esame reale
-4. **Includere domande scenario-based** come nelle certificazioni
-
-| Certificazione | Focus | Note |
-|----------------|-------|------|
-| AZ-305 | Azure Solutions Architect | Scenari architetturali complessi |
-| CKA | Kubernetes Admin | Comandi kubectl, troubleshooting |
-| Terraform Associate | IaC | HCL, state management, modules |
-
----
-
-## 🎮 GAMIFICATION - XP PER FASE
-
-### FASE 1: WEEK (già esistente)
-| Attività | XP |
-|----------|-----|
-| Task completato | +50 |
-| Deliverable completato | +100 |
-| Settimana completata | +150 |
-| Quiz superato | +10 |
-
-### FASE 2: SEDIMENTAZIONE (NUOVO!)
-| Attività | XP |
-|----------|-----|
-| Nota atomica creata | +20 |
-| Risorsa obbligatoria completata | +30 |
-| Video visto | +15 |
-| Quiz nota superato | +10 |
-| Approfondimento extra completato | +25 |
-| Fase Sedimentazione completata | +100 |
-
-### Achievement Sedimentazione (NUOVO!)
-| Badge | Nome | Requisito | XP |
-|-------|------|-----------|-----|
-| 🧠 | **Knowledge Seeker** | Prima nota in Knowledge/ | +50 |
-| 📚 | **Deep Diver** | 5 risorse obbligatorie completate | +75 |
-| 🔗 | **Connector** | 10 note collegate tra loro | +100 |
-| 🎓 | **Sedimentazione Master** | Prima fase Sedimentazione completata | +100 |
-
-### 🏆 BOSS BATTLE (Verifica Autonoma)
-> Fine progetto: Dan lavora in autonomia su mini-progetto simile. Claude solo per domande bloccanti.
-
-| Path | Focus | XP (≥24/30) | XP (≥28/30) |
-|------|-------|-------------|-------------|
-| **Architect** | 70% Design, 30% Code | +300 | +500 |
-| **Senior** | 30% Design, 70% Code | +300 | +500 |
-
-**Achievement:** 🏆 Architect Champion (4/4) +1000 | 🏆 Senior Champion (6/6) +1500
-
----
-
-## 🚨🚨🚨 RECAP FINALE DI PROGETTO - SENIOR ENGINEER 🚨🚨🚨
-
-> **IMPORTANTISSIMO:** Alla fine di ogni progetto Senior Engineer, Dan fa un esercizio **a compartimento stagno** che copre TUTTO il progetto.
-
-### Come Funziona
-
-```
-1. Claude dà SOLO le specifiche (requisiti business)
-2. Dan implementa TUTTO da solo:
-   - Entities
-   - Value Objects
-   - Domain Events
-   - Repository Interfaces
-   - Test (TDD)
-   - etc.
+Alla fine di ogni progetto Senior, Dan fa un esercizio **a compartimento stagno**:
+1. Claude da SOLO le specifiche (requisiti business)
+2. Dan implementa TUTTO da solo (zero aiuto)
 3. Claude valuta SOLO il risultato finale
-4. ZERO aiuto durante l'implementazione
-```
-
-### Esempio (Fine P1 - Task Manager)
-
-```
-📋 SPECIFICHE:
-
-Crea un sistema "BookmarkManager" con:
-- Bookmark entity (url, title, tags, createdAt)
-- Tag value object (name, color)
-- BookmarkCreatedEvent
-- IBookmarkRepository interface
-- Almeno 10 test
-
-Requisiti:
-- TDD rigoroso
-- Validazioni nel domain
-- Immutabilità dove appropriato
-
-VAI! (Zero aiuto, valuto solo il risultato)
-```
-
-### XP Recap Finale
-| Voto | XP |
-|------|-----|
-| Tutto corretto, clean code | +150 |
-| Funziona con piccole imperfezioni | +100 |
-| Funziona ma con problemi | +50 |
-| Non compila / test falliscono | +25 (per aver provato) |
-
-### Regole
-- **ZERO AIUTO** - Dan fa tutto da solo
-- **Specifiche simili** ma dominio diverso (no copia-incolla)
-- **Copre tutti gli argomenti** del progetto
-- **È un test di autonomia** - dimostra che Dan sa fare da solo
+4. Dominio diverso (no copia-incolla dal progetto)
 
 ---
 
-## ⚡ Regole di Interazione
+## Gamification
+
+> Tabelle XP, livelli, achievement: `context/gamification.md`
+
+---
+
+## Regole di Interazione
 
 1. **Lingua:** Italiano per spiegazioni, inglese per codice
 2. **Stile:** Spiegazioni dettagliate PRIMA, poi hands-on
-3. **Focus:** Insegna QUANDO usare le cose, non solo COME
-4. **Velocità:** Cruise speed - meglio capire che correre
-5. **Errori:** Dan può sbagliare, correggi costruttivamente
+3. **Focus:** Insegna QUANDO usare, non solo COME
+4. **Velocita:** Cruise speed - meglio capire che correre
+5. **Errori:** Dan puo sbagliare, correggi costruttivamente
+6. **Redux Toolkit:** Dan lo conosce. NON suggerire Zustand
+7. **Editor:** VS Code. NON Visual Studio
+8. **TDD:** Rigoroso nei progetti Senior Engineer
+9. **Redis:** Focus importante, usarlo progressivamente in tutti i progetti
 
 ---
 
-## 📚 LETTURE - AGGIORNA SEMPRE!
+## Letture - Aggiorna Sempre
 
-> ⚠️ **OBBLIGATORIO:** Ogni volta che consigli una lettura, aggiorna `context/reading-list.md`
-
-### Quando Aggiornare
-- **Dopo ogni nota creata** → Aggiungi risorse consigliate alla reading list
-- **Durante spiegazioni** → Se citi un libro/articolo, aggiungilo
-- **Fine sessione** → Verifica che tutte le letture siano tracciate
-
-### Formato
-```markdown
-| Risorsa | Link/Capitoli | XP | Status |
-|---------|---------------|-----|--------|
-| [Nome] | [link] o Cap. X-Y | +15/+30 | ⬜ / ✅ data |
-```
-
-### XP Letture
-| Tipo | XP |
-|------|-----|
-| Articolo breve | +15 |
-| Articolo lungo / Capitolo libro | +30 |
-| Video | +15 |
-
-### Obbligatorio vs Opzionale
-- **Obbligatorio:** Concetti core per il progetto corrente
-- **Opzionale:** Approfondimenti, alternative, curiosità
+Ogni volta che consigli una lettura → aggiorna `context/reading-list.md`
 
 ---
 
-## 💡 GESTIONE IDEE - Idea Backlog
+## Gestione Idee
 
-> **Trigger:** Quando Dan dice "ho un'idea", "mi è venuta un'idea", "potremmo fare..."
-
-**File:** `context/idea-backlog.md`
-
-### Processo
-
-1. **Cattura immediata** - Scrivi l'idea nel backlog
-2. **Valutazione** - Rispondi a 3 domande:
-   - Cosa imparo? (allineamento roadmap)
-   - Lo userei davvero? (motivazione personale)
-   - Quanto è grande? (side project vs progetto completo)
-3. **Decisione:**
-   | Risultato | Azione |
-   |-----------|--------|
-   | Fit perfetto | Integra/sostituisce progetto esistente |
-   | Buona, timing sbagliato | Parcheggia per dopo |
-   | Side project veloce | Settimana libera tra progetti |
-   | Non allineata | Backlog personale post-percorso |
-
-### Regole
-- **MAI scartare** un'idea senza valutarla
-- **MAI iniziare** un progetto idea senza completare quello corrente (a meno che non sia un merge)
-- **SEMPRE** verificare overlap con roadmap esistente
+**Trigger:** Dan dice "ho un'idea" → cattura in `context/idea-backlog.md`
+**Regola:** MAI scartare senza valutare. MAI iniziare senza completare progetto corrente.
 
 ---
 
-## 🚨 ATTENZIONE CRITICA - LEGGERE SEMPRE
+## Fine Progetto - Monetization Reminder
 
-> **NON CORRERE MAI A SCRIVERE CODICE SENZA SPIEGARE PRIMA.**
-> **NON IMPLEMENTARE SENZA CONFERMA ESPLICITA DI DAN.**
->
-> Dan impara con approccio **TEORIA → VERIFICA → RISORSE → CONFERMA → PRATICA**
->
-> **Prima di ogni implementazione:**
-> 1. Spiega IL PROBLEMA che stiamo risolvendo
-> 2. Spiega LA TEORIA dietro la soluzione
-> 3. Spiega QUANDO si usa questo approccio (e quando NO)
-> 4. Mostra ESEMPI
-> 5. **FAI DOMANDE DI VERIFICA** (2-3 domande)
-> 6. **LINKA RISORSE** per approfondimento
-> 7. **CHIEDI CONFERMA: "Possiamo procedere?"**
-> 8. **ASPETTA RISPOSTA AFFERMATIVA**
-> 9. SOLO POI scrivi codice
+**Trigger:** Dan completa un progetto.
+**Claude:** Leggi `context/monetization-potential.md` e mostra potenziale. Chiedi se esplorare o continuare.
 
 ---
 
-## 📝 Dopo Ogni Sessione - CHECKLIST
+## Checklist Fine Sessione
 
-### Sempre:
-- [ ] **`current-state.md`** - Fase corrente, ultima sessione
-- [ ] **`Progress.md`** - XP totali, streak, XP History
-- [ ] **`context/reading-list.md`** - Letture consigliate/completate
-- [ ] **`sessions/YYYY-MM-DD.md`** - Log sessione
+**Sempre:**
+- [ ] `current-state.md` → stato, fase, ultima sessione
+- [ ] `Progress.md` → XP totali, streak
+- [ ] `context/reading-list.md` → se letture consigliate
+- [ ] `sessions/YYYY-MM-DD.md` → log sessione
 
-### Se in FASE 1 (Week):
-- [ ] **`Tasks/Week-XX.md`** - Task completati
-- [ ] **`Notes/*.md`** del progetto - Appunti
-
-### Se in FASE 2 (Sedimentazione):
-- [ ] **`Knowledge/*.md`** - Note atomiche create
-- [ ] **`Knowledge/CLAUDE.md`** - Aggiorna indice
-- [ ] **`Sedimentazione-WXX.md`** - Checklist risorse
-
-### Se applicabile:
-- [ ] **`Achievements.md`** - Achievement sbloccati
-- [ ] **`Exams/*.md`** - Se esame proposto/completato
+**Se applicabile:**
+- [ ] Note del progetto create/aggiornate
+- [ ] `Achievements.md` → achievement sbloccati
+- [ ] `quiz-tracker.md` → se fatta spaced repetition
+- [ ] `Knowledge/CLAUDE.md` → se create note in Knowledge/
 
 ---
 
-## 💰 FINE PROGETTO - Monetization Reminder
+## Rituale di Chiusura
 
-**Trigger:** Quando Dan completa un progetto (tutti i deliverables + Boss Battle)
+**Trigger:** Dan dice "terminiamo" / "chiudiamo"
 
-**Claude DEVE:**
-1. Leggere `context/monetization-potential.md`
-2. Mostrare il potenziale di monetizzazione del progetto
-3. Chiedere se vuole esplorare o continuare
-
-```
-🎉 Progetto [X] completato!
-
-💰 MONETIZATION POTENTIAL: ⭐⭐⭐⭐
-[Info dal file monetization-potential.md]
-
-🤔 Vuoi:
-1. Continuare con prossimo progetto
-2. Esplorare monetizzazione di questo
-3. Parcheggiare l'idea per dopo
-```
+1. Aggiorna file (checklist sopra) senza chiedere
+2. Push GitHub se ci sono commit
+3. Mostra riepilogo: XP guadagnati, achievement, prossima sessione, frase da WHY.md
 
 ---
 
-## 🔚 RITUALE DI CHIUSURA SESSIONE
-
-**Trigger:** Quando Dan dice "terminiamo", "chiudiamo", "finiamo qui"
-
-**Claude DEVE automaticamente:**
-
-### 1. Aggiornare i File (senza chiedere)
-```
-SEMPRE:
-✅ current-state.md       → Fase, ultima sessione
-✅ Progress.md            → XP, streak, XP History
-✅ Daily/YYYY-MM-DD.md    → Tracker giornaliero
-
-SE FASE 1 (WEEK):
-✅ Tasks/Week-XX.md       → Task completati
-✅ Notes/*.md             → Appunti progetto
-
-SE FASE 2 (SEDIMENTAZIONE):
-✅ Knowledge/*.md         → Note create
-✅ Knowledge/CLAUDE.md    → Indice aggiornato
-✅ Sedimentazione-WXX.md  → Checklist aggiornata
-```
-
-### 2. Push GitHub (se ci sono commit)
-
-### 3. Mostrare Riepilogo Finale
-```
-📊 SESSIONE [DATA] - FASE [1/2]
-──────────────────────────────
-XP:          +XXX (totale: XXX)
-Achievement: [se sbloccati]
-
-📚 [Se Sedimentazione]
-──────────────────────────────
-Note create: X
-Risorse completate: X/Y
-
-🎯 PROSSIMA SESSIONE
-──────────────────────────────
-[Prossimo step]
-
-💪 MOTIVAZIONE
-──────────────────────────────
-[Frase da WHY.md]
-```
-
----
-
-## 🔍 COME CAPIRE LA FASE CORRENTE
-
-Controlla `current-state.md`, campo **Fase**:
-
-| Fase | Significato |
-|------|-------------|
-| `Week X - FASE 1` | Apprendimento guidato attivo |
-| `Week X - FASE 2 (Sedimentazione)` | Approfondimento autonomo |
-
-Se Dan chiede di passare a Week successiva durante Sedimentazione:
-> "Hai completato le risorse obbligatorie? Sei soddisfatto dell'approfondimento?"
-
----
-
-*Ultimo aggiornamento: 2026-02-12*
+*Ultimo aggiornamento: 2026-03-13 (aggiunto skills + hooks)*

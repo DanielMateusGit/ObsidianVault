@@ -181,7 +181,7 @@ Architect Quest P5 (Backend)     Senior Frontend P5 (Mobile)
 |------------|----------|--------|
 | TanStack Router | P1 | Type-safe routing, meglio di React Router |
 | TanStack Query | P1, P2 | Data fetching moderno |
-| Zustand/Jotai | P1 | State leggero vs RTK |
+| Zustand/Jotai | P1 | State leggero - diverso da RTK, impararlo per versatilita (*) |
 | Server Components | P4 | Il futuro di React |
 | Storybook 8 | P3 | Component development |
 
@@ -230,12 +230,13 @@ P5: FitHub Mobile 📱  ░░░░░░░░░░░░░░░░░░�
 
 ## 📝 Note
 
-- **Nessuna deadline rigida** - è un side track
+- **Nessuna deadline rigida** - e un side track
 - **Inizia quando vuoi** - dopo aver consolidato BE basics
 - **Flessibile** - progetti possono cambiare in base a nuove idee
-- **P1 Focus Tube è il core React** - gli altri React sono "nice to have"
-- **P5 FitHub Mobile è il core Flutter** - progetto reale monetizzabile!
+- **P1 Focus Tube e il core React** - gli altri React sono "nice to have"
+- **P5 FitHub Mobile e il core Flutter** - progetto reale monetizzabile!
 - **Flutter skill nuova** - rispolverare dal 2021, ottimo per portfolio
+- **(*)Zustand in P1:** Dan conosce gia Redux Toolkit e lo usa nei percorsi principali. In questo side track, Zustand/Jotai e intenzionale come opportunita di apprendimento per ampliare la versatilita frontend. NON sostituisce RTK nei progetti core.
 
 ---
 

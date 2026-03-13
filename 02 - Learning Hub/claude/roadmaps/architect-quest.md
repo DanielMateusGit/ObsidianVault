@@ -1,6 +1,7 @@
 # 🏛️ Roadmap Completa: Architect Quest
 
-> Percorso 18 mesi per diventare System Architect AI-Native
+> Percorso 30-36 mesi per diventare System Architect AI-Native
+> *(10-15 ore/settimana con lavoro full-time. Progetti CORE = obbligatori, STRETCH = se tempo/energia)*
 
 ## 🎯 Obiettivo Finale
 
@@ -64,35 +65,39 @@ Essere capace di:
 
 ---
 
-## 📅 Timeline Overview (24 Mesi)
+## 📅 Timeline Overview (30-36 Mesi)
+
+> **Nota:** A 10-15 ore/settimana con lavoro full-time, la timeline reale è 30-36 mesi.
+> I mesi indicati sono approssimativi. Progetti CORE vanno completati, STRETCH sono opzionali.
 
 ```
-SHARED SERVICES
+SHARED SERVICES (CORE)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 1-4:   P1 - Notification Service 📧 [SHARED SERVICE]
-Mesi 5-6:   P2.5 - AI Gateway 🤖 [SHARED SERVICE]
+Mesi 1-5:   P1 - Notification Service 📧 [SHARED SERVICE] ⭐ CORE
+Mesi 6-8:   P2.5 - AI Gateway 🤖 [SHARED SERVICE] ⭐ CORE
 
-DOMAIN PROJECTS (Didattici)
+DOMAIN PROJECTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 5-9:   P2 - NutriPlan (DDD, CQRS) ← USA: Notification
-Mesi 10-14: P3 - BookingHub (Saga, K8s) ← USA: Notification + AI Gateway
-Mesi 15-18: P4 - FamilyBudget (Flutter) ← USA: Notification + AI Gateway
+Mesi 6-12:  P2 - NutriPlan (DDD, CQRS) ← USA: Notification ⭐ CORE
+Mesi 13-18: P3 - BookingHub (Saga, K8s) ← USA: Notif + AI GW ⭐ CORE
+Mesi 19-24: P4 - FamilyBudget (Flutter) ← USA: Notif + AI GW 🔹 STRETCH
 
 CAPSTONE REALE 🏆
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 19-22: P5 - FitHub 🏋️ (REALE!) ← UNISCE TUTTO + Monetizzabile!
+Mesi 25-30: P5 - FitHub 🏋️ (REALE!) ← UNISCE TUTTO 🔹 STRETCH
             └── Backend: Multi-tenant + AI + Subscriptions
-            └── Usa patterns da P1, P2, P2.5, P3, P4
             └── Flutter app: Senior Frontend Track
 
 AI-FIRST TRACK 🧠 (Parallelo)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 7-8:   AI-1 - AI Second Brain 🧠 (parallelo a P2)
-Mesi 15-16: AI-2 - AI Interview Coach 🎤 (pre-job search)
-Mesi 23-24: AI-3 - Personal Copilot 🤖 (post-FitHub)
+Mesi 20-22: AI-2 - AI Interview Coach 🎤 (pre-job search) ⭐ CORE
+Mesi 31-33: AI-3 - Personal Copilot 🤖 (post-FitHub) 🔹 STRETCH
 ```
 
-**📧 = Shared Service** | **🤖 = AI Integration** | **🧠 = AI-First** | **🏋️ = Progetto REALE**
+**⭐ CORE** = Obbligatorio | **🔹 STRETCH** = Se tempo/energia | **📧 = Shared** | **🏋️ = Reale**
+
+> **Nota AI-1:** AI Second Brain è stato unito al Capstone Senior Engineer (P6).
+> Vedi `senior-engineer.md` per dettagli.
 
 ---
 
@@ -754,92 +759,13 @@ var formFeedback = await _aiGateway.AnalyzeAsync(new AnalyzeRequest
 
 ---
 
-## 🧠 AI-1: AI Second Brain (Mesi 7-8) 🧠 AI-FIRST
+## 🧠 AI-1: AI Second Brain → Unito al Capstone Senior
 
-> **Tipo:** AI-First Project - Lo userai OGNI GIORNO!
-> **Parallelo a:** P2 NutriPlan
-> **Nota:** Questo è il track AI parallelo, numerazione separata dai Domain Projects
-
-### Obiettivo
-Il tuo Obsidian vault diventa queryabile con AI. Semantic search sulle TUE note.
-
-### Stack
-- .NET 8 Minimal API (backend)
-- Qdrant o ChromaDB (vector DB)
-- Ollama embeddings (locale) + Claude per query complesse
-- Obsidian plugin o CLI
-
-### Cosa Impari
-- **RAG completo** (chunking, embeddings, retrieval, generation)
-- **Vector databases** (similarity search, indexing)
-- **Embedding models** (sentence transformers, dimensionality)
-- **Prompt engineering avanzato** (context injection, few-shot)
-- **Semantic search** vs keyword search
-
-### Come Funziona
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    TUO OBSIDIAN VAULT                       │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐           │
-│  │ CQRS.md │ │ DDD.md  │ │Redis.md │ │ ...     │           │
-│  └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘           │
-└───────┼───────────┼───────────┼───────────┼─────────────────┘
-        │           │           │           │
-        ▼           ▼           ▼           ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    CHUNKING + EMBEDDING                     │
-│         Ogni nota → chunks → vectors (1536 dim)             │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    VECTOR DATABASE                          │
-│                    (Qdrant/ChromaDB)                        │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│  TUA QUERY: "Cosa ho imparato su Event Sourcing?"           │
-│                              │                              │
-│                              ▼                              │
-│  1. Query → embedding                                       │
-│  2. Similarity search → top 5 chunks                        │
-│  3. Chunks + query → LLM                                    │
-│  4. Risposta basata sulle TUE note!                         │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Settimane
-
-**Mese 7: RAG Foundation**
-- W1: Vector DB setup (Qdrant), embedding pipeline
-- W2: Chunking strategies, Obsidian vault indexing
-- W3: Retrieval + basic Q&A
-- W4: Prompt optimization, context window management
-
-**Mese 8: Features + Polish**
-- W5: Quiz generation dalle note
-- W6: "Related notes" suggestions
-- W7: CLI o Obsidian plugin
-- W8: Boss Battle
-
-### 🏆 Boss Battle: "Documentation Q&A"
-
-**Scenario:** Estendi Second Brain per queryare documentazione tecnica esterna (Microsoft Docs, MDN, etc.)
-
-| Parte | Deliverable |
-|-------|-------------|
-| **A. Design** | ADR-001 (chunking strategy per docs tecniche), C4 Container |
-| **B. Domain Model** | Document, Chunk, QueryResult, Source tracking |
-| **C. API Spec** | OpenAPI per index URL, query, list sources |
-| **D. Implementazione** | Web scraper + indexer per docs esterne |
-
-### Deliverables
-- [ ] Vector DB con tue note indicizzate
-- [ ] Q&A funzionante sulle tue note
-- [ ] Quiz auto-generation
-- [ ] CLI o plugin Obsidian
-- [ ] < 3 sec response time
+> **NOTA:** AI Second Brain è stato unito al Progetto 6 (Capstone) del Senior Engineer Path.
+> È il capstone ideale perché combina RAG, vector DB, embeddings con tutti i pattern Senior
+> (TDD, CQRS, Redis, Docker, SignalR, Microservices).
+>
+> Vedi: `roadmaps/senior-engineer.md` → Progetto 6
 
 ---
 
@@ -1075,7 +1001,7 @@ Un Copilot personalizzato che conosce il TUO stile di codice e i TUOI progetti.
 
 ## 🎯 Competenze Finali
 
-Alla fine dei 20 mesi:
+Alla fine del percorso:
 
 ### Architecture & Design
 - [ ] Clean Architecture
@@ -1126,5 +1052,5 @@ Alla fine dei 20 mesi:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-24*
-*Versione: 4.0 - Aggiunto P5 FitHub (Capstone Reale) + AI Track rinumerato (AI-1, AI-2, AI-3)*
+*Ultimo aggiornamento: 2026-03-13*
+*Versione: 5.0 - Timeline realistica (30-36 mesi), AI-1 unito a Senior P6, progetti CORE vs STRETCH*

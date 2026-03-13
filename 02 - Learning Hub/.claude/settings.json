@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "command": ".claude/hooks/validate-note.sh",
+        "description": "Valida che le note in Knowledge/ rispettino il template obbligatorio"
+      }
+    ],
+    "Stop": [
+      {
+        "type": "prompt",
+        "prompt": "Prima di terminare, verifica: se durante questa sessione sono stati letti file di contesto (current-state.md, quiz-tracker.md) o assegnati XP, ricorda a Dan di usare /end per chiudere la sessione correttamente. Se Dan ha già usato /end o non è stata una sessione di studio, non dire nulla."
+      }
+    ]
+  }
+}
