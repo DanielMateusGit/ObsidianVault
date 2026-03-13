@@ -17,16 +17,17 @@ current_week: W1
 - Portfolio per aziende internazionali
 - Target: €90k-130k remote
 
-## 🗺️ I 6 Progetti
+## 🗺️ I 7 Progetti
 
-| # | Progetto | Focus | Durata |
-|---|----------|-------|--------|
-| 1 | [[Projects/P1-Task-Manager/00-Overview\|Task Manager]] | TDD, Redis basics | 2 sett |
-| 2 | [[Projects/P2-Chat-App/00-Overview\|Chat App]] | SignalR, Pub/Sub | 3 sett |
-| 3 | [[Projects/P3-Ecommerce/00-Overview\|E-Commerce]] | CQRS, Event Sourcing | 4 sett |
-| 4 | [[Projects/P4-Notifications/00-Overview\|Notifications]] | Microservices | 3 sett |
-| 5 | [[Projects/P5-URL-Shortener/00-Overview\|URL Shortener]] | Redis Primary DB | 3 sett |
-| 6 | [[Projects/P6-Capstone/00-Overview\|Capstone]] | Everything | 6 mesi |
+| # | Progetto | Focus | Durata | Status |
+|---|----------|-------|--------|--------|
+| 1 | [[Projects/P1-Task-Manager/00-Overview\|Task Manager]] | TDD, CQRS, Redis cache | 3 sett | 🟢 In corso |
+| 1.5 | [[Projects/P1.5-Auth/00-Overview\|Auth & Security]] | JWT, OWASP, Refresh tokens | 1 sett | 🔒 |
+| 2 | [[Projects/P2-Chat/00-Overview\|Real-Time Chat]] | SignalR, Redis Pub/Sub, React | 3 sett | 🔒 |
+| 3 | [[Projects/P3-Ecommerce/00-Overview\|E-Commerce Cart]] | CQRS, Event Sourcing, Saga | 4 sett | 🔒 |
+| 4 | [[Projects/P4-AlertGateway/00-Overview\|Alert Gateway]] | Microservices, RabbitMQ, Polly | 3 sett | 🔒 |
+| 5 | [[Projects/P5-UrlShortener/00-Overview\|URL Shortener]] | Redis Primary DB, 1000+ req/sec | 3 sett | 🔒 |
+| 6 | [[Projects/P6-Capstone/00-Overview\|Capstone]] | Everything + AI + K8s | 10 mesi | 🔒 |
 
 ## 🛠️ Stack
 .NET 8, React, TypeScript, Redux Toolkit, SQL Server, Redis

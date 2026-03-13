@@ -17,12 +17,12 @@
 ## 📅 Timeline Overview
 
 ```
-Settimane 1-2:   P1 - Task Manager (Clean Arch, TDD, Redis basics)
-Settimana 3:     P1.5 - Auth & Security 🔐 (JWT, OWASP basics)
-Settimane 4-6:   P2 - Chat App (SignalR, Redis Pub/Sub)
-Settimane 7-10:  P3 - E-commerce Cart (CQRS, Event Sourcing)
-Settimane 11-13: P4 - Alert Gateway (Microservices, Circuit Breaker) ← RINOMINATO
-Settimane 14-16: P5 - URL Shortener (Redis as Primary DB)
+Settimane 1-3:   P1 - Task Manager (Clean Arch, TDD, CQRS, Redis cache)
+Settimana 4:     P1.5 - Auth & Security 🔐 (JWT, OWASP basics)
+Settimane 5-7:   P2 - Chat App (SignalR, Redis Pub/Sub)
+Settimane 8-11:  P3 - E-commerce Cart (CQRS, Event Sourcing)
+Settimane 12-14: P4 - Alert Gateway (Microservices, Circuit Breaker)
+Settimane 15-17: P5 - URL Shortener (Redis as Primary DB)
 Mesi 6-16:       P6 - Capstone: Academic Knowledge Hub
 Mesi 17-18:      Job Search + Portfolio
 ```
@@ -77,46 +77,66 @@ Una "prova finale" dove Dan implementa in **autonomia** un mini-progetto o featu
 
 ---
 
-## ✅ PROGETTO 1: Task Manager API (Settimane 1-2)
+## ✅ PROGETTO 1: Task Manager API (Settimane 1-3)
 
 ### Obiettivo
 REST API per gestire task con TDD, Redis caching, design patterns base.
 
 ### Stack
 - .NET 8 Web API
-- SQL Server
+- PostgreSQL
 - Redis (caching)
-- xUnit, FluentAssertions, Moq
+- xUnit, FluentAssertions, NSubstitute
 
 ### Cosa Impari
 - Clean Architecture in pratica
 - TDD workflow (Red → Green → Refactor)
-- Repository Pattern
+- Repository Pattern + UnitOfWork
 - Factory Pattern
 - Strategy Pattern
 - Redis per caching
+- CQRS con MediatR
 
 ### Design Patterns Introdotti
 
 | Pattern | Problema che Risolve |
 |---------|---------------------|
 | **Repository** | Astrae l'accesso ai dati |
+| **UnitOfWork** | Gestisce transazioni atomiche |
 | **Factory** | Crea task con configurazioni diverse |
 | **Strategy** | Algoritmi diversi di prioritizzazione |
 
 ### Settimane
 
-**Week 1: Setup + TDD**
-- Setup struttura Clean Architecture
-- TDD basics: Red → Green → Refactor
-- Domain model con TDD (TaskItem entity)
-- Repository Pattern
+**Week 1: Domain + Application Layer**
+- Domain model con TDD (Entities, VO, Events)
+- Repository Interfaces + IUnitOfWork
+- MediatR setup
+- Commands (Create, Update, Complete, Delete Task)
+- Queries (GetById, GetAll, GetByStatus)
+- DTOs + FluentValidation
+- Behaviors (Validation, Logging)
 
-**Week 2: API + Redis + Patterns**
-- CRUD API endpoints
-- Redis caching
-- Factory Pattern
-- Strategy Pattern per prioritizzazione
+**Week 2: Infrastructure + API Layer**
+- AppDbContext + Entity Configurations
+- Repository implementations
+- UnitOfWork implementation
+- EF Core Migrations
+- Controllers (Tasks, Projects, Tags)
+- Exception handling middleware
+- Serilog structured logging
+- Swagger/OpenAPI
+- Integration tests (TestContainers)
+- API tests (WebApplicationFactory)
+
+**Week 3: Redis + Patterns + Boss Battle**
+- Redis caching setup
+- Cache-aside pattern
+- Factory Pattern (TaskFactory)
+- Strategy Pattern (prioritization algorithms)
+- Performance tests
+- 80%+ test coverage
+- Boss Battle: Note-Taking API
 
 ### Deliverables
 - [ ] REST API CRUD completa
@@ -1253,5 +1273,5 @@ Result: Qual è stato il risultato (numeri se possibile)
 
 ---
 
-*Ultimo aggiornamento: 2026-02-12*
-*Versione: 3.0 - AI Features + Boss Battle + Career Boost*
+*Ultimo aggiornamento: 2026-03-04*
+*Versione: 3.1 - P1 roadmap rivista (3 settimane)*

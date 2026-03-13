@@ -716,6 +716,61 @@ Quando Dan si prepara per certificazioni reali, gli esami devono:
 
 ---
 
+## 🚨🚨🚨 RECAP FINALE DI PROGETTO - SENIOR ENGINEER 🚨🚨🚨
+
+> **IMPORTANTISSIMO:** Alla fine di ogni progetto Senior Engineer, Dan fa un esercizio **a compartimento stagno** che copre TUTTO il progetto.
+
+### Come Funziona
+
+```
+1. Claude dà SOLO le specifiche (requisiti business)
+2. Dan implementa TUTTO da solo:
+   - Entities
+   - Value Objects
+   - Domain Events
+   - Repository Interfaces
+   - Test (TDD)
+   - etc.
+3. Claude valuta SOLO il risultato finale
+4. ZERO aiuto durante l'implementazione
+```
+
+### Esempio (Fine P1 - Task Manager)
+
+```
+📋 SPECIFICHE:
+
+Crea un sistema "BookmarkManager" con:
+- Bookmark entity (url, title, tags, createdAt)
+- Tag value object (name, color)
+- BookmarkCreatedEvent
+- IBookmarkRepository interface
+- Almeno 10 test
+
+Requisiti:
+- TDD rigoroso
+- Validazioni nel domain
+- Immutabilità dove appropriato
+
+VAI! (Zero aiuto, valuto solo il risultato)
+```
+
+### XP Recap Finale
+| Voto | XP |
+|------|-----|
+| Tutto corretto, clean code | +150 |
+| Funziona con piccole imperfezioni | +100 |
+| Funziona ma con problemi | +50 |
+| Non compila / test falliscono | +25 (per aver provato) |
+
+### Regole
+- **ZERO AIUTO** - Dan fa tutto da solo
+- **Specifiche simili** ma dominio diverso (no copia-incolla)
+- **Copre tutti gli argomenti** del progetto
+- **È un test di autonomia** - dimostra che Dan sa fare da solo
+
+---
+
 ## ⚡ Regole di Interazione
 
 1. **Lingua:** Italiano per spiegazioni, inglese per codice

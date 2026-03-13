@@ -26,11 +26,6 @@
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/TaskManager.Api.sourcelink.json
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets.build.json
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets.development.json
-/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.TaskManager.Api.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.build.TaskManager.Api.props
-/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TaskManager.Api.props
-/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TaskManager.Api.props
-/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets.pack.json
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/scopedcss/bundle/TaskManager.Api.styles.css
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/TaskMana.4D7FE283.Up2Date
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/TaskManager.Api.dll
@@ -38,3 +33,8 @@
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/TaskManager.Api.pdb
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/TaskManager.Api.genruntimeconfig.cache
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/ref/TaskManager.Api.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.TaskManager.Api.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.build.TaskManager.Api.props
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TaskManager.Api.props
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TaskManager.Api.props
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Api/obj/Debug/net8.0/staticwebassets.pack.json

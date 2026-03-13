@@ -14,13 +14,13 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 102 |
-| **Risposte corrette** | 58 |
-| **Risposte parziali** | 5 |
+| **Quiz totali** | 127 |
+| **Risposte corrette** | 67 |
+| **Risposte parziali** | 6 |
 | **Risposte sbagliate** | 1 |
-| **Non risposti** | 23 |
-| **Challenge completate** | 8 |
-| **Streak challenge** | 2 |
+| **Non risposti** | 48 |
+| **Challenge completate** | 9 |
+| **Streak challenge** | 5 |
 
 ---
 
@@ -98,8 +98,8 @@ updated: 2026-02-05
 #### Open/Closed Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦4 | 2026-02-17 | 2026-03-03 | ✅ Corretto |
-| OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦4 | 2026-02-19 | 2026-03-05 | ✅ Corretto |
+| OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦5 | 2026-03-04 | 2026-04-03 | ✅ Padroneggiato |
+| OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦5 | 2026-03-13 | 2026-04-12 | ✅ Padroneggiato |
 | OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦4 | 2026-02-19 | 2026-03-05 | ✅ Corretto |
 
 #### Single Responsibility Principle
@@ -144,7 +144,7 @@ updated: 2026-02-05
 #### Facade Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| FAC-01 | Stripe payment: Facade o Factory? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
+| FAC-01 | Stripe payment: Facade o Factory? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
 | FAC-02 | PaymentFacade God Object - cosa faresti? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
 | FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
 
@@ -153,10 +153,10 @@ updated: 2026-02-05
 ### Domain Events
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦2 | 2026-03-02 | 2026-03-05 | ✅ Corretto |
+| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
 | EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
 | EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
-| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
+| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-03-04 | 2026-03-07 | 🟡 Parziale |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -165,7 +165,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
 | CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
-| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
+| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
 | BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
 | BEHAV-02 | Perché next() solo se validazione passa? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
@@ -182,7 +182,7 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
-| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
+| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
 | PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
 
 ### CQRS Queries
@@ -196,7 +196,7 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | APP-01 | Cosa NON fa l'Application Layer? | 📦1 | - | Ora | ⬜ Non risposto |
-| APP-02 | Handler dipende da AppDbContext - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+| APP-02 | Handler dipende da AppDbContext - cosa c'è di sbagliato? | 📦3 | 2026-03-13 | 2026-03-20 | ✅ Corretto |
 | APP-03 | Come ristrutturi un NotificationService con 15 metodi? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### CQRS Commands
@@ -209,7 +209,7 @@ updated: 2026-02-05
 ### Unit of Work
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| UOW-01 | Collega mette SaveChanges in ogni repository - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+| UOW-01 | Collega mette SaveChanges in ogni repository - cosa c'è di sbagliato? | 📦3 | 2026-03-13 | 2026-03-20 | ✅ Corretto |
 | UOW-02 | Serve UpdateAsync prima di SaveChanges con EF Core? | 📦1 | - | Ora | ⬜ Non risposto |
 | UOW-03 | Perché DbContext deve essere Scoped nel DI? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -234,12 +234,57 @@ updated: 2026-02-05
 | MOCK-02 | Verificare SaveChangesAsync - utile o testing il mock? | 📦1 | - | Ora | ⬜ Non risposto |
 | MOCK-03 | Quando usare Fake invece di Mock? | 📦1 | - | Ora | ⬜ Non risposto |
 
+---
+
+### Claude Code (Corso)
+
+#### Fundamentals
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CLCODE-01 | Perché serve un Coding Assistant invece di usare direttamente il LLM? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-02 | Preferenza personale async/await: CLAUDE.md, CLAUDE.local.md o ~/.claude/CLAUDE.md? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-03 | Fix bug login: quale approccio contesto è migliore? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-10 | /init su nuovo progetto: cosa crea automaticamente? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-11 | @file.ts vs @docs/ vs @url: quando usare ciascuno? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-12 | Contesto troppo: quali sono i sintomi? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-13 | Tool nativi (Read/Write) vs MCP: quando preferire MCP? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### Advanced Features
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CLCODE-04 | Quick refactoring 3 linee: Opus+High, Sonnet+Medium, o Haiku+Off? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-06 | Claude usa .then() invece di async/await: cosa fai? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-14 | Planning Mode + Thinking High: quando usare questa combo? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-15 | Screenshot Ctrl+V: 3 use cases pratici? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-16 | ESC vs ESC+ESC vs /compact vs /clear: quale quando? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-17 | Custom command con argomenti: sintassi nel file .md? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### MCP & Automation
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CLCODE-05 | Workflow ADO→Claude→GitHub: qual è il ruolo critico dell'umano? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-18 | Setup MCP GitHub: dove va la configurazione? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-19 | MCP locale vs remoto: esempi di ciascuno? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-20 | Workflow semi-automatizzato: quale % automazione vs controllo umano? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### Hooks & SDK
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CLCODE-07 | TypeScript check post-edit: come configuri l'hook? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-08 | Claude SDK hook vs linter: qual è il vantaggio? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-09 | Quale NON dovrebbe essere un hook? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-21 | Hook matcher: "**/*.ts" vs "**/src/**" - differenza? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-22 | Hook feedback: error vs warning vs info - quando usare ciascuno? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-23 | Hook chain (tsc→lint→test): come configurare l'ordine? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-24 | Claude SDK in hook: esempio pratico di code review automatico? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-25 | Pattern TDD con hook: descrivi il loop automatico | 📦1 | - | Ora | ⬜ Non risposto |
+
 ### Infrastructure Layer
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | INFRA-01 | Direzione dipendenze: Application può dipendere da Infrastructure? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 | INFRA-02 | Cosa NON appartiene a Infrastructure: Repository, DbContext, o IRepository? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
-| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
+| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
 | INFRA-04 | EF Core o Dapper per report su milioni di record? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 | INFRA-05 | PostgreSQL vs MongoDB: quali domande fare per decidere? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 
@@ -348,6 +393,19 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-03-02 | PORT-01 | ✅ | +10 | Box 3→4 |
 | 2026-03-02 | PORT-03 | ✅ | +10 | Box 3→4 |
 | 2026-03-02 | QRY-02 | 🟡 | +5 | Box 3→2 (parziale - encapsulation) |
+| 2026-03-04 | OCP-01 | ✅ | +10 | Box 4→5 🎉 PRIMO PADRONEGGIATO! |
+| 2026-03-04 | EVT-04 | 🟡 | +5 | Box 3→2 (parziale - mancava "no dipendenze") |
+| 2026-03-04 | INFRA-03 | ✅ | +10 | Box 3→4 |
+| 2026-03-04 | FAC-01 | ✅ | +10 | Box 3→4 |
+| 2026-03-04 | PORT-02 | ✅ | +10 | Box 3→4 |
+| 2026-03-04 | UOW-01 | ✅ | +10 | Box 1→2 (primo UoW!) |
+| 2026-03-04 | APP-02 | ✅ | +10 | Box 1→2 |
+| 2026-03-04 | EVT-01 | ✅ | +10 | Box 2→3 |
+| 2026-03-13 | EVT-01 | ✅ | +10 | Box 3→4 |
+| 2026-03-13 | UOW-01 | ✅ | +10 | Box 2→3 |
+| 2026-03-13 | OCP-02 | ✅ | +40 | Box 4→5 🎉 PADRONEGGIATO + 5 streak bonus! |
+| 2026-03-13 | CQRS-03 | ✅ | +10 | Box 3→4 |
+| 2026-03-13 | APP-02 | ✅ | +10 | Box 2→3 |
 
 ---
 
@@ -418,4 +476,4 @@ Le seguenti note in `Knowledge/` hanno quiz che devono essere tracciati:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-28*
+*Ultimo aggiornamento: 2026-03-04*

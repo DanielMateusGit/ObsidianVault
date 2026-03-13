@@ -1,12 +1,13 @@
 ---
 tags: [learning, progress, gamification]
-xp: 1934
-level: 3
-title: "Pattern Seeker"
-streak: 2
+xp: 3864
+level: 6
+title: "Domain Master"
+streak: 6
 longest_streak: 9
-architect_quest_week: "P1-W3"
+architect_quest_week: "P1-W4"
 senior_engineer_week: "P1-W1"
+ai_course: "Claude Code in Action ✅ COMPLETED"
 ---
 
 # 📈 Progress Tracker
@@ -117,6 +118,13 @@ dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-03-04 | Recap #4: ITagRepository ✅ | Senior P1-W1 | +75 | 2779 |
+| 2026-03-04 | Repository Interfaces (ITask, IProject) | Senior P1-W1 | +50 | 2704 |
+| 2026-03-04 | Recap #3: TaskCompletedEvent ✅ | Senior P1-W1 | +75 | 2654 |
+| 2026-03-04 | 🧠 Spaced Repetition (4/5 correct) | Ripasso | +45 | 2579 |
+| 2026-03-04 | 🎉 LEVEL UP → System Architect (Lv.5) | - | - | 2534 |
+| 2026-03-04 | Domain Events TDD + refactor | Senior P1-W1 | +50 | 2534 |
+| 2026-03-04 | Recap #2: Money Value Object ✅ | Senior P1-W1 | +75 | 2484 |
 | 2026-02-17 | 28 Validator Tests ✅ (9d237b2) | P1-W3 | +30 | 1934 |
 | 2026-02-17 | FluentValidation + ValidationBehavior ✅ | P1-W3 | +50 | 1904 |
 | 2026-02-17 | 📝 Nota FluentValidation | P1-W3 | +40 | 1854 |

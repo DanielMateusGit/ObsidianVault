@@ -63,9 +63,9 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 2409 |
-| **Livello** | 4 - Module Builder (prossimo: 2500 XP → 91 XP mancanti!) |
-| **Streak** | 4 giorni |
+| **XP Totali** | 2779 |
+| **Livello** | 5 - System Architect 🎉 LEVEL UP! |
+| **Streak** | 5 giorni |
 | **Data inizio** | 2025-01-29 |
 | **Achievement sbloccati** | 7 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire, **First Exam**) |
 
@@ -91,13 +91,21 @@
 
 | Progetto | Status | Settimana |
 |----------|--------|-----------|
-| P1 - Task Manager | 🟢 **In corso** | W1 (iniziato 2026-03-02) |
-| P1.5 - Auth & Security 🔐 | 🔒 Locked | W3 |
-| P2 - Chat App | 🔒 Locked | W4-6 |
-| P3 - E-commerce | 🔒 Locked | W7-10 |
-| P4 - Alert Gateway | 🔒 Locked | W11-13 |
-| P5 - URL Shortener | 🔒 Locked | W14-16 |
+| P1 - Task Manager | 🟢 **In corso** | W1-3 (iniziato 2026-03-02) |
+| P1.5 - Auth & Security 🔐 | 🔒 Locked | W4 |
+| P2 - Chat App | 🔒 Locked | W5-7 |
+| P3 - E-commerce | 🔒 Locked | W8-11 |
+| P4 - Alert Gateway | 🔒 Locked | W12-14 |
+| P5 - URL Shortener | 🔒 Locked | W15-17 |
 | P6 - Capstone | 🔒 Locked | M6-16 |
+
+### 📅 P1 Task Manager - Roadmap (3 Settimane)
+
+| Week | Focus | Status |
+|------|-------|--------|
+| **W1** | Domain + Application Layer | 🟡 60% (Domain ✅, App ⬜) |
+| **W2** | Infrastructure + API Layer | ⬜ |
+| **W3** | Redis + Patterns + Boss Battle | ⬜ |
 
 ### 🎯 REGOLE SENIOR ENGINEER (2026-03-03)
 
@@ -126,37 +134,74 @@
 
 ## ✅ Ultima Sessione
 
-**Data:** 2026-02-28
-**Tipo:** Completamento Mese 1 + Esame
+**Data:** 2026-03-13
+**Tipo:** Corso Claude Code in Action + Planning Integration
 
 **Cosa fatto:**
 
-### ✅ Risorse Finali Completate
-- Validation in DDD (Khorikov) → Nota aggiornata con Execute/CanExecute
-- Domain Model (Fowler) → Saltata (niente di nuovo)
-- **+30 XP** per risorse
+### ✅ Corso Claude Code in Action - COMPLETATO
+- 8/8 lezioni completate
+- Test finale: 8/8 PERFECT SCORE
+- Nota completa: `AI-Frontier/2026/Q1/coding-assistant-fundamentals.md`
+- 25 quiz per spaced repetition
+- **+980 XP** (+750 achievement!)
 
-### ✅ Esame Mese 1 Superato!
-| Campo | Valore |
-|-------|--------|
-| Voto | **25/30** - Superato con merito |
-| Parte A (aperte) | 9/10 |
-| Parte B (chiuse) | 6/6 ✅ |
-| Parte C (codice) | 5/8 |
-| Parte D (design) | 5/6 |
+### ✅ Planning & Integration
+- Extended thinking per integrazione Architect Quest
+- Piano graduale in 5 fasi pronto
+- Progetto futuro AI automation parkato
+- 5 documenti strategici creati
 
-### 🏆 Achievement Sbloccato
-- **First Exam** (+50 XP)
+### 🎉 LEVEL UP!
+- **Level 6 - Domain Master** raggiunto!
+- 76% verso Level 7 (mancano 336 XP)
 
 ### 📝 Aggiornamenti
 | File | Modifica |
 |------|----------|
-| `Exams/esame_2026-02-28.md` | Esame completato e corretto |
-| `Knowledge/architecture/validation-vs-invariants.md` | Aggiunto Execute/CanExecute |
-| `reading-list.md` | 11/11 completate |
-| `quiz-tracker.md` | +2 quiz (VAL-01, VAL-02) |
+| `AI-Frontier/2026/Q1/coding-assistant-fundamentals.md` | Cheatsheet completa |
+| `Architect-Quest/claude-code-integration-plan.md` | Piano integrazione |
+| `AI-Frontier/2026/Q1/future-ai-automation-project.md` | Progetto futuro parked |
+| `quiz-tracker.md` | +16 nuovi quiz (totale 127) |
+| `course-claude-code.md` | Corso completato 100% |
 
-**XP guadagnati sessione:** +230 (30 risorse + 150 esame + 50 achievement)
+**XP guadagnati sessione:** +980 (inclusi +750 achievement)
+
+---
+
+## ✅ Sessione Precedente (2026-03-04)
+
+**Data:** 2026-03-04
+**Tipo:** Senior Engineer P1 - Value Objects + Domain Events
+
+**Cosa fatto:**
+
+### ✅ Recap Exercise #2: Money Value Object
+- Creato `Money` VO da solo (compartimento stagno)
+- Equality by value, immutabilità, Add/Subtract
+- Nota `value-objects.md` creata
+- **+75 XP**
+
+### ✅ Domain Events TDD
+- Teoria Domain Events
+- `IDomainEvent`, `TaskCreatedEvent` implementati
+- `TaskItem` registra eventi
+- Refactor: immutabilità, IReadOnlyList
+- Fix bug UTC vs Local in DueDate
+- Nota `domain-events.md` creata
+- **+50 XP**
+
+### 🎉 LEVEL UP!
+- **Level 5 - System Architect** raggiunto!
+
+### 📝 Aggiornamenti
+| File | Modifica |
+|------|----------|
+| `Notes/value-objects.md` | Creata con esempio Money |
+| `Notes/domain-events.md` | Creata |
+| `00-Overview.md` | Recap 2 ✅, Domain Events ✅ |
+
+**XP guadagnati sessione:** +125 (75 recap + 50 Domain Events)
 
 ---
 
@@ -212,18 +257,30 @@
 
 ## 🎯 Prossima Sessione
 
-**Fase attuale:** ✅ **MESE 1 COMPLETATO** - Pronto per Week 5!
+**Focus corrente:** 🎉 **Corso COMPLETATO!** → Riprendi progetti paralleli
 
-**TODO (in ordine):**
-1. ✅ ~~Letture obbligatorie~~ (11/11)
-2. ✅ ~~Esame Mese 1~~ (25/30)
-3. ⬜ **Week 5** - Message Queue (Azure Service Bus / RabbitMQ)
-4. 🚨 **PARALLELO: Senior Engineer P1** - Task Manager CLI (inizia con Week 5!)
+### 📚 Corso Claude Code in Action ✅ COMPLETATO
+- **Status:** ✅ **100% COMPLETATO** (2026-03-13)
+- **Tracker:** `claude/context/course-claude-code.md`
+- **Nota:** `AI-Frontier/2026/Q1/coding-assistant-fundamentals.md`
+- **Progress:** 100% - 8 lezioni + test finale 8/8
+- **XP guadagnati:** 980 XP (+750 achievement!)
+- **Achievement:** 🏆 Course Master, 💎 Perfect Score
+
+### 💻 Senior Engineer P1 (in pausa durante corso)
+**TODO quando riprendi:**
+1. ✅ ~~**Recap #3** - Creare `TaskCompletedEvent` da solo (+75 XP)~~ COMPLETATO!
+2. ✅ ~~**Repository Interfaces** - `ITaskRepository`, `IProjectRepository`, `ITagRepository`~~ COMPLETATO!
+3. ✅ ~~**Recap #4** - Creare `ITagRepository` da solo (+75 XP)~~ COMPLETATO!
+4. ⬜ **IUnitOfWork** - Interface nel Domain
+5. ⬜ **Application Layer** - MediatR, Commands, Queries, Validators
+6. ⬜ **Recap #5** - Creare `CompleteTaskCommand` da solo
 
 **Prossimi achievement:**
-- 📐 **System Architect** (Level 5) → mancano solo 91 XP!
+- ✅ ~~System Architect (Level 5)~~ → SBLOCCATO!
+- 🎬 **First Lesson** (corso) → +50 XP
 - 🔥 **Inferno** (30 giorni streak) → continua streak
-- ✅ ~~First Exam~~ → SBLOCCATO!
+- 📐 **Domain Master** (Level 6) → 3000 XP (mancano 116 XP dopo spaced repetition!)
 
 ---
 
@@ -324,4 +381,4 @@ _Nessuna_
 
 ---
 
-*Ultimo aggiornamento: 2026-03-03 (Senior Engineer P1 iniziato - TaskItem entity TDD)*
+*Ultimo aggiornamento: 2026-03-04 (Roadmap P1 rivista: 3 settimane, Domain quasi completo)*
