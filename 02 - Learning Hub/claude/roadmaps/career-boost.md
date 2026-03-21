@@ -113,6 +113,13 @@ Circuit breaker, Bulkhead, Retry
 Idempotent, Stateless, Immutable
 ```
 
+### Pratica Reale di Writing Tecnico
+
+- **README curati** per ogni progetto ⭐ MINIMO (scritti in inglese)
+- **PR descriptions dettagliate** su GitHub (contesto, cosa cambia, perché, come testare)
+- **1 contributo OSS** entro mese 12 (anche piccolo: docs fix, bug fix, traduzione)
+- **1 English blog post** (opzionale ma consigliato — anche solo 1 articolo su dev.to o hashnode)
+
 ### Async Communication Best Practices
 
 ```markdown

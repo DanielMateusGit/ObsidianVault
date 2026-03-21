@@ -103,3 +103,17 @@
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/obj/Debug/net8.0/TaskManager.Application.Tests.pdb
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/obj/Debug/net8.0/TaskManager.Application.Tests.genruntimeconfig.cache
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/obj/Debug/net8.0/ref/TaskManager.Application.Tests.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/Castle.Core.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/MediatR.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/NSubstitute.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Application.Tests/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll

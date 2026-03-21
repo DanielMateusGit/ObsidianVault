@@ -173,6 +173,44 @@ Verifica autonoma alla fine di ogni progetto.
 
 ---
 
+## Certificazioni & Corsi
+
+### XP Corsi
+
+| Attivita | XP |
+|----------|-----|
+| Lezione completata | +15 |
+| Nota/cheatsheet creata | +20 |
+| Test finale superato | +50 |
+| Perfect Score (100%) | +200 |
+| Corso completato (100%) | +500 |
+| Quiz estesi (oltre quelli base) | +50 |
+
+### Achievement Corsi
+
+| Badge | Nome | Requisito | XP |
+|-------|------|-----------|-----|
+| First Lesson | Prima lezione completata | 1 lezione | +50 |
+| Course Master | Corso completato 100% | 100% | +500 |
+| Perfect Score | Test finale perfetto | 100% test | +200 |
+| Lifelong Learner | 3 corsi completati | 3 corsi | +300 |
+| Certification Hunter | 5 certificazioni | 5 cert | +500 |
+
+### Registro Certificazioni
+
+| Data | Corso | Provider | Score | XP | Note |
+|------|-------|----------|-------|-----|------|
+| 2026-03-13 | Claude Code in Action | Anthropic | 8/8 (100%) | +980 | 25 quiz, cheatsheet completa |
+
+### Regole Spaced Repetition Certificazioni
+
+- Ogni certificazione genera quiz nel tracker
+- **Minimo 1 quiz/giorno** dalla certificazione piu recente
+- I quiz certificazione hanno **priorita alta** nella coda review
+- Obiettivo: portare tutti i quiz a Box 3+ entro 30 giorni dal corso
+
+---
+
 ## Coach CLI
 
 ```bash

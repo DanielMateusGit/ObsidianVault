@@ -101,3 +101,12 @@
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/obj/Debug/net8.0/TaskManager.Domain.Tests.pdb
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/obj/Debug/net8.0/TaskManager.Domain.Tests.genruntimeconfig.cache
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/obj/Debug/net8.0/ref/TaskManager.Domain.Tests.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/MediatR.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/tests/TaskManager.Domain.Tests/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll

@@ -19,11 +19,12 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 3059 |
-| **Livello** | 6 - Domain Master |
+| **XP Totali** | 4144 |
+| **Livello** | 5 - Service Architect |
 | **Streak** | 6 giorni |
 | **Data inizio** | 2025-01-29 |
-| **Achievement** | 7 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire, First Exam) |
+| **Achievement** | 10 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire, First Exam, First Lesson, Course Master, Perfect Score) |
+| **Certificazioni** | 1 (Claude Code in Action - 8/8 Perfect Score) |
 
 ---
 

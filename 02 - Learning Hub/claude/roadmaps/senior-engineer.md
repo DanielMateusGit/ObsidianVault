@@ -18,14 +18,17 @@
 ## 📅 Timeline Overview
 
 ```
-Settimane 1-3:   P1 - Task Manager (Clean Arch, TDD, CQRS, Redis cache) ⭐ CORE
-Settimana 4:     P1.5 - Auth & Security 🔐 (JWT, OWASP basics) ⭐ CORE
-Settimane 5-7:   P2 - Chat App (SignalR, Redis Pub/Sub) ⭐ CORE
-Settimane 8-11:  P3 - E-commerce Cart (CQRS, Event Sourcing) ⭐ CORE
-Settimane 12-14: P4 - Alert Gateway (Microservices, Circuit Breaker) ⭐ CORE
-Settimane 15-17: P5 - URL Shortener (Redis as Primary DB) ⭐ CORE
-Mesi 6-16:       P6 - Capstone: AI Second Brain (RAG + tutti i pattern) ⭐ CORE
+Settimane 1-3:   P1 - Task Manager (Clean Arch, TDD, CQRS, Redis cache) ⭐ MINIMO
+Settimana 4:     P1.5 - Auth & Security 🔐 (JWT, OWASP basics) ⭐ MINIMO
+Settimane 5-7:   P2 - Chat App (SignalR, Redis Pub/Sub) ⭐ MINIMO
+Settimane 8-11:  P3 - E-commerce Cart (CQRS, Event Sourcing) ⭐ MINIMO
+Settimane 12-14: P4 - Alert Gateway (Microservices, Circuit Breaker) 🔹 COMPLETO
+Settimane 15-17: P5 - URL Shortener (Redis as Primary DB) 🔹 COMPLETO
+Mesi 6-16:       P6 - Capstone: AI Second Brain (RAG + tutti i pattern) 🔹 COMPLETO
 ```
+
+> ⭐ **MINIMO** = Obbligatorio per primo colloquio €85k+
+> 🔹 **COMPLETO** = Percorso completo 30-36 mesi
 
 > **Nota:** Le settimane sopra sono una stima ottimistica. A 10-15 ore/settimana,
 > ogni "settimana" di progetto puo richiedere 2-3 settimane reali.
@@ -122,6 +125,7 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 - Behaviors (Validation, Logging)
 
 **Week 2: Infrastructure + API Layer**
+- Git workflow avanzato (rebase interattivo, bisect, cherry-pick) — mini-topic
 - AppDbContext + Entity Configurations
 - Repository implementations
 - UnitOfWork implementation
@@ -460,10 +464,11 @@ Sistema carrello e inventario con CQRS, Event Sourcing, gestione concorrenza.
 - Cart aggregate con eventi
 - Event replay
 
-**Week 9: Concurrency + Inventory**
+**Week 9: Concurrency + Inventory + DB Design**
 - Redis distributed locks
 - Inventory management
 - Optimistic concurrency
+- **Query optimization & database design** (indexing, query plans, N+1 prevention)
 
 **Week 10: Saga + Polish**
 - Checkout saga
@@ -583,8 +588,9 @@ Focus su **resilience patterns** e **service communication**.
 
 **Week 13: Gateway + Observability**
 - YARP API Gateway
-- Health checks per ogni service
-- Structured logging cross-service (correlation ID)
+- Health checks per ogni service (readiness + liveness probes)
+- Structured logging cross-service (Serilog + correlation ID)
+- **Basic observability:** health check endpoints, structured logs, correlation ID propagation
 - End-to-end testing
 
 ### Deliverables

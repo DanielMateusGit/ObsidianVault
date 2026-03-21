@@ -14,6 +14,41 @@
 
 ---
 
+## Percorso Minimo vs Completo
+
+### Percorso Minimo (18 mesi → primo colloquio €85k+)
+
+**Architect Quest:**
+- P1 Notification Service ⭐
+- P2.5 AI Gateway ⭐
+- P2 NutriPlan ⭐
+
+**Senior Engineer:**
+- P1 Task Manager ⭐
+- P1.5 Auth & Security ⭐
+- P2 Chat App ⭐
+- P3 E-commerce ⭐
+
+**Career Boost:**
+- 6+ system designs documentati
+- Interview prep completata
+- 3 STAR stories pronte
+- Portfolio GitHub curato (README in inglese, progetti pinnati)
+
+### Percorso Completo (30-36 mesi → Staff/Architect €100k+)
+
+Tutto il Minimo + AQ P3 BookingHub + SE P4-P6 + Senior Frontend (Focus Tube + FitHub Mobile) + Certificazioni (AZ-305, CKA) + AI-2 Interview Coach + AI-3 Personal Copilot
+
+### Milestone Misurabili
+
+| Mese | Milestone | Verifica (sì/no) |
+|------|-----------|-------------------|
+| 6 | AQ P1 completato, SE P1+P1.5 completati, 6+ system designs | Posso progettare Clean Arch da zero? |
+| 12 | AQ P2.5 + P2 completati, SE P2+P3 completati | Posso implementare CQRS+ES? Posso spiegare un system design in 45 min? |
+| 18 | Career Boost completato, portfolio curato, mock interviews fatte | Posso passare un colloquio senior? |
+
+---
+
 ## Certificazioni - Strategia
 
 ### TIER 1: Must-Have

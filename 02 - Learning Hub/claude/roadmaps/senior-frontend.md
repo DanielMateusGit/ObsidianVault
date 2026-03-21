@@ -4,6 +4,14 @@
 > **Prerequisiti:** React solido (Dan ce l'ha)
 > **Priority:** 🟢 Side track - quando c'è tempo/voglia
 
+> [!important] 🔹 PERCORSO COMPLETO
+> Tutto il Senior Frontend rientra nel **Percorso Completo (30-36 mesi)**, non nel Percorso Minimo 18 mesi.
+> Se il tempo è limitato, i progetti consigliati sono:
+> - **P1 Focus Tube** — core React moderno + monetizzazione
+> - **P5 FitHub Mobile** — Flutter + prodotto reale
+>
+> P2 Dashboard, P3 Component Lib, P4 Next.js E-commerce sono tagliabili senza impatto sul target €85k+.
+
 ---
 
 ## 📊 Overview

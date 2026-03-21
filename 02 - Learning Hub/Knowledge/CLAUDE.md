@@ -37,7 +37,12 @@ Knowledge/
 ├── databases/                ← Database, Redis, etc.
 │   └── ...
 └── ai/                       ← AI, LLM, agents
-    └── ...
+    ├── coding-assistant-vs-llm.md
+    ├── context-management.md
+    ├── mcp-servers.md
+    ├── claude-code-hooks.md
+    ├── model-selection-strategy.md
+    └── claude/README.md
 ```
 
 ---
@@ -225,16 +230,25 @@ source: "[Libro/Articolo/Video/Sessione]"
 | [[patterns/factory-pattern\|Factory Pattern]] | learned | 2026-02-20 |
 | [[patterns/facade-pattern\|Facade Pattern]] | learned | 2026-02-06 |
 
+### AI & Claude Code
+| Nota | Status | Created |
+|------|--------|---------|
+| [[ai/coding-assistant-vs-llm\|Coding Assistant vs Language Model]] | learning | 2026-03-13 |
+| [[ai/context-management\|Context Management - I 3 Livelli]] | learning | 2026-03-13 |
+| [[ai/mcp-servers\|MCP Servers - Model Context Protocol]] | learning | 2026-03-13 |
+| [[ai/claude-code-hooks\|Claude Code Hooks - Automazione]] | learning | 2026-03-13 |
+| [[ai/model-selection-strategy\|Model Selection Strategy]] | learning | 2026-03-13 |
+
 ---
 
 ## 📈 Statistiche
 
 | Metrica | Valore |
 |---------|--------|
-| **Note totali** | 15 |
+| **Note totali** | 20 |
 | **Note mastered** | 0 |
 | **Note to-review** | 0 |
-| **Ultima nota** | 2026-02-25 |
+| **Ultima nota** | 2026-03-18 |
 
 ---
 

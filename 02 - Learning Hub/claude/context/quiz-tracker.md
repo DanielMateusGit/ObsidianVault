@@ -15,12 +15,12 @@ updated: 2026-02-05
 | Metrica | Valore |
 |---------|--------|
 | **Quiz totali** | 127 |
-| **Risposte corrette** | 67 |
+| **Risposte corrette** | 72 |
 | **Risposte parziali** | 6 |
 | **Risposte sbagliate** | 1 |
 | **Non risposti** | 48 |
-| **Challenge completate** | 9 |
-| **Streak challenge** | 5 |
+| **Challenge completate** | 10 |
+| **Streak challenge** | 10 |
 
 ---
 
@@ -100,7 +100,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦5 | 2026-03-04 | 2026-04-03 | ✅ Padroneggiato |
 | OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦5 | 2026-03-13 | 2026-04-12 | ✅ Padroneggiato |
-| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦4 | 2026-02-19 | 2026-03-05 | ✅ Corretto |
+| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
 
 #### Single Responsibility Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -154,7 +154,7 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
-| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
+| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
 | EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-03-04 | 2026-03-07 | 🟡 Parziale |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -163,7 +163,7 @@ updated: 2026-02-05
 ### CQRS & MediatR
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
+| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
 | CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
 | CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -181,9 +181,9 @@ updated: 2026-02-05
 ### Ports & Adapters
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
+| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
 | PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
-| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦4 | 2026-03-02 | 2026-03-16 | ✅ Corretto |
+| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
 
 ### CQRS Queries
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -406,6 +406,11 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-03-13 | OCP-02 | ✅ | +40 | Box 4→5 🎉 PADRONEGGIATO + 5 streak bonus! |
 | 2026-03-13 | CQRS-03 | ✅ | +10 | Box 3→4 |
 | 2026-03-13 | APP-02 | ✅ | +10 | Box 2→3 |
+| 2026-03-16 | EVT-02 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-16 | CQRS-01 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-16 | PORT-01 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-16 | PORT-03 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-16 | OCP-03 | ✅ | +35 | Box 4→5 🎉 PADRONEGGIATO + 10 streak bonus! |
 
 ---
 
@@ -414,7 +419,19 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 > Claude aggiorna questa lista all'inizio di ogni sessione
 
 **Prossimi quiz da ripassare:**
-1. Tutti i 6 quiz sono nuovi (Box 1) - pronti per la prima risposta!
+1. FAC-01 (2026-03-18), PORT-02 (2026-03-18), INFRA-03 (2026-03-18) - Box 4
+2. APP-02 (2026-03-20), UOW-01 (2026-03-20) - Box 3
+3. EVT-01 (2026-03-27), CQRS-03 (2026-03-27) - Box 4
+
+### Priorita Certificazione: CLCODE (almeno 1/giorno)
+
+> I quiz CLCODE hanno priorita alta. Dan deve ripassare **almeno 1 concetto al giorno** dalla certificazione Claude Code in Action. Claude seleziona 1-2 quiz CLCODE ad ogni sessione, anche se non sono in scadenza.
+
+**Rotazione giornaliera suggerita (ciclo su 25 quiz):**
+- Fundamentals: CLCODE-01, 02, 03, 10, 11, 12, 13
+- Advanced: CLCODE-04, 06, 14, 15, 16, 17
+- MCP & Automation: CLCODE-05, 18, 19, 20
+- Hooks & SDK: CLCODE-07, 08, 09, 21, 22, 23, 24, 25
 
 ---
 
@@ -476,4 +493,4 @@ Le seguenti note in `Knowledge/` hanno quiz che devono essere tracciati:
 
 ---
 
-*Ultimo aggiornamento: 2026-03-04*
+*Ultimo aggiornamento: 2026-03-16*

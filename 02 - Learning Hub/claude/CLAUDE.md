@@ -62,6 +62,7 @@ Exams/                      ← Esami e verifiche
 | `/quiz [N]` | Sessione spaced repetition: seleziona quiz, valuta risposte, aggiorna tracker |
 | `/nota <categoria> <titolo>` | Crea nota atomica in Knowledge/ con template completo |
 | `/end` | Chiusura sessione: aggiorna file, crea session log, git push, riepilogo |
+| `/context` | Aggiorna/correggi file di contesto (current-state, quiz-tracker, roadmaps, ecc.) |
 
 > I comandi sono definiti in `.claude/skills/`. Gli hook di validazione in `.claude/hooks/`.
 
@@ -117,6 +118,12 @@ Trasformare Dan da mid-level a **Senior/Staff Engineer + System Architect** capa
 - Dan racconta a Claude cosa ha imparato
 - Claude crea note atomiche in `Knowledge/`
 - Dura finche Dan dice "sono soddisfatto"
+
+**Guardrail Sedimentazione:**
+- **Durata massima:** 1 settimana reale (5-7 giorni)
+- **Minimo richiesto:** 2 note atomiche + quiz relativi
+- **Trigger di chiusura:** Dan supera 3 quiz di verifica sul topic → si passa alla Week successiva
+- **Timeout:** Se dopo 7 giorni Dan non dice "sono soddisfatto" → Claude propone attivamente la chiusura con messaggio: *"Sono passati 7 giorni di Sedimentazione. Hai creato N note e superato N quiz. Vuoi chiudere e passare alla Week successiva?"*
 
 **Ciclo:** FASE 1 → FASE 2 → Week successiva
 
@@ -184,6 +191,41 @@ Template completo in `Knowledge/CLAUDE.md`. Checklist minima:
 2. Aggiorna `quiz-tracker.md`
 3. Se errori: indica note da rileggere (path esatto), NON rispiegare tutto
 4. Mostra riepilogo con tabella e XP totali
+
+---
+
+## Recap Pre-Lezione (Quando Dan Sceglie il Percorso)
+
+**Trigger:** Dan dice "continuiamo Senior Engineer" / "riprendiamo Architect Quest" / sceglie cosa studiare.
+
+**Claude risponde con un recap strutturato prima di iniziare:**
+
+```
+Bene! Riprendiamo [percorso].
+
+**La scorsa volta abbiamo visto:**
+- [Argomento principale della sessione precedente]
+- [Concetti chiave toccati, senza rispiegare - Dan li conosce già]
+- [Eventuali decisioni prese o pattern applicati]
+
+**In breve:** [2-3 frasi di riallineamento - come promemoria, non come lezione]
+
+**Oggi vedremo:**
+- [Prossimo step logico dalla roadmap/TODO]
+- [Perché questo step viene dopo quello precedente]
+
+**Dove siamo:**
+- Week/Mese: [N]% completata
+- Progetto: [N]% completato
+- Percorso totale: [N]%
+```
+
+**Regole:**
+- NON è una spiegazione da zero, è un refresh per chi sa già
+- Tono: "riprendiamo da dove eravamo", non "ti insegno di nuovo"
+- Consulta `current-state.md`, la roadmap del percorso attivo, e il session log precedente
+- Le percentuali devono essere realistiche (calcola da roadmap)
+- Dopo il recap, prosegui direttamente con il workflow (teoria → domande → nota → codice)
 
 ---
 

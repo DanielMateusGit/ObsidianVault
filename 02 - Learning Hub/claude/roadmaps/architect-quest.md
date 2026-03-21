@@ -71,30 +71,32 @@ Essere capace di:
 > I mesi indicati sono approssimativi. Progetti CORE vanno completati, STRETCH sono opzionali.
 
 ```
-SHARED SERVICES (CORE)
+SHARED SERVICES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 1-5:   P1 - Notification Service 📧 [SHARED SERVICE] ⭐ CORE
-Mesi 6-8:   P2.5 - AI Gateway 🤖 [SHARED SERVICE] ⭐ CORE
+Mesi 1-5:   P1 - Notification Service 📧 [SHARED SERVICE] ⭐ MINIMO
+Mesi 6-8:   P2.5 - AI Gateway 🤖 [SHARED SERVICE] ⭐ MINIMO
 
 DOMAIN PROJECTS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 6-12:  P2 - NutriPlan (DDD, CQRS) ← USA: Notification ⭐ CORE
-Mesi 13-18: P3 - BookingHub (Saga, K8s) ← USA: Notif + AI GW ⭐ CORE
-Mesi 19-24: P4 - FamilyBudget (Flutter) ← USA: Notif + AI GW 🔹 STRETCH
+Mesi 6-12:  P2 - NutriPlan (DDD, CQRS) ← USA: Notification ⭐ MINIMO
+Mesi 13-18: P3 - BookingHub (Saga, K8s) ← USA: Notif + AI GW 🔶 PRIMO COMPLETO
+Mesi 19-24: P4 - FamilyBudget (Flutter) ← USA: Notif + AI GW 🔹 COMPLETO
 
 CAPSTONE REALE 🏆
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 25-30: P5 - FitHub 🏋️ (REALE!) ← UNISCE TUTTO 🔹 STRETCH
+Mesi 25-30: P5 - FitHub 🏋️ (REALE!) ← UNISCE TUTTO 🔹 COMPLETO
             └── Backend: Multi-tenant + AI + Subscriptions
             └── Flutter app: Senior Frontend Track
 
 AI-FIRST TRACK 🧠 (Parallelo)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 20-22: AI-2 - AI Interview Coach 🎤 (pre-job search) ⭐ CORE
-Mesi 31-33: AI-3 - Personal Copilot 🤖 (post-FitHub) 🔹 STRETCH
+Mesi 20-22: AI-2 - AI Interview Coach 🎤 (pre-job search) 🔹 COMPLETO
+Mesi 31-33: AI-3 - Personal Copilot 🤖 (post-FitHub) 🔹 COMPLETO
 ```
 
-**⭐ CORE** = Obbligatorio | **🔹 STRETCH** = Se tempo/energia | **📧 = Shared** | **🏋️ = Reale**
+> ⭐ **MINIMO** = Obbligatorio per primo colloquio €85k+
+> 🔶 **PRIMO COMPLETO** = Primo progetto da fare dopo aver ottenuto il lavoro
+> 🔹 **COMPLETO** = Percorso completo 30-36 mesi
 
 > **Nota AI-1:** AI Second Brain è stato unito al Capstone Senior Engineer (P6).
 > Vedi `senior-engineer.md` per dettagli.

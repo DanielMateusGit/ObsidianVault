@@ -10,3 +10,4 @@
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/refint/TaskManager.Domain.dll
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.pdb
 /Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/ref/TaskManager.Domain.dll
+/Users/Dan/Documents/ObsidianVault-main/Projects/TaskManager/src/TaskManager.Domain/obj/Debug/net8.0/TaskManager.Domain.csproj.AssemblyReference.cache
