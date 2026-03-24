@@ -799,6 +799,9 @@ public class CreateOrderHandler : IRequestHandler<CreateOrderCommand, int>
 - [[cross-cutting-concerns]] - Behaviors risolvono cross-cutting concerns
 - [[fluent-validation]] - Validazione usata nei Behaviors
 - [[single-responsibility-principle]] - SRP applicato ai handler
+- [[validation-vs-invariants]] — ValidationBehavior implementa validazione Application-level
+- [[open-closed-principle]] — Behaviors aggiungono funzionalità senza modificare handlers
+- [[domain-events-theory]] — Behavior chain può dispatchare eventi pre/post handler
 
 ---
 

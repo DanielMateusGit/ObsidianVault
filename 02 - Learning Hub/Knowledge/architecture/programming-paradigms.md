@@ -303,6 +303,8 @@ public class OrderProcessor
 - [[dependency-inversion-principle]] - Il contributo più importante di OOP all'architettura
 - [[clean-architecture]] - Come i paradigmi influenzano l'architettura
 - [[tdd]] - L'approccio scientifico applicato (da creare)
+- [[single-responsibility-principle]] — SRP derivato da programmazione strutturata
+- [[open-closed-principle]] — OCP derivato da polimorfismo OOP
 
 ---
 

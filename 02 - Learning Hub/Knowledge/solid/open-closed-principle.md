@@ -276,6 +276,9 @@ Clean Architecture!
 - [[single-responsibility-principle|SRP]] - Complementare: separa per attore
 - [[clean-architecture]] - OCP è il cuore della Dependency Rule (da creare)
 - [[facade-pattern|Facade]] - Può essere un punto di estensione
+- [[liskov-substitution-principle]] — LSP garantisce che le estensioni OCP funzionino
+- [[interface-segregation-principle]] — Interfacce piccole facilitano estensioni OCP
+- [[factory-pattern]] — Factory è un meccanismo comune per estendere senza modificare
 
 ---
 

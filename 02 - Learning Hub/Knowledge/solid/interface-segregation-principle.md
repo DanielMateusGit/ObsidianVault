@@ -246,6 +246,8 @@ public class UserManager : IUserAuth, IUserReporting, IUserEmailing
 - [[liskov-substitution-principle]] - Violazioni ISP spesso causano violazioni LSP
 - [[dependency-inversion-principle]] - ISP + DIP = dipendenze pulite
 - [[open-closed-principle]] - Interfacce piccole facilitano estensioni
+- [[facade-pattern]] — Facade può nascondere interfacce fat dietro interfaccia semplice
+- [[deep-modules]] — Deep modules e ISP condividono il principio di esporre solo ciò che serve
 
 ## Quiz
 

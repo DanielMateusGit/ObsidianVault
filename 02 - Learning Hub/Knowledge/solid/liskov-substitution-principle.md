@@ -188,6 +188,8 @@ public class TaxiDispatcher
 - [[dependency-inversion-principle]] - DIP usa LSP (le implementazioni rispettano il contratto)
 - [[interface-segregation-principle]] - ISP previene violazioni LSP (interfacce troppo grandi)
 - [[ports-and-adapters]] - Applicazione architettonica di LSP
+- [[clean-architecture-principles]] — LSP è fondamentale per la Dependency Rule
+- [[repository-pattern]] — Repository interfaces sono un esempio pratico di LSP
 
 ## Insight Personale (Dan)
 

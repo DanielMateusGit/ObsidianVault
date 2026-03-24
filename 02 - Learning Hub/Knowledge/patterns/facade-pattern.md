@@ -96,6 +96,9 @@ public class VideoConverterFacade
 - [[solid/single-responsibility-principle|SRP]] - Facade permette di raggruppare per dominio mantenendo SRP nei servizi interni
 - [[architecture/information-hiding|Information Hiding]] - La Facade nasconde i dettagli implementativi
 - Factory Pattern (da creare) - Pattern spesso confuso con Facade
+- [[factory-pattern]] — Spesso confusi: Facade semplifica, Factory crea
+- [[deep-modules]] — Facade implementa il principio dei Deep Modules (interfaccia semplice, funzionalità complessa)
+- [[interface-segregation-principle]] — Facade può essere soluzione a fat interfaces
 
 ---
 

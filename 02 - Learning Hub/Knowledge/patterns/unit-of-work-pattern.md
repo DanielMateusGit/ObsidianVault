@@ -854,6 +854,8 @@ await _eventBus.PublishAsync(...);  // ← Se fallisce, DB già committato!
 - [[aggregate-root]] - UnitOfWork salva aggregate root
 - [[domain-events]] - Eventi + UnitOfWork per consistency
 - [[clean-architecture-principles]] - UnitOfWork rispetta DIP
+- [[cqrs-pattern]] — Command handlers chiamano UoW.SaveChanges
+- [[dependency-inversion-principle]] — IUnitOfWork in Application, implementazione in Infrastructure
 
 ---
 

@@ -714,6 +714,9 @@ public class RegisterUserHandler : IRequestHandler<RegisterUserCommand, Result<G
 - [[domain-exceptions]] - Quando lanciare eccezioni nel Domain
 - [[mediatr-pipeline-behaviors]] - Validation con FluentValidation
 - [[clean-architecture-principles]] - Separation of concerns
+- [[cqrs-pattern]] — Commands validati con FluentValidation prima dell'handler
+- [[domain-events-theory]] — Invarianti verificati prima di sollevare eventi
+- [[factory-pattern]] — Factory methods per enforcing Always-Valid Domain Model
 
 ---
 

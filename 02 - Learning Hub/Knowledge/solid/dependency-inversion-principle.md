@@ -424,6 +424,9 @@ Vedi: [[factory-pattern]]
 - [[clean-architecture]] - DIP abilita la Dependency Rule
 - [[interface-segregation-principle]] - ISP complementa DIP
 - [[open-closed-principle]] - OCP e DIP lavorano insieme
+- [[repository-pattern]] — Repository è l'esempio classico di DIP in pratica
+- [[unit-of-work-pattern]] — UoW interface in Application implementata in Infrastructure = DIP
+- [[liskov-substitution-principle]] — LSP garantisce che le implementazioni rispettino il contratto DIP
 
 ---
 

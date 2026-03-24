@@ -149,6 +149,9 @@ public class NotificationSenderFactory : INotificationSenderFactory
 
 - [[dependency-inversion-principle]] - Factory abilita DIP isolando la creazione
 - [[clean-architecture]] - Factory vive al confine tra layer
+- [[facade-pattern]] — Spesso confusi: Factory crea, Facade semplifica
+- [[open-closed-principle]] — Factory permette estensione senza modificare codice esistente
+- [[repository-pattern]] — Repository usa spesso factory per creare entities
 
 ## Quiz
 

@@ -158,6 +158,8 @@ if (result.IsValid) { ... }
 - [[single-responsibility-principle]] - SRP aiuta a definire cosa nascondere
 - [[dependency-inversion-principle]] - Le interfacce DIP devono essere "deep"
 - [[repository-pattern]] - Un buon repository è un deep module
+- [[facade-pattern]] — Facade è l'esempio perfetto di deep module
+- [[interface-segregation-principle]] — ISP e deep modules: esponi solo ciò che serve
 
 ## Quiz
 

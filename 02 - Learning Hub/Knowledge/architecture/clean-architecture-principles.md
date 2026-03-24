@@ -170,6 +170,9 @@ NotificationService/
 - [[dependency-inversion-principle]] - Abilita la Dependency Rule
 - [[components]] - L'architettura si manifesta nei componenti
 - [[component-coupling]] - SDP e SAP applicati ai layer
+- [[cqrs-pattern]] — CQRS è un pattern applicato dentro Clean Architecture
+- [[repository-pattern]] — Repository pattern è il ponte Domain→Infrastructure
+- [[unit-of-work-pattern]] — UoW gestisce le transazioni rispettando i layer
 
 ## Quiz
 

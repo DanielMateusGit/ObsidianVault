@@ -665,6 +665,9 @@ CQRS Level 2: Multiple Read Models per use case
 - [[domain-events]] - Per sincronizzare read DB
 - [[repository-pattern]] - Write side usa repository
 - [[dtos-vs-entities]] - Read side ritorna DTO
+- [[clean-architecture-principles]] — CQRS vive nell'Application layer di Clean Arch
+- [[unit-of-work-pattern]] — Command handlers usano UoW per persistere
+- [[validation-vs-invariants]] — FluentValidation sui Commands, invarianti nel Domain
 
 ---
 

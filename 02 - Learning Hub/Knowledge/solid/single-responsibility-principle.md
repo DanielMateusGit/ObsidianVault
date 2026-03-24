@@ -319,6 +319,8 @@ Duplicare codice che serve attori diversi ti **protegge** dal cambiare accidenta
 - [[facade-pattern|Facade Pattern]] - Pattern per raggruppare senza violare SRP
 - [[dependency-inversion-principle|DIP]] - Complementare a SRP per architettura pulita
 - [[clean-architecture]] - SRP applicato ai layer (da creare)
+- [[interface-segregation-principle]] — ISP vs SRP è una distinzione chiave, la nota ISP ne parla esplicitamente
+- [[open-closed-principle]] — SRP e OCP lavorano insieme nei componenti
 
 ---
 

@@ -200,6 +200,10 @@ public class NotificationSentHandler
 - [[../solid/single-responsibility-principle|SRP]] - Eventi separano responsabilità
 - [[../solid/open-closed-principle|OCP]] - Nuovi handler senza modificare entity
 - [[../solid/dependency-inversion-principle|DIP]] - Entity non dipende da handler
+- [[cqrs-pattern]] — Events collegano Commands a side effects
+- [[mediatr-pipeline-behaviors]] — MediatR dispatcha gli eventi
+- [[unit-of-work-pattern]] — Dispatch DOPO SaveChanges (UoW)
+- [[repository-pattern]] — Repository non dispatcha eventi, lo fa l'infrastruttura
 
 ## Quiz
 

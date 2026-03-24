@@ -928,6 +928,9 @@ public async Task AddAsync(Notification notification)
 - [[dependency-inversion-principle]] - Repository rispetta DIP
 - [[clean-architecture-principles]] - Repository in Infrastructure
 - [[domain-driven-design]] - Repository è pattern DDD core
+- [[cqrs-pattern]] — Query handlers usano repository per leggere dati
+- [[domain-events-theory]] — Repository non dispatcha eventi, è responsabilità di UoW/handler
+- [[liskov-substitution-principle]] — Implementazioni diverse (EF, Dapper) devono rispettare il contratto
 
 ---
 

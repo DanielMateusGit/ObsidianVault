@@ -61,6 +61,8 @@ Exams/                      ← Esami e verifiche
 | `/init` | Startup sessione: legge contesto, mostra stato, propone spaced repetition |
 | `/quiz [N]` | Sessione spaced repetition: seleziona quiz, valuta risposte, aggiorna tracker |
 | `/nota <categoria> <titolo>` | Crea nota atomica in Knowledge/ con template completo |
+| `/ask <domanda>` | Domanda libera: teorica, sul corso, dove trovo, generale. Cerca prima nelle risorse esistenti |
+| `/exam [N]` | Esame on-demand: mostra tabella esami disponibili, genera esame /30, corregge e salva |
 | `/end` | Chiusura sessione: aggiorna file, crea session log, git push, riepilogo |
 | `/context` | Aggiorna/correggi file di contesto (current-state, quiz-tracker, roadmaps, ecc.) |
 
