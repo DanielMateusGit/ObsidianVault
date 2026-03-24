@@ -4,53 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "cad83c0ed5b78b22",
+        "id": "ec5d8243151d246e",
         "type": "tabs",
         "children": [
           {
-            "id": "46c98091e8e25f28",
+            "id": "babd67fa7d0fa8d3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/infrastructure-layer.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "infrastructure-layer"
-            }
-          },
-          {
-            "id": "7e5d7dd3e18eb1b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Learning Hub/Knowledge/ai/mcp-servers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "mcp-servers"
-            }
-          },
-          {
-            "id": "67ab6fe8355ca617",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/smart-enum.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "smart-enum"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,6 +178,15 @@
   },
   "active": "f482125d8793a22e",
   "lastOpenFiles": [
+    "02 - Learning Hub/claude/sessions/2026-03-24-3.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/infrastructure-layer.md",
+    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/smart-enum.md",
+    "02 - Learning Hub/Progress.md",
+    "02 - Learning Hub/Dashboard.md",
+    "02 - Learning Hub/CLAUDE.md",
+    "02 - Learning Hub/claude/CLAUDE.md",
+    "02 - Learning Hub/Achievements.md",
+    "02 - Learning Hub/Knowledge/ai/mcp-servers.md",
     "02 - Learning Hub/claude/sessions/2026-03-24.md",
     "02 - Learning Hub/Knowledge/ai/context-management.md",
     "02 - Learning Hub/Knowledge/ai/coding-assistant-vs-llm.md",
@@ -229,9 +205,6 @@
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/repository-pattern.md",
     "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/00-Overview.md",
     "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/entities-and-clean-architecture.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/composition-root.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/application-layer.md",
-    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/dotnet-project-structure.md",
     "Projects/notification-service/NotificationService.sln.DotSettings.user",
     "Projects/notification-service/src/NotificationService.Application/obj/rider.project.restore.info",
     "Projects/notification-service/src/NotificationService.Domain/obj/rider.project.restore.info",
@@ -241,12 +214,6 @@
     "Projects/notification-service/src/NotificationService.Api/obj/rider.project.restore.info",
     "Projects/notification-service/src/NotificationService.Infrastructure/obj/rider.project.restore.info",
     "Projects/notification-service/tests/NotificationService.Infrastructure.Tests/obj/bbfdde18-6e2c-4d69-a4ec-1e8aaade03f9.tmp",
-    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/smart-enum.md",
-    "Projects/TaskManager/README.md",
-    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/W1-queries-validation-behaviors 1.md",
-    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/W1-queries-validation-behaviors.md",
-    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/W1-application-layer-setup.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/ef-core-migrations.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Pasted image 20250908100643.png",
