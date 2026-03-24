@@ -1,8 +1,8 @@
 ---
 tags: [learning, progress, gamification]
-xp: 3864
-level: 6
-title: "Domain Master"
+xp: 4169
+level: 5
+title: "Service Architect"
 streak: 6
 longest_streak: 9
 architect_quest_week: "P1-W4"
@@ -118,13 +118,30 @@ dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-03-24 | Career analysis (AI Engineer pivot) | Strategica | +25 | 4169 |
+| 2026-03-16 | Studio 2h+ | Senior P1-W1 | +60 | 4144 |
+| 2026-03-16 | DeleteTaskItemCommand (TDD) | Senior P1-W1 | +50 | 4084 |
+| 2026-03-16 | UpdateTaskItemCommand (TDD) | Senior P1-W1 | +50 | 4034 |
+| 2026-03-16 | CompleteTaskCommand (Recap da solo) | Senior P1-W1 | +50 | 3984 |
+| 2026-03-16 | CreateTaskItemCommand (TDD) | Senior P1-W1 | +50 | 3934 |
+| 2026-03-16 | IUnitOfWork creato | Senior P1-W1 | +20 | 3884 |
+| 2026-03-13 | Quiz extension (9→25) | Claude Code | +50 | 3864 |
+| 2026-03-13 | 💎 Perfect Score (8/8 test) | Achievement | +200 | 3814 |
+| 2026-03-13 | 🏆 Course Master (100% in 1 giorno) | Achievement | +500 | 3614 |
+| 2026-03-13 | Test finale 8/8 | Claude Code | +50 | 3114 |
+| 2026-03-13 | Note + cheatsheet | Claude Code | +60 | 3064 |
+| 2026-03-13 | 🎉 LEVEL UP → Service Architect (Lv.5) | - | - | 3004 |
+| 2026-03-13 | Lezioni 1-8 completate | Claude Code | +120 | 3004 |
+| 2026-03-13 | 🎬 Achievement: First Lesson | Achievement | — | 2884 |
+| ~03-05/12 | *(Sessioni non loggate: quiz, ripasso)* | Vari | +105 | 2884 |
 | 2026-03-04 | Recap #4: ITagRepository ✅ | Senior P1-W1 | +75 | 2779 |
 | 2026-03-04 | Repository Interfaces (ITask, IProject) | Senior P1-W1 | +50 | 2704 |
 | 2026-03-04 | Recap #3: TaskCompletedEvent ✅ | Senior P1-W1 | +75 | 2654 |
 | 2026-03-04 | 🧠 Spaced Repetition (4/5 correct) | Ripasso | +45 | 2579 |
-| 2026-03-04 | 🎉 LEVEL UP → System Architect (Lv.5) | - | - | 2534 |
+| 2026-03-04 | 🎉 LEVEL UP → Module Builder (Lv.4) | - | - | 2534 |
 | 2026-03-04 | Domain Events TDD + refactor | Senior P1-W1 | +50 | 2534 |
 | 2026-03-04 | Recap #2: Money Value Object ✅ | Senior P1-W1 | +75 | 2484 |
+| ~02-18/03-03 | *(AQ P1: W3 completion, W4 Infra+Tests, Exam 25/30 — non loggato)* | AQ P1 | +475 | 2409 |
 | 2026-02-17 | 28 Validator Tests ✅ (9d237b2) | P1-W3 | +30 | 1934 |
 | 2026-02-17 | FluentValidation + ValidationBehavior ✅ | P1-W3 | +50 | 1904 |
 | 2026-02-17 | 📝 Nota FluentValidation | P1-W3 | +40 | 1854 |
