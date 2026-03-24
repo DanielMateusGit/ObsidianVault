@@ -14,11 +14,11 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 127 |
-| **Risposte corrette** | 72 |
-| **Risposte parziali** | 6 |
-| **Risposte sbagliate** | 1 |
-| **Non risposti** | 48 |
+| **Quiz totali** | 152 |
+| **Risposte corrette** | 74 |
+| **Risposte parziali** | 8 |
+| **Risposte sbagliate** | 2 |
+| **Non risposti** | 73 |
 | **Challenge completate** | 10 |
 | **Streak challenge** | 10 |
 
@@ -39,6 +39,8 @@ updated: 2026-02-05
 - ✅ Risposta corretta → passa al box successivo
 - ❌ Risposta sbagliata → torna a Box 1
 - Quiz in Box 5 da 60+ giorni → `status/mastered`
+- **Minimo 2 quiz Box 1 (non risposti) per sessione**, oltre ai quiz scaduti
+- **Almeno 1 quiz CLCODE per sessione** (rotazione certificazione)
 
 ---
 
@@ -64,6 +66,8 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | CLEAN-01 | Struttura con controllers/services/repositories - cosa "urla"? | 📦1 | - | Ora | ⬜ Non risposto |
 | CLEAN-02 | Caratteristica comune a TUTTE le clean architectures? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLEAN-03 | Cos'è la Dependency Rule? Qual è l'unica direzione permessa per le dipendenze? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLEAN-04 | Progetto MVC con Controllers/Services/Repositories — ha "Screaming Architecture"? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
 
 #### Components
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -145,7 +149,7 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | FAC-01 | Stripe payment: Facade o Factory? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
-| FAC-02 | PaymentFacade God Object - cosa faresti? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
+| FAC-02 | PaymentFacade God Object - cosa faresti? | 📦1 | 2026-03-23 | Ora | ❌ Sbagliato |
 | FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
 
 ---
@@ -156,7 +160,7 @@ updated: 2026-02-05
 | EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
 | EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
 | EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
-| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-03-04 | 2026-03-07 | 🟡 Parziale |
+| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-03-23 | 2026-03-26 | 🟡 Parziale |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -167,9 +171,12 @@ updated: 2026-02-05
 | CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
 | CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
-| BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
+| CQRS-05 | Quando ha senso separare database lettura (es. MongoDB) da scrittura (es. PostgreSQL)? | 📦1 | - | Ora | ⬜ Non risposto |
+| BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦4 | 2026-03-23 | 2026-04-06 | ✅ Corretto |
 | BEHAV-02 | Perché next() solo se validazione passa? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
 | BEHAV-03 | Come creare behavior solo per alcuni command? (marker interface) | 📦1 | - | Ora | ⬜ Non risposto |
+| BEHAV-04 | Come testi un ValidationBehavior in isolamento? Cosa mocki e cosa verifichi? | 📦1 | - | Ora | ⬜ Non risposto |
+| BEHAV-05 | LoggingBehavior chiama _logger.LogError e poi next(). È corretto? Quando NON dovresti chiamare next()? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### FluentValidation
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -188,7 +195,7 @@ updated: 2026-02-05
 ### CQRS Queries
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦1 | 2026-02-24 | Ora | 🟡 Parziale |
+| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦2 | 2026-03-23 | 2026-03-26 | ✅ Corretto |
 | QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦2 | 2026-03-02 | 2026-03-05 | 🟡 Parziale |
 | QRY-03 | Query senza parametri ha bisogno di validazione? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
 
@@ -291,7 +298,7 @@ updated: 2026-02-05
 ### Repository Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦2 | 2026-02-28 | 2026-03-03 | ✅ Corretto |
+| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦2 | 2026-03-23 | 2026-03-26 | 🟡 Parziale |
 | REPO-02 | Cos'è il problema N+1 e come lo risolvi? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 | REPO-03 | Quando ha senso usare RepositoryBase<T>? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 
@@ -331,6 +338,9 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | VAL-01 | Perché TryExecute viola CQS mentre CanExecute/Execute no? | 📦1 | - | Ora | ⬜ Non risposto |
 | VAL-02 | Form CRUD 10 campi: quale approccio per validazione Domain? | 📦1 | - | Ora | ⬜ Non risposto |
+| VAL-03 | Email 'test@test' passa FluentValidation ma il Domain la rifiuta. È un bug? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| VAL-04 | Costruttore con 10 parametri validati vs Factory Method + private constructor. Quale preferisci e perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| VAL-05 | Il domain model lancia eccezioni per OGNI input invalido (email, telefono, nome). Qual è il problema? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### Smart Enum (Senior P1)
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -340,6 +350,48 @@ updated: 2026-02-05
 | SENUM-03 | Quando useresti enum normale invece di Smart Enum? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ---
+
+### Value Objects (Senior P1)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| VO-01 | Indirizzo Email con stesso valore di un altro Email: sono lo stesso oggetto o due diversi? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| VO-02 | Money.Add(other) modifica this o ritorna un nuovo Money? Perché l'immutabilità è importante? | 📦1 | - | Ora | ⬜ Non risposto |
+| VO-03 | Perché devi fare override di Equals() E GetHashCode() in un Value Object? Cosa succede se non lo fai? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### .NET Project Structure (Senior P1)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| DOTNET-01 | FluentAssertions va nel .csproj di test o di production? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| DOTNET-02 | Qual è il comando per TDD watch mode con dotnet? | 📦1 | - | Ora | ⬜ Non risposto |
+| DOTNET-03 | Infrastructure referenzia Application. Può accedere ai tipi Domain? Come? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Exam-Derived (Weak Areas)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| EXAM-01 | Entity con public setters e `new Entity {}` — perché viola Always-Valid Domain Model? Come correggi? | 📦1 | - | Ora | ⬜ Non risposto |
+| EXAM-02 | Cancel() lancia eccezione se Status == Cancelled. Alternativa con CanExecute/Execute? Pro e contro? | 📦1 | - | Ora | ⬜ Non risposto |
+| EXAM-03 | Retry logic notifiche (1s, 5s, 30s): le regole vanno in Domain, Application o Infrastructure? E l'orchestrazione? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### AI - Context Management
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CTX-01 | Quali sono i 3 livelli di contesto in Claude Code? Quando usare ciascuno? | 📦1 | - | Ora | ⬜ Non risposto |
+| CTX-02 | CLAUDE.md nel progetto vs ~/.claude/CLAUDE.md — quale per preferenze globali, quale per regole progetto? | 📦1 | - | Ora | ⬜ Non risposto |
+| CTX-03 | File da 5000 righe come contesto: come gestisci per non saturare la context window? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### AI - Model Selection Strategy
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| MSEL-01 | Bug complesso cross-file con side effects: quale modello + thinking level scegli? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| MSEL-02 | Genera boilerplate CRUD (controller + service + repo): Opus, Sonnet o Haiku? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| MSEL-03 | Thinking "high" costa 3x in token. Quando vale la pena? Quando è spreco? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### AI - Coding Assistant vs LLM
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CALV-01 | Differenza architetturale tra un LLM raw e un Coding Assistant (Claude Code)? Cosa aggiunge il "harness"? | 📦1 | - | Ora | ⬜ Non risposto |
+| CALV-02 | Il Coding Assistant legge file, esegue comandi, edita codice. L'LLM raw può farlo? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| CALV-03 | "Agentic loop": cos'è e perché è fondamentale per un Coding Assistant? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### Documentation
 _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
@@ -411,6 +463,11 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-03-16 | PORT-01 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
 | 2026-03-16 | PORT-03 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
 | 2026-03-16 | OCP-03 | ✅ | +35 | Box 4→5 🎉 PADRONEGGIATO + 10 streak bonus! |
+| 2026-03-23 | QRY-01 | ✅ | +10 | Box 1→2 RECUPERATO da parziale! |
+| 2026-03-23 | EVT-04 | 🟡 | +5 | Box 2→2 (parziale - ancora manca "no dipendenze") |
+| 2026-03-23 | FAC-02 | ❌ | +2 | Box 2→1 (confuso facade con soluzione) |
+| 2026-03-23 | REPO-01 | 🟡 | +5 | Box 2→2 (parziale - solo tech leak, mancano altri motivi) |
+| 2026-03-23 | BEHAV-01 | ✅ | +10 | Box 3→4 |
 
 ---
 
@@ -419,9 +476,11 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 > Claude aggiorna questa lista all'inizio di ogni sessione
 
 **Prossimi quiz da ripassare:**
-1. FAC-01 (2026-03-18), PORT-02 (2026-03-18), INFRA-03 (2026-03-18) - Box 4
-2. APP-02 (2026-03-20), UOW-01 (2026-03-20) - Box 3
+1. FAC-02 (Ora) - Box 1, da recuperare
+2. EVT-04 (2026-03-26), QRY-01 (2026-03-26), REPO-01 (2026-03-26) - Box 2
 3. EVT-01 (2026-03-27), CQRS-03 (2026-03-27) - Box 4
+4. BEHAV-01 (2026-04-06) - Box 4
+5. Scaduti non ancora ripassati: FAC-01, PORT-02, INFRA-03, DIP-03, APP-02, UOW-01, BEHAV-02, QRY-03, FAC-03, + molti Box 2 da febbraio
 
 ### Priorita Certificazione: CLCODE (almeno 1/giorno)
 
@@ -435,26 +494,17 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 
 ---
 
-## 🚨 TODO: Quiz da Knowledge/ (IMPORTANTE!)
+## ✅ Knowledge Quiz Integration (COMPLETATA 2026-03-24)
 
-> **Gap identificato da Dan (2026-02-18):** La spaced repetition attualmente copre solo i quiz dai `Notes/` del progetto, ma NON quelli dalla Knowledge base.
+> **Gap identificato da Dan (2026-02-18)**, risolto il **2026-03-24**.
+> Tutti i quiz da Knowledge/ e Senior-Engineer/Notes/ sono ora tracciati.
+> Vedi "Source Mapping" in fondo per la mappa completa quiz→nota.
 
-### Quiz Knowledge da Aggiungere
-Le seguenti note in `Knowledge/` hanno quiz che devono essere tracciati:
-
-| Nota | Quiz | Status |
-|------|------|--------|
-| `solid/single-responsibility-principle.md` | 4 quiz (SRP-01 to SRP-04) | ⚠️ Da verificare duplicati |
-| `solid/open-closed-principle.md` | 3 quiz (OCP) | ⚠️ Da verificare duplicati |
-| `solid/dependency-inversion-principle.md` | 3 quiz (DIP) | ⚠️ Da verificare duplicati |
-| `patterns/facade-pattern.md` | 3 quiz (FAC) | ⚠️ Da verificare duplicati |
-| `architecture/programming-paradigms.md` | 3 quiz (PARA) | ⚠️ Da verificare duplicati |
-| `architecture/domain-events-theory.md` | ? quiz | ⬜ Da aggiungere |
-
-### Prossimi Step
-1. [ ] Verificare quali quiz sono già nel tracker (evitare duplicati)
-2. [ ] Aggiungere quiz mancanti da Knowledge/
-3. [ ] Unificare tracking: Notes/ e Knowledge/ nello stesso sistema
+### Azioni completate:
+1. [x] Verificati duplicati tra Knowledge/ e tracker (vedi "Overlap noti")
+2. [x] Aggiunti 25 nuovi quiz: VO-01/02/03, DOTNET-01/02/03, EXAM-01/02/03, CTX-01/02/03, MSEL-01/02/03, CALV-01/02/03, CLEAN-03/04, VAL-03/04/05, CQRS-05, BEHAV-04/05
+3. [x] Nomenclatura con Source Mapping per evitare futuri duplicati
+4. [x] Regola "2 Box 1 per sessione" aggiunta
 
 ---
 
@@ -489,8 +539,88 @@ Le seguenti note in `Knowledge/` hanno quiz che devono essere tracciati:
 - `C4-XX` = C4 Model
 - `ADR-XX` = Architecture Decision Records
 - `DEEP-XX` = Deep Modules
-- ... (aggiungi altri man mano)
+- `VAL-XX` = Validation in DDD
+- `SENUM-XX` = Smart Enum
+- `VO-XX` = Value Objects
+- `DOTNET-XX` = .NET Project Structure
+- `EXAM-XX` = Derivato da esame (weak areas)
+- `CTX-XX` = Context Management (AI)
+- `MSEL-XX` = Model Selection Strategy (AI)
+- `CALV-XX` = Coding Assistant vs LLM (AI)
+- `EVT-XX` = Domain Events
+- `CQRS-XX` = CQRS & MediatR
+- `BEHAV-XX` = Pipeline Behaviors
+- `FV-XX` = FluentValidation
+- `CMD-XX` = CQRS Commands
+- `QRY-XX` = CQRS Queries
+- `PORT-XX` = Ports & Adapters
+- `APP-XX` = Application Layer
+- `UOW-XX` = Unit of Work
+- `REPO-XX` = Repository Pattern
+- `INFRA-XX` = Infrastructure Layer
+- `MIG-XX` = EF Core Migrations
+- `OWN-XX` = Value Object Persistence (Owned Types)
+- `INT-XX` = Integration Tests
+- `SEAM-XX` = Testing Seams
+- `MOCK-XX` = Testing con Mocks
+- `DI-XX` = Composition Root / DI
+- `FACT-XX` = Factory Pattern
+- `FAC-XX` = Facade Pattern
+- `CLCODE-XX` = Claude Code (Corso Anthropic)
+
+### Source Mapping (Origine Quiz)
+
+> Per evitare duplicati e sapere da dove viene ogni quiz.
+> Formato: `ID → source_file`
+
+| Prefisso | Source principale | Note secondarie |
+|----------|------------------|-----------------|
+| CLEAN | `Knowledge/architecture/clean-architecture-principles.md` | — |
+| COMP | `Knowledge/architecture/components.md` | — |
+| COH | `Knowledge/architecture/component-cohesion.md` | — |
+| COUP | `Knowledge/architecture/component-coupling.md` | — |
+| PARA | `Knowledge/architecture/programming-paradigms.md` | — |
+| EVT | `Knowledge/architecture/domain-events-theory.md` | `Senior-Engineer/.../domain-events.md` |
+| VAL | `Knowledge/architecture/validation-vs-invariants.md` | — |
+| OCP | `Knowledge/solid/open-closed-principle.md` | — |
+| SRP | `Knowledge/solid/single-responsibility-principle.md` | — |
+| LSP | `Knowledge/solid/liskov-substitution-principle.md` | — |
+| ISP | `Knowledge/solid/interface-segregation-principle.md` | — |
+| DIP | `Knowledge/solid/dependency-inversion-principle.md` | — |
+| DEEP | `Knowledge/design/deep-modules.md` | — |
+| FAC | `Knowledge/patterns/facade-pattern.md` | — |
+| FACT | `Knowledge/patterns/factory-pattern.md` | — |
+| REPO | `Knowledge/patterns/repository-pattern.md` | `Senior-Engineer/.../repository-interfaces.md` |
+| UOW | `Knowledge/patterns/unit-of-work-pattern.md` | — |
+| BEHAV | `Knowledge/patterns/mediatr-pipeline-behaviors.md` | `Senior-Engineer/.../W1-queries-validation-behaviors.md` |
+| CQRS | `Knowledge/architecture/cqrs-pattern.md` | — |
+| SENUM | `Senior-Engineer/.../smart-enum.md` | `Senior-Engineer/.../domain-building-blocks.md` |
+| VO | `Senior-Engineer/.../value-objects.md` | — |
+| DOTNET | `Senior-Engineer/.../dotnet-project-structure.md` | — |
+| EXAM | `Exams/esame_2026-02-28.md` | Weak areas da esami |
+| CTX | `Knowledge/ai/context-management.md` | — |
+| MSEL | `Knowledge/ai/model-selection-strategy.md` | Overlap con CLCODE-04 |
+| CALV | `Knowledge/ai/coding-assistant-vs-llm.md` | Overlap con CLCODE-01 |
+| CLCODE | Corso Anthropic "Claude Code in Action" | Overlap con Knowledge/ai/* |
+| FV | `Knowledge/architecture/validation-vs-invariants.md` | AQ P1 Notes |
+| CMD/QRY | `Knowledge/architecture/cqrs-pattern.md` | Senior P1 Notes |
+| PORT | `Knowledge/solid/dependency-inversion-principle.md` | AQ P1 Notes |
+| APP | AQ P1 Notes | — |
+| INFRA/MIG/OWN/INT | AQ P1 Notes (Week 4) | — |
+| SEAM/MOCK/DI | AQ P1 Notes | — |
+
+### Overlap noti (NON duplicati)
+
+> Quiz che coprono argomenti simili da fonti diverse. Tenuti entrambi perché angolazioni diverse.
+
+| Quiz A | Quiz B | Perché non è duplicato |
+|--------|--------|----------------------|
+| CLCODE-01 | CALV-01 | CLCODE: pratico (tool). CALV: teorico (architettura) |
+| CLCODE-04 | MSEL-01 | CLCODE: scenario specifico. MSEL: strategia generale |
+| CLCODE-12 | CTX-03 | CLCODE: sintomi. CTX: soluzione |
+| EVT-01/02/03 | Senior P1 domain-events.md Q1/Q2/Q3 | Stessi concetti, già unificati sotto EVT-xx |
+| REPO-01/02/03 | Senior P1 repository-interfaces.md Q1/Q2/Q3 | Stessi concetti, già unificati sotto REPO-xx |
 
 ---
 
-*Ultimo aggiornamento: 2026-03-16*
+*Ultimo aggiornamento: 2026-03-24*
