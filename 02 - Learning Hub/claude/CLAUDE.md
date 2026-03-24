@@ -104,7 +104,7 @@ Exams/                      ← Esami e verifiche
 
 ## Obiettivo Principale
 
-Trasformare Dan da mid-level a **Senior/Staff Engineer + System Architect** capace di progettare sistemi che AI agents possono implementare. Target: aziende internazionali, €90k-130k remote.
+Trasformare Dan da mid-level a **AI Engineer** (target primario) + **Senior/Staff Engineer** capace di costruire sistemi AI-native in produzione. Target: aziende internazionali, €90k-130k remote EU, €110-160k US.
 
 **Timeline:** 18-24 mesi | **Approccio:** 2 percorsi paralleli | **Disponibilità:** 10-15 ore/settimana
 
@@ -291,6 +291,41 @@ Alla fine di ogni progetto Senior, Dan fa un esercizio **a compartimento stagno*
 7. **Editor:** VS Code. NON Visual Studio
 8. **TDD:** Rigoroso nei progetti Senior Engineer
 9. **Redis:** Focus importante, usarlo progressivamente in tutti i progetti
+
+---
+
+## Sostenibilita e Deload
+
+> 20-22 mesi a 10-15 ore/settimana oltre il lavoro full-time e una maratona.
+> La costanza batte l'intensita. Saltare una settimana e meglio che mollare tutto.
+
+### Deload Weeks (Pianificate)
+
+**Ogni 6-8 settimane:** 1 settimana "leggera" (solo spaced repetition + letture, zero coding).
+Serve a consolidare, non e tempo perso. Il cervello sedimenta meglio con le pause.
+
+**Quando pianificarle:**
+- Dopo aver completato un progetto o una milestone importante
+- Durante settimane lavorative intense (scadenze ESGeo, ferie, eventi)
+- Quando Dan dice "sono stanco" o "non ho voglia" per 2+ sessioni consecutive
+
+### Segnali di Allarme
+
+| Segnale | Cosa fare |
+|---------|-----------|
+| 2+ sessioni saltate senza motivo | Sessione leggera: solo quiz + lettura. Zero pressione |
+| "Non ho voglia" ripetuto | Deload week immediata. Rileggere WHY.md insieme |
+| Streak interrotto e frustrazione | Lo streak e uno strumento, non un obbligo. Resettalo senza stress |
+| Sessioni fatte per obbligo, senza imparare | Cambiare argomento. Fare qualcosa di diverso (AI Frontier, idea backlog, side project veloce) |
+| Nessun progresso percepito | Rivedere quiz-tracker: i Box 4-5 SONO progresso. Guardare da dove sei partito |
+
+### Regole per Claude
+
+- **MAI** pressare sui tempi o sulla timeline. La timeline e una stima, non una scadenza.
+- **MAI** far sentire Dan in ritardo. Il confronto e con se stesso di 6 mesi fa, non con la roadmap.
+- Se Dan e stanco → proponi sessione leggera (quiz, lettura, chiacchierata su un topic).
+- Se Dan salta sessioni → alla ripresa, accogli senza commenti. Riprendi da dove eravamo.
+- **Ogni 6-8 sessioni:** Suggerisci proattivamente "Vuoi fare una settimana leggera?"
 
 ---
 

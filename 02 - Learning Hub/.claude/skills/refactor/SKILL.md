@@ -145,6 +145,70 @@ Valuta la struttura complessiva:
 
 ---
 
+## Step 2b: Analisi Contenuto Roadmap (Gap Analysis Cross-Path)
+
+> Questa analisi va oltre la struttura: verifica che il CONTENUTO delle roadmap
+> copra effettivamente ciò che serve per il ruolo target.
+
+### Principio: Analizza il COMBINATO, non i singoli path
+
+Non analizzare ogni roadmap in isolamento. Il Percorso Minimo è la SOMMA di:
+- Architect Quest MINIMO (P1, P2.5, P2)
+- Senior Engineer MINIMO (P1, P1.5, P2, P3)
+- AI Skills (integrato nei progetti sopra)
+- Career Boost (system design + interview prep)
+
+**Domanda guida:** "Uno che completa TUTTO il MINIMO, ha le competenze per il ruolo target?"
+
+### Come fare l'analisi
+
+1. **Leggi `career-strategy.md`** → identifica il ruolo target e le competenze richieste
+2. **Per ogni roadmap MINIMO:** elenca le competenze che insegna (non i progetti, le SKILL)
+3. **Unisci tutto in una mappa competenze combinata**
+4. **Confronta con i requisiti del ruolo target** → identifica i GAP
+5. **Per ogni gap trovato:** classifica nel tier appropriato
+
+### Classificazione 3 Tier
+
+| Tier | Significato | Azione | Esempio |
+|------|------------|--------|---------|
+| **Tier 1 — Urgente** | Competenza fondamentale che manca. Senza questa, il candidato ha un buco visibile in interview. | Integra nel MINIMO come mini-topic in una week esistente | Resilience patterns (Circuit Breaker, Retry) — un backend dev DEVE sapere cosa succede quando un servizio va giù |
+| **Tier 2 — Expertise** | Competenza importante che distingue un senior da un mid. Non bloccante per il primo colloquio, ma diventa necessaria nel tempo. | Integra nel MINIMO se possibile con effort basso (~3-4 ore), altrimenti segna come "primo post-assunzione" | Observability (OpenTelemetry, correlation ID) — non ti chiedono di configurarlo, ma devi sapere cos'è |
+| **Tier 3 — Nice-to-have** | Interessante, arricchente, ma non richiesto. Dà un vantaggio competitivo ma non è un gap. | Metti in backlog/Frontier Lab. Non toccare il MINIMO. | Kubernetes, Semantic Kernel, LangChain |
+
+### Regole di Integrazione dei Gap
+
+1. **MAI creare nuovi progetti o nuove week** per un gap. Allunga la timeline senza motivo.
+2. **Integra come mini-topic** (~2-4 ore) dentro una week esistente dove il contesto è già caldo.
+   - Esempio: Resilience patterns → SE P2 Chat App W5 (Redis scaling) perché "Redis va giù" è il caso d'uso naturale.
+   - Esempio: Observability → AQ P1 W15-16 (deployment/production) perché in produzione serve.
+3. **Preferisci il progetto dove il gap si PRATICA**, non dove si "impara in teoria".
+4. **Se il gap è troppo grande per un mini-topic** (>5 ore) → è un segnale che va nel Percorso Completo, non nel MINIMO.
+
+### Filtro Qualità Contenuto
+
+Per ogni sezione delle roadmap, chiediti:
+
+| Domanda | Se la risposta è NO → |
+|---------|----------------------|
+| È pratico e progetto-driven? | Riformula come task concreto nel progetto, non come "studia X" |
+| È troppo "interview prep"? | Arricchisci con implementazione reale. Le flashcard non bastano. |
+| È collegato al progetto corrente? | Sposta nella week/progetto dove ha senso praticarlo |
+| È ridondante con un'altra roadmap? | Tieni solo in una roadmap, referenzia dall'altra |
+
+### Verifica Timeline
+
+Usa dati reali, non stime ottimistiche:
+
+1. Calcola la **pace reale misurata** dal git log o dai session log:
+   - `settimane_reali / settimane_roadmap` per ogni percorso
+   - Esempio: AQ W1-W4 in 7 settimane reali → pace 1.75x
+2. Moltiplica le settimane roadmap rimanenti × pace reale
+3. Confronta con la timeline dichiarata in `career-strategy.md`
+4. Se lo scarto è >15%, aggiorna la timeline con nota esplicita
+
+---
+
 ## Step 3: Report
 
 Genera un report strutturato:
@@ -176,10 +240,23 @@ Genera un report strutturato:
 ## Cosa VA BENE (non toccare)
 - Lista di cose che funzionano correttamente
 
+## Gap Competenze (da Step 2b)
+
+| Gap | Tier | Placement proposto | Effort |
+|-----|------|--------------------|--------|
+| ... | 1/2/3 | Roadmap > Progetto > Week | ~Xh |
+
 ## Fix Proposti (in ordine di priorita)
+
+### Strutturali
 1. [CRITICAL] ...
 2. [WARN] ...
 3. [LOW] ...
+
+### Contenuto (Gap)
+1. [Tier 1] ... → integra in ...
+2. [Tier 2] ... → integra in ...
+3. [Tier 3] ... → backlog/Frontier Lab
 ```
 
 ---

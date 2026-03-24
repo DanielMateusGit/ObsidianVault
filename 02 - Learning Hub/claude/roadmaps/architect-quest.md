@@ -194,7 +194,14 @@ P4 FamilyBudget → Alert budget superato, reminder spese ricorrenti
 
 **Mese 4: Cloud + Production**
 - W13-14: Terraform per Azure
-- W15-16: Deployment, monitoring, Boss Battle
+- W15-16: Deployment, Boss Battle
+  - 📊 Observability Base (mini-topic, ~3-4 ore)
+    - OpenTelemetry SDK: traces + metrics setup in .NET
+    - Correlation ID middleware (HttpContext → log → downstream calls)
+    - Health checks endpoint (`/health`, `/health/ready`)
+    - Structured logging con correlation ID in Serilog
+    - Dashboard base: Aspire Dashboard o Seq per visualizzare traces
+  - Nota: Questo è il foundation. Grafana/Jaeger stack completo → P3 BookingHub (COMPLETO)
 
 ### 🏆 Boss Battle: "Reminder Service"
 
@@ -219,6 +226,7 @@ P4 FamilyBudget → Alert budget superato, reminder spese ricorrenti
 - [ ] Terraform modules
 - [ ] C4 diagrams (tutti i livelli)
 - [ ] 4+ ADRs
+- [ ] Observability base (OpenTelemetry traces, correlation ID, health checks)
 - [ ] Sistema deployato su Azure
 
 ---

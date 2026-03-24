@@ -11,7 +11,8 @@
 - Avere portfolio pronto per aziende internazionali
 - **Superare system design interviews** 🎤
 - **Comunicare efficacemente in team remoti** 🌍
-- **Target:** Ruolo senior €90k-130k remote
+- **Target:** AI Engineer / Senior Engineer €90k-130k+ remote
+- **Nota:** Le skill Senior sono la BASE solida su cui costruisci il ruolo AI Engineer (vedi `ai-skills.md`)
 
 ---
 
@@ -132,7 +133,7 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 - EF Core Migrations
 - Controllers (Tasks, Projects, Tags)
 - Exception handling middleware
-- Serilog structured logging
+- Serilog structured logging + correlation ID middleware
 - Swagger/OpenAPI
 - Integration tests (TestContainers)
 - API tests (WebApplicationFactory)
@@ -345,6 +346,8 @@ Applicazione chat real-time scalabile a 1000+ utenti concorrenti.
 |---------|---------------------|
 | **Observer** | Notifica subscribers di nuovi messaggi |
 | **Pub/Sub** | Distribuzione messaggi tra server |
+| **Circuit Breaker** | Gestisce fallimenti Redis/servizi esterni senza crash |
+| **Retry + Backoff** | Riconnessione intelligente dopo failure temporanei |
 
 ### Settimane
 
@@ -353,10 +356,15 @@ Applicazione chat real-time scalabile a 1000+ utenti concorrenti.
 - Basic chat functionality
 - Message persistence
 
-**Week 5: Redis + Scaling**
+**Week 5: Redis + Scaling + Resilience**
 - Redis backplane per scaling
 - Redis Pub/Sub
 - Presence (chi è online)
+- **🛡️ Resilience Patterns con Polly** (mini-topic, ~2-3 ore)
+  - Circuit Breaker: Redis va giu → il chat degrada, non crasha
+  - Retry with exponential backoff: connessione persa → riprova intelligentemente
+  - Timeout policy: nessuna operazione blocca per sempre
+  - Perche qui: stai scalando un sistema real-time, i failure sono inevitabili. Meglio impararlo su un progetto dove li VEDI succedere
 
 **Week 6: Frontend + Polish**
 - React + TypeScript frontend
@@ -1001,5 +1009,5 @@ CAPSTONE = AI Second Brain
 
 ---
 
-*Ultimo aggiornamento: 2026-03-13*
-*Versione: 4.0 - P6 unito con AI Second Brain, Career Boost estratto, timeline realistica*
+*Ultimo aggiornamento: 2026-03-24 (refactor — target aggiornato con AI Engineer)*
+*Versione: 4.1*

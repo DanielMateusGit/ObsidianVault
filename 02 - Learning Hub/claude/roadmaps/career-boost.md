@@ -1,7 +1,32 @@
 # Career Boost Module
 
-> Modulo trasversale per passare da "bravo developer" a "hired senior"
-> Parallelo ai progetti, Mesi 3-18+
+> Modulo trasversale per passare da "bravo developer" a "hired AI Engineer / Senior"
+> Parallelo ai progetti, Mesi 3-22
+
+---
+
+## Come Si Integra (Budget Ore)
+
+> Il Career Boost NON e tempo extra sopra le 10-15 ore/settimana.
+> Si integra nelle ore gia previste.
+
+**Distribuzione tipo in una settimana da 12 ore:**
+```
+Progetto (coding/teoria):     9-10 ore  (~80%)
+System design practice:       30-45 min  (~5%)   ← 1 topic/settimana
+Communication/writing:        0-30 min   (~3%)   ← integrato nei PR e README
+Interview prep:               0 ore      (0%)    ← solo ultimi 3-4 mesi
+```
+
+**Quando fare system design:**
+- **Regola:** 1 design a settimana, collegato al progetto corrente quando possibile
+- **Momento migliore:** Fine sessione weekend, quando hai appena lavorato sul progetto e il contesto e fresco
+- **Come:** Scrivi il design document in 30-45 min, poi chiedilo come domanda a Claude nella sessione successiva ("Spiegami il design di X come se fossi in interview")
+- **Se salti una settimana:** Non recuperare. Il prossimo weekend fai il prossimo topic. La costanza batte la completezza.
+
+**Interview prep (ultimi 3-4 mesi):**
+- Quando inizi a cercare lavoro, ruba ~2 ore/settimana dai progetti
+- A quel punto i progetti MINIMO sono quasi finiti, quindi c'e spazio
 
 ---
 
@@ -13,20 +38,23 @@
 
 ### System Design Topics
 
-| # | Topic | Progetto Collegato | Quando |
-|---|-------|-------------------|--------|
-| 1 | URL Shortener | Senior P5 | Mese 3 |
-| 2 | Rate Limiter | Senior P1.5 | Mese 3 |
-| 3 | Chat System | Senior P2 | Mese 4 |
-| 4 | Notification System | Architect P1 | Mese 5 |
-| 5 | E-commerce Cart | Senior P3 | Mese 6 |
-| 6 | Booking System | Architect P3 | Mese 7 |
-| 7 | Social Feed | Standalone | Mese 8 |
-| 8 | Search Autocomplete | Standalone | Mese 9 |
-| 9 | Distributed Cache | Senior P5 (Redis) | Mese 10 |
-| 10 | Video Streaming | Standalone | Mese 11 |
-| 11 | Payment System | Senior P3 | Mese 12 |
-| 12 | Ride Sharing (Uber) | Standalone | Mese 12 |
+> **Percorso Minimo (18 mesi):** Priorita ai topic ⭐ collegati a progetti MINIMO.
+> I topic senza ⭐ si fanno nel Percorso Completo o come standalone quando c'e tempo.
+
+| # | Topic | Progetto Collegato | Tier | Quando |
+|---|-------|-------------------|------|--------|
+| 1 | Rate Limiter | Senior P1.5 | ⭐ MINIMO | Mese 3 |
+| 2 | Chat System | Senior P2 | ⭐ MINIMO | Mese 5 |
+| 3 | Notification System | Architect P1 | ⭐ MINIMO | Mese 5 |
+| 4 | E-commerce Cart | Senior P3 | ⭐ MINIMO | Mese 8 |
+| 5 | Payment System | Senior P3 | ⭐ MINIMO | Mese 9 |
+| 6 | Booking System | Architect P3 | COMPLETO | Mese 14 |
+| 7 | URL Shortener | Senior P5 | COMPLETO | Mese 16 |
+| 8 | Distributed Cache | Senior P5 (Redis) | COMPLETO | Mese 16 |
+| 9 | Social Feed | Standalone | Standalone | Quando vuoi |
+| 10 | Search Autocomplete | Standalone | Standalone | Quando vuoi |
+| 11 | Video Streaming | Standalone | Standalone | Quando vuoi |
+| 12 | Ride Sharing (Uber) | Standalone | Standalone | Quando vuoi |
 
 ### System Design Template
 
@@ -195,7 +223,7 @@ Raccomandato per REST: URL versioning (piu esplicito)
 
 ## Interview Prep (Mesi 15-18+)
 
-**Obiettivo:** Passare interview per ruoli remote €90k-130k
+**Obiettivo:** Passare interview per ruoli AI Engineer / Senior remote €90k-130k+ EU
 
 ### Behavioral Questions (STAR Method)
 
@@ -269,7 +297,7 @@ Result: Qual e stato il risultato (numeri se possibile)
 
 - [ ] GitHub profile curato (README, pinned repos)
 - [ ] Ogni progetto ha README con: What, Why, How, Demo
-- [ ] LinkedIn aggiornato (headline: "Senior .NET Engineer | ...")
+- [ ] LinkedIn aggiornato (headline: "AI Engineer | LLM Integration + Agentic Systems | .NET + React")
 - [ ] 1-page resume (no more!)
 - [ ] Personal website/blog (opzionale ma utile)
 
@@ -298,4 +326,4 @@ Result: Qual e stato il risultato (numeri se possibile)
 
 ---
 
-*Ultimo aggiornamento: 2026-03-13*
+*Ultimo aggiornamento: 2026-03-24 (refactor — riallineato a Percorso Minimo + AI Engineer target)*

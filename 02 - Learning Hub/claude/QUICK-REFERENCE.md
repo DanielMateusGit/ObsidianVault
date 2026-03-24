@@ -13,9 +13,11 @@
 │   ├── current-state.md        ← Stato attuale (AGGIORNATO FREQUENTEMENTE!)
 │   ├── QUICK-REFERENCE.md      ← Questo file
 │   ├── roadmaps/
-│   │   ├── architect-quest.md  ← Roadmap 18 mesi (4 progetti)
-│   │   ├── senior-engineer.md  ← Roadmap 18 mesi (6 progetti)
-│   │   └── ai-skills.md        ← Roadmap AI (Claude-Native + Agnostic)
+│   │   ├── architect-quest.md  ← Roadmap AQ (5 progetti + AI track)
+│   │   ├── senior-engineer.md  ← Roadmap SE (6 progetti)
+│   │   ├── ai-skills.md        ← Roadmap AI Skills (integrata nei progetti)
+│   │   ├── career-boost.md     ← System Design, Communication, Interview Prep
+│   │   └── senior-frontend.md  ← Side track React + Flutter
 │   ├── context/
 │   │   ├── tech-stack.md       ← Stack tecnologico
 │   │   ├── learning-style.md   ← Come Dan impara + workflow esami
@@ -125,7 +127,7 @@
 ### **Componenti**
 
 #### 1. **AI Projects Integration** (Mesi 5-18)
-- **P2.5** (M5-6): AI Calendar System
+- **P2.5** (M6-8): AI Gateway
   - Phase 1: Ollama (100% universale)
   - Phase 2: Claude + MCP (80% universale)
   - Phase 3: Multi-provider (95% universale)

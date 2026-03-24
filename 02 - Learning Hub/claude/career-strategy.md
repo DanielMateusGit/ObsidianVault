@@ -16,7 +16,12 @@
 
 ## Percorso Minimo vs Completo
 
-### Percorso Minimo (18 mesi → primo colloquio €85k+)
+### Percorso Minimo (~20-22 mesi → primo colloquio €85k+)
+
+> **Nota realistica (2026-03-24):** La stima originale era 18 mesi.
+> Pace reale misurata: 1 week roadmap ≈ 1.75 settimane reali (AQ, 70% focus) e ≈ 4 settimane reali (SE, 30% focus).
+> Proiezione con dati reali: **~20-22 mesi** dal giorno zero. Non e un ritardo — e la stima corretta.
+> Il piano resta identico, solo la timeline e piu onesta.
 
 **Architect Quest:**
 - P1 Notification Service ⭐
@@ -43,9 +48,9 @@ Tutto il Minimo + AQ P3 BookingHub + SE P4-P6 + Senior Frontend (Focus Tube + Fi
 
 | Mese | Milestone | Verifica (sì/no) |
 |------|-----------|-------------------|
-| 6 | AQ P1 completato, SE P1+P1.5 completati, 6+ system designs | Posso progettare Clean Arch da zero? |
-| 12 | AQ P2.5 + P2 completati, SE P2+P3 completati | Posso implementare CQRS+ES? Posso spiegare un system design in 45 min? |
-| 18 | Career Boost completato, portfolio curato, mock interviews fatte | Posso passare un colloquio senior? |
+| 8 | AQ P1 completato, SE P1+P1.5 completati, 3+ system designs | Posso progettare Clean Arch da zero? |
+| 14 | AQ P2.5 + P2 completati, SE P2+P3 completati | Posso implementare CQRS+ES? Posso spiegare un system design in 45 min? |
+| 20-22 | Career Boost completato, portfolio curato, mock interviews fatte | Posso passare un colloquio AI Engineer / Senior? |
 
 ---
 
@@ -183,4 +188,4 @@ Con AI skills: +15-25% a ogni tier.
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (AI Engineer come target primario)*
+*Ultimo aggiornamento: 2026-03-24 (refactor — timeline realistica 20-22 mesi, milestone ricalibrate)*

@@ -65,18 +65,20 @@ BEST: Combine all three for ultimate flexibility!
 
 ## 📅 Timeline Overview
 
+> **Nota:** I mesi qui corrispondono a quelli in `architect-quest.md` (fonte di verita per le date).
+
 ```
-Mesi 5-6:   P2.5 - AI Engineer Calendar System
+Mesi 6-8:   P2.5 - AI Engineer Calendar System
             ├─ Phase 1: Ollama Foundation (intent parsing)
             ├─ Phase 2: Claude API + MCP Server + Guardrails
             └─ Phase 3: Multi-Agent + Evals + Production
 
-Mese 10-14: P3 - BookingHub + AI Integration
+Mesi 13-18: P3 - BookingHub + AI Integration
             ├─ MCP Server for booking data
             ├─ Claude-powered admin assistant
             └─ Hybrid Ollama + Claude architecture
 
-Mese 15-18: P4 - FamilyBudget + AI Integration
+Mesi 19-24: P4 - FamilyBudget + AI Integration
             ├─ MCP Server for financial data
             ├─ Claude budget advisor (complex reasoning)
             └─ Ollama for categorization (fast, local)
@@ -86,7 +88,7 @@ Mese 15-18: P4 - FamilyBudget + AI Integration
 
 ---
 
-## 🤖 PROGETTO 2.5: AI Gateway + Calendar System (Mesi 5-6) 🔧 SHARED SERVICE
+## 🤖 PROGETTO 2.5: AI Gateway + Calendar System (Mesi 6-8) 🔧 SHARED SERVICE
 
 > **Tipo:** Shared Service - L'AI Gateway sarà riutilizzato da P3 BookingHub e P4 FamilyBudget
 >
@@ -159,7 +161,7 @@ Il progetto è strutturato per insegnare **prima i fondamentali universali**, po
 | Phase | Focus | Genericità | Trasferibilità |
 |-------|-------|------------|----------------|
 | **1 (W1-3)** | Ollama + Fundamentals | **100% Generico** | Applicabile a qualsiasi LLM |
-| **2 (W4-6)** | Claude + Tools + Guardrails | 80% Generico | Concetti tool use + safety universali |
+| **2 (W4-6)** | Claude + Tools + Guardrails + Fine-tuning Framework | 80% Generico | Concetti tool use + safety + decision framework universali |
 | **3 (W7-9)** | Multi-Agent + Evals + Production | **95% Generico** | Pattern AI Engineer universale |
 
 **Risultato:** Sai lavorare con Claude (vantaggio competitivo) MA puoi adattarti a qualsiasi provider in giorni, non mesi.
@@ -377,14 +379,26 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Conflict detection
 - Basic testing
 
-**Week 3: Context & Polish**
+**Week 3: RAG Reale + Context Management**
+- **🔍 Vector Search con pgvector** (PostgreSQL extension — gia nel tuo stack)
+  - Il Calendar System deve cercare eventi per significato, non solo per data
+  - "Trova quel meeting dove parlavamo di budget" → vector similarity search
+  - pgvector setup, indici HNSW vs IVFFlat, distanza coseno vs L2
+  - Confronto pratico: pgvector vs Qdrant (quando serve un DB dedicato?)
+- **🧠 Embedding model selection**
+  - Quale modello per contenuto misto italiano/inglese? Benchmark 2-3 modelli
+  - Ollama embeddings (nomic-embed-text) vs API (voyage, OpenAI)
+  - Dimensioni embedding: 384 vs 768 vs 1536 — trade-off qualita/costo/velocita
+- **📦 Chunking & retrieval strategies**
+  - Come spezzi gli eventi in chunk? (per campo? per settimana? overlap?)
+  - Hybrid search: keyword (PostgreSQL full-text) + vector → reranking
+  - Query decomposition: "Sono libero martedi dopo pranzo?" → 2 sub-query (eventi martedi + orari pranzo)
 - Conversation history (PostgreSQL)
-- Context window management
-- Multi-turn conversations
+- Context window management & multi-turn
 - Redis caching per risposte comuni
 - Flutter app MVP (chat interface)
 
-**Deliverable Phase 1:** Calendar assistant che usa solo Ollama ✅
+**Deliverable Phase 1:** Calendar assistant con Ollama + RAG reale (vector search, non solo text match) ✅
 
 ---
 
@@ -411,7 +425,7 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Tool registration con Claude
 - Testing con Claude Desktop
 
-**Week 6: Claude Reasoning + Guardrails**
+**Week 6: Claude Reasoning + Guardrails + Decision Framework**
 - Complex queries via Claude:
   - "Quando sono libero per un caffè con Marco?"
   - "Suggerisci il miglior orario per un meeting importante"
@@ -424,8 +438,13 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
   - Output validation layer (schema check, content filter)
   - PII detection nelle risposte
   - Test di sicurezza AI (adversarial prompts)
+- **🧠 AI ENGINEER GAP: Fine-tuning Decision Framework**
+  - Decision tree: RAG vs fine-tuning vs prompt engineering (quando usare cosa)
+  - Costo/beneficio fine-tuning (quando vale la pena vs RAG)
+  - Awareness: come funziona il fine-tuning (teoria, no hands-on richiesto)
+  - Data preparation: formato, qualita, quantita minime
 
-**Deliverable Phase 2:** MCP Server funzionante + Claude integration + Guardrails layer ✅
+**Deliverable Phase 2:** MCP Server funzionante + Claude integration + Guardrails layer + Fine-tuning decision framework ✅
 
 ---
 
@@ -469,10 +488,15 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
   - Snapshot testing per prompt (regression)
   - Contract testing per tool use (schema validation)
   - Eval-driven development: scrivi l'eval PRIMA del prompt
+- **🚀 AI Deployment & Serving**
+  - Ollama in produzione: Docker container con modello pre-loaded, healthcheck, memory limits
+  - CPU vs GPU trade-off per inference locale (M4 Pro = ottimo per dev, ma in cloud?)
+  - Scaling AI endpoints: quando un singolo container non basta (queue + workers)
+  - Model caching: evitare cold start di 10s su primo request
 - Production polish:
   - Observability completa (Logs, metrics, traces con AI-specific dimensions)
-  - Rate limiting
-  - Graceful degradation
+  - Rate limiting per utente + per provider (budget protection)
+  - Graceful degradation (Claude down? Fallback a Ollama con UX ridotta)
   - Voice interface Flutter (speech_to_text, opzionale)
 
 **Deliverable Phase 3:** Multi-agent system + eval pipeline + AI production-ready ✅
@@ -519,8 +543,10 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 - Temperature bassa (0.3) per parsing consistente
 - Conversation history per contesto multi-turn
 
-**RAG Pattern:**
-- Fetch dati rilevanti dal DB → converti in contesto testuale → inject nel prompt
+**RAG Pattern (Production-grade):**
+- Pipeline: Query → Embedding → Vector search (pgvector) → Reranking → Context injection → LLM
+- Hybrid retrieval: vector similarity + keyword full-text → merge & rerank risultati
+- Chunking strategy: sliding window con overlap, metadata preservation
 - Pattern universale applicabile a qualsiasi dominio
 
 **Entity Extraction:**
@@ -561,7 +587,7 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 | W3 | Advanced Patterns (RAG, context mgmt, Redis cache) | 100% | Zero |
 | W4 | Cloud Provider (streaming, cost tracking, abstraction) | 85% | Minimo (solo SDK) |
 | W5 | Tool Systems (function calling, MCP, tool registry) | 70% | Medio (MCP specifico) |
-| W6 | Orchestration + Guardrails (safety, prompt injection defense) | 90% | Basso |
+| W6 | Orchestration + Guardrails + Fine-tuning Decision Framework | 90% | Basso |
 | W7 | Provider-Agnostic Architecture (AI Router, multi-provider) | 95% | Quasi zero |
 | W8 | Multi-Agent Systems (planner/executor, Agent SDK) | 90% | Basso |
 | W9 | AI Evals + Testing + Production (eval pipeline, observability) | 100% | Zero |
@@ -590,19 +616,19 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 
 > Dettagli completi in `roadmaps/architect-quest.md` per ogni progetto.
 
-### P3 - BookingHub + AI (Mesi 13-18)
+### P3 - BookingHub + AI (Mesi 13-18, allineato ad architect-quest.md)
 - Patient-facing AI assistant (spostamenti, domande)
 - Smart scheduling (pattern storici, durata visite, preferenze)
 - Appointment reminders intelligenti (tono personalizzato)
 - Natural language search per staff
-- **W17-18:** AI integration, W19-20: Production + Boss Battle
+- AI integration nelle ultime settimane del progetto AQ P3
 
-### P4 - FamilyBudget + AI (Mesi 19-24)
+### P4 - FamilyBudget + AI (Mesi 19-24, allineato ad architect-quest.md)
 - Expense categorization automatica (Ollama, locale per privacy)
 - Smart queries budget ("posso permettermi X?", Claude per reasoning)
 - Budget optimization e pattern anomali
 - Family conflict resolution (sync offline)
-- **W17-18:** AI features, poi production
+- AI features nelle ultime settimane del progetto AQ P4
 
 ---
 
@@ -623,6 +649,19 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 
 - **Ogni Quarter:** Review landscape, prioritize 2-3 tech, 1 weekend session, document
 - **Ogni 6 mesi:** Review archived + adopted tech, update progetti se necessario
+
+### 🔮 Exploration Backlog (Tier 3 — quando hai tempo/curiosita)
+
+> Cose che vale la pena esplorare ma che NON bloccano il percorso.
+> Perfette per sessioni AI Frontier da 2-4 ore.
+
+| Tech | Perche esplorarlo | Quando ha senso |
+|------|-------------------|-----------------|
+| **Semantic Kernel (.NET)** | Orchestrazione AI nativa per il tuo stack. Confronta con le tue astrazioni: fa di piu? di meno? | Dopo P2.5 Phase 2 |
+| **LangChain / LlamaIndex** | I due framework piu citati. Sapere cosa risolvono e dove sono overkill ti da conversazioni informate | Dopo P2.5 completato |
+| **Vercel AI SDK** | Se esplori frontend AI-powered (chat UI, streaming). Leggero e pragmatico | Quando tocchi React |
+| **Instructor / Pydantic AI** | Structured output enforcement. Potresti volerlo nel tuo AI Gateway | Quando il JSON mode di Ollama ti frustra |
+| **Weights & Biases / MLflow** | Experiment tracking per AI. Overkill ora, utile se vai deep in AI/ML | Post-percorso |
 
 ### XP System
 
@@ -757,12 +796,21 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 - [ ] Graceful degradation
 - [ ] Privacy-first design
 
-### **Production Skills**
-- [ ] RAG (Retrieval-Augmented Generation)
+### **RAG & Vector Search** (Tier 1 — costruisci in P2.5 W3)
+- [ ] Vector DB setup (pgvector su PostgreSQL)
+- [ ] Embedding model selection e benchmarking (locale vs API)
+- [ ] Chunking strategies (sliding window, metadata preservation)
+- [ ] Hybrid search (vector + keyword full-text + reranking)
+- [ ] Query decomposition per query complesse
+- [ ] RAG pipeline completa: query → embed → search → rerank → inject → LLM
+
+### **Production & Deployment** (Tier 2 — costruisci in P2.5 W9)
 - [ ] Context management & conversation history
-- [ ] AI observability (logs, metrics, traces)
-- [ ] Rate limiting & quotas
-- [ ] AI testing strategies
+- [ ] AI observability (logs, metrics, traces con dimensioni AI-specific)
+- [ ] Rate limiting & quotas (per utente + per provider)
+- [ ] AI deployment: Ollama containerizzato, healthcheck, model caching
+- [ ] Scaling strategy: quando servono queue + workers
+- [ ] Graceful degradation (provider fallback)
 - [ ] Voice interface integration (optional)
 
 ### **Economic Understanding**
@@ -783,4 +831,4 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (v2.0 - Evoluzione AI Engineer: +Evals, +Guardrails, +Multi-Agent, +AI Testing, +Fine-tuning Framework)*
+*Ultimo aggiornamento: 2026-03-24 (v2.1 - Refactor: timeline allineate, +Vector DB/Embeddings/Advanced RAG in W3, +AI Deployment in W9, +Fine-tuning in W6, +Tier 3 exploration backlog)*
