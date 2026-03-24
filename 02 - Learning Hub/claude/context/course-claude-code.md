@@ -79,17 +79,6 @@ status: in-progress
 |---|------|--------|-------|-----|
 | Final | Comprehensive Exam | ✅ | **8/8** | +50 |
 
-### Modulo 2: [Nome Modulo]
-| # | Lezione | Status | XP | Note | Quiz |
-|---|---------|--------|-----|------|------|
-| 2.1 | [Titolo lezione] | ⬜ | 0/75 | - | 0/3 |
-| 2.2 | [Titolo lezione] | ⬜ | 0/75 | - | 0/3 |
-
-### Modulo 3: [Nome Modulo]
-| # | Lezione | Status | XP | Note | Quiz |
-|---|---------|--------|-----|------|------|
-| 3.1 | [Titolo lezione] | ⬜ | 0/75 | - | 0/3 |
-
 ---
 
 ## 📝 Note Create
@@ -104,48 +93,8 @@ status: in-progress
 
 ## 🧠 Quiz Tracker
 
-> Quiz organizzati per lezione. Dopo la prima risposta, entrano nel sistema Spaced Repetition globale.
-
-### Lezione 1.1: [Titolo]
-| ID | Domanda | Box | Status |
-|----|---------|-----|--------|
-| CLCODE-01 | [Domanda] | 📦1 | ⬜ |
-| CLCODE-02 | [Domanda] | 📦1 | ⬜ |
-| CLCODE-03 | [Domanda] | 📦1 | ⬜ |
-
-### Lezione 1.2: [Titolo]
-| ID | Domanda | Box | Status |
-|----|---------|-----|--------|
-| CLCODE-04 | [Domanda] | 📦1 | ⬜ |
-| CLCODE-05 | [Domanda] | 📦1 | ⬜ |
-
----
-
-## 🎯 Obiettivi del Corso
-
-### Cosa Imparerai
-- [ ] [Obiettivo 1]
-- [ ] [Obiettivo 2]
-- [ ] [Obiettivo 3]
-
-### Cosa Potrai Fare Dopo
-- [ ] [Skill applicabile 1]
-- [ ] [Skill applicabile 2]
-- [ ] [Skill applicabile 3]
-
----
-
-## 🔗 Risorse & Collegamenti
-
-### Ufficiali
-- **Corso:** [Link al corso]
-- **Documentazione:** https://docs.anthropic.com/
-- **GitHub:** https://github.com/anthropics/
-
-### Note Correlate
-- [[claude-api-basics]] - Fondamenti API Claude
-- [[prompt-engineering]] - Prompt engineering best practices
-- [[mcp-integration]] - Model Context Protocol
+> I quiz CLCODE sono tracciati nel file globale `quiz-tracker.md`.
+> Prefisso: CLCODE-01 ... CLCODE-25 (9 quiz attivi nel tracker).
 
 ---
 
@@ -172,28 +121,7 @@ status: in-progress
 
 ---
 
-## 💡 Insights & Takeaways
-
-> Aggiungi qui i tuoi "aha moments" durante il corso
-
-### Key Learnings
-- [Insight 1]
-- [Insight 2]
-
-### Applicazioni Pratiche
-- [Come applicherai questo nei tuoi progetti]
-
 ---
 
-## 🚀 Prossimi Passi
-
-### Dopo il Corso
-- [ ] Applicare Claude Code nel progetto [X]
-- [ ] Creare un progetto demo con le tecniche apprese
-- [ ] Integrare MCP nel workflow
-- [ ] [Altro]
-
----
-
-*Ultimo aggiornamento: 2026-03-13*
-*Prossima sessione: TBD*
+*Corso completato: 2026-03-13 — Perfect Score 8/8*
+*Refactored: 2026-03-24 — Rimossi template placeholder*

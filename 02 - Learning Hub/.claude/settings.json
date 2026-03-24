@@ -10,16 +10,6 @@
           }
         ]
       }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "prompt",
-            "prompt": "Prima di terminare, verifica: se durante questa sessione sono stati letti file di contesto (current-state.md, quiz-tracker.md) o assegnati XP, ricorda a Dan di usare /end per chiudere la sessione correttamente. Se Dan ha già usato /end o non è stata una sessione di studio, non dire nulla."
-          }
-        ]
-      }
     ]
   }
 }

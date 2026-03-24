@@ -15,7 +15,11 @@
 │   ├── init/SKILL.md      ← /init - startup sessione
 │   ├── quiz/SKILL.md      ← /quiz - spaced repetition
 │   ├── end/SKILL.md       ← /end - chiusura sessione
-│   └── nota/SKILL.md      ← /nota - creazione nota atomica
+│   ├── nota/SKILL.md      ← /nota - creazione nota atomica
+│   ├── ask/SKILL.md       ← /ask - domanda libera
+│   ├── exam/SKILL.md      ← /exam - esame on-demand
+│   ├── context/SKILL.md   ← /context - aggiorna file contesto
+│   └── refactor/SKILL.md  ← /refactor - analisi e miglioramento progetto
 └── hooks/
     └── validate-note.sh   ← Validazione note Knowledge/
 
@@ -65,6 +69,7 @@ Exams/                      ← Esami e verifiche
 | `/exam [N]` | Esame on-demand: mostra tabella esami disponibili, genera esame /30, corregge e salva |
 | `/end` | Chiusura sessione: aggiorna file, crea session log, git push, riepilogo |
 | `/context` | Aggiorna/correggi file di contesto (current-state, quiz-tracker, roadmaps, ecc.) |
+| `/refactor` | Analisi profonda del progetto: coerenza, completezza, duplicazione, stale content |
 
 > I comandi sono definiti in `.claude/skills/`. Gli hook di validazione in `.claude/hooks/`.
 
@@ -335,4 +340,4 @@ Ogni volta che consigli una lettura → aggiorna `context/reading-list.md`
 
 ---
 
-*Ultimo aggiornamento: 2026-03-13 (aggiunto skills + hooks)*
+*Ultimo aggiornamento: 2026-03-24 (refactor — aggiornato albero skill completo)*

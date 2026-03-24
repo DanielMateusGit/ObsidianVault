@@ -75,13 +75,17 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 
 ## Figure Professionali Target
 
-### 1. Senior Software Engineer (probabilita 95%)
-- €80-110k EU remote, €100-130k US remote
-- Full-stack delivery + mentorship
-
-### 2. AI Engineer / AI-Native Engineer (probabilita 85-90%)
+### 1. AI Engineer / AI-Native Engineer (TARGET PRIMARIO)
 - €90-130k EU, €110-160k US
 - **Tuo vantaggio competitivo nel 2026-2027**
+- Combina software engineering solido + AI skills pratiche
+- Ruolo in forte domanda: aziende cercano chi sa COSTRUIRE con AI, non solo usarla
+- Il percorso copre: LLM integration, RAG, Agentic workflows, Evals, Guardrails, Multi-Agent
+
+### 2. Senior Software Engineer (probabilita 95%)
+- €80-110k EU remote, €100-130k US remote
+- Full-stack delivery + mentorship
+- Fallback sicuro: le skill Senior sono la BASE su cui costruisci AI Engineer
 
 ### 3. Solutions Architect (probabilita 75-80%)
 - €85-120k EU, €110-150k US
@@ -98,8 +102,8 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 | Scenario | Ruolo | Salary | Probabilita |
 |----------|-------|--------|-------------|
 | **Conservativo** | Senior SE, EU remote | €85-95k | Alta |
-| **Probabile** | Senior/AI Engineer, EU/US | €95-115k | Media-alta |
-| **Ottimistico** | Staff/AI-Native, BigTech | €115-140k | Media |
+| **Probabile** | AI Engineer, EU/US remote | €95-120k | Media-alta |
+| **Ottimistico** | Senior AI Engineer, BigTech/AI-first | €120-150k | Media |
 
 ---
 
@@ -109,19 +113,20 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 **Tier 2:** US Remote (€100-145k), Svizzera Remote (€115-145k)
 **Fallback:** Italia (€65-90k)
 
-**Aziende target:** AI-first startups (Runway, Cursor, Mistral AI), Tech remote-friendly (Spotify, Wise, N26, GitLab, Zapier), BigTech EU (Microsoft, Google, Amazon)
+**Aziende target:** AI-first startups (Runway, Cursor, Mistral AI, Anthropic, Vercel), Tech remote-friendly (Spotify, Wise, N26, GitLab, Zapier), BigTech EU (Microsoft, Google, Amazon), AI tooling companies (LangChain, Weights & Biases, Braintrust)
 
 ---
 
 ## Positioning
 
-**Headline:** AI-Native Full-Stack Engineer | .NET + React + Claude/Ollama | System Design (DDD, CQRS, Event Sourcing)
+**Headline:** AI Engineer | LLM Integration + Agentic Systems + RAG | .NET + React + Claude/Ollama | System Design (DDD, CQRS, Event Sourcing)
 
 **Differenziatori:**
-1. AI-Native Skills (top 0.5% nel 2026)
+1. **AI Engineer skills complete**: LLM APIs, RAG, Agentic Workflows, Evals, Guardrails, Multi-Agent (top 0.5% nel 2026)
 2. System Design Portfolio con C4 + ADR
 3. Cloud Certifications (AZ-305, CKA)
 4. Full-Stack depth (.NET 8 + React)
+5. **Production AI**: sa mettere AI in produzione con testing, observability, safety
 
 ---
 
@@ -135,9 +140,10 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 - People management, Team Topologies, Product thinking
 - Libri: "The Manager's Path" (Fournier), "An Elegant Puzzle" (Larson)
 
-### 3. AI/ML Deep Specialization
-- Fine-tuning, RAG avanzato, Multi-agent, MLOps
-- Libri: "Designing ML Systems" (Huyen)
+### 3. AI/ML Deep Specialization (NATURALE EVOLUZIONE da AI Engineer)
+- Fine-tuning, RAG avanzato, Multi-agent orchestration, MLOps
+- Libri: "Designing ML Systems" (Huyen), "AI Engineering" (Huyen 2025)
+- Nota: il percorso AI Engineer ti da gia il 60% delle basi per questa direzione
 
 ### 4. Cloud/Platform Specialization
 - Multi-cloud, Advanced K8s, SRE, FinOps
@@ -177,4 +183,4 @@ Con AI skills: +15-25% a ogni tier.
 
 ---
 
-*Ultimo aggiornamento: 2026-03-13*
+*Ultimo aggiornamento: 2026-03-24 (AI Engineer come target primario)*

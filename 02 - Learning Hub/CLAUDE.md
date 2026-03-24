@@ -4,18 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Learning Hub is a gamified personal learning system built as an Obsidian vault. It tracks Dan's progression from mid-level to Senior/Staff Engineer + System Architect across two parallel career tracks, with Claude as AI tutor. All content is in Italian (explanations) and English (code).
+Learning Hub is a gamified personal learning system built as an Obsidian vault. It tracks Dan's progression from mid-level to AI Engineer (primary target) + Senior/Staff Engineer across two parallel career tracks, with Claude as AI tutor. All content is in Italian (explanations) and English (code).
 
 ## Session Protocol
 
-Use `/init` to start a session, `/quiz` for spaced repetition, `/nota` for atomic notes, `/end` to close. Skills are in `.claude/skills/`. The full tutoring rules live in `claude/CLAUDE.md`.
+Use `/init` to start a session, `/quiz` for spaced repetition, `/nota` for atomic notes, `/end` to close, `/refactor` for project health check. All skills are in `.claude/skills/`. The full tutoring rules live in `claude/CLAUDE.md`.
 
 ## Repository Structure
 
 - **`claude/`** — Tutor state and context (CLAUDE.md, current-state.md, WHY.md, roadmaps/, context/, sessions/)
 - **`Knowledge/`** — Atomic notes written during Sedimentazione phase. Index at `Knowledge/CLAUDE.md`
 - **`Exams/`** — Assessment records
-- **`.claude/`** — Claude Code config: skills (init, quiz, end, nota), hooks (validate-note.sh), settings
+- **`.claude/`** — Claude Code config: skills (init, quiz, end, nota, ask, exam, context, refactor), hooks (validate-note.sh), settings
 - **`coach.py`** — Local Ollama-based CLI coach (Python 3, requires `ollama`, `pyyaml`, `rich`)
 
 Production code projects live in `../../Projects/`:

@@ -19,7 +19,7 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 4144 |
+| **XP Totali** | 4169 |
 | **Livello** | 5 - Service Architect |
 | **Streak** | 6 giorni |
 | **Data inizio** | 2025-01-29 |
@@ -81,27 +81,27 @@
 
 ## Ultima Sessione
 
-**Data:** 2026-03-24
-**Tipo:** Sessione organizzativa (quiz tracker overhaul + skill /ask)
+**Data:** 2026-03-24 (sessione 2)
+**Tipo:** Sessione strategica (AI Engineer career pivot)
 
-- Creata skill `/ask` per domande libere (teoriche, corso, dove trovo)
-- Quiz tracker: +25 nuovi quiz (da 127 a 152), nomenclatura con source mapping
-- Nuove sezioni quiz: Value Objects, .NET Structure, Exam-Derived, AI (Context/Model/Assistant)
-- Espansione quiz: Clean Arch (+2), Validation (+3), CQRS (+1), Behaviors (+2)
-- Cross-linking Knowledge notes: 16 note aggiornate, ~40 nuovi [[wiki links]]
-- Nuova regola: minimo 2 quiz Box 1 + 1 CLCODE per sessione
-- Verificata copertura esame Mese 1 → 3 quiz EXAM-xx coprono weak areas
+- Dan ha deciso: vuole diventare **AI Engineer** come obiettivo primario
+- Analisi gap: 5 aree mancanti identificate (Evals, Guardrails, Multi-Agent, AI Testing, Fine-tuning)
+- **career-strategy.md**: AI Engineer spostato da target #2 a #1
+- **ai-skills.md**: +1 week (W9), +5 sezioni checklist, +30 nuove checkbox, gap integrati nelle fasi
+- **WHY.md**: aggiunta motivazione AI Engineer nella sezione "Per il Mio Futuro"
+- Copertura AI Engineer stimata: ~95% (il restante si impara on the job)
 
 ---
 
 ## Prossima Sessione
 
 **Opzioni:**
-1. Spaced repetition aggiornata (11 quiz scaduti + nuovi quiz da provare!)
+1. **Spaced repetition** (OBBLIGATORIA — 26 quiz scaduti!)
 2. Continua Senior P1 W1 (Queries + DTOs + Validation + Behaviors)
 3. Inizia Week 5 Architect Quest (Message Queue)
 
 **Piano parallelo:** 70% Architect Quest + 30% Senior Engineer (2 sessioni AQ + 1 SE)
+**Nuovo focus:** Ogni decisione architetturale va vista anche in ottica AI Engineer
 
 ---
 
@@ -110,6 +110,7 @@
 - **Percorsi in parallelo:** B - Parallelo Sfalsato (deciso 2026-02-02)
 - **Senior Engineer workflow:** Compartimento stagno con recap exercises
 - **Percorso Minimo 18 mesi:** Approvato (2026-03-13). Focus su AQ P1+P2.5+P2 e SE P1+P1.5+P2+P3. Il resto è Percorso Completo post-lavoro.
+- **AI Engineer target primario:** Deciso 2026-03-24. Roadmap AI Skills aggiornata con +5 gap (Evals, Guardrails, Multi-Agent, AI Testing, Fine-tuning). Career strategy riallineata.
 - **Quiz nomenclatura:** Source mapping per ogni prefisso quiz. Tabella overlap noti per evitare duplicati (2026-03-24)
 - **Quiz regola Box 1:** Minimo 2 quiz Box 1 non-risposti + 1 CLCODE per sessione (2026-03-24)
 - **Cross-linking obbligatorio:** Ogni Knowledge note deve avere [[links]] a concetti correlati (2026-03-24)
@@ -122,4 +123,4 @@ Nessuna.
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24*
+*Ultimo aggiornamento: 2026-03-24 (sessione 2 - AI Engineer pivot)*

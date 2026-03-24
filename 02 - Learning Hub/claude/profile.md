@@ -13,9 +13,10 @@
 ## Obiettivi
 
 **Breve termine (18-24 mesi):**
-- Senior/Staff Engineer + System Architect
-- Progettare sistemi che AI agents possono implementare
-- Target: €90k-130k remote, aziende internazionali
+- **AI Engineer** (target primario, deciso 2026-03-24)
+- Senior/Staff Engineer + System Architect (base solida)
+- Progettare sistemi AI-native che agents possono implementare
+- Target: €90k-130k remote EU, €110-160k US
 
 **Obiettivi personali:** vedi `WHY.md`
 
@@ -69,4 +70,4 @@ Preferisce "velocita crociera" - non pressare sui tempi.
 
 ---
 
-*Ultimo aggiornamento: 2026-03-13*
+*Ultimo aggiornamento: 2026-03-24 (refactor — aggiunto AI Engineer come target primario)*

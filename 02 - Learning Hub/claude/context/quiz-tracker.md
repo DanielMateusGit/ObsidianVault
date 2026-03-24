@@ -14,7 +14,7 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 152 |
+| **Quiz totali** | 156 |
 | **Risposte corrette** | 74 |
 | **Risposte parziali** | 8 |
 | **Risposte sbagliate** | 2 |
@@ -315,6 +315,14 @@ updated: 2026-02-05
 | OWN-01 | Owned Type vs Entity: perché non creare tabella separata per VO? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 | OWN-02 | Perché EF Core richiede costruttore privato senza parametri? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 | OWN-03 | Perché Ignore() su Email/Phone nella configurazione? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+
+### DbContext (EF Core)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| DBC-01 | Change Tracker: traccia in memoria o confronta il DB? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
+| DBC-02 | DbContext Singleton con richieste concorrenti — cosa succede? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
+| DBC-03 | OnModelCreating con 15 Entity — problema e soluzione? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
+| DBC-04 | Perché AppDbContext implementa IUnitOfWork? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
 
 ### Integration Tests
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |

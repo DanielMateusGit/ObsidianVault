@@ -230,6 +230,11 @@ source: "[Libro/Articolo/Video/Sessione]"
 | [[patterns/factory-pattern\|Factory Pattern]] | learned | 2026-02-20 |
 | [[patterns/facade-pattern\|Facade Pattern]] | learned | 2026-02-06 |
 
+### Databases
+| Nota | Status | Created |
+|------|--------|---------|
+| [[databases/ef-core-dbcontext\|DbContext (EF Core)]] | learned | 2026-03-24 |
+
 ### AI & Claude Code
 | Nota | Status | Created |
 |------|--------|---------|
@@ -245,7 +250,7 @@ source: "[Libro/Articolo/Video/Sessione]"
 
 | Metrica | Valore |
 |---------|--------|
-| **Note totali** | 20 |
+| **Note totali** | 21 |
 | **Note mastered** | 0 |
 | **Note to-review** | 0 |
 | **Ultima nota** | 2026-03-18 |

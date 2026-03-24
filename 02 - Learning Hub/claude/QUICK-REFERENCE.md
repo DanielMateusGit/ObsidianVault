@@ -89,8 +89,8 @@
 
 ### **Dan's Profile (Snapshot)**
 - **Ruolo:** Mid-level Full-Stack (.NET + React)
-- **Obiettivo:** Senior/Staff Engineer + System Architect (18-24 mesi)
-- **Target:** €90k-130k remote
+- **Obiettivo:** AI Engineer (target primario) + Senior/Staff Engineer (18-24 mesi)
+- **Target:** €90k-130k remote EU, €110-160k US
 - **PERCHÉ:** Casa per Federica, supportare famiglia, futuro per eventuali figli ❤️
 - **Learning style:** Spiegazione dettagliata PRIMA, poi hands-on
 - **Time:** 10-15 ore/settimana (weekdays sera + weekend)
@@ -150,18 +150,12 @@
 
 ---
 
-## 📊 **Current Status (Snapshot - Check current-state.md for latest)**
+## 📊 **Current Status**
 
-**Focus Corrente:** P1 Notification Service (Architect Quest)
-**Fase:** FASE 1 - Week 2 (Domain Model)
-**XP:** 1265
-**Level:** 3 - Pattern Seeker 🎉
-**Streak:** 7 giorni 🔥🔥
-
-**Prossimi Passi:**
-1. ADR-002: Rich vs Anemic Domain Model (+30 XP)
-2. C4 Container Diagram (+20 XP)
-3. Completare letture Domain Events
+> **Non duplicare dati dinamici qui.** Consulta sempre `current-state.md` per lo stato aggiornato.
+>
+> Dati come XP, livello, streak, week corrente cambiano ogni sessione.
+> Averli qui crea divergenza. Fonte di verita: `claude/current-state.md`.
 
 ---
 
@@ -341,5 +335,5 @@ Questo farà:
 
 ---
 
-*Last updated: 2026-02-11*
-*Structure version: 3.0 (with Exams System + Reading Tracker)*
+*Last updated: 2026-03-24 (refactor — rimosso snapshot stale, aggiornato obiettivo AI Engineer)*
+*Structure version: 3.1*

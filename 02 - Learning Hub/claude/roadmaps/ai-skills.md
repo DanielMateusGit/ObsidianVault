@@ -1,16 +1,22 @@
-# 🤖 Roadmap: AI Skills Track
+# 🤖 Roadmap: AI Skills Track → AI Engineer
 
-> Percorso parallelo per diventare **Claude-Native & AI-Native Architect**
+> Percorso parallelo per diventare **AI Engineer** capace di costruire sistemi AI production-ready.
+> Target: ruolo AI Engineer / AI-Native Engineer (€90-130k EU, €110-160k US)
 
 ## 🎯 Obiettivo Finale
 
-Essere capace di:
+Essere un **AI Engineer completo** capace di:
 - **Creare MCP Servers** - Estendere Claude con tool e dati custom
 - **Claude API mastery** - Integrazioni avanzate, prompt engineering, agentic workflows
 - **Ollama locale** - AI embedded nelle app (privacy, offline, zero cost)
 - **Hybrid architectures** - Orchestrare Ollama + Claude + MCP
 - **Tool building** - Creare strumenti che Claude può usare
 - **Prompt optimization** - Massimizzare reasoning di Claude
+- **AI Evals & Observability** - Misurare e monitorare sistemi AI in produzione
+- **Guardrails & Safety** - Proteggere sistemi AI da prompt injection, output pericolosi
+- **Multi-Agent Systems** - Orchestrare agenti specializzati che collaborano
+- **AI Testing** - Testare output non-deterministici, regression testing su prompt
+- **Fine-tuning Decision Framework** - Sapere QUANDO usare RAG vs fine-tuning vs prompt engineering
 
 ---
 
@@ -60,10 +66,10 @@ BEST: Combine all three for ultimate flexibility!
 ## 📅 Timeline Overview
 
 ```
-Mesi 5-6:   P2.5 - Claude-Native Calendar System
+Mesi 5-6:   P2.5 - AI Engineer Calendar System
             ├─ Phase 1: Ollama Foundation (intent parsing)
-            ├─ Phase 2: Claude API + MCP Server
-            └─ Phase 3: Agentic Workflows (Claude orchestrates)
+            ├─ Phase 2: Claude API + MCP Server + Guardrails
+            └─ Phase 3: Multi-Agent + Evals + Production
 
 Mese 10-14: P3 - BookingHub + AI Integration
             ├─ MCP Server for booking data
@@ -153,8 +159,8 @@ Il progetto è strutturato per insegnare **prima i fondamentali universali**, po
 | Phase | Focus | Genericità | Trasferibilità |
 |-------|-------|------------|----------------|
 | **1 (W1-3)** | Ollama + Fundamentals | **100% Generico** | Applicabile a qualsiasi LLM |
-| **2 (W4-6)** | Claude + Tools | 80% Generico | Concetti tool use universali |
-| **3 (W7-8)** | Abstraction + Router | **95% Generico** | Pattern architetturale universale |
+| **2 (W4-6)** | Claude + Tools + Guardrails | 80% Generico | Concetti tool use + safety universali |
+| **3 (W7-9)** | Multi-Agent + Evals + Production | **95% Generico** | Pattern AI Engineer universale |
 
 **Risultato:** Sai lavorare con Claude (vantaggio competitivo) MA puoi adattarti a qualsiasi provider in giorni, non mesi.
 
@@ -318,6 +324,10 @@ FLOW EXAMPLE (Provider-agnostic):
 | **MCP Protocol** | ✅ native | ❌ custom | ❌ custom | ❌ custom | **3-5 giorni** (devi implementare adapter) |
 | **Cost Optimization** | ✅ | ✅ | ✅ | ✅ | **0 giorni** (pattern universale) |
 | **Provider Abstraction** | ✅ | ✅ | ✅ | ✅ | **0 giorni** (hai già l'interfaccia!) |
+| **AI Evals** | ✅ | ✅ | ✅ | ✅ | **0 giorni** (universale, provider-agnostic) |
+| **Guardrails/Safety** | ✅ | ✅ | ✅ | ✅ | **0 giorni** (pattern universale) |
+| **Multi-Agent** | ✅ | ✅ | ⚠️ partial | ⚠️ limited | **1-2 giorni** (SDK diversi, pattern identici) |
+| **AI Testing** | ✅ | ✅ | ✅ | ✅ | **0 giorni** (universale) |
 
 ### **Tempo Totale per Migrare ad Altro Provider**
 
@@ -401,7 +411,7 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Tool registration con Claude
 - Testing con Claude Desktop
 
-**Week 6: Claude Reasoning**
+**Week 6: Claude Reasoning + Guardrails**
 - Complex queries via Claude:
   - "Quando sono libero per un caffè con Marco?"
   - "Suggerisci il miglior orario per un meeting importante"
@@ -409,8 +419,13 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Multi-step reasoning
 - Claude + MCP tools orchestration
 - Comparison Ollama vs Claude (speed, accuracy, cost)
+- **🛡️ AI ENGINEER GAP: Guardrails & Safety**
+  - Prompt injection defense (user input sanitization)
+  - Output validation layer (schema check, content filter)
+  - PII detection nelle risposte
+  - Test di sicurezza AI (adversarial prompts)
 
-**Deliverable Phase 2:** MCP Server funzionante + Claude integration ✅
+**Deliverable Phase 2:** MCP Server funzionante + Claude integration + Guardrails layer ✅
 
 ---
 
@@ -426,7 +441,7 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Cost optimization (95% Ollama, 5% Claude)
 - Performance benchmarking
 
-**Week 8: Autonomous Agent** 🚀
+**Week 8: Autonomous Agent + Multi-Agent** 🚀
 - **Claude come autonomous agent:**
   - User: "Organizza la mia settimana"
   - Claude:
@@ -436,13 +451,31 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
     4. Executes changes (with confirmation)
 - Multi-step workflows
 - Error recovery & fallbacks
+- **🤖 AI ENGINEER GAP: Multi-Agent Systems**
+  - Planner agent + Executor agent + Reviewer agent pattern
+  - Agent SDK exploration (Claude Agent SDK)
+  - Agent communication & handoff patterns
+  - When single-agent vs multi-agent (decision framework)
+
+**Week 9: AI Evals, Testing & Production** 🎯 (NUOVA)
+- **📊 AI ENGINEER GAP: Evaluation & Observability**
+  - Eval pipeline: input → LLM → output → score (automated)
+  - Metriche: accuracy, hallucination rate, latency, cost per request
+  - A/B testing prompt (quale funziona meglio?)
+  - Dashboard metriche AI (Langfuse o custom)
+  - Token usage tracking & cost alerts
+- **🧪 AI ENGINEER GAP: AI Testing**
+  - Testing output non-deterministici (range-based assertions)
+  - Snapshot testing per prompt (regression)
+  - Contract testing per tool use (schema validation)
+  - Eval-driven development: scrivi l'eval PRIMA del prompt
 - Production polish:
-  - Observability (Logs, metrics, traces)
+  - Observability completa (Logs, metrics, traces con AI-specific dimensions)
   - Rate limiting
   - Graceful degradation
   - Voice interface Flutter (speech_to_text, opzionale)
 
-**Deliverable Phase 3:** Autonomous AI agent production-ready ✅
+**Deliverable Phase 3:** Multi-agent system + eval pipeline + AI production-ready ✅
 
 ### Conversation Examples
 
@@ -528,11 +561,12 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 | W3 | Advanced Patterns (RAG, context mgmt, Redis cache) | 100% | Zero |
 | W4 | Cloud Provider (streaming, cost tracking, abstraction) | 85% | Minimo (solo SDK) |
 | W5 | Tool Systems (function calling, MCP, tool registry) | 70% | Medio (MCP specifico) |
-| W6 | Orchestration (tool chaining, multi-step, fallbacks) | 90% | Basso |
+| W6 | Orchestration + Guardrails (safety, prompt injection defense) | 90% | Basso |
 | W7 | Provider-Agnostic Architecture (AI Router, multi-provider) | 95% | Quasi zero |
-| W8 | Production (observability, rate limiting, degradation) | 100% | Zero |
+| W8 | Multi-Agent Systems (planner/executor, Agent SDK) | 90% | Basso |
+| W9 | AI Evals + Testing + Production (eval pipeline, observability) | 100% | Zero |
 
-**Media: ~90% skill generiche.** Migrare a OpenAI dopo il percorso: 2-3 giorni. Aggiungere Gemini: 2-3 giorni.
+**Media: ~92% skill generiche.** Migrare a OpenAI dopo il percorso: 2-3 giorni. Aggiungere Gemini: 2-3 giorni.
 
 ### Deliverables
 - [ ] **Ollama Service** - Intent parsing & entity extraction
@@ -676,12 +710,45 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 - [ ] Debugging & testing MCP servers
 - [ ] Multi-tool orchestration
 
-### **Agentic Workflows**
+### **Agentic Workflows & Multi-Agent** 🆕
 - [ ] Multi-step autonomous reasoning
 - [ ] Tool chaining & orchestration
 - [ ] Error recovery & fallbacks
 - [ ] Agent planning & execution
 - [ ] Human-in-the-loop patterns
+- [ ] **Multi-agent orchestration** (planner + executor + reviewer)
+- [ ] **Agent SDK** (Claude Agent SDK)
+- [ ] **Agent communication patterns** (handoff, delegation)
+- [ ] **When single vs multi-agent** (decision framework)
+
+### **Guardrails & AI Safety** 🆕
+- [ ] Prompt injection defense (input sanitization)
+- [ ] Output validation (schema + content filter)
+- [ ] PII detection & redaction
+- [ ] Adversarial prompt testing
+- [ ] Rate limiting per utente AI
+- [ ] Graceful fallback su risposte non sicure
+
+### **AI Evaluation & Observability** 🆕
+- [ ] Eval pipeline automatizzata (input → output → score)
+- [ ] Metriche AI: accuracy, hallucination rate, latency, cost/request
+- [ ] A/B testing prompt
+- [ ] Dashboard metriche AI (Langfuse o custom)
+- [ ] Token usage tracking & cost alerts
+- [ ] Quality regression detection
+
+### **AI Testing** 🆕
+- [ ] Testing output non-deterministici (range-based assertions)
+- [ ] Snapshot testing per prompt (regression)
+- [ ] Contract testing per tool use
+- [ ] Eval-driven development (eval PRIMA del prompt)
+- [ ] Mock vs real LLM testing strategy
+
+### **Fine-tuning Decision Framework** 🆕
+- [ ] Quando RAG vs fine-tuning vs prompt engineering (decision tree)
+- [ ] Costo/beneficio fine-tuning (quando vale la pena?)
+- [ ] Awareness: come funziona il fine-tuning (no hands-on richiesto)
+- [ ] Data preparation per fine-tuning (formato, qualita, quantita)
 
 ### **Hybrid Architectures**
 - [ ] AI Router design (when Ollama vs Claude)
@@ -716,4 +783,4 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 
 ---
 
-*Ultimo aggiornamento: 2026-03-13*
+*Ultimo aggiornamento: 2026-03-24 (v2.0 - Evoluzione AI Engineer: +Evals, +Guardrails, +Multi-Agent, +AI Testing, +Fine-tuning Framework)*

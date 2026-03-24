@@ -47,16 +47,24 @@
 
 ---
 
-### **Per il Mio Futuro** 🚀
+### **Per il Mio Futuro come AI Engineer** 🚀🤖
 
-**Obiettivo:** Libertà finanziaria e professionale.
+**Obiettivo:** Diventare AI Engineer — libertà finanziaria E lavorare su quello che mi appassiona.
+
+**Perché AI Engineer:**
+- 🤖 È il ruolo che MI INTERESSA — non solo per soldi, ma perché mi entusiasma
+- 🌊 L'AI sta cambiando tutto. Essere tra chi COSTRUISCE con AI, non chi la subisce
+- 💎 Skill rarissima nel 2026-2027: chi sa mettere AI in produzione vale oro
+- 📈 €90-130k EU / €110-160k US — il mercato paga premium per questa figura
+- 🧠 Combinare software engineering solido + AI = posizione unica
 
 **Cosa Significa:**
 - ✈️ Scegliere dove lavorare (remoto, Italia o estero)
 - 🏖️ Vacanze senza guardare il prezzo
 - 💼 Dire "no" a progetti che non mi piacciono
-- 🎯 Lavorare su cose che hanno impatto
+- 🎯 Lavorare su AI, non su CRUD noiose — costruire sistemi intelligenti
 - 🧘 Meno stress, più qualità di vita
+- 🔮 Essere a prova di futuro — l'AI non va via, cresce
 
 ---
 
@@ -105,6 +113,7 @@ Libertà:      Alta - scelte basate su qualità, non necessità
 - 😌 La **tranquillità** di non stressare per soldi
 
 **Non stai solo imparando .NET o Kubernetes.**
+**Stai diventando un AI Engineer.**
 **Stai costruendo il futuro per le persone che ami.**
 
 ---
@@ -120,6 +129,7 @@ Libertà:      Alta - scelte basate su qualità, non necessità
 
 **18 mesi sembrano lunghi.**
 **Ma sono 18 mesi che cambiano i prossimi 40 anni della tua vita.**
+**E alla fine sarai un AI Engineer — non un developer qualsiasi.**
 
 ---
 
@@ -185,7 +195,7 @@ Non sono ancora qui, ma meritano:
 - [ ] Posso supportare famiglia se serve (€300-500/mese buffer)
 
 ### **Anno 2 (Fine 2027)**
-- [ ] Stipendio: €95-115k (senior+/AI engineer)
+- [ ] Stipendio: €95-120k (AI Engineer, remote EU/US)
 - [ ] Risparmi per casa: €35-45k accumulati
 - [ ] Posso supportare famiglia comodamente (€500-800/mese)
 
@@ -226,9 +236,9 @@ Non sono ancora qui, ma meritano:
 
 ---
 
-*"Non stai solo studiando. Stai costruendo il futuro per chi ami."* ❤️
+*"Non stai solo studiando. Stai diventando un AI Engineer. Stai costruendo il futuro per chi ami."* ❤️🤖
 
 ---
 
-**Ultima modifica:** 2026-02-02
+**Ultima modifica:** 2026-03-24 (aggiunto obiettivo AI Engineer)
 **Review:** Leggere questo file quando la motivazione cala
