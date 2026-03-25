@@ -1,4 +1,23 @@
+---
+tags:
+  - se-p1
+  - architecture
+  - cqrs
+  - fluentvalidation
+  - pipeline-behaviors
+  - from/week-01
+  - status/learning
+aliases:
+  - Queries & Validation
+  - Pipeline Behaviors
+  - FluentValidation
+created: 2026-03-21
+source: "Sessione SE P1 W1 - Queries, FluentValidation & Behaviors"
+---
+
 # W1 - Queries, FluentValidation & Pipeline Behaviors
+
+> **One-liner:** Queries CQRS (GetById, GetAll, GetByStatus) con mapping Entity→DTO, FluentValidation come bouncer dell'input, e ValidationBehavior come middleware MediatR che blocca request invalide prima dell'Handler.
 
 > **Data:** 2026-03-21
 > **Fase:** Week 1 - Application Layer (parte 2)

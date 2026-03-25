@@ -1,4 +1,21 @@
+---
+tags:
+  - se-p1
+  - architecture
+  - cqrs
+  - tdd
+  - from/week-01
+  - status/learning
+aliases:
+  - Application Layer Setup
+  - Commands & TDD
+created: 2026-03-16
+source: "Sessione SE P1 W1 - Application Layer Setup"
+---
+
 # W1 - Application Layer Setup
+
+> **One-liner:** Setup dell'Application Layer con IUnitOfWork, primi Commands (Create, Complete, Update, Delete) sviluppati in TDD con NSubstitute, e decisione architetturale su Update() agnostico.
 
 > **Data:** 2026-03-16
 > **Fase:** Week 1 - Domain + Application Layer

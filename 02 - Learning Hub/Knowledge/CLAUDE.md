@@ -230,6 +230,12 @@ source: "[Libro/Articolo/Video/Sessione]"
 | [[patterns/factory-pattern\|Factory Pattern]] | learned | 2026-02-20 |
 | [[patterns/facade-pattern\|Facade Pattern]] | learned | 2026-02-06 |
 
+### .NET Fundamentals
+| Nota | Status | Created |
+|------|--------|---------|
+| [[dotnet/cancellation-token\|CancellationToken]] | learning | 2026-03-25 |
+| [[dotnet/task-type\|Task e Programmazione Asincrona]] | learning | 2026-03-25 |
+
 ### Databases
 | Nota | Status | Created |
 |------|--------|---------|
@@ -250,10 +256,10 @@ source: "[Libro/Articolo/Video/Sessione]"
 
 | Metrica | Valore |
 |---------|--------|
-| **Note totali** | 21 |
+| **Note totali** | 23 |
 | **Note mastered** | 0 |
 | **Note to-review** | 0 |
-| **Ultima nota** | 2026-03-18 |
+| **Ultima nota** | 2026-03-25 |
 
 ---
 

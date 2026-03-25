@@ -19,7 +19,9 @@ source: "Claude Code in Action - Lesson 1 + Anthropic Docs"
 
 ## Cos'e
 
-Un Language Model (LLM) da solo puo solo leggere e generare testo. Non puo leggere file, eseguire comandi, modificare codice o interagire con sistemi esterni. E un "cervello senza mani".
+Un Language Model (LLM) da solo **sa programmare**: conosce i linguaggi, i pattern, le best practice, genera codice corretto. Ma **non puo agire**: non puo leggere file, eseguire comandi, modificare codice o interagire con sistemi esterni.
+
+E come un chirurgo brillantissimo che sa esattamente dove tagliare... ma non ha le mani. Sa **cosa** fare, non puo **farlo**.
 
 Un **Coding Assistant** (come Claude Code) aggiunge tre capacita fondamentali:
 
@@ -39,6 +41,26 @@ Un **Coding Assistant** (come Claude Code) aggiunge tre capacita fondamentali:
    - Planning mode per problemi complessi
 
 **Architettura:** L'utente parla al Coding Assistant, che costruisce un prompt arricchito (contesto + tool disponibili + istruzioni) e lo invia all'LLM. L'LLM risponde con testo o tool calls, il Coding Assistant esegue i tool e ritorna i risultati all'LLM in un loop agentico.
+
+### Agentic Loop
+
+L'**agentic loop** e il meccanismo che trasforma un LLM da "generatore di testo" a "agente che agisce". Funziona cosi:
+
+```
+1. L'utente chiede qualcosa ("fixa il bug nel login")
+2. L'LLM analizza e decide: "devo leggere il file"
+   → Tool call: Read src/auth/login.ts
+3. Il Coding Assistant esegue il tool e ritorna il risultato
+4. L'LLM analizza il risultato e decide il prossimo step:
+   → Tool call: Edit src/auth/login.ts (applica fix)
+5. Il Coding Assistant esegue e ritorna il risultato
+6. L'LLM decide: "devo verificare"
+   → Tool call: Bash "npm test"
+7. Se i test falliscono → torna al punto 4 (corregge e riprova)
+8. Se i test passano → risponde all'utente con il riepilogo
+```
+
+**Punto chiave:** Il loop e **autonomo** — l'LLM decide da solo quale tool usare, osserva il risultato, e decide il prossimo step. Non e l'utente a guidare ogni singola azione. Questo e cio che rende il Coding Assistant "agentico": agisce, osserva, reagisce, fino a completare il task.
 
 ## Quando usarlo
 

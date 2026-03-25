@@ -14,13 +14,13 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 156 |
-| **Risposte corrette** | 74 |
-| **Risposte parziali** | 8 |
+| **Quiz totali** | 191 |
+| **Risposte corrette** | 79 |
+| **Risposte parziali** | 10 |
 | **Risposte sbagliate** | 2 |
-| **Non risposti** | 73 |
-| **Challenge completate** | 10 |
-| **Streak challenge** | 10 |
+| **Non risposti** | 106 |
+| **Challenge completate** | 11 |
+| **Streak challenge** | 11 |
 
 ---
 
@@ -39,7 +39,7 @@ updated: 2026-02-05
 - ✅ Risposta corretta → passa al box successivo
 - ❌ Risposta sbagliata → torna a Box 1
 - Quiz in Box 5 da 60+ giorni → `status/mastered`
-- **Minimo 2 quiz Box 1 (non risposti) per sessione**, oltre ai quiz scaduti
+- **Minimo 10 quiz Box 1 (non risposti) per sessione**, oltre ai quiz scaduti
 - **Almeno 1 quiz CLCODE per sessione** (rotazione certificazione)
 
 ---
@@ -133,7 +133,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | DIP-01 | OrderService usa direttamente SqlServerRepository. Cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
 | DIP-02 | Differenza tra Dependency Inversion e Dependency Injection? | 📦1 | - | Ora | ⬜ Non risposto |
-| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦4 | 2026-02-28 | 2026-03-14 | ✅ Corretto |
+| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦5 | 2026-03-25 | 2026-04-24 | ✅ Padroneggiato |
 
 ---
 
@@ -148,7 +148,7 @@ updated: 2026-02-05
 #### Facade Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| FAC-01 | Stripe payment: Facade o Factory? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
+| FAC-01 | Stripe payment: Facade o Factory? | 📦5 | 2026-03-25 | 2026-04-24 | ✅ Padroneggiato |
 | FAC-02 | PaymentFacade God Object - cosa faresti? | 📦1 | 2026-03-23 | Ora | ❌ Sbagliato |
 | FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
 
@@ -159,7 +159,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
 | EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
-| EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
 | EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-03-23 | 2026-03-26 | 🟡 Parziale |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -173,7 +173,7 @@ updated: 2026-02-05
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
 | CQRS-05 | Quando ha senso separare database lettura (es. MongoDB) da scrittura (es. PostgreSQL)? | 📦1 | - | Ora | ⬜ Non risposto |
 | BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦4 | 2026-03-23 | 2026-04-06 | ✅ Corretto |
-| BEHAV-02 | Perché next() solo se validazione passa? | 📦3 | 2026-02-28 | 2026-03-07 | ✅ Corretto |
+| BEHAV-02 | Perché next() solo se validazione passa? | 📦4 | 2026-03-25 | 2026-04-08 | ✅ Corretto |
 | BEHAV-03 | Come creare behavior solo per alcuni command? (marker interface) | 📦1 | - | Ora | ⬜ Non risposto |
 | BEHAV-04 | Come testi un ValidationBehavior in isolamento? Cosa mocki e cosa verifichi? | 📦1 | - | Ora | ⬜ Non risposto |
 | BEHAV-05 | LoggingBehavior chiama _logger.LogError e poi next(). È corretto? Quando NON dovresti chiamare next()? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -196,14 +196,14 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦2 | 2026-03-23 | 2026-03-26 | ✅ Corretto |
-| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦2 | 2026-03-02 | 2026-03-05 | 🟡 Parziale |
+| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦3 | 2026-03-25 | 2026-04-01 | ✅ Corretto |
 | QRY-03 | Query senza parametri ha bisogno di validazione? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
 
 ### Application Layer
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | APP-01 | Cosa NON fa l'Application Layer? | 📦1 | - | Ora | ⬜ Non risposto |
-| APP-02 | Handler dipende da AppDbContext - cosa c'è di sbagliato? | 📦3 | 2026-03-13 | 2026-03-20 | ✅ Corretto |
+| APP-02 | Handler dipende da AppDbContext - cosa c'è di sbagliato? | 📦4 | 2026-03-25 | 2026-04-08 | ✅ Corretto |
 | APP-03 | Come ristrutturi un NotificationService con 15 metodi? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### CQRS Commands
@@ -248,7 +248,7 @@ updated: 2026-02-05
 #### Fundamentals
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CLCODE-01 | Perché serve un Coding Assistant invece di usare direttamente il LLM? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-01 | Perché serve un Coding Assistant invece di usare direttamente il LLM? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
 | CLCODE-02 | Preferenza personale async/await: CLAUDE.md, CLAUDE.local.md o ~/.claude/CLAUDE.md? | 📦1 | - | Ora | ⬜ Non risposto |
 | CLCODE-03 | Fix bug login: quale approccio contesto è migliore? | 📦1 | - | Ora | ⬜ Non risposto |
 | CLCODE-10 | /init su nuovo progetto: cosa crea automaticamente? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -401,6 +401,63 @@ updated: 2026-02-05
 | CALV-02 | Il Coding Assistant legge file, esegue comandi, edita codice. L'LLM raw può farlo? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
 | CALV-03 | "Agentic loop": cos'è e perché è fondamentale per un Coding Assistant? | 📦1 | - | Ora | ⬜ Non risposto |
 
+### Message Queues (AQ P1 W5)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| MQ-01 | Invio email sincrono nell'handler: quali sono almeno 3 problemi concreti? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-02 | Perché il messaggio nella queue contiene solo l'ID e non tutti i dettagli della notifica? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-03 | ACK vs NACK: differenza e cosa succede al messaggio per ciascuno? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-04 | Worker crasha durante il processing: cosa succede al messaggio? Chi garantisce che non si perda? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-05 | Worker invia email, crasha prima dell'ACK. Come impedisci doppio invio? (idempotenza) | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-06 | Nel check idempotenza, perché controlliamo Status == Sent e non == Pending? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-07 | DB vs Queue: chi fa cosa? Completa "Il DB è ______, la Queue è ______" | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-08 | Messaggio fallisce 3 volte: cosa succede? Dove finisce? A cosa serve? (DLQ) | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-09 | Perché IMessagePublisher nell'Application invece di usare direttamente il client RabbitMQ? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-10 | Invisibility timeout: cosa significa? Cosa succede se scade senza ACK? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-11 | At-least-once vs exactly-once: perché non exactly-once? Qual è il trade-off? | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-12 | Ordina le operazioni del worker: Invia email, Legge dal DB, Aggiorna status, ACK, Check idempotenza | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-13 | Flusso completo da POST /notify fino all'email nella inbox — descrivi tutti e 3 gli attori | 📦1 | - | Ora | ⬜ Non risposto |
+
+### BackgroundService (AQ P1 W5)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| BG-01 | Worker Singleton, Repository Scoped: come li usi insieme? Perché non iniettare nel costruttore? | 📦1 | - | Ora | ⬜ Non risposto |
+| BG-02 | App si spegne, worker sta processando: come garantisci zero perdite? (CancellationToken + ACK) | 📦1 | - | Ora | ⬜ Non risposto |
+| BG-03 | Worker stesso processo vs separato: quando separarli? | 📦1 | - | Ora | ⬜ Non risposto |
+| BG-04 | AddHostedService: cosa fa? Con quale lifetime registra il servizio? | 📦1 | - | Ora | ⬜ Non risposto |
+| BG-05 | Worker con Task.Delay(100) polling: buona idea? Come migliorare? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### RabbitMQ (AQ P1 W5)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| RMQ-01 | Perché il produttore manda all'Exchange e non direttamente alla Queue? | 📦1 | - | Ora | ⬜ Non risposto |
+| RMQ-02 | Queue separate per email e SMS: quale Exchange type e come configuri i binding? | 📦1 | - | Ora | ⬜ Non risposto |
+| RMQ-03 | 1000 msg/s, worker processa 100/s: come risolvi? RabbitMQ crea worker automaticamente? | 📦1 | - | Ora | ⬜ Non risposto |
+| RMQ-04 | Queue durable ma messaggio non persistent: cosa succede al restart di RabbitMQ? | 📦1 | - | Ora | ⬜ Non risposto |
+| RMQ-05 | Topic Exchange con 3 binding (email.*, sms.*, push.*): routing key email.scheduled → quante queue? | 📦1 | - | Ora | ⬜ Non risposto |
+| RMQ-06 | NotificationSent deve arrivare sia ad Analytics che a Billing: Direct o Fanout? | 📦1 | - | Ora | ⬜ Non risposto |
+| RMQ-07 | Prefetch count = 10: cosa significa? Cosa cambia con prefetch = 1? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### .NET Fundamentals (Knowledge)
+
+#### CancellationToken
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| CT-01 | CancellationToken: come si produce? Chi decide quando cancellarlo? | 📦1 | - | Ora | ⬜ Non risposto |
+| CT-02 | "CancellationToken ferma immediatamente l'operazione come Thread.Abort()" — vero o falso? | 📦1 | - | Ora | ⬜ Non risposto |
+| CT-03 | Handler chiama GetByIdAsync() SENZA passare il ct. Client disconnette durante la query. Cosa succede? | 📦1 | - | Ora | ⬜ Non risposto |
+| CT-04 | Chi fornisce stoppingToken al BackgroundService? Quando viene cancellato? | 📦1 | - | Ora | ⬜ Non risposto |
+| CT-05 | Timeout 30s su chiamata HTTP esterna: come implementi con CancellationToken? | 📦1 | - | Ora | ⬜ Non risposto |
+
+#### Task & Async
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| TASK-01 | "Ogni Task crea un nuovo Thread" — vero o falso? Quanti thread per 1000 request async? | 📦1 | - | Ora | ⬜ Non risposto |
+| TASK-02 | await GetByIdAsync(): cosa fa il thread durante i 50ms di attesa DB? | 📦1 | - | Ora | ⬜ Non risposto |
+| TASK-03 | async void DoSomething(): perché è pericoloso? Cosa succede con un'eccezione? | 📦1 | - | Ora | ⬜ Non risposto |
+| TASK-04 | .Result invece di await: funziona? Quali rischi? | 📦1 | - | Ora | ⬜ Non risposto |
+| TASK-05 | Task vs Task<T>: differenza semantica? Quando usi l'uno e quando l'altro? | 📦1 | - | Ora | ⬜ Non risposto |
+
 ### Documentation
 _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 
@@ -476,6 +533,13 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-03-23 | FAC-02 | ❌ | +2 | Box 2→1 (confuso facade con soluzione) |
 | 2026-03-23 | REPO-01 | 🟡 | +5 | Box 2→2 (parziale - solo tech leak, mancano altri motivi) |
 | 2026-03-23 | BEHAV-01 | ✅ | +10 | Box 3→4 |
+| 2026-03-25 | DIP-03 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-25 | FAC-01 | ✅ | +10 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-25 | APP-02 | ✅ | +10 | Box 3→4 |
+| 2026-03-25 | BEHAV-02 | ✅ | +10 | Box 3→4 |
+| 2026-03-25 | QRY-02 | ✅ | +10 | Box 2→3 (recuperato da parziale!) |
+| 2026-03-25 | EVT-03 | 🟡 | +5 | Box 1→1 (parziale - INotificationHandler vs IRequestHandler) |
+| 2026-03-25 | CLCODE-01 | 🟡 | +5 | Box 1→1 (parziale - mancava agentic loop/tool use) |
 
 ---
 
@@ -484,11 +548,11 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 > Claude aggiorna questa lista all'inizio di ogni sessione
 
 **Prossimi quiz da ripassare:**
-1. FAC-02 (Ora) - Box 1, da recuperare
+1. FAC-02, EVT-03, CLCODE-01 (Ora) - Box 1, da recuperare
 2. EVT-04 (2026-03-26), QRY-01 (2026-03-26), REPO-01 (2026-03-26) - Box 2
-3. EVT-01 (2026-03-27), CQRS-03 (2026-03-27) - Box 4
-4. BEHAV-01 (2026-04-06) - Box 4
-5. Scaduti non ancora ripassati: FAC-01, PORT-02, INFRA-03, DIP-03, APP-02, UOW-01, BEHAV-02, QRY-03, FAC-03, + molti Box 2 da febbraio
+3. DBC-01/02/03/04 (2026-03-27), EVT-01 (2026-03-27), CQRS-03 (2026-03-27) - Box 2/4
+4. QRY-02 (2026-04-01), APP-02 (2026-04-08), BEHAV-01/02 (2026-04-06/08) - Box 3/4
+5. Scaduti non ancora ripassati: PORT-02, INFRA-03, UOW-01, QRY-03, FAC-03, + molti Box 2 da febbraio (INFRA-01/02/04/05, REPO-02/03, MIG-01/02/03, OWN-01/02/03, INT-01/02/03)
 
 ### Priorita Certificazione: CLCODE (almeno 1/giorno)
 

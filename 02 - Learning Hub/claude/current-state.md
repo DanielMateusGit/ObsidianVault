@@ -8,10 +8,10 @@
 |-------|--------|
 | **Percorso attivo** | Entrambi in parallelo (focus primario: Architect Quest) |
 | **Progetto AQ** | P1 Notification Service |
-| **Settimana AQ** | Week 4 COMPLETATA → Pronto per Week 5 |
+| **Settimana AQ** | Week 5 IN CORSO (teoria completata, codice prossima sessione) |
 | **Progetto SE** | P1 Task Manager |
 | **Settimana SE** | W1 95% (Domain ✅, Commands ✅, Queries ✅, DTOs ✅, Validators ✅, ValidationBehavior ✅ — manca solo LoggingBehavior) |
-| **Task corrente** | Senior P1 W1 (LoggingBehavior) → poi W2 |
+| **Task corrente** | AQ P1 W5 codice (IMessagePublisher, Worker) + SE P1 W1 (LoggingBehavior) |
 
 ---
 
@@ -19,9 +19,9 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 4169 |
-| **Livello** | 5 - Service Architect |
-| **Streak** | 6 giorni |
+| **XP Totali** | 4399 |
+| **Livello** | 6 - Domain Master |
+| **Streak** | 7 giorni |
 | **Data inizio** | 2025-01-29 |
 | **Achievement** | 10 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire, First Exam, First Lesson, Course Master, Perfect Score) |
 | **Certificazioni** | 1 (Claude Code in Action - 8/8 Perfect Score) |
@@ -32,7 +32,7 @@
 
 | Progetto | Status | Periodo |
 |----------|--------|---------|
-| P1 - Notification Service | In corso | W5 prossima |
+| P1 - Notification Service | In corso | W5 in corso |
 | P2 - NutriPlan | Locked | M5-9 |
 | P2.5 - AI Gateway | Locked | M5-6 |
 | P3 - BookingHub | Locked | M10-14 |
@@ -82,30 +82,29 @@
 
 ## Ultima Sessione
 
-**Data:** 2026-03-24 (sessione 3)
-**Tipo:** Refactor progetto (skill /refactor + coerenza contesto)
+**Data:** 2026-03-25
+**Tipo:** Misto (Spaced Repetition + AQ P1 W5 Teoria)
 
-- Creata skill `/refactor` con 5 dimensioni analisi + Step 2b (framework 3-tier gap analysis cross-path)
-- Fix strutturali: duplicazioni (files.md), stale (QUICK-REFERENCE), legacy (PROMPT.md)
-- AI Engineer primario allineato su TUTTI i file (CLAUDE.md, profile, career-strategy, ecc.)
-- Timeline ricalibrata da 18 a ~20-22 mesi con dati pace reale
-- Gap Tier 1: Resilience patterns (Circuit Breaker, Retry) → SE P2 Chat App W5
-- Gap Tier 2: Observability base (OpenTelemetry, correlation ID) → AQ P1 W15-16 + SE P1 W2
-- Gap Tier 3: Exploration backlog → AI Frontier Lab
-- Career-boost aggiornato (budget ore, system design reordered, LinkedIn headline AI Engineer)
-- Verificato codice SE P1: W1 è al 95% (non 80%) — aggiornato TODO
-- Verificato codice AQ P1: W1-W4 coerenti col codice, 220+ test
-- **NOTA:** Progress.md disallineato (XP 3864 vs 4169, level 6 vs 5). Da sistemare.
+- Spaced repetition: 7 quiz (5✅, 2🟡), 2 padroneggiati (DIP-03, FAC-01 → Box 5)
+- Iniziata AQ P1 Week 5: Message Queue — teoria completata (3 note progetto)
+- Create 2 Knowledge notes .NET Fundamentals (CancellationToken, Task)
+- Fix frontmatter note SE P1 W1 + rimosso duplicato
+- Aggiornata nota coding-assistant-vs-llm (chiarita ambiguita + sezione Agentic Loop)
+- 35 nuovi quiz aggiunti al tracker
+- Quiz regola Box 1: da 2 a 10 per sessione
+- **LEVEL UP: 6 - Domain Master!** (4399 XP)
+- **NOTA:** Progress.md ancora disallineato. Da sistemare.
 
 ---
 
 ## Prossima Sessione
 
 **Opzioni:**
-1. **Spaced repetition** (OBBLIGATORIA — quiz scaduti!)
-2. Finisci SE P1 W1: solo LoggingBehavior → poi W1 completata
-3. Inizia AQ W5 (Message Queue — Azure Service Bus o RabbitMQ)
-4. Sistemare Progress.md (riallineare XP history)
+1. **Spaced repetition** (OBBLIGATORIA — 10 Box 1 + scaduti + 1 CLCODE)
+2. **AQ P1 W5 — CODICE:** docker-compose RabbitMQ, IMessagePublisher, RabbitMqPublisher, integrazione handler, worker
+3. Finisci SE P1 W1: solo LoggingBehavior → poi W1 completata
+4. Outbox Pattern (teoria, dopo flusso base funzionante)
+5. Sistemare Progress.md (riallineare XP history)
 
 **Piano parallelo:** 70% Architect Quest + 30% Senior Engineer (2 sessioni AQ + 1 SE)
 **Focus:** Ogni decisione architetturale va vista anche in ottica AI Engineer
@@ -119,7 +118,7 @@
 - **Percorso Minimo ~20-22 mesi:** Approvato (2026-03-13, ricalibrato 2026-03-24 con pace reale). Focus su AQ P1+P2.5+P2 e SE P1+P1.5+P2+P3. Il resto e Percorso Completo post-lavoro.
 - **AI Engineer target primario:** Deciso 2026-03-24. Roadmap AI Skills aggiornata con +5 gap (Evals, Guardrails, Multi-Agent, AI Testing, Fine-tuning). Career strategy riallineata.
 - **Quiz nomenclatura:** Source mapping per ogni prefisso quiz. Tabella overlap noti per evitare duplicati (2026-03-24)
-- **Quiz regola Box 1:** Minimo 2 quiz Box 1 non-risposti + 1 CLCODE per sessione (2026-03-24)
+- **Quiz regola Box 1:** Minimo 10 quiz Box 1 non-risposti + 1 CLCODE per sessione (aggiornato 2026-03-25, era 2)
 - **Cross-linking obbligatorio:** Ogni Knowledge note deve avere [[links]] a concetti correlati (2026-03-24)
 
 ---
@@ -130,4 +129,4 @@ Nessuna.
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (sessione 3 - refactor progetto + coerenza contesto)*
+*Ultimo aggiornamento: 2026-03-25 (sessione — spaced repetition + AQ P1 W5 teoria)*
