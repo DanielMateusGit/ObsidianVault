@@ -41,7 +41,7 @@
 │       ├── P1-Task-Manager/
 │       ├── P2-Chat-App/
 │       ├── P3-Ecommerce/
-│       ├── P4-Notifications/
+│       ├── P4-Alert-Gateway/
 │       ├── P5-URL-Shortener/
 │       └── P6-Capstone/
 │
@@ -109,7 +109,7 @@
 1. ✅ Italiano per spiegazioni, inglese per codice
 2. ✅ Spiega il "QUANDO usare", non solo "COME"
 3. ✅ No fretta - velocità crociera preferita
-4. ✅ Usa TodoWrite per tracciare task multi-step
+4. ✅ n8n Prototype Practice (prima e dopo ogni progetto, da P2+)
 5. ✅ Aggiorna `current-state.md` dopo ogni sessione
 6. ✅ Redis è focus importante (usalo ovunque progressivamente)
 7. ✅ TDD rigoroso nei progetti Senior Engineer
@@ -337,5 +337,5 @@ Questo farà:
 
 ---
 
-*Last updated: 2026-03-24 (refactor — rimosso snapshot stale, aggiornato obiettivo AI Engineer)*
+*Last updated: 2026-03-26 (refactor — fix TodoWrite, P4 name, aggiunto n8n)*
 *Structure version: 3.1*

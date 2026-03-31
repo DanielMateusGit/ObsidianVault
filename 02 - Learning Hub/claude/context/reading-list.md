@@ -1,7 +1,7 @@
 ---
 tags: [context, reading, books]
 created: 2026-02-06
-updated: 2026-02-20
+updated: 2026-03-28
 ---
 
 # 📚 Reading List
@@ -10,14 +10,36 @@ updated: 2026-02-20
 
 ---
 
-## ✅✅✅ MESE 1 COMPLETATO! ✅✅✅
+## ✅ MESE 1 COMPLETATO (Feb 2026)
 
-> **Blocco superato!**
->
-> 1. ✅ **Risorse completate** (11/11)
-> 2. ✅ **Esame Mese 1** (25/30 - Superato con merito!)
->
-> **Pronto per Week 5!**
+> 11/11 risorse obbligatorie completate. Esame Mese 1: 25/30 (Superato con merito!)
+
+## 📖 MESE 2 IN CORSO (Mar 2026) — W5 Completata
+
+### Letture W5: Message Queue + Event-Driven (Sedimentazione weekend 28-30 Mar)
+
+**Obbligatorie:**
+
+| # | Risorsa | Tipo | Tempo | Status | Progetto |
+|---|---------|------|-------|--------|----------|
+| 1 | RabbitMQ Tutorial 1: Hello World (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 W5 |
+| 2 | RabbitMQ Tutorial 2: Work Queues (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 W5 |
+| 3 | RabbitMQ Tutorial 3: Publish/Subscribe (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 W5 |
+| 4 | Background tasks with hosted services in ASP.NET Core — Microsoft Learn | Docs | ~30 min | ⬜ Da leggere | AQ P1 W5 |
+| 5 | Enterprise Integration Patterns: Message Channel + Dead Letter Channel — enterpriseintegrationpatterns.com | Libro/Web | ~30 min | ⬜ Da leggere | AQ P1 W5 |
+
+**Consigliate:**
+
+| # | Risorsa | Tipo | Tempo | Status | Progetto |
+|---|---------|------|-------|--------|----------|
+| 6 | Azure Service Bus messaging overview — Microsoft Learn | Docs | ~20 min | ⬜ Consigliata | AQ P1 W5 |
+| 7 | "The Outbox Pattern" — kamilgrzybek.com | Articolo | ~20 min | ⬜ Consigliata | AQ P1 W5 |
+
+**Opzionali:**
+
+| # | Risorsa | Tipo | Tempo | Status | Progetto |
+|---|---------|------|-------|--------|----------|
+| 8 | MassTransit Documentation — Getting Started | Docs | ~30 min | ⬜ Opzionale | AQ P1 W5 |
 
 ---
 
@@ -25,8 +47,8 @@ updated: 2026-02-20
 
 | Libro | Capitoli | Progress | Progetto | Obbligatorio |
 |-------|----------|----------|----------|--------------|
-| **Clean Architecture** (Uncle Bob) | 1-22 | Cap. 6/22 | P1-W2 | ✅ |
-| **Dive into Design Patterns** (Shvets) | - | Facade completato | P1 | ⬜ Opzionale |
+| **Clean Architecture** (Uncle Bob) | 1-22 | Cap. 1-14, 20-22 completati (17/22) | AQ P1 | ✅ |
+| **Dive into Design Patterns** (Shvets) | - | Facade completato | AQ P1 | ⬜ Opzionale |
 
 ---
 
@@ -132,6 +154,35 @@ updated: 2026-02-20
 
 ---
 
+## 📋 AQ P1 W5+ - Message Queue & Patterns
+
+> Risorse per Week 5 (messaging, RabbitMQ, Outbox Pattern) e successive.
+
+### 🔴 OBBLIGATORI
+
+| # | Argomento | Risorsa | Tipo | Tempo | XP | Status |
+|---|-----------|---------|------|-------|-----|--------|
+| 1 | RabbitMQ Intro | [RabbitMQ Tutorials - Official](https://www.rabbitmq.com/tutorials) (Tutorial 1-3) | 📖 | ~1h | +15 | ⬜ |
+| 2 | Message Queue Patterns | [Enterprise Integration Patterns - Messaging](https://www.enterpriseintegrationpatterns.com/patterns/messaging/) | 📖 | ~30m | +15 | ⬜ |
+| 3 | Outbox Pattern | [Milan Jovanovic - Outbox Pattern](https://www.milanjovanovic.tech/blog/outbox-pattern-for-reliable-microservices-messaging) | 📖 | ~20m | +15 | ⬜ |
+| 4 | Transactional Outbox | [Microservices.io - Transactional Outbox](https://microservices.io/patterns/data/transactional-outbox.html) | 📖 | ~15m | +15 | ⬜ |
+| 5 | Idempotent Consumer | [Milan Jovanovic - Idempotent Consumer](https://www.milanjovanovic.tech/blog/idempotent-consumer-handling-duplicate-messages) | 📖 | ~15m | +15 | ⬜ |
+
+### 🟡 CONSIGLIATI
+
+| # | Argomento | Risorsa | Tipo | Tempo | XP | Status |
+|---|-----------|---------|------|-------|-----|--------|
+| 6 | RabbitMQ .NET | [RabbitMQ .NET Client Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-dotnet) | 📖 | ~30m | +15 | ⬜ |
+| 7 | BackgroundService | [Microsoft - Background tasks with hosted services](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services) | 📖 | ~20m | +15 | ⬜ |
+| 8 | Dead Letter Queue | [CloudAMQP - Dead Letter Exchange](https://www.cloudamqp.com/blog/when-and-how-to-use-the-rabbitmq-dead-letter-exchange.html) | 📖 | ~15m | +15 | ⬜ |
+| 9 | RabbitMQ Reliability | [RabbitMQ Reliability Guide](https://www.rabbitmq.com/docs/reliability) | 📖 | ~20m | +15 | ⬜ |
+| 10 | Outbox Pattern | [Kamil Grzybek - Outbox Pattern](https://www.kamilgrzybek.com/blog/posts/the-outbox-pattern) | 📖 | ~20m | +15 | ⬜ |
+| 11 | Outbox Video | [CodeOpinion - Implementing the Outbox Pattern](https://www.youtube.com/watch?v=u8fOnxAxKHk) | 🎬 | ~15m | +15 | ⬜ |
+| 12 | At-least-once | [CloudAMQP - At-least-once delivery](https://www.cloudamqp.com/blog/rabbitmq-message-delivery-guarantees.html) | 📖 | ~10m | +10 | ⬜ |
+| 13 | Exchange Types | [RabbitMQ AMQP Concepts](https://www.rabbitmq.com/tutorials/amqp-concepts) | 📖 | ~15m | +10 | ⬜ |
+
+---
+
 ## 🤖 Futuro: AI Engineering (Mesi 5-6+)
 
 > Da leggere quando arrivi a P2.5 (AI Calendar System)
@@ -178,9 +229,9 @@ updated: 2026-02-20
 |---------|--------|
 | Libri completati (capitoli) | 22 cap |
 | Articoli completati | 6 |
-| Video completati | 0 |
-| XP da letture | +150 |
+| Video completati | 5 (Milan x4, Chapsas x1) |
+| XP da letture | +225 |
 
 ---
 
-*Aggiornato: 2026-02-28*
+*Aggiornato: 2026-03-31 (aggiunte risorse Sedimentazione W5: Reliability Guide, Kamil Grzybek, CodeOpinion, AMQP Concepts)*

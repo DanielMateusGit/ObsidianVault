@@ -159,6 +159,7 @@ Sistema notifiche multi-canale (email, SMS, push, webhook) con retry, template, 
 - Clean Architecture in pratica
 - Event-driven design
 - Message queue con retry/dead letter
+- **Job Scheduling (Hangfire/Quartz.NET)** — scheduling ricorrente, cron jobs (Boss Battle: Reminder Service)
 - Docker e containerization
 - CI/CD pipeline
 - Terraform basics
@@ -207,12 +208,14 @@ P4 FamilyBudget → Alert budget superato, reminder spese ricorrenti
 
 **Scenario:** Progetta un servizio di reminder per appuntamenti (diverso da notifiche, focus su scheduling).
 
+**Tech chiave:** Hangfire o Quartz.NET per scheduling ricorrente (cron-like jobs in .NET). Questo è il pezzo che tool come n8n fanno con UI drag-and-drop — tu lo costruisci con controllo totale.
+
 | Parte | Deliverable |
 |-------|-------------|
-| **A. Design** | ADR-001 (stack), ADR-002 (storage strategy), C4 Context + Container |
+| **A. Design** | ADR-001 (stack), ADR-002 (storage strategy), ADR-003 (Hangfire vs Quartz.NET), C4 Context + Container |
 | **B. Domain Model** | Reminder entity, RecurrenceRule VO, ReminderTriggeredEvent |
 | **C. API Spec** | OpenAPI per CRUD reminder + trigger endpoint |
-| **D. Implementazione** | Aggiungi "Webhook" channel al Notification Service esistente |
+| **D. Implementazione** | Aggiungi "Webhook" channel al Notification Service esistente + Hangfire per scheduling |
 
 **Performance Goal:** 10,000 notifiche in 5 min senza perdite (test sul progetto esistente)
 
@@ -403,8 +406,9 @@ Sistema prenotazioni per studi professionali. Calendar sync, pagamenti, notifich
 - **🤖 AI Gateway (P2.5)** per assistente prenotazioni
 
 ### Cosa Impari
-- Saga Pattern (Orchestration)
+- Saga Pattern (Orchestration) con MassTransit
 - Compensating transactions
+- **Workflow Orchestration awareness** — confronto MassTransit Saga vs Temporal.io vs Elsa Workflows (ADR: quando serve cosa)
 - External service integration
 - Kubernetes deployment
 - Full observability (OpenTelemetry, Grafana)

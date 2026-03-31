@@ -171,15 +171,128 @@ P4 FamilyBudget (Flutter intro) →→→→→→→┘
 
 ---
 
+### IDEA-004: AI Ecosystem Awareness Sessions
+
+**Data:** 2026-03-25
+**Status:** 🟢 Parcheggiata → Sessioni da 30-45 min durante deload o fine sessione
+
+**Descrizione:**
+Sessioni di awareness (no implementazione) sull'ecosistema AI che un AI Engineer deve conoscere per colloqui e per riconoscere tool/framework in progetti reali. L'obiettivo è saper dire "lo conosco, nel mio caso ho scelto X perché Y".
+
+**Formato:** Conversazione strutturata per ogni topic — cos'è, quando si usa, pro/contro, come si confronta con quello che costruisci tu in P2.5.
+
+#### Classifica per importanza (studia in quest'ordine)
+
+> Se finisci i progetti prima del previsto, attacca questa lista dall'alto.
+> A-tier = quasi sicuramente ti servirà, D-tier = nice to have.
+
+**A-tier — Quasi sicuramente ti servirà**
+
+1. **Semantic Kernel (Microsoft)** — Equivalente .NET di LangChain. NEL TUO STACK — se cerchi ruoli AI in aziende Microsoft-stack, te lo chiedono
+2. **LangChain / LangGraph** — Lo standard de facto (Python). Il 70% dei progetti AI lo usa. Devi sapere parlarne fluentemente
+3. **Prompt Management & Versioning** — Come gestire prompt in produzione: versioning, A/B deploy, rollback. Ogni azienda che fa AI in prod ha questo problema
+4. **OpenTelemetry GenAI Semantic Conventions** — Nuove convenzioni OTEL specifiche per LLM (gen_ai.* attributes). Tu hai già OTEL, questo è l'upgrade naturale
+
+**B-tier — Ti dà un vantaggio concreto**
+
+5. **Hugging Face** — Hub modelli, Transformers library, Inference API. Ecosistema onnipresente, se ti danno un modello custom passa da qui
+6. **Vector DB landscape** — Pinecone, Weaviate, Qdrant, ChromaDB vs il tuo pgvector. Domanda da colloquio classica: "quando serve un DB dedicato?"
+7. **LangSmith / LangFuse / Braintrust** — Observability & eval platforms per LLM. Tu costruisci eval custom, sapere quando preferire piattaforme pronte
+8. **AI Cost Management a scala** — Budget alerts, cost allocation per feature/team, token budgeting a livello org. Ogni CTO vuole sapere "quanto ci costa l'AI"
+
+**C-tier — Buono da sapere, non bloccante**
+
+9. **LlamaIndex** — Framework focalizzato su RAG. Più di nicchia rispetto a LangChain ma utile in progetti RAG-heavy
+10. **AI Orchestration durabile (Temporal.io / Inngest / Hatchet)** — Workflow AI long-running (ore, non secondi). Importante in sistemi complessi, ma non dal giorno 1
+11. **CrewAI / AutoGen** — Framework multi-agent alternativi. Multi-agent è hot ma ancora early
+12. **GGUF / GGML / Quantization** — Come funzionano i modelli locali di Ollama. Q4 vs Q8. Ti distingue tecnicamente
+13. **LoRA / QLoRA** — Fine-tuning efficiente. Completa il tuo decision framework con il "come si fa" pratico
+14. **OpenAI Assistants API / GPTs** — Modello "managed agent" di OpenAI. Sta perdendo rilevanza vs approcci custom
+
+**D-tier — Nice to have**
+
+15. **Guardrails AI / NeMo Guardrails (NVIDIA)** — Framework dedicati a safety. Tu costruisci custom, sapere che esistono basta
+16. **DSPy** — Framework per "programmare" prompt in modo strutturato (Stanford). Affascinante ma di nicchia
+17. **Tokenization (BPE, SentencePiece)** — Perché "token" ≠ "parola", impatto su costi e context window. Cultura generale
+18. **vLLM / TensorRT-LLM** — Inference optimization per modelli locali. Troppo infra per AI Engineer generalista
+19. **ONNX Runtime** — Inference cross-platform, rilevante per .NET ma di nicchia nel mercato AI
+20. **Weights & Biases (W&B)** — Experiment tracking. Più per ML Engineer che AI Engineer
+21. **AI Gateway products (Portkey, LiteLLM, Helicone)** — Prodotti che fanno quello che costruisci in P2.5. Sapere i competitor basta
+
+#### Quando farle
+
+- Sessioni deload (solo quiz + lettura + awareness)
+- Fine sessione quando avanza tempo (ultimi 30 min)
+- Prima di iniziare job search (refresh generale)
+- **NON** durante sessioni di coding/progetto attive
+
+#### Decisione (2026-03-25)
+
+**→ PARCHEGGIATA** come sessioni opzionali ricorrenti. Nessuna priorità sopra i progetti, ma da integrare nei tempi morti.
+
+---
+
+### IDEA-005: n8n Prototype vs Engineered — Il Confronto
+
+**Data:** 2026-03-26
+**Status:** ✅ INTEGRATA → Pratica standard in ogni progetto (vedi `claude/CLAUDE.md` sezione "n8n Prototype Practice")
+
+**Descrizione:**
+Costruire un workflow con n8n (1-2 ore) che replica il risultato finale di un progetto del percorso, poi confrontarlo con la versione engineered quando il progetto è completato. L'obiettivo è duplice:
+1. **Vedere subito il "traguardo"** — motivazione tangibile
+2. **Capire i limiti** — quando n8n crolla e perché serve engineering vero
+
+**Prototipo suggerito: Notification Pipeline**
+```
+n8n workflow (1-2 ore):
+Webhook (POST /notify) → IF email/sms → Send Email (Gmail node) → On Error → Retry 3x → Log to Sheet
+
+Equivalente engineered (AQ P1):
+API → Command Handler → Domain Validation → RabbitMQ → Worker → Retry/DLQ → Idempotency → Multi-channel
+```
+
+**Confronto da fare a fine P1:**
+
+| Aspetto | n8n | Tuo codice |
+|---------|-----|-----------|
+| Tempo di setup | 1-2 ore | 5 settimane |
+| 10k notifiche | Crolla | Gestisce |
+| Retry granulare | Generico | Per canale con backoff |
+| Test automatici | Zero | 268+ |
+| Costo a scala | $50-200/mese | $5-10/mese |
+| Modificabilità | Drag & drop | PR + review + test |
+
+**Uso futuro di n8n nel percorso:**
+- Prototyping rapido prima di ogni progetto ("ecco cosa costruiremo")
+- Automazioni interne reali (sync vault, reminder, CI notifications)
+- Portfolio piece: "Ho prototipato con n8n in 2h, poi engineered per produzione — ecco perché"
+
+#### Valutazione
+
+| Domanda | Risposta |
+|---------|----------|
+| **Cosa imparo?** | Low-code awareness, confronto architetturale, saper valutare build vs buy |
+| **Lo userei davvero?** | ✅ SÌ - sia come prototipo che per automazioni personali |
+| **Quanto è grande?** | Side activity (2-4 ore per il prototipo, poi confronti durante il percorso) |
+
+#### Decisione (2026-03-26)
+
+**→ INTEGRATA** come pratica standard per ogni progetto (sandwich PRIMA + DOPO).
+- Per AQ P1 e SE P1 (già in corso): solo confronto DOPO a fine progetto
+- Da P2 in poi: sandwich completo
+- Regole e XP in `claude/CLAUDE.md` sezione "n8n Prototype Practice"
+
+---
+
 ## 📊 Statistiche
 
 | Metrica | Valore |
 |---------|--------|
-| Idee totali | 3 |
-| Integrate in roadmap | 2 |
-| Parcheggiate | 1 |
+| Idee totali | 5 |
+| Integrate in roadmap | 3 |
+| Parcheggiate | 2 |
 | Scartate | 0 |
 
 ---
 
-*Ultimo aggiornamento: 2026-02-24*
+*Ultimo aggiornamento: 2026-03-26*

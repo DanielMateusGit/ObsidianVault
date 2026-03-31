@@ -1,12 +1,12 @@
 ---
 tags: [learning, progress, gamification]
-xp: 4169
-level: 5
-title: "Service Architect"
-streak: 6
-longest_streak: 9
-architect_quest_week: "P1-W4"
-senior_engineer_week: "P1-W1"
+xp: 5600
+level: 7
+title: "System Designer"
+streak: 12
+longest_streak: 12
+architect_quest_week: "P1-W5"
+senior_engineer_week: "P1-W2"
 ai_course: "Claude Code in Action ✅ COMPLETED"
 ---
 
@@ -118,6 +118,13 @@ dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-03-31 | 🎉 LEVEL UP → System Designer (Lv.7) | - | - | 5600 |
+| 2026-03-31 | Quiz (18: 7✅ 8🟡 3❌) + LoggingBehavior TDD + note arricchite + SE W1 completata | Misto | +261 | 5600 |
+| 2026-03-28 | AQ W5 completata: Outbox + Retry/DLQ + 23 test + ADR-004 + 2 note + roadmap SE messaging | AQ W5 | +502 | 5339 |
+| 2026-03-26 | n8n discussion + Practice integrata + refactor completo (7 fix) | Strategica | +50 | 4837 |
+| 2026-03-26 | Spaced repetition (12 quiz, 9✅ 1🟡 2❌) + AQ W5 codice messaging | Misto | +234 | 4787 |
+| 2026-03-25 | Spaced repetition #2 (12 quiz, 7✅ 3🟡 2❌, 2 padroneggiati) | Ripasso | +154 | 4553 |
+| 2026-03-25 | Spaced repetition + AQ W5 teoria + 2 Knowledge notes + LEVEL UP 6 | Misto | +230 | 4399 |
 | 2026-03-24 | Career analysis (AI Engineer pivot) | Strategica | +25 | 4169 |
 | 2026-03-16 | Studio 2h+ | Senior P1-W1 | +60 | 4144 |
 | 2026-03-16 | DeleteTaskItemCommand (TDD) | Senior P1-W1 | +50 | 4084 |

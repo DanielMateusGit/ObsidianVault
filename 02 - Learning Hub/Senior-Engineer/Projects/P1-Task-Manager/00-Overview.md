@@ -16,32 +16,32 @@ REST API per task con TDD, caching Redis, design patterns.
 ## 📅 ROADMAP DETTAGLIATA
 
 ### Week 1: Domain + Application Layer
-| Item | Status | Note |
-|------|--------|------|
-| **DOMAIN** | | |
-| TaskItem Entity | ✅ | 11 test, TDD guidato |
-| Priority Value Object | ✅ | Smart Enum pattern |
-| Project Entity | ✅ | Recap #1 (+75 XP) |
-| Tag Entity | ✅ | Ripasso autonomo |
-| DueDate Value Object | ✅ | Factory method |
-| Domain Events | ✅ | TaskCreated, TaskCompleted |
-| Repository Interfaces | ✅ | ITask, IProject, ITag |
-| IUnitOfWork | ⬜ | Interface nel Domain |
-| **APPLICATION** | | |
-| MediatR setup | ⬜ | |
-| CreateTaskCommand + Handler | ⬜ | |
-| UpdateTaskCommand + Handler | ⬜ | |
-| CompleteTaskCommand + Handler | ⬜ | |
-| DeleteTaskCommand + Handler | ⬜ | |
-| GetTaskByIdQuery + Handler | ⬜ | |
-| GetAllTasksQuery + Handler | ⬜ | |
-| GetTasksByStatusQuery + Handler | ⬜ | |
-| DTOs (TaskDto, CreateTaskDto) | ⬜ | |
-| FluentValidation | ⬜ | |
-| ValidationBehavior | ⬜ | |
-| LoggingBehavior | ⬜ | |
-| **TESTS** | | |
-| Handler unit tests (20+) | ⬜ | |
+| Item                            | Status | Note                       |
+| ------------------------------- | ------ | -------------------------- |
+| **DOMAIN**                      |        |                            |
+| TaskItem Entity                 | ✅      | 11 test, TDD guidato       |
+| Priority Value Object           | ✅      | Smart Enum pattern         |
+| Project Entity                  | ✅      | Recap #1 (+75 XP)          |
+| Tag Entity                      | ✅      | Ripasso autonomo           |
+| DueDate Value Object            | ✅      | Factory method             |
+| Domain Events                   | ✅      | TaskCreated, TaskCompleted |
+| Repository Interfaces           | ✅      | ITask, IProject, ITag      |
+| IUnitOfWork                     | ✅      | Interface in Application   |
+| **APPLICATION**                 |        |                            |
+| MediatR setup                   | ✅      | Commands + Queries         |
+| CreateTaskCommand + Handler     | ✅      |                            |
+| UpdateTaskCommand + Handler     | ✅      |                            |
+| CompleteTaskCommand + Handler   | ✅      | Recap #5 da solo           |
+| DeleteTaskCommand + Handler     | ✅      |                            |
+| GetTaskByIdQuery + Handler      | ✅      |                            |
+| GetAllTasksQuery + Handler      | ✅      |                            |
+| GetTasksByStatusQuery + Handler | ✅      |                            |
+| DTOs (TaskItemDto)              | ✅      | record                     |
+| FluentValidation                | ✅      | 4 validators               |
+| ValidationBehavior              | ✅      | 2 test                     |
+| LoggingBehavior                 | ✅      | 2 test (2026-03-31)        |
+| **TESTS**                       |        |                            |
+| Handler unit tests (25)         | ✅      | 25 Application tests       |
 
 ### Week 2: Infrastructure + API Layer
 | Item | Status | Note |
@@ -94,7 +94,7 @@ REST API per task con TDD, caching Redis, design patterns.
 
 | Week | Status | Completamento |
 |------|--------|---------------|
-| Week 1 | 🟡 In corso | ~60% (Domain ✅, Application ⬜) |
+| Week 1 | ✅ Completata | 100% (Domain 36 test + Application 25 test) |
 | Week 2 | ⬜ | 0% |
 | Week 3 | ⬜ | 0% |
 

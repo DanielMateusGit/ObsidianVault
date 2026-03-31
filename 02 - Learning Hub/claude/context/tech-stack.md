@@ -63,10 +63,10 @@
 |------------|-----|
 | xUnit | Test framework |
 | FluentAssertions | Assertions |
-| Moq | Mocking |
+| NSubstitute | Mocking |
 | Testcontainers | Integration tests |
 | k6 | Load testing |
 
 ---
 
-*Aggiornato: 2026-03-13*
+*Aggiornato: 2026-03-26*

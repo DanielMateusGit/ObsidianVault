@@ -1,7 +1,7 @@
 ---
 tags: [context, monetization, projects, career]
 created: 2026-02-12
-updated: 2026-02-12
+updated: 2026-03-26
 ---
 
 # 💰 Monetization Potential - Progetti
@@ -13,24 +13,27 @@ updated: 2026-02-12
 
 ## 📊 Riepilogo Veloce
 
-| Progetto | Potenziale | Tipo | €/mese potenziale |
-|----------|------------|------|-------------------|
-| P1 Notification | ⭐⭐⭐ | SaaS/Consulting | €500-2000 |
-| P2.5 AI Gateway | ⭐⭐⭐⭐⭐ | SaaS/Consulting | €2000-10000 |
-| P2 NutriPlan | ⭐⭐⭐ | SaaS B2B | €1000-5000 |
-| P3 BookingHub | ⭐⭐⭐ | SaaS | €500-3000 |
-| P4 FamilyBudget | ⭐⭐ | App Store | €100-500 |
-| **P5 Second Brain** | ⭐⭐⭐⭐⭐ | SaaS/Plugin | €1000-5000 |
-| **P6 Interview Coach** | ⭐⭐⭐⭐⭐ | SaaS | €2000-10000 |
-| **P7 Personal Copilot** | ⭐⭐⭐⭐ | Marketplace/SaaS | €500-3000 |
+| Progetto | Percorso | Potenziale | Tipo | €/mese potenziale |
+|----------|----------|------------|------|-------------------|
+| P1 Notification Service | AQ | ⭐⭐⭐ | SaaS/Consulting | €500-2000 |
+| P2.5 AI Gateway | AQ | ⭐⭐⭐⭐⭐ | SaaS/Consulting | €2000-10000 |
+| P2 NutriPlan | AQ | ⭐⭐⭐ | SaaS B2B | €1000-5000 |
+| P3 BookingHub | AQ | ⭐⭐⭐ | SaaS | €500-3000 |
+| P4 FamilyBudget | AQ | ⭐⭐ | App Store | €100-500 |
+| **P5 FitHub** | AQ + SF | ⭐⭐⭐⭐⭐ | SaaS B2B/B2C | €1000-5000 |
+| **AI-2 Interview Coach** | AI Track | ⭐⭐⭐⭐⭐ | SaaS | €2000-10000 |
+| **AI-3 Personal Copilot** | AI Track | ⭐⭐⭐⭐ | Marketplace/SaaS | €500-3000 |
+| **P6 AI Second Brain** | SE Capstone | ⭐⭐⭐⭐⭐ | SaaS/Plugin | €1000-5000 |
+| **P1 Focus Tube** | SF | ⭐⭐⭐⭐⭐ | Freemium SaaS | €1000-5000 |
 
 **Legenda:** ⭐ = basso, ⭐⭐⭐⭐⭐ = altissimo
+**Percorsi:** AQ = Architect Quest, SE = Senior Engineer, SF = Senior Frontend, AI = AI Track
 
 ---
 
 ## 🏛️ ARCHITECT QUEST
 
-### 📧 P1: Notification Service
+### 📧 AQ P1: Notification Service
 **Potenziale: ⭐⭐⭐ Medio**
 
 | Opzione | Descrizione | €/mese |
@@ -45,7 +48,7 @@ updated: 2026-02-12
 
 ---
 
-### 🤖 P2.5: AI Gateway
+### 🤖 AQ P2.5: AI Gateway
 **Potenziale: ⭐⭐⭐⭐⭐ Altissimo (mercato HOT!)**
 
 | Opzione | Descrizione | €/mese |
@@ -64,7 +67,7 @@ updated: 2026-02-12
 
 ---
 
-### 🥗 P2: NutriPlan
+### 🥗 AQ P2: NutriPlan
 **Potenziale: ⭐⭐⭐ Medio**
 
 | Opzione | Descrizione | €/mese |
@@ -79,7 +82,7 @@ updated: 2026-02-12
 
 ---
 
-### 📅 P3: BookingHub
+### 📅 AQ P3: BookingHub
 **Potenziale: ⭐⭐⭐ Medio (mercato affollato)**
 
 | Opzione | Descrizione | €/mese |
@@ -94,7 +97,7 @@ updated: 2026-02-12
 
 ---
 
-### 💰 P4: FamilyBudget
+### 💰 AQ P4: FamilyBudget
 **Potenziale: ⭐⭐ Basso-Medio**
 
 | Opzione | Descrizione | €/mese |
@@ -108,31 +111,37 @@ updated: 2026-02-12
 
 ---
 
-### 🧠 P5: AI Second Brain
-**Potenziale: ⭐⭐⭐⭐⭐ Altissimo (trend crescente!)**
+### 🏋️ AQ P5: FitHub (Capstone Reale)
+**Potenziale: ⭐⭐⭐⭐⭐ Altissimo (cliente reale gia disponibile!)**
+
+> Integrato da IDEA-003. Backend AQ P5, App mobile SF PX.
 
 | Opzione | Descrizione | €/mese |
 |---------|-------------|--------|
-| **Obsidian Plugin** | Plugin premium su marketplace | €5-15/utente |
-| **Standalone SaaS** | "Your AI-powered knowledge base" | €19-49/utente |
-| **Enterprise** | Per team/aziende | €99-299/team |
-| **Course** | "Build your own Second Brain with AI" | €99-299 |
+| **SaaS per palestre** | Gestione turni, abbonamenti, programmazione | €50-200/palestra |
+| **B2C App** | Utenti singoli, allenamento casa | €5-15/utente |
+| **White-label** | Stessa codebase, skin diverse per mercati verticali | €500-2000/licenza |
+| **Commissioni** | % su abbonamenti gestiti tramite piattaforma | Revenue share |
 
 **Perché è HOT:**
-- "Second Brain" è trend (Tiago Forte, Building a Second Brain)
-- Obsidian ha 1M+ utenti paganti
-- RAG è la killer feature che tutti vogliono
+- Dan lavora in palestra → gia un cliente potenziale
+- Multi-versione (Stretching/Yoga, CrossFit, Palestra)
+- AI per personalizzazione allenamenti
 
-**Competitor:** Mem.ai, Notion AI, Reflect (ma costosi!)
+**Competitor:** Mindbody (costoso), Wodify (nicchia CrossFit), Virtuagym
 
-**Pitch:** "Il tuo Second Brain, i tuoi dati, la tua AI"
+**Differenziatore:** AI workout planning + multi-tenant + prezzo accessibile per piccole palestre
 
-**🎯 CONSIGLIO:** Questo ha il miglior rapporto effort/revenue!
+**Pitch:** "La tua palestra, la tua app. Con AI che personalizza gli allenamenti."
 
 ---
 
-### 🎤 P6: AI Interview Coach
+## 🤖 AI TRACK
+
+### 🎤 AI-2: Interview Coach
 **Potenziale: ⭐⭐⭐⭐⭐ Altissimo (pain point reale!)**
+
+> Precedentemente numerato P6. Ora nel track AI separato (vedi `roadmaps/architect-quest.md`).
 
 | Opzione | Descrizione | €/mese |
 |---------|-------------|--------|
@@ -148,19 +157,18 @@ updated: 2026-02-12
 
 **Competitor:** Pramp (peer), Interviewing.io (costoso), ChatGPT (generico)
 
-**Differenziatore:**
-- Specialized per tech (system design!)
-- Progress tracking
-- Voice mode
+**Differenziatore:** Specialized per tech (system design!), progress tracking, voice mode
 
 **Pitch:** "Il tuo coach personale per interview tech. 24/7, €29/mese invece di €300/ora"
 
-**🎯 CONSIGLIO:** Lancia durante job search (mese 17-18), hai il tuo caso d'uso!
+**🎯 CONSIGLIO:** Lancia durante job search — hai il tuo caso d'uso!
 
 ---
 
-### 🤖 P7: Personal Copilot
+### 🤖 AI-3: Personal Copilot
 **Potenziale: ⭐⭐⭐⭐ Alto**
+
+> Precedentemente numerato P7.
 
 | Opzione | Descrizione | €/mese |
 |---------|-------------|--------|
@@ -180,61 +188,111 @@ updated: 2026-02-12
 
 ## 💻 SENIOR ENGINEER
 
-I progetti Senior sono principalmente per **skills** (→ job €90k-130k), ma le AI features hanno potenziale:
+I progetti Senior sono principalmente per **skills** (→ job €90k-130k), ma alcuni hanno potenziale:
 
-### AI Features Monetizzabili
+### 🧠 SE P6 Capstone: AI Second Brain
+**Potenziale: ⭐⭐⭐⭐⭐ Altissimo (trend crescente!)**
+
+> Precedentemente AQ P5 separato, ora unito al Capstone SE P6.
+
+| Opzione | Descrizione | €/mese |
+|---------|-------------|--------|
+| **Obsidian Plugin** | Plugin premium su marketplace | €5-15/utente |
+| **Standalone SaaS** | "Your AI-powered knowledge base" | €19-49/utente |
+| **Enterprise** | Per team/aziende | €99-299/team |
+| **Course** | "Build your own Second Brain with AI" | €99-299 |
+
+**Perché è HOT:**
+- "Second Brain" è trend (Tiago Forte, Building a Second Brain)
+- Obsidian ha 1M+ utenti paganti
+- RAG è la killer feature che tutti vogliono
+
+**Competitor:** Mem.ai, Notion AI, Reflect (ma costosi!)
+
+**Pitch:** "Il tuo Second Brain, i tuoi dati, la tua AI"
+
+**🎯 CONSIGLIO:** Questo ha il miglior rapporto effort/revenue!
+
+### AI Features Monetizzabili (altri progetti SE)
 
 | Feature | Da Progetto | Potenziale Standalone |
 |---------|-------------|----------------------|
-| Smart Prioritization | P1 | Basso (troppo semplice) |
-| Message Summarization | P2 | Medio (API service) |
-| **Product Recommendations** | P3 | **Alto** (ogni e-commerce vuole questo) |
-| **Alert Triage** | P4 | **Alto** (DevOps tool) |
-| Link Preview | P5 | Medio (API service) |
+| Smart Prioritization | SE P1 Task Manager | Basso (troppo semplice) |
+| Message Summarization | SE P2 Chat App | Medio (API service) |
+| **Product Recommendations** | SE P3 E-commerce | **Alto** (ogni e-commerce vuole questo) |
+| **Alert Triage** | SE P4 Alert Gateway | **Alto** (DevOps tool) |
+| Link Preview | SE P5 URL Shortener | Medio (API service) |
 
-**Consiglio:** P3 (recommendations) e P4 (alert triage) potrebbero diventare micro-SaaS standalone.
+**Consiglio:** SE P3 (recommendations) e SE P4 (alert triage) potrebbero diventare micro-SaaS standalone.
+
+---
+
+## 🎨 SENIOR FRONTEND
+
+### 🎬 SF P1: Focus Tube
+**Potenziale: ⭐⭐⭐⭐⭐ Altissimo (problema sentito!)**
+
+> Integrato da IDEA-002.
+
+| Opzione | Descrizione | €/mese |
+|---------|-------------|--------|
+| **Freemium SaaS** | Free base + premium features | €5-15/utente |
+| **Browser Extension** | Chrome/Firefox premium | €3-9/mese |
+| **Team Plan** | Per aziende/bootcamp | €49-199/team |
+
+**Perché è HOT:**
+- YouTube è il problema #1 di produttivita per developer/studenti
+- Community-driven curation è unico
+- Nessun competitor fa "YouTube for learning" bene
+
+**Competitor:** Unhook (solo blocca), DF Tube (basico), nessuno con curation
+
+**Pitch:** "YouTube per imparare, non per scrollare"
 
 ---
 
 ## 🎯 TOP 3 per Monetizzazione
 
-### 🥇 1. AI Interview Coach (P6)
+### 🥇 1. AI Interview Coach (AI-2)
 - **Perché:** Pain point universale, timing perfetto (lanci quando cerchi lavoro)
 - **Effort:** Medio
 - **Potenziale:** €2000-10000/mese
 - **Strategia:** Lancia beta durante tuo job search, raccogli testimonial
 
-### 🥈 2. AI Second Brain (P5)
-- **Perché:** Trend "Second Brain" + Obsidian community attiva
-- **Effort:** Medio
+### 🥈 2. FitHub (AQ P5) — NUOVO!
+- **Perché:** Cliente reale (palestra di Dan), multi-vertical, AI differenziante
+- **Effort:** Alto (ma e il Capstone, lo fai comunque)
 - **Potenziale:** €1000-5000/mese
-- **Strategia:** Obsidian plugin prima, SaaS dopo
+- **Strategia:** Parti con la palestra di Dan come beta tester
 
-### 🥉 3. AI Gateway (P2.5)
+### 🥉 3. AI Gateway (AQ P2.5)
 - **Perché:** Ogni azienda vuole AI, pochi sanno integrarla
 - **Effort:** Basso (già fatto per progetto!)
 - **Potenziale:** €2000-10000/mese (consulting)
 - **Strategia:** Consulting + template/course
+
+**Menzioni d'onore:** Focus Tube (SF P1), AI Second Brain (SE P6)
 
 ---
 
 ## 💡 Strategia Consigliata
 
 ```
-FASE 1: Focus su Job (Mesi 1-18)
+FASE 1: Focus su Job (Mesi 1-20)
 ─────────────────────────────────
 Completa i progetti, ottieni job €90k-130k
 Side income: €0 (focus su learning)
 
-FASE 2: Side Project (Mesi 19-24)
+FASE 2: Side Project (Mesi 20-24)
 ─────────────────────────────────
 Lancia AI Interview Coach durante job search
+FitHub beta con la palestra di Dan
 Target: €500-2000/mese side income
 
 FASE 3: Scale (Anno 2+)
 ─────────────────────────────────
-Se Interview Coach funziona → scale
-Se no → prova Second Brain o AI Gateway consulting
+Se Interview Coach/FitHub funziona → scale
+Se no → prova AI Gateway consulting o Focus Tube
 Target: €2000-5000/mese side income
 
 LONG TERM
@@ -272,4 +330,4 @@ Oppure: Side project diventa main income
 
 ---
 
-*Ultimo aggiornamento: 2026-02-12*
+*Ultimo aggiornamento: 2026-03-26 (refactor — numerazione allineata a roadmap, aggiunti FitHub e Focus Tube)*

@@ -438,13 +438,18 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
   - Output validation layer (schema check, content filter)
   - PII detection nelle risposte
   - Test di sicurezza AI (adversarial prompts)
+- **🎯 AI ENGINEER GAP: Structured Output & Schema Enforcement**
+  - Forzare output LLM in formato preciso e validabile (non solo JSON mode)
+  - Schema validation con retry on failure (Pydantic-style in .NET)
+  - Differenza tra "demo che funziona" e "sistema affidabile" in produzione
+  - Pattern: prompt → output → validate → retry if invalid → fallback
 - **🧠 AI ENGINEER GAP: Fine-tuning Decision Framework**
   - Decision tree: RAG vs fine-tuning vs prompt engineering (quando usare cosa)
   - Costo/beneficio fine-tuning (quando vale la pena vs RAG)
   - Awareness: come funziona il fine-tuning (teoria, no hands-on richiesto)
   - Data preparation: formato, qualita, quantita minime
 
-**Deliverable Phase 2:** MCP Server funzionante + Claude integration + Guardrails layer + Fine-tuning decision framework ✅
+**Deliverable Phase 2:** MCP Server funzionante + Claude integration + Guardrails layer + Structured Output enforcement + Fine-tuning decision framework ✅
 
 ---
 
@@ -493,13 +498,23 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
   - CPU vs GPU trade-off per inference locale (M4 Pro = ottimo per dev, ma in cloud?)
   - Scaling AI endpoints: quando un singolo container non basta (queue + workers)
   - Model caching: evitare cold start di 10s su primo request
+- **💰 AI ENGINEER GAP: Semantic Caching & Deduplication**
+  - Semantic caching con Redis: risposte simili → cache hit (embedding similarity)
+  - Prompt deduplication: stessa domanda riformulata → stessa risposta cached
+  - Cache invalidation strategies per contenuto AI
+  - Impatto in produzione: taglia costi LLM del 40-60%
+- **⚖️ AI ENGINEER GAP: Responsible AI in Pratica**
+  - Bias detection negli output (testing sistematico)
+  - Fairness testing (risposte consistenti per gruppi diversi)
+  - Transparency & explainability (perché l'AI ha risposto così? source attribution)
+  - Compliance enterprise: audit trail, data retention, right to explanation
 - Production polish:
   - Observability completa (Logs, metrics, traces con AI-specific dimensions)
   - Rate limiting per utente + per provider (budget protection)
   - Graceful degradation (Claude down? Fallback a Ollama con UX ridotta)
   - Voice interface Flutter (speech_to_text, opzionale)
 
-**Deliverable Phase 3:** Multi-agent system + eval pipeline + AI production-ready ✅
+**Deliverable Phase 3:** Multi-agent system + eval pipeline + semantic caching + responsible AI layer + AI production-ready ✅
 
 ### Conversation Examples
 

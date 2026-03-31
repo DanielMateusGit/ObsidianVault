@@ -8,10 +8,10 @@
 |-------|--------|
 | **Percorso attivo** | Entrambi in parallelo (focus primario: Architect Quest) |
 | **Progetto AQ** | P1 Notification Service |
-| **Settimana AQ** | Week 5 IN CORSO (teoria completata, codice prossima sessione) |
+| **Settimana AQ** | Week 5 COMPLETATA ✅ → SEDIMENTAZIONE W5 |
 | **Progetto SE** | P1 Task Manager |
-| **Settimana SE** | W1 95% (Domain ✅, Commands ✅, Queries ✅, DTOs ✅, Validators ✅, ValidationBehavior ✅ — manca solo LoggingBehavior) |
-| **Task corrente** | AQ P1 W5 codice (IMessagePublisher, Worker) + SE P1 W1 (LoggingBehavior) |
+| **Settimana SE** | W1 COMPLETATA ✅ → W2 Infrastructure + API |
+| **Task corrente** | Sedimentazione AQ W5 (letture) + SE P1 W2 |
 
 ---
 
@@ -19,9 +19,9 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 4399 |
-| **Livello** | 6 - Domain Master |
-| **Streak** | 7 giorni |
+| **XP Totali** | 5600 |
+| **Livello** | 7 - System Designer (LEVEL UP! 🎉) |
+| **Streak** | 12 giorni |
 | **Data inizio** | 2025-01-29 |
 | **Achievement** | 10 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire, First Exam, First Lesson, Course Master, Perfect Score) |
 | **Certificazioni** | 1 (Claude Code in Action - 8/8 Perfect Score) |
@@ -32,12 +32,20 @@
 
 | Progetto | Status | Periodo |
 |----------|--------|---------|
-| P1 - Notification Service | In corso | W5 in corso |
+| P1 - Notification Service | In corso | W5 ✅ → Sedimentazione |
 | P2 - NutriPlan | Locked | M5-9 |
 | P2.5 - AI Gateway | Locked | M5-6 |
 | P3 - BookingHub | Locked | M10-14 |
 | P4 - FamilyBudget | Locked | M15-18 |
 | P5 - FitHub | Locked | M19-22 |
+
+### Week 5 Completata (450/450 XP) — 2026-03-28
+- Message Queue (RabbitMQ), Outbox Pattern, Retry + DLQ applicativa
+- OutboxMessage, OutboxStore, OutboxProcessor, DeliveryAttemptRepository
+- NotificationWorker con retry logic (CanRetry + DeliveryAttempts + Outbox per re-publish)
+- ADR-004: Message Queue Strategy
+- 294 test totali (185 Domain + 74 Application + 35 Infrastructure)
+- 4 note: message-queues, rabbitmq-fundamentals, outbox-pattern, retry-error-handling
 
 ### Week 4 Completata (400/400 XP)
 - Infrastructure Layer, Repository Pattern, EF Core, Value Object Persistence, Integration Tests
@@ -62,7 +70,7 @@
 
 | Week | Focus | Status |
 |------|-------|--------|
-| W1 | Domain + Application Layer | 95% (manca solo LoggingBehavior) |
+| W1 | Domain + Application Layer | COMPLETATA ✅ (36 Domain + 25 Application test) |
 | W2 | Infrastructure + API Layer | Da fare |
 | W3 | Redis + Patterns + Boss Battle | Da fare |
 
@@ -76,38 +84,37 @@
 5. ~~DTOs per response~~ ✅ (TaskItemDto record)
 6. ~~FluentValidation sui Commands~~ ✅ (4 validators)
 7. ~~ValidationBehavior~~ ✅ (con test)
-8. LoggingBehavior ← UNICO MANCANTE W1
+8. ~~LoggingBehavior~~ ✅ (con test, 2026-03-31) — W1 COMPLETATA
 
 ---
 
 ## Ultima Sessione
 
-**Data:** 2026-03-25
-**Tipo:** Misto (Spaced Repetition + AQ P1 W5 Teoria)
+**Data:** 2026-03-31
+**Tipo:** Quiz + Codice + Note (Misto)
 
-- Spaced repetition: 7 quiz (5✅, 2🟡), 2 padroneggiati (DIP-03, FAC-01 → Box 5)
-- Iniziata AQ P1 Week 5: Message Queue — teoria completata (3 note progetto)
-- Create 2 Knowledge notes .NET Fundamentals (CancellationToken, Task)
-- Fix frontmatter note SE P1 W1 + rimosso duplicato
-- Aggiornata nota coding-assistant-vs-llm (chiarita ambiguita + sezione Agentic Loop)
-- 35 nuovi quiz aggiunti al tracker
-- Quiz regola Box 1: da 2 a 10 per sessione
-- **LEVEL UP: 6 - Domain Master!** (4399 XP)
-- **NOTA:** Progress.md ancora disallineato. Da sistemare.
+- **Spaced repetition**: 18 quiz (7✅ 8🟡 3❌), challenge #15
+- **Note arricchite**: retry-error-handling.md e outbox-pattern.md — aggiunte spiegazioni discorsive, diagrammi semplificati, testo esplicativo per ogni flusso
+- **SE P1 W1 completata**: LoggingBehavior implementato con TDD (2 test)
+  - ILogger<T>, Stopwatch, try/catch con rethrow
+  - Pipeline behavior pattern: logging osserva, non decide
+- **00-Overview.md aggiornato** per allineare al codice reale
+- **Esame Mese 2 posticipato** al 2026-04-07
+- **Reading list aggiornata** con risorse Sedimentazione W5
+- **LEVEL UP** → Livello 7 System Designer!
+- +261 XP
 
 ---
 
 ## Prossima Sessione
 
 **Opzioni:**
-1. **Spaced repetition** (OBBLIGATORIA — 10 Box 1 + scaduti + 1 CLCODE)
-2. **AQ P1 W5 — CODICE:** docker-compose RabbitMQ, IMessagePublisher, RabbitMqPublisher, integrazione handler, worker
-3. Finisci SE P1 W1: solo LoggingBehavior → poi W1 completata
-4. Outbox Pattern (teoria, dopo flusso base funzionante)
-5. Sistemare Progress.md (riallineare XP history)
+1. **Spaced repetition** (OBBLIGATORIA — molti quiz tornati in Box 1 da questa sessione)
+2. **Sedimentazione AQ W5** — Dan racconta cosa ha letto su messaging/RabbitMQ → Knowledge notes
+3. **SE P1 W2** — Infrastructure + API Layer (DbContext, Repos, Migrations, Controllers, DI, Serilog)
+4. **Esame Mese 2** (posticipato al 2026-04-07)
 
-**Piano parallelo:** 70% Architect Quest + 30% Senior Engineer (2 sessioni AQ + 1 SE)
-**Focus:** Ogni decisione architetturale va vista anche in ottica AI Engineer
+**Piano:** Letture Sedimentazione W5 (RabbitMQ tutorials, Reliability Guide, Outbox articoli) → Sedimentazione → SE P1 W2
 
 ---
 
@@ -120,6 +127,8 @@
 - **Quiz nomenclatura:** Source mapping per ogni prefisso quiz. Tabella overlap noti per evitare duplicati (2026-03-24)
 - **Quiz regola Box 1:** Minimo 10 quiz Box 1 non-risposti + 1 CLCODE per sessione (aggiornato 2026-03-25, era 2)
 - **Cross-linking obbligatorio:** Ogni Knowledge note deve avere [[links]] a concetti correlati (2026-03-24)
+- **n8n Prototype Practice:** Sandwich PRIMA+DOPO per ogni progetto da P2 in poi. Per P1 AQ/SE solo DOPO. (2026-03-26)
+- **Messaging progressivo SE:** Redis Pub/Sub (P1 W3) → RabbitMQ (P2 W5) → Outbox TDD (P3 W10) → Multi-service completo (P4 W11). Deciso 2026-03-28.
 
 ---
 
@@ -129,4 +138,4 @@ Nessuna.
 
 ---
 
-*Ultimo aggiornamento: 2026-03-25 (sessione — spaced repetition + AQ P1 W5 teoria)*
+*Ultimo aggiornamento: 2026-03-31 (SE W1 completata + LoggingBehavior + LEVEL UP 7 + note arricchite)*

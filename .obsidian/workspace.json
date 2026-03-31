@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ec5d8243151d246e",
+        "id": "f0535218a6fd0c1d",
         "type": "tabs",
         "children": [
           {
-            "id": "babd67fa7d0fa8d3",
+            "id": "7657d05d52c0eae2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/outbox-pattern.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "outbox-pattern"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "repository pattern",
+                "query": "outbox",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -176,44 +181,44 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "f482125d8793a22e",
+  "active": "7657d05d52c0eae2",
   "lastOpenFiles": [
-    "02 - Learning Hub/claude/sessions/2026-03-24-3.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/infrastructure-layer.md",
-    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/Notes/smart-enum.md",
+    "02 - Learning Hub/claude/sessions/2026-03-31.md",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Npgsql.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Options.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
+    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+    "02 - Learning Hub/claude/sessions/2026-03-28.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/retry-error-handling.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/message-queues.md",
+    "Projects/notification-service/docs/adr/ADR-004-message-queue-strategy.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/outbox-pattern.md",
+    "02 - Learning Hub/claude/sessions/2026-03-25-2.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/ef-core-migrations.md",
+    "02 - Learning Hub/claude/roadmaps/senior-engineer.md",
+    "02 - Learning Hub/claude/sessions/2026-03-26-2.md",
     "02 - Learning Hub/Progress.md",
-    "02 - Learning Hub/Dashboard.md",
     "02 - Learning Hub/CLAUDE.md",
-    "02 - Learning Hub/claude/CLAUDE.md",
-    "02 - Learning Hub/Achievements.md",
-    "02 - Learning Hub/Knowledge/ai/mcp-servers.md",
-    "02 - Learning Hub/claude/sessions/2026-03-24.md",
-    "02 - Learning Hub/Knowledge/ai/context-management.md",
-    "02 - Learning Hub/Knowledge/ai/coding-assistant-vs-llm.md",
-    "02 - Learning Hub/Knowledge/ai/claude-code-hooks.md",
-    "02 - Learning Hub/AI-Frontier/2026/Q1/_template-course-note.md",
-    "02 - Learning Hub/AI-Frontier/2026/Q1/claude-code-in-action.md",
-    "02 - Learning Hub/AI-Frontier/2026/Q1/future-ai-automation-project.md",
-    "02 - Learning Hub/AI-Frontier/2026/Q1/coding-assistant-fundamentals.md",
-    "02 - Learning Hub/Knowledge/databases/ef-core-dbcontext.md",
-    "02 - Learning Hub/Knowledge/databases",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/integration-tests.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/testing-with-mocks.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/value-object-persistence.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/unit-of-work.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/rich-vs-anemic-domain-model.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/repository-pattern.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/project-overview.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/00-Overview.md",
+    "02 - Learning Hub/Architect-Quest/00-Overview.md",
     "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/00-Overview.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/entities-and-clean-architecture.md",
-    "Projects/notification-service/NotificationService.sln.DotSettings.user",
-    "Projects/notification-service/src/NotificationService.Application/obj/rider.project.restore.info",
-    "Projects/notification-service/src/NotificationService.Domain/obj/rider.project.restore.info",
-    "Projects/notification-service/tests/NotificationService.Infrastructure.Tests/obj/rider.project.restore.info",
-    "Projects/notification-service/tests/NotificationService.Application.Tests/obj/rider.project.restore.info",
-    "Projects/notification-service/tests/NotificationService.Domain.Tests/obj/rider.project.restore.info",
-    "Projects/notification-service/src/NotificationService.Api/obj/rider.project.restore.info",
-    "Projects/notification-service/src/NotificationService.Infrastructure/obj/rider.project.restore.info",
-    "Projects/notification-service/tests/NotificationService.Infrastructure.Tests/obj/bbfdde18-6e2c-4d69-a4ec-1e8aaade03f9.tmp",
+    "02 - Learning Hub/Senior-Engineer/00-Overview.md",
+    "02 - Learning Hub/Architect-Quest/Projects/AI-3-Personal-Copilot/00-Overview.md",
+    "02 - Learning Hub/Knowledge/CLAUDE.md",
+    "02 - Learning Hub/claude/sessions/2026-03-26.md",
+    "02 - Learning Hub/claude/sessions/2026-03-25.md",
+    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/background-service.md",
+    "02 - Learning Hub/Knowledge/dotnet/task-type.md",
+    "02 - Learning Hub/Knowledge/dotnet/cancellation-token.md",
+    "02 - Learning Hub/Knowledge/patterns/repository-pattern.md",
+    "02 - Learning Hub/Knowledge/patterns/mediatr-pipeline-behaviors.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Pasted image 20250908100643.png",

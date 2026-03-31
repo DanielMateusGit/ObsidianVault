@@ -44,6 +44,15 @@ Senior P4 (Alert Gateway)    ←→  Architect P3 (BookingHub) = Microservices, 
 Senior P2 (Chat)             ←→  Architect P4 (FamilyBudget) = Real-time, SignalR
 ```
 
+### 📨 Progressione Messaging (cross-progetto)
+```
+P1 W3:  Redis Pub/Sub           → messaging in-process, semplice
+P2 W5:  RabbitMQ base           → broker esterno, un producer/consumer
+P3 W10: Outbox Pattern (TDD)    → consistenza DB/Queue, costruito da zero
+P4 W11: Messaging completo      → multi-service, DLQ, circuit breaker + queue
+```
+> In AQ hai PROGETTATO messaging (W5). In SE lo IMPLEMENTI con TDD, progressivamente.
+
 ---
 
 ## 🏆 SISTEMA BOSS BATTLE
@@ -138,9 +147,12 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 - Integration tests (TestContainers)
 - API tests (WebApplicationFactory)
 
-**Week 3: Redis + Patterns + Boss Battle**
+**Week 3: Redis + Messaging Base + Patterns + Boss Battle**
 - Redis caching setup
 - Cache-aside pattern
+- **Redis Pub/Sub + BackgroundService** (task scadute → evento → worker aggiorna status)
+  - Rinforzo AQ W5: implementi messaging in-process da zero con TDD
+  - Primo contatto con async processing nel percorso SE
 - Factory Pattern (TaskFactory)
 - Strategy Pattern (prioritization algorithms)
 - Performance tests
@@ -151,6 +163,7 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 - [ ] REST API CRUD completa
 - [ ] 80%+ test coverage
 - [ ] Redis caching funzionante
+- [ ] Redis Pub/Sub + BackgroundService per task scadute
 - [ ] 3 design patterns applicati
 - [ ] Serilog structured logging
 - [ ] EF Core migrations setup
@@ -356,10 +369,15 @@ Applicazione chat real-time scalabile a 1000+ utenti concorrenti.
 - Basic chat functionality
 - Message persistence
 
-**Week 5: Redis + Scaling + Resilience**
+**Week 5: Redis + Scaling + Resilience + RabbitMQ**
 - Redis backplane per scaling
 - Redis Pub/Sub
 - Presence (chi è online)
+- **📨 RabbitMQ per notifiche offline** (~3-4 ore)
+  - User offline → messaggio in RabbitMQ queue → email/push quando torna
+  - Producer (ChatHub) + Consumer (NotificationWorker)
+  - Rinforzo AQ W5: primo broker esterno nel percorso SE, implementato con TDD
+  - Confronto pratico: Redis Pub/Sub (P1 W3) vs RabbitMQ (qui) — quando usare quale
 - **🛡️ Resilience Patterns con Polly** (mini-topic, ~2-3 ore)
   - Circuit Breaker: Redis va giu → il chat degrada, non crasha
   - Retry with exponential backoff: connessione persa → riprova intelligentemente
@@ -376,6 +394,7 @@ Applicazione chat real-time scalabile a 1000+ utenti concorrenti.
 - [ ] Scala a 1000+ utenti
 - [ ] Frontend React completo
 - [ ] Redis Pub/Sub implementato
+- [ ] RabbitMQ per notifiche offline
 
 ### Testing Checklist ✅
 - [ ] Unit tests - Hub logic
@@ -478,8 +497,12 @@ Sistema carrello e inventario con CQRS, Event Sourcing, gestione concorrenza.
 - Optimistic concurrency
 - **Query optimization & database design** (indexing, query plans, N+1 prevention)
 
-**Week 10: Saga + Polish**
+**Week 10: Saga + Outbox Pattern + Polish**
 - Checkout saga
+- **📨 Outbox Pattern implementato da zero con TDD**
+  - OrderPlaced → OutboxMessage → RabbitMQ → InventoryService, PaymentService
+  - Rinforzo AQ W5: in AQ l'hai progettato, qui lo costruisci tu da solo
+  - Event Sourcing + Outbox = eventi dal domain store pubblicati sulla queue
 - Integration tests
 - Load testing
 
@@ -488,6 +511,7 @@ Sistema carrello e inventario con CQRS, Event Sourcing, gestione concorrenza.
 - [ ] Event Sourcing con replay
 - [ ] Distributed locking
 - [ ] Saga per checkout
+- [ ] Outbox Pattern implementato con TDD
 
 ### Testing Checklist ✅
 - [ ] Unit tests - Aggregates, Commands, Queries
@@ -582,10 +606,15 @@ Focus su **resilience patterns** e **service communication**.
 
 ### Settimane
 
-**Week 11: Service Decomposition**
+**Week 11: Service Decomposition + Messaging Completo**
 - Identificare bounded contexts
 - Setup 3 services: Gateway, Processor, Sender
-- RabbitMQ communication
+- RabbitMQ communication tra servizi (Exchange types, routing)
+- **📨 Messaging inter-service completo con TDD**
+  - Outbox Pattern per ogni servizio (consistenza cross-service)
+  - Dead Letter Queue (DLQ applicativa + DLQ RabbitMQ per confronto)
+  - Retry con DeliveryAttempts + backoff controllato
+  - Il "boss finale" del messaging: tutto quello imparato in P1-P3 applicato a multi-service
 - Docker Compose per local dev
 
 **Week 12: Resilience Patterns**
@@ -593,6 +622,7 @@ Focus su **resilience patterns** e **service communication**.
 - Retry policies con exponential backoff
 - Fallback strategies
 - Bulkhead pattern
+- Integrazione resilience + messaging (Circuit Breaker su RabbitMQ connection)
 
 **Week 13: Gateway + Observability**
 - YARP API Gateway

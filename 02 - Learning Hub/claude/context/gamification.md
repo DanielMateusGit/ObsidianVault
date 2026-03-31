@@ -211,6 +211,15 @@ Verifica autonoma alla fine di ogni progetto.
 
 ---
 
+## n8n Prototype Practice
+
+| Attivita | XP |
+|----------|-----|
+| Prototipo n8n pre-progetto (kickoff) | +15 |
+| Confronto n8n post-progetto (closeout) | +20 |
+
+---
+
 ## Coach CLI
 
 ```bash
@@ -219,4 +228,4 @@ python3 coach.py briefing|status|suggest|quiz|add-xp|streak|motivation
 
 ---
 
-*Aggiornato: 2026-03-13*
+*Aggiornato: 2026-03-26*

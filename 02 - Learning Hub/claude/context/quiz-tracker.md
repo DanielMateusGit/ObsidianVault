@@ -1,7 +1,7 @@
 ---
 tags: [context, quiz, spaced-repetition]
 created: 2026-02-05
-updated: 2026-02-05
+updated: 2026-03-31
 ---
 
 # 🧠 Quiz Tracker - Spaced Repetition
@@ -14,13 +14,13 @@ updated: 2026-02-05
 
 | Metrica | Valore |
 |---------|--------|
-| **Quiz totali** | 191 |
-| **Risposte corrette** | 79 |
-| **Risposte parziali** | 10 |
-| **Risposte sbagliate** | 2 |
-| **Non risposti** | 106 |
-| **Challenge completate** | 11 |
-| **Streak challenge** | 11 |
+| **Quiz totali** | 212 |
+| **Risposte corrette** | 119 |
+| **Risposte parziali** | 27 |
+| **Risposte sbagliate** | 11 |
+| **Non risposti** | 76 |
+| **Challenge completate** | 15 |
+| **Streak challenge** | 15 |
 
 ---
 
@@ -64,7 +64,7 @@ updated: 2026-02-05
 #### Clean Architecture Principles
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CLEAN-01 | Struttura con controllers/services/repositories - cosa "urla"? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLEAN-01 | Struttura con controllers/services/repositories - cosa "urla"? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
 | CLEAN-02 | Caratteristica comune a TUTTE le clean architectures? | 📦1 | - | Ora | ⬜ Non risposto |
 | CLEAN-03 | Cos'è la Dependency Rule? Qual è l'unica direzione permessa per le dipendenze? | 📦1 | - | Ora | ⬜ Non risposto |
 | CLEAN-04 | Progetto MVC con Controllers/Services/Repositories — ha "Screaming Architecture"? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -84,7 +84,7 @@ updated: 2026-02-05
 #### Component Coupling
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| COUP-01 | Ciclo A → B → C → A - come lo rompi con DIP? | 📦1 | - | Ora | ⬜ Non risposto |
+| COUP-01 | Ciclo A → B → C → A - come lo rompi con DIP? | 📦1 | 2026-03-31 | Ora | ❌ Sbagliato |
 | COUP-02 | Domain dipende da Infrastructure - perché è sbagliato (SDP)? | 📦1 | - | Ora | ⬜ Non risposto |
 | COUP-03 | Componente stabile ma concreto - perché è un problema (SAP)? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -109,7 +109,7 @@ updated: 2026-02-05
 #### Single Responsibility Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| SRP-01 | Qual è la VERA definizione di SRP? | 📦1 | - | Ora | ⬜ Non risposto |
+| SRP-01 | Qual è la VERA definizione di SRP? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
 | SRP-02 | ReportGenerator con metodi per Sales, HR, Finance - viola SRP? | 📦1 | - | Ora | ⬜ Non risposto |
 | SRP-03 | Un collega dice che EmployeeFacade viola SRP. Come rispondi? | 📦1 | - | Ora | ⬜ Non risposto |
 | SRP-04 | CalculateDiscount() per Sales e Finance - duplicazione vera o accidentale? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -117,7 +117,7 @@ updated: 2026-02-05
 #### Liskov Substitution Principle
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| LSP-01 | Perché Square extends Rectangle viola LSP, anche se matematicamente un quadrato È un rettangolo? | 📦1 | - | Ora | ⬜ Non risposto |
+| LSP-01 | Perché Square extends Rectangle viola LSP, anche se matematicamente un quadrato È un rettangolo? | 📦2 | 2026-03-31 | 2026-04-03 | ✅ Corretto |
 | LSP-02 | Nel sistema taxi, cosa succede se arriva un terzo provider con API diversa? | 📦1 | - | Ora | ⬜ Non risposto |
 | LSP-03 | Come si applica LSP nel pattern Ports & Adapters? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -142,34 +142,34 @@ updated: 2026-02-05
 #### Factory Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| FACT-01 | Perché serve una Factory se ho già DIP? | 📦1 | - | Ora | ⬜ Non risposto |
+| FACT-01 | Perché serve una Factory se ho già DIP? | 📦2 | 2026-03-31 | 2026-04-03 | ✅ Corretto |
 | FACT-02 | Factory vs DI Container - quando preferire Factory? | 📦1 | - | Ora | ⬜ Non risposto |
 
 #### Facade Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | FAC-01 | Stripe payment: Facade o Factory? | 📦5 | 2026-03-25 | 2026-04-24 | ✅ Padroneggiato |
-| FAC-02 | PaymentFacade God Object - cosa faresti? | 📦1 | 2026-03-23 | Ora | ❌ Sbagliato |
-| FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦2 | 2026-02-06 | 2026-02-09 | ✅ Corretto |
+| FAC-02 | PaymentFacade God Object - cosa faresti? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
+| FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦3 | 2026-03-25 | 2026-04-01 | ✅ Corretto |
 
 ---
 
 ### Domain Events
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
+| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦5 | 2026-03-27 | 2026-04-26 | ✅ Padroneggiato |
 | EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
-| EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
-| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦2 | 2026-03-23 | 2026-03-26 | 🟡 Parziale |
-| EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦1 | - | Ora | ⬜ Non risposto |
+| EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
+| EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦1 | 2026-03-31 | Ora | ❌ Sbagliato |
+| EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### CQRS & MediatR
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
-| CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦1 | - | Ora | ⬜ Non risposto |
-| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦4 | 2026-03-13 | 2026-03-27 | ✅ Corretto |
+| CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦2 | 2026-03-31 | 2026-04-03 | ✅ Corretto |
+| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦5 | 2026-03-27 | 2026-04-26 | ✅ Padroneggiato |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | Ora | ⬜ Non risposto |
 | CQRS-05 | Quando ha senso separare database lettura (es. MongoDB) da scrittura (es. PostgreSQL)? | 📦1 | - | Ora | ⬜ Non risposto |
 | BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦4 | 2026-03-23 | 2026-04-06 | ✅ Corretto |
@@ -181,7 +181,7 @@ updated: 2026-02-05
 ### FluentValidation
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| FV-01 | MustAsync con HasPermissionAsync nel Validator - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
+| FV-01 | MustAsync con HasPermissionAsync nel Validator - cosa c'è di sbagliato? | 📦1 | 2026-03-31 | Ora | ❌ Sbagliato |
 | FV-02 | Come validi PhoneNumber solo se Channel == Sms? | 📦1 | - | Ora | ⬜ Non risposto |
 | FV-03 | In quale layer vive ScheduleNotificationCommandValidator? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -189,15 +189,15 @@ updated: 2026-02-05
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
-| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
+| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦5 | 2026-03-25 | 2026-04-24 | ✅ Padroneggiato |
 | PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦5 | 2026-03-16 | 2026-04-15 | ✅ Padroneggiato |
 
 ### CQRS Queries
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦2 | 2026-03-23 | 2026-03-26 | ✅ Corretto |
+| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦3 | 2026-03-27 | 2026-04-03 | ✅ Corretto |
 | QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦3 | 2026-03-25 | 2026-04-01 | ✅ Corretto |
-| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦3 | 2026-02-24 | 2026-03-03 | ✅ Corretto |
+| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦4 | 2026-03-25 | 2026-04-08 | ✅ Corretto |
 
 ### Application Layer
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -209,28 +209,28 @@ updated: 2026-02-05
 ### CQRS Commands
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CMD-01 | Return type corretto per CreateProductCommand? | 📦1 | - | Ora | ⬜ Non risposto |
+| CMD-01 | Return type corretto per CreateProductCommand? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
 | CMD-02 | Command che legge prima di cancellare viola CQS? | 📦1 | - | Ora | ⬜ Non risposto |
 | CMD-03 | Query + Command separati nel Controller - cosa c'è di sbagliato? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### Unit of Work
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| UOW-01 | Collega mette SaveChanges in ogni repository - cosa c'è di sbagliato? | 📦3 | 2026-03-13 | 2026-03-20 | ✅ Corretto |
+| UOW-01 | Collega mette SaveChanges in ogni repository - cosa c'è di sbagliato? | 📦4 | 2026-03-25 | 2026-04-08 | ✅ Corretto |
 | UOW-02 | Serve UpdateAsync prima di SaveChanges con EF Core? | 📦1 | - | Ora | ⬜ Non risposto |
 | UOW-03 | Perché DbContext deve essere Scoped nel DI? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### Testing Seams
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| SEAM-01 | Perché DateTime.UtcNow è problematico nei test? | 📦1 | - | Ora | ⬜ Non risposto |
+| SEAM-01 | Perché DateTime.UtcNow è problematico nei test? | 📦1 | 2026-03-28 | Ora | 🟡 Parziale |
 | SEAM-02 | Dove va l'interfaccia IRandomGenerator? | 📦1 | - | Ora | ⬜ Non risposto |
 | SEAM-03 | IMathProvider per Add(a,b) - buona idea? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### Composition Root
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| DI-01 | Chi può avere riferimenti a tutti i layer? | 📦1 | - | Ora | ⬜ Non risposto |
+| DI-01 | Chi può avere riferimenti a tutti i layer? | 📦2 | 2026-03-31 | 2026-04-03 | ✅ Corretto |
 | DI-02 | DbContext Singleton con richieste concorrenti? | 📦1 | - | Ora | ⬜ Non risposto |
 | DI-03 | Perché AddApplication() invece di tutto in Program.cs? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -248,10 +248,10 @@ updated: 2026-02-05
 #### Fundamentals
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CLCODE-01 | Perché serve un Coding Assistant invece di usare direttamente il LLM? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
-| CLCODE-02 | Preferenza personale async/await: CLAUDE.md, CLAUDE.local.md o ~/.claude/CLAUDE.md? | 📦1 | - | Ora | ⬜ Non risposto |
-| CLCODE-03 | Fix bug login: quale approccio contesto è migliore? | 📦1 | - | Ora | ⬜ Non risposto |
-| CLCODE-10 | /init su nuovo progetto: cosa crea automaticamente? | 📦1 | - | Ora | ⬜ Non risposto |
+| CLCODE-01 | Perché serve un Coding Assistant invece di usare direttamente il LLM? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
+| CLCODE-02 | Preferenza personale async/await: CLAUDE.md, CLAUDE.local.md o ~/.claude/CLAUDE.md? | 📦3 | 2026-03-31 | 2026-04-07 | ✅ Corretto |
+| CLCODE-03 | Fix bug login: quale approccio contesto è migliore? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
+| CLCODE-10 | /init su nuovo progetto: cosa crea automaticamente? | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
 | CLCODE-11 | @file.ts vs @docs/ vs @url: quando usare ciascuno? | 📦1 | - | Ora | ⬜ Non risposto |
 | CLCODE-12 | Contesto troppo: quali sono i sintomi? | 📦1 | - | Ora | ⬜ Non risposto |
 | CLCODE-13 | Tool nativi (Read/Write) vs MCP: quando preferire MCP? | 📦1 | - | Ora | ⬜ Non risposto |
@@ -289,24 +289,24 @@ updated: 2026-02-05
 ### Infrastructure Layer
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| INFRA-01 | Direzione dipendenze: Application può dipendere da Infrastructure? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
+| INFRA-01 | Direzione dipendenze: Application può dipendere da Infrastructure? | 📦3 | 2026-03-25 | 2026-04-01 | ✅ Corretto |
 | INFRA-02 | Cosa NON appartiene a Infrastructure: Repository, DbContext, o IRepository? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
-| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦4 | 2026-03-04 | 2026-03-18 | ✅ Corretto |
+| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦5 | 2026-03-25 | 2026-04-24 | ✅ Padroneggiato |
 | INFRA-04 | EF Core o Dapper per report su milioni di record? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 | INFRA-05 | PostgreSQL vs MongoDB: quali domande fare per decidere? | 📦2 | 2026-02-18 | 2026-02-21 | ✅ Corretto |
 
 ### Repository Pattern
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦2 | 2026-03-23 | 2026-03-26 | 🟡 Parziale |
-| REPO-02 | Cos'è il problema N+1 e come lo risolvi? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
+| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
+| REPO-02 | Cos'è il problema N+1 e come lo risolvi? | 📦1 | 2026-03-28 | Ora | ❌ Sbagliato |
 | REPO-03 | Quando ha senso usare RepositoryBase<T>? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 
 ### EF Core Migrations
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | MIG-01 | Quali sono 3 vantaggi delle migrations rispetto a SQL manuale? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
-| MIG-02 | Cosa deve contenere Down() se Up() fa CreateTable? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
+| MIG-02 | Cosa deve contenere Down() se Up() fa CreateTable? | 📦4 | 2026-03-25 | 2026-04-08 | ✅ Corretto |
 | MIG-03 | Cosa succede se aggiungi una proprietà senza creare migration? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 
 ### Value Object Persistence
@@ -319,15 +319,15 @@ updated: 2026-02-05
 ### DbContext (EF Core)
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| DBC-01 | Change Tracker: traccia in memoria o confronta il DB? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
-| DBC-02 | DbContext Singleton con richieste concorrenti — cosa succede? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
-| DBC-03 | OnModelCreating con 15 Entity — problema e soluzione? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
-| DBC-04 | Perché AppDbContext implementa IUnitOfWork? | 📦2 | 2026-03-24 | 2026-03-27 | ✅ Corretto |
+| DBC-01 | Change Tracker: traccia in memoria o confronta il DB? | 📦3 | 2026-03-27 | 2026-04-03 | ✅ Corretto |
+| DBC-02 | DbContext Singleton con richieste concorrenti — cosa succede? | 📦3 | 2026-03-27 | 2026-04-03 | ✅ Corretto |
+| DBC-03 | OnModelCreating con 15 Entity — problema e soluzione? | 📦3 | 2026-03-31 | 2026-04-07 | ✅ Corretto |
+| DBC-04 | Perché AppDbContext implementa IUnitOfWork? | 📦3 | 2026-03-27 | 2026-04-03 | ✅ Corretto |
 
 ### Integration Tests
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| INT-01 | Perché non usare InMemory provider di EF Core? | 📦3 | 2026-02-25 | 2026-03-04 | ✅ Corretto |
+| INT-01 | Perché non usare InMemory provider di EF Core? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
 | INT-02 | Unit test vs Integration test: bastano solo gli unit test? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 | INT-03 | Cosa trova un integration test che un unit test non trova? | 📦2 | 2026-02-19 | 2026-02-22 | ✅ Corretto |
 
@@ -336,8 +336,8 @@ updated: 2026-02-05
 ### Design (A Philosophy of Software Design)
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| DEEP-01 | FileProcessor con OpenFile/ReadHeader/ReadBody/ReadFooter/CloseFile - deep o shallow? | 📦1 | - | Ora | ⬜ Non risposto |
-| DEEP-02 | INotificationSender con SmtpSettings, retryCount, timeout - qual è il problema? | 📦1 | - | Ora | ⬜ Non risposto |
+| DEEP-01 | FileProcessor con OpenFile/ReadHeader/ReadBody/ReadFooter/CloseFile - deep o shallow? | 📦1 | 2026-03-28 | Ora | 🟡 Parziale (x3) |
+| DEEP-02 | INotificationSender con SmtpSettings, retryCount, timeout - qual è il problema? | 📦1 | 2026-03-27 | Ora | 🟡 Parziale |
 | DEEP-03 | "Ho modificato il formato data e ho cambiato 12 file" - quale sintomo di complessità? | 📦1 | - | Ora | ⬜ Non risposto |
 | DEEP-04 | PM chiede feature per domani, sai che il modo veloce crea debito tecnico - cosa fai? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -346,7 +346,7 @@ updated: 2026-02-05
 |----|---------|-----|-----------------|-----------------|--------|
 | VAL-01 | Perché TryExecute viola CQS mentre CanExecute/Execute no? | 📦1 | - | Ora | ⬜ Non risposto |
 | VAL-02 | Form CRUD 10 campi: quale approccio per validazione Domain? | 📦1 | - | Ora | ⬜ Non risposto |
-| VAL-03 | Email 'test@test' passa FluentValidation ma il Domain la rifiuta. È un bug? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
+| VAL-03 | Email 'test@test' passa FluentValidation ma il Domain la rifiuta. È un bug? Perché? | 📦1 | 2026-03-27 | Ora | 🟡 Parziale |
 | VAL-04 | Costruttore con 10 parametri validati vs Factory Method + private constructor. Quale preferisci e perché? | 📦1 | - | Ora | ⬜ Non risposto |
 | VAL-05 | Il domain model lancia eccezioni per OGNI input invalido (email, telefono, nome). Qual è il problema? | 📦1 | - | Ora | ⬜ Non risposto |
 
@@ -362,8 +362,8 @@ updated: 2026-02-05
 ### Value Objects (Senior P1)
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| VO-01 | Indirizzo Email con stesso valore di un altro Email: sono lo stesso oggetto o due diversi? Perché? | 📦1 | - | Ora | ⬜ Non risposto |
-| VO-02 | Money.Add(other) modifica this o ritorna un nuovo Money? Perché l'immutabilità è importante? | 📦1 | - | Ora | ⬜ Non risposto |
+| VO-01 | Indirizzo Email con stesso valore di un altro Email: sono lo stesso oggetto o due diversi? Perché? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
+| VO-02 | Money.Add(other) modifica this o ritorna un nuovo Money? Perché l'immutabilità è importante? | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
 | VO-03 | Perché devi fare override di Equals() E GetHashCode() in un Value Object? Cosa succede se non lo fai? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### .NET Project Structure (Senior P1)
@@ -404,11 +404,11 @@ updated: 2026-02-05
 ### Message Queues (AQ P1 W5)
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| MQ-01 | Invio email sincrono nell'handler: quali sono almeno 3 problemi concreti? | 📦1 | - | Ora | ⬜ Non risposto |
-| MQ-02 | Perché il messaggio nella queue contiene solo l'ID e non tutti i dettagli della notifica? | 📦1 | - | Ora | ⬜ Non risposto |
-| MQ-03 | ACK vs NACK: differenza e cosa succede al messaggio per ciascuno? | 📦1 | - | Ora | ⬜ Non risposto |
-| MQ-04 | Worker crasha durante il processing: cosa succede al messaggio? Chi garantisce che non si perda? | 📦1 | - | Ora | ⬜ Non risposto |
-| MQ-05 | Worker invia email, crasha prima dell'ACK. Come impedisci doppio invio? (idempotenza) | 📦1 | - | Ora | ⬜ Non risposto |
+| MQ-01 | Invio email sincrono nell'handler: quali sono almeno 3 problemi concreti? | 📦1 | 2026-03-25 | Ora | 🟡 Parziale |
+| MQ-02 | Perché il messaggio nella queue contiene solo l'ID e non tutti i dettagli della notifica? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
+| MQ-03 | ACK vs NACK: differenza e cosa succede al messaggio per ciascuno? | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
+| MQ-04 | Worker crasha durante il processing: cosa succede al messaggio? Chi garantisce che non si perda? | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
+| MQ-05 | Worker invia email, crasha prima dell'ACK. Come impedisci doppio invio? (idempotenza) | 📦2 | 2026-03-31 | 2026-04-03 | ✅ Corretto |
 | MQ-06 | Nel check idempotenza, perché controlliamo Status == Sent e non == Pending? | 📦1 | - | Ora | ⬜ Non risposto |
 | MQ-07 | DB vs Queue: chi fa cosa? Completa "Il DB è ______, la Queue è ______" | 📦1 | - | Ora | ⬜ Non risposto |
 | MQ-08 | Messaggio fallisce 3 volte: cosa succede? Dove finisce? A cosa serve? (DLQ) | 📦1 | - | Ora | ⬜ Non risposto |
@@ -421,11 +421,21 @@ updated: 2026-02-05
 ### BackgroundService (AQ P1 W5)
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| BG-01 | Worker Singleton, Repository Scoped: come li usi insieme? Perché non iniettare nel costruttore? | 📦1 | - | Ora | ⬜ Non risposto |
+| BG-01 | Worker Singleton, Repository Scoped: come li usi insieme? Perché non iniettare nel costruttore? | 📦3 | 2026-03-28 | 2026-04-04 | ✅ Corretto |
 | BG-02 | App si spegne, worker sta processando: come garantisci zero perdite? (CancellationToken + ACK) | 📦1 | - | Ora | ⬜ Non risposto |
 | BG-03 | Worker stesso processo vs separato: quando separarli? | 📦1 | - | Ora | ⬜ Non risposto |
 | BG-04 | AddHostedService: cosa fa? Con quale lifetime registra il servizio? | 📦1 | - | Ora | ⬜ Non risposto |
 | BG-05 | Worker con Task.Delay(100) polling: buona idea? Come migliorare? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Outbox Pattern (AQ P1 W5)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| OUTBOX-01 | Cos'è il Dual Write Problem? Fai un esempio concreto con DB + RabbitMQ | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
+| OUTBOX-02 | Outbox Pattern: dove finisce il messaggio PRIMA di arrivare alla queue? | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
+| OUTBOX-03 | OutboxProcessor pubblica in RabbitMQ e crasha prima di aggiornare ProcessedAt. Cosa succede? È un problema? | 📦1 | - | Ora | ⬜ Non risposto |
+| OUTBOX-04 | "Metto il Publish dentro la transazione DB così è atomico" — perché non funziona? | 📦1 | - | Ora | ⬜ Non risposto |
+| OUTBOX-05 | Quando NON serve l'Outbox Pattern? Fai 2 esempi | 📦1 | - | Ora | ⬜ Non risposto |
+| OUTBOX-06 | Outbox vs Compensazione (Publish-then-Save): perché l'Outbox vince? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### RabbitMQ (AQ P1 W5)
 | ID | Domanda | Box | Ultima risposta | Prossima review | Status |
@@ -437,6 +447,14 @@ updated: 2026-02-05
 | RMQ-05 | Topic Exchange con 3 binding (email.*, sms.*, push.*): routing key email.scheduled → quante queue? | 📦1 | - | Ora | ⬜ Non risposto |
 | RMQ-06 | NotificationSent deve arrivare sia ad Analytics che a Billing: Direct o Fanout? | 📦1 | - | Ora | ⬜ Non risposto |
 | RMQ-07 | Prefetch count = 10: cosa significa? Cosa cambia con prefetch = 1? | 📦1 | - | Ora | ⬜ Non risposto |
+
+### Retry + Error Handling (AQ P1 W5)
+| ID | Domanda | Box | Ultima risposta | Prossima review | Status |
+|----|---------|-----|-----------------|-----------------|--------|
+| RETRY-01 | Perché il Worker fa sempre ACK anche quando l'invio fallisce? | 📦1 | 2026-03-31 | Ora | 🟡 Parziale |
+| RETRY-02 | Notifica Normal fallisce al tentativo 3. Cosa succede? Dove finisce? | 📦1 | - | Ora | ⬜ Non risposto |
+| RETRY-03 | Worker crasha dopo Fail() ma prima di SaveChanges(). Cosa succede al messaggio? | 📦1 | - | Ora | ⬜ Non risposto |
+| RETRY-04 | DLQ applicativa vs DLQ RabbitMQ: perché scegliamo quella applicativa? | 📦1 | - | Ora | ⬜ Non risposto |
 
 ### .NET Fundamentals (Knowledge)
 
@@ -540,6 +558,78 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-03-25 | QRY-02 | ✅ | +10 | Box 2→3 (recuperato da parziale!) |
 | 2026-03-25 | EVT-03 | 🟡 | +5 | Box 1→1 (parziale - INotificationHandler vs IRequestHandler) |
 | 2026-03-25 | CLCODE-01 | 🟡 | +5 | Box 1→1 (parziale - mancava agentic loop/tool use) |
+| 2026-03-25 | PORT-02 | ✅ | +40 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-25 | INFRA-03 | ✅ | +40 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-25 | UOW-01 | ✅ | +10 | Box 3→4 |
+| 2026-03-25 | QRY-03 | ✅ | +10 | Box 3→4 |
+| 2026-03-25 | EVT-03 | ✅ | +10 | Box 1→2 RECUPERATO da parziale! |
+| 2026-03-25 | CLCODE-01 | ✅ | +10 | Box 1→2 RECUPERATO da parziale! |
+| 2026-03-25 | CLCODE-02 | ❌ | +2 | Box 1→1 (non conosceva livelli contesto) |
+| 2026-03-25 | MQ-01 | 🟡 | +5 | Box 1→1 (parziale - problemi generici, non specifici sincrono) |
+| 2026-03-25 | CLEAN-01 | 🟡 | +5 | Box 1→1 (parziale - capito tech, mancava "dovrebbe urlare dominio") |
+| 2026-03-25 | DEEP-01 | ❌ | +2 | Box 1→1 (non conosceva deep vs shallow) |
+| 2026-03-25 | CMD-01 | 🟡 | +5 | Box 1→1 (parziale - void ok generico, ma Create→Guid) |
+| 2026-03-25 | VO-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-25 | FAC-03 | ✅ | +10 | Box 2→3 (scaduto, recuperato!) |
+| 2026-03-25 | INFRA-01 | ✅ | +10 | Box 2→3 (scaduto, recuperato!) |
+| 2026-03-25 | REPO-02 | ❌ | +2 | Box 2→1 (non ricordava N+1) |
+| 2026-03-25 | MIG-02 | ✅ | +10 | Box 3→4 |
+| 2026-03-25 | INT-01 | 🟡 | +5 | Box 3→1 (parziale - mancava limitazioni tecniche InMemory) |
+| 2026-03-25 | FAC-02 | ✅ | +10 | Box 1→2 RECUPERATO da sbagliato! |
+| 2026-03-25 | DEEP-01 | ❌ | +2 | Box 1→1 (non ricorda deep/shallow, x2) |
+| 2026-03-25 | CLCODE-03 | ✅ | +10 | Box 1→2 |
+| 2026-03-25 | MQ-02 | ✅ | +10 | Box 1→2 |
+| 2026-03-25 | SRP-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-25 | EVT-05 | ✅ | +10 | Box 1→2 |
+| 2026-03-25 | BG-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-27 | EVT-01 | ✅ | +40 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-27 | CQRS-03 | ✅ | +40 | Box 4→5 🎉 PADRONEGGIATO! |
+| 2026-03-27 | DBC-02 | ✅ | +10 | Box 2→3 |
+| 2026-03-27 | EVT-04 | 🟡 | +5 | Box 2→2 (parziale - ancora manca "no dipendenze entity") |
+| 2026-03-27 | REPO-01 | 🟡 | +5 | Box 2→2 (parziale - solo tech leak, manca encapsulation/query leak) |
+| 2026-03-27 | DBC-01 | ✅ | +10 | Box 2→3 |
+| 2026-03-27 | DBC-03 | 🟡 | +5 | Box 2→2 (parziale - intuizione giusta, manca IEntityTypeConfiguration) |
+| 2026-03-27 | DBC-04 | ✅ | +10 | Box 2→3 |
+| 2026-03-27 | QRY-01 | ✅ | +10 | Box 2→3 |
+| 2026-03-27 | CLCODE-02 | ✅ | +10 | Box 1→2 RECUPERATO da sbagliato! |
+| 2026-03-27 | MQ-03 | ✅ | +10 | Box 1→2 |
+| 2026-03-27 | SEAM-01 | ❌ | +2 | Box 1→1 (non ricordava IDateTimeProvider) |
+| 2026-03-27 | VAL-03 | 🟡 | +5 | Box 1→1 (parziale - capito i livelli ma non che NON è un bug) |
+| 2026-03-27 | VO-02 | ✅ | +10 | Box 1→2 |
+| 2026-03-27 | DEEP-02 | 🟡 | +5 | Box 1→1 (parziale - confuso con DIP, è shallow interface) |
+| 2026-03-28 | SRP-01 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | EVT-03 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | EVT-05 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | FAC-02 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | CLCODE-01 | ✅ | +35 | Box 2→3, 5 streak bonus! |
+| 2026-03-28 | CLCODE-03 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | MQ-02 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | BG-01 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | VO-01 | ✅ | +10 | Box 2→3 |
+| 2026-03-28 | SEAM-01 | 🟡 | +5 | Box 1→1 (parziale - troppo vago, manca static/IDateTimeProvider) |
+| 2026-03-28 | REPO-02 | ❌ | +2 | Box 1→1 (non ricorda N+1, x2) |
+| 2026-03-28 | DEEP-01 | 🟡 | +5 | Box 1→1 (parziale x3 - intuizione giusta ma label invertito) |
+| 2026-03-28 | MQ-04 | ✅ | +10 | Box 1→2 |
+| 2026-03-28 | OUTBOX-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-28 | RETRY-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-31 | EVT-04 | ❌ | +2 | Box 2→1 (ancora manca "no dipendenze") |
+| 2026-03-31 | CLCODE-02 | ✅ | +10 | Box 2→3 |
+| 2026-03-31 | MQ-03 | 🟡 | +5 | Box 2→1 (parziale - confuso retry con requeue) |
+| 2026-03-31 | VO-02 | 🟡 | +5 | Box 2→1 (parziale - esempio equality non immutabilità) |
+| 2026-03-31 | REPO-01 | 🟡 | +5 | Box 2→1 (parziale - solo tech leak, manca testabilità/N+1) |
+| 2026-03-31 | DBC-03 | ✅ | +10 | Box 2→3 |
+| 2026-03-31 | OUTBOX-01 | 🟡 | +5 | Box 2→1 (parziale - mancava esempio concreto Save✅/Publish❌) |
+| 2026-03-31 | MQ-04 | 🟡 | +5 | Box 2→1 (parziale - impreciso su visibility timeout/broker) |
+| 2026-03-31 | RETRY-01 | 🟡 | +5 | Box 2→1 (parziale - idea giusta ma confusa) |
+| 2026-03-31 | COUP-01 | ❌ | +2 | Box 1→1 (non conosce inversione dipendenza per rompere cicli) |
+| 2026-03-31 | LSP-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-31 | FACT-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-31 | CQRS-02 | ✅ | +10 | Box 1→2 |
+| 2026-03-31 | FV-01 | ❌ | +2 | Box 1→1 (non sapeva: authorization ≠ validation) |
+| 2026-03-31 | DI-01 | ✅ | +10 | Box 1→2 |
+| 2026-03-31 | CLCODE-10 | 🟡 | +5 | Box 1→1 (parziale - CLAUDE.md ok, manca struttura completa) |
+| 2026-03-31 | MQ-05 | ✅ | +10 | Box 1→2 |
+| 2026-03-31 | OUTBOX-02 | 🟡 | +5 | Box 1→1 (parziale - confuso tabella DB con "coda outbox") |
 
 ---
 
@@ -547,12 +637,15 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 
 > Claude aggiorna questa lista all'inizio di ogni sessione
 
-**Prossimi quiz da ripassare:**
-1. FAC-02, EVT-03, CLCODE-01 (Ora) - Box 1, da recuperare
-2. EVT-04 (2026-03-26), QRY-01 (2026-03-26), REPO-01 (2026-03-26) - Box 2
-3. DBC-01/02/03/04 (2026-03-27), EVT-01 (2026-03-27), CQRS-03 (2026-03-27) - Box 2/4
-4. QRY-02 (2026-04-01), APP-02 (2026-04-08), BEHAV-01/02 (2026-04-06/08) - Box 3/4
-5. Scaduti non ancora ripassati: PORT-02, INFRA-03, UOW-01, QRY-03, FAC-03, + molti Box 2 da febbraio (INFRA-01/02/04/05, REPO-02/03, MIG-01/02/03, OWN-01/02/03, INT-01/02/03)
+**Prossimi quiz da ripassare (aggiornato 2026-03-31):**
+1. EVT-04, MQ-03, VO-02, REPO-01, OUTBOX-01, MQ-04, RETRY-01, COUP-01, FV-01, CLCODE-10, OUTBOX-02 + tutti Box 1 (Ora)
+2. LSP-01, FACT-01, CQRS-02, DI-01, MQ-05 (2026-04-03) - Box 2
+3. FAC-03, QRY-02, INFRA-01 (2026-04-01) - Box 3
+4. SRP-01, EVT-03, EVT-05, FAC-02, CLCODE-01, CLCODE-03, MQ-02, BG-01, VO-01 (2026-04-04) - Box 3
+5. CLCODE-02, DBC-03 (2026-04-07) - Box 3
+6. SRP-01, EVT-03, EVT-05, FAC-02, CLCODE-01, CLCODE-03, MQ-02, BG-01, VO-01 (2026-04-04) - Box 3
+7. BEHAV-01 (2026-04-06), UOW-01/QRY-03/APP-02/BEHAV-02/MIG-02 (2026-04-08) - Box 3/4
+8. Scaduti non ancora ripassati: molti Box 2 da febbraio (INFRA-02/04/05, REPO-03, MIG-01/03, OWN-01/02/03, INT-02/03)
 
 ### Priorita Certificazione: CLCODE (almeno 1/giorno)
 

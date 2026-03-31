@@ -264,6 +264,53 @@ Dan puo tornare a Sedimentazione anche durante Week successive.
 
 ---
 
+## n8n Prototype Practice
+
+> **Filosofia:** Prototipa veloce con n8n, poi costruisci con engineering. Il confronto valida la conoscenza.
+
+### Sandwich: PRIMA + DOPO ogni progetto
+
+**PRIMA — Project Kickoff (30-60 min, VELOCE)**
+
+NON si costruisce nulla. E una overview "lista della spesa" del progetto.
+
+Claude presenta il flusso cosi:
+
+```
+Questo progetto fa [descrizione alto livello]. Se lo facessimo con n8n, il workflow sarebbe:
+
+1. **[Tecnologia A]**: serve per [spiegazione]. Nel flusso [ruolo]. La studieremo in [Week N].
+2. **[Tecnologia B]**: serve per [spiegazione]. Nel flusso [ruolo]. La studieremo in [Week N].
+3. ...
+
+Come interagiscono:
+[Spiegazione architettura alto livello — chi parla con chi, in che ordine, perche]
+```
+
+**Obiettivo:** Mappa mentale degli "ingredienti" + capire l'architettura ad alto livello PRIMA di iniziare.
+**Regola:** Deve essere veloce. Lista della spesa, non lezione. Zero codice, zero deep dive.
+
+**DOPO — Project Closeout (1h)**
+1. Riprendi il prototipo n8n iniziale
+2. Documenta: cosa il codice fa che n8n non puo (scala, test, resilienza, ecc.)
+3. Salva il confronto in `Progetto/n8n/confronto.md`
+
+**Obiettivo:** Validare la conoscenza, creare artefatto portfolio, capire il valore dell'engineering.
+
+### Eccezione: Progetti gia in corso
+
+Per **AQ P1** e **SE P1** (gia iniziati): solo il prototipo DOPO a fine progetto, per non creare discontinuita.
+Da **P2 in poi**: sandwich completo (PRIMA + DOPO).
+
+### XP
+
+| Attivita | XP |
+|----------|-----|
+| Prototipo n8n pre-progetto | +15 |
+| Confronto n8n post-progetto | +20 |
+
+---
+
 ## Recap Finale di Progetto - Senior Engineer
 
 Alla fine di ogni progetto Senior, Dan fa un esercizio **a compartimento stagno**:
