@@ -5,7 +5,7 @@
 > **Priority:** 🟢 Side track - quando c'è tempo/voglia
 
 > [!important] 🔹 PERCORSO COMPLETO
-> Tutto il Senior Frontend rientra nel **Percorso Completo (30-36 mesi)**, non nel Percorso Minimo 18 mesi.
+> Tutto il Senior Frontend rientra nel **Percorso Completo**, non nel Percorso Minimo.
 > Se il tempo è limitato, i progetti consigliati sono:
 > - **P1 Focus Tube** — core React moderno + monetizzazione
 > - **P5 FitHub Mobile** — Flutter + prodotto reale
@@ -18,7 +18,7 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Durata stimata** | 6-8 mesi (ritmo rilassato) |
+| **Ritmo** | Rilassato, self-paced (side track) |
 | **Progetti** | 5 |
 | **Focus** | React avanzato, performance, architettura FE, **Flutter** |
 | **Output** | Portfolio FE + 2 SaaS monetizzabili (Focus Tube + FitHub) |
@@ -41,7 +41,6 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Durata** | 6-8 settimane |
 | **Tipo** | Full-stack (FE focus) |
 | **Monetizzazione** | ⭐⭐⭐⭐⭐ Freemium SaaS |
 
@@ -67,7 +66,6 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Durata** | 4-5 settimane |
 | **Tipo** | Frontend heavy |
 | **Monetizzazione** | ⭐⭐⭐ Template/Boilerplate |
 
@@ -90,7 +88,6 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Durata** | 4-5 settimane |
 | **Tipo** | Library |
 | **Monetizzazione** | ⭐⭐ Open source + consulting |
 
@@ -115,7 +112,6 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Durata** | 5-6 settimane |
 | **Tipo** | Full-stack Next.js |
 | **Monetizzazione** | ⭐⭐⭐⭐ Template premium |
 
@@ -140,7 +136,6 @@
 
 | Campo | Valore |
 |-------|--------|
-| **Durata** | 8-10 settimane |
 | **Tipo** | Mobile (Flutter) |
 | **Monetizzazione** | ⭐⭐⭐⭐⭐ Parte del prodotto FitHub! |
 | **Prerequisito** | Architect Quest P5 (FitHub Backend) |
@@ -202,20 +197,18 @@ Architect Quest P5 (Backend)     Senior Frontend P5 (Mobile)
 
 ---
 
-## 📅 Timeline (Indicativa)
+## 📋 Sequenza Progetti
 
 ```
-P1: Focus Tube        ████████████████░░░░░░░░░░░░░░░░  6-8 weeks
-P2: Dashboard         ░░░░░░░░████████░░░░░░░░░░░░░░░░  4-5 weeks
-P3: Component Lib     ░░░░░░░░░░░░░░░░████████░░░░░░░░  4-5 weeks
-P4: Next.js Store     ░░░░░░░░░░░░░░░░░░░░░░░░████████  5-6 weeks
-P5: FitHub Mobile 📱  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░████  8-10 weeks
-                      ──────────────────────────────────
-                      ~28-34 weeks (7-8 mesi)
+Step 1: P1 Focus Tube        (core React moderno, monetizzabile)
+Step 2: P2 Dashboard         (real-time, data viz)
+Step 3: P3 Component Lib     (design system)
+Step 4: P4 Next.js Store     (SSR/SSG)
+Step 5: P5 FitHub Mobile 📱  (Flutter, prodotto reale — richiede AQ P5 completato)
 ```
 
 **Note:**
-- Timeline rilassata, side project senza pressione
+- Ritmo rilassato, side project senza pressione. Nessuna scadenza.
 - P5 FitHub Mobile richiede Architect Quest P5 (FitHub Backend) completato
 - P5 è il progetto più importante: prodotto reale + Flutter skill!
 
@@ -249,5 +242,5 @@ P5: FitHub Mobile 📱  ░░░░░░░░░░░░░░░░░░�
 ---
 
 *Creato: 2026-02-24*
-*Aggiornato: 2026-02-24 (aggiunto P5 FitHub Mobile)*
+*Aggiornato: 2026-04-17 (self-paced refactor — rimossa timeline temporale)*
 *Status: 🟢 Pianificato - Da iniziare*

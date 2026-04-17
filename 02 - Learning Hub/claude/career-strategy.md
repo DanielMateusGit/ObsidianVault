@@ -4,9 +4,8 @@
 
 ---
 
-## Profilo a Fine Percorso (30-36 mesi)
+## Profilo a Fine Percorso Completo
 
-- **Esperienza:** 4.5-5 anni
 - **Portfolio:** 10 progetti production-ready su GitHub
 - **Stack:** Full-stack (.NET + React) + Cloud (Azure) + AI (Claude/Ollama)
 - **Documentazione:** C4, ADR, OpenAPI specs
@@ -16,12 +15,9 @@
 
 ## Percorso Minimo vs Completo
 
-### Percorso Minimo (~20-22 mesi → primo colloquio €85k+)
+> **Nessuna scadenza temporale.** Il percorso e self-paced. I "Minimo" e "Completo" indicano **scope**, non durata.
 
-> **Nota realistica (2026-03-24):** La stima originale era 18 mesi.
-> Pace reale misurata: 1 week roadmap ≈ 1.75 settimane reali (AQ, 70% focus) e ≈ 4 settimane reali (SE, 30% focus).
-> Proiezione con dati reali: **~20-22 mesi** dal giorno zero. Non e un ritardo — e la stima corretta.
-> Il piano resta identico, solo la timeline e piu onesta.
+### Percorso Minimo → primo colloquio €85k+
 
 **Architect Quest:**
 - P1 Notification Service ⭐
@@ -40,17 +36,17 @@
 - 3 STAR stories pronte
 - Portfolio GitHub curato (README in inglese, progetti pinnati)
 
-### Percorso Completo (30-36 mesi → Staff/Architect €100k+)
+### Percorso Completo → Staff/Architect €100k+
 
 Tutto il Minimo + AQ P3 BookingHub + SE P4-P6 + Senior Frontend (Focus Tube + FitHub Mobile) + Certificazioni (AZ-305, CKA) + AI-2 Interview Coach + AI-3 Personal Copilot
 
-### Milestone Misurabili
+### Milestone Misurabili (completion-based)
 
-| Mese | Milestone | Verifica (sì/no) |
-|------|-----------|-------------------|
-| 8 | AQ P1 completato, SE P1+P1.5 completati, 3+ system designs | Posso progettare Clean Arch da zero? |
-| 14 | AQ P2.5 + P2 completati, SE P2+P3 completati | Posso implementare CQRS+ES? Posso spiegare un system design in 45 min? |
-| 20-22 | Career Boost completato, portfolio curato, mock interviews fatte | Posso passare un colloquio AI Engineer / Senior? |
+| Milestone | Trigger | Verifica (sì/no) |
+|-----------|---------|-------------------|
+| M1 | AQ P1 completato + SE P1+P1.5 completati + 3+ system designs | Posso progettare Clean Arch da zero? |
+| M2 | AQ P2.5 + P2 completati + SE P2+P3 completati | Posso implementare CQRS+ES? Posso spiegare un system design in 45 min? |
+| M3 | Career Boost completato + portfolio curato + mock interviews fatte | Posso passare un colloquio AI Engineer / Senior? |
 
 ---
 
@@ -58,23 +54,23 @@ Tutto il Minimo + AQ P3 BookingHub + SE P4-P6 + Senior Frontend (Focus Tube + Fi
 
 ### TIER 1: Must-Have
 
-| Certificazione | Quando | Prep | Costo | Salary Impact |
-|----------------|--------|------|-------|---------------|
-| **AZ-305** (Azure Solutions Architect) | Mese 20-24 (dopo P3 AQ) | 50-60h | ~€165 | +€8-15k |
-| **CKA** (Kubernetes Administrator) | Mese 24-28 (durante P4/P5) | 60-80h | ~€365 | +€10-20k |
+| Certificazione | Prerequisito | Prep | Costo | Salary Impact |
+|----------------|--------------|------|-------|---------------|
+| **AZ-305** (Azure Solutions Architect) | Dopo AQ P3 BookingHub | 50-60h | ~€165 | +€8-15k |
+| **CKA** (Kubernetes Administrator) | Durante/dopo AQ P4 o P5 | 60-80h | ~€365 | +€10-20k |
 
 Prerequisito AZ-305: AZ-104 (~50h prep).
 
 ### TIER 2: Nice-to-Have
 
-| Certificazione | Quando | Prep | Costo | Salary Impact |
-|----------------|--------|------|-------|---------------|
-| **Terraform Associate** | Mese 6-8 (dopo P1 AQ) | 30-40h | ~€65 | +€5-10k |
+| Certificazione | Prerequisito | Prep | Costo | Salary Impact |
+|----------------|--------------|------|-------|---------------|
+| **Terraform Associate** | Dopo AQ P1 Notification | 30-40h | ~€65 | +€5-10k |
 
 ### Skip
 - Agile/Scrum generiche, Cloud Practitioner, vendor-specific niche, AI/ML generiche, TOGAF
 
-**Costo totale:** ~€600 | **Tempo prep:** ~230h | **ROI potenziale:** +€20-35k/anno
+**Costo totale:** ~€600 | **Tempo prep totale:** ~230h (distribuiti lungo il percorso) | **ROI potenziale:** +€20-35k/anno
 
 ---
 
@@ -162,30 +158,30 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 
 ---
 
-## Timeline Completa
+## Sequenza (NO timeline)
 
 ```
-Mesi 1-30:   Percorso attuale (Learning Hub) - progetti CORE
-Mesi 24-36:  Job search + certificazioni (parallelo ultimi progetti)
-Mesi 36-42:  Consolidamento nel nuovo ruolo
-Anno 4-5:    Specializzazione scelta + eventuale side project
-Anno 6+:     Staff/Principal O Manager O Imprenditore
+FASE 1: Percorso attuale (Learning Hub) - progetti CORE
+FASE 2: Job search + certificazioni (parallelo ultimi progetti)
+FASE 3: Consolidamento nel nuovo ruolo
+FASE 4: Specializzazione scelta + eventuale side project
+FASE 5: Staff/Principal O Manager O Imprenditore
 ```
 
 ---
 
-## Salary Progression
+## Salary Progression (per step di carriera, non per anno)
 
 ```
-Anno 0 (Ora):    €50-60k  (Mid-level, Italia)
-Anno 3:          €85-115k (Senior, Remote EU)
-Anno 5:          €100-130k (Senior+/Staff)
-Anno 7:          €120-150k (Staff/Principal)
-Anno 10:         €150-200k+ (Principal/Architect)
+Ora (mid-level, Italia):         €50-60k
+Step 1 (Senior, Remote EU):      €85-115k
+Step 2 (Senior+/Staff):          €100-130k
+Step 3 (Staff/Principal):        €120-150k
+Step 4 (Principal/Architect):    €150-200k+
 
 Con AI skills: +15-25% a ogni tier.
 ```
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (refactor — timeline realistica 20-22 mesi, milestone ricalibrate)*
+*Ultimo aggiornamento: 2026-04-17 (refactor self-paced — rimossa timeline, milestone completion-based)*

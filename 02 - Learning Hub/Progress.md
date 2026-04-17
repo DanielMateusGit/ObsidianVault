@@ -1,12 +1,12 @@
 ---
 tags: [learning, progress, gamification]
-xp: 5600
+xp: 6002
 level: 7
 title: "System Designer"
-streak: 12
-longest_streak: 12
-architect_quest_week: "P1-W5"
-senior_engineer_week: "P1-W2"
+streak: 1
+longest_streak: 13
+architect_quest_module: "P1-M5"
+senior_engineer_module: "P1-M2"
 ai_course: "Claude Code in Action ✅ COMPLETED"
 ---
 
@@ -47,13 +47,13 @@ ai_course: "Claude Code in Action ✅ COMPLETED"
 
 ### 🏛️ Architect Quest
 ```dataviewjs
-dv.paragraph("**Settimana corrente:** " + dv.current().architect_quest_week);
+dv.paragraph("**Modulo corrente:** " + dv.current().architect_quest_module);
 // XP totali da questo progetto verranno calcolati
 ```
 
 ### 💻 Senior Engineer
 ```dataviewjs
-dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
+dv.paragraph("**Modulo corrente:** " + dv.current().senior_engineer_module);
 ```
 
 ---
@@ -74,7 +74,7 @@ dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
 |----------|-----|
 | Task completato | +50 |
 | Deliverable completato | +100 |
-| Settimana completata | +150 |
+| Modulo completato | +150 |
 | Progetto completato | +500 |
 | Boss Battle vinta | +300 |
 
@@ -118,6 +118,9 @@ dv.paragraph("**Settimana corrente:** " + dv.current().senior_engineer_week);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-04-10 | Quiz (5: 2✅ 2🟡 1❌) + TaskEndpoints Minimal API con MapGroup | Senior P1-W2 | +122 | 6002 |
+| 2026-04-04 | SE W2: Migration + DateTimeProvider + refactoring entity pura (valore, non servizio) | Senior P1-W2 | +140 | 5880 |
+| 2026-04-01 | SE W2: DbContext + 3 Configurations + 3 Repositories + fix handler signatures | Senior P1-W2 | +140 | 5740 |
 | 2026-03-31 | 🎉 LEVEL UP → System Designer (Lv.7) | - | - | 5600 |
 | 2026-03-31 | Quiz (18: 7✅ 8🟡 3❌) + LoggingBehavior TDD + note arricchite + SE W1 completata | Misto | +261 | 5600 |
 | 2026-03-28 | AQ W5 completata: Outbox + Retry/DLQ + 23 test + ADR-004 + 2 note + roadmap SE messaging | AQ W5 | +502 | 5339 |

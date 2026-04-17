@@ -1,7 +1,7 @@
 # 💻 Roadmap Completa: Senior Engineer Path
 
-> Percorso 30-36 mesi da mid-level a senior engineer internazionale
-> *(10-15 ore/settimana con lavoro full-time. Tempo reale varia.)*
+> Percorso self-paced da mid-level a senior engineer internazionale
+> *(Nessuna scadenza. Si procede per completamento, non per calendario.)*
 
 ## 🎯 Obiettivo Finale
 
@@ -16,23 +16,22 @@
 
 ---
 
-## 📅 Timeline Overview
+## 📋 Sequenza Progetti
 
 ```
-Settimane 1-3:   P1 - Task Manager (Clean Arch, TDD, CQRS, Redis cache) ⭐ MINIMO
-Settimana 4:     P1.5 - Auth & Security 🔐 (JWT, OWASP basics) ⭐ MINIMO
-Settimane 5-7:   P2 - Chat App (SignalR, Redis Pub/Sub) ⭐ MINIMO
-Settimane 8-11:  P3 - E-commerce Cart (CQRS, Event Sourcing) ⭐ MINIMO
-Settimane 12-14: P4 - Alert Gateway (Microservices, Circuit Breaker) 🔹 COMPLETO
-Settimane 15-17: P5 - URL Shortener (Redis as Primary DB) 🔹 COMPLETO
-Mesi 6-16:       P6 - Capstone: AI Second Brain (RAG + tutti i pattern) 🔹 COMPLETO
+Step 1: P1 - Task Manager (Clean Arch, TDD, CQRS, Redis cache) ⭐ MINIMO
+Step 2: P1.5 - Auth & Security 🔐 (JWT, OWASP basics) ⭐ MINIMO
+Step 3: P2 - Chat App (SignalR, Redis Pub/Sub) ⭐ MINIMO
+Step 4: P3 - E-commerce Cart (CQRS, Event Sourcing) ⭐ MINIMO
+Step 5: P4 - Alert Gateway (Microservices, Circuit Breaker) 🔹 COMPLETO
+Step 6: P5 - URL Shortener (Redis as Primary DB) 🔹 COMPLETO
+Step 7: P6 - Capstone: AI Second Brain (RAG + tutti i pattern) 🔹 COMPLETO
 ```
 
 > ⭐ **MINIMO** = Obbligatorio per primo colloquio €85k+
-> 🔹 **COMPLETO** = Percorso completo 30-36 mesi
+> 🔹 **COMPLETO** = Parte del Percorso Completo
+> **Principio:** nessuna timeline. Ogni progetto si sblocca al completamento del precedente.
 
-> **Nota:** Le settimane sopra sono una stima ottimistica. A 10-15 ore/settimana,
-> ogni "settimana" di progetto puo richiedere 2-3 settimane reali.
 > Career Boost Module è separato: vedi `roadmaps/career-boost.md`
 
 ### 🔄 Rinforzo con Architect Quest
@@ -46,12 +45,12 @@ Senior P2 (Chat)             ←→  Architect P4 (FamilyBudget) = Real-time, Si
 
 ### 📨 Progressione Messaging (cross-progetto)
 ```
-P1 W3:  Redis Pub/Sub           → messaging in-process, semplice
-P2 W5:  RabbitMQ base           → broker esterno, un producer/consumer
-P3 W10: Outbox Pattern (TDD)    → consistenza DB/Queue, costruito da zero
-P4 W11: Messaging completo      → multi-service, DLQ, circuit breaker + queue
+P1 M3:  Redis Pub/Sub           → messaging in-process, semplice
+P2 M5:  RabbitMQ base           → broker esterno, un producer/consumer
+P3 M10: Outbox Pattern (TDD)    → consistenza DB/Queue, costruito da zero
+P4 M11: Messaging completo      → multi-service, DLQ, circuit breaker + queue
 ```
-> In AQ hai PROGETTATO messaging (W5). In SE lo IMPLEMENTI con TDD, progressivamente.
+> In AQ hai PROGETTATO messaging (M5). In SE lo IMPLEMENTI con TDD, progressivamente.
 
 ---
 
@@ -81,8 +80,8 @@ Una "prova finale" dove Dan implementa in **autonomia** un mini-progetto o featu
 | **Performance** | 4 | Meets requirements (req/sec, latency) |
 | **Completezza** | 2 | Tutti i requisiti implementati |
 
-### Durata
-1 settimana (più veloce rispetto ad Architect, focus su codice)
+### Scope
+Più veloce rispetto ad Architect, focus su codice.
 
 ### XP & Achievement
 
@@ -94,7 +93,7 @@ Una "prova finale" dove Dan implementa in **autonomia** un mini-progetto o featu
 
 ---
 
-## ✅ PROGETTO 1: Task Manager API (Settimane 1-3)
+## ✅ PROGETTO 1: Task Manager API
 
 ### Obiettivo
 REST API per gestire task con TDD, Redis caching, design patterns base.
@@ -123,9 +122,9 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 | **Factory** | Crea task con configurazioni diverse |
 | **Strategy** | Algoritmi diversi di prioritizzazione |
 
-### Settimane
+### Moduli
 
-**Week 1: Domain + Application Layer**
+**Modulo 1: Domain + Application Layer**
 - Domain model con TDD (Entities, VO, Events)
 - Repository Interfaces + IUnitOfWork
 - MediatR setup
@@ -134,7 +133,7 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 - DTOs + FluentValidation
 - Behaviors (Validation, Logging)
 
-**Week 2: Infrastructure + API Layer**
+**Modulo 2: Infrastructure + API Layer**
 - Git workflow avanzato (rebase interattivo, bisect, cherry-pick) — mini-topic
 - AppDbContext + Entity Configurations
 - Repository implementations
@@ -147,11 +146,11 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 - Integration tests (TestContainers)
 - API tests (WebApplicationFactory)
 
-**Week 3: Redis + Messaging Base + Patterns + Boss Battle**
+**Modulo 3: Redis + Messaging Base + Patterns + Boss Battle**
 - Redis caching setup
 - Cache-aside pattern
 - **Redis Pub/Sub + BackgroundService** (task scadute → evento → worker aggiorna status)
-  - Rinforzo AQ W5: implementi messaging in-process da zero con TDD
+  - Rinforzo AQ M5: implementi messaging in-process da zero con TDD
   - Primo contatto con async processing nel percorso SE
 - Factory Pattern (TaskFactory)
 - Strategy Pattern (prioritization algorithms)
@@ -217,7 +216,7 @@ public async Task<PrioritySuggestion> SuggestPriorityAsync(TaskItem task)
 
 ---
 
-## 🔐 PROGETTO 1.5: Authentication & Security (Settimana 3)
+## 🔐 PROGETTO 1.5: Authentication & Security
 
 > **Nuovo!** Colma il buco security. Rinforza Azure AD B2C di Architect con implementazione custom.
 
@@ -238,9 +237,9 @@ Implementare autenticazione JWT da zero. Capire cosa fa Azure AD B2C "under the 
 - OWASP Top 10 awareness
 - Rate limiting per login
 
-### Settimana 3: Security Deep Dive
+### Modulo: Security Deep Dive
 
-**Days 1-2: JWT From Scratch**
+**Step 1: JWT From Scratch**
 ```csharp
 // Capisci COME funziona JWT
 public string GenerateToken(User user)
@@ -267,7 +266,7 @@ public string GenerateToken(User user)
 }
 ```
 
-**Days 3-4: Refresh Tokens + Redis**
+**Step 2: Refresh Tokens + Redis**
 ```csharp
 // Refresh token in Redis con expiry
 public async Task<string> CreateRefreshToken(Guid userId)
@@ -286,7 +285,7 @@ public async Task<string> CreateRefreshToken(Guid userId)
 }
 ```
 
-**Day 5: OWASP Checklist**
+**Step 3: OWASP Checklist**
 - [ ] SQL Injection → Parameterized queries (EF Core OK)
 - [ ] XSS → Input validation, output encoding
 - [ ] CSRF → Anti-forgery tokens
@@ -333,7 +332,7 @@ RISULTATO: Capisci COSA fa Azure AD B2C internamente
 
 ---
 
-## 💬 PROGETTO 2: Real-Time Chat (Settimane 4-6)
+## 💬 PROGETTO 2: Real-Time Chat
 
 > **Rinforza:** Architect P4 (FamilyBudget) SignalR/Real-time
 
@@ -362,29 +361,29 @@ Applicazione chat real-time scalabile a 1000+ utenti concorrenti.
 | **Circuit Breaker** | Gestisce fallimenti Redis/servizi esterni senza crash |
 | **Retry + Backoff** | Riconnessione intelligente dopo failure temporanei |
 
-### Settimane
+### Moduli
 
-**Week 4: SignalR Basics**
+**Modulo 1: SignalR Basics**
 - Setup SignalR hub
 - Basic chat functionality
 - Message persistence
 
-**Week 5: Redis + Scaling + Resilience + RabbitMQ**
+**Modulo 2: Redis + Scaling + Resilience + RabbitMQ**
 - Redis backplane per scaling
 - Redis Pub/Sub
 - Presence (chi è online)
 - **📨 RabbitMQ per notifiche offline** (~3-4 ore)
   - User offline → messaggio in RabbitMQ queue → email/push quando torna
   - Producer (ChatHub) + Consumer (NotificationWorker)
-  - Rinforzo AQ W5: primo broker esterno nel percorso SE, implementato con TDD
-  - Confronto pratico: Redis Pub/Sub (P1 W3) vs RabbitMQ (qui) — quando usare quale
+  - Rinforzo AQ M5: primo broker esterno nel percorso SE, implementato con TDD
+  - Confronto pratico: Redis Pub/Sub (P1 M3) vs RabbitMQ (qui) — quando usare quale
 - **🛡️ Resilience Patterns con Polly** (mini-topic, ~2-3 ore)
   - Circuit Breaker: Redis va giu → il chat degrada, non crasha
   - Retry with exponential backoff: connessione persa → riprova intelligentemente
   - Timeout policy: nessuna operazione blocca per sempre
   - Perche qui: stai scalando un sistema real-time, i failure sono inevitabili. Meglio impararlo su un progetto dove li VEDI succedere
 
-**Week 6: Frontend + Polish**
+**Modulo 3: Frontend + Polish**
 - React + TypeScript frontend
 - UI completa
 - Load testing 1000+ users
@@ -450,7 +449,7 @@ public async Task<string> SummarizeConversationAsync(List<Message> messages)
 
 ---
 
-## 🛒 PROGETTO 3: E-Commerce Cart & Inventory (Settimane 7-10)
+## 🛒 PROGETTO 3: E-Commerce Cart & Inventory
 
 > **Rinforza:** Architect P2 (NutriPlan) CQRS, Event Sourcing
 
@@ -479,29 +478,29 @@ Sistema carrello e inventario con CQRS, Event Sourcing, gestione concorrenza.
 | **Event Sourcing** | Audit trail completo, rebuild state |
 | **Saga** | Transazioni distribuite |
 
-### Settimane
+### Moduli
 
-**Week 7: CQRS Basics**
+**Modulo 1: CQRS Basics**
 - MediatR setup
 - Commands e Queries separati
 - Read/Write models
 
-**Week 8: Event Sourcing**
+**Modulo 2: Event Sourcing**
 - Event store setup
 - Cart aggregate con eventi
 - Event replay
 
-**Week 9: Concurrency + Inventory + DB Design**
+**Modulo 3: Concurrency + Inventory + DB Design**
 - Redis distributed locks
 - Inventory management
 - Optimistic concurrency
 - **Query optimization & database design** (indexing, query plans, N+1 prevention)
 
-**Week 10: Saga + Outbox Pattern + Polish**
+**Modulo 4: Saga + Outbox Pattern + Polish**
 - Checkout saga
 - **📨 Outbox Pattern implementato da zero con TDD**
   - OrderPlaced → OutboxMessage → RabbitMQ → InventoryService, PaymentService
-  - Rinforzo AQ W5: in AQ l'hai progettato, qui lo costruisci tu da solo
+  - Rinforzo AQ M5: in AQ l'hai progettato, qui lo costruisci tu da solo
   - Event Sourcing + Outbox = eventi dal domain store pubblicati sulla queue
 - Integration tests
 - Load testing
@@ -570,7 +569,7 @@ public async Task<List<Product>> GetSimilarProductsAsync(Guid productId)
 
 ---
 
-## 🚨 PROGETTO 4: Alert Gateway (Settimane 11-13) ← RINOMINATO
+## 🚨 PROGETTO 4: Alert Gateway ← RINOMINATO
 
 > **Rinforza:** Architect P3 (BookingHub) Microservices, Saga, Resilience
 > **Nota:** Rinominato da "Notification Service" per evitare confusione con Architect P1
@@ -604,9 +603,9 @@ Focus su **resilience patterns** e **service communication**.
 | **Bulkhead** | Isola fallimenti per evitare cascading |
 | **API Gateway** | Single entry point, routing |
 
-### Settimane
+### Moduli
 
-**Week 11: Service Decomposition + Messaging Completo**
+**Modulo 1: Service Decomposition + Messaging Completo**
 - Identificare bounded contexts
 - Setup 3 services: Gateway, Processor, Sender
 - RabbitMQ communication tra servizi (Exchange types, routing)
@@ -617,14 +616,14 @@ Focus su **resilience patterns** e **service communication**.
   - Il "boss finale" del messaging: tutto quello imparato in P1-P3 applicato a multi-service
 - Docker Compose per local dev
 
-**Week 12: Resilience Patterns**
+**Modulo 2: Resilience Patterns**
 - Circuit Breaker con Polly
 - Retry policies con exponential backoff
 - Fallback strategies
 - Bulkhead pattern
 - Integrazione resilience + messaging (Circuit Breaker su RabbitMQ connection)
 
-**Week 13: Gateway + Observability**
+**Modulo 3: Gateway + Observability**
 - YARP API Gateway
 - Health checks per ogni service (readiness + liveness probes)
 - Structured logging cross-service (Serilog + correlation ID)
@@ -711,7 +710,7 @@ public async Task<TriageResult> TriageAlertAsync(Alert alert)
 
 ---
 
-## 🔗 PROGETTO 5: URL Shortener with Analytics (Settimane 14-16)
+## 🔗 PROGETTO 5: URL Shortener with Analytics
 
 > **Culmina:** Tutto il Redis imparato in P1, P2, P3, P4 → ora PRIMARY DATABASE
 
@@ -741,21 +740,21 @@ Sistema high-performance con Redis come database primario. Target: 1000+ req/sec
 | **Streams** | Event log per analytics |
 | **Sorted Sets** | Leaderboard URL popolari |
 
-### Settimane
+### Moduli
 
-**Week 14: Core + Redis**
+**Modulo 1: Core + Redis**
 - Minimal API setup
 - Redis come primary store
 - URL shortening logic
 - Base62 encoding
 
-**Week 15: Analytics**
+**Modulo 2: Analytics**
 - Redis Streams per eventi
 - HyperLogLog per unique visitors
 - Real-time analytics dashboard
 - Sorted Sets per leaderboard
 
-**Week 16: Performance**
+**Modulo 3: Performance**
 - Load testing con k6/NBomber
 - Optimization (connection pooling, pipelining)
 - Target 1000+ req/sec
@@ -842,7 +841,7 @@ P5 (URL Shortener):    Redis = PRIMARY DATABASE 🎯
 
 ---
 
-## 🧠 PROGETTO 6: Capstone - AI Second Brain (Mesi 6-16)
+## 🧠 PROGETTO 6: Capstone - AI Second Brain
 
 > **Unisce:** Ex-P6 Academic Knowledge Hub + Ex-AI-1 (AI Second Brain da Architect Quest)
 > **Tipo:** Capstone AI-powered - Il tuo Obsidian vault diventa queryabile con AI
@@ -879,26 +878,26 @@ Il tuo "secondo cervello" che risponde a domande sulle TUE note.
 - Study progress tracking
 - CLI o Obsidian plugin
 
-### Fasi
+### Fasi (sequenziali, no date)
 
-**Mesi 6-8: RAG Foundation**
+**Fase 1: RAG Foundation**
 - Vector DB setup, embedding pipeline
 - Chunking strategies, Obsidian vault indexing
 - Retrieval + basic Q&A
 - Prompt optimization, context window management
 
-**Mesi 9-11: Advanced Features**
+**Fase 2: Advanced Features**
 - Quiz generation dalle note
 - "Related notes" suggestions
 - CQRS per index/query separation
 - Redis caching layer
 
-**Mesi 12-14: Multi-Service + Real-time**
+**Fase 3: Multi-Service + Real-time**
 - Service decomposition (indexer, query, quiz)
 - SignalR per quiz real-time
 - Docker Compose setup
 
-**Mesi 15-16: Production + Polish**
+**Fase 4: Production + Polish**
 - Performance optimization
 - CLI o Obsidian plugin
 - Documentation, testing
@@ -1025,7 +1024,8 @@ CAPSTONE = AI Second Brain
 | Versione | Miglioramento |
 |----------|---------------|
 | v3.0 | P1.5 Auth, P4 rinominato, Testing Checklist, Resilience Patterns, Redis Progression, Career Boost, Boss Battles, AI Features |
-| v4.0 | P6 unito con AI Second Brain (RAG), Career Boost estratto in file separato, Timeline realistica (30-36 mesi) |
+| v4.0 | P6 unito con AI Second Brain (RAG), Career Boost estratto in file separato |
+| v5.0 | Self-paced refactor: rimossa timeline, Week→Modulo, sequenza per prerequisiti |
 
 ### AI Features per Progetto
 | Progetto | AI Feature | Skill AI |
@@ -1039,5 +1039,5 @@ CAPSTONE = AI Second Brain
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (refactor — target aggiornato con AI Engineer)*
-*Versione: 4.1*
+*Ultimo aggiornamento: 2026-04-17 (self-paced refactor — rimossa timeline, Week→Modulo)*
+*Versione: 5.0*

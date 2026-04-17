@@ -20,7 +20,7 @@
 **Reality Check:**
 - Casa media (Italia): €200-300k
 - Anticipo 20%: €40-60k
-- Con €100-120k/anno: ✅ Fattibile in 2-3 anni
+- Con €100-120k/anno: ✅ Fattibile
 
 **Questo percorso mi porta da:**
 - Ora: €50-60k → Difficile comprare casa
@@ -80,11 +80,11 @@ Famiglia:     Posso aiutare, ma è stretto
 Libertà:      Media-bassa
 ```
 
-### **Situazione Target (2027-2028)**
+### **Situazione Target (fine percorso)**
 ```
 Stipendio:    €100-120k/anno (target realistico)
 Dopo tasse:   ~€60-70k/anno (€5-5.8k/mese)
-Casa:         In 2-3 anni, posso comprarla
+Casa:         Posso comprarla
 Risparmio:    €1.5-2k/mese (€18-24k/anno)
 Famiglia:     Posso supportare comodamente
 Libertà:      Alta - scelte basate su qualità, non necessità
@@ -127,8 +127,8 @@ Libertà:      Alta - scelte basate su qualità, non necessità
 - ✅ Hai il supporto di Federica
 - ✅ Hai una motivazione più forte del 99% delle persone
 
-**18 mesi sembrano lunghi.**
-**Ma sono 18 mesi che cambiano i prossimi 40 anni della tua vita.**
+**Non conta quanto tempo ci metti.**
+**Conta che non ti fermi.**
 **E alla fine sarai un AI Engineer — non un developer qualsiasi.**
 
 ---
@@ -137,8 +137,7 @@ Libertà:      Alta - scelte basate su qualità, non necessità
 
 **Calcolo veloce:**
 ```
-18 mesi di impegno extra (10-15 ore/settimana)
-= ~800-1200 ore totali
+Impegno extra a ritmo sostenibile (10-15 ore/settimana)
 
 ROI:
 + €40-60k/anno in più per i prossimi 30-40 anni
@@ -149,7 +148,7 @@ ROI:
 + Futuro per figli
 + Meno stress
 
-€1000 ore per €2M+ di lifetime value + tranquillità famiglia
+Il tempo investito vale infinitamente meno del lifetime value + tranquillità famiglia
 = BEST ROI POSSIBILE
 ```
 
@@ -189,17 +188,20 @@ Non sono ancora qui, ma meritano:
 
 ## 🎯 TRAGUARDI CONCRETI
 
-### **Anno 1 (Fine 2026)**
+> I traguardi sono **sequenziali**, non legati a date. Si sbloccano uno dopo l'altro man mano che il percorso avanza.
+
+### **Traguardo 1 — Dopo i progetti MINIMO**
+- [ ] Primo colloquio AI Engineer / Senior superato
 - [ ] Stipendio: €70-85k (senior level)
-- [ ] Risparmi per casa: €10-15k accumulati
-- [ ] Posso supportare famiglia se serve (€300-500/mese buffer)
+- [ ] Risparmi per casa: inizio accumulo
+- [ ] Posso supportare famiglia se serve
 
-### **Anno 2 (Fine 2027)**
+### **Traguardo 2 — Consolidamento nel ruolo**
 - [ ] Stipendio: €95-120k (AI Engineer, remote EU/US)
-- [ ] Risparmi per casa: €35-45k accumulati
-- [ ] Posso supportare famiglia comodamente (€500-800/mese)
+- [ ] Risparmi per casa: significativi
+- [ ] Posso supportare famiglia comodamente
 
-### **Anno 3 (Fine 2028)**
+### **Traguardo 3 — Obiettivo finale**
 - [ ] Stipendio: €100-120k (stabile)
 - [ ] **Anticipo casa: €40-60k → COMPRO CASA** 🏡
 - [ ] Buffer famiglia: €10k+ (per emergenze)
@@ -209,13 +211,14 @@ Non sono ancora qui, ma meritano:
 
 ## 💪 IL MIO PATTO CON ME STESSO
 
-**Io, Dan, mi impegno per i prossimi 18 mesi a:**
+**Io, Dan, mi impegno a:**
 
 1. ✅ Seguire il Learning Hub con costanza (non perfezione)
-2. ✅ Ricordarmi ogni giorno il PERCHÉ lo faccio
-3. ✅ Non mollare nei momenti difficili
-4. ✅ Chiedere aiuto quando serve (Federica, Claude, community)
-5. ✅ Celebrare i piccoli progressi (ogni XP conta!)
+2. ✅ Andare al mio ritmo, senza scadenze artificiali
+3. ✅ Ricordarmi ogni giorno il PERCHÉ lo faccio
+4. ✅ Non mollare nei momenti difficili
+5. ✅ Chiedere aiuto quando serve (Federica, Claude, community)
+6. ✅ Celebrare i piccoli progressi (ogni XP conta!)
 
 **Perché:**
 - 🏡 Voglio una casa per me e Federica
@@ -224,7 +227,7 @@ Non sono ancora qui, ma meritano:
 - 😌 Voglio la tranquillità finanziaria
 - 🚀 Voglio la libertà di scegliere
 
-**18 mesi di impegno = 40 anni di tranquillità.**
+**Non conta quanto ci metto. Conta che arrivo.**
 
 **Ce la posso fare. Ce la farò.** 💪
 
@@ -240,5 +243,5 @@ Non sono ancora qui, ma meritano:
 
 ---
 
-**Ultima modifica:** 2026-03-24 (aggiunto obiettivo AI Engineer)
+**Ultima modifica:** 2026-04-17 (refactor self-paced — rimosse scadenze annuali, traguardi sequenziali)
 **Review:** Leggere questo file quando la motivazione cala

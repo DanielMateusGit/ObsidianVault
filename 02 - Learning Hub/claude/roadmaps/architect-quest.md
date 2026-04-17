@@ -1,7 +1,7 @@
 # 🏛️ Roadmap Completa: Architect Quest
 
-> Percorso 30-36 mesi per diventare System Architect AI-Native
-> *(10-15 ore/settimana con lavoro full-time. Progetti CORE = obbligatori, STRETCH = se tempo/energia)*
+> Percorso self-paced per diventare System Architect AI-Native
+> *(Progetti CORE = obbligatori, STRETCH = se tempo/energia. Nessuna scadenza — si procede per completamento.)*
 
 ## 🎯 Obiettivo Finale
 
@@ -65,38 +65,37 @@ Essere capace di:
 
 ---
 
-## 📅 Timeline Overview (30-36 Mesi)
+## 📋 Sequenza Progetti
 
-> **Nota:** A 10-15 ore/settimana con lavoro full-time, la timeline reale è 30-36 mesi.
-> I mesi indicati sono approssimativi. Progetti CORE vanno completati, STRETCH sono opzionali.
+> **Principio:** nessuna timeline. Ogni progetto si sblocca al completamento del precedente. Progetti CORE vanno completati, STRETCH sono opzionali.
 
 ```
-SHARED SERVICES
+SHARED SERVICES (sequenza)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 1-5:   P1 - Notification Service 📧 [SHARED SERVICE] ⭐ MINIMO
-Mesi 6-8:   P2.5 - AI Gateway 🤖 [SHARED SERVICE] ⭐ MINIMO
+Step 1:   P1 - Notification Service 📧 [SHARED SERVICE] ⭐ MINIMO
+Step 2:   P2.5 - AI Gateway 🤖 [SHARED SERVICE] ⭐ MINIMO
 
-DOMAIN PROJECTS
+DOMAIN PROJECTS (sequenza)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 6-12:  P2 - NutriPlan (DDD, CQRS) ← USA: Notification ⭐ MINIMO
-Mesi 13-18: P3 - BookingHub (Saga, K8s) ← USA: Notif + AI GW 🔶 PRIMO COMPLETO
-Mesi 19-24: P4 - FamilyBudget (Flutter) ← USA: Notif + AI GW 🔹 COMPLETO
+Step 3:   P2 - NutriPlan (DDD, CQRS) ← USA: Notification ⭐ MINIMO
+Step 4:   P3 - BookingHub (Saga, K8s) ← USA: Notif + AI GW 🔶 PRIMO COMPLETO
+Step 5:   P4 - FamilyBudget (Flutter) ← USA: Notif + AI GW 🔹 COMPLETO
 
 CAPSTONE REALE 🏆
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 25-30: P5 - FitHub 🏋️ (REALE!) ← UNISCE TUTTO 🔹 COMPLETO
-            └── Backend: Multi-tenant + AI + Subscriptions
-            └── Flutter app: Senior Frontend Track
+Step 6:   P5 - FitHub 🏋️ (REALE!) ← UNISCE TUTTO 🔹 COMPLETO
+          └── Backend: Multi-tenant + AI + Subscriptions
+          └── Flutter app: Senior Frontend Track
 
-AI-FIRST TRACK 🧠 (Parallelo)
+AI-FIRST TRACK 🧠 (Parallelo — inserire dove Dan preferisce)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Mesi 20-22: AI-2 - AI Interview Coach 🎤 (pre-job search) 🔹 COMPLETO
-Mesi 31-33: AI-3 - Personal Copilot 🤖 (post-FitHub) 🔹 COMPLETO
+AI-2 - AI Interview Coach 🎤 (consigliato pre-job search) 🔹 COMPLETO
+AI-3 - Personal Copilot 🤖 (consigliato post-FitHub) 🔹 COMPLETO
 ```
 
 > ⭐ **MINIMO** = Obbligatorio per primo colloquio €85k+
 > 🔶 **PRIMO COMPLETO** = Primo progetto da fare dopo aver ottenuto il lavoro
-> 🔹 **COMPLETO** = Percorso completo 30-36 mesi
+> 🔹 **COMPLETO** = Parte del Percorso Completo
 
 > **Nota AI-1:** AI Second Brain è stato unito al Capstone Senior Engineer (P6).
 > Vedi `senior-engineer.md` per dettagli.
@@ -129,8 +128,8 @@ Una "prova finale" dove Dan lavora in **autonomia** su un mini-progetto simile a
 | **API Design** | 4 | RESTful, naming, error handling |
 | **Completezza** | 2 | Tutti i deliverable richiesti |
 
-### Durata
-1-2 settimane (più leggero del progetto principale)
+### Scope
+Più leggero del progetto principale (focus su design + mini-implementazione).
 
 ### XP & Achievement
 
@@ -142,7 +141,7 @@ Una "prova finale" dove Dan lavora in **autonomia** su un mini-progetto simile a
 
 ---
 
-## 🔔 PROGETTO 1: Notification Service (Mesi 1-4) 📧 SHARED SERVICE
+## 🔔 PROGETTO 1: Notification Service 📧 SHARED SERVICE
 
 > **Tipo:** Shared Service - Sarà riutilizzato da P2, P3, P4
 
@@ -173,29 +172,29 @@ P3 BookingHub  → Conferme prenotazioni, SMS reminder, email receipt
 P4 FamilyBudget → Alert budget superato, reminder spese ricorrenti
 ```
 
-### Settimane
+### Moduli
 
-**Mese 1: Setup + Clean Architecture**
-- W1: Project setup, struttura Clean Architecture, Docker Compose
-- W2: Domain model (Notification, Template, DeliveryAttempt)
-- W3: Application layer (use cases, ports/interfaces)
-- W4: Infrastructure - Database con EF Core
+**Area 1: Setup + Clean Architecture**
+- M1: Project setup, struttura Clean Architecture, Docker Compose
+- M2: Domain model (Notification, Template, DeliveryAttempt)
+- M3: Application layer (use cases, ports/interfaces)
+- M4: Infrastructure - Database con EF Core
 
-**Mese 2: Event-Driven + Canali**
-- W5: Message queue (Azure Service Bus o RabbitMQ)
-- W6: Channel implementations (Email, SMS, Push, Webhook)
-- W7: Template engine (Scriban)
-- W8: Dead letter queue, retry logic
+**Area 2: Event-Driven + Canali**
+- M5: Message queue (Azure Service Bus o RabbitMQ)
+- M6: Channel implementations (Email, SMS, Push, Webhook)
+- M7: Template engine (Scriban)
+- M8: Dead letter queue, retry logic
 
-**Mese 3: API + DevOps**
-- W9: REST API design, OpenAPI spec
-- W10: Docker containerization production-ready
-- W11: CI/CD pipeline (GitHub Actions)
-- W12: Documentation (C4, ADR, README)
+**Area 3: API + DevOps**
+- M9: REST API design, OpenAPI spec
+- M10: Docker containerization production-ready
+- M11: CI/CD pipeline (GitHub Actions)
+- M12: Documentation (C4, ADR, README)
 
-**Mese 4: Cloud + Production**
-- W13-14: Terraform per Azure
-- W15-16: Deployment, Boss Battle
+**Area 4: Cloud + Production**
+- M13-14: Terraform per Azure
+- M15-16: Deployment, Boss Battle
   - 📊 Observability Base (mini-topic, ~3-4 ore)
     - OpenTelemetry SDK: traces + metrics setup in .NET
     - Correlation ID middleware (HttpContext → log → downstream calls)
@@ -234,7 +233,7 @@ P4 FamilyBudget → Alert budget superato, reminder spese ricorrenti
 
 ---
 
-## 🤖 PROGETTO 2.5: AI Gateway (Mesi 5-6) 🤖 SHARED SERVICE
+## 🤖 PROGETTO 2.5: AI Gateway 🤖 SHARED SERVICE
 
 > **Tipo:** Shared Service - Sarà riutilizzato da P3, P4
 > **Dettagli completi:** [[roadmaps/ai-skills|AI Skills Roadmap]]
@@ -306,7 +305,7 @@ public class AIRouter : IAIGateway
 
 ---
 
-## 🥗 PROGETTO 2: NutriPlan (Mesi 5-9) ← USA: 📧 Notification
+## 🥗 PROGETTO 2: NutriPlan ← USA: 📧 Notification
 
 > **Tipo:** Domain Project - Impara DDD/CQRS + integra Notification Service
 
@@ -352,27 +351,27 @@ await _notificationClient.ScheduleAsync(new ScheduledNotification
 });
 ```
 
-### Settimane
+### Moduli
 
-**Mese 5: Domain Discovery**
-- W1-2: Event Storming completo
-- W3-4: Context Mapping, Bounded Contexts
+**Area 1: Domain Discovery**
+- M1-2: Event Storming completo
+- M3-4: Context Mapping, Bounded Contexts
 
-**Mese 6: Core Domain**
-- W5-6: Aggregate design (MealPlan)
-- W7-8: Event Sourcing con Marten
+**Area 2: Core Domain**
+- M5-6: Aggregate design (MealPlan)
+- M7-8: Event Sourcing con Marten
 
-**Mese 7: CQRS + Persistence**
-- W9-10: CQRS implementation, Read Models
-- W11-12: Multi-tenancy
+**Area 3: CQRS + Persistence**
+- M9-10: CQRS implementation, Read Models
+- M11-12: Multi-tenancy
 
-**Mese 8: API + Frontend**
-- W13-14: GraphQL API (HotChocolate)
-- W15-16: Frontend MVP
+**Area 4: API + Frontend**
+- M13-14: GraphQL API (HotChocolate)
+- M15-16: Frontend MVP
 
-**Mese 9: Polish + Production**
-- W17-18: Food database integration (ACL)
-- W19-20: Deployment, Boss Battle
+**Area 5: Polish + Production**
+- M17-18: Food database integration (ACL)
+- M19-20: Deployment, Boss Battle
 
 ### 🏆 Boss Battle: "Fitness Tracker"
 
@@ -389,7 +388,7 @@ await _notificationClient.ScheduleAsync(new ScheduledNotification
 
 ---
 
-## 📅 PROGETTO 3: BookingHub (Mesi 10-14) ← USA: 📧 Notification + 🤖 AI Gateway
+## 📅 PROGETTO 3: BookingHub ← USA: 📧 Notification + 🤖 AI Gateway
 
 > **Tipo:** Domain Project - Impara Saga/K8s + integra ENTRAMBI i servizi shared
 
@@ -458,28 +457,28 @@ var response = await _aiGateway.ChatAsync(new AIRequest
 var answer = await _aiGateway.QueryAsync(userQuestion, context: bookingData);
 ```
 
-### Settimane
+### Moduli
 
-**Mese 10: Domain + Saga**
-- W1-2: Event Storming, Saga design
-- W3-4: Saga implementation con MassTransit
+**Area 1: Domain + Saga**
+- M1-2: Event Storming, Saga design
+- M3-4: Saga implementation con MassTransit
 
-**Mese 11: Integrazioni**
-- W5-6: Calendar integration (Google, Outlook)
-- W7-8: Payment integration (Stripe)
+**Area 2: Integrazioni**
+- M5-6: Calendar integration (Google, Outlook)
+- M7-8: Payment integration (Stripe)
 
-**Mese 12: Kubernetes**
-- W9-10: AKS setup con Terraform
-- W11-12: Helm charts, Ingress, TLS
+**Area 3: Kubernetes**
+- M9-10: AKS setup con Terraform
+- M11-12: Helm charts, Ingress, TLS
 
-**Mese 13: Observability**
-- W13-14: OpenTelemetry, Grafana stack
-- W15-16: Alerting, SLI/SLO
+**Area 4: Observability**
+- M13-14: OpenTelemetry, Grafana stack
+- M15-16: Alerting, SLI/SLO
 
-**Mese 14: AI Integration + Production** 🤖
-- W17: AI Assistant MVP (patient-facing, staff queries)
-- W18: Smart scheduling con AI
-- W19-20: Load testing, security audit, Boss Battle
+**Area 5: AI Integration + Production** 🤖
+- M17: AI Assistant MVP (patient-facing, staff queries)
+- M18: Smart scheduling con AI
+- M19-20: Load testing, security audit, Boss Battle
 
 ### 🏆 Boss Battle: "Event Ticketing System"
 
@@ -496,7 +495,7 @@ var answer = await _aiGateway.QueryAsync(userQuestion, context: bookingData);
 
 ---
 
-## 💰 PROGETTO 4: FamilyBudget (Mesi 15-18) ← USA: 📧 Notification + 🤖 AI Gateway
+## 💰 PROGETTO 4: FamilyBudget ← USA: 📧 Notification + 🤖 AI Gateway
 
 > **Tipo:** Domain Project - Impara Flutter/Offline + integra ENTRAMBI i servizi shared
 
@@ -566,24 +565,24 @@ var advice = await _aiGateway.ChatAsync(new AIRequest
 });
 ```
 
-### Settimane
+### Moduli
 
-**Mese 15: Flutter + Offline**
-- W1-2: Flutter basics, local DB (Drift)
-- W3-4: Offline-first architecture
+**Area 1: Flutter + Offline**
+- M1-2: Flutter basics, local DB (Drift)
+- M3-4: Offline-first architecture
 
-**Mese 16: Backend + Sync**
-- W5-6: Backend API con sync endpoint
-- W7-8: Conflict resolution
+**Area 2: Backend + Sync**
+- M5-6: Backend API con sync endpoint
+- M7-8: Conflict resolution
 
-**Mese 17: Real-time + AI Features** 🤖
-- W9-10: SignalR integration
-- W11: AI expense categorization & queries
-- W12: AI budget advisor
+**Area 3: Real-time + AI Features** 🤖
+- M9-10: SignalR integration
+- M11: AI expense categorization & queries
+- M12: AI budget advisor
 
-**Mese 18: Polish + Launch**
-- W13-14: UI polish, testing
-- W15-16: Store preparation, Boss Battle
+**Area 4: Polish + Launch**
+- M13-14: UI polish, testing
+- M15-16: Store preparation, Boss Battle
 
 ### 🏆 Boss Battle: "Shared Shopping List"
 
@@ -600,7 +599,7 @@ var advice = await _aiGateway.ChatAsync(new AIRequest
 
 ---
 
-## 🏋️ PROGETTO 5: FitHub (Mesi 19-22) 🏋️ CAPSTONE REALE
+## 🏋️ PROGETTO 5: FitHub 🏋️ CAPSTONE REALE
 
 > **Tipo:** Capstone Project - UNISCE TUTTO! Progetto reale monetizzabile.
 > **Cross-progetto:** Usa patterns e servizi da P1, P2, P2.5, P3, P4
@@ -673,24 +672,24 @@ App fitness multi-versione (Yoga/Stretching, CrossFit, Palestra) con:
                     └───────────────────┘
 ```
 
-### Settimane
+### Moduli
 
-**Mese 19: Architecture & Core**
-- W1-2: Multi-tenant setup, tenant isolation
-- W3-4: Core domain (Workout, Exercise, Member, Coach, Subscription)
+**Area 1: Architecture & Core**
+- M1-2: Multi-tenant setup, tenant isolation
+- M3-4: Core domain (Workout, Exercise, Member, Coach, Subscription)
 
-**Mese 20: Features & AI**
-- W5-6: AI workout generation (usa AI Gateway)
-- W7-8: Subscription management, billing (Stripe)
+**Area 2: Features & AI**
+- M5-6: AI workout generation (usa AI Gateway)
+- M7-8: Subscription management, billing (Stripe)
 
-**Mese 21: White-label & Roles**
-- W9-10: White-label infrastructure (theming, feature flags)
-- W11-12: Coach dashboard, member app, owner analytics
+**Area 3: White-label & Roles**
+- M9-10: White-label infrastructure (theming, feature flags)
+- M11-12: Coach dashboard, member app, owner analytics
 
-**Mese 22: Polish & Launch**
-- W13-14: Integration tests, load testing
-- W15: Documentation, deployment
-- W16: Boss Battle + **PROPONI ALLA TUA PALESTRA!** 💰
+**Area 4: Polish & Launch**
+- M13-14: Integration tests, load testing
+- M15: Documentation, deployment
+- M16: Boss Battle + **PROPONI ALLA TUA PALESTRA!** 💰
 
 ### Integrazione Notification Service
 ```csharp
@@ -768,8 +767,8 @@ var formFeedback = await _aiGateway.AnalyzeAsync(new AnalyzeRequest
 | **Enterprise** | Custom | Grandi franchising |
 | **Utente singolo** | €5-10/mese o freemium | Home fitness |
 
-**Revenue potenziale anno 1:** Se 5 palestre × €100/mese = €6.000/anno
-**Revenue potenziale anno 3:** Se 50 palestre × €150/mese = €90.000/anno
+**Revenue potenziale iniziale:** Se 5 palestre × €100/mese = €6.000/anno
+**Revenue potenziale scale:** Se 50 palestre × €150/mese = €90.000/anno
 
 ---
 
@@ -783,10 +782,10 @@ var formFeedback = await _aiGateway.AnalyzeAsync(new AnalyzeRequest
 
 ---
 
-## 🎤 AI-2: AI Interview Coach (Mesi 15-16) 🎤 AI-FIRST
+## 🎤 AI-2: AI Interview Coach 🎤 AI-FIRST
 
 > **Tipo:** AI-First Project - Ti prepara per i colloqui €90k-130k!
-> **Parallelo a:** P4 FamilyBudget
+> **Quando:** Parallelo a P4 FamilyBudget, consigliato prima della job search
 
 ### Obiettivo
 Il tuo personal coach per superare technical interviews. System design, coding, behavioral.
@@ -856,19 +855,19 @@ Il tuo personal coach per superare technical interviews. System design, coding, 
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Settimane
+### Moduli
 
-**Mese 15: Core Features**
-- W1: System design interview simulator
-- W2: Evaluation prompts + scoring
-- W3: Behavioral (STAR) mode
-- W4: Technical questions bank
+**Area 1: Core Features**
+- M1: System design interview simulator
+- M2: Evaluation prompts + scoring
+- M3: Behavioral (STAR) mode
+- M4: Technical questions bank
 
-**Mese 16: Polish + Voice**
-- W5: Progress tracking, weak areas identification
-- W6: Voice input/output (Whisper + TTS)
-- W7: Mock interview mode (full simulation)
-- W8: Boss Battle
+**Area 2: Polish + Voice**
+- M5: Progress tracking, weak areas identification
+- M6: Voice input/output (Whisper + TTS)
+- M7: Mock interview mode (full simulation)
+- M8: Boss Battle
 
 ### 🏆 Boss Battle: "Peer Interview Platform"
 
@@ -890,10 +889,10 @@ Il tuo personal coach per superare technical interviews. System design, coding, 
 
 ---
 
-## 🤖 AI-3: Personal Copilot (Mesi 23-24) 🤖 AI-FIRST
+## 🤖 AI-3: Personal Copilot 🤖 AI-FIRST
 
 > **Tipo:** AI-First Project - Il TUO assistente coding!
-> **Dopo:** P4 FamilyBudget completato
+> **Prerequisito:** P4 FamilyBudget completato
 
 ### Obiettivo
 Un Copilot personalizzato che conosce il TUO stile di codice e i TUOI progetti.
@@ -965,19 +964,19 @@ Un Copilot personalizzato che conosce il TUO stile di codice e i TUOI progetti.
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Settimane
+### Moduli
 
-**Mese 19: Core Features**
-- W1: MCP server con GitHub integration
-- W2: Code review automation
-- W3: Test generation con AST parsing
-- W4: Refactoring suggestions
+**Area 1: Core Features**
+- M1: MCP server con GitHub integration
+- M2: Code review automation
+- M3: Test generation con AST parsing
+- M4: Refactoring suggestions
 
-**Mese 20: Personalization + VS Code**
-- W5: Learn user patterns (analyze past commits)
-- W6: VS Code extension
-- W7: Chat mode con project context
-- W8: Boss Battle
+**Area 2: Personalization + VS Code**
+- M5: Learn user patterns (analyze past commits)
+- M6: VS Code extension
+- M7: Chat mode con project context
+- M8: Boss Battle
 
 ### 🏆 Boss Battle: "Team Copilot"
 
@@ -1066,5 +1065,5 @@ Alla fine del percorso:
 
 ---
 
-*Ultimo aggiornamento: 2026-03-13*
-*Versione: 5.0 - Timeline realistica (30-36 mesi), AI-1 unito a Senior P6, progetti CORE vs STRETCH*
+*Ultimo aggiornamento: 2026-04-17*
+*Versione: 6.0 - Self-paced (rimossa timeline, Week→Modulo, prerequisiti invece di date)*

@@ -63,32 +63,32 @@ BEST: Combine all three for ultimate flexibility!
 
 ---
 
-## 📅 Timeline Overview
+## 📋 Sequenza Progetti
 
-> **Nota:** I mesi qui corrispondono a quelli in `architect-quest.md` (fonte di verita per le date).
+> **Principio:** nessuna timeline. Ogni progetto si sblocca al completamento del precedente (vedi `architect-quest.md` per dipendenze).
 
 ```
-Mesi 6-8:   P2.5 - AI Engineer Calendar System
-            ├─ Phase 1: Ollama Foundation (intent parsing)
-            ├─ Phase 2: Claude API + MCP Server + Guardrails
-            └─ Phase 3: Multi-Agent + Evals + Production
+Step 1: P2.5 - AI Engineer Calendar System
+        ├─ Phase 1: Ollama Foundation (intent parsing)
+        ├─ Phase 2: Claude API + MCP Server + Guardrails
+        └─ Phase 3: Multi-Agent + Evals + Production
 
-Mesi 13-18: P3 - BookingHub + AI Integration
-            ├─ MCP Server for booking data
-            ├─ Claude-powered admin assistant
-            └─ Hybrid Ollama + Claude architecture
+Step 2: P3 - BookingHub + AI Integration
+        ├─ MCP Server for booking data
+        ├─ Claude-powered admin assistant
+        └─ Hybrid Ollama + Claude architecture
 
-Mesi 19-24: P4 - FamilyBudget + AI Integration
-            ├─ MCP Server for financial data
-            ├─ Claude budget advisor (complex reasoning)
-            └─ Ollama for categorization (fast, local)
+Step 3: P4 - FamilyBudget + AI Integration
+        ├─ MCP Server for financial data
+        ├─ Claude budget advisor (complex reasoning)
+        └─ Ollama for categorization (fast, local)
 ```
 
 **Approccio:** Impara progressivamente (Ollama → Claude → MCP → Agentic), poi applica in sistemi complessi.
 
 ---
 
-## 🤖 PROGETTO 2.5: AI Gateway + Calendar System (Mesi 6-8) 🔧 SHARED SERVICE
+## 🤖 PROGETTO 2.5: AI Gateway + Calendar System 🔧 SHARED SERVICE
 
 > **Tipo:** Shared Service - L'AI Gateway sarà riutilizzato da P3 BookingHub e P4 FamilyBudget
 >
@@ -160,15 +160,15 @@ Il progetto è strutturato per insegnare **prima i fondamentali universali**, po
 
 | Phase | Focus | Genericità | Trasferibilità |
 |-------|-------|------------|----------------|
-| **1 (W1-3)** | Ollama + Fundamentals | **100% Generico** | Applicabile a qualsiasi LLM |
-| **2 (W4-6)** | Claude + Tools + Guardrails + Fine-tuning Framework | 80% Generico | Concetti tool use + safety + decision framework universali |
-| **3 (W7-9)** | Multi-Agent + Evals + Production | **95% Generico** | Pattern AI Engineer universale |
+| **1 (M1-3)** | Ollama + Fundamentals | **100% Generico** | Applicabile a qualsiasi LLM |
+| **2 (M4-6)** | Claude + Tools + Guardrails + Fine-tuning Framework | 80% Generico | Concetti tool use + safety + decision framework universali |
+| **3 (M7-9)** | Multi-Agent + Evals + Production | **95% Generico** | Pattern AI Engineer universale |
 
 **Risultato:** Sai lavorare con Claude (vantaggio competitivo) MA puoi adattarti a qualsiasi provider in giorni, non mesi.
 
 ### Cosa Impari (con livello di genericità)
 
-#### **Phase 1: Ollama Foundation** (W1-3) → **100% UNIVERSALE** ✅
+#### **Phase 1: Ollama Foundation** (M1-3) → **100% UNIVERSALE** ✅
 
 **Skill generiche applicabili a QUALSIASI LLM:**
 - ✅ Prompt engineering fundamentals
@@ -184,7 +184,7 @@ Il progetto è strutturato per insegnare **prima i fondamentali universali**, po
 
 ---
 
-#### **Phase 2: Cloud AI + Tool Systems** (W4-6) → **80% UNIVERSALE** ✅
+#### **Phase 2: Cloud AI + Tool Systems** (M4-6) → **80% UNIVERSALE** ✅
 
 **Skill generiche:**
 - ✅ Cloud API integration patterns (HTTP, streaming, retry)
@@ -203,7 +203,7 @@ Il progetto è strutturato per insegnare **prima i fondamentali universali**, po
 
 ---
 
-#### **Phase 3: Provider-Agnostic Architecture** (W7-8) → **95% UNIVERSALE** ✅
+#### **Phase 3: Provider-Agnostic Architecture** (M7-8) → **95% UNIVERSALE** ✅
 
 **Architettura completamente generica:**
 - ✅ **AI Router pattern** (funziona con QUALSIASI provider)
@@ -361,25 +361,25 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 
 ### Features - Progressive Evolution
 
-#### **PHASE 1: Ollama Foundation** (Settimane 1-3)
+#### **PHASE 1: Ollama Foundation**
 
 **Goal:** Local AI per intent parsing veloce e privacy-first
 
-**Week 1: Ollama Setup & Integration**
+**Modulo 1: Ollama Setup & Integration**
 - Setup Ollama in .NET (HttpClient + JSON)
 - Basic prompt engineering
 - Intent recognition (create/read/update/delete)
 - Entity extraction (date, time, duration, title)
 - JSON mode forcing (no markdown, always valid JSON)
 
-**Week 2: Calendar API Integration**
+**Modulo 2: Calendar API Integration**
 - Google Calendar API setup + OAuth
 - CRUD eventi via API
 - Date parsing ("domani", "martedì prossimo")
 - Conflict detection
 - Basic testing
 
-**Week 3: RAG Reale + Context Management**
+**Modulo 3: RAG Reale + Context Management**
 - **🔍 Vector Search con pgvector** (PostgreSQL extension — gia nel tuo stack)
   - Il Calendar System deve cercare eventi per significato, non solo per data
   - "Trova quel meeting dove parlavamo di budget" → vector similarity search
@@ -402,11 +402,11 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 
 ---
 
-#### **PHASE 2: Claude API + MCP Server** (Settimane 4-6)
+#### **PHASE 2: Claude API + MCP Server**
 
 **Goal:** Introduce Claude per reasoning complesso + crea MCP server
 
-**Week 4: Claude API Integration**
+**Modulo 4: Claude API Integration**
 - Setup Claude API (.NET SDK)
 - Anthropic Messages API
 - Streaming responses
@@ -414,7 +414,7 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Prompt engineering per Claude
 - Cost tracking & optimization
 
-**Week 5: MCP Server Development** 🎯 **CORE LEARNING**
+**Modulo 5: MCP Server Development** 🎯 **CORE LEARNING**
 - **Crea primo MCP Server (TypeScript/Python)**
 - Tool definitions:
   - `calendar.list_events(start_date, end_date)`
@@ -425,7 +425,7 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Tool registration con Claude
 - Testing con Claude Desktop
 
-**Week 6: Claude Reasoning + Guardrails + Decision Framework**
+**Modulo 6: Claude Reasoning + Guardrails + Decision Framework**
 - Complex queries via Claude:
   - "Quando sono libero per un caffè con Marco?"
   - "Suggerisci il miglior orario per un meeting importante"
@@ -453,11 +453,11 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 
 ---
 
-#### **PHASE 3: Agentic Workflows** (Settimane 7-8)
+#### **PHASE 3: Agentic Workflows**
 
 **Goal:** Claude autonomous agent che orchestra tutto il sistema
 
-**Week 7: Hybrid Architecture**
+**Modulo 7: Hybrid Architecture**
 - **AI Router:** Decide quando usare Ollama vs Claude
   - Ollama → Fast intent parsing, simple queries
   - Claude → Complex reasoning, multi-step workflows
@@ -465,7 +465,7 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Cost optimization (95% Ollama, 5% Claude)
 - Performance benchmarking
 
-**Week 8: Autonomous Agent + Multi-Agent** 🚀
+**Modulo 8: Autonomous Agent + Multi-Agent** 🚀
 - **Claude come autonomous agent:**
   - User: "Organizza la mia settimana"
   - Claude:
@@ -481,7 +481,7 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
   - Agent communication & handoff patterns
   - When single-agent vs multi-agent (decision framework)
 
-**Week 9: AI Evals, Testing & Production** 🎯 (NUOVA)
+**Modulo 9: AI Evals, Testing & Production** 🎯 (NUOVA)
 - **📊 AI ENGINEER GAP: Evaluation & Observability**
   - Eval pipeline: input → LLM → output → score (automated)
   - Metriche: accuracy, hallucination rate, latency, cost per request
@@ -593,19 +593,19 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 
 ---
 
-### Genericita per Settimana
+### Genericita per Modulo
 
-| Week | Focus | Genericita | Provider Lock-in |
-|------|-------|------------|------------------|
-| W1 | Ollama Basics (prompt eng, intent, JSON mode) | 100% | Zero |
-| W2 | Integrations (Calendar API, multi-turn, Flutter) | 100% | Zero |
-| W3 | Advanced Patterns (RAG, context mgmt, Redis cache) | 100% | Zero |
-| W4 | Cloud Provider (streaming, cost tracking, abstraction) | 85% | Minimo (solo SDK) |
-| W5 | Tool Systems (function calling, MCP, tool registry) | 70% | Medio (MCP specifico) |
-| W6 | Orchestration + Guardrails + Fine-tuning Decision Framework | 90% | Basso |
-| W7 | Provider-Agnostic Architecture (AI Router, multi-provider) | 95% | Quasi zero |
-| W8 | Multi-Agent Systems (planner/executor, Agent SDK) | 90% | Basso |
-| W9 | AI Evals + Testing + Production (eval pipeline, observability) | 100% | Zero |
+| Modulo | Focus | Genericita | Provider Lock-in |
+|--------|-------|------------|------------------|
+| M1 | Ollama Basics (prompt eng, intent, JSON mode) | 100% | Zero |
+| M2 | Integrations (Calendar API, multi-turn, Flutter) | 100% | Zero |
+| M3 | Advanced Patterns (RAG, context mgmt, Redis cache) | 100% | Zero |
+| M4 | Cloud Provider (streaming, cost tracking, abstraction) | 85% | Minimo (solo SDK) |
+| M5 | Tool Systems (function calling, MCP, tool registry) | 70% | Medio (MCP specifico) |
+| M6 | Orchestration + Guardrails + Fine-tuning Decision Framework | 90% | Basso |
+| M7 | Provider-Agnostic Architecture (AI Router, multi-provider) | 95% | Quasi zero |
+| M8 | Multi-Agent Systems (planner/executor, Agent SDK) | 90% | Basso |
+| M9 | AI Evals + Testing + Production (eval pipeline, observability) | 100% | Zero |
 
 **Media: ~92% skill generiche.** Migrare a OpenAI dopo il percorso: 2-3 giorni. Aggiungere Gemini: 2-3 giorni.
 
@@ -631,14 +631,14 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 
 > Dettagli completi in `roadmaps/architect-quest.md` per ogni progetto.
 
-### P3 - BookingHub + AI (Mesi 13-18, allineato ad architect-quest.md)
+### P3 - BookingHub + AI (trigger: completamento P2 NutriPlan)
 - Patient-facing AI assistant (spostamenti, domande)
 - Smart scheduling (pattern storici, durata visite, preferenze)
 - Appointment reminders intelligenti (tono personalizzato)
 - Natural language search per staff
 - AI integration nelle ultime settimane del progetto AQ P3
 
-### P4 - FamilyBudget + AI (Mesi 19-24, allineato ad architect-quest.md)
+### P4 - FamilyBudget + AI (trigger: completamento P3 BookingHub)
 - Expense categorization automatica (Ollama, locale per privacy)
 - Smart queries budget ("posso permettermi X?", Claude per reasoning)
 - Budget optimization e pattern anomali
@@ -660,10 +660,10 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 | **2. Hands-On** | 2-4 ore | Experiment documentato con metriche |
 | **3. Decision** | 15 min | ADOPT / MONITOR / SKIP |
 
-### Cadenza
+### Cadenza (quando Dan ha voglia)
 
-- **Ogni Quarter:** Review landscape, prioritize 2-3 tech, 1 weekend session, document
-- **Ogni 6 mesi:** Review archived + adopted tech, update progetti se necessario
+- **Periodicamente:** Review landscape, prioritize 2-3 tech, 1 weekend session, document
+- **Ogni N esplorazioni:** Review archived + adopted tech, update progetti se necessario
 
 ### 🔮 Exploration Backlog (Tier 3 — quando hai tempo/curiosita)
 
@@ -676,7 +676,7 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 | **LangChain / LlamaIndex** | I due framework piu citati. Sapere cosa risolvono e dove sono overkill ti da conversazioni informate | Dopo P2.5 completato |
 | **Vercel AI SDK** | Se esplori frontend AI-powered (chat UI, streaming). Leggero e pragmatico | Quando tocchi React |
 | **Instructor / Pydantic AI** | Structured output enforcement. Potresti volerlo nel tuo AI Gateway | Quando il JSON mode di Ollama ti frustra |
-| **Weights & Biases / MLflow** | Experiment tracking per AI. Overkill ora, utile se vai deep in AI/ML | Post-percorso |
+| **Weights & Biases / MLflow** | Experiment tracking per AI. Overkill ora, utile se vai deep in AI/ML | Dopo il percorso |
 
 ### XP System
 
@@ -686,7 +686,7 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 | Hands-on experiment | +75 |
 | POC integration | +100 |
 | Tech adopted in progetto | +200 |
-| Tech diventa mainstream in 6 mesi | +300 |
+| Tech diventa mainstream dopo adozione | +300 |
 
 ### Resources
 
@@ -811,7 +811,7 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 - [ ] Graceful degradation
 - [ ] Privacy-first design
 
-### **RAG & Vector Search** (Tier 1 — costruisci in P2.5 W3)
+### **RAG & Vector Search** (Tier 1 — costruisci in P2.5 M3)
 - [ ] Vector DB setup (pgvector su PostgreSQL)
 - [ ] Embedding model selection e benchmarking (locale vs API)
 - [ ] Chunking strategies (sliding window, metadata preservation)
@@ -819,7 +819,7 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 - [ ] Query decomposition per query complesse
 - [ ] RAG pipeline completa: query → embed → search → rerank → inject → LLM
 
-### **Production & Deployment** (Tier 2 — costruisci in P2.5 W9)
+### **Production & Deployment** (Tier 2 — costruisci in P2.5 M9)
 - [ ] Context management & conversation history
 - [ ] AI observability (logs, metrics, traces con dimensioni AI-specific)
 - [ ] Rate limiting & quotas (per utente + per provider)
@@ -846,4 +846,4 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (v2.1 - Refactor: timeline allineate, +Vector DB/Embeddings/Advanced RAG in W3, +AI Deployment in W9, +Fine-tuning in W6, +Tier 3 exploration backlog)*
+*Ultimo aggiornamento: 2026-04-17 (v3.0 - Self-paced refactor: rimossa timeline, Week→Modulo)*

@@ -18,7 +18,7 @@
 |----------|-----|
 | Task completato | +50 |
 | Deliverable completato | +100 |
-| Settimana completata | +150 |
+| Modulo completato | +150 |
 | Progetto completato | +500 |
 
 ## XP - Studio e Note
@@ -49,14 +49,16 @@
 
 ## Esami
 
-### Quando Proporre
+### Quando Proporre (completion-based, NO date)
 
-| Momento | Tipo | Punti | Obbligatorio |
+| Trigger | Tipo | Punti | Obbligatorio |
 |---------|------|-------|--------------|
-| Fine Week importante | Mini-verifica | 15 | Opzionale |
-| Fine Mese | Esame medio | 30 | Si |
-| Fine Progetto | Esame completo | 30 | **OBBLIGATORIO** |
+| Fine Modulo importante | Mini-verifica | 15 | Opzionale |
+| Dopo 2-3 Moduli correlati (stesso topic) | Esame tematico | 30 | Opzionale-consigliato |
+| Fine Progetto | Esame completo / Boss Battle | 30 | **OBBLIGATORIO** |
 | Pre-Certificazione | Simulazione | 30+ | Su richiesta |
+
+> **Principio:** nessun esame e legato a una data di calendario. Si fa quando i prerequisiti sono completi e Dan si sente pronto.
 
 ### Struttura Mini-verifica (15 punti, ~15 min)
 
@@ -228,4 +230,4 @@ python3 coach.py briefing|status|suggest|quiz|add-xp|streak|motivation
 
 ---
 
-*Aggiornato: 2026-03-26*
+*Aggiornato: 2026-04-17 (refactor self-paced — Week→Modulo, esami completion-based)*

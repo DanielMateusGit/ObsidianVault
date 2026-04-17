@@ -1,32 +1,31 @@
 # Career Boost Module
 
 > Modulo trasversale per passare da "bravo developer" a "hired AI Engineer / Senior"
-> Parallelo ai progetti, Mesi 3-22
+> Parallelo ai progetti, nessuna scadenza — si integra con i progetti in corso
 
 ---
 
-## Come Si Integra (Budget Ore)
+## Come Si Integra
 
-> Il Career Boost NON e tempo extra sopra le 10-15 ore/settimana.
-> Si integra nelle ore gia previste.
+> Il Career Boost NON e tempo extra. Si integra nel tempo gia dedicato ai progetti.
 
-**Distribuzione tipo in una settimana da 12 ore:**
+**Distribuzione tipo:**
 ```
-Progetto (coding/teoria):     9-10 ore  (~80%)
-System design practice:       30-45 min  (~5%)   ← 1 topic/settimana
-Communication/writing:        0-30 min   (~3%)   ← integrato nei PR e README
-Interview prep:               0 ore      (0%)    ← solo ultimi 3-4 mesi
+Progetto (coding/teoria):     ~80%
+System design practice:       ~5%   ← 1 topic ogni tanto
+Communication/writing:        ~3%   ← integrato nei PR e README
+Interview prep:               0%    ← solo quando inizi job search
 ```
 
 **Quando fare system design:**
-- **Regola:** 1 design a settimana, collegato al progetto corrente quando possibile
-- **Momento migliore:** Fine sessione weekend, quando hai appena lavorato sul progetto e il contesto e fresco
+- **Regola:** 1 design collegato al progetto corrente, quando ha senso
+- **Momento migliore:** Fine sessione, quando hai appena lavorato sul progetto e il contesto e fresco
 - **Come:** Scrivi il design document in 30-45 min, poi chiedilo come domanda a Claude nella sessione successiva ("Spiegami il design di X come se fossi in interview")
-- **Se salti una settimana:** Non recuperare. Il prossimo weekend fai il prossimo topic. La costanza batte la completezza.
+- **Se salti:** Non recuperare. Il prossimo passo quando hai voglia. La costanza batte la completezza.
 
-**Interview prep (ultimi 3-4 mesi):**
-- Quando inizi a cercare lavoro, ruba ~2 ore/settimana dai progetti
-- A quel punto i progetti MINIMO sono quasi finiti, quindi c'e spazio
+**Interview prep:**
+- Quando inizi a cercare lavoro (dopo aver completato i progetti MINIMO), dedica piu tempo a mock interviews
+- Non c'e una data fissa — si avvia quando Dan si sente pronto
 
 ---
 
@@ -34,23 +33,23 @@ Interview prep:               0 ore      (0%)    ← solo ultimi 3-4 mesi
 
 **Obiettivo:** Saper spiegare e progettare sistemi "on the whiteboard"
 
-**Cadenza:** 1 system design / settimana (30-45 min)
+**Cadenza:** 1 system design ogni tanto (30-45 min), quando ha senso col progetto corrente.
 
 ### System Design Topics
 
-> **Percorso Minimo (18 mesi):** Priorita ai topic ⭐ collegati a progetti MINIMO.
+> **Percorso Minimo:** Priorita ai topic ⭐ collegati a progetti MINIMO.
 > I topic senza ⭐ si fanno nel Percorso Completo o come standalone quando c'e tempo.
 
 | # | Topic | Progetto Collegato | Tier | Quando |
 |---|-------|-------------------|------|--------|
-| 1 | Rate Limiter | Senior P1.5 | ⭐ MINIMO | Mese 3 |
-| 2 | Chat System | Senior P2 | ⭐ MINIMO | Mese 5 |
-| 3 | Notification System | Architect P1 | ⭐ MINIMO | Mese 5 |
-| 4 | E-commerce Cart | Senior P3 | ⭐ MINIMO | Mese 8 |
-| 5 | Payment System | Senior P3 | ⭐ MINIMO | Mese 9 |
-| 6 | Booking System | Architect P3 | COMPLETO | Mese 14 |
-| 7 | URL Shortener | Senior P5 | COMPLETO | Mese 16 |
-| 8 | Distributed Cache | Senior P5 (Redis) | COMPLETO | Mese 16 |
+| 1 | Rate Limiter | Senior P1.5 | ⭐ MINIMO | Durante P1.5 |
+| 2 | Chat System | Senior P2 | ⭐ MINIMO | Durante P2 |
+| 3 | Notification System | Architect P1 | ⭐ MINIMO | Durante P1 AQ |
+| 4 | E-commerce Cart | Senior P3 | ⭐ MINIMO | Durante P3 |
+| 5 | Payment System | Senior P3 | ⭐ MINIMO | Durante P3 |
+| 6 | Booking System | Architect P3 | COMPLETO | Durante P3 AQ |
+| 7 | URL Shortener | Senior P5 | COMPLETO | Durante P5 |
+| 8 | Distributed Cache | Senior P5 (Redis) | COMPLETO | Durante P5 |
 | 9 | Social Feed | Standalone | Standalone | Quando vuoi |
 | 10 | Search Autocomplete | Standalone | Standalone | Quando vuoi |
 | 11 | Video Streaming | Standalone | Standalone | Quando vuoi |
@@ -145,7 +144,7 @@ Idempotent, Stateless, Immutable
 
 - **README curati** per ogni progetto ⭐ MINIMO (scritti in inglese)
 - **PR descriptions dettagliate** su GitHub (contesto, cosa cambia, perché, come testare)
-- **1 contributo OSS** entro mese 12 (anche piccolo: docs fix, bug fix, traduzione)
+- **1 contributo OSS** durante il percorso (anche piccolo: docs fix, bug fix, traduzione)
 - **1 English blog post** (opzionale ma consigliato — anche solo 1 articolo su dev.to o hashnode)
 
 ### Async Communication Best Practices
@@ -221,9 +220,10 @@ Raccomandato per REST: URL versioning (piu esplicito)
 
 ---
 
-## Interview Prep (Mesi 15-18+)
+## Interview Prep (quando Dan si sente pronto)
 
 **Obiettivo:** Passare interview per ruoli AI Engineer / Senior remote €90k-130k+ EU
+**Trigger:** Completamento progetti MINIMO + portfolio curato + 6+ system designs fatti
 
 ### Behavioral Questions (STAR Method)
 
@@ -326,4 +326,4 @@ Result: Qual e stato il risultato (numeri se possibile)
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (refactor — riallineato a Percorso Minimo + AI Engineer target)*
+*Ultimo aggiornamento: 2026-04-17 (self-paced refactor — rimossa timeline temporale)*

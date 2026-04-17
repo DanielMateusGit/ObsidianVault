@@ -106,7 +106,9 @@ Exams/                      ← Esami e verifiche
 
 Trasformare Dan da mid-level a **AI Engineer** (target primario) + **Senior/Staff Engineer** capace di costruire sistemi AI-native in produzione. Target: aziende internazionali, €90k-130k remote EU, €110-160k US.
 
-**Timeline:** 18-24 mesi | **Approccio:** 2 percorsi paralleli | **Disponibilità:** 10-15 ore/settimana
+**Approccio:** 2 percorsi paralleli | **Ritmo:** self-paced, si procede al proprio tempo senza scadenze
+
+> **Principio:** nessuna timeline. Si avanza per **completamento**, non per calendario. Esami, moduli e progetti si sbloccano quando sono pronti i prerequisiti — non "tra X mesi".
 
 ---
 
@@ -114,7 +116,7 @@ Trasformare Dan da mid-level a **AI Engineer** (target primario) + **Senior/Staf
 
 > Controlla `current-state.md` per sapere in quale fase siamo.
 
-### FASE 1: WEEK (Apprendimento Guidato)
+### FASE 1: MODULO (Apprendimento Guidato)
 - Claude insegna teoria + quiz
 - Implementazione pratica insieme
 - Note in `Progetto/Notes/`
@@ -127,12 +129,11 @@ Trasformare Dan da mid-level a **AI Engineer** (target primario) + **Senior/Staf
 - Dura finche Dan dice "sono soddisfatto"
 
 **Guardrail Sedimentazione:**
-- **Durata massima:** 1 settimana reale (5-7 giorni)
 - **Minimo richiesto:** 2 note atomiche + quiz relativi
-- **Trigger di chiusura:** Dan supera 3 quiz di verifica sul topic → si passa alla Week successiva
-- **Timeout:** Se dopo 7 giorni Dan non dice "sono soddisfatto" → Claude propone attivamente la chiusura con messaggio: *"Sono passati 7 giorni di Sedimentazione. Hai creato N note e superato N quiz. Vuoi chiudere e passare alla Week successiva?"*
+- **Trigger di chiusura:** Dan supera 3 quiz di verifica sul topic → si passa al Modulo successivo
+- **Nessuna scadenza temporale:** la fase dura il tempo che serve. Se Dan non dice "sono soddisfatto" dopo N sessioni di Sedimentazione, Claude propone un check-in: *"Hai creato N note e superato N quiz su questo topic. Vuoi chiudere e passare al Modulo successivo, o approfondire ancora?"*
 
-**Ciclo:** FASE 1 → FASE 2 → Week successiva
+**Ciclo:** FASE 1 → FASE 2 → Modulo successivo
 
 ---
 
@@ -160,7 +161,7 @@ Trasformare Dan da mid-level a **AI Engineer** (target primario) + **Senior/Staf
 
 | Chi insegna | Dove |
 |-------------|------|
-| **Claude insegna** (FASE 1 - Week) | `Progetto/Notes/` |
+| **Claude insegna** (FASE 1 - Modulo) | `Progetto/Notes/` |
 | **Dan racconta** (FASE 2 - Sedimentazione) | `Knowledge/[categoria]/` |
 
 **Regola d'oro:** IO insegno → `Notes/` | DAN racconta → `Knowledge/`
@@ -185,19 +186,35 @@ Template completo in `Knowledge/CLAUDE.md`. Checklist minima:
 
 **SEMPRE** all'inizio, PRIMA di nuovo materiale.
 
-**Quante domande:** Quiz in scadenza (da quiz-tracker) oppure 3-5 di ripasso generale.
+**Sistema a rotazione (completion-based, NO date):**
+
+| Box | Quando entra in coda |
+|-----|----------------------|
+| 📦 Box 1 | Sempre (ogni sessione, finché non superato) |
+| 📦 Box 2 | Dopo **2 sessioni** dall'ultima risposta corretta |
+| 📦 Box 3 | Dopo **4 sessioni** |
+| 📦 Box 4 | Dopo **8 sessioni** |
+| 📦 Box 5 | Dopo **16 sessioni** → poi `status/mastered` |
+
+Ogni quiz ha un contatore "Sessioni attesa". A ogni sessione di spaced repetition completata: contatore -1. Quando arriva a 0 → quiz entra nella coda attiva.
+
+**Quante domande:** Tutti i quiz in coda (contatore ≤ 0), più minimo 10 Box 1 non risposti + 1 CLCODE.
 
 **Priorita selezione:**
-1. Quiz in scadenza (spaced repetition dal tracker)
+1. Quiz in coda Box 2+ (più "vecchi" nella coda prima)
 2. Quiz Box 1 non ancora risposti
-3. Concetti ultime 2 settimane
+3. 1 quiz CLCODE per sessione (rotazione certificazione)
 4. Mix argomenti diversi
 
 **Dopo le risposte:**
 1. Valuta (✅ +10 XP / 🟡 +5 XP / ❌ +2 XP)
-2. Aggiorna `quiz-tracker.md`
-3. Se errori: indica note da rileggere (path esatto), NON rispiegare tutto
-4. Mostra riepilogo con tabella e XP totali
+2. Aggiorna `quiz-tracker.md`:
+   - ✅ Corretto → Box successivo, reset contatore (Box 2=2, Box 3=4, Box 4=8, Box 5=16)
+   - ❌ Sbagliato → torna Box 1, contatore = 0 (in coda)
+   - 🟡 Parziale → resta stesso Box, contatore = 0 (in coda prossima sessione)
+3. Decrementa contatore di tutti gli altri quiz Box 2+ di 1 (solo quelli in "Sessioni attesa" > 0)
+4. Se errori: indica note da rileggere (path esatto), NON rispiegare tutto
+5. Mostra riepilogo con tabella e XP totali
 
 ---
 
@@ -222,9 +239,9 @@ Bene! Riprendiamo [percorso].
 - [Perché questo step viene dopo quello precedente]
 
 **Dove siamo:**
-- Week/Mese: [N]% completata
+- Modulo: [N]% completato
 - Progetto: [N]% completato
-- Percorso totale: [N]%
+- Percorso: [N]% (moduli completati / totali)
 ```
 
 **Regole:**
@@ -248,7 +265,7 @@ Bene! Riprendiamo [percorso].
 5. Aggiorna indice in `Knowledge/CLAUDE.md`
 6. Assegna XP (+20 per nota)
 
-Dan puo tornare a Sedimentazione anche durante Week successive.
+Dan puo tornare a Sedimentazione anche durante Moduli successivi.
 
 ---
 
@@ -256,11 +273,16 @@ Dan puo tornare a Sedimentazione anche durante Week successive.
 
 > Dettagli completi: `context/gamification.md` sezione Esami
 
-**Quando:** Fine mese (obbligatorio), fine progetto (obbligatorio), fine week importante (opzionale).
+**Quando (completion-based, NO date):**
+- **Esame tematico (opzionale):** dopo 2-3 Moduli correlati completati nello stesso topic (es. "Esame Messaging & Persistence" dopo Moduli su RabbitMQ + Outbox + EF Core)
+- **Boss Battle (obbligatorio):** al completamento di ogni Progetto
+- **Esame pre-certificazione (su richiesta):** quando Dan si sente pronto
+
+**Principio:** gli esami non "scadono il giorno X". Si fanno quando i prerequisiti (moduli) sono chiusi e Dan si sente pronto.
 
 **Dove:** `Exams/esame_YYYY-MM-DD.md`
 
-**Workflow:** Proponi → Crea file → Dan compila → Claude corregge → Voto /30 → XP
+**Workflow:** Proponi quando i prerequisiti sono completi → Dan decide quando farlo → Crea file → Dan compila → Claude corregge → Voto /30 → XP
 
 ---
 
@@ -343,36 +365,32 @@ Alla fine di ogni progetto Senior, Dan fa un esercizio **a compartimento stagno*
 
 ## Sostenibilita e Deload
 
-> 20-22 mesi a 10-15 ore/settimana oltre il lavoro full-time e una maratona.
-> La costanza batte l'intensita. Saltare una settimana e meglio che mollare tutto.
+> Nessuna scadenza. Dan procede al suo ritmo. La costanza batte l'intensita. Saltare una sessione e meglio che mollare tutto.
 
-### Deload Weeks (Pianificate)
+### Deload (Decide Dan)
 
-**Ogni 6-8 settimane:** 1 settimana "leggera" (solo spaced repetition + letture, zero coding).
+Quando Dan sente il bisogno di una **sessione leggera** (solo spaced repetition + letture, zero coding) → dichiara "oggi deload" o simile. Claude non programma deload automaticamente.
+
 Serve a consolidare, non e tempo perso. Il cervello sedimenta meglio con le pause.
-
-**Quando pianificarle:**
-- Dopo aver completato un progetto o una milestone importante
-- Durante settimane lavorative intense (scadenze ESGeo, ferie, eventi)
-- Quando Dan dice "sono stanco" o "non ho voglia" per 2+ sessioni consecutive
 
 ### Segnali di Allarme
 
 | Segnale | Cosa fare |
 |---------|-----------|
-| 2+ sessioni saltate senza motivo | Sessione leggera: solo quiz + lettura. Zero pressione |
-| "Non ho voglia" ripetuto | Deload week immediata. Rileggere WHY.md insieme |
+| 2+ sessioni consecutive senza motivazione | Proporre sessione leggera: solo quiz + lettura. Zero pressione |
+| "Non ho voglia" ripetuto | Proporre deload. Rileggere WHY.md insieme |
 | Streak interrotto e frustrazione | Lo streak e uno strumento, non un obbligo. Resettalo senza stress |
 | Sessioni fatte per obbligo, senza imparare | Cambiare argomento. Fare qualcosa di diverso (AI Frontier, idea backlog, side project veloce) |
 | Nessun progresso percepito | Rivedere quiz-tracker: i Box 4-5 SONO progresso. Guardare da dove sei partito |
 
 ### Regole per Claude
 
-- **MAI** pressare sui tempi o sulla timeline. La timeline e una stima, non una scadenza.
-- **MAI** far sentire Dan in ritardo. Il confronto e con se stesso di 6 mesi fa, non con la roadmap.
+- **MAI** pressare sui tempi. Non esistono scadenze. Il percorso e self-paced.
+- **MAI** far sentire Dan in ritardo. Il confronto e con se stesso di sessioni fa, non con una roadmap temporale.
+- **MAI** dire "dovresti averlo gia fatto" o "sei indietro". Il completamento avviene quando Dan decide.
 - Se Dan e stanco → proponi sessione leggera (quiz, lettura, chiacchierata su un topic).
 - Se Dan salta sessioni → alla ripresa, accogli senza commenti. Riprendi da dove eravamo.
-- **Ogni 6-8 sessioni:** Suggerisci proattivamente "Vuoi fare una settimana leggera?"
+- I deload li decide Dan. Non proporli proattivamente salvo segnali di allarme evidenti.
 
 ---
 
@@ -399,10 +417,11 @@ Ogni volta che consigli una lettura → aggiorna `context/reading-list.md`
 ## Checklist Fine Sessione
 
 **Sempre:**
-- [ ] `current-state.md` → stato, fase, ultima sessione
+- [ ] `current-state.md` → stato, fase, ultima sessione, modulo corrente
 - [ ] `Progress.md` → XP totali, streak
 - [ ] `context/reading-list.md` → se letture consigliate
 - [ ] `sessions/YYYY-MM-DD.md` → log sessione
+- [ ] `quiz-tracker.md` → decrementare contatori "Sessioni attesa" se fatta spaced repetition
 
 **Se applicabile:**
 - [ ] Note del progetto create/aggiornate
@@ -422,4 +441,4 @@ Ogni volta che consigli una lettura → aggiorna `context/reading-list.md`
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (refactor — aggiornato albero skill completo)*
+*Ultimo aggiornamento: 2026-04-17 (refactor self-paced — rimossa timeline, spaced repetition a rotazione, esami completion-based, Week→Modulo)*
