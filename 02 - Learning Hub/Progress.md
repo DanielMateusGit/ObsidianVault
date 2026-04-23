@@ -1,9 +1,9 @@
 ---
 tags: [learning, progress, gamification]
-xp: 6002
+xp: 6702
 level: 7
 title: "System Designer"
-streak: 1
+streak: 2
 longest_streak: 13
 architect_quest_module: "P1-M5"
 senior_engineer_module: "P1-M2"

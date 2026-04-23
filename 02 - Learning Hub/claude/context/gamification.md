@@ -126,6 +126,61 @@ Verifica autonoma alla fine di ogni progetto.
 
 ---
 
+## Achievement Trasversali Roadmap v6 ⭐ (NUOVO 2026-04-23)
+
+> Achievement aggiunti con job-postings-driven enrichment delle roadmap (`ai-skills.md` v3.1, `senior-frontend.md` v2.0, `senior-engineer.md` v6.0).
+> Single source of truth — referenziati dalle roadmap (non duplicati).
+
+### Senior Engineer (M-T moduli trasversali)
+
+| Achievement | Requisito | XP |
+|-------------|-----------|-----|
+| 🌐 **Polyglot** | Porting di 1 modulo SE in 2nd linguaggio (Java/Node) + ADR — *opzionale on-the-job* | +400 |
+| 📊 **Observability Master** | OpenTelemetry + Prometheus + Grafana + Jaeger in 1 progetto | +350 |
+| ☁️ **Cloud Native Deployer** | 1 progetto SE deployato su AWS/GCP managed (production-grade) | +400 |
+| 🔧 **IaC Practitioner** | Terraform completo per 1 progetto (VPC + compute + DB + secrets) | +300 |
+| 🚀 **CI/CD Builder** | GitHub Actions su tutti i progetti core (lint + test + build + deploy) | +250 |
+| 🆔 **Identity Federator** | OAuth2/OIDC + Auth0/Keycloak + SCIM endpoint integrati | +350 |
+| 🤖 **AI-Native Backend** | LangGraph agent + MCP server + RAG production-grade + AI cert | +500 |
+
+### Senior Frontend (P6 + moduli trasversali)
+
+| Achievement | Requisito | XP |
+|-------------|-----------|-----|
+| 🤖 **AI-Native Frontend** | P6 completato + demo deployata (Vercel AI SDK + streaming UI) | +400 |
+| 🛡️ **Security Aware** | Frontend security audit + 0 vuln su dependency | +200 |
+| 🎯 **TypeScript Craftsman** | Branded types + Zod inferenza in 3+ progetti | +300 |
+| 🧪 **Testing Champion** | Vitest + Playwright + MSW in 3+ progetti | +200 |
+
+### Mini-Projects Portfolio (cross-roadmap, vedi `context/mini-projects-index.md`)
+
+| Achievement | Requisito | XP |
+|-------------|-----------|-----|
+| 📦 **Mini Builder** | 5 mini-projects pubblicati GitHub (qualsiasi categoria AI/SE/FE) | +500 |
+| 🚀 **Portfolio Pro** | 10 mini-projects + repo pinned curato | +750 |
+| 🌍 **Cluster Ready** | Tutti i mini-projects per 1 cluster completati | +1000 |
+| 🔥 **Triple Threat** | 1 mini-project che serve 3+ cluster con 3+ portfolio | +500 |
+
+### XP per mini-project (singoli)
+
+| Attivita | XP |
+|----------|-----|
+| Mini-project completato + GitHub README pro | +150 |
+| Demo live deployata Vercel/Railway | +50 |
+| Demo live deployata cloud managed (AWS/GCP) | +75 |
+| README con AI tools workflow doc | +30 |
+| Mini-project pubblicato come library/package (npm/NuGet) | +200 |
+| Engagement reale (stars/issues/fork) | +100 |
+
+### AI Skills Roadmap (Boss Battle nuovi)
+
+| Achievement | Requisito | XP |
+|-------------|-----------|-----|
+| 🐍 **Python AI Bridge Built** | Python AI Bridge Project completato (FastAPI + LangGraph + pgvector + Ragas + Langfuse) | +500 |
+| 🎯 **AI-Augmented SWE Ready** | Cluster #4 portfolio raggiunto (5 mini-projects AI-built) | +500 |
+
+---
+
 ## Livelli
 
 | Lv | XP | Titolo |
@@ -230,4 +285,6 @@ python3 coach.py briefing|status|suggest|quiz|add-xp|streak|motivation
 
 ---
 
-*Aggiornato: 2026-04-17 (refactor self-paced — Week→Modulo, esami completion-based)*
+*Aggiornato: 2026-04-23 (v2.0 — aggiunti Achievement Trasversali Roadmap v6: SE M-T moduli (Polyglot, Observability Master, Cloud Native Deployer, IaC Practitioner, CI/CD Builder, Identity Federator, AI-Native Backend), FE achievement (AI-Native Frontend, Security Aware, TypeScript Craftsman, Testing Champion), Mini-Projects Portfolio achievement (Mini Builder, Portfolio Pro, Cluster Ready, Triple Threat), AI Skills (Python AI Bridge Built, AI-Augmented SWE Ready). Cross-reference: `context/cluster-taxonomy.md`, `context/mini-projects-index.md`)*
+
+*Versione precedente: 2026-04-17 (refactor self-paced — Week→Modulo, esami completion-based)*

@@ -35,6 +35,20 @@ Interview prep:               0%    ← solo quando inizi job search
 
 **Cadenza:** 1 system design ogni tanto (30-45 min), quando ha senso col progetto corrente.
 
+### System Design Topics by Cluster ⭐ NUOVO 2026-04-23
+
+> Mappato sui cluster di ruolo (`context/cluster-taxonomy.md`). Pratica i topic del cluster che vuoi targetizzare.
+
+| Cluster Target | System Design Topics Specifici |
+|----------------|-------------------------------|
+| **AI #2 / SE #1 (AI-Native Backend / GenAI)** | Multi-agent orchestration, RAG pipeline at scale, MCP server architecture, eval pipeline design, vector DB sharding, LLM cost optimization |
+| **AI #3 / FE #5 (Full-Stack AI / AI-Native FE)** | Streaming UI architecture (token-by-token), copilot UX patterns, prompt input systems, tool-use rendering, real-time chat with AI |
+| **SE #2 (Fintech Low-Latency)** | Order Matching Engine, Trading System (OMS/EMS), Market Data Pipeline, FIX gateway, sub-millisecond messaging |
+| **SE #3 (Infrastructure/SRE)** | CDN architecture, content delivery system, distributed caching, multi-region failover, observability platform design |
+| **SE #5 (Modern Full-Stack)** | E-commerce, social feed, ride-sharing, video streaming (i classici dei system design interview) |
+| **SE #6 (Consulting Polyglot)** | Multi-tenant SaaS platform, API gateway design, microservices vs monolith decision framework |
+| **FE #6 (Data-Heavy AI FE)** | Real-time analytics dashboard, drill-down visualization, large dataset rendering (millions of points), virtualization patterns |
+
 ### System Design Topics
 
 > **Percorso Minimo:** Priorita ai topic ⭐ collegati a progetti MINIMO.
@@ -225,6 +239,61 @@ Raccomandato per REST: URL versioning (piu esplicito)
 **Obiettivo:** Passare interview per ruoli AI Engineer / Senior remote €90k-130k+ EU
 **Trigger:** Completamento progetti MINIMO + portfolio curato + 6+ system designs fatti
 
+### Interview Prep by Cluster ⭐ NUOVO 2026-04-23
+
+> Mappato sui cluster di ruolo. Le domande/topic per interview cambiano molto per cluster.
+
+#### Cluster AI #4 — AI-Augmented SWE (bridge accessibile)
+- **Behavioral focus:** "Tell me about a project where you used AI to ship faster"
+- **Technical:** Claude Code workflow, prompt engineering pratico, business-AI bridge thinking
+- **Portfolio leverage:** mostra mini-projects AI-built con README "AI tools used"
+- **System design:** "Design a sales lead scoring system using AI"
+
+#### Cluster SE #1 / AI #2 — AI-Native Backend / GenAI
+- **Behavioral focus:** "Tell me about a non-deterministic system you built and tested"
+- **Technical:** LangGraph deep, MCP protocol, RAG implementation details, eval pipeline design, vector DB choice (pgvector vs Pinecone vs Qdrant), LLM cost trade-offs
+- **System design:** "Design a multi-agent customer support system" / "Design a RAG over enterprise docs"
+- **Portfolio leverage:** MCP server pubblico GitHub, RAG production-grade demo, eval metrics dashboard
+
+#### Cluster FE #5 — AI-Native FE (sweet spot Dan)
+- **Behavioral focus:** "Tell me about a UI you built for an AI-driven feature"
+- **Technical:** Vercel AI SDK deep, streaming UI patterns, chat UX (markdown, code blocks, copy), copilot UX (ghost text, autocomplete), tool-use rendering
+- **System design:** "Design a chat UI for a coding assistant" / "Design streaming UI for multi-step agent"
+- **Portfolio leverage:** mini Cursor demo, streaming chatbot UI, tool-use rendering live
+
+#### Cluster SE #2 — Fintech Low-Latency
+- **Behavioral focus:** "Tell me about a performance optimization with measurable impact"
+- **Technical:** concurrency primitives, lock-free data structures, GC tuning .NET, memory profiling, latency budgets
+- **System design:** "Design an order matching engine" / "Design a low-latency message bus"
+- **Portfolio leverage:** benchmark sub-millisecond, observability stack (OTel + Jaeger), DAPR demo
+
+#### Cluster SE #5 — Modern Full-Stack (bridge accessibile)
+- **Behavioral focus:** "Walk me through a feature you shipped end-to-end"
+- **Technical:** SQL optimization (N+1, indexes, query plans), API design REST, async patterns, event-driven basics, microservices when/why
+- **System design:** classici (chat, e-commerce cart, URL shortener)
+- **Portfolio leverage:** full-stack project deployed cloud, README pro, CI/CD pipeline
+
+#### Cluster FE #4 — Founding FE (premium)
+- **Behavioral focus:** "Tell me about a system/library you built that other devs used"
+- **Technical:** TypeScript craft (branded types, generics avanzati, well-modeled domain), library design (API ergonomics), Next.js RSC patterns, performance budgets
+- **System design:** "Design a component library for a design system" / "Design a real-time collaborative editor"
+- **Portfolio leverage:** library/SDK pubblicata su npm, well-typed code visible, greenfield architecture decisions docs
+
+### Salary Negotiation by Cluster
+
+> Range salariali aggiornati 2026-04-23 da analisi 28 annunci IT+UK. Vedi `context/cluster-taxonomy.md`.
+
+| Cluster | Salary Range UK | Salary Range IT | Negotiation Anchor |
+|---------|-----------------|-----------------|---------------------|
+| AI #4 (AI-Augmented SWE) | £70-100k | €40-65k | Mid-range (£85k UK / €55k IT) |
+| SE #5 (Modern Full-Stack) | £52-90k | €45-70k | High-mid (£75k UK / €60k IT) |
+| FE #3 (Scale-up React) | £60-75k | €50-65k | Top (£72k UK) |
+| SE #1 (AI-Native Backend) | £85k+ | €65-85k | High (£100k+ UK) |
+| FE #5 (AI-Native FE) | £90-110k | €70-90k | Top (£105k UK) |
+| AI #2 (AI Engineer GenAI) | £100-200k | €80-120k | Premium (£140-180k UK) |
+| FE #4 (Founding FE) | £90-130k+ | n/a | Premium (£120k+ UK) |
+| SE #2 (Fintech Low-Latency) | £80-130k | €70-100k | High (£110k UK) |
+
 ### Behavioral Questions (STAR Method)
 
 Prepara 5+ storie con questo formato:
@@ -326,4 +395,6 @@ Result: Qual e stato il risultato (numeri se possibile)
 
 ---
 
-*Ultimo aggiornamento: 2026-04-17 (self-paced refactor — rimossa timeline temporale)*
+*Ultimo aggiornamento: 2026-04-23 (v2.0 — Cluster-aware refactor: aggiunti System Design Topics by Cluster + Interview Prep by Cluster + Salary Negotiation by Cluster con range data-driven da 28 annunci IT+UK. Riferimento canonical: `context/cluster-taxonomy.md`)*
+
+*Versione precedente: 2026-04-17 (self-paced refactor — rimossa timeline temporale)*

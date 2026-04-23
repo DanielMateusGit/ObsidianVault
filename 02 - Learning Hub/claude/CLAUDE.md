@@ -82,6 +82,30 @@ Exams/                      ← Esami e verifiche
 
 ---
 
+## Job-Postings-Driven Enrichment Workflow ⭐
+
+**Practice attiva dal 2026-04-23.** Dan periodicamente fornisce batch di 3-5 job descriptions per gap analysis e refresh delle roadmap data-driven.
+
+**Workflow quando Dan incolla annunci:**
+1. Identifica la roadmap rilevante (AI / Senior Engineer / Senior Frontend / Architect Quest)
+2. Crea/aggiorna `context/job-postings-{topic}.md` con: meta + stack + soft skills + insight per ogni annuncio
+3. Dopo 3-5 annunci nel batch → pattern emergenti + tassonomia cluster
+4. Gap analysis vs roadmap corrente
+5. Proponi modifiche concrete (con conferma esplicita Dan)
+6. Cascade updates: `current-state.md` "Decisioni Attive" + `context/cluster-taxonomy.md` se nuovi cluster + memoria persistente
+
+**Tassonomia canonica cluster:** `context/cluster-taxonomy.md` (NON duplicare nelle roadmap — link)
+
+**File di tracking:**
+- `context/job-postings-analysis.md` — annunci AI Skills (8 annunci attuali)
+- `context/job-postings-senior.md` — annunci Senior Engineer (12 annunci)
+- `context/job-postings-frontend.md` — annunci Senior Frontend (6 annunci)
+- `context/job-postings-architect.md` — annunci Architect (skipped, decision log)
+
+**Filosofia stack secondario:** Java/Spring Boot, Node/TS BE = pickup on-the-job, NON imparare upfront. Focus su concetti universali. Solo Python AI Bridge è eccezione (è AI engineering hands-on, non "imparare Python").
+
+---
+
 ## Quick Start per Claude
 
 **Prima conversazione:**

@@ -20,6 +20,48 @@ Essere un **AI Engineer completo** capace di:
 
 ---
 
+## 🧭 4 Cluster di Ruolo Targetizzabili (data-driven da analisi mercato)
+
+> Derivato da analisi 8 annunci IT + UK (vedi `context/job-postings-analysis.md`). Il mercato AI **non ha 1 ruolo, ma 4 cluster distinti** con stack, accessibilità e salary diversi.
+
+| Cluster | Descrizione | Stack tipico | Accessibilità per Dan | Salary range |
+|---------|-------------|--------------|------------------------|--------------|
+| **#4 AI-Augmented SWE / Growth** | SWE backend che usa AI per amplificare business outcomes (sales, marketing, GTM, growth). NO stack AI vincolato. | Backend (qualsiasi) + Claude Code/Cursor mastery + business sense | **3-6 mesi** ⭐ Bridge ideale | IT €40-65k / UK £70-100k |
+| **#3 Full-Stack AI-First** | Engineer ibrido FE/BE/ML che ship features end-to-end con AI dentro. T-shaped. | React/TS + Python/FastAPI + AI methods (LLM, RecSys, RL) + cloud | **6-12 mesi** | UK £90-110k (~€105-128k) |
+| **#2 AI Engineer GenAI / LLMOps** | IC specializzato in GenAI production: agents, RAG, eval pipelines, MCP. | Python + LangChain/LangGraph + RAG + eval (Ragas/DeepEval) + agents + MCP + vector DB | **12-18 mesi** | IT €80-120k / UK £100-200k |
+| **#1 AI Tech Lead Enterprise** | Tech Lead broad che coordina team multidisciplinari, gestisce stack ampio (incluso ML classico, on-prem). | Python + Java + TF/PyTorch + MLOps stack + leadership + on-prem sizing | **18-30+ mesi** (long-game) | IT €70-100k+ |
+
+### Path strategico per Dan
+
+```
+[OGGI] SE solido + Claude Code cert
+    ↓
+[3-6 MESI] Cluster #4 candidabile
+    Required: Python AI Bridge Project + 3-5 mini-projects GitHub AI-built
+    ↓
+[6-12 MESI] Cluster #3 candidabile
+    Required: P2.5 completato + Flutter mobile + AI methods diversificati (RAG, agents)
+    ↓
+[12-18 MESI] Cluster #2 candidabile
+    Required: LangGraph deep + eval pipeline + multi-agent + MCP server pubblico
+    ↓
+[18-30 MESI] Cluster #1 candidabile (opzionale)
+    Required: anni accumulati + leadership track + ML classico (TF/PyTorch)
+```
+
+**Insight strategico:** non saltare i cluster #4 e #3 puntando dritto a #2. I cluster intermedi danno **revenue + esperienza reale** mentre maturi le skill per #2.
+
+### Portfolio richiesto per cluster
+
+| Cluster | Cosa devi avere su GitHub |
+|---------|---------------------------|
+| #4 | 5-10 mini-projects AI-augmented (1-2 settimane ciascuno), README chiari, link demo |
+| #3 | 1-2 progetti full-stack con AI feature core (RAG, agente, RecSys), deployati live |
+| #2 | MCP server pubblico + multi-agent demo + eval framework + RAG production-grade |
+| #1 | Tutto quanto sopra + contributi open-source AI + tech writing |
+
+---
+
 ## 🧠 **FILOSOFIA: Quando Usare Cosa**
 
 ```
@@ -425,6 +467,31 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
 - Tool registration con Claude
 - Testing con Claude Desktop
 
+**Modulo 5.5: Modern Agent Frameworks (LangChain / LangGraph)** 🎯 **MARKET STANDARD**
+
+> **Razionale:** 3/8 annunci analizzati richiedono LangChain/LangGraph espliciti. È lo **standard de facto** del mercato AI Engineer. Non basta sapere "costruirli da zero" — bisogna **anche** saper usare i framework production che il mercato adotta.
+
+**Goal:** Replicare le funzionalità del tuo MCP server / orchestratore in **LangChain + LangGraph** per padroneggiare i pattern industria.
+
+**Topics:**
+- **LangChain core:** chains, prompts, memory, output parsers, retrievers
+- **LangGraph:** state machines per agenti (graph state, nodes, edges, conditional routing)
+- **Tool calling con LangChain** vs implementazione manuale (cosa risparmi, cosa perdi)
+- **Memory abstractions:** ConversationBufferMemory, ConversationSummaryMemory, vector store memory
+- **Retrievers + RAG con LangChain** (confronto con la tua implementazione M3)
+- **LangSmith / Langfuse** per observability LangChain
+- **LiteLLM** per provider abstraction (alternativa al tuo `IAIProvider`)
+- **Confronto:** quando "build from scratch" (controllo, performance) vs "use framework" (velocità, ecosystem)
+
+**Hands-on:**
+- Reimplementa Calendar Agent (M5/M8) in LangGraph
+- Confronto side-by-side: codice .NET custom vs LangChain Python
+- Documenta trade-off in ADR
+
+**Deliverable:** Calendar Agent **dual-implementation** (.NET custom + Python LangGraph) + ADR comparativa ✅
+
+---
+
 **Modulo 6: Claude Reasoning + Guardrails + Decision Framework**
 - Complex queries via Claude:
   - "Quando sono libero per un caffè con Marco?"
@@ -480,6 +547,21 @@ Il service layer usa `IAIRouter` senza sapere quale provider verra usato. Cambio
   - Agent SDK exploration (Claude Agent SDK)
   - Agent communication & handoff patterns
   - When single-agent vs multi-agent (decision framework)
+- **🧩 AI ENGINEER GAP: Agentic Reasoning Patterns** (richiesti #8 fintech)
+  - **ReAct pattern** (Reasoning + Acting loop): thought → action → observation → thought...
+  - **Chain-of-Thought (CoT)** prompting structured: zero-shot CoT, few-shot CoT, self-consistency
+  - **Tree-of-Thought / Graph-of-Thought** (awareness)
+  - **Reflection pattern** (agent critica sue risposte e itera)
+  - **Plan-and-Execute** vs ReAct (trade-off latency vs accuracy)
+  - **Implementazione "from scratch"** vs framework (LangGraph) — capire i pattern, non solo usare API
+- **🧠 AI ENGINEER GAP: Memory Architectures per Agenti** (richiesti #8 fintech)
+  - **Short-term memory:** conversation buffer, sliding window, token-based truncation
+  - **Long-term memory:** vector store di interactions passate (semantic recall)
+  - **Episodic memory:** event-based recall (cosa l'agente ha fatto la settimana scorsa?)
+  - **Semantic memory:** facts permanenti su utente/dominio
+  - **Memory consolidation:** quando short-term diventa long-term (retention strategy)
+  - **Memory retrieval:** similarity search + recency + relevance ranking
+  - Implementazione: PostgreSQL + pgvector + Redis per cache layer
 
 **Modulo 9: AI Evals, Testing & Production** 🎯 (NUOVA)
 - **📊 AI ENGINEER GAP: Evaluation & Observability**
@@ -627,6 +709,131 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 
 ---
 
+## 🐍 PYTHON AI BRIDGE PROJECT (Parallelo a P2.5) ⭐ MARKET-CRITICAL
+
+> **Razionale (data-driven):** 8/8 annunci AI analizzati richiedono **Python**. Zero richiedono .NET per ruoli AI. Il P2.5 in .NET ti dà i **concetti AI** ma NON il **linguaggio del mercato**. Senza Python production-ready, sei tagliato fuori dalle candidature.
+
+### Obiettivo
+
+Replicare un **subset funzionale** di P2.5 in Python con stack production-grade del mercato, per:
+1. Avere portfolio GitHub Python AI-built da mostrare nelle candidature
+2. Padroneggiare lo stack che il mercato richiede davvero
+3. Confrontare hands-on .NET vs Python per scelte architetturali consapevoli
+
+### Stack (allineato al mercato)
+
+- **Backend:** Python + **FastAPI** + SQLAlchemy + Pydantic
+- **Agent framework:** **LangChain + LangGraph**
+- **LLM provider abstraction:** **LiteLLM** (multi-provider proxy)
+- **Vector DB:** pgvector (continuità con P2.5) + opzionale prova **Qdrant** o **Pinecone**
+- **Eval:** **Ragas** + **DeepEval** + custom metrics
+- **Observability:** **Langfuse**
+- **Deployment:** Docker + docker-compose + opzionale Kubernetes locale (kind/minikube)
+- **Cloud target:** AWS (Bedrock) o GCP (Vertex AI) — scegli uno per esposizione
+
+### Scope (subset minimo, NON full-replica P2.5)
+
+Non rifare tutto — replica solo i pattern chiave per validare le skill:
+
+1. **REST API FastAPI** con endpoint chat (`POST /chat`)
+2. **LangGraph state machine** con 3 nodi: intent_parse → tool_execute → response_compose
+3. **Tool calling** con 2-3 tool reali (es. calendar mock + weather API + calculator)
+4. **RAG endpoint** con pgvector + chunking + retrieval
+5. **Eval pipeline** con Ragas su dataset di 20-50 query test
+6. **Observability** Langfuse integrata
+7. **Dockerfile** + docker-compose con tutto deployabile in 1 comando
+
+### Moduli (snelli — leverage skills già acquisite in P2.5)
+
+| Modulo | Focus | Output |
+|--------|-------|--------|
+| **PB-M1** | Setup Python AI stack (FastAPI + LangChain + Poetry/uv) | Hello-world AI endpoint |
+| **PB-M2** | LangGraph agent + tool calling | Agent con 2-3 tool funzionanti |
+| **PB-M3** | RAG con pgvector + retrieval | RAG endpoint testabile |
+| **PB-M4** | Eval pipeline con Ragas + Langfuse | Dashboard metriche live |
+| **PB-M5** | Dockerizzazione + cloud AI managed | Deploy AWS Bedrock o GCP Vertex |
+
+### Deliverables
+
+- [ ] Repo GitHub pubblico con README chiaro (problem, stack, demo, eval results)
+- [ ] Dockerfile + docker-compose funzionante
+- [ ] Eval results con metriche Ragas (faithfulness, answer_relevancy, context_precision)
+- [ ] Confronto ADR: .NET P2.5 vs Python Bridge (pro/contro stack)
+- [ ] Demo video 2-3 minuti (per LinkedIn / job applications)
+
+### Quando
+
+- **Trigger:** completamento P2.5 Phase 2 (M5/M6) — hai concetti AI solidi in .NET, ora li traduci.
+- **Effort stimato:** 4-8 settimane part-time (skill già consolidate, è "porting + framework integration").
+
+### XP
+
+- Setup stack: +50
+- Ogni modulo PB-Mx completato: +75
+- Repo pubblicato GitHub con README professionale: +100
+- Demo deployata cloud (Bedrock/Vertex): +150
+- **Boss Battle:** dataset eval custom + metriche pubblicate: +300
+
+---
+
+## 📦 AI MINI-PROJECTS PORTFOLIO (GitHub) ⭐ MARKET-CRITICAL
+
+> **Razionale (data-driven):** Annuncio #5 Homey (UK) chiede esplicitamente in fase application: *"Apply with a link to your GitHub, a project you've built using AI"*. **È prerequisito di candidatura, non nice-to-have.** Cluster #4 (AI-Augmented SWE) richiede portfolio di mini-progetti AI-built business-oriented.
+
+### Obiettivo
+
+Costruire **5-10 micro-progetti standalone** (1-2 settimane ciascuno) AI-built (Cursor / Claude Code / Copilot), pubblicati su GitHub con README chiari, per dimostrare:
+- Capacità di shippare velocemente con AI tools
+- Mindset business-oriented (ogni progetto risolve un problema reale)
+- Mastery di AI coding tools moderni
+- Proattività + portfolio pubblico
+
+### Filosofia
+
+- **Small but shipped > big but unfinished.** Ogni mini-project deve essere **deployato + funzionante**, non solo codice su repo.
+- **Built with AI**, not just **about AI**. Il valore principale è dimostrare che usi Claude Code/Cursor da senior, non solo che conosci l'AI.
+- **README professionali**: problem, demo link/GIF, stack, AI tools usati, learnings.
+- **Business angle**: ogni progetto ha un "perché qualcuno lo userebbe".
+
+### Backlog idee (mix di AI-product + AI-augmented)
+
+| # | Idea | Categoria | Stack | Effort |
+|---|------|-----------|-------|--------|
+| 1 | **Lead scoring agent** — valuta qualità lead da CSV/CRM | Sales (cluster #4) | Python + LangGraph + LLM | 1 settimana |
+| 2 | **Document Q&A chatbot** — RAG su PDF caricati dall'utente | Productivity | Python + FastAPI + pgvector | 1-2 settimane |
+| 3 | **Email triage agent** — classifica + suggerisce risposta | Productivity | Python + LangChain + IMAP API | 1 settimana |
+| 4 | **Code review bot** — analizza diff GitHub e commenta | DevTools | Python + GitHub API + Claude | 1-2 settimane |
+| 5 | **Multi-agent research assistant** — planner + searcher + writer | Research (cluster #2) | LangGraph + web search API | 2 settimane |
+| 6 | **MCP server pubblico** — es. notes/tasks Obsidian server | MCP showcase | TypeScript + MCP SDK | 1 settimana |
+| 7 | **Ad copy A/B optimizer** — genera + valuta varianti | Marketing (cluster #4) | Python + LLM + eval framework | 1-2 settimane |
+| 8 | **Receipt categorizer** — OCR + classifica spese | Finance (cluster #4) | Python + Tesseract/Vision API + LLM | 1 settimana |
+| 9 | **Meeting summarizer agent** — transcript → action items | Productivity | Python + Whisper + Claude | 1-2 settimane |
+| 10 | **AI changelog generator** — git log → user-friendly release notes | DevTools | Python + GitHub API + LLM | 3-5 giorni |
+
+### Regole di esecuzione
+
+1. **Build with AI tools obbligatorio** (Claude Code primario, secondario Cursor/Copilot) — documenta nel README
+2. **Time-box stretto:** se sfori >2 settimane → tagli scope, non procrastini
+3. **Public GitHub** + README + demo live (Vercel/Railway/Fly.io free tier)
+4. **No perfezionismo:** "ship at 80%, iterate from feedback"
+5. **Business angle** chiaro nel README: chi è l'utente, che problema risolve, valore stimato
+
+### Quando
+
+- **Trigger:** in parallelo a Python AI Bridge Project (PB-M1 in poi)
+- **Cadenza target:** 1 mini-project ogni 2-3 settimane → 5 progetti in ~3 mesi, 10 in ~6 mesi
+- **Priorità:** prima 3-5 (per essere candidabile cluster #4), poi gli altri come differenziatori
+
+### XP
+
+- Mini-project completato + pubblicato GitHub con README pro: +150
+- Demo live deployata: +50
+- README con business angle + AI tools doc: +30
+- Mini-project che genera engagement (stars/issues/fork): +100
+- 5 mini-projects raggiunti (cluster #4 ready): **Boss Battle "Portfolio Built" +500**
+
+---
+
 ## AI INTEGRATION IN ARCHITECT PROJECTS
 
 > Dettagli completi in `roadmaps/architect-quest.md` per ogni progetto.
@@ -673,10 +880,16 @@ AI:   "Ho trovato 5 meeting domani. Questi sembrano spostabili:
 | Tech | Perche esplorarlo | Quando ha senso |
 |------|-------------------|-----------------|
 | **Semantic Kernel (.NET)** | Orchestrazione AI nativa per il tuo stack. Confronta con le tue astrazioni: fa di piu? di meno? | Dopo P2.5 Phase 2 |
-| **LangChain / LlamaIndex** | I due framework piu citati. Sapere cosa risolvono e dove sono overkill ti da conversazioni informate | Dopo P2.5 completato |
+| **LlamaIndex** | Framework citato in 1/8 annunci, focus RAG-first. Sapere cosa fa rispetto a LangChain | Dopo P2.5 + LangChain mastery |
+| **AutoGen / CrewAI** | Framework multi-agent alternativi a LangGraph. Confronto pattern orchestrazione | Dopo M8 multi-agent |
 | **Vercel AI SDK** | Se esplori frontend AI-powered (chat UI, streaming). Leggero e pragmatico | Quando tocchi React |
 | **Instructor / Pydantic AI** | Structured output enforcement. Potresti volerlo nel tuo AI Gateway | Quando il JSON mode di Ollama ti frustra |
-| **Weights & Biases / MLflow** | Experiment tracking per AI. Overkill ora, utile se vai deep in AI/ML | Dopo il percorso |
+| **Weights & Biases / MLflow** | Experiment tracking per AI/ML. Citato 1/8 annunci enterprise. Awareness utile | Dopo Python AI Bridge |
+| **vLLM / llama.cpp / ollama serve** | Inference optimization production. Critico se serving on-premises (#1 Open Reply) | Se vuoi targetare cluster #1 enterprise |
+| **Hugging Face Transformers** | Citato 1/8 annunci. Standard per fine-tuning + model loading | Quando approfondisci fine-tuning hands-on |
+| **Quantization (GGUF, AWQ, GPTQ)** | SLM optimization (#2 Reply). Riduce latenza/costi inference | Dopo Python AI Bridge |
+
+> **NOTA:** **LangChain + LangGraph** sono stati promossi da Tier 3 a Tier 1 (Modulo 5.5 dedicato) in base a frequenza nel mercato (3/8 annunci espliciti, standard de facto).
 
 ### XP System
 
@@ -834,6 +1047,72 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 - [ ] Scaling strategies
 - [ ] Privacy compliance (GDPR, HIPAA)
 
+### **Modern Agent Frameworks** 🆕 (Modulo 5.5)
+- [ ] **LangChain** core: chains, prompts, memory, output parsers, retrievers
+- [ ] **LangGraph** state machines (graph state, nodes, edges, conditional routing)
+- [ ] **LiteLLM** multi-provider proxy (alternativa custom abstraction)
+- [ ] **LangSmith / Langfuse** observability per LangChain
+- [ ] Decision framework: build-from-scratch vs use-framework (trade-off)
+- [ ] Dual-implementation experience (.NET custom + Python LangGraph)
+
+### **Agentic Reasoning Patterns** 🆕 (Modulo 8)
+- [ ] **ReAct pattern** (Reasoning + Acting loop)
+- [ ] **Chain-of-Thought (CoT)**: zero-shot, few-shot, self-consistency
+- [ ] **Tree-of-Thought / Graph-of-Thought** (awareness)
+- [ ] **Reflection pattern** (agent self-critique + iteration)
+- [ ] **Plan-and-Execute** vs ReAct (trade-off)
+- [ ] Implementare pattern from scratch (non solo usare framework)
+
+### **Memory Architectures per Agenti** 🆕 (Modulo 8)
+- [ ] Short-term: conversation buffer, sliding window, token truncation
+- [ ] Long-term: vector store di interactions (semantic recall)
+- [ ] Episodic memory (event-based recall temporale)
+- [ ] Semantic memory (facts permanenti)
+- [ ] Memory consolidation strategy (short → long)
+- [ ] Memory retrieval ranking (similarity + recency + relevance)
+
+### **Vector Databases — Beyond pgvector** 🆕
+- [ ] **pgvector** production patterns (HNSW vs IVFFlat, indexing) — già coperto M3
+- [ ] **Qdrant** awareness (quando dedicato batte embedded)
+- [ ] **Pinecone** awareness (managed serverless vector DB)
+- [ ] **Weaviate / Chroma** awareness
+- [ ] Decision framework: pgvector vs dedicated vector DB
+
+### **Cloud AI Managed Services** 🆕
+- [ ] **AWS Bedrock** awareness (modelli managed, pricing, deployment)
+- [ ] **GCP Vertex AI** awareness (model garden, fine-tuning managed)
+- [ ] **Azure OpenAI Service** awareness (compliance, regional deployment)
+- [ ] Hands-on con almeno 1 dei 3 (preferibilmente AWS o GCP per mercato job)
+
+### **MLOps Stack Awareness** 🆕
+- [ ] **MLflow** basics (model registry, experiment tracking)
+- [ ] **Airflow** basics (orchestrazione data + ML pipeline)
+- [ ] CI/CD per AI (test eval prima del deploy, model versioning)
+- [ ] Quando MLOps stack è overkill vs necessario
+
+### **Inference Optimization & SLM** 🆕
+- [ ] Quantization awareness (GGUF, AWQ, GPTQ) — riduce footprint modello
+- [ ] **vLLM** o **llama.cpp** per serving production locale
+- [ ] SLM (Small Language Models) — Phi, Mistral 7B, etc.
+- [ ] Trade-off latency vs accuracy vs costo
+- [ ] Quando SLM batte LLM cloud (high-volume, edge cases)
+
+### **Python AI Stack Production** 🆕 (Python AI Bridge Project)
+- [ ] **FastAPI** + Pydantic per API AI production
+- [ ] **SQLAlchemy** ORM + Alembic migrations
+- [ ] **Hugging Face Transformers** awareness (model loading, pipelines)
+- [ ] **uv / Poetry** dependency management Python moderno
+- [ ] **Docker + docker-compose** per AI stack deployment
+- [ ] Pytest + Ragas per AI testing
+
+### **AI Coding Tools Mastery** 🆕 (Cluster #4 prerequisito)
+- [ ] **Claude Code** mastery (cert già ottenuta ✅)
+- [ ] **Cursor** workflow (composer, agent mode, .cursorrules)
+- [ ] **GitHub Copilot** integration
+- [ ] **Windsurf** awareness (Codeium)
+- [ ] Workflow: pair programming con AI (when delegate, when guide)
+- [ ] Documentare AI tools usage nei README dei mini-projects
+
 ---
 
 ## Economic Value
@@ -846,4 +1125,4 @@ Alla fine del percorso AI (P2.5 + integrazioni in P3/P4):
 
 ---
 
-*Ultimo aggiornamento: 2026-04-17 (v3.0 - Self-paced refactor: rimossa timeline, Week→Modulo)*
+*Ultimo aggiornamento: 2026-04-23 (v3.1 — Job-postings-driven enrichment: aggiunti 4 cluster di ruolo, Modulo 5.5 LangChain/LangGraph, ReAct/CoT/Memory in M8, Python AI Bridge Project, AI Mini-Projects Portfolio, expanded checklist con vector DB managed, cloud AI managed, MLOps, inference optimization, Python AI stack, AI coding tools)*
