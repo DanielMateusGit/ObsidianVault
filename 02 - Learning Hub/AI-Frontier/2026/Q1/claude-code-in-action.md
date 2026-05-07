@@ -71,7 +71,7 @@ Questo corso è parte del **Q1 2026 AI Frontier**, ma è un'attività di **appre
 
 ## 🎮 Gamification
 
-**Tracker completo:** `claude/context/course-claude-code.md`
+**Tracker completo:** `Certifications/claude-code-in-action/tracker.md`
 
 ### XP Totali Stimati
 | Componente | XP |

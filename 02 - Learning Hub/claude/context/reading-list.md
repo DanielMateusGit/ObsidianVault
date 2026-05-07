@@ -10,36 +10,36 @@ updated: 2026-03-28
 
 ---
 
-## ✅ MESE 1 COMPLETATO (Feb 2026)
+## ✅ AQ P1 Moduli 1-4 — COMPLETATI
 
-> 11/11 risorse obbligatorie completate. Esame Mese 1: 25/30 (Superato con merito!)
+> 11/11 risorse obbligatorie completate. Esame tematico Clean Arch + Domain + Infrastructure: 25/30 (Superato con merito).
 
-## 📖 MESE 2 IN CORSO (Mar 2026) — W5 Completata
+## 📖 AQ P1 Modulo 5 — COMPLETATO (Sedimentazione in corso)
 
-### Letture W5: Message Queue + Event-Driven (Sedimentazione weekend 28-30 Mar)
+### Letture M5: Message Queue + Event-Driven (Sedimentazione)
 
 **Obbligatorie:**
 
 | # | Risorsa | Tipo | Tempo | Status | Progetto |
 |---|---------|------|-------|--------|----------|
-| 1 | RabbitMQ Tutorial 1: Hello World (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 W5 |
-| 2 | RabbitMQ Tutorial 2: Work Queues (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 W5 |
-| 3 | RabbitMQ Tutorial 3: Publish/Subscribe (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 W5 |
-| 4 | Background tasks with hosted services in ASP.NET Core — Microsoft Learn | Docs | ~30 min | ⬜ Da leggere | AQ P1 W5 |
-| 5 | Enterprise Integration Patterns: Message Channel + Dead Letter Channel — enterpriseintegrationpatterns.com | Libro/Web | ~30 min | ⬜ Da leggere | AQ P1 W5 |
+| 1 | RabbitMQ Tutorial 1: Hello World (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 M5 |
+| 2 | RabbitMQ Tutorial 2: Work Queues (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 M5 |
+| 3 | RabbitMQ Tutorial 3: Publish/Subscribe (.NET) — rabbitmq.com/tutorials | Tutorial | ~20 min | ⬜ Da leggere | AQ P1 M5 |
+| 4 | Background tasks with hosted services in ASP.NET Core — Microsoft Learn | Docs | ~30 min | ⬜ Da leggere | AQ P1 M5 |
+| 5 | Enterprise Integration Patterns: Message Channel + Dead Letter Channel — enterpriseintegrationpatterns.com | Libro/Web | ~30 min | ⬜ Da leggere | AQ P1 M5 |
 
 **Consigliate:**
 
 | # | Risorsa | Tipo | Tempo | Status | Progetto |
 |---|---------|------|-------|--------|----------|
-| 6 | Azure Service Bus messaging overview — Microsoft Learn | Docs | ~20 min | ⬜ Consigliata | AQ P1 W5 |
-| 7 | "The Outbox Pattern" — kamilgrzybek.com | Articolo | ~20 min | ⬜ Consigliata | AQ P1 W5 |
+| 6 | Azure Service Bus messaging overview — Microsoft Learn | Docs | ~20 min | ⬜ Consigliata | AQ P1 M5 |
+| 7 | "The Outbox Pattern" — kamilgrzybek.com | Articolo | ~20 min | ⬜ Consigliata | AQ P1 M5 |
 
 **Opzionali:**
 
 | # | Risorsa | Tipo | Tempo | Status | Progetto |
 |---|---------|------|-------|--------|----------|
-| 8 | MassTransit Documentation — Getting Started | Docs | ~30 min | ⬜ Opzionale | AQ P1 W5 |
+| 8 | MassTransit Documentation — Getting Started | Docs | ~30 min | ⬜ Opzionale | AQ P1 M5 |
 
 ---
 
@@ -52,13 +52,13 @@ updated: 2026-03-28
 
 ---
 
-## 🎯 CHECKLIST PRE-ESAME (Fine Febbraio 2026)
+## 🎯 CHECKLIST PRE-ESAME AQ P1 M1-4 (storico — completato 2026-02)
 
-> **Tutte queste risorse DEVONO essere completate PRIMA dell'esame di fine mese.**
+> **Storico:** queste risorse erano prerequisiti per l'esame tematico Clean Arch + Domain + Infrastructure (25/30, 2026-02).
 >
-> ✅ Lista RIVISTA 2026-02-20: Aggiunta copertura Week 4, video al posto di articoli dove più efficaci
+> ✅ Lista RIVISTA 2026-02-20: Aggiunta copertura Modulo 4, video al posto di articoli dove più efficaci
 
-### 🔴 OBBLIGATORI - Copertura Completa Week 1-4
+### 🔴 OBBLIGATORI - Copertura Completa Moduli 1-4
 
 | # | Argomento | Risorsa | Tipo | Tempo | XP | Status |
 |---|-----------|---------|------|-------|-----|--------|
@@ -89,13 +89,13 @@ updated: 2026-03-28
 - **Completate:** 11/11 obbligatorie ✅✅✅
 - **Rimanenti:** 0 - TUTTE COMPLETATE!
 - **XP Disponibili:** 75 XP (consigliate opzionali)
-- **PRONTO PER ESAME MESE 1!**
+- **Esame tematico passato: 25/30 ✅**
 
 ---
 
-## 📋 Week 3-4 Resources (CONSOLIDATE IN CHECKLIST SOPRA)
+## 📋 Moduli 3-4 Resources (CONSOLIDATE IN CHECKLIST SOPRA)
 
-> ⚠️ **NOTA:** Tutte le risorse Week 3-4 sono state consolidate nella CHECKLIST PRE-ESAME sopra.
+> ⚠️ **NOTA:** Tutte le risorse Moduli 3-4 sono state consolidate nella CHECKLIST PRE-ESAME sopra.
 > Video di Milan Jovanovic sostituiscono articoli meno pratici dove appropriato.
 
 ### Articoli Opzionali (Non in checklist)
@@ -107,7 +107,7 @@ updated: 2026-03-28
 
 ---
 
-## 📋 Da Leggere - Week 2 (Domain Model)
+## 📋 Da Leggere - Modulo 2 (Domain Model)
 
 ### Libri (Obbligatori)
 | Libro | Capitoli | XP | Status |
@@ -136,7 +136,7 @@ updated: 2026-03-28
 
 ---
 
-## 📋 Da Leggere - Week 1 (Completata)
+## 📋 Da Leggere - Modulo 1 (Completato)
 
 ### Articoli
 | Articolo | Link | XP | Status |
@@ -146,7 +146,7 @@ updated: 2026-03-28
 
 ---
 
-## 🎯 Sedimentazione W01 (Backlog)
+## 🎯 Sedimentazione Modulo 1 (Backlog)
 
 | Libro | Capitoli | XP | Priorità | Status |
 |-------|----------|-----|----------|--------|
@@ -154,9 +154,9 @@ updated: 2026-03-28
 
 ---
 
-## 📋 AQ P1 W5+ - Message Queue & Patterns
+## 📋 AQ P1 M5+ - Message Queue & Patterns
 
-> Risorse per Week 5 (messaging, RabbitMQ, Outbox Pattern) e successive.
+> Risorse per Modulo 5 (messaging, RabbitMQ, Outbox Pattern) e successivi.
 
 ### 🔴 OBBLIGATORI
 
@@ -183,9 +183,9 @@ updated: 2026-03-28
 
 ---
 
-## 🤖 Futuro: AI Engineering (Mesi 5-6+)
+## 🤖 Futuro: AI Engineering
 
-> Da leggere quando arrivi a P2.5 (AI Calendar System)
+> Da leggere quando arrivi a P2.5 (AI Calendar System) — completion-based, no scadenza
 
 | # | Libro | Autore | Focus | XP |
 |---|-------|--------|-------|-----|
@@ -234,4 +234,5 @@ updated: 2026-03-28
 
 ---
 
-*Aggiornato: 2026-03-31 (aggiunte risorse Sedimentazione W5: Reliability Guide, Kamil Grzybek, CodeOpinion, AMQP Concepts)*
+*Aggiornato: 2026-05-05 (refactor — rinominato MESE/Week→Modulo per coerenza self-paced, rimosso "Mesi 5-6+" da AI Engineering)*
+*Versione precedente: 2026-03-31 (aggiunte risorse Sedimentazione M5: Reliability Guide, Kamil Grzybek, CodeOpinion, AMQP Concepts)*

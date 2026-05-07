@@ -13,6 +13,7 @@
 - **Documentazione:** C4, ADR, OpenAPI specs
 - **Skill rare:** MCP Server pubblicato, AI-native architecture, provider-agnostic design, eval pipelines (Ragas/DeepEval)
 - **Cluster-positioning:** candidabile per multipli cluster (vedi Cluster Positioning Matrix sotto)
+- **English UK: C1+** ⭐ — **prerequisito implicito per tutti i cluster UK** (£52-200k). Track parallelo in `English/` (B2.3 → C1+, vedi `English/CLAUDE.md`). Senza C1+, cluster UK premium (£85k+) non sono accessibili indipendentemente dalle skill tech.
 
 ---
 
@@ -253,6 +254,65 @@ Con AI skills: +15-25% a ogni tier.
 
 ---
 
-*Ultimo aggiornamento: 2026-04-23 (v2.0 — Cluster-aware refactor: aggiunta Cluster Positioning Matrix con 16 cluster mappati da analisi 28 annunci IT+UK, aggiornate Figure Professionali Target con cluster-mapping, aggiunta categoria emergente "AI-Augmented SWE/Growth Engineer". Riferimento canonical: `context/cluster-taxonomy.md`)*
+---
+
+## 🏆 Certification Roadmap (deciso 2026-05-07)
+
+> Strategia cert-based per deployment/cloud topics. Razionale: curriculum strutturato + CV value + forced cadence + external validation. Sostituisce hands-on FT items per topic deployment (più efficiente).
+
+### Tier 1 — Must-have (Year 1, 2026-2027)
+
+| Cert | Code | Provider | Costo | Prep stimata | Closes gap |
+|------|------|----------|-------|--------------|------------|
+| **Azure Developer Associate** | **AZ-204** | Microsoft | $165 USD | 2-3 mesi | App Service ✅, Functions, Container Apps, AKS basics, Cosmos, Service Bus, Key Vault, **.NET Aspire** ✅ |
+| **HashiCorp Terraform Associate** | **003** | HashiCorp | $70 USD | 3-4 settimane | IaC mastery, providers, modules, state mgmt, multi-cloud |
+
+**AZ-204 = priorità assoluta.** Single most valuable cert per profilo Dan (UK .NET Senior/AI Engineer). Quasi ogni job listing UK lo premia.
+
+### Tier 2 — Next-level (Year 2, 2027-2028)
+
+| Cert | Code | Closes gap | Pick if... |
+|------|------|------------|------------|
+| **Azure DevOps Engineer Expert** | **AZ-400** | CI/CD complete, GitHub Actions/Azure Pipelines, monitoring, release mgmt, rollback strategies, blue/green | Direzione DevOps/release engineering |
+| **CKAD (Kubernetes App Developer)** | CNCF | K8s deep-dive, hands-on lab exam (4h, 100% practical) | Direzione orchestration/SRE |
+
+> **Pick ONE Tier 2** based on direction. Both highly respected.
+
+### Tier 3 — Multi-cloud breadth (Year 3, 2028+)
+
+| Cert | Why |
+|------|-----|
+| **AWS Developer Associate (DVA-C02)** | Aggiunge AWS Lambda, ECS, DynamoDB, S3 al CV. UK fintech spesso AWS. |
+| **GCP Professional Cloud Developer** | Cloud Run, Pub/Sub, Firestore. GCP minoritario UK ma in crescita. |
+
+### Cert tracking
+
+- Ogni cert ha sotto-cartella in `Certifications/<cert-slug>/` con `tracker.md`
+- Quiz prefix dedicato in `claude/context/quiz-tracker.md` (es. AZ204-NN, TFA-NN, AZ400-NN, CKAD-NN, AWS-NN)
+- Pre-create skeleton al `/end` in cui Dan decide: ✅ AZ-204 + Terraform Associate skeleton creati 2026-05-07.
+
+### Topics → Cert mapping
+
+| Gap deployment | Closed by |
+|----------------|-----------|
+| Azure App Service hands-on | AZ-204 ⭐ |
+| .NET Aspire | AZ-204 (recently added to exam objectives) |
+| Cloud Run | GCP Pro Cloud Developer (Tier 3) |
+| AWS ECS/Fargate | AWS DVA-C02 (Tier 3) |
+| Release engineering / rollback / blue-green | AZ-400 |
+| Bicep | AZ-204 + AZ-400 |
+| Multi-region failover | AZ-400 + CKAD |
+| Helm charts deep | CKAD |
+| GitLab CI / Azure DevOps Pipelines | AZ-400 |
+
+> **Note:** roadmap items hands-on (FT-C-Concepts in fast-track + AQ Aspire mention) restano come **light overview before cert prep**, non sostituti del cert.
+
+---
+
+*Ultimo aggiornamento: 2026-05-07 (Certification Roadmap aggiunta — Tier 1 AZ-204 + Terraform Associate, Tier 2 AZ-400/CKAD, Tier 3 AWS+GCP. Decisione strategica deployment: cert-based invece di hands-on FT items)*
+
+*Versione precedente: 2026-05-05 (post English track — aggiunta menzione English C1+ come prerequisito implicito mercato UK in "Profilo a Fine Percorso Completo")*
+
+*Versione precedente: 2026-04-23 (v2.0 — Cluster-aware refactor: aggiunta Cluster Positioning Matrix con 16 cluster mappati da analisi 28 annunci IT+UK, aggiornate Figure Professionali Target con cluster-mapping, aggiunta categoria emergente "AI-Augmented SWE/Growth Engineer". Riferimento canonical: `context/cluster-taxonomy.md`)*
 
 *Versione precedente: 2026-04-17 (refactor self-paced — rimossa timeline, milestone completion-based)*

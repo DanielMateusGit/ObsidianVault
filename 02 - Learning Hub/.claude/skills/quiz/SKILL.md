@@ -16,11 +16,11 @@ Se Dan ha specificato un numero (es. `/quiz 5`), proponi quel numero di quiz. Al
 
 Leggi `claude/context/quiz-tracker.md` e seleziona i quiz con questa priorità:
 
-1. **Quiz in scadenza** - data "Prossima review" <= oggi
-2. **Quiz Box 1 non risposti** - status "Non risposto"
-3. **Quiz parziali** - status "Parziale" (da recuperare)
-4. **Quiz ultime 2 settimane** - concetti recenti per consolidare
-5. **Mix argomenti diversi** - non tutti dallo stesso topic
+1. **Quiz Box 2+ in coda** — contatore "Sessioni attesa" ≤ 0 (priorità a quiz più "vecchi" nella coda)
+2. **Quiz Box 1 non risposti** — minimo 10 per sessione
+3. **Quiz parziali** — status "Parziale" (da recuperare)
+4. **Almeno 1 quiz CLCODE/CL101** — rotazione certificazioni
+5. **Mix argomenti diversi** — non tutti dallo stesso topic
 
 ### 2. Proponi le domande
 
@@ -48,11 +48,13 @@ Se sbaglia: indica la nota da rileggere (path esatto in Knowledge/ o Notes/), NO
 ### 4. Aggiorna il quiz tracker
 
 Per ogni quiz valutato, aggiorna in `claude/context/quiz-tracker.md`:
-- **Box**: nuovo box secondo le regole Leitner
+- **Box**: nuovo box secondo le regole Leitner (✅ → box+1, ❌ → Box 1, 🟡 → resta nel box)
 - **Ultima risposta**: data di oggi
-- **Prossima review**: calcolata dal nuovo box (Box1=ora, Box2=+3gg, Box3=+7gg, Box4=+14gg, Box5=+30gg)
-- **Status**: ✅ Corretto / 🟡 Parziale / ⬜ Non risposto
+- **Sessioni attesa**: contatore reset secondo nuovo box (Box 1 = "0 (in coda)", Box 2 = 2, Box 3 = 4, Box 4 = 8, Box 5 = 16). Per ❌ e 🟡 resta "0 (in coda)".
+- **Status**: ✅ Corretto / 🟡 Parziale / ❌ Sbagliato / ⬜ Non risposto
 - **Storico Challenge**: aggiungi riga nella tabella in fondo
+
+A fine sessione, **decrementa di 1** il contatore "Sessioni attesa" di TUTTI gli altri quiz Box 2+ con contatore > 0 (i quiz appena valutati hanno il contatore già reset).
 
 Aggiorna anche il contatore "Risposte corrette/parziali/sbagliate" nelle statistiche.
 
@@ -69,7 +71,8 @@ RIEPILOGO SPACED REPETITION
 XP guadagnati: +[totale]
 [Bonus streak se 5+ corrette consecutive: +25]
 
-Prossimi quiz in scadenza: [data] ([N] quiz)
+Quiz Box 2+ ancora in coda: [N]
+Prossimo quiz Box 2+ disponibile tra [N] sessioni
 ```
 
 ## Regole

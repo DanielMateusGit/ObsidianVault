@@ -115,6 +115,7 @@ Il DbContext può implementare `IUnitOfWork` direttamente — ha già `SaveChang
 
 ## Collegamenti
 
+- [[databases/ef-core-configurations-and-migrations|EF Core Configurations & Migrations]] — come le entity vengono mappate alle tabelle e come le migration sono generate
 - [[patterns/repository-pattern|Repository Pattern]] — il repository usa il DbContext internamente
 - [[patterns/unit-of-work-pattern|Unit of Work]] — SaveChangesAsync è il pattern UoW
 - [[architecture/clean-architecture-principles|Clean Architecture]] — dove vive ogni pezzo

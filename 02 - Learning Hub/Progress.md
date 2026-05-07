@@ -1,9 +1,9 @@
 ---
 tags: [learning, progress, gamification]
-xp: 6702
-level: 7
-title: "System Designer"
-streak: 2
+xp: 7420
+level: 8
+title: "Cloud Engineer"
+streak: 4
 longest_streak: 13
 architect_quest_module: "P1-M5"
 senior_engineer_module: "P1-M2"
@@ -118,6 +118,10 @@ dv.paragraph("**Modulo corrente:** " + dv.current().senior_engineer_module);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-05-07 | 🎉 LEVEL UP → Cloud Engineer (Lv.8) | - | - | 7420 |
+| 2026-05-07 | SE M2 FASE 1: Testcontainers + first integration test green + 1 Knowledge note (EF Core Configs & Migrations) + cert pipeline AZ-204/Terraform + 9 English grammar cards + 2 memory feedback | Misto | +268 | 7420 |
+| 2026-04-24 | Fast Track roadmap v1.0 (29 topic cross-roadmap) + /refactor (0 CRITICAL, 3 fix applicati) + sync bidirezionale documentata | Strategica | +450 | 7152 |
+| 2026-04-23 | Job-postings batch 1 (28 annunci) + 3 roadmap arricchite v6.1 + 16 cluster + cluster-taxonomy + mini-projects-index | Strategica | +700 | 6702 |
 | 2026-04-10 | Quiz (5: 2✅ 2🟡 1❌) + TaskEndpoints Minimal API con MapGroup | Senior P1-W2 | +122 | 6002 |
 | 2026-04-04 | SE W2: Migration + DateTimeProvider + refactoring entity pura (valore, non servizio) | Senior P1-W2 | +140 | 5880 |
 | 2026-04-01 | SE W2: DbContext + 3 Configurations + 3 Repositories + fix handler signatures | Senior P1-W2 | +140 | 5740 |

@@ -4,7 +4,18 @@
 
 ---
 
-## File di Contesto Core
+## Roadmap Canonical (in `claude/roadmaps/`)
+
+| File | Contenuto |
+|------|-----------|
+| `roadmaps/fast-track.md` ⭐ | **Conduttore cross-roadmap** — 29 topic max CV-ROI per sessioni corte. Sync bidirezionale alla sorgente. |
+| `roadmaps/architect-quest.md` | AQ 5 progetti + AI track |
+| `roadmaps/senior-engineer.md` | SE 6 progetti + 6 cluster + 6 moduli trasversali |
+| `roadmaps/ai-skills.md` | AI Skills 4 cluster + Python AI Bridge + 10 mini-projects |
+| `roadmaps/senior-frontend.md` | FE 5 progetti + 6 cluster |
+| `roadmaps/career-boost.md` | System Design + Communication + Interview Prep by cluster |
+
+## File di Contesto Core (in `claude/context/`)
 
 | File | Contenuto |
 |------|-----------|
@@ -13,11 +24,12 @@
 | `tech-stack.md` | Stack tecnologico completo (.NET primario + AI stack + DevOps) |
 | `learning-style.md` | Come Dan impara, metodo socratico |
 | `gamification.md` | Sistema XP, livelli, achievement, streak (incluso Roadmap v6 achievement) |
-| `quiz-tracker.md` | Spaced repetition (Leitner boxes) |
+| `quiz-tracker.md` | Spaced repetition (Leitner boxes, sessioni-based) |
 | `reading-list.md` | Letture tracciate |
 | `idea-backlog.md` | Idee parcheggiate |
 | `monetization-potential.md` | Potenziale monetizzazione progetti |
-| `course-claude-code.md` | Tracker corso Claude Code |
+
+> **Tracker certificazioni:** spostati in `Certifications/[cert-slug]/tracker.md` dal 2026-04-28. Vedi `Certifications/README.md`.
 
 ## Job Market Analysis (NUOVO 2026-04-23)
 
@@ -35,5 +47,6 @@
 
 ---
 
-*Refactored: 2026-04-23 — aggiunto sezione Job Market Analysis + Cluster Taxonomy + Mini-Projects Index come canonical sources.*
-*Versione precedente: 2026-03-24 — Rimossa duplicazione, ora e solo indice.*
+*Refactored: 2026-05-05 — aggiunta sezione Roadmap Canonical (incluso fast-track.md mancante).*
+*Versione precedente: 2026-04-23 — aggiunto Job Market Analysis + Cluster Taxonomy + Mini-Projects Index come canonical sources.*
+*Versione iniziale: 2026-03-24 — Rimossa duplicazione, ora e solo indice.*

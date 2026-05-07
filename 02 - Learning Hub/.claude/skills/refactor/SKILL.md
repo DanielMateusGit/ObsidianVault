@@ -29,6 +29,7 @@ claude/career-strategy.md     → Strategia carriera
 
 ### Roadmaps
 ```
+claude/roadmaps/fast-track.md         (conduttore cross-roadmap, sync bidirezionale)
 claude/roadmaps/senior-engineer.md
 claude/roadmaps/architect-quest.md
 claude/roadmaps/ai-skills.md
@@ -38,14 +39,20 @@ claude/roadmaps/senior-frontend.md
 
 ### Context
 ```
+claude/context/cluster-taxonomy.md         ← canonical (4+6+6 cluster ruolo)
+claude/context/mini-projects-index.md      ← canonical (30 mini-projects + sinergie)
 claude/context/gamification.md
-claude/context/quiz-tracker.md     (almeno prime 200 righe + statistiche)
+claude/context/quiz-tracker.md             (almeno prime 200 righe + statistiche)
 claude/context/tech-stack.md
 claude/context/learning-style.md
 claude/context/reading-list.md
 claude/context/idea-backlog.md
 claude/context/monetization-potential.md
-claude/context/course-claude-code.md (se esiste)
+claude/context/job-postings-analysis.md    (8 annunci AI)
+claude/context/job-postings-senior.md      (12 annunci SE)
+claude/context/job-postings-frontend.md    (6 annunci FE)
+claude/context/job-postings-architect.md   (skipped — decision log)
+Certifications/*/tracker.md                (tutti i tracker cert attivi)
 ```
 
 ### Supporto
@@ -56,9 +63,17 @@ claude/future.md
 claude/context/files.md
 ```
 
+### English Track ⭐ (percorso paritetico)
+```
+English/CLAUDE.md             ← canonical (regole agente quiz + Box 1-6 + livelli)
+English/stats.md              ← EXP, livello, streak journaling, deck attivi
+English/decks/**/*.md         ← deck card (vocab/pronunciation/journaling)
+English/journal/*.md          ← entry diario English (campionatura)
+```
+
 ### Skills
 ```
-.claude/skills/*/SKILL.md     → Tutte le skill attive
+.claude/skills/*/SKILL.md     → Tutte le skill attive (init, quiz, end, nota, ask, exam, english, journal, context, refactor)
 ```
 
 ---
@@ -73,13 +88,16 @@ Verifica che le stesse informazioni siano consistenti tra file diversi:
 
 | Dato | Source of Truth | File da verificare |
 |------|-----------------|-------------------|
-| XP, Livello, Streak | `current-state.md` | QUICK-REFERENCE, gamification, Progress.md |
-| Percorso attivo, Week | `current-state.md` | Roadmap corrispondente |
+| XP, Livello, Streak (tech) | `current-state.md` | QUICK-REFERENCE, gamification, Progress.md |
+| Percorso attivo, Modulo | `current-state.md` | Roadmap corrispondente |
 | Obiettivo primario | `career-strategy.md` | profile.md, WHY.md, CLAUDE.md |
 | Skill disponibili | `.claude/skills/` (filesystem) | CLAUDE.md (tabella slash commands) |
 | Progetti e numerazione | Roadmaps | monetization-potential, idea-backlog, career-strategy |
 | Tech stack | `tech-stack.md` | files.md (se esiste) |
-| Quiz stats | `quiz-tracker.md` (conteggio reale) | Statistiche dichiarate in testa al file |
+| Quiz stats (tech) | `quiz-tracker.md` (conteggio reale) | Statistiche dichiarate in testa al file |
+| English level, EXP, deck | `English/stats.md` (frontmatter + body) | English/CLAUDE.md tabella deck attivi, current-state |
+| English card stats | `English/decks/**/*.md` (count + box) | `English/stats.md` distribuzione box |
+| Box 1-6 intervalli | `English/CLAUDE.md` (canonical) | claude/CLAUDE.md sezione English (deve essere riassunto, non copia) |
 
 **Red flags:**
 - Numeri diversi per lo stesso dato in file diversi

@@ -12,12 +12,14 @@
 ├── settings.json          ← Hooks config
 ├── settings.local.json    ← Permessi
 ├── skills/
-│   ├── init/SKILL.md      ← /init - startup sessione
-│   ├── quiz/SKILL.md      ← /quiz - spaced repetition
+│   ├── init/SKILL.md      ← /init - startup sessione (incluso status English)
+│   ├── quiz/SKILL.md      ← /quiz - spaced repetition tech
 │   ├── end/SKILL.md       ← /end - chiusura sessione
 │   ├── nota/SKILL.md      ← /nota - creazione nota atomica
 │   ├── ask/SKILL.md       ← /ask - domanda libera
 │   ├── exam/SKILL.md      ← /exam - esame on-demand
+│   ├── english/SKILL.md   ← /english - flashcards English UK Box 1-6
+│   ├── journal/SKILL.md   ← /journal - journaling parametrizzato (en/personal/<tag>)
 │   ├── context/SKILL.md   ← /context - aggiorna file contesto
 │   └── refactor/SKILL.md  ← /refactor - analisi e miglioramento progetto
 └── hooks/
@@ -31,6 +33,7 @@ claude/                     ← CONTESTO E STATO
 ├── WHY.md                 ← Motivazioni personali
 ├── career-strategy.md     ← Strategia carriera + certificazioni + post-percorso
 ├── roadmaps/
+│   ├── fast-track.md      ← ⭐ Roadmap conduttore cross-roadmap (29 topic max CV-ROI, slice veloci)
 │   ├── architect-quest.md ← Roadmap Architect Quest (5 progetti + AI track)
 │   ├── senior-engineer.md ← Roadmap Senior Engineer (6 progetti)
 │   ├── ai-skills.md       ← Roadmap AI Skills (P2.5 + integrazioni)
@@ -53,7 +56,25 @@ Knowledge/                  ← KNOWLEDGE BASE (note atomiche di Dan)
 ├── design/
 └── patterns/
 
-Exams/                      ← Esami e verifiche
+Certifications/             ← TRACKER CERTIFICAZIONI (1 sotto-cartella per cert)
+├── README.md              ← Index pipeline + naming convention quiz
+├── claude-code-in-action/ ← ✅ Completata 2026-03-13 (8/8 Perfect Score)
+└── claude-code-101/       ← 🚧 In corso (iniziata 2026-04-28)
+
+Exams/                      ← Esami e verifiche interne (non certificazioni)
+
+English/                    ← 🇬🇧 ENGLISH UK TRACK (formazione professionale)
+├── CLAUDE.md              ← Regole agente quiz + schema spaced repetition Box 1-6
+├── stats.md               ← EXP, livello (B2.3 → C1+), streak journaling
+├── decks/
+│   ├── vocab/             ← Vocabolario da libri/podcast (es. thursday-murder-club.md)
+│   ├── pronunciation/     ← Parole con guida pronuncia IPA + italianizzazione
+│   └── journaling/        ← Card generate da journal entries
+└── journal/               ← Entry diario English (fonte per /journal en)
+
+journal/                    ← Journaling personale e custom tag
+├── personal/              ← /journal personal (privato, NO flashcards)
+└── <tag>/                 ← /journal <tag-libero> (es. travel/, work/)
 ```
 
 ---
@@ -62,11 +83,13 @@ Exams/                      ← Esami e verifiche
 
 | Comando | Cosa fa |
 |---------|---------|
-| `/init` | Startup sessione: legge contesto, mostra stato, propone spaced repetition |
-| `/quiz [N]` | Sessione spaced repetition: seleziona quiz, valuta risposte, aggiorna tracker |
+| `/init` | Startup sessione: legge contesto, mostra stato (incluso English), propone spaced repetition |
+| `/quiz [N]` | Sessione spaced repetition tech: seleziona quiz, valuta risposte, aggiorna tracker |
 | `/nota <categoria> <titolo>` | Crea nota atomica in Knowledge/ con template completo |
 | `/ask <domanda>` | Domanda libera: teorica, sul corso, dove trovo, generale. Cerca prima nelle risorse esistenti |
 | `/exam [N]` | Esame on-demand: mostra tabella esami disponibili, genera esame /30, corregge e salva |
+| `/english [args]` | English UK flashcards: quiz spaced repetition (Box 1-6), add card, stats. Vedi `English/CLAUDE.md` |
+| `/journal [tag]` | Journaling parametrizzato: `en` (English+flashcards), `personal`, `<tag-libero>` |
 | `/end` | Chiusura sessione: aggiorna file, crea session log, git push, riepilogo |
 | `/context` | Aggiorna/correggi file di contesto (current-state, quiz-tracker, roadmaps, ecc.) |
 | `/refactor` | Analisi profonda del progetto: coerenza, completezza, duplicazione, stale content |
@@ -103,6 +126,50 @@ Exams/                      ← Esami e verifiche
 - `context/job-postings-architect.md` — annunci Architect (skipped, decision log)
 
 **Filosofia stack secondario:** Java/Spring Boot, Node/TS BE = pickup on-the-job, NON imparare upfront. Focus su concetti universali. Solo Python AI Bridge è eccezione (è AI engineering hands-on, non "imparare Python").
+
+---
+
+## Fast Track Roadmap (sessioni corte) ⭐
+
+**File:** `roadmaps/fast-track.md` — conduttore cross-roadmap con 29 topic max CV-ROI.
+
+**Quando usarla:** Dan dice "ho poco tempo" / "oggi sessione corta" / "cosa fa più valore subito" / non specifica cosa fare → proponi item dalla Fast Track appropriato al tempo disponibile.
+
+**Come pescare:**
+- Sessione XS (<2h) → item XS di Fase 1 non iniziati
+- Sessione S (2-4h) → item S di Fase 1, poi Fase 2
+- Sessione M (mezza giornata+) → item M di Fase 1
+
+**Regola sincronizzazione:** quando un item Fast Track è completato/parziale, aggiornare status ANCHE in roadmap sorgente (campo `source` dell'item). Viceversa: se un modulo sorgente viene completato per via normale, marcare ✅ lo slice Fast Track corrispondente.
+
+**Priorità:** Fase 1 (Entry AI #4) prima di Fase 2/3 finché Dan non ha 3+ repo AI pubblici su GitHub.
+
+**Sequenza consigliata primi 30-45 giorni:** vedi `roadmaps/fast-track.md > Sequenza consigliata` (FT-A02 → A03 → A01 → A04 → A05 → A06 → B01+B04 → B02+B04).
+
+---
+
+## English UK Track 🇬🇧
+
+> Percorso **paritetico** ai percorsi tech (formazione professionale, mercato UK). Dan vive a Londra, B2.3 → C1+.
+
+**Source of truth canonical:** `English/CLAUDE.md` — schema card, sistema Box 1-6 (intervalli 0/2/5/10/20/40 giorni, fail = -2 box mai sotto Box 1), regole agente quiz, livelli B2.3 → C2 con trigger.
+
+**File chiave:**
+- `English/CLAUDE.md` — canonical (regole + schema + box system)
+- `English/stats.md` — EXP, livello, streak journaling, deck attivi
+- `English/decks/{vocab,pronunciation,journaling}/`
+- `English/journal/` — entry diario English
+
+**Skill:**
+- `/english [N|vocab|pronunciation|journaling|<deck>|add|stats]` — quiz / aggiunta card / stats
+- `/journal en` — entry English + auto-genera 3-5 flashcards
+- `/journal personal` / `/journal <tag>` — diario personale o custom (NO flashcards)
+
+**Regole importanti:**
+- **EXP separato** da quello tech (vive in `English/stats.md`, non in `Progress.md`)
+- **Auto-promotion DISABLED:** solo Dan aggiorna `level:` nel frontmatter di `English/stats.md`
+- **Pronuncia card:** IPA + italianizzazione UK (es. `Like` → `/laɪk/` → **LÀIC**)
+- **Default UK:** vocabolario, slang, pronuncia (Dan vive a Londra)
 
 ---
 
@@ -465,4 +532,8 @@ Ogni volta che consigli una lettura → aggiorna `context/reading-list.md`
 
 ---
 
-*Ultimo aggiornamento: 2026-04-17 (refactor self-paced — rimossa timeline, spaced repetition a rotazione, esami completion-based, Week→Modulo)*
+*Ultimo aggiornamento: 2026-05-05 (post-English /refactor — skill /refactor, /end, /context allineate al track English; profile.md → Londra + English skill; career-strategy → English C1+ prerequisito UK; rimossa duplicazione Box 1-6 in CLAUDE.md → link al canonical)*
+
+*Versione precedente: 2026-05-05 (English UK track v1.0 — aggiunte skill `/english` e `/journal` parametrizzato, sezione English in CLAUDE, struttura `English/` + `journal/` per personal/custom tag)*
+
+*Versione precedente: 2026-04-17 (refactor self-paced — rimossa timeline, spaced repetition a rotazione, esami completion-based, Week→Modulo)*

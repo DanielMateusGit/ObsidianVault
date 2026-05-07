@@ -240,6 +240,7 @@ source: "[Libro/Articolo/Video/Sessione]"
 | Nota | Status | Created |
 |------|--------|---------|
 | [[databases/ef-core-dbcontext\|DbContext (EF Core)]] | learned | 2026-03-24 |
+| [[databases/ef-core-configurations-and-migrations\|EF Core Configurations & Migrations]] | learning | 2026-05-07 |
 
 ### AI & Claude Code
 | Nota | Status | Created |
@@ -249,6 +250,7 @@ source: "[Libro/Articolo/Video/Sessione]"
 | [[ai/mcp-servers\|MCP Servers - Model Context Protocol]] | learning | 2026-03-13 |
 | [[ai/claude-code-hooks\|Claude Code Hooks - Automazione]] | learning | 2026-03-13 |
 | [[ai/model-selection-strategy\|Model Selection Strategy]] | learning | 2026-03-13 |
+| [[ai/agentic-loop\|Agentic Loop - Come Funziona Claude Code]] | learning | 2026-04-28 |
 
 ---
 
@@ -256,10 +258,10 @@ source: "[Libro/Articolo/Video/Sessione]"
 
 | Metrica | Valore |
 |---------|--------|
-| **Note totali** | 23 |
+| **Note totali** | 25 |
 | **Note mastered** | 0 |
 | **Note to-review** | 0 |
-| **Ultima nota** | 2026-03-25 |
+| **Ultima nota** | 2026-05-07 |
 
 ---
 
@@ -277,4 +279,4 @@ Questa settimana abbiamo esplorato:
 
 ---
 
-*Ultimo aggiornamento: 2026-02-25*
+*Ultimo aggiornamento: 2026-05-07 (added: ef-core-configurations-and-migrations)*

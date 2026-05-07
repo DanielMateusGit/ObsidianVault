@@ -7,16 +7,18 @@
 | **Nome** | Dan |
 | **Ruolo attuale** | Mid-level Full-Stack Developer |
 | **Esperienza** | 3 anni professionali |
-| **Location** | Italia, remoto full-time |
+| **Location** | Londra, UK (remoto full-time) |
 | **Progetto lavoro** | ESGeo (autenticazione, pipeline validation, bulk operations) |
 
 ## Obiettivi
 
-**Breve termine (18-24 mesi):**
+**Obiettivi primari (self-paced — nessuna scadenza):**
 - **AI Engineer** (target primario, deciso 2026-03-24)
 - Senior/Staff Engineer + System Architect (base solida)
 - Progettare sistemi AI-native che agents possono implementare
 - Target: €90k-130k remote EU, €110-160k US
+
+> Si avanza per **completamento** dei progetti/moduli, non per calendario (decisione 2026-04-17). Vedi `career-strategy.md` per Cluster Positioning Matrix.
 
 **Obiettivi personali:** vedi `WHY.md`
 
@@ -28,6 +30,7 @@
 | **Buono (7/10)** | .NET Core, C#, SQL Server, Azure, Azure AD B2C |
 | **Da rispolverare** | Flutter (esperienza 2021) |
 | **Da sviluppare** | Redis, Docker, Kubernetes, DDD, CQRS, Event Sourcing, TDD |
+| **English UK** | B2.3 → C1+ (in corso, prerequisito mercato UK — vedi `English/CLAUDE.md`) |
 
 ## Come Impara Meglio
 
@@ -64,10 +67,12 @@ Preferisce "velocita crociera" - non pressare sui tempi.
 
 - **Redux Toolkit** - Lo conosce, NON suggerire Zustand
 - **Redis** - Focus critico, usarlo progressivamente
-- **No fretta** - 18 mesi di timeline, qualita > velocita
+- **No fretta** - velocità crociera, qualità > velocità (self-paced, no timeline)
 - **Mac-specific** - Comandi/setup per macOS
 - **VS Code** - Non suggerire estensioni Visual Studio
 
 ---
 
-*Ultimo aggiornamento: 2026-03-24 (refactor — aggiunto AI Engineer come target primario)*
+*Ultimo aggiornamento: 2026-05-05 (post English track — Location Italia→Londra UK, aggiunta competenza English B2.3→C1+ come prerequisito mercato UK)*
+*Versione precedente: 2026-05-05 (refactor — rimosse timeline residue, allineato a self-paced 2026-04-17)*
+*Versione precedente: 2026-03-24 (aggiunto AI Engineer come target primario)*

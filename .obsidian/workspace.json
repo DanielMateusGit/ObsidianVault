@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/outbox-pattern.md",
+                "file": "02 - Learning Hub/Senior-Engineer/00-Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "outbox-pattern"
+              "title": "00-Overview"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "outbox",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,44 +180,44 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "7657d05d52c0eae2",
+  "active": "f482125d8793a22e",
   "lastOpenFiles": [
-    "02 - Learning Hub/claude/sessions/2026-03-31.md",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Npgsql.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Options.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
-    "Projects/TaskManager/tests/TaskManager.Infrastructure.Tests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll",
-    "02 - Learning Hub/claude/sessions/2026-03-28.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/retry-error-handling.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/message-queues.md",
-    "Projects/notification-service/docs/adr/ADR-004-message-queue-strategy.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/outbox-pattern.md",
-    "02 - Learning Hub/claude/sessions/2026-03-25-2.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/ef-core-migrations.md",
-    "02 - Learning Hub/claude/roadmaps/senior-engineer.md",
-    "02 - Learning Hub/claude/sessions/2026-03-26-2.md",
-    "02 - Learning Hub/Progress.md",
-    "02 - Learning Hub/CLAUDE.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/project-overview.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/00-Overview.md",
-    "02 - Learning Hub/Architect-Quest/00-Overview.md",
-    "02 - Learning Hub/Senior-Engineer/Projects/P1-Task-Manager/00-Overview.md",
-    "02 - Learning Hub/Senior-Engineer/00-Overview.md",
-    "02 - Learning Hub/Architect-Quest/Projects/AI-3-Personal-Copilot/00-Overview.md",
-    "02 - Learning Hub/Knowledge/CLAUDE.md",
-    "02 - Learning Hub/claude/sessions/2026-03-26.md",
-    "02 - Learning Hub/claude/sessions/2026-03-25.md",
-    "02 - Learning Hub/Architect-Quest/Projects/P1-Notification-Service/Notes/background-service.md",
-    "02 - Learning Hub/Knowledge/dotnet/task-type.md",
-    "02 - Learning Hub/Knowledge/dotnet/cancellation-token.md",
-    "02 - Learning Hub/Knowledge/patterns/repository-pattern.md",
-    "02 - Learning Hub/Knowledge/patterns/mediatr-pipeline-behaviors.md",
+    "02 - Learning Hub/English/decks/vocab/thursday-murder-club.md",
+    "02 - Learning Hub/English/decks/vocab",
+    "02 - Learning Hub/English/decks",
+    "02 - Learning Hub/English/stats.md",
+    "02 - Learning Hub/English/CLAUDE.md",
+    "02 - Learning Hub/English",
+    "01 - Learning/TypeScript/Appunti/08 - Drag and Drop project.md",
+    "02 - Learning Hub/claude/sessions/2026-04-24.md",
+    "02 - Learning Hub/claude/roadmaps/fast-track.md",
+    "02 - Learning Hub/claude/sessions/2026-04-23.md",
+    "02 - Learning Hub/claude/context/mini-projects-index.md",
+    "02 - Learning Hub/claude/context/cluster-taxonomy.md",
+    "02 - Learning Hub/claude/context/job-postings-senior.md",
+    "02 - Learning Hub/claude/context/job-postings-architect.md",
+    "02 - Learning Hub/claude/context/job-postings-frontend.md",
+    "01 - Learning/TypeScript/Appunti/06 - Generics.md",
+    "01 - Learning/TypeScript/Appunti/07 - Decorators.md",
+    "01 - Learning/TypeScript/Appunti/05 - Advanced Types.md",
+    "01 - Learning/TypeScript/Appunti/04 - Classes and interfaces.md",
+    "01 - Learning/TypeScript/Appunti/03 - TypeScript Compiler.md",
+    "01 - Learning/TypeScript/Appunti/02 - Basic Types.md",
+    "01 - Learning/TypeScript/Appunti/01 - Introduzione a TypeScript.md",
+    "01 - Learning/SQL/Appunti/Query Ricorsive con le CTE.md",
+    "01 - Learning/Docker/Appunti/08 - Deploy di container docker (STILL WIP).md",
+    "01 - Learning/Docker/Appunti/07 - Utility Containers.md",
+    "01 - Learning/Docker/Appunti/06 - Docker Compose.md",
+    "01 - Learning/Docker/Appunti/05 - Applicazioni multi-container (STILL WIP).md",
+    "01 - Learning/Docker/Appunti/04 - Networking, comunicazione cross-container.md",
+    "01 - Learning/Docker/Appunti/03 - Gestione dei dati e volumi di memoria.md",
+    "01 - Learning/Design Patterns/Resources/design-patterns-en.pdf",
+    "Projects/TaskManager/tests/TaskManager.Domain.Tests/obj/086f6305-d8fb-440d-bdde-e2b7b07881ea.tmp",
+    "Projects/TaskManager/src/TaskManager.Infrastructure/Migrations/20260401153005_InitialCreate.cs",
+    "Projects/TaskManager/src/TaskManager.Infrastructure/Migrations/AppDbContextModelSnapshot.cs",
+    "Projects/TaskManager/src/TaskManager.Infrastructure/Migrations/20260401153005_InitialCreate.Designer.cs",
+    "Projects/TaskManager/src/TaskManager.Infrastructure/Migrations",
+    "Projects/TaskManager/src/TaskManager.Api/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Pasted image 20250908100643.png",

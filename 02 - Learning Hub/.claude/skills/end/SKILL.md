@@ -61,14 +61,35 @@ Se il file esiste già (più sessioni nello stesso giorno), aggiungi un suffisso
 
 ### 4. Aggiorna file condizionali
 
-**Se fatta spaced repetition:**
+**Se fatta spaced repetition tech:**
 - Verifica che `claude/context/quiz-tracker.md` sia aggiornato (dovrebbe esserlo già da /quiz)
+
+**Se fatta sessione `/english`:**
+- Verifica che `English/stats.md` sia aggiornato (dovrebbe esserlo già da /english)
+- Verifica che i deck toccati abbiano `last_revision` aggiornato
+
+**Se fatta entry `/journal en`:**
+- Verifica streak journaling in `English/stats.md`:
+  - Se `English/journal/<ieri>.md` esiste → `journaling_streak += 1`
+  - Altrimenti → `journaling_streak = 1` (reset)
+  - `journaling_longest_streak = max(streak, longest)`
+- Se streak raggiunto milestone (7/14/30/60 giorni): aggiungi bonus EXP (+50/+100/+200/+500) e segnala a Dan
+- Verifica deck `English/decks/journaling/<topic>.md` aggiornato con nuove card
 
 **Se create note in Knowledge/:**
 - Verifica che `Knowledge/CLAUDE.md` sia aggiornato con le nuove note nell'indice
 
 **Se consigliate letture:**
 - Aggiorna `claude/context/reading-list.md`
+
+**Se completato (o portato avanti) uno slice Fast Track:**
+- Aggiorna status in `claude/roadmaps/fast-track.md` (⬜ → 🟡 / ✅) + dashboard progress totali
+- **Sync bidirezionale obbligatoria:** aggiorna ANCHE la roadmap sorgente indicata nel campo `source` dell'item:
+  - ✅ completato 100% → modulo/sezione sorgente marcato **completato** con nota "via Fast Track [ID]"
+  - 🟡 parziale → modulo/sezione sorgente marcato **già affrontato** (non da rifare da zero)
+- **Sync inversa:** se in sessione Dan ha completato un intero modulo sorgente per via normale (non via Fast Track), marca ✅ lo slice Fast Track corrispondente
+
+Se non sei sicuro se un lavoro fatto in sessione corrisponde a uno slice Fast Track, consulta la tabella in `fast-track.md` cercando il topic per parola chiave.
 
 ### 5. Git push (se ci sono commit)
 
@@ -93,6 +114,10 @@ File aggiornati:
 [✅ quiz-tracker.md]
 [✅ Knowledge/CLAUDE.md]
 [✅ Progress.md]
+[✅ fast-track.md + roadmap sorgente (se slice chiuso)]
+[✅ English/stats.md (se /english o /journal en in sessione)]
+[✅ English/decks/<deck>.md (se card valutate)]
+[✅ English/journal/YYYY-MM-DD.md (se /journal en)]
 
 [Frase motivazionale da WHY.md]
 
