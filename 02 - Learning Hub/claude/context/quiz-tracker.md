@@ -18,12 +18,12 @@ updated: 2026-04-24
 |---------|--------|
 | **Quiz totali** | 206 |
 | **Box 2-5 (Corretti almeno 1 volta)** | 58 |
-| **Box 1 - Parziali** | 21 |
+| **Box 1 - Parziali** | 22 |
 | **Box 1 - Sbagliati di recente** | 7 |
-| **Box 1 - Non risposti** | 121 |
+| **Box 1 - Non risposti** | 119 |
 | **Box 5 - Padroneggiati** | 13 |
 | **Challenge completate** | 24 |
-| **Streak challenge** | 3 |
+| **Streak challenge** | 2 |
 
 > **Nota:** valori sopra sono snapshot del current state. La distribuzione cambia ogni sessione `/quiz`.
 
@@ -97,7 +97,7 @@ updated: 2026-04-24
 #### Component Coupling
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| COUP-01 | Ciclo A → B → C → A - come lo rompi con DIP? | 📦3 | 2026-04-10 | 3 | ✅ Corretto |
+| COUP-01 | Ciclo A → B → C → A - come lo rompi con DIP? | 📦3 | 2026-04-10 | 2 | ✅ Corretto |
 | COUP-02 | Domain dipende da Infrastructure - perché è sbagliato (SDP)? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | COUP-03 | Componente stabile ma concreto - perché è un problema (SAP)? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 
@@ -115,14 +115,14 @@ updated: 2026-04-24
 #### Open/Closed Principle
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦5 | 2026-03-04 | 15 | ✅ Padroneggiato |
-| OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦5 | 2026-03-13 | 15 | ✅ Padroneggiato |
-| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦5 | 2026-03-16 | 15 | ✅ Padroneggiato |
+| OCP-01 | PaymentService usa StripeClient, CEO vuole PayPal - cosa c'è di sbagliato? | 📦5 | 2026-03-04 | 14 | ✅ Padroneggiato |
+| OCP-02 | OrderProcessor protetto da DatabaseRepository - chi dipende da chi? | 📦5 | 2026-03-13 | 14 | ✅ Padroneggiato |
+| OCP-03 | Perché Plugin Architecture è conseguenza di OCP? | 📦5 | 2026-03-16 | 14 | ✅ Padroneggiato |
 
 #### Single Responsibility Principle
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| SRP-01 | Qual è la VERA definizione di SRP? | 📦4 | 2026-05-06 | 8 | ✅ Corretto |
+| SRP-01 | Qual è la VERA definizione di SRP? | 📦4 | 2026-05-06 | 7 | ✅ Corretto |
 | SRP-02 | ReportGenerator con metodi per Sales, HR, Finance - viola SRP? | 📦2 | 2026-04-01 | 0 (in coda) | ✅ Corretto |
 | SRP-03 | Un collega dice che EmployeeFacade viola SRP. Come rispondi? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | SRP-04 | CalculateDiscount() per Sales e Finance - duplicazione vera o accidentale? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
@@ -146,7 +146,7 @@ updated: 2026-04-24
 |----|---------|-----|-----------------|-----------------|--------|
 | DIP-01 | OrderService usa direttamente SqlServerRepository. Cosa c'è di sbagliato? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | DIP-02 | Differenza tra Dependency Inversion e Dependency Injection? | 📦2 | 2026-04-01 | 0 (in coda) | ✅ Corretto |
-| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦5 | 2026-03-25 | 15 | ✅ Padroneggiato |
+| DIP-03 | Dove deve stare l'interfaccia IOrderRepository? | 📦5 | 2026-03-25 | 14 | ✅ Padroneggiato |
 
 ---
 
@@ -161,18 +161,18 @@ updated: 2026-04-24
 #### Facade Pattern
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| FAC-01 | Stripe payment: Facade o Factory? | 📦5 | 2026-03-25 | 15 | ✅ Padroneggiato |
-| FAC-02 | PaymentFacade God Object - cosa faresti? | 📦4 | 2026-05-06 | 8 | ✅ Corretto |
-| FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦4 | 2026-04-01 | 7 | ✅ Corretto |
+| FAC-01 | Stripe payment: Facade o Factory? | 📦5 | 2026-03-25 | 14 | ✅ Padroneggiato |
+| FAC-02 | PaymentFacade God Object - cosa faresti? | 📦4 | 2026-05-06 | 7 | ✅ Corretto |
+| FAC-03 | Sistema legacy 15 classi PDF - quale pattern? | 📦4 | 2026-04-01 | 6 | ✅ Corretto |
 
 ---
 
 ### Domain Events
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦5 | 2026-03-27 | 15 | ✅ Padroneggiato |
-| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦5 | 2026-03-16 | 15 | ✅ Padroneggiato |
-| EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦3 | 2026-03-28 | 0 (in coda) | ✅ Corretto |
+| EVT-01 | Perché dispatchiamo eventi DOPO SaveChanges? | 📦5 | 2026-03-27 | 14 | ✅ Padroneggiato |
+| EVT-02 | L'Entity può avere dipendenze come IStatsService? Perché? | 📦5 | 2026-03-16 | 14 | ✅ Padroneggiato |
+| EVT-03 | Quanti handler possono ascoltare lo stesso evento? | 📦4 | 2026-05-07 | 8 | ✅ Corretto |
 | EVT-04 | L'entity può dispatchare direttamente l'evento? Perché? | 📦1 | 2026-04-01 | 0 (in coda) | 🟡 Parziale |
 | EVT-05 | Cos'è MediatR in relazione ai Domain Events? | 📦3 | 2026-03-28 | 0 (in coda) | ✅ Corretto |
 | EVT-06 | Validazione email: evento o eccezione? Perché? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
@@ -180,13 +180,13 @@ updated: 2026-04-24
 ### CQRS & MediatR
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦5 | 2026-03-16 | 15 | ✅ Padroneggiato |
+| CQRS-01 | Un Command può ritornare una lista di oggetti? Perché? | 📦5 | 2026-03-16 | 14 | ✅ Padroneggiato |
 | CQRS-02 | Un Query Handler può chiamare _repository.Delete()? | 📦2 | 2026-03-31 | 0 (in coda) | ✅ Corretto |
-| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦5 | 2026-03-27 | 15 | ✅ Padroneggiato |
+| CQRS-03 | Come aggiungi logging a tutti gli handler senza modificarli? | 📦5 | 2026-03-27 | 14 | ✅ Padroneggiato |
 | CQRS-04 | Retry(): la logica va nel Domain o nell'Application? Come decidi? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | CQRS-05 | Quando ha senso separare database lettura (es. MongoDB) da scrittura (es. PostgreSQL)? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
-| BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦4 | 2026-03-23 | 7 | ✅ Corretto |
-| BEHAV-02 | Perché next() solo se validazione passa? | 📦4 | 2026-03-25 | 7 | ✅ Corretto |
+| BEHAV-01 | Ordine registrazione behaviors = ordine esecuzione? | 📦4 | 2026-03-23 | 6 | ✅ Corretto |
+| BEHAV-02 | Perché next() solo se validazione passa? | 📦4 | 2026-03-25 | 6 | ✅ Corretto |
 | BEHAV-03 | Come creare behavior solo per alcuni command? (marker interface) | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | BEHAV-04 | Come testi un ValidationBehavior in isolamento? Cosa mocki e cosa verifichi? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | BEHAV-05 | LoggingBehavior chiama _logger.LogError e poi next(). È corretto? Quando NON dovresti chiamare next()? | 📦2 | 2026-04-01 | 0 (in coda) | ✅ Corretto |
@@ -201,22 +201,22 @@ updated: 2026-04-24
 ### Ports & Adapters
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦5 | 2026-03-16 | 15 | ✅ Padroneggiato |
-| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦5 | 2026-03-25 | 15 | ✅ Padroneggiato |
-| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦5 | 2026-03-16 | 15 | ✅ Padroneggiato |
+| PORT-01 | IOrderRepository in Infrastructure/Repositories/ - cosa c'è di sbagliato? | 📦5 | 2026-03-16 | 14 | ✅ Padroneggiato |
+| PORT-02 | "Un'interfaccia per ogni classe rispetta DIP" - vero o falso? | 📦5 | 2026-03-25 | 14 | ✅ Padroneggiato |
+| PORT-03 | Perché Application deve "possedere" l'interfaccia? | 📦5 | 2026-03-16 | 14 | ✅ Padroneggiato |
 
 ### CQRS Queries
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦4 | 2026-04-10 | 7 | ✅ Corretto |
-| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦4 | 2026-04-01 | 7 | ✅ Corretto |
-| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦4 | 2026-03-25 | 7 | ✅ Corretto |
+| QRY-01 | Query Handler con SaveChangesAsync - cosa c'è di sbagliato? | 📦4 | 2026-04-10 | 6 | ✅ Corretto |
+| QRY-02 | Perché Query ritorna DTO invece di Entity? | 📦4 | 2026-04-01 | 6 | ✅ Corretto |
+| QRY-03 | Query senza parametri ha bisogno di validazione? | 📦4 | 2026-03-25 | 6 | ✅ Corretto |
 
 ### Application Layer
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | APP-01 | Cosa NON fa l'Application Layer? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
-| APP-02 | Handler dipende da AppDbContext - cosa c'è di sbagliato? | 📦4 | 2026-03-25 | 7 | ✅ Corretto |
+| APP-02 | Handler dipende da AppDbContext - cosa c'è di sbagliato? | 📦4 | 2026-03-25 | 6 | ✅ Corretto |
 | APP-03 | Come ristrutturi un NotificationService con 15 metodi? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 
 ### CQRS Commands
@@ -229,7 +229,7 @@ updated: 2026-04-24
 ### Unit of Work
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| UOW-01 | Collega mette SaveChanges in ogni repository - cosa c'è di sbagliato? | 📦4 | 2026-03-25 | 7 | ✅ Corretto |
+| UOW-01 | Collega mette SaveChanges in ogni repository - cosa c'è di sbagliato? | 📦4 | 2026-03-25 | 6 | ✅ Corretto |
 | UOW-02 | Serve UpdateAsync prima di SaveChanges con EF Core? | 📦1 | 2026-04-10 | 0 (in coda) | ❌ Sbagliato |
 | UOW-03 | Perché DbContext deve essere Scoped nel DI? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 
@@ -309,7 +309,7 @@ updated: 2026-04-24
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
 | CL101-01 | Le 4 fasi dell'agentic loop in ordine + ruolo di ciascuna | 📦1 | 2026-05-06 | 0 (in coda) | ❌ Sbagliato |
-| CL101-02 | Auto-accept mode: per quali azioni Claude chiede ancora conferma? (Edit/Bash/Read) | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
+| CL101-02 | Auto-accept mode: per quali azioni Claude chiede ancora conferma? (Edit/Bash/Read) | 📦1 | 2026-05-07 | 0 (in coda) | 🟡 Parziale |
 | CL101-03 | Perché serve il passo Verify? Esempio concreto di cosa va male senza | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 
 ### EF Core Configurations & Migrations (SE M2 — Knowledge note 2026-05-07)
@@ -318,7 +318,7 @@ updated: 2026-04-24
 
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| EFCM-01 | Le 3 fonti di regole per le colonne DB (in ordine di priorità crescente)? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
+| EFCM-01 | Le 3 fonti di regole per le colonne DB (in ordine di priorità crescente)? | 📦1 | 2026-05-07 | 0 (in coda) | ❌ Sbagliato |
 | EFCM-02 | Cosa succede quando lanci `dotnet ef migrations add Foo`? Descrivi il flusso modello → snapshot → diff → file generato | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | EFCM-03 | Una migration è un commento o codice eseguibile? Cosa contiene Up()/Down()? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
 | EFCM-04 | `EnsureCreatedAsync()` vs `MigrateAsync()` — quale usare nei test integration e perché? | 📦1 | - | 0 (in coda) | ⬜ Non risposto |
@@ -326,24 +326,24 @@ updated: 2026-04-24
 ### Infrastructure Layer
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| INFRA-01 | Direzione dipendenze: Application può dipendere da Infrastructure? | 📦4 | 2026-04-01 | 7 | ✅ Corretto |
+| INFRA-01 | Direzione dipendenze: Application può dipendere da Infrastructure? | 📦4 | 2026-04-01 | 6 | ✅ Corretto |
 | INFRA-02 | Cosa NON appartiene a Infrastructure: Repository, DbContext, o IRepository? | 📦2 | 2026-02-18 | 0 (in coda) | ✅ Corretto |
-| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦5 | 2026-03-25 | 15 | ✅ Padroneggiato |
+| INFRA-03 | Perché repository NON chiama SaveChangesAsync? | 📦5 | 2026-03-25 | 14 | ✅ Padroneggiato |
 | INFRA-04 | EF Core o Dapper per report su milioni di record? | 📦1 | 2026-04-10 | 0 (in coda) | 🟡 Parziale |
 | INFRA-05 | PostgreSQL vs MongoDB: quali domande fare per decidere? | 📦2 | 2026-02-18 | 0 (in coda) | ✅ Corretto |
 
 ### Repository Pattern
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦1 | 2026-03-31 | 0 (in coda) | 🟡 Parziale |
+| REPO-01 | Perché esporre IQueryable<T> dal repository è un anti-pattern? | 📦1 | 2026-05-07 | 0 (in coda) | 🟡 Parziale |
 | REPO-02 | Cos'è il problema N+1 e come lo risolvi? | 📦2 | 2026-04-01 | 0 (in coda) | ✅ Corretto |
 | REPO-03 | Quando ha senso usare RepositoryBase<T>? | 📦2 | 2026-02-19 | 0 (in coda) | ✅ Corretto |
 
 ### EF Core Migrations
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| MIG-01 | Quali sono 3 vantaggi delle migrations rispetto a SQL manuale? | 📦2 | 2026-02-19 | 0 (in coda) | ✅ Corretto |
-| MIG-02 | Cosa deve contenere Down() se Up() fa CreateTable? | 📦4 | 2026-03-25 | 7 | ✅ Corretto |
+| MIG-01 | Quali sono 3 vantaggi delle migrations rispetto a SQL manuale? | 📦3 | 2026-05-07 | 4 | ✅ Corretto |
+| MIG-02 | Cosa deve contenere Down() se Up() fa CreateTable? | 📦4 | 2026-03-25 | 6 | ✅ Corretto |
 | MIG-03 | Cosa succede se aggiungi una proprietà senza creare migration? | 📦2 | 2026-02-19 | 0 (in coda) | ✅ Corretto |
 
 ### Value Object Persistence
@@ -356,7 +356,7 @@ updated: 2026-04-24
 ### DbContext (EF Core)
 | ID | Domanda | Box | Ultima risposta | Sessioni attesa | Status |
 |----|---------|-----|-----------------|-----------------|--------|
-| DBC-01 | Change Tracker: traccia in memoria o confronta il DB? | 📦4 | 2026-05-06 | 8 | ✅ Corretto |
+| DBC-01 | Change Tracker: traccia in memoria o confronta il DB? | 📦4 | 2026-05-06 | 7 | ✅ Corretto |
 | DBC-02 | DbContext Singleton con richieste concorrenti — cosa succede? | 📦3 | 2026-03-27 | 0 (in coda) | ✅ Corretto |
 | DBC-03 | OnModelCreating con 15 Entity — problema e soluzione? | 📦3 | 2026-03-31 | 0 (in coda) | ✅ Corretto |
 | DBC-04 | Perché AppDbContext implementa IUnitOfWork? | 📦3 | 2026-03-27 | 0 (in coda) | ✅ Corretto |
@@ -697,6 +697,11 @@ _Nessun quiz ancora (quiz ADR sono nelle Notes del progetto, non in Knowledge)_
 | 2026-05-06 | CMD-01 | ❌ | +2 | Box 1→1 (Create deve ritornare ID, non void/bool — era parziale) |
 | 2026-05-06 | VAL-01 | ❌ | +2 | Box 1→1 (non sa CQS / TryExecute side effects) |
 | 2026-05-06 | CL101-01 | ❌ | +2 | Box 1→1 (non sa 4 fasi: Gather/Action/Verify/Repeat) |
+| 2026-05-07 | EFCM-01 | ❌ | +2 | Box 1→1 (confuso componenti del modello EF [DbContext/DbSet/Domain] con gerarchia priorità regole [Conventions<DataAnnotations<FluentAPI]) |
+| 2026-05-07 | EVT-03 | ✅ | +10 | Box 3→4 (handler illimitati per evento, "as many as are registered") |
+| 2026-05-07 | MIG-01 | ✅ | +10 | Box 2→3 (3 vantaggi: code-DB consistency + versioning + Up/Down rollback) |
+| 2026-05-07 | CL101-02 | 🟡 | +5 | Box 1→1 (parziale - sa Bash ancora chiede, manca Edit/Write/Read auto-approved) |
+| 2026-05-07 | REPO-01 | 🟡 | +5 | Box 1→1 (5° parziale - tech leak ok, "DIP" è ripetizione del primo. Manca encapsulation/N+1/testability/perf surprises) |
 
 ---
 

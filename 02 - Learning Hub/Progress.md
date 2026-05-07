@@ -1,6 +1,6 @@
 ---
 tags: [learning, progress, gamification]
-xp: 7420
+xp: 7452
 level: 8
 title: "Cloud Engineer"
 streak: 4
@@ -118,6 +118,7 @@ dv.paragraph("**Modulo corrente:** " + dv.current().senior_engineer_module);
 
 | Data | Attività | Progetto | XP | Totale |
 |------|----------|----------|-----|--------|
+| 2026-05-07 | Quiz post-end micro-session (5: 2✅ 2🟡 1❌, EFCM-01/EVT-03/MIG-01/CL101-02/REPO-01) — REPO-01 5° parziale, pattern "stesso motivo riformulato" | Ripasso | +32 | 7452 |
 | 2026-05-07 | 🎉 LEVEL UP → Cloud Engineer (Lv.8) | - | - | 7420 |
 | 2026-05-07 | SE M2 FASE 1: Testcontainers + first integration test green + 1 Knowledge note (EF Core Configs & Migrations) + cert pipeline AZ-204/Terraform + 9 English grammar cards + 2 memory feedback | Misto | +268 | 7420 |
 | 2026-04-24 | Fast Track roadmap v1.0 (29 topic cross-roadmap) + /refactor (0 CRITICAL, 3 fix applicati) + sync bidirezionale documentata | Strategica | +450 | 7152 |

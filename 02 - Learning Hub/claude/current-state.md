@@ -20,8 +20,8 @@
 
 | Metrica | Valore |
 |---------|--------|
-| **XP Totali** | 7420 |
-| **Livello** | 8 - **Cloud Engineer** ☁️ (1580 XP al prossimo, target Lv.9 Principal Developer @ 9000) |
+| **XP Totali** | 7452 |
+| **Livello** | 8 - **Cloud Engineer** ☁️ (1548 XP al prossimo, target Lv.9 Principal Developer @ 9000) |
 | **Streak** | 4 giorni |
 | **Data inizio** | 2025-01-29 |
 | **Achievement** | 10 (First Commit, Docker Newbie, Architect Apprentice, Spark, Knowledge Seeker, On Fire, First Exam, First Lesson, Course Master, Perfect Score) |
@@ -109,6 +109,7 @@
   - .NET Aspire bundled in AZ-204 prep (no separate module)
 - **Roadmap audit deployment**: ~65-70% coverage. Gap critici: Azure App Service hands-on, Cloud Run, ECS, release engineering, Aspire. Audit completo via Explore agent.
 - **+268 XP** → **🎉 LEVEL UP a Lv.8 Cloud Engineer** ☁️ (threshold 7200 superato).
+- **Post-end micro-session** (`/quiz` di follow-up dopo level up): 5 quiz misti (2✅ 2🟡 1❌). +32 XP → 7452 totale. Pattern emersi: confondere "componenti del modello" vs "gerarchia di priorità" (EFCM-01); ripetere stesso motivo in parole diverse (REPO-01 5° parziale). Worth deliberate reread: `Knowledge/patterns/repository-pattern.md`.
 
 ---
 
@@ -243,7 +244,9 @@ Nessuna.
 
 ---
 
-*Ultimo aggiornamento: 2026-05-07 (sessione massiva — SE M2 FASE 1 completa con Testcontainers + first integration test verde, 1 Knowledge note creata, 9 English cards, cert pipeline AZ-204+Terraform definita, +268 XP, **LEVEL UP a Lv.8 Cloud Engineer**)*
+*Ultimo aggiornamento: 2026-05-07 (post-end micro quiz session: +32 XP, REPO-01 5° parziale flagged, pattern "componenti vs gerarchia" e "ripetizione motivo" identificati). XP day total: 7452.*
+
+*Versione precedente: 2026-05-07 (sessione massiva — SE M2 FASE 1 completa con Testcontainers + first integration test verde, 1 Knowledge note creata, 9 English cards, cert pipeline AZ-204+Terraform definita, +268 XP, **LEVEL UP a Lv.8 Cloud Engineer**)*
 
 *Versione precedente: 2026-05-06 (sessione init-only chiusa subito — 0 XP, log creato per coerenza; alert spaced rep tech alto al rientro)*
 
