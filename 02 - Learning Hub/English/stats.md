@@ -6,7 +6,7 @@ level: B2.3
 exp: 50
 journaling_streak: 0
 journaling_longest_streak: 0
-total_cards: 58
+total_cards: 59
 total_sessions: 0
 ---
 
@@ -24,7 +24,7 @@ total_sessions: 0
 | **EXP totali** | 50 |
 | **Streak journaling** | 0 giorni |
 | **Best streak** | 0 giorni |
-| **Card totali** | 58 |
+| **Card totali** | 59 |
 | **Sessioni quiz totali** | 0 |
 | **Journal entries** | 0 |
 | **Libri UK letti end-to-end** | 0 (in corso: Thursday Murder Club) |
@@ -49,7 +49,7 @@ total_sessions: 0
 
 | Box | Significato | Count |
 |-----|-------------|-------|
-| Box 1 | Nuova / sbagliata recente | 58 |
+| Box 1 | Nuova / sbagliata recente | 59 |
 | Box 2 | Passata 1x | 0 |
 | Box 3 | Passata 2x | 0 |
 | Box 4 | Passata 3x | 0 |
@@ -103,7 +103,7 @@ total_sessions: 0
 | Deck | Tipo | Card | Box 6 | Last review |
 |------|------|------|-------|-------------|
 | `thursday-murder-club` | vocab | 49 | 0 | — |
-| `grammar-corrections` | journaling | 9 | 0 | — |
+| `grammar-corrections` | journaling | 10 | 0 | — |
 
 ---
 

@@ -277,7 +277,7 @@ Streak journaling: N giorni
 | Deck | Path | Card | Box 6 | Ultimo update |
 |------|------|------|-------|---------------|
 | Thursday Murder Club (Osman) — capitoli 6-9 | `decks/vocab/thursday-murder-club.md` | 49 | 0 | 2026-05-05 |
-| Grammar Corrections — Personal anti-mistakes | `decks/journaling/grammar-corrections.md` | 9 | 0 | 2026-05-07 |
+| Grammar Corrections — Personal anti-mistakes | `decks/journaling/grammar-corrections.md` | 10 | 0 | 2026-05-07 |
 
 > Quando crei un nuovo deck, aggiungere riga qui con count card e last_revision.
 

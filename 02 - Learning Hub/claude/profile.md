@@ -27,9 +27,11 @@
 | Livello | Tecnologie |
 |---------|------------|
 | **Forte (8/10)** | React, TypeScript, Redux Toolkit |
-| **Buono (7/10)** | .NET Core, C#, SQL Server, Azure, Azure AD B2C |
+| **Buono (7/10)** | .NET 8, C#, SQL Server, Azure, Azure AD B2C, **DDD (Rich Domain Model + VO + Smart Enum + Domain Events)**, **CQRS + MediatR + Pipeline Behaviors**, **TDD (rigoroso, AQ M5 + SE M1)**, **EF Core (DbContext + Configurations + Migrations + Owned Types + Testcontainers)**, **Docker + docker-compose**, **Clean Architecture** |
+| **Buono base (6/10)** | **RabbitMQ + Outbox Pattern + Retry/DLQ (AQ M5)**, **Redis** (basics, Pub/Sub in arrivo SE P1 M3), **Serilog + structured logging**, **Minimal API + Swagger** |
+| **Buono (7/10) — AI Engineering** | **Claude Code (cert ✅), MCP Servers, prompt engineering, agentic loop, context management, model selection strategy** |
 | **Da rispolverare** | Flutter (esperienza 2021) |
-| **Da sviluppare** | Redis, Docker, Kubernetes, DDD, CQRS, Event Sourcing, TDD |
+| **Da sviluppare** | Kubernetes, Event Sourcing avanzato (Marten), LangChain/LangGraph, Vector DBs/RAG production-grade, Terraform/IaC, Cloud Run / AWS ECS, .NET Aspire (post AZ-204 prep), AZ-204 cert (Tier 1, in pipeline) |
 | **English UK** | B2.3 → C1+ (in corso, prerequisito mercato UK — vedi `English/CLAUDE.md`) |
 
 ## Come Impara Meglio
@@ -73,6 +75,8 @@ Preferisce "velocita crociera" - non pressare sui tempi.
 
 ---
 
-*Ultimo aggiornamento: 2026-05-05 (post English track — Location Italia→Londra UK, aggiunta competenza English B2.3→C1+ come prerequisito mercato UK)*
+*Ultimo aggiornamento: 2026-05-07 (refactor — competenze allineate a stato reale post-AQ M5 + SE M1: CQRS/TDD/Docker/DDD/EF Core/Clean Arch promossi a "Buono 7/10"; aggiunte AI Engineering skills da cert Claude Code + MCP; "Da sviluppare" ricalibrato su gap reali (K8s, Marten, LangChain, Terraform, Aspire post AZ-204))*
+
+*Versione precedente: 2026-05-05 (post English track — Location Italia→Londra UK, aggiunta competenza English B2.3→C1+ come prerequisito mercato UK)*
 *Versione precedente: 2026-05-05 (refactor — rimosse timeline residue, allineato a self-paced 2026-04-17)*
 *Versione precedente: 2026-03-24 (aggiunto AI Engineer come target primario)*

@@ -86,7 +86,7 @@
 
 ### Percorso Completo → Staff/Architect €100k+
 
-Tutto il Minimo + AQ P3 BookingHub + SE P4-P6 + Senior Frontend (Focus Tube + FitHub Mobile) + Certificazioni (AZ-305, CKA) + AI-2 Interview Coach + AI-3 Personal Copilot
+Tutto il Minimo + AQ P3 BookingHub + SE P4-P6 + Senior Frontend (Focus Tube + FitHub Mobile) + Certificazioni (vedi Certification Roadmap sotto) + AI-2 Interview Coach + AI-3 Personal Copilot
 
 ### Milestone Misurabili (completion-based)
 
@@ -100,25 +100,12 @@ Tutto il Minimo + AQ P3 BookingHub + SE P4-P6 + Senior Frontend (Focus Tube + Fi
 
 ## Certificazioni - Strategia
 
-### TIER 1: Must-Have
+> **⚠️ SUPERSEDED 2026-05-07** — La strategia certificazioni è stata rivista in base all'audit deployment + cluster targeting UK. **Vedi `Certification Roadmap` in fondo a questo file** (Tier 1: AZ-204 + Terraform Associate; Tier 2: AZ-400 o CKAD; Tier 3: AWS DVA-C02 + GCP Pro Cloud Dev).
+>
+> Razionale switch: AZ-305 (Solutions Architect) era cert troppo "architect-leaning" per profilo Dan (Senior Engineer / AI Engineer focus). **AZ-204 (Developer Associate)** copre App Service, Functions, Container Apps, AKS basics, Cosmos, Service Bus, **.NET Aspire** — molto più allineato con cluster target UK e con l'effettivo lavoro hands-on (vs design-focused di AZ-305).
 
-| Certificazione | Prerequisito | Prep | Costo | Salary Impact |
-|----------------|--------------|------|-------|---------------|
-| **AZ-305** (Azure Solutions Architect) | Dopo AQ P3 BookingHub | 50-60h | ~€165 | +€8-15k |
-| **CKA** (Kubernetes Administrator) | Durante/dopo AQ P4 o P5 | 60-80h | ~€365 | +€10-20k |
-
-Prerequisito AZ-305: AZ-104 (~50h prep).
-
-### TIER 2: Nice-to-Have
-
-| Certificazione | Prerequisito | Prep | Costo | Salary Impact |
-|----------------|--------------|------|-------|---------------|
-| **Terraform Associate** | Dopo AQ P1 Notification | 30-40h | ~€65 | +€5-10k |
-
-### Skip
+### Skip (invariato)
 - Agile/Scrum generiche, Cloud Practitioner, vendor-specific niche, AI/ML generiche, TOGAF
-
-**Costo totale:** ~€600 | **Tempo prep totale:** ~230h (distribuiti lungo il percorso) | **ROI potenziale:** +€20-35k/anno
 
 ---
 
@@ -143,7 +130,7 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 ### 3. Solutions Architect (probabilita 75-80%)
 - **Cluster mappati:** AI #1 (AI Tech Lead Enterprise)
 - **Salary:** €85-120k EU, €110-150k US
-- Richiede AZ-305 + soft skills + leadership track
+- Richiede AZ-400 + soft skills + leadership track (long-game)
 - Long-game (18+ mesi)
 
 ### 4. Staff Engineer (probabilita 60-70%)
@@ -195,7 +182,7 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 **Differenziatori:**
 1. **AI Engineer skills complete**: LLM APIs, RAG, Agentic Workflows, Evals, Guardrails, Multi-Agent (top 0.5% nel 2026)
 2. System Design Portfolio con C4 + ADR
-3. Cloud Certifications (AZ-305, CKA)
+3. Cloud Certifications (vedi Certification Roadmap: AZ-204 → Terraform → AZ-400/CKAD → AWS+GCP)
 4. Full-Stack depth (.NET 8 + React)
 5. **Production AI**: sa mettere AI in produzione con testing, observability, safety
 
@@ -224,7 +211,7 @@ Prerequisito AZ-305: AZ-104 (~50h prep).
 - Product Development, Marketing, Sales
 - Libri: "The Lean Startup" (Ries), "The Mom Test" (Fitzpatrick)
 
-**Investimento minimo post-percorso:** 5-10 ore/mese di maintenance learning + AZ-305 + CKA
+**Investimento minimo post-percorso:** 5-10 ore/mese di maintenance learning + cert pipeline (Tier 2 AZ-400 o CKAD)
 
 ---
 

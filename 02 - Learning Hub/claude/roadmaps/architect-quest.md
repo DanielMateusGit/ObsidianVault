@@ -313,7 +313,7 @@ public class AIRouter : IAIGateway
 Piattaforma SaaS per dietisti e pazienti. Piani alimentari, tracking, analytics.
 
 ### Stack
-- .NET 8 + Aspire
+- .NET 8 + Aspire *(approfondimento durante AZ-204 prep — vedi `Certifications/az-204/tracker.md`)*
 - PostgreSQL + Marten (Event Sourcing)
 - Meilisearch per search
 - Azure AD B2C
@@ -396,7 +396,7 @@ await _notificationClient.ScheduleAsync(new ScheduledNotification
 Sistema prenotazioni per studi professionali. Calendar sync, pagamenti, notifiche.
 
 ### Stack
-- .NET 8 + Aspire
+- .NET 8 + Aspire *(approfondimento durante AZ-204 prep — vedi `Certifications/az-204/tracker.md`)*
 - PostgreSQL, Redis
 - MassTransit (Saga)
 - Azure Kubernetes Service (AKS)
@@ -613,7 +613,7 @@ App fitness multi-versione (Yoga/Stretching, CrossFit, Palestra) con:
 - **AI:** Assistenza personalizzata per allenamenti e nutrizione
 
 ### Stack
-- .NET 8 + Aspire (backend)
+- .NET 8 + Aspire (backend) *(approfondimento durante AZ-204 prep — vedi `Certifications/az-204/tracker.md`)*
 - PostgreSQL + Redis
 - Azure Service Bus (events)
 - **📧 Notification Service (P1)** per reminder e comunicazioni
@@ -1065,5 +1065,7 @@ Alla fine del percorso:
 
 ---
 
-*Ultimo aggiornamento: 2026-04-17*
+*Ultimo aggiornamento: 2026-05-07 (Aspire mention nei stack di P2/P3/P5 collegata a `Certifications/az-204/tracker.md` — Aspire bundled in AZ-204 prep, no standalone module)*
+
+*Versione precedente: 2026-04-17*
 *Versione: 6.0 - Self-paced (rimossa timeline, Week→Modulo, prerequisiti invece di date)*

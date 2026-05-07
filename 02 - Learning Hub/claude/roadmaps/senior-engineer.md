@@ -347,6 +347,21 @@ REST API per gestire task con TDD, Redis caching, design patterns base.
 - Integration tests (TestContainers)
 - API tests (WebApplicationFactory)
 
+**Modulo 2 — Workflow refactor TDD-driven (6 FASI)** ⭐ deciso 2026-05-07
+
+Dopo audit codice esistente (M1 + M2 happy path già implementati ma con incoerenze: DueDate VO orfano, Project/Tag isolate, Description nullable mismatch, dispatch eventi mancante), il Modulo 2 è strutturato in 6 FASI atomiche con safety net TDD-first. NO rollback — refactor consapevole sul codice esistente.
+
+| FASE | Focus | Status |
+|------|-------|--------|
+| FASE 1 | Safety Net (Testcontainers PostgreSQL fixture + primo integration test verde) | ✅ COMPLETATA 2026-05-07 |
+| FASE 2 | Domain extension (Description, DueDate VO, Project/Tag relations) + Domain tests | ⬜ NEXT |
+| FASE 3 | Persistence aggiornata (TaskItemConfiguration con OwnsOne/HasOne/HasMany + nuova Migration) | ⬜ |
+| FASE 4 | Domain Events dispatch (override SaveChangesAsync + handler scheletri) | ⬜ |
+| FASE 5 | Application cleanup (TaskNotFoundException + rimuovi Update superfluo + Commands esteso) | ⬜ |
+| FASE 6 | API hardening (Exception Middleware + Serilog + Correlation ID + Swagger arricchito + API tests) | ⬜ |
+
+**Riferimenti:** workflow + dettagli in `claude/sessions/2026-05-07.md`. Decisione strategica in `claude/current-state.md` > Decisioni Attive.
+
 **Modulo 3: Redis + Messaging Base + Patterns + Boss Battle**
 - Redis caching setup
 - Cache-aside pattern
@@ -1374,6 +1389,6 @@ Alcuni mini-projects sono **dual o triple-use** (SE + AI + FE):
 
 ---
 
-*Ultimo aggiornamento: 2026-04-23 (v6.1 — Refactor pulizia: M-T1 Stack Polyglot depriorizzato a "awareness on-the-job" (no porting Java obbligatorio); SE Mini-Project #8 Java→DAPR demo; cluster taxonomy referenzia `context/cluster-taxonomy.md`; Mini-Projects link `context/mini-projects-index.md`)*
-*Versione precedente: 2026-04-23 (v6.0 — Job-postings-driven enrichment iniziale)*
-*Versione: 6.1*
+*Ultimo aggiornamento: 2026-05-07 (v6.2 — Modulo 2 esteso con sotto-sezione "Workflow refactor TDD-driven (6 FASI)": FASE 1 ✅ completata 2026-05-07 con Testcontainers + integration test verde; FASI 2-6 da fare. Decisione strategica refactor consapevole — vedi `current-state.md` Decisioni Attive)*
+*Versione precedente: 2026-04-23 (v6.1 — Refactor pulizia: M-T1 Stack Polyglot depriorizzato a "awareness on-the-job" (no porting Java obbligatorio); SE Mini-Project #8 Java→DAPR demo; cluster taxonomy referenzia `context/cluster-taxonomy.md`; Mini-Projects link `context/mini-projects-index.md`)*
+*Versione: 6.2*

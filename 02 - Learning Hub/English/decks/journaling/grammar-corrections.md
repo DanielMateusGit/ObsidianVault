@@ -3,7 +3,7 @@ deck: "Grammar Corrections — Personal anti-mistakes"
 type: "journaling"
 created: 2026-05-07
 last_revision: 2026-05-07
-total_cards: 9
+total_cards: 10
 language_pair: "EN ↔ IT"
 spaced_repetition: "Box 1-6 (custom incrementale/decrementale)"
 ---
@@ -12,7 +12,7 @@ spaced_repetition: "Box 1-6 (custom incrementale/decrementale)"
 
 **Deck creato:** 2026-05-07
 **Ultima revisione:** 2026-05-07
-**Totale card:** 5
+**Totale card:** 10
 
 > Deck di **anti-errori personali**: ogni card nasce da un errore reale che Dan ha fatto in produzione libera (chat, journal, sessioni). Front sempre con domanda esplicita (discrimination / error spotting / production IT→EN).
 
@@ -183,8 +183,32 @@ spaced_repetition: "Box 1-6 (custom incrementale/decrementale)"
 
 ---
 
+## Card 10
+
+**Front:** How would you say in natural English UK: *"Devo ripassare la teoria prima del quiz."*
+
+**Back:**
+- **✅ Answer:** *"I need to **revise** the theory before the quiz."* (UK natural)
+  - Also valid: *"I need to **review** the theory..."* (US-leaning, OK in UK too)
+  - Informal: *"I need to **brush up on** the theory..."*
+- **🇮🇹 Translation:** *ripassare* (per studio/esame) = **revise** (UK) / **review** (US/UK).
+- **📖 Explanation:** ⚠️ Cluster di falsi amici pericoloso!
+  - *ripassare* (studiare di nuovo) → **revise** (UK) / **review** (US, anche UK)
+  - *revisionare* (controllare, fare audit) → **audit, inspect, check** (NON *revise*!)
+  - *rivedere* (vedere di nuovo, riguardare) → **see again, revisit, watch again, look over**
+  - **TRAPPOLA US/UK su "revise":**
+    - 🇬🇧 UK: *revise* = **ripassare per esame** (es. *"I'm revising for my exams"*)
+    - 🇺🇸 US: *revise* = **modificare/correggere** (es. *"I'll revise the document"* = "modificherò il documento")
+  - Per essere sicuro al 100% in tutti i contesti UK+US: usa **review** (significato univoco "rivedere/ripassare") o l'idiom **brush up on** (ripassare qualcosa di già saputo, informale).
+- **🔊 Pronunciation:** *revise* → /rɪˈvaɪz/ → **RI-VÀIZ** (accento sulla seconda sillaba) · *review* → /rɪˈvjuː/ → **RI-VIÙ** · *brush up* → /brʌʃ ʌp/ → **BRÀSH AP**
+- **🤡 Example:** *I need to revise EF Core migrations and brush up on Smart Enums before the SE Boss Battle — last time I revised, I just stared at the textbook and called it studying.*
+
+**Meta:** source:journaling 2026-05-07 · last_reviewed: — · next_review: 2026-05-07 · box: 1
+
+---
+
 # 📊 End of deck
 
-**9 / 9 card** · personal anti-mistakes · ultima sincronizzazione `2026-05-07`
+**10 / 10 card** · personal anti-mistakes · ultima sincronizzazione `2026-05-07`
 
 > Quando aggiorni il deck dopo una sessione di quiz, modifica `last_reviewed`, `next_review` e `box` nei `Meta:` di ogni card, e aggiorna `last_revision` nel frontmatter in cima al file. Per nuove correzioni, appendere card numerate seguendo lo schema (front sempre con domanda esplicita).

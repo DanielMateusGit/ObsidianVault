@@ -11,7 +11,7 @@
 | **Modulo AQ** | Modulo 5 COMPLETATO ✅ → SEDIMENTAZIONE M5 |
 | **Progetto SE** | P1 Task Manager |
 | **Modulo SE** | M1 COMPLETATO ✅ → M2 Infrastructure + API |
-| **English Track** | B2.3 → C1+ · 58 card (49 Thursday Murder Club + 9 grammar-corrections) · 0 journal entries |
+| **English Track** | B2.3 → C1+ · 59 card (49 Thursday Murder Club + 10 grammar-corrections) · 0 journal entries |
 | **Task corrente** | SE P1 M2 FASE 2 (Domain extension) — safety net test in place ✅ + Sedimentazione AQ M5 + English |
 
 ---
@@ -182,7 +182,7 @@
 
 4. **Spaced repetition** (still alta: 31 Box 2+ in coda + 21 parziali + 117 Box 1)
 
-5. **English** — primo passaggio sulle 58 card Box 1 (vocab + grammar corrections oggi)
+5. **English** — primo passaggio sulle 59 card Box 1 (vocab + grammar corrections oggi)
 
 6. **AZ-204 prep** — partire la cert pipeline. Capitolo 1 Microsoft Learn syllabus + creare quiz tracker per AZ204-NN
 

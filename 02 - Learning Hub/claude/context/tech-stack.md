@@ -111,7 +111,7 @@
 ## Cloud Providers (1 hands-on, altri awareness)
 | Provider | Uso |
 |----------|-----|
-| **Azure** | Primario (AKS, Service Bus, Cosmos DB, App Service, Functions) — coerente con AZ-305 cert |
+| **Azure** | Primario (AKS, Service Bus, Cosmos DB, App Service, Functions, Container Apps, .NET Aspire) — coerente con AZ-204 cert (Tier 1) + AZ-400 cert opzionale (Tier 2) |
 | **AWS** | Awareness — Lambda, ECS, SQS, SNS, DynamoDB, RDS, S3, EventBridge, Bedrock |
 | **GCP** | Awareness — Cloud Run, Cloud Functions, Pub/Sub, Firestore, Cloud SQL, Vertex AI |
 
@@ -169,9 +169,11 @@
 1. **Stack primario stabile**: .NET 8 + C# 12 + React/TypeScript = base solida tutti i progetti.
 2. **Stack secondario on-the-job**: Java/Spring Boot, Node/TS BE = si imparano sul lavoro se cluster target lo richiede. Non investire upfront.
 3. **AI stack in espansione**: ogni nuovo annuncio "must-have" porta a valutazione hands-on (es. LangGraph + MCP entrati 2026-04-23).
-4. **Cloud primario Azure** (cert AZ-305 in roadmap), AWS/GCP awareness sufficiente per most cluster.
+4. **Cloud primario Azure** (cert AZ-204 + Terraform in Tier 1 roadmap, vedi `career-strategy.md` > Certification Roadmap), AWS/GCP awareness sufficiente per most cluster (Tier 3 future).
 5. **DevOps moderno = standard**: Docker + K8s + Terraform + GitHub Actions + OpenTelemetry sono baseline 2026, non opzionali.
 
 ---
 
-*Aggiornato: 2026-04-23 (v2.0 — refactor post job-postings enrichment: aggiunti AI Stack + Identity Standards + Modern Observability + Frontend Testing/Viz + Cloud Awareness + filosofia "stack secondario on-the-job")*
+*Aggiornato: 2026-05-07 (refactor — Azure cert riferimento aggiornato AZ-305→AZ-204+AZ-400 dopo decisione Certification Roadmap; Container Apps + .NET Aspire aggiunti allo stack Azure)*
+
+*Versione precedente: 2026-04-23 (v2.0 — refactor post job-postings enrichment: aggiunti AI Stack + Identity Standards + Modern Observability + Frontend Testing/Viz + Cloud Awareness + filosofia "stack secondario on-the-job")*
